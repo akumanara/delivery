@@ -1,0 +1,168 @@
+Ctrl + Shift + E
+------------------
+Switch Explorer and active file
+
+Ctrl + ~
+------------------
+Open Terminal
+
+
+Ctrl + Shift + F
+------------------
+Search in all folders
+
+Alt + Arrow left
+Alt + Arrow right
+------------------
+Move to previous/next cursor line
+
+Ctrl + Shift + {
+Ctrl + Shift + }
+------------------
+Fold / Unfold current block
+
+Ctrl + K + Ctrl + 0
+Ctrl + K + Ctrl + J
+------------------
+Collapse all
+Fold All
+
+Ctrl + Shift + P
+------------------
+VSCODE Command Window...
+
+Ctrl + P
+------------------
+Go To file...
+
+
+Ctrl + R (user defined)
+------------------
+Go to symbol in file
+
+
+Ctrl + Alt + N
+------------------
+Advanced new file (vscode plugin)
+
+Go to definition
+------------------
+F12
+
+Peek definition
+------------------
+Alt + F12
+
+
+Alt + Arrow up
+Alt + Arrow down
+------------------
+Move line(s) Down/Up
+
+Shift + Alt + Arrow up
+Shift + Alt + Arrow down
+------------------
+Copy line(s) Down/Up
+
+Show hover
+------------------
+Ctrl + K Ctrl I
+
+
+Switch between split planes
+------------------
+Ctrl + 1, Ctrl + 2, etc
+
+
+Say no to save or dont save dialog
+------------------
+Alt + N
+
+
+New Folder on Windows explorer
+------------------
+Shift + Ctrl + N
+
+
+Go to Address bar
+------------------
+Alt + D
+
+
+New explorer window
+------------------
+Win + E
+
+Go to line
+------------------
+Ctrl + G
+
+New Line without breaking the current line
+------------------
+Ctrl + Enter
+
+usefull when you have a snippet like the following
+left: ;
+
+
+
+
+Up directory on windows explorer
+------------------
+Alt + Up Arrow
+
+
+New Line on top and the cursor goes on new line
+------------------
+Ctrl + Shift + Enter
+
+add cursor at search results
+------------------
+Ctrl + Shift + L
+
+
+
+NUMBER NAVIGATIONS PER PROGRAM
+------------------
+WINDOWS TASKBAR NAVIGATION
+-------
+WIN  + NUMBER
+
+VSCODE FILE NAVIGATION
+-------
+ALT  + NUMBER
+
+VSCODE PANE NAVIGATION
+-------
+CTRL  + NUMBER
+
+VSCODE MOVE ACTIVE FILE TO PANEL
+-------
+CTRL  + ALT + LEFT ARROW
+CTRL  + ALT + RIGHT ARROW
+
+CHROME FILE NAVIGATION
+-------
+CTRL  + NUMBER
+
+CHROME PREVIOUS - NEXT
+-------
+ALT + LEFT ARROW
+ALT + RIGHT ARROW
+
+
+
+Navigate seartch results in the search PANE
+-------
+F4 next search result
+Shift + F4 previous search result
+
+
+MOVE EDITOR WINDOW LEFT AND RIGHT
+-------
+Shift + Ctrl + Page Up
+Shift + Ctrl + Page Down
+
+
+
+

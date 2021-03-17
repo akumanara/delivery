@@ -1,0 +1,46 @@
+{
+  "name": "delivery",
+  "version": "1.0.0",
+  "description": "## Prerequisites",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp dev-build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-inject-partials": "^1.0.5",
+    "gulp-order": "^1.2.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svgmin": "^3.0.0",
+    "jshint": "^2.12.0",
+    "postcss": "^8.2.8",
+    "prettier": "2.2.1",
+    "rucksack-css": "^1.0.2",
+    "stylelint": "^13.12.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^21.0.0",
+    "webpack": "^5.26.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-stream": "^6.1.2"
+  },
+  "dependencies": {
+    "gsap": "^3.6.0",
+    "swiper": "^6.5.0"
+  }
+}

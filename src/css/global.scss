@@ -1,0 +1,42 @@
+@import 'swiper/swiper-bundle';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: inline-block;
+  width: auto;
+}
+
+.categories {
+  position: sticky;
+  top: 0;
+  padding: 3rem 0;
+  background-color: #000;
+}
+.categories__item {
+  padding: 1.5rem;
+  margin: 0 1rem;
+  background: red;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.categories__item.active {
+  background-color: blue;
+}

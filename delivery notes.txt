@@ -1,0 +1,108 @@
+
+overview of current stack and architecture
+pou tha einai to kanali epikoinwnias gia to dev team?
+pou tha einai to doc?
+
+slack - communication or calls
+walkthrough intro
+
+
+-bootstrap 3
+-libraries extra
+-scripts + minifications
+
+
+aura cms - php
+
+
+
+1. design
+2. front end
+3. server side
+
+oxi single page application
+define pio content tha ginei update se calls
+
+
+
+===================================================================================
+
+mobile application
+------------
+den pame full native
+einai to site responsive kai epilektika allazoume features (px select2)
+
+
+web
+----------------
+den einai spa
+tha exei stoixeia pwa kai tha ginei server side mazi me kapia calls
+
+
+==========
+
+
+lazy load stis eikones sto stores page / catalog page
+
+workflow
+---
+1. design
+2. me to kleisimo ton eikastikon kai prin ta piasw tha ta sizitame me tin omada tou delivery
+3. define api per page
+3. dummy front end (layout)
+4.
+
+======================
+DESIGN
+======================
+mobile first
+
+mobile 360xX
+tablet 768xX
+laptop/desktop 1366xX
+
+
+wolt - container 1200 + 30px padding left n right
+define some space utilities
+
+
+
+----------------
+normalize.css
+axios for http api calls
+sass for styles
+pure html (no template engine)
+select2
+
+list.js (asana)
+https://www.highcharts.com/
+
+----------
+agenda
+- browser support
+- suggested libraries and git repo for front end
+- starter
+- sentry (error tracking)
+- tech tour
+- api list
+- flag for app native (user agent go native)
+- bootstrap ()
+- starter show
+================================
+
+address scripts (autocomplete)
+add to basket / plus minus basket
+
+================================
+9/3 calendar 16:00
+================================
+
+swiper - main idea for swipe elements
+categories on click and on scroll move like wolt / e-food native apps. (maybe try scrolltrigger from gsap)
+o xartis tha einai fixed othoni kai thelei na einai fixed stuff
+click sto xarti kai sta product tha einai modal (lightbox) (apo katw)
+
+-------------
+prototypes swiper
+
+-------------
