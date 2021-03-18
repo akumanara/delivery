@@ -11,6 +11,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .swiper-container {
@@ -24,6 +25,7 @@ body {
 }
 
 .categories {
+  display: block;
   position: sticky;
   top: 0;
   padding: 3rem 0;
@@ -39,4 +41,8 @@ body {
 
 .categories__item.active {
   background-color: blue;
+}
+
+body {
+  background-color: green;
 }

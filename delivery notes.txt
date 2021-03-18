@@ -106,3 +106,38 @@ click sto xarti kai sta product tha einai modal (lightbox) (apo katw)
 prototypes swiper
 
 -------------
+
+
+Server side page - Exploration view
+===================
+fernoume ola ta katastimata - ta sliders tha erthoun me serverside queries kai tha fortosoume ola ta katastimata sto page
+an aferesw  ta filtra h ta sort ksanagirnaei sto default view me  ta modules (sliders)
+
+Server side page - Category view
+===================
+fernoume ola ta katastimata me ta dika tou sliders me serverside queries.
+
+Server side page - Store view
+===================
+photogallery me tis photografies
+
+
+
+karta katastimatos
+===================
+- xronos paradosis: pos tha ginei extract
+- akrivo - fthino estiatorio
+- reviews: 10vathmia klimaka - tha diksoume h oxi tis aksiologiseis?
+- promoted status?
+- apostasi?
+- elaxisti paragelia
+
+
+sorting options
+===================
+- default
+- aksiogloigisi
+- xronos paradosis
+- apostasi
+- elaxisti xrewsi
+

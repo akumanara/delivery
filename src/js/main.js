@@ -2,9 +2,11 @@ import Swiper from 'swiper';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { throttle } from 'lodash';
 
 class App {
   constructor() {
+    console.log(throttle);
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     this.triggeringScrollEvents = true;
 
@@ -12,8 +14,8 @@ class App {
       slidesPerView: 'auto',
       spaceBetween: 0,
       loop: false,
-      // centeredSlides: true,
-      // centeredSlidesBounds: true,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
       freeMode: true,
       freeModeMomentumBounce: false,
       resistanceRatio: 0,
@@ -34,7 +36,7 @@ class App {
         trigger: section,
         start: 'top-=20px top+=108px', // when the top of the trigger hits the top of the viewport
         end: 'bottom-=100px top+=108px', // when the bottom of the trigger hits the top of the viewport
-        // markers: true,
+        markers: false,
         onEnter: () => {
           this.enterCategory(index);
         },
