@@ -16,6 +16,7 @@ const gulp = require('gulp'),
 const src_folder = './src/';
 const dist_folder = './dist/';
 const aura_folder_css = '../../delivery.gr/web/delivery.gr/static/dev2.css/';
+const aura_folder_js = '../../delivery.gr/web/delivery.gr/static/dev2.js/';
 
 //==================================
 // CLEAN TASK
@@ -48,7 +49,7 @@ gulp.task('css-dev', (done) => {
     })
     .pipe(csso())
     .pipe(gulp.dest(dist_folder + 'css'))
-    .pipe(gulp.dest(aura_folder_css + 'css'))
+    .pipe(gulp.dest(aura_folder_css))
     .pipe(browserSync.stream());
 });
 gulp.task('validate-css', (done) => {
@@ -97,6 +98,7 @@ gulp.task('js-dev', (done) => {
       done();
     })
     .pipe(gulp.dest(dist_folder + 'js/'))
+    .pipe(gulp.dest(aura_folder_js))
     .pipe(browserSync.stream());
 });
 gulp.task('js', gulp.series('js-dev', 'js-vendor'));
