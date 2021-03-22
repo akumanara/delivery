@@ -98,7 +98,7 @@ gulp.task('js-dev', (done) => {
       done();
     })
     .pipe(gulp.dest(dist_folder + 'js/'))
-    .pipe(gulp.dest(aura_folder_js))
+    .pipe(gulp.dest(aura_folder_js + '/'))
     .pipe(browserSync.stream());
 });
 gulp.task('js', gulp.series('js-dev', 'js-vendor'));
