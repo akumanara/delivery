@@ -17,6 +17,7 @@ const src_folder = './src/';
 const dist_folder = './dist/';
 const aura_folder_css = '../../delivery.gr/web/delivery.gr/static/dev2.css/';
 const aura_folder_js = '../../delivery.gr/web/delivery.gr/static/dev2.js/';
+const aura_folder_imgs = '../../delivery.gr/web/delivery.gr/static/img2/';
 
 //==================================
 // CLEAN TASK
@@ -110,6 +111,7 @@ gulp.task('imagesRaster', () => {
   return gulp
     .src([src_folder + 'images/**/*.+(png|jpg|jpeg|gif|ico)'])
     .pipe(gulp.dest(dist_folder + 'images'))
+    .pipe(gulp.dest(aura_folder_imgs))
     .pipe(browserSync.stream());
 });
 
@@ -118,6 +120,7 @@ gulp.task('imagesVector', () => {
     .src([src_folder + 'images/**/*.+(svg)'])
     .pipe(svgmin())
     .pipe(gulp.dest(dist_folder + 'images'))
+    .pipe(gulp.dest(aura_folder_imgs))
     .pipe(browserSync.stream());
 });
 
