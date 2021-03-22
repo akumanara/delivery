@@ -1,0 +1,19 @@
+.categories {
+  display: block;
+  position: sticky;
+  top: 0;
+  padding: 3rem 0;
+  background-color: #000;
+
+  &__item {
+    padding: 1.5rem;
+    margin: 0 1rem;
+    background: red;
+    border-radius: 10px;
+    user-select: none;
+  }
+
+  &__item.active {
+    background-color: blue;
+  }
+}

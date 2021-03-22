@@ -12,7 +12,7 @@ RUN npm install
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY ./executioner.sh ./executioner.sh
+#COPY ./executioner.sh ./executioner.sh
 
 EXPOSE 3000
 CMD ./executioner.sh
