@@ -182,6 +182,7 @@ sto closed store uparxei kai ena icon sti mesi
 svg icon sto status line. img ή svg? me svg tha allazei to xrwma (fill) me css
 ta badges tha exoun 2 backgrounds. black or white. nice to have me js library.
 https://github.com/fast-average-color/fast-average-color/blob/master/docs/examples.md#from-loaded-image
+http://jsfiddle.net/s7Wx2/
 
 
 

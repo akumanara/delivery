@@ -4,9 +4,25 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { throttle } from 'lodash';
 
+import FastAverageColor from 'fast-average-color';
+
 class App {
   constructor() {
-    console.log(throttle);
+    const fac = new FastAverageColor();
+    document.querySelectorAll('.card').forEach((card) => {
+      fac
+        .getColorAsync(card.querySelector('.card__img'))
+        .then((color) => {
+          if (color.isLight) {
+            card.classList.add('card--dark');
+          }
+        })
+        .catch((e) => {
+          console.log(e);
+        });
+    });
+
+    // console.log(throttle);
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     this.triggeringScrollEvents = true;
 
@@ -70,22 +86,22 @@ class App {
 
   enterCategory(index) {
     if (!this.triggeringScrollEvents) return;
-    console.log(`entered ${index}`);
+    // console.log(`entered ${index}`);
     this.setItem(index);
   }
 
   enterBackCategory(index) {
     if (!this.triggeringScrollEvents) return;
-    console.log(`entered back ${index}`);
+    // console.log(`entered back ${index}`);
     this.setItem(index);
   }
 
   leaveCategory(index) {
-    console.log(`leave ${index}`);
+    // console.log(`leave ${index}`);
   }
 
   leaveBackCategory(index) {
-    console.log(`leave back ${index}`);
+    // console.log(`leave back ${index}`);
   }
 
   setItem(index) {

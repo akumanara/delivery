@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "fast-average-color": "^6.3.0",
     "gsap": "^3.6.0",
     "lodash": "^4.17.21",
     "swiper": "^6.5.0"
