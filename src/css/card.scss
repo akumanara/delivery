@@ -94,12 +94,13 @@
     font-weight: 700;
     color: white;
 
-    .card--dark & {
-      color: black;
+    //if you want to have on badge and only have it on right side
+    &--right {
+      margin-left: auto;
     }
 
-    &:first-child {
-      margin-right: 6px;
+    .card--dark & {
+      color: black;
     }
 
     &::before {

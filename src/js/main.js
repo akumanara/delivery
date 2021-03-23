@@ -6,37 +6,38 @@ import { throttle } from 'lodash';
 import lozad from 'lozad';
 
 import FastAverageColor from 'fast-average-color';
+import { doc } from 'prettier';
 
 class App {
   constructor() {
     // Lazy load card images with average color afterwards
+    // TODO module
     const fac = new FastAverageColor();
-    document.querySelectorAll('.card').forEach((card) => {
-      const el = card.querySelector('.card__img');
-      const observer = lozad(el, {
-        loaded: (el) => {
-          console.log(`image loaded`);
-          fac
-            .getColorAsync(card.querySelector('.card__img'), {
-              algorithm: 'dominant',
-            })
-            .then((color) => {
-              console.log(`average color run`);
-              console.log(el);
-              console.log(color);
-              if (color.isLight) {
-                card.classList.add('card--dark');
-              }
-            })
-            .catch((e) => {
-              console.log(e);
-            });
-        },
-      });
-      observer.observe();
+    const elements = document.querySelectorAll('.card__img');
+    const observer = lozad(elements, {
+      loaded(el) {
+        console.log('loaded element');
+        fac
+          .getColorAsync(el, {
+            algorithm: 'dominant',
+          })
+          .then((color) => {
+            console.log(`average color run`);
+            console.log(el);
+            console.log(color);
+            if (color.isLight) {
+              el.closest('.card').classList.add('card--dark');
+            }
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      },
     });
+    observer.observe();
 
     // Scroll with categories swiper
+    // TODO module
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     this.triggeringScrollEvents = true;
 
