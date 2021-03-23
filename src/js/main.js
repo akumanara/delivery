@@ -2,11 +2,9 @@ import Swiper from 'swiper';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-import { throttle } from 'lodash';
+// import { throttle } from 'lodash';
 import lozad from 'lozad';
-
 import FastAverageColor from 'fast-average-color';
-import { doc } from 'prettier';
 
 class App {
   constructor() {
@@ -67,7 +65,7 @@ class App {
         trigger: section,
         start: 'top-=20px top+=108px', // when the top of the trigger hits the top of the viewport
         end: 'bottom-=100px top+=108px', // when the bottom of the trigger hits the top of the viewport
-        markers: false,
+        markers: true,
         onEnter: () => {
           this.enterCategory(index);
         },

@@ -173,6 +173,7 @@ to badge icon einai fixed 18x18 px.
 export tha kanei ta icons apo ta panw
 max tha yparxei ena badge deksia kai ena badge aristera
 
+
 statuses
 ------
 status line tha einai sto badge container
@@ -204,6 +205,7 @@ spacings
 
 ==============================
 Cards
+==============================
 
 Option A
 - Long
@@ -221,3 +223,7 @@ Option D
 - Open State
 - Status line State (.card--status-line)
 - Closed State (.card--closed)
+
+
+Yparxei pantou lazy load stis photografies stis kartes.,
+ETKOS APO TA horizontal sliders.
