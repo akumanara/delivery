@@ -11,7 +11,8 @@ const gulp = require('gulp'),
   rucksack = require('rucksack-css'),
   order = require('gulp-order'),
   svgmin = require('gulp-svgmin'),
-  sass = require('gulp-sass');
+  sass = require('gulp-sass'),
+  rename = require('gulp-rename');
 
 const src_folder = './src/';
 const dist_folder = './dist/';
@@ -31,13 +32,7 @@ sass.compiler = require('node-sass');
 
 gulp.task('css-dev', (done) => {
   return gulp
-    .src([src_folder + 'css/**/*.scss', src_folder + 'css/**/*.css'])
-    .pipe(
-      order(['src/css/base/global.scss', 'src/css/**/*.scss'], {
-        base: __dirname,
-      }),
-    )
-    .pipe(concat('styles.scss'))
+    .src([src_folder + 'css/base/entry.scss'])
     .pipe(
       sass({
         includePaths: ['node_modules'],
@@ -49,6 +44,7 @@ gulp.task('css-dev', (done) => {
       done();
     })
     .pipe(csso())
+    .pipe(rename('styles.css'))
     .pipe(gulp.dest(dist_folder + 'css'))
     .pipe(gulp.dest(aura_folder_css))
     .pipe(browserSync.stream());
