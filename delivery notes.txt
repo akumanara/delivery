@@ -202,3 +202,22 @@ spacings
 6px
 
 
+==============================
+Cards
+
+Option A
+- Long
+- Short (.card--short)
+
+Option B
+- With Tags
+- Without Tags (.card--no-tags)
+
+Option C
+- Dark Badges
+- White Badges (.card--dark)
+
+Option D
+- Open State
+- Status line State (.card--status-line)
+- Closed State (.card--closed)

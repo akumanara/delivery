@@ -69,10 +69,12 @@
   }
   &__top-overlay-inner {
     display: flex;
-    width: 100%;
-    padding: 8px;
-    // align-items: flex-start;
     flex-direction: column;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
   }
   &__badges {
     display: flex;
@@ -90,9 +92,10 @@
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 700;
+    color: white;
 
     .card--dark & {
-      color: white;
+      color: black;
     }
 
     &:first-child {
@@ -108,22 +111,21 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(255, 255, 255, 0.8);
-
-      .card--dark & {
-        background-color: rgba(0, 0, 0, 0.8);
-
-        // if we support backdrop filter we add it with a lower bg color opacity
-        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-          backdrop-filter: blur(24px);
-          background-color: rgba(0, 0, 0, 0.4);
-        }
-      }
+      background-color: rgba(0, 0, 0, 0.8);
 
       // if we support backdrop filter we add it with a lower bg color opacity
       @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         backdrop-filter: blur(24px);
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .card--dark & {
+        background-color: rgba(255, 255, 255, 0.8);
+        // if we support backdrop filter we add it with a lower bg color opacity
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+          backdrop-filter: blur(24px);
+          background-color: rgba(255, 255, 255, 0.4);
+        }
       }
     }
   }
@@ -140,18 +142,18 @@
   }
   //light card
   &__badge-icon-svg--dark {
-    display: block;
+    display: none;
   }
   &__badge-icon-svg--light {
-    display: none;
+    display: block;
   }
 
   //dark card
   .card--dark &__badge-icon-svg--dark {
-    display: none;
+    display: block;
   }
   .card--dark &__badge-icon-svg--light {
-    display: block;
+    display: none;
   }
 
   &__badge-copy {
@@ -159,6 +161,11 @@
 
   &__closed-icon {
     margin: auto;
+    display: none;
+
+    .card--closed & {
+      display: block;
+    }
   }
 
   &__closed-icon-svg {
@@ -166,14 +173,19 @@
     height: 70px;
   }
   &__status-line {
-    display: flex;
+    // display: flex;
     align-items: center;
     color: white;
     margin-top: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 500;
+    display: none;
 
+    .card--closed &,
+    .card--status-line & {
+      display: flex;
+    }
     .card--closed & {
       color: black;
     }
@@ -199,6 +211,12 @@
   }
   .card--closed &__status-line-icon-svg--dark {
     display: block;
+  }
+
+  &__status-line-copy {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &__bottom {

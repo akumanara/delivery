@@ -17,9 +17,13 @@ class App {
         loaded: (el) => {
           console.log(`image loaded`);
           fac
-            .getColorAsync(card.querySelector('.card__img'))
+            .getColorAsync(card.querySelector('.card__img'), {
+              algorithm: 'dominant',
+            })
             .then((color) => {
               console.log(`average color run`);
+              console.log(el);
+              console.log(color);
               if (color.isLight) {
                 card.classList.add('card--dark');
               }
