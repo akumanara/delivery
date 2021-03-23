@@ -5,6 +5,7 @@
   width: 200px;
   border-radius: 8px;
   overflow: hidden;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.08));
 
   &__top {
     position: relative;
@@ -201,14 +202,67 @@
   }
 
   &__bottom {
-    padding: 20px;
-    background-color: red;
+    padding: 8px;
+    background-color: white;
+  }
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__tags {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .card--no-tags & {
+      display: none;
+    }
+  }
+  &__time-and-rating {
+    margin-top: 14px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__time {
+    display: flex;
+  }
+  &__time-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    flex-shrink: 0;
+  }
+  &__time-icon-svg {
+    width: 100%;
+    height: auto;
+  }
+  &__time-copy {
+  }
+
+  &__rating {
+    margin-left: auto;
+    display: flex;
+  }
+  &__rating-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+    flex-shrink: 0;
+  }
+  &__rating-icon-svg {
+    width: 100%;
+    height: auto;
+  }
+  &__rating-copy {
   }
 }
-// .dummy {
-//   display: flex;
-//   flex-direction: column;
-//   & > div {
-//     margin-bottom: 15px;
-//   }
-// }
