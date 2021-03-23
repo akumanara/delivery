@@ -3,26 +3,36 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { throttle } from 'lodash';
+import lozad from 'lozad';
 
 import FastAverageColor from 'fast-average-color';
 
 class App {
   constructor() {
+    // Lazy load card images with average color afterwards
     const fac = new FastAverageColor();
     document.querySelectorAll('.card').forEach((card) => {
-      fac
-        .getColorAsync(card.querySelector('.card__img'))
-        .then((color) => {
-          if (color.isLight) {
-            card.classList.add('card--dark');
-          }
-        })
-        .catch((e) => {
-          console.log(e);
-        });
+      const el = card.querySelector('.card__img');
+      const observer = lozad(el, {
+        loaded: (el) => {
+          console.log(`image loaded`);
+          fac
+            .getColorAsync(card.querySelector('.card__img'))
+            .then((color) => {
+              console.log(`average color run`);
+              if (color.isLight) {
+                card.classList.add('card--dark');
+              }
+            })
+            .catch((e) => {
+              console.log(e);
+            });
+        },
+      });
+      observer.observe();
     });
 
-    // console.log(throttle);
+    // Scroll with categories swiper
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     this.triggeringScrollEvents = true;
 
