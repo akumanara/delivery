@@ -11,6 +11,8 @@ class App {
     // Lazy load card images with average color afterwards
     // TODO module
     const fac = new FastAverageColor();
+
+
     const elements = document.querySelectorAll('.card__img');
     const observer = lozad(elements, {
       loaded(el) {
@@ -65,7 +67,7 @@ class App {
         trigger: section,
         start: 'top-=20px top+=108px', // when the top of the trigger hits the top of the viewport
         end: 'bottom-=100px top+=108px', // when the bottom of the trigger hits the top of the viewport
-        markers: true,
+        markers: false,
         onEnter: () => {
           this.enterCategory(index);
         },
