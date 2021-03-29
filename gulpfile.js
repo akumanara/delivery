@@ -31,23 +31,25 @@ gulp.task('clean', () => del([dist_folder]));
 sass.compiler = require('node-sass');
 
 gulp.task('css-dev', (done) => {
-  return gulp
-    .src([src_folder + 'css/base/entry.scss'])
-    .pipe(
-      sass({
-        includePaths: ['node_modules'],
-      }).on('error', sass.logError),
-    )
-    .pipe(postcss([autoprefixer, rucksack]))
-    .on('error', function (error) {
-      console.log(error.toString().substring(0, 3000));
-      done();
-    })
-    .pipe(csso())
-    .pipe(rename('styles.css'))
-    .pipe(gulp.dest(dist_folder + 'css'))
-    .pipe(gulp.dest(aura_folder_css))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src([src_folder + 'css/base/entry.scss'])
+      .pipe(
+        sass({
+          includePaths: ['node_modules'],
+        }).on('error', sass.logError),
+      )
+      .pipe(postcss([autoprefixer, rucksack]))
+      .on('error', function (error) {
+        console.log(error.toString().substring(0, 3000));
+        done();
+      })
+      .pipe(csso())
+      .pipe(rename('styles.css'))
+      .pipe(gulp.dest(dist_folder + 'css'))
+      // .pipe(gulp.dest(aura_folder_css))
+      .pipe(browserSync.stream())
+  );
 });
 gulp.task('validate-css', (done) => {
   done();
@@ -87,16 +89,18 @@ gulp.task('js-vendor', (done) => {
 });
 
 gulp.task('js-dev', (done) => {
-  return gulp
-    .src(src_folder + 'js/main.js')
-    .pipe(webpack(require('./webpack.config.js')))
-    .on('error', function (error) {
-      console.log(error);
-      done();
-    })
-    .pipe(gulp.dest(dist_folder + 'js/'))
-    .pipe(gulp.dest(aura_folder_js + '/'))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src(src_folder + 'js/main.js')
+      .pipe(webpack(require('./webpack.config.js')))
+      .on('error', function (error) {
+        console.log(error);
+        done();
+      })
+      .pipe(gulp.dest(dist_folder + 'js/'))
+      // .pipe(gulp.dest(aura_folder_js + '/'))
+      .pipe(browserSync.stream())
+  );
 });
 gulp.task('js', gulp.series('js-dev', 'js-vendor'));
 
@@ -104,20 +108,24 @@ gulp.task('js', gulp.series('js-dev', 'js-vendor'));
 // IMAGES TASK
 //==================================
 gulp.task('imagesRaster', () => {
-  return gulp
-    .src([src_folder + 'images/**/*.+(png|jpg|jpeg|gif|ico)'])
-    .pipe(gulp.dest(dist_folder + 'images'))
-    .pipe(gulp.dest(aura_folder_imgs))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src([src_folder + 'images/**/*.+(png|jpg|jpeg|gif|ico)'])
+      .pipe(gulp.dest(dist_folder + 'images'))
+      // .pipe(gulp.dest(aura_folder_imgs))
+      .pipe(browserSync.stream())
+  );
 });
 
 gulp.task('imagesVector', () => {
-  return gulp
-    .src([src_folder + 'images/**/*.+(svg)'])
-    .pipe(svgmin())
-    .pipe(gulp.dest(dist_folder + 'images'))
-    .pipe(gulp.dest(aura_folder_imgs))
-    .pipe(browserSync.stream());
+  return (
+    gulp
+      .src([src_folder + 'images/**/*.+(svg)'])
+      .pipe(svgmin())
+      .pipe(gulp.dest(dist_folder + 'images'))
+      // .pipe(gulp.dest(aura_folder_imgs))
+      .pipe(browserSync.stream())
+  );
 });
 
 gulp.task('images', gulp.series('imagesRaster', 'imagesVector'));
