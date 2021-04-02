@@ -12,7 +12,6 @@ class App {
     // TODO module
     const fac = new FastAverageColor();
 
-
     const elements = document.querySelectorAll('.card__img');
     const observer = lozad(elements, {
       loaded(el) {
@@ -22,11 +21,14 @@ class App {
             algorithm: 'dominant',
           })
           .then((color) => {
+            console.log(color);
             console.log(`average color run`);
             console.log(el);
             console.log(color);
-            if (color.isLight) {
-              el.closest('.card').classList.add('card--dark');
+            if (color.isDark) {
+              if (!el.closest('.card').classList.contains('card--closed')) {
+                el.closest('.card').classList.add('card--dark');
+              }
             }
           })
           .catch((e) => {
@@ -45,9 +47,9 @@ class App {
       slidesPerView: 'auto',
       spaceBetween: 0,
       loop: false,
-      // centeredSlides: true,
-      // centeredSlidesBounds: true,
-      freeMode: true,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      freeMode: false,
       freeModeMomentumBounce: false,
       resistanceRatio: 0,
     });
