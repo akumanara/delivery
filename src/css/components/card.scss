@@ -7,7 +7,7 @@
   overflow: hidden;
   border-radius: 8px;
   filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.08));
-
+  margin-bottom: 24px;
   &--full-width {
     width: 100%;
   }
@@ -296,11 +296,11 @@
   &__status-line-icon-svg--dark {
     display: block;
   }
-  .card--closed &__status-line-icon-svg--light,
+
   .card--dark &__status-line-icon-svg--light {
     display: block;
   }
-  .card--closed &__status-line-icon-svg--dark,
+
   .card--dark &__status-line-icon-svg--dark {
     display: none;
   }

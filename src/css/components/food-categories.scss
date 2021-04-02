@@ -1,0 +1,40 @@
+.food-categories {
+  &__item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8px;
+  }
+  &__item-img-parent {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 6px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      border-radius: 50%;
+      z-index: -1;
+      background-color: #eaebec;
+    }
+  }
+  &__item-img {
+    width: 100%;
+    max-width: 46px;
+    height: auto;
+  }
+  &__item-title {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+}
