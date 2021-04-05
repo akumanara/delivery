@@ -19,15 +19,17 @@ class App {
     });
 
     // Featured slider
-    this.swiper2 = new Swiper('.featured-slider__swiper', {
-      slidesPerView: 'auto',
-      spaceBetween: 16,
-      loop: false,
-      freeMode: true,
-      freeModeMomentumBounce: false,
-      resistanceRatio: 0,
-      slidesOffsetAfter: 16,
-      slidesOffsetBefore: 16,
+    document.querySelectorAll('.featured-slider__swiper').forEach((el) => {
+      const tmpSlider = new Swiper(el, {
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        loop: false,
+        freeMode: true,
+        freeModeMomentumBounce: false,
+        resistanceRatio: 0,
+        slidesOffsetAfter: 16,
+        slidesOffsetBefore: 16,
+      });
     });
 
     // Lazy load card images with average color afterwards
