@@ -33,7 +33,7 @@ sass.compiler = require('node-sass');
 gulp.task('css-dev', (done) => {
   return (
     gulp
-      .src([src_folder + 'css/base/entry.scss'])
+      .src([src_folder + 'css/entry.scss'])
       .pipe(
         sass({
           includePaths: ['node_modules'],

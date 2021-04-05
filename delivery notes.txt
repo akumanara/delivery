@@ -231,7 +231,12 @@ ETKOS APO TA horizontal sliders.
 
 ----------------------
 
-where do i left off.
-food categories. na rwtisw to misa gia ta eikonidia sto food category
+FOR MISA
+colors
+typography
+containers
+spacing
+section spacing
+
 
 

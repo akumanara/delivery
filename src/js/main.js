@@ -8,6 +8,28 @@ import FastAverageColor from 'fast-average-color';
 
 class App {
   constructor() {
+    // Food categories slider
+    this.swiper = new Swiper('.food-categories__swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      loop: false,
+      freeMode: true,
+      freeModeMomentumBounce: false,
+      resistanceRatio: 0,
+    });
+
+    // Featured slider
+    this.swiper2 = new Swiper('.featured-slider__swiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      loop: false,
+      freeMode: true,
+      freeModeMomentumBounce: false,
+      resistanceRatio: 0,
+      slidesOffsetAfter: 16,
+      slidesOffsetBefore: 16,
+    });
+
     // Lazy load card images with average color afterwards
     // TODO module
     const fac = new FastAverageColor();
@@ -40,26 +62,26 @@ class App {
 
     // Scroll with categories swiper
     // TODO module
-    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-    this.triggeringScrollEvents = true;
+    // gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+    // this.triggeringScrollEvents = true;
 
-    this.swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
-      loop: false,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      freeMode: false,
-      freeModeMomentumBounce: false,
-      resistanceRatio: 0,
-    });
+    // this.swiper = new Swiper('.prototype__swiper', {
+    //   slidesPerView: 'auto',
+    //   spaceBetween: 0,
+    //   loop: false,
+    //   centeredSlides: true,
+    //   centeredSlidesBounds: true,
+    //   freeMode: false,
+    //   freeModeMomentumBounce: false,
+    //   resistanceRatio: 0,
+    // });
 
-    this.DOM = {
-      sections: document.querySelectorAll('.menu__category'),
-      swiperItems: document.querySelectorAll('.categories__item'),
-    };
+    // this.DOM = {
+    //   sections: document.querySelectorAll('.menu__category'),
+    //   swiperItems: document.querySelectorAll('.categories__item'),
+    // };
 
-    this.init();
+    // this.init();
   }
 
   init() {

@@ -47,6 +47,7 @@
     "lodash": "^4.17.21",
     "lozad": "^1.16.0",
     "normalize.css": "^8.0.1",
+    "smooth-corners": "^1.0.6",
     "swiper": "^6.5.0"
   }
 }

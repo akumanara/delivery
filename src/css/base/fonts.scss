@@ -1,13 +1,178 @@
-//todo
+//Averta todo get the bought webfont
+@font-face {
+  font-family: 'Averta';
+  src: url('../fonts/AvertaSTD/35C887_0_0.eot');
+  src: url('../fonts/AvertaSTD/35C887_0_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/AvertaSTD/35C887_0_0.woff2') format('woff2'),
+    url('../fonts/AvertaSTD/35C887_0_0.woff') format('woff'),
+    url('../fonts/AvertaSTD/35C887_0_0.ttf') format('truetype');
+  font-weight: 900;
+}
 
-// font-size: 16px
-//line height  19px
-// used: card: title
+@font-face {
+  font-family: 'Averta';
+  src: url('../fonts/AvertaSTD/35C887_2_0.eot');
+  src: url('../fonts/AvertaSTD/35C887_2_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/AvertaSTD/35C887_2_0.woff2') format('woff2'),
+    url('../fonts/AvertaSTD/35C887_2_0.woff') format('woff'),
+    url('../fonts/AvertaSTD/35C887_2_0.ttf') format('truetype');
+  font-weight: 700;
+}
 
-// font-size: 14px;
-// line-height: 150%;
-// used: card: description, status line
+@font-face {
+  font-family: 'Averta';
+  src: url('../fonts/AvertaSTD/35C887_A_0.eot');
+  src: url('../fonts/AvertaSTD/35C887_A_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/AvertaSTD/35C887_A_0.woff2') format('woff2'),
+    url('../fonts/AvertaSTD/35C887_A_0.woff') format('woff'),
+    url('../fonts/AvertaSTD/35C887_A_0.ttf') format('truetype');
+  font-weight: 400;
+}
 
-// font-size: 12px;
-// line-height: 14px;
-// used: card: badges
+@font-face {
+  font-family: 'Averta';
+  src: url('../fonts/AvertaSTD/35C887_8_0.eot');
+  src: url('../fonts/AvertaSTD/35C887_8_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/AvertaSTD/35C887_8_0.woff2') format('woff2'),
+    url('../fonts/AvertaSTD/35C887_8_0.woff') format('woff'),
+    url('../fonts/AvertaSTD/35C887_8_0.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('../fonts/AvertaSTD/35C887_E_0.eot');
+  src: url('../fonts/AvertaSTD/35C887_E_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/AvertaSTD/35C887_E_0.woff2') format('woff2'),
+    url('../fonts/AvertaSTD/35C887_E_0.woff') format('woff'),
+    url('../fonts/AvertaSTD/35C887_E_0.ttf') format('truetype');
+  font-weight: 100;
+}
+
+.font-averta {
+  font-family: 'Averta', sans-serif;
+}
+
+@mixin font-averta {
+  font-family: 'Averta', sans-serif;
+}
+
+/* System Font Stack */
+// https://css-tricks.com/snippets/css/system-font-stack/
+//https://devhints.io/css-system-font-stack
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Font Styles (size and line height)
+   ========================================================================== */
+
+@mixin font-size-0 {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@mixin font-size-1 {
+  font-size: 14px;
+  line-height: 16px;
+}
+@mixin font-size-2 {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+@mixin font-size-4 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@mixin font-size-5 {
+  font-size: 20px;
+  line-height: 130%;
+}
+@mixin font-size-6 {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+@mixin font-size-7 {
+  font-size: 20px;
+  line-height: 130%;
+}
+
+@mixin font-size-8 {
+  font-size: 22px;
+  line-height: 130%;
+}
+@mixin font-size-9 {
+  font-size: 32px;
+  line-height: 90%;
+}
+
+/* Font weights
+   ========================================================================== */
+
+/*
+100 - Thin
+200 - Extra Light, Ultra Light
+300 - Light
+400 - Normal, Book, Regular
+500 - Medium
+600 - Semi Bold, Demi Bold
+700 - Bold
+800 - Extra Bold, Ultra Bold
+900 - Black, Heavy
+*/
+.font-weight-100 {
+  font-weight: 200;
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+$fontWeights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+@each $fontWeight in $fontWeights {
+  .font-weight-#{$fontWeight} {
+    font-weight: $fontWeight;
+  }
+}

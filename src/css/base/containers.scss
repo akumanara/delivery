@@ -1,5 +1,16 @@
 //todo
 .container-a {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.section-space {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.section-space-top {
+  padding-top: 5px;
+}
+.section-space-bottom {
+  padding-bottom: 5px;
 }
