@@ -5,9 +5,30 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 // import { throttle } from 'lodash';
 import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
+import Stats from 'stats.js';
+import Accordion from 'accordion-js';
 
 class App {
   constructor() {
+    // accordion
+    this.ac = new Accordion('.accordion__container', {
+      elementClass: 'accordion__item',
+      triggerClass: 'accordion__header',
+      panelClass: 'accordion__panel',
+    });
+
+    // fps counter
+    const stats = new Stats();
+    stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
+    document.body.appendChild(stats.dom);
+    function animate() {
+      stats.begin();
+      // monitored code goes here
+      stats.end();
+      requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+
     // Food categories slider
     this.swiper = new Swiper('.food-categories__swiper', {
       slidesPerView: 'auto',
@@ -19,7 +40,7 @@ class App {
     });
 
     // Featured slider
-    document.querySelectorAll('.featured-slider__swiper').forEach((el) => {
+    document.querySelectorAll('.snippet__swiper').forEach((el) => {
       const tmpSlider = new Swiper(el, {
         slidesPerView: 'auto',
         spaceBetween: 16,

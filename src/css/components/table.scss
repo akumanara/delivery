@@ -1,0 +1,19 @@
+.table {
+  &__item {
+    border-bottom: 1px solid #eaebec;
+    padding: 14px 16px;
+    display: flex;
+    // &:last-child {
+    //   border-bottom: none;
+    // }
+  }
+  &__col {
+  }
+  &__col:nth-child(2) {
+    margin-left: auto;
+    padding-left: 6px;
+  }
+  a {
+    color: #5a88ff;
+  }
+}

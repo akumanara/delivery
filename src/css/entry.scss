@@ -1,6 +1,7 @@
 //Normalize.css + 3rd party
 @import 'normalize.css/normalize';
 @import 'swiper/swiper-bundle';
+@import 'accordion-js/dist/accordion.min';
 
 // Main
 @import './base/global.scss';
@@ -10,7 +11,6 @@
 @import './base/containers.scss';
 
 // Components
-// @import '../components/card.scss';
 @import './components/card.scss';
 @import './components/menu.scss';
 @import './components/categories.scss';
@@ -19,5 +19,7 @@
 @import './components/ad-banner.scss';
 @import './components/food-categories.scss';
 @import './components/delivery-btn.scss';
-@import './components/featured-slider.scss';
+@import './components/snippet.scss';
 @import './components/stores.scss';
+@import './components/accordion.scss';
+@import './components/table.scss';

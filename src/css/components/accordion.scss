@@ -1,0 +1,57 @@
+.accordion {
+  &__item {
+    box-sizing: border-box;
+    transition: $trans;
+    &.is-active {
+      background-color: #f6f7f9;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 20px 16px;
+
+    &--logo {
+      padding: 14px 16px;
+    }
+  }
+  &__header-content {
+    @include font-averta;
+    @include font-size-9;
+
+    font-weight: 700;
+  }
+
+  &__header-arrow {
+    padding-left: 6px;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+
+    img {
+      transition: $trans;
+      .is-active & {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__panel {
+    overflow: hidden;
+    transition: $trans;
+  }
+  &__description {
+    padding: 10px 16px;
+    @include font-size-4;
+
+    font-weight: 500;
+  }
+  &__content {
+    @include font-size-1;
+
+    font-weight: 700;
+  }
+}
+
+//accordion
+// transparent kai otan anoigi pernei xrwma bg
