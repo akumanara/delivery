@@ -7,10 +7,55 @@ import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
 import Stats from 'stats.js';
 import Accordion from 'accordion-js';
+import List from 'list.js';
 
 class App {
   constructor() {
+    // List.js for sorting and searching
+    const storesListElement = document.querySelector('.stores');
+    const options = {
+      listClass: 'stores__list',
+      valueNames: [
+        'card__title',
+        { data: ['native', 'name', 'distance', 'rating'] },
+      ],
+    };
+
+    const storeList = new List(storesListElement, options);
+    window.list = storeList;
+
+    for (let index = 0; index < 100; index++) {
+      const native = Math.floor(Math.random() * 100);
+      const name = makeid(5);
+      const rating = Math.floor(Math.random() * 10);
+      const distance = Math.floor(Math.random() * 1000);
+      storeList.add({
+        card__title: `${name}.${native}.${rating}.${distance}`,
+        native,
+        name,
+        rating,
+        distance,
+      });
+    }
+    // document.querySelector('#search-field').addEventListener('keyup', (e) => {
+    //   const searchString = document.querySelector('#search-field').value;
+    //   storeList.search(searchString);
+    // });
+    // generate a random string
+    function makeid(length) {
+      const result = [];
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      const charactersLength = characters.length;
+      for (let i = 0; i < length; i++) {
+        result.push(
+          characters.charAt(Math.floor(Math.random() * charactersLength)),
+        );
+      }
+      return result.join('');
+    }
+
     // accordion
+    const accordions = [];
     document.querySelectorAll('.accordion__container').forEach((el) => {
       const tmpAccordionContainer = new Accordion(el, {
         elementClass: 'accordion__item',
@@ -18,6 +63,7 @@ class App {
         panelClass: 'accordion__panel',
         ariaEnabled: false,
       });
+      accordions.push(tmpAccordionContainer);
     });
 
     // fps counter
@@ -43,6 +89,7 @@ class App {
     });
 
     // Featured slider
+    const sliders = [];
     document.querySelectorAll('.snippet__swiper').forEach((el) => {
       const tmpSlider = new Swiper(el, {
         slidesPerView: 'auto',
@@ -54,12 +101,12 @@ class App {
         slidesOffsetAfter: 16,
         slidesOffsetBefore: 16,
       });
+      sliders.push(tmpSlider);
     });
 
     // Lazy load card images with average color afterwards
     // TODO module
     const fac = new FastAverageColor();
-
     const elements = document.querySelectorAll('.card__img');
     const observer = lozad(elements, {
       loaded(el) {
@@ -69,10 +116,10 @@ class App {
             algorithm: 'dominant',
           })
           .then((color) => {
-            console.log(color);
-            console.log(`average color run`);
-            console.log(el);
-            console.log(color);
+            // console.log(color);
+            // console.log(`average color run`);
+            // console.log(el);
+            // console.log(color);
             if (color.isDark) {
               if (!el.closest('.card').classList.contains('card--closed')) {
                 el.closest('.card').classList.add('card--dark');
