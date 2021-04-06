@@ -11,10 +11,13 @@ import Accordion from 'accordion-js';
 class App {
   constructor() {
     // accordion
-    this.ac = new Accordion('.accordion__container', {
-      elementClass: 'accordion__item',
-      triggerClass: 'accordion__header',
-      panelClass: 'accordion__panel',
+    document.querySelectorAll('.accordion__container').forEach((el) => {
+      const tmpAccordionContainer = new Accordion(el, {
+        elementClass: 'accordion__item',
+        triggerClass: 'accordion__header',
+        panelClass: 'accordion__panel',
+        ariaEnabled: false,
+      });
     });
 
     // fps counter

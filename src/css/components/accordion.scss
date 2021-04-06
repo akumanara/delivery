@@ -38,7 +38,8 @@
 
   &__panel {
     overflow: hidden;
-    transition: $trans;
+    transition-property: height, visibility;
+    transition-timing-function: $trans-easing;
   }
   &__description {
     padding: 10px 16px;
@@ -55,3 +56,4 @@
 
 //accordion
 // transparent kai otan anoigi pernei xrwma bg
+// otan exei logo exei alla kena apo otan exei text
