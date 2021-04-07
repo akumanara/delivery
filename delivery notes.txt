@@ -239,7 +239,8 @@ spacing
 section spacing
 =============================
 
-PERFORMANCE
-=============================
-accordion transition lag.
 
+
+where do i left off
+=============================
+store page: product layout

@@ -10,6 +10,13 @@
 
     font-weight: 700;
   }
+
+  &__description {
+    padding: 10px 0;
+    @include font-size-4;
+
+    font-weight: 500;
+  }
   &__btn {
     @include font-size-2;
 

@@ -14,7 +14,7 @@ class App {
     showFPS();
     // Food Categories slider
     const foodCategoriesElement = document.querySelector(
-      'food-categories__swiper',
+      '.food-categories__swiper',
     );
     if (foodCategoriesElement) {
       this.foodCategoriesSlider = new Swiper('.food-categories__swiper', {
@@ -68,7 +68,7 @@ class App {
     }
 
     // Accordions
-    const accordions = [];
+    this.accordions = [];
     document.querySelectorAll('.accordion__container').forEach((el) => {
       const tmpAccordionContainer = new Accordion(el, {
         duration: 600,
@@ -76,22 +76,20 @@ class App {
         triggerClass: 'accordion__header',
         panelClass: 'accordion__panel',
         ariaEnabled: false,
+        // when we open/close the accordion we change its height thus performing a DOM reflow.
+        // Scrolltrigger need to be refreshed to re-calculate the scroll trigger positions.
         onOpen() {
-          if (app.storeCatalog) {
-            app.storeCatalog.refreshScrollTrigger();
-          }
+          app.reflow();
         },
         onClose() {
-          if (app.storeCatalog) {
-            app.storeCatalog.refreshScrollTrigger();
-          }
+          app.reflow();
         },
       });
-      accordions.push(tmpAccordionContainer);
+      this.accordions.push(tmpAccordionContainer);
     });
 
     // Featured slider
-    const sliders = [];
+    this.sliders = [];
     document.querySelectorAll('.snippet__swiper').forEach((el) => {
       const tmpSlider = new Swiper(el, {
         slidesPerView: 'auto',
@@ -103,7 +101,7 @@ class App {
         slidesOffsetAfter: 16,
         slidesOffsetBefore: 16,
       });
-      sliders.push(tmpSlider);
+      this.sliders.push(tmpSlider);
     });
 
     // Lazy load card images with average color afterwards
@@ -135,6 +133,14 @@ class App {
     });
     observer.observe();
     deliveryConsole();
+  }
+
+  // must be called when a reflow occurs
+  reflow() {
+    console.log('DOM reflow');
+    if (this.storeCatalog) {
+      this.storeCatalog.refreshScrollTrigger();
+    }
   }
 }
 
