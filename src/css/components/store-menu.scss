@@ -1,0 +1,42 @@
+.store-menu {
+  //SLIDER
+  &__slider {
+    width: 100%;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    // background-color: #fff;
+  }
+  .swiper-slide {
+    width: auto;
+  }
+
+  &__slider-item {
+    display: inline-flex;
+    padding: 10px 8px;
+    border-radius: 8px;
+    transition: $trans;
+    &.active {
+      background-color: red;
+    }
+  }
+  &__slider-item-img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    padding-right: 10px;
+  }
+  &__slider-item-copy {
+    @include font-size-4;
+
+    font-weight: 700;
+  }
+
+  // SECTIONS
+  &__catalog {
+  }
+  &__catalog-section {
+    height: calc(100vh + 50px);
+    outline: 1px solid red;
+  }
+}

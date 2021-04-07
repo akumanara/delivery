@@ -237,8 +237,9 @@ typography
 containers
 spacing
 section spacing
+=============================
 
+PERFORMANCE
+=============================
+accordion transition lag.
 
-
-food category
-2 lines
