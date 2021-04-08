@@ -72,6 +72,10 @@
 
     font-weight: 700;
     margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
   }
   &__product-description {
     @include font-size-2;
