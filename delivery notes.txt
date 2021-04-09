@@ -108,125 +108,24 @@ prototypes swiper
 -------------
 
 
-Server side page - Exploration view
-===================
-fernoume ola ta katastimata - ta sliders tha erthoun me serverside queries kai tha fortosoume ola ta katastimata sto page
-an aferesw  ta filtra h ta sort ksanagirnaei sto default view me  ta modules (sliders)
-
-Server side page - Category view
-===================
-fernoume ola ta katastimata me ta dika tou sliders me serverside queries.
-
-Server side page - Store view
-===================
-photogallery me tis photografies
-
-
-
-karta katastimatos
-===================
-- xronos paradosis: pos tha ginei extract
-- akrivo - fthino estiatorio
-- reviews: 10vathmia klimaka - tha diksoume h oxi tis aksiologiseis?
-- promoted status?
-- apostasi?
-- elaxisti paragelia
-
-
-sorting options
-===================
-- default
-- aksiogloigisi
-- xronos paradosis
-- apostasi
-- elaxisti xrewsi
-
-===================
-22/3
-===================
-
-den tha piasw ta parakatw:
-- header
-- search
-- promo
-
-===================
-Cards
-===================
-2 types of Cards
-- long
-- short
-
-kai ta 2 types exoun krimeno ena description pou uparxei periptwsi na fenete h na mi fenete.
-px. sti selida catalog tha yparxei description enw sti selida category den tha yparxei
-
-image - cover fill. img object-fit
-to mono pou diaxwrizei tis kartes (long - short) einai to ipsos tis fotografias
-
-full width kartes. (sto store se later dev)
-
-badges
-------
-to badge den diplonei kai meta apo ena width kovete me ellipse.
-to badge mporei na exei icon kai mporei kai na min exei.
-to badge icon einai fixed 18x18 px.
-export tha kanei ta icons apo ta panw
-max tha yparxei ena badge deksia kai ena badge aristera
-
-
-statuses
-------
-status line tha einai sto badge container
-yparxei status line pou leei uparxei kapio provlima
-yparxei status pou leei closed store
-sto closed store uparxei kai ena icon sti mesi
-svg icon sto status line. img ή svg? me svg tha allazei to xrwma (fill) me css
-ta badges tha exoun 2 backgrounds. black or white. nice to have me js library.
-https://github.com/fast-average-color/fast-average-color/blob/master/docs/examples.md#from-loaded-image
-http://jsfiddle.net/s7Wx2/
 
 
 
 
-bottom block
-------
-title - kovete me elleipse overflow
-tags - kovete me elleipse overflow
 
 
 
 
------------
-spacings
--
-8px
-6px
 
 
-==============================
-Cards
-==============================
-
-Option A
-- Long
-- Short (.card--short)
-
-Option B
-- With Tags
-- Without Tags (.card--no-tags)
-
-Option C
-- Dark Badges
-- White Badges (.card--dark)
-
-Option D
-- Open State
-- Status line State (.card--status-line)
-- Closed State (.card--closed)
 
 
-Yparxei pantou lazy load stis photografies stis kartes.,
-ETKOS APO TA horizontal sliders.
+
+
+
+
+
+
 
 
 ----------------------
