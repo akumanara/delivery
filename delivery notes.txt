@@ -67,61 +67,6 @@ define some space utilities
 
 
 
-----------------
-normalize.css
-axios for http api calls
-sass for styles
-pure html (no template engine)
-select2
-
-list.js (asana)
-https://www.highcharts.com/
-
-----------
-agenda
-- browser support
-- suggested libraries and git repo for front end
-- starter
-- sentry (error tracking)
-- tech tour
-- api list
-- flag for app native (user agent go native)
-- bootstrap ()
-- starter show
-================================
-
-address scripts (autocomplete)
-add to basket / plus minus basket
-
-================================
-9/3 calendar 16:00
-================================
-
-swiper - main idea for swipe elements
-categories on click and on scroll move like wolt / e-food native apps. (maybe try scrolltrigger from gsap)
-o xartis tha einai fixed othoni kai thelei na einai fixed stuff
-click sto xarti kai sta product tha einai modal (lightbox) (apo katw)
-
--------------
-prototypes swiper
-
--------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -142,4 +87,4 @@ section spacing
 
 where do i left off
 =============================
-store page: product layout
+store page: product layout - need to do out of stock

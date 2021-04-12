@@ -42,8 +42,8 @@
   &__catalog {
   }
   &__catalog-section {
-    min-height: calc(100vh + 50px);
-    outline: 1px solid red;
+    // min-height: calc(100vh + 50px);
+    // outline: 1px solid red;
   }
 
   // PRODUCT(S)
@@ -87,6 +87,10 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 2;
+
+    .store-menu__product--out-of-stock & {
+      opacity: 0.4;
+    }
   }
   &__product-price-container {
     display: flex;
@@ -106,12 +110,19 @@
     color: #ec5176;
     text-decoration-line: line-through;
   }
+
+  &__product-out-of-stock {
+    color: #ec5176;
+  }
   &__product-tag {
     color: #5a88ff;
   }
   &__product-img-item {
     padding-left: 10px;
     margin-left: auto;
+    .store-menu__product--out-of-stock & {
+      opacity: 0.4;
+    }
   }
   &__product-img-container {
     width: 70px;
