@@ -33,6 +33,7 @@ class App {
     }
 
     // List.js for sorting and searching on stores
+    // always visible items. https://github.com/javve/list.js/issues/421
     const storesListElement = document.querySelector('.stores');
     if (storesListElement) {
       const options = {
@@ -129,14 +130,14 @@ class App {
           .catch((e) => {
             console.log(e);
           });
-      },
-    });
-    observer.observe();
-    deliveryConsole();
-  }
+        },
+      });
+      observer.observe();
+      deliveryConsole();
+    }
 
-  // must be called when a reflow occurs
-  reflow() {
+    // must be called when a reflow occurs
+    reflow() {
     console.log('DOM reflow');
     if (this.storeCatalog) {
       this.storeCatalog.refreshScrollTrigger();
