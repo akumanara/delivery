@@ -89,3 +89,13 @@ where do i left off
 =============================
 store page: product layout - need to do out of stock
 delivery on previous addresses. different addresses
+
+
+When the store is near to closure
+=============================
+Countdown timer with close status and refresh on close time
+
+
+
+
+
