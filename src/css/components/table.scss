@@ -3,9 +3,9 @@
     border-bottom: 1px solid #eaebec;
     padding: 14px 16px;
     display: flex;
-    // &:last-child {
-    //   border-bottom: none;
-    // }
+    &--no-padding {
+      padding: 0;
+    }
   }
   &__col {
   }

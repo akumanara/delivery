@@ -5,6 +5,7 @@ import FastAverageColor from 'fast-average-color';
 
 import Accordion from 'accordion-js';
 import List from 'list.js';
+import arrayMove from 'array-move';
 import { showFPS, makeid, deliveryConsole } from './utils';
 import StoreCatalog from './storeCatalog';
 
@@ -62,10 +63,26 @@ class App {
         });
       }
       // search and filter
-      // document.querySelector('#search-field').addEventListener('keyup', (e) => {
-      //   const searchString = document.querySelector('#search-field').value;
-      //   storeList.search(searchString);
-      // });
+      document.querySelector('#search-field').addEventListener('keyup', (e) => {
+        const searchString = document.querySelector('#search-field').value;
+        storeList.search(searchString);
+      });
+
+      storeList.on('updated', (list) => {
+        console.log('updated');
+      });
+      storeList.on('searchStart', (list) => {
+        console.log('searchStart');
+      });
+      storeList.on('searchComplete', (list) => {
+        console.log('searchComplete');
+      });
+
+      // how to change order manually.
+      window.doThat = function () {
+        arrayMove.mutate(storeList.items, 0, 10);
+        storeList.update();
+      };
     }
 
     // Accordions
@@ -80,10 +97,17 @@ class App {
         // when we open/close the accordion we change its height thus performing a DOM reflow.
         // Scrolltrigger need to be refreshed to re-calculate the scroll trigger positions.
         onOpen() {
-          app.reflow();
+          // dont reflow on the nested accordions because it already triggers once on the parent accordion.
+          // onOpen and onClose is triggered via transitionend event which is fired when a CSS transition has completed.
+          if (!el.classList.contains('accordion__container--nested')) {
+            app.reflow();
+          }
         },
         onClose() {
-          app.reflow();
+          // see above onOpen comment
+          if (!el.classList.contains('accordion__container--nested')) {
+            app.reflow();
+          }
         },
       });
       this.accordions.push(tmpAccordionContainer);
@@ -130,14 +154,14 @@ class App {
           .catch((e) => {
             console.log(e);
           });
-        },
-      });
-      observer.observe();
-      deliveryConsole();
-    }
+      },
+    });
+    observer.observe();
+    deliveryConsole();
+  }
 
-    // must be called when a reflow occurs
-    reflow() {
+  // must be called when a reflow occurs
+  reflow() {
     console.log('DOM reflow');
     if (this.storeCatalog) {
       this.storeCatalog.refreshScrollTrigger();
