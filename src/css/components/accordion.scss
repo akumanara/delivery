@@ -10,7 +10,6 @@
   }
   &__item {
     box-sizing: border-box;
-    transition: $trans;
 
     &.is-active {
       background-color: #f6f7f9;
@@ -61,6 +60,7 @@
     overflow: hidden;
     transition-property: height, visibility;
     transition-timing-function: $trans-easing;
+    will-change: height;
   }
   &__description {
     padding: 16px;
