@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 // import { throttle } from 'lodash';
 import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
@@ -13,6 +13,19 @@ class App {
   constructor() {
     const app = this;
     showFPS();
+
+    // Store carousel
+    const storeCarouselElement = document.querySelector('.store-carousel');
+    if (storeCarouselElement) {
+      this.StoreCarouselSwiper = new Swiper('.store-carousel__slider', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        resistance: true,
+        resistanceRatio: 0,
+      });
+    }
+
     // Food Categories slider
     const foodCategoriesElement = document.querySelector(
       '.food-categories__swiper',
