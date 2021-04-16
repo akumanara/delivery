@@ -38,10 +38,10 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    color: black;
+    color: white;
   }
   &__rating-text {
     margin-right: 10px;
@@ -72,10 +72,10 @@
     align-self: flex-end;
     align-items: center;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    color: black;
+    color: white;
   }
 
   &__badge-text {
