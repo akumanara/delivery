@@ -85,10 +85,7 @@ section spacing
 
 
 
-where do i left off
-=============================
-store page: product layout - need to do out of stock
-delivery on previous addresses. different addresses
+
 
 
 When the store is near to closure
@@ -104,3 +101,6 @@ dropdown and inputs
 native: dp on mobile, desktop accordion
 textarea: resizable
 
+where do i left off
+=============================
+product modal creation
