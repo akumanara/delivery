@@ -18,6 +18,8 @@ export default class {
     this.onClick = this.onClick.bind(this);
     this.closeModal = this.closeModal.bind(this);
 
+    this.images = ['./images/b2.jpg', './images/b1.jpg'];
+
     this.init();
   }
 
@@ -40,27 +42,43 @@ export default class {
 
   // eslint-disable-next-line class-methods-use-this
   createModal() {
-    // Get the template as a string
+    // Get the modal template
     const modalTemplate = document.querySelector('.product-modal-template');
+
+    // Get the carousel slide template
+    const slideTemplate = modalTemplate.content.querySelector(
+      '.slide-template',
+    );
+    this.images.forEach((image) => {
+      const slideTemplateCloneString = slideTemplate.content.firstElementChild.cloneNode(
+        true,
+      ).outerHTML;
+      const compiledTemplate = template(slideTemplateCloneString, {
+        imageURL: image,
+      });
+      console.log(compiledTemplate);
+    });
+
+    // Get the template as a string
     const templateClone = modalTemplate.content.firstElementChild.cloneNode(
       true,
     );
     const templateAsString = templateClone.outerHTML;
 
-    // Compile the template
-    const compiledTemplate = template(templateAsString, {
-      title: 'Φτερούγες κοτόπουλου με μέλι & γλυκιά σάλτσα τσίλι',
-      description:
-        'Με τυρί, φρέσκια ντοµάτα, φρέσκα μανιτάρια, ελιές, φέτα, πιπεριά, κρεµµύδι και ρίγανη.',
-    });
+    // // Compile the template
+    // const compiledTemplate = template(templateAsString, {
+    //   title: 'Φτερούγες κοτόπουλου με μέλι & γλυκιά σάλτσα τσίλι',
+    //   description:
+    //     'Με τυρί, φρέσκια ντοµάτα, φρέσκα μανιτάρια, ελιές, φέτα, πιπεριά, κρεµµύδι και ρίγανη.',
+    // });
 
-    // Append to the body
-    document.body.insertAdjacentHTML('beforeend', compiledTemplate);
+    // // Append to the body
+    // document.body.insertAdjacentHTML('beforeend', compiledTemplate);
 
-    // Store the modal
-    // TODO add a unique string as an id or class
-    this.modalElement = document.body.lastChild;
-    console.log(this.modalElement);
+    // // Store the modal
+    // // TODO add a unique string as an id or class
+    // this.modalElement = document.body.lastChild;
+    // console.log(this.modalElement);
   }
 
   // Executes after we have created the modal
