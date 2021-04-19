@@ -62,19 +62,6 @@
   font-family: 'Averta', sans-serif;
 }
 
-/* System Font Stack */
-// https://css-tricks.com/snippets/css/system-font-stack/
-//https://devhints.io/css-system-font-stack
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  font-weight: normal;
-  line-height: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 /* Font Styles (size and line height)
    ========================================================================== */
 
@@ -175,4 +162,19 @@ $fontWeights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   .font-weight-#{$fontWeight} {
     font-weight: $fontWeight;
   }
+}
+
+/* System Font Stack */
+// https://css-tricks.com/snippets/css/system-font-stack/
+//https://devhints.io/css-system-font-stack
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include font-size-4;
+
+  font-weight: 500;
 }

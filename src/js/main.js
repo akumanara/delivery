@@ -1,5 +1,7 @@
+// core js in order to add new features of js
+// import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import Swiper from 'swiper/bundle';
-// import { throttle } from 'lodash';
 import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
 
@@ -8,11 +10,24 @@ import List from 'list.js';
 import arrayMove from 'array-move';
 import { showFPS, makeid, deliveryConsole } from './utils';
 import StoreCatalog from './storeCatalog';
+import Product from './product';
 
 class App {
   constructor() {
     const app = this;
-    showFPS();
+    // showFPS();
+    this.DOM = {
+      loader: document.querySelector('.delivery-loader'),
+    };
+
+    // product modal (add product to basket)
+    const products = [];
+    document
+      .querySelectorAll('.store-menu__product')
+      .forEach((productElement) => {
+        const tmpProduct = new Product(productElement, app);
+        products.push(tmpProduct);
+      });
 
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');
@@ -179,6 +194,14 @@ class App {
     if (this.storeCatalog) {
       this.storeCatalog.refreshScrollTrigger();
     }
+  }
+
+  showLoader() {
+    this.DOM.loader.classList.add('active');
+  }
+
+  hideLoader() {
+    this.DOM.loader.classList.remove('active');
   }
 }
 

@@ -1,21 +1,21 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  mode: "production",
+  mode: 'development',
   output: {
-    path: path.resolve(__dirname, "../dist"),
-    filename: "app.js",
+    path: path.resolve(__dirname, '../dist'),
+    filename: 'app.js',
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: [["@babel/preset-env", { targets: "defaults" }]],
+            presets: [['@babel/preset-env', { targets: 'defaults' }]],
           },
         },
       },
