@@ -1,6 +1,5 @@
 // import resolveToString from 'es6-template-strings/resolve-to-string';
 import Swiper from 'swiper/bundle';
-import { collapseTextChangeRangesAcrossMultipleVersions } from 'typescript';
 import API from './api';
 
 const template = require('es6-template-strings');
@@ -59,6 +58,7 @@ export default class {
     document.body.insertAdjacentHTML('beforeend', compiledTemplate);
 
     // Store the modal
+    // TODO add a unique string as an id or class
     this.modalElement = document.body.lastChild;
     console.log(this.modalElement);
   }
@@ -66,7 +66,10 @@ export default class {
   // Executes after we have created the modal
   initModal() {
     // Photos gallery
-    this.slider = new Swiper('.product-modal__slider', {
+    const sliderElement = this.modalElement.querySelector(
+      '.product-modal__slider',
+    );
+    this.slider = new Swiper(sliderElement, {
       pagination: {
         el: '.swiper-pagination',
       },
@@ -77,9 +80,14 @@ export default class {
     this.modalElement
       .querySelector('.product-modal__close-btn')
       .addEventListener('click', this.closeModal);
+
+    // hide overflow
+    document.body.classList.add('hide-overflow');
   }
 
   closeModal() {
     this.modalElement.remove();
+    // show overflow
+    document.body.classList.remove('hide-overflow');
   }
 }

@@ -15,7 +15,7 @@ import Product from './product';
 class App {
   constructor() {
     const app = this;
-    // showFPS();
+    showFPS();
     this.DOM = {
       loader: document.querySelector('.delivery-loader'),
     };
