@@ -10,7 +10,7 @@ import List from 'list.js';
 import arrayMove from 'array-move';
 import { showFPS, makeid, deliveryConsole } from './utils';
 import StoreCatalog from './storeCatalog';
-import Product from './product';
+import ProductList from './productList';
 
 class App {
   constructor() {
@@ -21,13 +21,8 @@ class App {
     };
 
     // product modal (add product to basket)
-    const products = [];
-    document
-      .querySelectorAll('.store-menu__product')
-      .forEach((productElement) => {
-        const tmpProduct = new Product(productElement, app);
-        products.push(tmpProduct);
-      });
+    this.productList = new ProductList(app);
+    // const products = [];
 
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');

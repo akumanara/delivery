@@ -5,6 +5,6 @@ export default class {
 
   getProductModal(url) {
     // placeholder
-    return new Promise((resolve) => setTimeout(resolve, 500));
+    return new Promise((resolve) => setTimeout(resolve, 200));
   }
 }

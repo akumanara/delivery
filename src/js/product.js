@@ -1,16 +1,17 @@
 // import resolveToString from 'es6-template-strings/resolve-to-string';
 import Swiper from 'swiper/bundle';
+import randomstring from 'randomstring';
 import API from './api';
 
-const template = require('es6-template-strings');
+// const template = require('es6-template-strings');
 
 export default class {
-  constructor(productElement, app) {
+  constructor(productElement, template, app) {
     // Data the product might need
     // TODO: add combo / offers
     // - item element, title, description, price,
     // - how many group options, group option settings.
-
+    this.template = template;
     this.element = productElement;
     this.modalURL = this.element.dataset.url;
     this.app = app;
@@ -42,43 +43,27 @@ export default class {
 
   // eslint-disable-next-line class-methods-use-this
   createModal() {
-    // Get the modal template
-    const modalTemplate = document.querySelector('.product-modal-template');
-
-    // Get the carousel slide template
-    const slideTemplate = modalTemplate.content.querySelector(
-      '.slide-template',
-    );
-    this.images.forEach((image) => {
-      const slideTemplateCloneString = slideTemplate.content.firstElementChild.cloneNode(
-        true,
-      ).outerHTML;
-      const compiledTemplate = template(slideTemplateCloneString, {
-        imageURL: image,
-      });
-      console.log(compiledTemplate);
+    const randomString = randomstring.generate({
+      length: 7,
+      charset: 'alphabetic',
     });
+    const context = {
+      id: randomString,
+      title: 'Φτερούγες κοτόπουλου με μέλι & γλυκιά σάλτσα τσίλι',
+      description:
+        'Με τυρί, φρέσκια ντοµάτα, φρέσκα μανιτάρια, ελιές, φέτα, πιπεριά, κρεµµύδι και ρίγανη.',
+      images: [
+        './images/b2.jpg',
+        './images/b1.jpg',
+        './images/b2.jpg',
+        './images/b1.jpg',
+      ],
+    };
 
-    // Get the template as a string
-    const templateClone = modalTemplate.content.firstElementChild.cloneNode(
-      true,
-    );
-    const templateAsString = templateClone.outerHTML;
-
-    // // Compile the template
-    // const compiledTemplate = template(templateAsString, {
-    //   title: 'Φτερούγες κοτόπουλου με μέλι & γλυκιά σάλτσα τσίλι',
-    //   description:
-    //     'Με τυρί, φρέσκια ντοµάτα, φρέσκα μανιτάρια, ελιές, φέτα, πιπεριά, κρεµµύδι και ρίγανη.',
-    // });
-
-    // // Append to the body
-    // document.body.insertAdjacentHTML('beforeend', compiledTemplate);
-
-    // // Store the modal
-    // // TODO add a unique string as an id or class
-    // this.modalElement = document.body.lastChild;
-    // console.log(this.modalElement);
+    // create the template
+    const html = this.template(context);
+    document.body.insertAdjacentHTML('beforeend', html);
+    this.modalElement = document.querySelector(`.${randomString}`);
   }
 
   // Executes after we have created the modal
