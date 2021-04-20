@@ -167,7 +167,10 @@ gulp.task('serve', () => {
 // WATCH TASKS
 //==================================
 gulp.task('watch', () => {
-  gulp.watch(src_folder + 'html/**/*.html', gulp.series('html'));
+  gulp.watch(
+    [src_folder + 'html/**/*.html', src_folder + 'html/**/*.hbs'],
+    gulp.series('html'),
+  );
   gulp.watch(src_folder + 'css/**/*.scss', gulp.series('css'));
   gulp.watch(src_folder + 'js/**/*.js', gulp.series('js'));
   gulp.watch(src_folder + 'images/**/*', gulp.series('images'));

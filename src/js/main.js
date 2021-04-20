@@ -21,8 +21,10 @@ class App {
     };
 
     // product modal (add product to basket)
-    this.productList = new ProductList(app);
-    // const products = [];
+    const storeMenuCatalog = document.querySelector('.store-menu__catalog');
+    if (storeMenuCatalog) {
+      this.productList = new ProductList(app);
+    }
 
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');

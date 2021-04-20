@@ -104,3 +104,60 @@ textarea: resizable
 where do i left off
 =============================
 product modal creation
+
+
+
+PRODUCT OPTIONS
+=============================
+X- id
+X- title
+X- description
+X- price
+T- large_description
+T- start_price (used for diegrameni timi)
+T- isOutOfStock
+T- images (array)
+T- minQuantity (first click adds this amount, you cant have less than this amount)
+T- maxQuantity (you cant add more than this amount)
+
+T- unitOfMeasure (tmx)
+T- unitOfMeasureStep (float) (for visual)
+T- extraUnitOfMeasure (for AB)
+T- extraUnitOfMeasureSize
+
+
+--------------------
+Variants array
+--------------------
+X- variant - array[]
+X-- id
+X-- name
+X-- description (not used in UI)
+X-- price
+
+First priority has the variant price. if it doesnt have we use the base price.
+
+--------------------
+Group options array
+--------------------
+X- id
+X- name
+X- description
+X- min
+X- max
+X- ingredients - array[]
+X-- id
+X-- name
+X-- prices - array[] (prices for variants)
+X--- prices (0 for base price)
+X-- max (used for plus/minus)
+X-- default*
+
+
+
+default ingredients doesnt add to the price.
+default ingredients doesnt remove from the price.
+
+
+
+

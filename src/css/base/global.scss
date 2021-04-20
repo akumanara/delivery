@@ -32,6 +32,11 @@ a {
   text-decoration: none;
 }
 
+// we rarely use images as inline elements and having the as block removes the white bottom gap
+img {
+  display: block;
+}
+
 //to remove later
 .prototype {
   display: none;

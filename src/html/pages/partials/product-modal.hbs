@@ -1,45 +1,61 @@
 <!-- HANDLEBARS TEMPLATE -->
 <script id="entry-template" type="text/x-handlebars-template">
-  <div class='product-modal {{id}}'>
+  <div class="product-modal {{randomString}}">
     <!-- WINDOW -->
-    <div class='product-modal__window'>
+    <div class="product-modal__window">
       <!-- HEADER -->
-      <div class='product-modal__header'>
-        <div class='product-modal__header-left'>
-          <div class='product-modal__title'>
-            {{title}}
+      <div class="product-modal__header">
+        <div class="product-modal__header-left">
+          <div class="product-modal__title">
+            {{name}}
           </div>
         </div>
-        <div class='product-modal__header-right'>
-          <div class='product-modal__close-btn'>
+        <div class="product-modal__header-right">
+          <div class="product-modal__close-btn">
             <img
-              src='./images/icons/modal-close.svg'
-              alt=''
-              class='product-modal__close-btn-img'
+              src="./images/icons/modal-close.svg"
+              alt=""
+              class="product-modal__close-btn-img"
             />
           </div>
         </div>
       </div>
       <!-- BODY -->
-      <div class='product-modal__body'>
+      <div class="product-modal__body">
         <!-- PHOTOS SLIDER -->
-        <div class='product-modal__slider swiper-container'>
-          <div class='swiper-wrapper'>
+        <div class="product-modal__slider swiper-container">
+          <div class="swiper-wrapper">
+            <!-- SLIDES -->
             {{#each images}}
               <!-- SLIDE ITEM -->
-              <div class='swiper-slide'>
-                <div class='product-modal__slide'>
-                  <img src='{{this}}' alt='' class='product-modal__slide-img' />
+              <div class="swiper-slide">
+                <div class="product-modal__slide">
+                  <img src="{{this}}" alt="" class="product-modal__slide-img" />
                 </div>
               </div>
             {{/each}}
           </div>
-          <!-- Add Pagination -->
-          <div class='swiper-pagination'></div>
+          <!-- PAGINATION -->
+          <div class="swiper-pagination"></div>
         </div>
         <!-- DESCRIPTION -->
-        <div class='product-modal__description'>
-          {{description}}
+        <div class="product-modal__description">
+          {{comments}}
+        </div>
+        <!-- PRODUCT OPTIONS -->
+        <div class="product-modal__options">
+          <!-- OPTION -->
+          <div class="product-modal__option">
+            option
+          </div>
+          <!-- OPTION -->
+          <div class="product-modal__option">
+            option
+          </div>
+          <!-- OPTION -->
+          <div class="product-modal__option">
+            option
+          </div>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, pariatur

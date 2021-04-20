@@ -33,8 +33,7 @@ export default class {
     this.app.showLoader();
     // document.body.classList('hide-overflow');
     // fetch the html for the modal
-    await this.api.getProductModal(this.modalURL);
-
+    this.productJSON = await this.api.getProductModal(this.modalURL);
     // Create the modal from the data and init it
     this.createModal();
     this.initModal();
@@ -47,21 +46,10 @@ export default class {
       length: 7,
       charset: 'alphabetic',
     });
-    const context = {
-      id: randomString,
-      title: 'Φτερούγες κοτόπουλου με μέλι & γλυκιά σάλτσα τσίλι',
-      description:
-        'Με τυρί, φρέσκια ντοµάτα, φρέσκα μανιτάρια, ελιές, φέτα, πιπεριά, κρεµµύδι και ρίγανη.',
-      images: [
-        './images/b2.jpg',
-        './images/b1.jpg',
-        './images/b2.jpg',
-        './images/b1.jpg',
-      ],
-    };
+    this.productJSON.randomString = randomString;
 
     // create the template
-    const html = this.template(context);
+    const html = this.template(this.productJSON);
     document.body.insertAdjacentHTML('beforeend', html);
     this.modalElement = document.querySelector(`.${randomString}`);
   }
