@@ -76,35 +76,39 @@
 }
 @mixin font-size-2 {
   font-size: 14px;
-  line-height: 150%;
+  line-height: 21px;
 }
 
 @mixin font-size-4 {
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
 }
 
 @mixin font-size-5 {
   font-size: 20px;
-  line-height: 130%;
+  line-height: 26px;
 }
 @mixin font-size-6 {
   font-size: 20px;
-  line-height: 150%;
+  line-height: 30px;
 }
 
 @mixin font-size-7 {
   font-size: 20px;
-  line-height: 130%;
+  line-height: 26px;
 }
 
 @mixin font-size-8 {
   font-size: 22px;
-  line-height: 130%;
+  line-height: 29px;
+  // 28,6px
+  // line-height: 130%;
 }
 @mixin font-size-9 {
   font-size: 32px;
-  line-height: 90%;
+  line-height: 29px;
+  // 28,8px
+  // line-height: 90%;
 }
 
 /* Font weights

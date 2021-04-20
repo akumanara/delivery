@@ -101,9 +101,7 @@ dropdown and inputs
 native: dp on mobile, desktop accordion
 textarea: resizable
 
-where do i left off
-=============================
-product modal creation
+
 
 
 
@@ -161,3 +159,6 @@ default ingredients doesnt remove from the price.
 
 
 
+where do i left off
+=============================
+product modal - variant and group options objects.

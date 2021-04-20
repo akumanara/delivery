@@ -91,4 +91,138 @@ body {
     font-weight: 500;
     @include font-size-4;
   }
+
+  //group options and variant
+  &__options {
+  }
+  &__option {
+    // outline: 1px solid red;
+    border-bottom: 1px solid #eaebec;
+  }
+  &__option-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    // .is-active & {
+    //   display: none;
+    // }
+  }
+  &__option-header-top {
+    color: #676970;
+    @include font-size-2;
+
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: $trans;
+    opacity: 1;
+    .is-active & {
+      opacity: 0;
+    }
+  }
+  &__option-header-bottom {
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: $trans;
+    opacity: 1;
+    .is-active & {
+      opacity: 0;
+    }
+  }
+
+  &__option-header-opened-container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__option-header-opened-copy {
+    @include font-size-2;
+
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: $trans;
+    opacity: 0;
+    .is-active & {
+      opacity: 1;
+    }
+  }
+
+  &__option-items {
+  }
+  &__option-item {
+    display: flex;
+    padding: 14px 16px;
+    @include font-size-4;
+
+    font-weight: 700;
+    border-bottom: 1px solid #eaebec;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    &--active {
+      color: #5a88ff;
+    }
+  }
+
+  &__option-item-left {
+    display: flex;
+  }
+  &__option-item-right {
+    padding-left: 8px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  &__option-icon {
+    width: 26px;
+    height: 26px;
+    background-color: #e7edfa;
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+  }
+  &__option-icon-inner {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #5a88ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      position: relative;
+      top: 1px;
+      opacity: 0;
+    }
+
+    .product-modal__option-item--active & {
+      width: 16px;
+      height: 16px;
+      background-color: #5a88ff;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  &__option-item-price {
+    display: flex;
+  }
 }

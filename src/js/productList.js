@@ -23,5 +23,6 @@ export default class {
         );
         this.products.push(tmpProduct);
       });
+    this.products[0].onClick();
   }
 }
