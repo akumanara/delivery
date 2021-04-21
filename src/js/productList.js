@@ -1,9 +1,10 @@
+import EventEmitter from 'events';
 import Handlebars from 'handlebars';
 import Product from './product';
 
-export default class {
-  constructor(app) {
-    this.app = app;
+export default class extends EventEmitter {
+  constructor() {
+    super();
     this.products = [];
     this.init();
   }
@@ -16,11 +17,14 @@ export default class {
     document
       .querySelectorAll('.store-menu__product')
       .forEach((productElement) => {
-        const tmpProduct = new Product(
-          productElement,
-          HandlebarsTemplate,
-          this.app,
-        );
+        const tmpProduct = new Product(productElement, HandlebarsTemplate);
+        tmpProduct.on('showPreloader', () => {
+          this.emit('showPreloader');
+        });
+        tmpProduct.on('hidePreloader', () => {
+          this.emit('hidePreloader');
+        });
+
         this.products.push(tmpProduct);
       });
     this.products[0].onClick();

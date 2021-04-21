@@ -43,9 +43,11 @@
   "dependencies": {
     "accordion-js": "^3.1.1",
     "array-move": "^3.0.1",
+    "auto-bind": "^4.0.0",
     "axios": "^0.21.1",
     "core-js": "^3.10.1",
     "es6-template-strings": "^2.0.1",
+    "events": "^3.3.0",
     "fast-average-color": "^6.4.0",
     "gsap": "^3.6.1",
     "handlebars": "^4.7.7",

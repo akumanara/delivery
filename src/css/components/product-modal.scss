@@ -168,7 +168,7 @@ body {
 
     font-weight: 700;
     border-bottom: 1px solid #eaebec;
-
+    transition: $trans;
     &:last-child {
       border-bottom: none;
     }
@@ -205,11 +205,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: $trans;
 
     img {
       position: relative;
-      top: 1px;
+      transform: translateY(1px);
       opacity: 0;
+      transition: $trans;
     }
 
     .product-modal__option-item--active & {

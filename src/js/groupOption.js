@@ -1,7 +1,9 @@
+import EventEmitter from 'events';
+import texts from './texts';
 
-
-export default class {
-  constructor(groupOption, product) {
+export default class extends EventEmitter {
+  constructor(groupOption) {
+    super();
     console.log(groupOption);
     this.groupOption = groupOption;
 
@@ -9,11 +11,11 @@ export default class {
     this.ingredients = this.groupOption.ingredients;
 
     if (this.groupOption.min >= 1) {
-      this.mandatoryOrOptionalText = product.texts.mandatory;
+      this.mandatoryOrOptionalText = texts.mandatory;
     } else {
-      this.mandatoryOrOptionalText = product.texts.optional;
+      this.mandatoryOrOptionalText = texts.optional;
     }
 
-    this.maxLimitText = `${product.texts.maxLimit} ${this.groupOption.max}`;
+    this.maxLimitText = `${texts.maxLimit} ${this.groupOption.max}`;
   }
 }

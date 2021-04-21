@@ -1,6 +1,7 @@
 // core js in order to add new features of js
 // import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+import autoBind from 'auto-bind';
 import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
@@ -15,6 +16,7 @@ import ProductList from './productList';
 class App {
   constructor() {
     const app = this;
+    autoBind(this);
     showFPS();
     this.DOM = {
       loader: document.querySelector('.delivery-loader'),
@@ -24,6 +26,8 @@ class App {
     const storeMenuCatalog = document.querySelector('.store-menu__catalog');
     if (storeMenuCatalog) {
       this.productList = new ProductList(app);
+      this.productList.on('showPreloader', this.showLoader);
+      this.productList.on('hidePreloader', this.hideLoader);
     }
 
     // Store carousel

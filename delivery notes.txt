@@ -159,6 +159,8 @@ default ingredients doesnt remove from the price.
 
 
 
-where do i left off
-=============================
-product modal - variant and group options objects.
+Questions
+==================================
+- Will the variant come always preselected?
+- Can you deselect the variant?
+- Variant doesnt have a default. Do we default select the first option?
