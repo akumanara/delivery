@@ -117,9 +117,8 @@ X-- max (used for plus/minus)
 X-- default*
 
 
+default ingredients doesnt add/remove from the price.
 
-default ingredients doesnt add to the price.
-default ingredients doesnt remove from the price.
 
 
 Questions
@@ -130,6 +129,6 @@ When minimum above 1 we dont show it. I only check and show red after he has cli
 Todo
 ==================================
 store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
+default ingredients doesnt add/remove from the price.
 product plus/minus on ingredients
 product button/quantity and calculate price
-
