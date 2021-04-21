@@ -1,3 +1,4 @@
+import currency from 'currency.js';
 import EventEmitter from 'events';
 import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
@@ -17,6 +18,7 @@ export default class extends EventEmitter {
     this.template = template;
     this.element = productElement;
     this.api = new API();
+    this.quantity = 1;
 
     this.init();
   }
@@ -64,6 +66,7 @@ export default class extends EventEmitter {
       // for every group option
       this.productJSON.ingredient_categories.forEach((groupOption) => {
         const tmpGroupOption = new GroupOption(groupOption);
+        tmpGroupOption.on('selection', this.selectedGroupOption);
         this.groupOptions.push(tmpGroupOption);
       });
     }
@@ -111,14 +114,6 @@ export default class extends EventEmitter {
       .querySelector('.product-modal__close-btn')
       .addEventListener('click', this.closeModal);
 
-    // setup Variant
-    if (this.variant) {
-      const variantElement = this.modalElement.querySelector(
-        '.js-product-modal__option-variant',
-      );
-      this.variant.init(variantElement);
-    }
-
     // I setup all the accordions here and not inside variant and groupoptions
     this.accordions = [];
     this.modalElement
@@ -137,6 +132,24 @@ export default class extends EventEmitter {
         });
         this.accordions.push(tmpAccordionContainer);
       });
+
+    // setup Variant
+    if (this.variant) {
+      const variantElement = this.modalElement.querySelector(
+        '.js-product-modal__option-variant',
+      );
+      this.variant.init(variantElement);
+    }
+
+    // setup group options
+    if (this.groupOptions.length > 0) {
+      const groupOptionsElements = this.modalElement.querySelectorAll(
+        '.js-product-modal__option-group-option',
+      );
+      this.groupOptions.forEach((groupOption, index) => {
+        groupOption.init(groupOptionsElements[index]);
+      });
+    }
 
     // hide overflow
     document.body.classList.add('hide-overflow');
@@ -157,23 +170,50 @@ export default class extends EventEmitter {
   }
 
   selectedVariant(variant) {
-    // TODO change prices on group options
+    // Close the first accordion (the first one is the variant)
+    // this.accordions[0].close(0);
+    // Update the selected variant on group options
+    this.groupOptions.forEach((element) => {
+      element.changeVariant(variant.id);
+    });
+
     // recalculate price
     this.calculatePrice();
   }
 
+  selectedGroupOption(options) {
+    this.calculatePrice();
+  }
+
   calculatePrice() {
-    // TODO add a math library (https://mathjs.org/)
-    let calculatedPrice;
+    // TODO add a math or currency or library
+    // mathjs
+    // currency.js
+    // accounting.js
+    let calculatedPrice = currency(0);
     // First set the base price. If we use a variant and a selected variant is set, use the price from the selected variant.
     // Else get the price from the initial JSON.
     // ===========================================================
     if (this.variant && this.variant.selectedOption) {
-      calculatedPrice = this.variant.selectedOption.price;
+      calculatedPrice = currency(this.variant.selectedOption.price);
     } else {
-      calculatedPrice = this.productJSON.price;
+      calculatedPrice = currency(this.productJSON.price);
     }
+    console.log(`Base Price (variant): ${calculatedPrice}`);
 
-    console.log(calculatedPrice);
+    // For everygroup option we get its calculated price.
+    // ===========================================================
+    this.groupOptions.forEach((element) => {
+      console.log(`Group option: ${element.name} Price: ${element.price}`);
+      calculatedPrice = calculatedPrice.add(element.price);
+    });
+
+    console.log(`Price per item: ${calculatedPrice}`);
+
+    calculatedPrice *= this.quantity;
+
+    console.log(`----------`);
+    console.log(`finalPrice: ${calculatedPrice}`);
+    console.log(`----------`);
   }
 }

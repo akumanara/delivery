@@ -1,32 +1,3 @@
-
-overview of current stack and architecture
-pou tha einai to kanali epikoinwnias gia to dev team?
-pou tha einai to doc?
-
-slack - communication or calls
-walkthrough intro
-
-
--bootstrap 3
--libraries extra
--scripts + minifications
-
-
-aura cms - php
-
-
-
-1. design
-2. front end
-3. server side
-
-oxi single page application
-define pio content tha ginei update se calls
-
-
-
-===================================================================================
-
 mobile application
 ------------
 den pame full native
@@ -69,10 +40,6 @@ define some space utilities
 
 
 
-
-
-
-
 ----------------------
 
 FOR MISA
@@ -82,8 +49,6 @@ containers
 spacing
 section spacing
 =============================
-
-
 
 
 
@@ -157,10 +122,14 @@ default ingredients doesnt add to the price.
 default ingredients doesnt remove from the price.
 
 
-
-
 Questions
 ==================================
-- Will the variant come always preselected?
-- Can you deselect the variant?
-- Variant doesnt have a default. Do we default select the first option?
+When minimum above 1 we dont show it. I only check and show red after he has click at least once.
+
+
+Todo
+==================================
+store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
+product plus/minus on ingredients
+product button/quantity and calculate price
+

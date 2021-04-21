@@ -103,7 +103,9 @@
                                 <span>
                                   €
                                 </span>
-                                {{this.price}}
+                                <span class="js-price-value">
+                                  {{this.price}}
+                                </span>
                               </div>
                             </div>
                           </div>
@@ -118,7 +120,9 @@
           {{! GROUP OPTIONS }}
           {{#each productInformation.groupOptions}}
             <!-- OPTION -->
-            <div class="product-modal__option">
+            <div
+              class="product-modal__option js-product-modal__option-group-option"
+            >
               <!-- ACCORDION ITEM -->
               <div
                 class="accordion__container accordion__container--product-option"
@@ -157,9 +161,12 @@
                             <!-- LEFT -->
                             <div class="product-modal__option-item-left">
                               <div class="product-modal__option-icon">
-                                <div
-                                  class="product-modal__option-icon-inner"
-                                ></div>
+                                <div class="product-modal__option-icon-inner">
+                                  <img
+                                    src="./images/icons/checkmark.svg"
+                                    alt=""
+                                  />
+                                </div>
                               </div>
                               <div class="product-modal__option-name">
                                 {{this.name}}
@@ -171,7 +178,9 @@
                                 <span>
                                   + €
                                 </span>
-                                {{lookup this.price 0}}
+                                <span class="js-price-value">
+                                  {{lookup this.price 0}}
+                                </span>
                               </div>
                             </div>
                           </div>

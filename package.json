@@ -46,6 +46,7 @@
     "auto-bind": "^4.0.0",
     "axios": "^0.21.1",
     "core-js": "^3.10.1",
+    "currency.js": "^2.0.3",
     "es6-template-strings": "^2.0.1",
     "events": "^3.3.0",
     "fast-average-color": "^6.4.0",

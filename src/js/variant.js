@@ -46,10 +46,17 @@ export default class extends EventEmitter {
     }
 
     this.selectedOption = option;
+    // Add class to the selected option
     this.selectedOption.element.classList.add(
       'product-modal__option-item--active',
     );
 
+    // Change the upper text with the selected option
+    this.element.querySelector(
+      '.product-modal__option-header-top',
+    ).innerText = this.selectedOption.name;
+
+    // Emit to the product class
     this.emit('selection', this.selectedOption);
   }
 }

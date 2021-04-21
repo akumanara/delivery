@@ -103,7 +103,7 @@ export default {
       name: 'βάση',
       comments: '',
       min: 1,
-      max: 1,
+      max: 2,
       ingredients: [
         {
           id: 2012866,

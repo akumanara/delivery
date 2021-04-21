@@ -43,4 +43,18 @@ const deliveryConsole = () => {
   console.log(msg, styles);
 };
 
-export { showFPS, makeid, deliveryConsole };
+const deliveryConsoleWithMessage = (msg) => {
+  const msgS = `%c${msg}`;
+  const styles = [
+    'font-size: 12px',
+    'background: #5A88FF',
+    'display: inline-block',
+    'color: white',
+    'font-weight: 500',
+    'padding: 8px 19px',
+    'border: 1px;',
+  ].join(';');
+  console.log(msgS, styles);
+};
+
+export { showFPS, makeid, deliveryConsole, deliveryConsoleWithMessage };

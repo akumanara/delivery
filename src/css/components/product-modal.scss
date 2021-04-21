@@ -122,6 +122,9 @@ body {
     .is-active & {
       opacity: 0;
     }
+    &.has-error {
+      color: #ec5176;
+    }
   }
   &__option-header-bottom {
     font-weight: 700;
