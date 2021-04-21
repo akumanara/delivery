@@ -186,10 +186,6 @@ export default class extends EventEmitter {
   }
 
   calculatePrice() {
-    // TODO add a math or currency or library
-    // mathjs
-    // currency.js
-    // accounting.js
     let calculatedPrice = currency(0);
     // First set the base price. If we use a variant and a selected variant is set, use the price from the selected variant.
     // Else get the price from the initial JSON.
@@ -201,19 +197,27 @@ export default class extends EventEmitter {
     }
     console.log(`Base Price (variant): ${calculatedPrice}`);
 
-    // For everygroup option we get its calculated price.
+    // For every group option we get its calculated price.
     // ===========================================================
     this.groupOptions.forEach((element) => {
       console.log(`Group option: ${element.name} Price: ${element.price}`);
       calculatedPrice = calculatedPrice.add(element.price);
     });
-
     console.log(`Price per item: ${calculatedPrice}`);
 
-    calculatedPrice *= this.quantity;
+    // Multiply per quantity
+    // ===========================================================
+    calculatedPrice = calculatedPrice.multiply(this.quantity);
+
+    // final
+    calculatedPrice = currency(calculatedPrice, {
+      symbol: '€',
+      separator: '.',
+      decimal: ',',
+    });
 
     console.log(`----------`);
-    console.log(`finalPrice: ${calculatedPrice}`);
+    console.log(`finalPrice: ${calculatedPrice.format()}`);
     console.log(`----------`);
   }
 }
