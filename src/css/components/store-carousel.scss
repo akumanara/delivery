@@ -122,14 +122,17 @@
 
   &__story {
     padding: 10px 0;
-    @include font-averta;
-    @include font-size-6;
 
-    font-weight: 600;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    &-copy {
+      @include font-averta;
+      @include font-size-6;
+
+      font-weight: 600;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 
   // SWIPER SLIDER

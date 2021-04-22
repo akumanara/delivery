@@ -12,11 +12,15 @@ import GroupOption from './groupOption';
 // Variant is single option and uses a different class.
 // Variant changes the base price for the product.
 // Variant changes the prices of ingredients.
+// Product has a maxQuantity number. User cannot add more quantity than the maxQuantity number.
+// Product has a minQuantity number. User cannot have less qty than the minQuantity number. The first click adds this qty.
 
 // Product may have group option(s) - group options items are ingredients.
 // Group option(s) are multiple select.
 // Group option(s) have a max number. User cannot select more options than the max number.
 // Group option(s) have a min number. User cannot add the item to its cart without having selected the min number of options.
+// Clicking on an option when the max is already reached does the following:
+// - TBD
 
 // Ingredient has a quantity.
 // Ingredient has a max number.

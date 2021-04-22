@@ -9,6 +9,16 @@
     url('../fonts/AvertaSTD/35C887_0_0.ttf') format('truetype');
   font-weight: 900;
 }
+@font-face {
+  font-family: 'Averta';
+  src: url('../fonts/AvertaSTD/35C887_D_0.eot');
+  src: url('../fonts/AvertaSTD/35C887_D_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/AvertaSTD/35C887_D_0.woff2') format('woff2'),
+    url('../fonts/AvertaSTD/35C887_D_0.woff') format('woff'),
+    url('../fonts/AvertaSTD/35C887_D_0.ttf') format('truetype');
+  font-weight: 600;
+}
 
 @font-face {
   font-family: 'Averta';

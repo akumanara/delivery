@@ -239,6 +239,7 @@ body {
     outline: 1px solid red;
     z-index: 10;
     display: flex;
+    color: white;
 
     &-inner {
       display: flex;
@@ -257,8 +258,12 @@ body {
     background: #5a88ff;
     box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
     border-radius: 10px;
+    margin-right: 15px;
+    flex-grow: 1;
   }
   &__add-to-cart-add {
+    flex-grow: 1;
+    margin-left: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -129,6 +129,7 @@ When minimum above 1 we dont show it. I only check and show red after he has cli
 Todo
 ==================================
 store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
-default ingredients doesnt add/remove from the price.
+
+Default ingredients ui change?
 product plus/minus on ingredients
 product button/quantity and calculate price
