@@ -8,18 +8,35 @@ import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
 
+// Product may have a variant
+// Variant is single option and uses a different class.
+// Variant changes the base price for the product.
+// Variant changes the prices of ingredients.
+
+// Product may have group option(s) - group options items are ingredients.
+// Group option(s) are multiple select.
+// Group option(s) have a max number. User cannot select more options than the max number.
+// Group option(s) have a min number. User cannot add the item to its cart without having selected the min number of options.
+
+// Ingredient has a quantity.
+// Ingredient has a max number.
+// - If max is 1, then the option element is like a checkbox. Because you can only add one.
+// - If max is greater than 1, then the option element is like a number input with plus/minus buttons. Because you can add more than one.
+// Ingredient has an array of prices. The keys of this array are IDs for their corresponding variants. Key '0' is the default price.
+// Ingredient has a default number. It predefines the quantity on that ingredient.
+// Default number also excludes from price calculation.
+// - If you add more than the default quantity, it only add the extra quantity to the price calculation.
+// - If you remove more than the default quantity, it does not remove from the price calculation.
+
 export default class extends EventEmitter {
   constructor(productElement, template) {
     super();
     autoBind(this);
-    // Data the product might need
-    // TODO: add combo / offers
-
     this.template = template;
     this.element = productElement;
     this.api = new API();
     this.quantity = 1;
-
+    this.DOM = {};
     this.init();
   }
 
@@ -151,6 +168,17 @@ export default class extends EventEmitter {
       });
     }
 
+    // Save the the price and qty elements for later use
+    this.DOM.price = this.modalElement.querySelector(
+      '.js-product-modal-final-price',
+    );
+    this.DOM.quantity = this.modalElement.querySelector(
+      '.js-product-modal-qty',
+    );
+
+    // Preselect the default variant
+    this.variant.preselectDefaultVariant();
+
     // hide overflow
     document.body.classList.add('hide-overflow');
   }
@@ -209,15 +237,18 @@ export default class extends EventEmitter {
     // ===========================================================
     calculatedPrice = calculatedPrice.multiply(this.quantity);
 
-    // final
+    // Final price
     calculatedPrice = currency(calculatedPrice, {
       symbol: '€',
       separator: '.',
       decimal: ',',
+      pattern: `# !`,
     });
 
     console.log(`----------`);
     console.log(`finalPrice: ${calculatedPrice.format()}`);
     console.log(`----------`);
+
+    this.DOM.price.innerText = calculatedPrice.format();
   }
 }

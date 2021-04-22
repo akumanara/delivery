@@ -28,7 +28,9 @@ export default class extends EventEmitter {
         this.selectOption(option);
       });
     });
+  }
 
+  preselectDefaultVariant() {
     // Preselect the first option
     this.selectOption(this.variants[0]);
   }

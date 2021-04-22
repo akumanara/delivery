@@ -103,7 +103,7 @@ export default {
       name: 'βάση',
       comments: '',
       min: 1,
-      max: 2,
+      max: 1,
       ingredients: [
         {
           id: 2012866,
@@ -189,7 +189,7 @@ export default {
     },
     {
       id: 247848,
-      name: ' σάλτσα',
+      name: 'σάλτσα',
       comments: '',
       min: 1,
       max: 1,
@@ -300,7 +300,7 @@ export default {
             162152: '1.25',
             162159: '1.25',
           },
-          default: '0',
+          default: '1',
           max: 1,
         },
         {

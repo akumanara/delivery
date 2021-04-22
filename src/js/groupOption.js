@@ -23,7 +23,6 @@ export default class extends EventEmitter {
     this.price = 0;
     // The json data has 0 key when you dont have a selected variant
     this.selectedVariantID = '0';
-    this.hasFinishedInitialization = false;
   }
 
   init(element) {
@@ -63,8 +62,6 @@ export default class extends EventEmitter {
 
     // Check if minimum is satisfied
     this.checkMinimumIngredientsSatisfied();
-
-    this.hasFinishedInitialization = true;
   }
 
   optionClicked(option) {
@@ -75,6 +72,7 @@ export default class extends EventEmitter {
         this.selectOption(option);
       } else {
         // TODO: we have reached max. Deselect?
+        return;
       }
     } else {
       // the option is already selected. Deselect it
@@ -142,9 +140,14 @@ export default class extends EventEmitter {
 
   calculateGroupOptionPrice() {
     let calculatedPrice = currency(0);
-    this.selectedOptions.forEach((element) => {
+    this.selectedOptions.forEach((ingredient) => {
+      if (Number(ingredient.default) === 1) {
+        // TODO numeric ingredients
+        // It is default ingredient. We dont add to the price
+        return;
+      }
       calculatedPrice = calculatedPrice.add(
-        currency(element.price[this.selectedVariantID]),
+        currency(ingredient.price[this.selectedVariantID]),
       );
     });
     this.price = calculatedPrice;
@@ -161,8 +164,6 @@ export default class extends EventEmitter {
   }
 
   updatePricesOnUI() {
-    // if we dont have the elements yet, no need to update the ui values
-    if (!this.hasFinishedInitialization) return;
     this.groupOption.ingredients.forEach((element) => {
       element.priceElement.innerText = element.price[this.selectedVariantID];
     });

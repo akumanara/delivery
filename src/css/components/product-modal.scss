@@ -230,4 +230,41 @@ body {
   &__option-item-price {
     display: flex;
   }
+  // ADD TO CART
+  &__add-to-cart {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    outline: 1px solid red;
+    z-index: 10;
+    display: flex;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 16px;
+      width: 100%;
+    }
+  }
+
+  &__add-to-cart-qty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    background: #5a88ff;
+    box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
+    border-radius: 10px;
+  }
+  &__add-to-cart-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    background: #5a88ff;
+    box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
+    border-radius: 10px;
+  }
 }
