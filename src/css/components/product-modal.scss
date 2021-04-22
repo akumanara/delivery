@@ -260,7 +260,9 @@ body {
     box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
     border-radius: 10px;
     margin-right: 30px;
-    flex-grow: 1;
+    flex-grow: 0; /* do not grow   - initial value: 0 */
+    flex-shrink: 0; /* do not shrink - initial value: 1 */
+    flex-basis: calc(140px - 32px); /* width/height  - initial value: auto */
   }
 
   &__add-to-cart-qty-minus {

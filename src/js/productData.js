@@ -22,7 +22,7 @@ export default {
   isOutOfStock: false,
   images: ['./images/b1.jpg', './images/b2.jpg', './images/b3.jpg'],
   minQuantity: '0',
-  maxQuantity: '5',
+  maxQuantity: '15',
   // old
   id: '1411211',
   name: 'Margherita',

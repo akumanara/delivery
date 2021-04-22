@@ -56,7 +56,7 @@ export default class extends EventEmitter {
   async onClick() {
     this.emit('showPreloader');
     // fetch the html for the modal
-    this.productJSON = await this.api.getProductModal(this.modalURL);
+    this.productJSON = await this.api.getProduct(this.modalURL);
 
     // Create all the objects belonging to the product
     this.createProduct();
@@ -66,7 +66,6 @@ export default class extends EventEmitter {
     this.initModal();
 
     this.emit('hidePreloader');
-    window.dummy = this;
   }
 
   // used for variants and group options
@@ -221,8 +220,14 @@ export default class extends EventEmitter {
     this.calculatePrice();
   }
 
-  addToCart() {
+  async addToCart() {
     console.log('adding to cart');
+    this.emit('showPreloader');
+    // submit product
+    this.productJSON = await this.api.addProductToCart('XXX');
+
+    this.emit('hidePreloader');
+    this.closeModal();
   }
 
   closeModal() {
