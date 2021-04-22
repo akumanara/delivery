@@ -19,6 +19,7 @@ import GroupOption from './groupOption';
 // Group option(s) are multiple select.
 // Group option(s) have a max number. User cannot select more options than the max number.
 // Group option(s) have a min number. User cannot add the item to its cart without having selected the min number of options.
+// If min number is greater than 0, the group option is tagged as required.*
 // Clicking on an option when the max is already reached does the following:
 // - TBD
 
@@ -29,8 +30,11 @@ import GroupOption from './groupOption';
 // Ingredient has an array of prices. The keys of this array are IDs for their corresponding variants. Key '0' is the default price.
 // Ingredient has a default number. It predefines the quantity on that ingredient.
 // Default number also excludes from price calculation.
-// - If you add more than the default quantity, it only add the extra quantity to the price calculation.
-// - If you remove more than the default quantity, it does not remove from the price calculation.
+// - If you add more than the default quantity, it only add the extra quantity to the price calculation.**
+// - If you remove more than the default quantity, it does not remove from the price calculation.**
+
+// * UI does not communicate when there is more than 1 min.
+// ** UI does not communicate how this works.
 
 export default class extends EventEmitter {
   constructor(productElement, template) {
@@ -62,6 +66,7 @@ export default class extends EventEmitter {
     this.initModal();
 
     this.emit('hidePreloader');
+    window.dummy = this;
   }
 
   // used for variants and group options
@@ -251,7 +256,6 @@ export default class extends EventEmitter {
 
     console.log(`----------`);
     console.log(`finalPrice: ${calculatedPrice.format()}`);
-    console.log(`----------`);
 
     this.DOM.price.innerText = calculatedPrice.format();
   }

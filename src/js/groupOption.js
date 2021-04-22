@@ -5,17 +5,17 @@ import texts from './texts';
 export default class extends EventEmitter {
   constructor(groupOption) {
     super();
+    // Save the initial data from the JSON
     this.groupOption = groupOption;
 
+    // Used for templating
     this.name = this.groupOption.name;
     this.ingredients = this.groupOption.ingredients;
-
     if (this.groupOption.min >= 1) {
       this.mandatoryOrOptionalText = texts.mandatory;
     } else {
       this.mandatoryOrOptionalText = texts.optional;
     }
-
     this.maxLimitText = `${texts.maxLimit} ${this.groupOption.max}`;
     this.selectedOptions = [];
     this.max = this.groupOption.max;
