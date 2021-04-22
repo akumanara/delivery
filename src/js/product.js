@@ -177,19 +177,52 @@ export default class extends EventEmitter {
       });
     }
 
-    // Save the the price and qty elements for later use
-    this.DOM.price = this.modalElement.querySelector(
-      '.js-product-modal-final-price',
-    );
-    this.DOM.quantity = this.modalElement.querySelector(
-      '.js-product-modal-qty',
-    );
+    // Save the DOM elements for later use
+    this.DOM = {
+      price: this.modalElement.querySelector('.js-product-modal-final-price'),
+      qty: this.modalElement.querySelector('.js-product-modal-qty'),
+      plusBtn: this.modalElement.querySelector(
+        '.product-modal__add-to-cart-qty-plus',
+      ),
+      minusBtn: this.modalElement.querySelector(
+        '.product-modal__add-to-cart-qty-minus',
+      ),
+      addToCartBtn: this.modalElement.querySelector(
+        '.product-modal__add-to-cart-btn',
+      ),
+    };
+
+    // Add event listeners
+    this.DOM.plusBtn.addEventListener('click', this.addOneQty);
+    this.DOM.minusBtn.addEventListener('click', this.removeOneQty);
+    this.DOM.addToCartBtn.addEventListener('click', this.addToCart);
 
     // Preselect the default variant
     this.variant.preselectDefaultVariant();
 
     // hide overflow
     document.body.classList.add('hide-overflow');
+  }
+
+  addOneQty() {
+    // User cant go to more than maxQty
+    if (this.quantity >= this.productJSON.maxQuantity) return;
+    // TODO min qty
+    this.quantity += 1;
+    this.DOM.qty.innerText = this.quantity;
+    this.calculatePrice();
+  }
+
+  removeOneQty() {
+    // User cant go to 0 qty
+    if (this.quantity === 1) return;
+    this.quantity -= 1;
+    this.DOM.qty.innerText = this.quantity;
+    this.calculatePrice();
+  }
+
+  addToCart() {
+    console.log('adding to cart');
   }
 
   closeModal() {
