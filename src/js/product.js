@@ -121,8 +121,10 @@ export default class extends EventEmitter {
 
   // Executes after we have created the modal
   initModal() {
+    // Initial settings
     const self = this;
     this.quantity = 1;
+    this.price = null;
 
     // Photos gallery
     const sliderElement = this.modalElement.querySelector(
@@ -298,12 +300,21 @@ export default class extends EventEmitter {
 
     console.log(`----------`);
     console.log(`finalPrice: ${calculatedPrice.format()}`);
+    this.DOM.price.innerText = calculatedPrice.format();
 
+    // If we calculate a different price. animate the element
+    if (this.price && this.price.value !== calculatedPrice.value) {
+      this.animatePrice();
+    }
+    this.price = calculatedPrice;
+  }
+
+  animatePrice() {
     // Animate the price (clone the element, remove it, and add it again with the animating class)
     const cln = this.DOM.price.cloneNode(true);
     this.DOM.price.remove();
     this.DOM.price = this.DOM.priceContainer.appendChild(cln);
-    this.DOM.price.innerText = calculatedPrice.format();
+
     animateCSS(this.DOM.price, 'pulse');
   }
 }

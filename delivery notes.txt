@@ -127,7 +127,6 @@ Questions
 todo - Bugs (later)
 ==================================
 store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
-cards with 2 lines on title (for dishes). use webkit line clamp
 
 Todo - Doing
 ==================================
