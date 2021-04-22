@@ -4,10 +4,12 @@ import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
 import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
+import PinchZoom from 'pinch-zoom-element';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
 import { animateCSS } from './utils';
+
 // Product may have a variant
 // Variant is single option and uses a different class.
 // Variant changes the base price for the product.
@@ -21,13 +23,14 @@ import { animateCSS } from './utils';
 // Group option(s) have a min number. User cannot add the item to its cart without having selected the min number of options.
 // If min number is greater than 0, the group option is tagged as required.*
 // Clicking on an option when the max is already reached does the following:
-// - TBD
+// - When max number is equal to 1. Deselect the previous item, and select the clicked option.
+// - When max number is greater than 1. Do nothing
 
 // Ingredient has a quantity.
 // Ingredient has a max number.
 // - If max is 1, then the option element is like a checkbox. Because you can only add one.
 // - If max is greater than 1, then the option element is like a number input with plus/minus buttons. Because you can add more than one.
-// Ingredient has an array of prices. The keys of this array are IDs for their corresponding variants. Key '0' is the default price.
+// Ingredient has an object of prices. The keys of this object are IDs for their corresponding variants. Key '0' is the default price.
 // Ingredient has a default number. It predefines the quantity on that ingredient.
 // Default number also excludes from price calculation.
 // - If you add more than the default quantity, it only add the extra quantity to the price calculation.**
@@ -35,6 +38,10 @@ import { animateCSS } from './utils';
 
 // * UI does not communicate when there is more than 1 min.
 // ** UI does not communicate how this works.
+
+// an mia katigoria ilikou exei max 2, kai sto iliko mporeis na valeis panw apo 1. tote prepei na sinipologistei sto max tis katigorias.
+// an exeis default ingredient 1, kai max einai kai afto 1 (einai checkbox option) tote i timi sto UI deixni 0euro.
+// an exeis default ingredient 1, kai max einai panw apo 1 (to option einai number input) tote i timi sto UI ti deixni?
 
 export default class extends EventEmitter {
   constructor(productElement, template) {

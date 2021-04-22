@@ -71,11 +71,16 @@ export default class extends EventEmitter {
         // we havent reached max. Select the option
         this.selectOption(option);
       } else {
-        // TODO: we have reached max. Deselect?
+        // we have reached max. Deselect if max = 1 else do nothing
+        if (this.max === 1) {
+          // Deselect the previous one and select the one clicked.
+          this.deselectOption(this.selectedOptions[0]);
+          this.selectOption(option);
+        }
         return;
       }
     } else {
-      // the option is already selected. Deselect it
+      // The user clicked on an item that is already selected. Deselect it
       this.deselectOption(option);
     }
 

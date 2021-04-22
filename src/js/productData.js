@@ -816,7 +816,7 @@ export default {
             162152: '2.90',
             162159: '2.90',
           },
-          default: '0',
+          default: '1',
           max: 1,
         },
         {
