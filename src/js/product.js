@@ -7,7 +7,7 @@ import autoBind from 'auto-bind';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
-
+import { animateCSS } from './utils';
 // Product may have a variant
 // Variant is single option and uses a different class.
 // Variant changes the base price for the product.
@@ -43,8 +43,7 @@ export default class extends EventEmitter {
     this.template = template;
     this.element = productElement;
     this.api = new API();
-    this.quantity = 1;
-    this.DOM = {};
+
     this.init();
   }
 
@@ -123,6 +122,8 @@ export default class extends EventEmitter {
   // Executes after we have created the modal
   initModal() {
     const self = this;
+    this.quantity = 1;
+
     // Photos gallery
     const sliderElement = this.modalElement.querySelector(
       '.product-modal__slider',
@@ -179,6 +180,9 @@ export default class extends EventEmitter {
     // Save the DOM elements for later use
     this.DOM = {
       price: this.modalElement.querySelector('.js-product-modal-final-price'),
+      priceContainer: this.modalElement.querySelector(
+        '.product-modal__add-to-cart-btn-price',
+      ),
       qty: this.modalElement.querySelector('.js-product-modal-qty'),
       plusBtn: this.modalElement.querySelector(
         '.product-modal__add-to-cart-qty-plus',
@@ -295,6 +299,11 @@ export default class extends EventEmitter {
     console.log(`----------`);
     console.log(`finalPrice: ${calculatedPrice.format()}`);
 
+    // Animate the price (clone the element, remove it, and add it again with the animating class)
+    const cln = this.DOM.price.cloneNode(true);
+    this.DOM.price.remove();
+    this.DOM.price = this.DOM.priceContainer.appendChild(cln);
     this.DOM.price.innerText = calculatedPrice.format();
+    animateCSS(this.DOM.price, 'pulse');
   }
 }

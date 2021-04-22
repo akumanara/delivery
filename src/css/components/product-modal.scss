@@ -212,8 +212,6 @@ body {
     transition: $trans;
 
     img {
-      position: relative;
-      transform: translateY(1px);
       opacity: 0;
       transition: $trans;
     }
@@ -303,5 +301,25 @@ body {
     height: auto;
   }
   &__add-to-cart-btn-price {
+  }
+
+  // LONG DESCRIPTION
+  &__long-description {
+    margin-top: 40px;
+  }
+  &__long-description-title {
+    padding: 22px 16px;
+    @include font-averta;
+    @include font-size-5;
+
+    font-weight: 700;
+  }
+  &__long-description-html {
+    padding: 0 16px;
+  }
+
+  &__long-description-disclaimer {
+    padding: 16px;
+    font-weight: 700;
   }
 }
