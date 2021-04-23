@@ -59,7 +59,7 @@ export default class extends EventEmitter {
     this.element.addEventListener('click', this.onClick);
   }
 
-  // Clicked on an product from the product list
+  // Executes when we click on an product from the product list
   async onClick() {
     this.emit('showPreloader');
     // fetch the html for the modal
@@ -75,8 +75,18 @@ export default class extends EventEmitter {
     this.emit('hidePreloader');
   }
 
-  // used for variants and group options
+  // Creates the product after we get the JSON from the API
   createProduct() {
+    // Create Initial Values
+    // ===========================================================
+    if (Number(this.productJSON.minQuantity) === 0) {
+      this.quantity = 1;
+    } else {
+      this.quantity = this.productJSON.minQuantity;
+    }
+
+    this.basePrice = this.productJSON.price;
+
     // Create the variant if exists
     // ===========================================================
     if (Object.prototype.hasOwnProperty.call(this.productJSON, 'variants')) {
@@ -110,29 +120,32 @@ export default class extends EventEmitter {
       charset: 'alphabetic',
     });
 
-    // Append stuff on the json for the templating
+    // Create object used for templating
     // ===========================================================
-    this.productJSON.productInformation = {};
-    this.productJSON.productInformation.randomString = randomString;
-    this.productJSON.productInformation.variant = this.variant;
-    this.productJSON.productInformation.groupOptions = this.groupOptions;
+    this.templateData = {
+      randomString,
+      name: this.productJSON.name,
+      images: this.productJSON.images,
+      comments: this.productJSON.comments,
+      variant: this.variant,
+      groupOptions: this.groupOptions,
+      basePrice: this.basePrice,
+    };
   }
 
+  // Creates the modal from the template object
   createModal() {
     // create the template
-    const html = this.template(this.productJSON);
+    const html = this.template(this.templateData);
     document.body.insertAdjacentHTML('beforeend', html);
     this.modalElement = document.querySelector(
-      `.${this.productJSON.productInformation.randomString}`,
+      `.${this.templateData.randomString}`,
     );
   }
 
   // Executes after we have created the modal
   initModal() {
-    // Initial settings
     const self = this;
-    this.quantity = 1;
-    this.price = null;
 
     // Photos gallery
     const sliderElement = this.modalElement.querySelector(
@@ -211,12 +224,15 @@ export default class extends EventEmitter {
     this.DOM.addToCartBtn.addEventListener('click', this.addToCart);
 
     // Preselect the default variant
-    this.variant.preselectDefaultVariant();
+    if (this.variant) {
+      this.variant.preselectDefaultVariant();
+    }
 
     // hide overflow
     document.body.classList.add('hide-overflow');
   }
 
+  // Executes when we click the plus button
   addOneQty() {
     // User cant go to more than maxQty
     if (this.quantity >= this.productJSON.maxQuantity) return;
@@ -226,6 +242,7 @@ export default class extends EventEmitter {
     this.calculatePrice();
   }
 
+  // Executes when we click the minus button
   removeOneQty() {
     // User cant go to 0 qty
     if (this.quantity === 1) return;
@@ -234,9 +251,13 @@ export default class extends EventEmitter {
     this.calculatePrice();
   }
 
+  // Executes when we click add to cart button
   async addToCart() {
     console.log('adding to cart');
     this.emit('showPreloader');
+    // TODO: Prepare data for API
+    const data = {};
+
     // submit product
     this.productJSON = await this.api.addProductToCart('XXX');
 
@@ -244,12 +265,14 @@ export default class extends EventEmitter {
     this.closeModal();
   }
 
+  // Closed the modal and removes it from the body
   closeModal() {
     this.modalElement.remove();
     // show overflow
     document.body.classList.remove('hide-overflow');
   }
 
+  // Closes all the accordions except the one to be opened
   closeGroupOptions(accordionToBeOpened) {
     this.accordions.forEach((accordion) => {
       if (accordionToBeOpened !== accordion) {
@@ -258,6 +281,7 @@ export default class extends EventEmitter {
     });
   }
 
+  // Executes when we select a variant
   selectedVariant(variant) {
     // Close the first accordion (the first one is the variant)
     // this.accordions[0].close(0);
@@ -270,10 +294,12 @@ export default class extends EventEmitter {
     this.calculatePrice();
   }
 
+  // Executes when we select a group option
   selectedGroupOption(options) {
     this.calculatePrice();
   }
 
+  // Calculates the final price
   calculatePrice() {
     let calculatedPrice = currency(0);
     // First set the base price. If we use a variant and a selected variant is set, use the price from the selected variant.
@@ -282,7 +308,7 @@ export default class extends EventEmitter {
     if (this.variant && this.variant.selectedOption) {
       calculatedPrice = currency(this.variant.selectedOption.price);
     } else {
-      calculatedPrice = currency(this.productJSON.price);
+      calculatedPrice = currency(this.basePrice);
     }
     console.log(`Base Price (variant): ${calculatedPrice}`);
 
@@ -303,6 +329,7 @@ export default class extends EventEmitter {
 
     console.log(`----------`);
     console.log(`finalPrice: ${calculatedPrice.format()}`);
+    console.log('');
     this.DOM.price.innerText = calculatedPrice.format();
 
     // If we calculate a different price. animate the element

@@ -64,24 +64,28 @@ export default class extends EventEmitter {
     this.checkMinimumIngredientsSatisfied();
   }
 
-  optionClicked(option) {
-    if (!this.selectedOptions.includes(option)) {
-      // the option is NOT selected.
-      if (this.selectedOptions.length < this.max) {
-        // we havent reached max. Select the option
-        this.selectOption(option);
-      } else {
-        // we have reached max. Deselect if max = 1 else do nothing
-        if (this.max === 1) {
-          // Deselect the previous one and select the one clicked.
-          this.deselectOption(this.selectedOptions[0]);
-          this.selectOption(option);
-        }
-        return;
-      }
+  handleOptionClickedLogic(option) {
+    if (this.selectedOptions.length < this.max) {
+      // We havent reached max. Select the option
+      this.selectOption(option);
+    } else if (this.selectedOptions.length === this.max && this.max === 1) {
+      // We have reached max and max is 1.
+      // Deselect the previous one and select the one clicked.
+      this.deselectOption(this.selectedOptions[0]);
+      this.selectOption(option);
     } else {
-      // The user clicked on an item that is already selected. Deselect it
+      // We have reached max and max is greater than 1.
+      // Maybe alert the user?
+    }
+  }
+
+  optionClicked(option) {
+    if (this.selectedOptions.includes(option)) {
+      // The user clicked on an item that is selected, so we deselect it.
       this.deselectOption(option);
+    } else {
+      // The user clicked on an item that is ΝΟΤ already selected. Handle logic on different function
+      this.handleOptionClickedLogic(option);
     }
 
     this.updateTopText();
