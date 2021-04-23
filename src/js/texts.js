@@ -4,5 +4,3 @@ export default {
   maxLimit: 'Μέγιστος αριθμός επιλογών:',
   variantName: 'επιλογές',
 };
-
-// export { texts };

@@ -231,6 +231,7 @@ body {
   }
   // ADD TO CART
   &__add-to-cart {
+    transform: translate3d(0, 0, 0);
     // it must be position: fixed or it jumps around when scrolling
     position: fixed;
     bottom: 0;
