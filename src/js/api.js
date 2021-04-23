@@ -25,4 +25,14 @@ export default class {
       }, 500),
     );
   }
+
+  // eslint-disable-next-line class-methods-use-this
+  getProductFromCart(url) {
+    // placeholder
+    return new Promise((resolve) =>
+      setTimeout(() => {
+        resolve(product);
+      }, 200),
+    );
+  }
 }

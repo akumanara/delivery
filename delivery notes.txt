@@ -131,9 +131,9 @@ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei des
 
 Todo - Doing
 ==================================
-Product plus/minus on ingredients
 change product. Clicked from cart.
 zoom on photos
+Product plus/minus on ingredients
 
 from backend
 ==================================

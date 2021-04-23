@@ -4,11 +4,10 @@ import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
 import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
-import PinchZoom from 'pinch-zoom-element';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
-import { animateCSS } from './utils';
+import { animateCSS, currencyFormat } from './utils';
 
 // Product may have a variant
 // Variant is single option and uses a different class.
@@ -42,6 +41,7 @@ import { animateCSS } from './utils';
 // an mia katigoria ilikou exei max 2, kai sto iliko mporeis na valeis panw apo 1. tote prepei na sinipologistei sto max tis katigorias.
 // an exeis default ingredient 1, kai max einai kai afto 1 (einai checkbox option) tote i timi sto UI deixni 0euro.
 // an exeis default ingredient 1, kai max einai panw apo 1 (to option einai number input) tote i timi sto UI ti deixni?
+// Τι σημαίνει done στα group options
 
 export default class extends EventEmitter {
   constructor(productElement, template) {
@@ -59,6 +59,7 @@ export default class extends EventEmitter {
     this.element.addEventListener('click', this.onClick);
   }
 
+  // Clicked on an product from the product list
   async onClick() {
     this.emit('showPreloader');
     // fetch the html for the modal
@@ -298,12 +299,7 @@ export default class extends EventEmitter {
     calculatedPrice = calculatedPrice.multiply(this.quantity);
 
     // Final price
-    calculatedPrice = currency(calculatedPrice, {
-      symbol: '€',
-      separator: '.',
-      decimal: ',',
-      pattern: `# !`,
-    });
+    calculatedPrice = currency(calculatedPrice, currencyFormat);
 
     console.log(`----------`);
     console.log(`finalPrice: ${calculatedPrice.format()}`);
