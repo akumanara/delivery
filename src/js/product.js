@@ -258,9 +258,10 @@ export default class extends EventEmitter {
     // TODO: Prepare data for API
     const data = {};
 
-    // submit product
-    this.productJSON = await this.api.addProductToCart('XXX');
+    // submit product and get the new cart
+    this.cart = await this.api.addProductToCart('XXX');
 
+    this.emit('cartUpdate', this.cart);
     this.emit('hidePreloader');
     this.closeModal();
   }

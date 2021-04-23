@@ -5,7 +5,11 @@ import Product from './product';
 export default class extends EventEmitter {
   constructor() {
     super();
+    // Products from catalog
     this.products = [];
+    // Products from cart
+    this.cartProducts = [];
+
     this.init();
   }
 
