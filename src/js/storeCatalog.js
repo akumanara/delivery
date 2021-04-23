@@ -1,13 +1,10 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { gsap, ScrollToPlugin, ScrollTrigger } from 'gsap/all';
 import Swiper from 'swiper';
 
 export default class {
   constructor() {
     // Scroll with categories swiper
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
     this.DOM = {
       slider: document.querySelector('.store-menu__slider'),
       sections: document.querySelectorAll('.store-menu__catalog-section'),
@@ -59,6 +56,7 @@ export default class {
       item.addEventListener('click', () => {
         this.triggeringScrollEvents = false;
         this.setItem(index);
+
         gsap.to(window, {
           onComplete: () => {
             this.triggeringScrollEvents = true;

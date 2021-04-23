@@ -26,17 +26,17 @@ export default class extends EventEmitter {
   }
 
   init(element) {
-    // Get the element of the variants (accordion)
+    // Get the element (accordion)
     this.element = element;
 
-    // Get the elements variant options
-    this.optionsElements = this.element.querySelectorAll(
+    // Get the elements options
+    const optionsElements = this.element.querySelectorAll(
       '.product-modal__option-item',
     );
 
     // Map the elements to the ingredients array
     this.groupOption.ingredients.forEach((ingredient, index) => {
-      ingredient.element = this.optionsElements[index];
+      ingredient.element = optionsElements[index];
       ingredient.priceElement = ingredient.element.querySelector(
         '.js-price-value',
       );

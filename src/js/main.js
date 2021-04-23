@@ -5,7 +5,6 @@ import autoBind from 'auto-bind';
 import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
-
 import Accordion from 'accordion-js';
 import List from 'list.js';
 import arrayMove from 'array-move';
