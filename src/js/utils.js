@@ -1,3 +1,4 @@
+import { property } from 'lodash';
 import Stats from 'stats.js';
 
 // Show the FPS counter
@@ -82,6 +83,9 @@ const currencyFormat = {
   pattern: `#!`,
 };
 
+const has = (obj, property) =>
+  Object.prototype.hasOwnProperty.call(obj, property);
+
 export {
   showFPS,
   makeid,
@@ -89,4 +93,5 @@ export {
   deliveryConsoleWithMessage,
   animateCSS,
   currencyFormat,
+  has,
 };

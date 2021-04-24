@@ -7,7 +7,7 @@ import autoBind from 'auto-bind';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
-import { animateCSS, currencyFormat } from './utils';
+import { animateCSS, currencyFormat, has } from './utils';
 
 // Product may have a variant
 // Variant is single option and uses a different class.
@@ -89,7 +89,7 @@ export default class extends EventEmitter {
 
     // Create the variant if exists
     // ===========================================================
-    if (Object.prototype.hasOwnProperty.call(this.productJSON, 'variants')) {
+    if (has(this.productJSON, 'variants')) {
       console.log('product has variants');
       this.variant = new Variant(this.productJSON.variants);
       this.variant.on('selection', this.selectedVariant);
@@ -98,12 +98,7 @@ export default class extends EventEmitter {
     // Create the group options objects
     // ===========================================================
     this.groupOptions = [];
-    if (
-      Object.prototype.hasOwnProperty.call(
-        this.productJSON,
-        'ingredient_categories',
-      )
-    ) {
+    if (has(this.productJSON, 'ingredient_categories')) {
       console.log('product has at least one group option');
       // for every group option
       this.productJSON.ingredient_categories.forEach((groupOption) => {
