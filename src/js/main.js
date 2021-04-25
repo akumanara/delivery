@@ -8,6 +8,7 @@ import FastAverageColor from 'fast-average-color';
 import Accordion from 'accordion-js';
 import List from 'list.js';
 import arrayMove from 'array-move';
+import PubSub from 'pubsub-js';
 import { showFPS, makeid, deliveryConsole } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
@@ -17,6 +18,9 @@ class App {
     const app = this;
     autoBind(this);
     showFPS();
+
+    PubSub.subscribe('MY TOPIC', this.subscriber);
+
     this.DOM = {
       loader: document.querySelector('.delivery-loader'),
     };
@@ -202,6 +206,10 @@ class App {
 
   hideLoader() {
     this.DOM.loader.classList.remove('active');
+  }
+
+  subscriber(data) {
+    console.log(data);
   }
 }
 

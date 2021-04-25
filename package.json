@@ -58,6 +58,7 @@
     "lodash": "^4.17.21",
     "lozad": "^1.16.0",
     "normalize.css": "^8.0.1",
+    "pubsub-js": "^1.9.3",
     "randomstring": "^1.1.5",
     "regenerator-runtime": "^0.13.7",
     "smooth-corners": "^1.0.6",

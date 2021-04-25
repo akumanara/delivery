@@ -1,3 +1,4 @@
+import PubSub from 'pubsub-js';
 import currency from 'currency.js';
 import EventEmitter from 'events';
 import Accordion from 'accordion-js';
@@ -288,6 +289,7 @@ export default class extends EventEmitter {
 
     // recalculate price
     this.calculatePrice();
+    PubSub.publish('MY TOPIC', 'hello world!');
   }
 
   // Executes when we select a group option
