@@ -85,6 +85,7 @@ export default class {
     }
 
     this.basePrice = this.productJSON.price;
+    this.isAddToCartEnabled = true;
 
     // Create the variant if exists
     // ===========================================================
@@ -191,6 +192,8 @@ export default class {
       );
       this.groupOptions.forEach((groupOption, index) => {
         groupOption.init(groupOptionsElements[index]);
+        groupOption.on('disableAddToCart', this.disableAddToCart);
+        groupOption.on('enableAddToCart', this.enableAddToCart);
       });
     }
 
@@ -247,6 +250,7 @@ export default class {
 
   // Executes when we click add to cart button
   async addToCart() {
+    if (!this.isAddToCartEnabled) return;
     console.log('adding to cart');
     PubSub.publish('show_loader');
 
@@ -342,5 +346,19 @@ export default class {
     this.DOM.price = this.DOM.priceContainer.appendChild(cln);
 
     animateCSS(this.DOM.price, 'pulse');
+  }
+
+  disableAddToCart() {
+    this.isAddToCartEnabled = false;
+    this.DOM.addToCartBtn.classList.add(
+      'product-modal__add-to-cart-btn--disabled',
+    );
+  }
+
+  enableAddToCart() {
+    this.isAddToCartEnabled = true;
+    this.DOM.addToCartBtn.classList.remove(
+      'product-modal__add-to-cart-btn--disabled',
+    );
   }
 }

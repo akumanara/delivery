@@ -270,7 +270,7 @@ body {
     width: 14px;
     height: 14px;
     user-select: none;
-  }wornnout 
+  }
   &__add-to-cart-qty-minus-img {
     max-width: 100%;
     height: auto;
@@ -296,6 +296,11 @@ body {
     background: #5a88ff;
     box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
     border-radius: 10px;
+    transition: $trans;
+
+    &--disabled {
+      background: #8aabff;
+    }
   }
   &__add-to-cart-btn-icon {
     width: 22px;

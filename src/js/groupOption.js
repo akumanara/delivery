@@ -57,25 +57,17 @@ export default class extends EventEmitter {
     // Preselect
     this.preselectDefaultIngredients();
 
-    // UpdateTopText in case preselected added stuff
-    this.updateTopText();
-
-    // Check if minimum is satisfied
-    this.checkMinimumIngredientsSatisfied();
+    // Check add to cart feasibility
+    this.checkAddToCartFeasibility();
   }
 
   optionClicked(option) {
+    // We handle the logic of what happens when we click on an item.
+    // After the function we will have selected or deselected or done nothing.
     this.handleOptionClickedLogic(option);
 
-    this.updateTopText();
-
-    // Check if minimum is satisfied and add/remove has error class
-    this.checkMinimumIngredientsSatisfied();
-    if (!this.minimumIngredientsSatisfied) {
-      this.DOM.topText.classList.add('has-error');
-    } else {
-      this.DOM.topText.classList.remove('has-error');
-    }
+    // Check add to cart feasibility
+    this.checkAddToCartFeasibility();
 
     // Calculate group option price
     this.calculateGroupOptionPrice();
@@ -130,14 +122,6 @@ export default class extends EventEmitter {
     option.element.classList.remove('product-modal__option-item--active');
   }
 
-  checkMinimumIngredientsSatisfied() {
-    if (this.selectedOptions.length < this.min) {
-      this.minimumIngredientsSatisfied = false;
-    } else {
-      this.minimumIngredientsSatisfied = true;
-    }
-  }
-
   preselectDefaultIngredients() {
     this.groupOption.ingredients.forEach((ingredient) => {
       // TODO numeric ingredients
@@ -176,5 +160,18 @@ export default class extends EventEmitter {
     this.groupOption.ingredients.forEach((element) => {
       element.priceElement.innerText = element.price[this.selectedVariantID];
     });
+  }
+
+  checkAddToCartFeasibility() {
+    // do we satisfy min number?
+    if (this.selectedOptions.length < this.min) {
+      this.DOM.topText.classList.add('has-error');
+      this.emit('disableAddToCart');
+    } else {
+      this.DOM.topText.classList.remove('has-error');
+      this.emit('enableAddToCart');
+    }
+
+    this.updateTopText();
   }
 }
