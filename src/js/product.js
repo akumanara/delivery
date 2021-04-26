@@ -180,13 +180,13 @@ export default class {
     });
 
     // Zoom
-    // this.modalElement
-    //   .querySelectorAll('.product-modal__slide-img')
-    //   .forEach((img) => {
-    //     img.addEventListener('click', () => {
-    //       this.zoomMode(img);
-    //     });
-    //   });
+    this.modalElement
+      .querySelectorAll('.product-modal__slide-img')
+      .forEach((img) => {
+        img.addEventListener('click', () => {
+          this.zoomMode(img);
+        });
+      });
 
     // Bind close btn
     this.modalElement
@@ -275,7 +275,7 @@ export default class {
     };
 
     // submit product and get the new cart
-    this.cart = await this.api.dummy(data);
+    // this.cart = await this.api.dummy(data);
     this.cart = await this.api.addProductToCart('XXX');
 
     // this.emit('cartUpdate', this.cart);
@@ -390,10 +390,10 @@ export default class {
     });
   }
 
-  // zoomMode(img) {
-  //   console.log(img);
-  //   // get
+  zoomMode(img) {
+    console.log(img);
+    // get
 
-  //   Panzoom(img);
-  // }
+    Panzoom(img);
+  }
 }

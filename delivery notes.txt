@@ -136,3 +136,12 @@ Todo - Doing
 change product. Clicked from cart. (will the btn change?)
 Product plus/minus on ingredients
 zoom on photos
+
+
+
+
+API Product
+==================================
+otan enas xristis kanei click sto product kanoume ena call sto api gia na paroume ta data tou. endpoint A
+otan kanei add to cart kanoume ena call sto insert gia na to valoume sto kalathi tou. endpoint b
+
