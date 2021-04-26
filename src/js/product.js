@@ -1,6 +1,5 @@
 import PubSub from 'pubsub-js';
 import currency from 'currency.js';
-import EventEmitter from 'events';
 import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
 import randomstring from 'randomstring';
@@ -44,9 +43,8 @@ import { animateCSS, currencyFormat, has } from './utils';
 // an exeis default ingredient 1, kai max einai panw apo 1 (to option einai number input) tote i timi sto UI ti deixni?
 // Τι σημαίνει done στα group options
 
-export default class extends EventEmitter {
+export default class {
   constructor(productElement, template) {
-    super();
     autoBind(this);
     this.template = template;
     this.element = productElement;
@@ -62,7 +60,7 @@ export default class extends EventEmitter {
 
   // Executes when we click on an product from the product list
   async onClick() {
-    this.emit('showPreloader');
+    PubSub.publish('show_loader');
     // fetch the html for the modal
     this.productJSON = await this.api.getProduct(this.modalURL);
 
@@ -73,7 +71,7 @@ export default class extends EventEmitter {
     // Init the modal
     this.initModal();
 
-    this.emit('hidePreloader');
+    PubSub.publish('hide_loader');
   }
 
   // Creates the product after we get the JSON from the API
@@ -250,16 +248,17 @@ export default class extends EventEmitter {
   // Executes when we click add to cart button
   async addToCart() {
     console.log('adding to cart');
-    this.emit('showPreloader');
+    PubSub.publish('show_loader');
+
     // TODO: Prepare data for API
     const data = {};
 
     // submit product and get the new cart
     this.cart = await this.api.addProductToCart('XXX');
 
-    this.emit('cartUpdate', this.cart);
-    this.emit('hidePreloader');
+    // this.emit('cartUpdate', this.cart);
     this.closeModal();
+    PubSub.publish('hide_loader');
   }
 
   // Closed the modal and removes it from the body
@@ -289,7 +288,6 @@ export default class extends EventEmitter {
 
     // recalculate price
     this.calculatePrice();
-    PubSub.publish('MY TOPIC', 'hello world!');
   }
 
   // Executes when we select a group option

@@ -13,28 +13,13 @@ tha exei stoixeia pwa kai tha ginei server side mazi me kapia calls
 ==========
 
 
-lazy load stis eikones sto stores page / catalog page
-
-workflow
----
-1. design
-2. me to kleisimo ton eikastikon kai prin ta piasw tha ta sizitame me tin omada tou delivery
-3. define api per page
-3. dummy front end (layout)
-4.
 
 ======================
 DESIGN
 ======================
-mobile first
-
 mobile 360xX
 tablet 768xX
 laptop/desktop 1366xX
-
-
-wolt - container 1200 + 30px padding left n right
-define some space utilities
 
 
 
@@ -129,11 +114,7 @@ todo - Bugs (later)
 store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
 
 
-Todo - Doing
-==================================
-change product. Clicked from cart.
-zoom on photos
-Product plus/minus on ingredients
+
 
 from backend
 ==================================
@@ -146,3 +127,13 @@ sta product pou den exoume temaxia tha megalosoume to btn tou qty
 currency format
 ==================================
 1.236,20€
+
+
+
+
+Todo - Doing
+==================================
+change product. Clicked from cart. (will the btn change?)
+Product plus/minus on ingredients
+zoom on photos
+merge webpack configs (release / dev)

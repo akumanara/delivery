@@ -19,7 +19,9 @@ class App {
     autoBind(this);
     showFPS();
 
-    PubSub.subscribe('MY TOPIC', this.subscriber);
+    // Subscribe to topics
+    PubSub.subscribe('hide_loader', this.hideLoader);
+    PubSub.subscribe('show_loader', this.showLoader);
 
     this.DOM = {
       loader: document.querySelector('.delivery-loader'),
@@ -29,8 +31,6 @@ class App {
     const storeMenuCatalog = document.querySelector('.store-menu__catalog');
     if (storeMenuCatalog) {
       this.productList = new ProductList(app);
-      this.productList.on('showPreloader', this.showLoader);
-      this.productList.on('hidePreloader', this.hideLoader);
     }
 
     // Store carousel
@@ -201,10 +201,12 @@ class App {
   }
 
   showLoader() {
+    console.log('showLoader');
     this.DOM.loader.classList.add('active');
   }
 
   hideLoader() {
+    console.log('hideLoader');
     this.DOM.loader.classList.remove('active');
   }
 

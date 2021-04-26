@@ -102,6 +102,22 @@ gulp.task('js-dev', (done) => {
       .pipe(browserSync.stream())
   );
 });
+
+gulp.task('js-release', (done) => {
+  return (
+    gulp
+      .src(src_folder + 'js/main.js')
+      .pipe(webpack(require('./webpack.config.build.js')))
+      .on('error', function (error) {
+        console.log(error);
+        done();
+      })
+      .pipe(gulp.dest(dist_folder + 'js/'))
+      // .pipe(gulp.dest(aura_folder_js + '/'))
+      .pipe(browserSync.stream())
+  );
+});
+
 gulp.task('js', gulp.series('js-dev', 'js-vendor'));
 
 //==================================
