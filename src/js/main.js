@@ -12,6 +12,7 @@ import PubSub from 'pubsub-js';
 import { showFPS, makeid, deliveryConsole } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
+import { context } from './context';
 
 class App {
   constructor() {

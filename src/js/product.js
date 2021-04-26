@@ -4,11 +4,11 @@ import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
 import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
+import Panzoom from 'panzoom';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
 import { animateCSS, currencyFormat, has } from './utils';
-
 // Product may have a variant
 // Variant is single option and uses a different class.
 // Variant changes the base price for the product.
@@ -104,6 +104,8 @@ export default class {
       this.productJSON.ingredient_categories.forEach((groupOption) => {
         const tmpGroupOption = new GroupOption(groupOption);
         tmpGroupOption.on('selection', this.selectedGroupOption);
+        tmpGroupOption.on('disableAddToCart', this.disableAddToCart);
+        tmpGroupOption.on('enableAddToCart', this.enableAddToCart);
         this.groupOptions.push(tmpGroupOption);
       });
     }
@@ -142,6 +144,29 @@ export default class {
   initModal() {
     const self = this;
 
+    // Save the DOM elements for later use
+    this.DOM = {
+      price: this.modalElement.querySelector('.js-product-modal-final-price'),
+      priceContainer: this.modalElement.querySelector(
+        '.product-modal__add-to-cart-btn-price',
+      ),
+      qty: this.modalElement.querySelector('.js-product-modal-qty'),
+      plusBtn: this.modalElement.querySelector(
+        '.product-modal__add-to-cart-qty-plus',
+      ),
+      minusBtn: this.modalElement.querySelector(
+        '.product-modal__add-to-cart-qty-minus',
+      ),
+      addToCartBtn: this.modalElement.querySelector(
+        '.product-modal__add-to-cart-btn',
+      ),
+    };
+
+    // Add event listeners
+    this.DOM.plusBtn.addEventListener('click', this.addOneQty);
+    this.DOM.minusBtn.addEventListener('click', this.removeOneQty);
+    this.DOM.addToCartBtn.addEventListener('click', this.addToCart);
+
     // Photos gallery
     const sliderElement = this.modalElement.querySelector(
       '.product-modal__slider',
@@ -153,6 +178,16 @@ export default class {
       resistance: true,
       resistanceRatio: 0,
     });
+
+    // Zoom
+    // this.modalElement
+    //   .querySelectorAll('.product-modal__slide-img')
+    //   .forEach((img) => {
+    //     img.addEventListener('click', () => {
+    //       this.zoomMode(img);
+    //     });
+    //   });
+
     // Bind close btn
     this.modalElement
       .querySelector('.product-modal__close-btn')
@@ -192,38 +227,16 @@ export default class {
       );
       this.groupOptions.forEach((groupOption, index) => {
         groupOption.init(groupOptionsElements[index]);
-        groupOption.on('disableAddToCart', this.disableAddToCart);
-        groupOption.on('enableAddToCart', this.enableAddToCart);
       });
     }
-
-    // Save the DOM elements for later use
-    this.DOM = {
-      price: this.modalElement.querySelector('.js-product-modal-final-price'),
-      priceContainer: this.modalElement.querySelector(
-        '.product-modal__add-to-cart-btn-price',
-      ),
-      qty: this.modalElement.querySelector('.js-product-modal-qty'),
-      plusBtn: this.modalElement.querySelector(
-        '.product-modal__add-to-cart-qty-plus',
-      ),
-      minusBtn: this.modalElement.querySelector(
-        '.product-modal__add-to-cart-qty-minus',
-      ),
-      addToCartBtn: this.modalElement.querySelector(
-        '.product-modal__add-to-cart-btn',
-      ),
-    };
-
-    // Add event listeners
-    this.DOM.plusBtn.addEventListener('click', this.addOneQty);
-    this.DOM.minusBtn.addEventListener('click', this.removeOneQty);
-    this.DOM.addToCartBtn.addEventListener('click', this.addToCart);
 
     // Preselect the default variant
     if (this.variant) {
       this.variant.preselectDefaultVariant();
     }
+
+    // Check group options to see if we are ok with add to cart btn
+    this.checkAddToCartFeasibility();
 
     // hide overflow
     document.body.classList.add('hide-overflow');
@@ -251,13 +264,18 @@ export default class {
   // Executes when we click add to cart button
   async addToCart() {
     if (!this.isAddToCartEnabled) return;
+
     console.log('adding to cart');
     PubSub.publish('show_loader');
 
     // TODO: Prepare data for API
-    const data = {};
+    const data = {
+      itemGroupId: 'xxx',
+      itemName: 'Hot dog',
+    };
 
     // submit product and get the new cart
+    this.cart = await this.api.dummy(data);
     this.cart = await this.api.addProductToCart('XXX');
 
     // this.emit('cartUpdate', this.cart);
@@ -349,6 +367,8 @@ export default class {
   }
 
   disableAddToCart() {
+    console.log('disableAddToCart');
+    console.log(this.DOM.addToCartBtn);
     this.isAddToCartEnabled = false;
     this.DOM.addToCartBtn.classList.add(
       'product-modal__add-to-cart-btn--disabled',
@@ -361,4 +381,19 @@ export default class {
       'product-modal__add-to-cart-btn--disabled',
     );
   }
+
+  checkAddToCartFeasibility() {
+    this.groupOptions.forEach((element) => {
+      if (!element.cartFeasibility) {
+        this.disableAddToCart();
+      }
+    });
+  }
+
+  // zoomMode(img) {
+  //   console.log(img);
+  //   // get
+
+  //   Panzoom(img);
+  // }
 }

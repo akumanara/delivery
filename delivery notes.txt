@@ -136,4 +136,3 @@ Todo - Doing
 change product. Clicked from cart. (will the btn change?)
 Product plus/minus on ingredients
 zoom on photos
-merge webpack configs (release / dev)

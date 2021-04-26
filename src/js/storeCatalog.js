@@ -35,7 +35,7 @@ export default class {
         trigger: section,
         start: 'top-=20px top+=108px', // when the top of the trigger hits the top of the viewport
         end: 'bottom-=100px top+=108px', // when the bottom of the trigger hits the top of the viewport
-        markers: true,
+        markers: false,
         onEnter: () => {
           this.enterCategory(index);
         },

@@ -23,6 +23,8 @@ export default class extends EventEmitter {
     this.price = 0;
     // The json data has 0 key when you dont have a selected variant
     this.selectedVariantID = '0';
+
+    this.cartFeasibility = false;
   }
 
   init(element) {
@@ -57,7 +59,7 @@ export default class extends EventEmitter {
     // Preselect
     this.preselectDefaultIngredients();
 
-    // Check add to cart feasibility
+    // Check for text
     this.checkAddToCartFeasibility();
   }
 
@@ -165,9 +167,11 @@ export default class extends EventEmitter {
   checkAddToCartFeasibility() {
     // do we satisfy min number?
     if (this.selectedOptions.length < this.min) {
+      this.cartFeasibility = false;
       this.DOM.topText.classList.add('has-error');
       this.emit('disableAddToCart');
     } else {
+      this.cartFeasibility = true;
       this.DOM.topText.classList.remove('has-error');
       this.emit('enableAddToCart');
     }
