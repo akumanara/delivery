@@ -105,9 +105,6 @@ X-- default*
 
 
 
-Questions
-==================================
-
 
 todo - Bugs (later)
 ==================================
@@ -115,14 +112,15 @@ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei des
 
 
 
-
-from backend
-==================================
-Variant with 0 price or without price
-
 notes
 ==================================
 sta product pou den exoume temaxia tha megalosoume to btn tou qty
+otan exoume floating koumpia prepei na exoume keno sto katw simeio san padding gia na mi kanei overlap to content
+an ena proion exeis variant h group options den exeis plus/minus sto market view.
+yparxei periptwsi na mporw h na mi mporw na kanw instant add to basket TBD
+delivery / takeaway only one accordion open.
+otan einai anoixto ena apo ta 2 na krivei to basket button.
+
 
 currency format
 ==================================
@@ -134,14 +132,11 @@ currency format
 Todo - Doing
 ==================================
 change product. Clicked from cart. (will the btn change?)
-Product plus/minus on ingredients
 zoom on photos
 
 
 
 
-API Product
-==================================
-otan enas xristis kanei click sto product kanoume ena call sto api gia na paroume ta data tou. endpoint A
-otan kanei add to cart kanoume ena call sto insert gia na to valoume sto kalathi tou. endpoint b
+
+
 
