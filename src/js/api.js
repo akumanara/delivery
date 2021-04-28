@@ -41,6 +41,19 @@ export default class {
     );
   }
 
+  quickAddProduct(data) {
+    // https://www.delivery.gr/delivery/cart/3153/insert
+    const url = `${this.rootURL}/delivery/cart/${context.storeID}/insert`;
+    axios
+      .post(url, data, {})
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   dummy(data) {
     // https://www.delivery.gr/delivery/cart/3153/insert
     const url = `${this.rootURL}/delivery/cart/${context.storeID}/insert`;

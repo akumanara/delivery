@@ -120,6 +120,7 @@ an ena proion exeis variant h group options den exeis plus/minus sto market view
 yparxei periptwsi na mporw h na mi mporw na kanw instant add to basket TBD
 delivery / takeaway only one accordion open.
 otan einai anoixto ena apo ta 2 na krivei to basket button.
+sto product h klassi quick-add-to-basket mas epitrepei eisagogi sto basket xwris na sikwsei to modal. (markets only)
 
 
 currency format
@@ -133,6 +134,7 @@ Todo - Doing
 ==================================
 change product. Clicked from cart. (will the btn change?)
 zoom on photos
+prosthiki tou item id sto store menu catalog san data attribute
 
 
 
@@ -140,3 +142,46 @@ zoom on photos
 
 
 
+
+JS Flow for products
+==================================
+
+-----------------------------------------------------------------------------
+on page load
+-----------------------------------------------------------------------------
+dimiourgia ton product objects pou uparxoun sti lista tou katastimatos. exoun to id tou proiontos apo data-attribute.
+an to element exei koumpia prosthiki, plus kai minus. tote tha kanoume hook events gia quick add, quick plus one, quick minus one. [gia markets]
+an exei koumpi prosthiki kai exei kai klasi 'cannot-quick-add' tote tha prepei na sikosoume to modal sto click prosthiki. (ekioskys / coffee case)
+TODO: dimiourgia ton product objects apo to cart.
+
+
+-----------------------------------------------------------------------------
+click sto proion se quick actions (quick add, quick plus, quick minus)
+-----------------------------------------------------------------------------
+API call me ta data pou thelei. xrisimopoiei mono to product ID apo to data-attribute.
+
+
+-----------------------------------------------------------------------------
+click sto proion sti lista katastimatos apo simeio pou sikwnei to modal
+-----------------------------------------------------------------------------
+API call gia na parw to product se json.
+dhmiourgia template me handlebars.
+preselect stuff. etc.
+hook events.
+
+-----------------------------------------------------------------------------
+click sto proion sto cart apo simeio pou sikwnei to modal
+-----------------------------------------------------------------------------
+API call gia na parw to product se json diaforetiko apo
+dhmiourgia template me handlebars.
+preselect stuff. etc.
+hook events.
+
+
+-----------------------------------------------------------------------------
+on cart update (otan mou erxete to cart san response)
+-----------------------------------------------------------------------------
+append stin html to neo kalathi.
+create products from cart.
+gia kathe ena apo ta products sto cart
+--- vriskoume to product sti lista kai eite tou vazoume mia class (oti einai sto cart) eite vazoume to +/- me to quantity

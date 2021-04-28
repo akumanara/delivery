@@ -54,24 +54,12 @@ export default class {
   }
 
   init() {
-    // setup event listeners
-    this.element.addEventListener('click', this.onClick);
-  }
+    // Get product id
+    this.productID = this.element.dataset.productId;
+    // Setup event listeners
+    this.element.addEventListener('click', this.raiseModal);
 
-  // Executes when we click on an product from the product list
-  async onClick() {
-    PubSub.publish('show_loader');
-    // fetch the html for the modal
-    this.productJSON = await this.api.getProduct(this.modalURL);
-
-    // Create all the objects belonging to the product
-    this.createProduct();
-    // Create the modal (template) from the data and init it
-    this.createModal();
-    // Init the modal
-    this.initModal();
-
-    PubSub.publish('hide_loader');
+    // TODO setup *instant* add to cart/ minus /plus
   }
 
   // Creates the product after we get the JSON from the API
@@ -261,28 +249,6 @@ export default class {
     this.calculatePrice();
   }
 
-  // Executes when we click add to cart button
-  async addToCart() {
-    if (!this.isAddToCartEnabled) return;
-
-    console.log('adding to cart');
-    PubSub.publish('show_loader');
-
-    // TODO: Prepare data for API
-    const data = {
-      itemGroupId: 'xxx',
-      itemName: 'Hot dog',
-    };
-
-    // submit product and get the new cart
-    // this.cart = await this.api.dummy(data);
-    this.cart = await this.api.addProductToCart('XXX');
-
-    // this.emit('cartUpdate', this.cart);
-    this.closeModal();
-    PubSub.publish('hide_loader');
-  }
-
   // Closed the modal and removes it from the body
   closeModal() {
     this.modalElement.remove();
@@ -395,5 +361,57 @@ export default class {
     // get
 
     Panzoom(img);
+  }
+
+  // Executes when we click on an product from the product list
+  async raiseModal() {
+    PubSub.publish('show_loader');
+    // fetch the html for the modal
+    this.productJSON = await this.api.getProduct(this.modalURL);
+
+    // Create all the objects belonging to the product
+    this.createProduct();
+    // Create the modal (template) from the data and init it
+    this.createModal();
+    // Init the modal
+    this.initModal();
+
+    PubSub.publish('hide_loader');
+  }
+
+  // Executes when we click add to cart button
+  async addToCart() {
+    if (!this.isAddToCartEnabled) return;
+
+    console.log('adding to cart');
+    PubSub.publish('show_loader');
+
+    // TODO: Prepare data for API
+    const data = {
+      itemGroupId: 'xxx',
+      itemName: 'Hot dog',
+    };
+
+    // submit product and get the new cart
+    // this.cart = await this.api.dummy(data);
+    this.cart = await this.api.addProductToCart('XXX');
+
+    // this.emit('cartUpdate', this.cart);
+    this.closeModal();
+    PubSub.publish('hide_loader');
+  }
+
+  async quickAdd() {
+    PubSub.publish('show_loader');
+    const data = {
+      itemGroupId: this.productID,
+      itemQuantity: 1,
+    };
+
+    // after we call the api we get the updated cart
+    this.cartHTML = await this.api.quickAddProduct(this.data);
+
+    // TODO update the cart
+    PubSub.publish('hide_loader');
   }
 }

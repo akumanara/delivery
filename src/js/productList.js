@@ -15,16 +15,32 @@ export default class {
   init() {
     // create the handlebar template
     const source = document.getElementById('entry-template').innerHTML;
-    const HandlebarsTemplate = Handlebars.compile(source);
+    this.HandlebarsTemplate = Handlebars.compile(source);
 
+    // On init we create the product from the catalogue because they already exist in html
+    this.createProductsFromStoreCatalog();
+
+    // TODO remove this. after develoment
+    this.products[0].onClick();
+  }
+
+  createProductsFromStoreCatalog() {
     document
       .querySelectorAll('.store-menu__product')
       .forEach((productElement) => {
-        const tmpProduct = new Product(productElement, HandlebarsTemplate);
+        const tmpProduct = new Product(productElement, this.HandlebarsTemplate);
         this.products.push(tmpProduct);
-        const a = new CartProduct(productElement, HandlebarsTemplate);
       });
+  }
 
-    this.products[0].onClick();
+  createProductsFromCart() {
+    console.log(this);
+    // TODO
+    // document
+    //   .querySelectorAll('.store-menu__product')
+    //   .forEach((productElement) => {
+    //     const tmpProduct = new Product(productElement, this.HandlebarsTemplate);
+    //     this.products.push(tmpProduct);
+    //   });
   }
 }

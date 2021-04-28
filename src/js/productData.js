@@ -1,20 +1,5 @@
 // {
-//   "id": 1,
-//   "title": "productX",
-//   "description": "this is a desc",
-//   "large_description": "<p>description</p>",
-//   "start_price": 5.55,
-//   "price": 3.32,
-//   "isActive": true,
-//   "isOutOfStock": false,
-//   "images": ["./images/1.jpg", "./images/2.jpg", "./images/3.jpg"],
-//   "unitOfMeasure": "ΤΜΧ",
-//   "unitOfMeasureStep": "1.0",
-//   "minQuantity": "0",
-//   "maxQuantity": "5",
-//   "extraUnitOfMeasure": "ΟΖ",
-//   "extraUnitOfMeasureSize": "5"
-// }
+
 
 export default {
   large_description: '<p>description</p>',
