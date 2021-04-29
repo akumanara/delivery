@@ -1,6 +1,5 @@
 import Handlebars from 'handlebars';
 import Product from './product';
-import CartProduct from './cartProduct';
 
 export default class {
   constructor() {
@@ -17,11 +16,13 @@ export default class {
     const source = document.getElementById('entry-template').innerHTML;
     this.HandlebarsTemplate = Handlebars.compile(source);
 
+
+
     // On init we create the product from the catalogue because they already exist in html
     this.createProductsFromStoreCatalog();
 
     // TODO remove this. after develoment
-    this.products[0].onClick();
+    this.products[0].raiseModal();
   }
 
   createProductsFromStoreCatalog() {

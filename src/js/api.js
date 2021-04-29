@@ -8,17 +8,29 @@ export default class {
   }
 
   // eslint-disable-next-line class-methods-use-this
-  getProduct(url) {
-    // axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
-    //   const persons = res.data;
-    //   console.log(persons);
-    // });
-    // placeholder
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        resolve(product);
-      }, 200),
-    );
+  getProduct(productID) {
+    if (context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(product);
+        }, 200),
+      );
+    }
+    return new Promise((resolve) => {
+      axios
+        .get('https://jsonplaceholder.typicode.com/todos/1', {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+            'Hi-ads': 'Sup',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    });
   }
 
   // eslint-disable-next-line class-methods-use-this
@@ -33,12 +45,13 @@ export default class {
 
   // eslint-disable-next-line class-methods-use-this
   getProductFromCart(url) {
-    // placeholder
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        resolve(product);
-      }, 200),
-    );
+    if (context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(product);
+        }, 200),
+      );
+    }
   }
 
   quickAddProduct(data) {
@@ -58,8 +71,8 @@ export default class {
     // https://www.delivery.gr/delivery/cart/3153/insert
     const url = `${this.rootURL}/delivery/cart/${context.storeID}/insert`;
     console.log(url);
-    axios
-      .post(url, data, {
+    const request = axios
+      .post('https://jsonplaceholder.typicode.com/posts/1', data, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Hi-ads': 'Sup',
@@ -71,5 +84,6 @@ export default class {
       .catch((error) => {
         console.log(error);
       });
+    return request;
   }
 }

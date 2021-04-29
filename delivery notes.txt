@@ -104,7 +104,10 @@ X-- default*
 
 
 
-
+======================
+Handlebars notes
+======================
+triple {{{}}} do not escape values
 
 todo - Bugs (later)
 ==================================

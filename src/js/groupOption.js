@@ -10,7 +10,10 @@ export default class extends EventEmitter {
 
     // Used for templating
     this.name = this.groupOption.name;
+
+    // todo weird bug
     this.ingredients = this.groupOption.ingredients;
+
     if (this.groupOption.min >= 1) {
       this.mandatoryOrOptionalText = texts.mandatory;
     } else {
@@ -126,7 +129,6 @@ export default class extends EventEmitter {
 
   preselectDefaultIngredients() {
     this.groupOption.ingredients.forEach((ingredient) => {
-      // TODO numeric ingredients
       if (Number(ingredient.default) === 1) {
         this.selectOption(ingredient);
       }

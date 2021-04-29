@@ -9,6 +9,7 @@ import Accordion from 'accordion-js';
 import List from 'list.js';
 import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
+import Handlebars from 'handlebars';
 import { showFPS, makeid, deliveryConsole } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
@@ -18,6 +19,9 @@ class App {
     const app = this;
     autoBind(this);
     showFPS();
+
+    // Handlebars partials
+    // Handlebars.registerPartial('myPartial', '{{prefix}}');
 
     // Subscribe to topics
     PubSub.subscribe('hide_loader', this.hideLoader);

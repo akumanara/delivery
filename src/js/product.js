@@ -181,6 +181,23 @@ export default class {
       .querySelector('.product-modal__close-btn')
       .addEventListener('click', this.closeModal);
 
+    // setup Variant
+    if (this.variant) {
+      const variantElement = this.modalElement.querySelector(
+        '.js-product-modal__option-variant',
+      );
+      this.variant.init(variantElement);
+    }
+    // setup group options
+    if (this.groupOptions.length > 0) {
+      const groupOptionsElements = this.modalElement.querySelectorAll(
+        '.js-product-modal__option-group-option',
+      );
+      this.groupOptions.forEach((groupOption, index) => {
+        groupOption.init(groupOptionsElements[index]);
+      });
+    }
+
     // I setup all the accordions here and not inside variant and groupoptions
     this.accordions = [];
     this.modalElement
@@ -199,24 +216,6 @@ export default class {
         });
         this.accordions.push(tmpAccordionContainer);
       });
-
-    // setup Variant
-    if (this.variant) {
-      const variantElement = this.modalElement.querySelector(
-        '.js-product-modal__option-variant',
-      );
-      this.variant.init(variantElement);
-    }
-
-    // setup group options
-    if (this.groupOptions.length > 0) {
-      const groupOptionsElements = this.modalElement.querySelectorAll(
-        '.js-product-modal__option-group-option',
-      );
-      this.groupOptions.forEach((groupOption, index) => {
-        groupOption.init(groupOptionsElements[index]);
-      });
-    }
 
     // Preselect the default variant
     if (this.variant) {
@@ -334,7 +333,6 @@ export default class {
 
   disableAddToCart() {
     console.log('disableAddToCart');
-    console.log(this.DOM.addToCartBtn);
     this.isAddToCartEnabled = false;
     this.DOM.addToCartBtn.classList.add(
       'product-modal__add-to-cart-btn--disabled',
@@ -368,7 +366,7 @@ export default class {
     PubSub.publish('show_loader');
     // fetch the html for the modal
     this.productJSON = await this.api.getProduct(this.modalURL);
-
+    console.log(this.productJSON);
     // Create all the objects belonging to the product
     this.createProduct();
     // Create the modal (template) from the data and init it
@@ -382,15 +380,32 @@ export default class {
   // Executes when we click add to cart button
   async addToCart() {
     if (!this.isAddToCartEnabled) return;
-
     console.log('adding to cart');
     PubSub.publish('show_loader');
 
     // TODO: Prepare data for API
+
+    const ingredients = {};
+    this.groupOptions.forEach((groupOption) => {
+      // const key = element.groupOption.ingredients;
+      groupOption.groupOption.ingredients.forEach((ingredient) => {
+        const key = ingredient.id;
+        let value = 0;
+        if (groupOption.selectedOptions.includes(ingredient)) {
+          value = 1;
+        }
+        ingredients[key.toString()] = value;
+      });
+    });
+
     const data = {
-      itemGroupId: 'xxx',
-      itemName: 'Hot dog',
+      itemGroupId: this.productID,
+      itemId: this.variant.selectedOption.id,
+      order_product_comments: 'TODO Comments about the product',
+      itemQuantity: this.quantity,
+      ingredients,
     };
+    console.log(data);
 
     // submit product and get the new cart
     // this.cart = await this.api.dummy(data);
