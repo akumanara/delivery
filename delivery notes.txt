@@ -188,3 +188,12 @@ append stin html to neo kalathi.
 create products from cart.
 gia kathe ena apo ta products sto cart
 --- vriskoume to product sti lista kai eite tou vazoume mia class (oti einai sto cart) eite vazoume to +/- me to quantity
+
+
+
+
+Registration Flow
+------
+email mandatory?
+phone mandatory?
+what is the main 

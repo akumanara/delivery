@@ -11,9 +11,6 @@ export default class extends EventEmitter {
     // Used for templating
     this.name = this.groupOption.name;
 
-    // todo weird bug
-    this.ingredients = this.groupOption.ingredients;
-
     if (this.groupOption.min >= 1) {
       this.mandatoryOrOptionalText = texts.mandatory;
     } else {
@@ -33,7 +30,6 @@ export default class extends EventEmitter {
   init(element) {
     // Get the element (accordion)
     this.element = element;
-
     // Get the elements options
     const optionsElements = this.element.querySelectorAll(
       '.product-modal__option-item',

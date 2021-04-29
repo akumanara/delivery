@@ -168,13 +168,13 @@ export default class {
     });
 
     // Zoom
-    this.modalElement
-      .querySelectorAll('.product-modal__slide-img')
-      .forEach((img) => {
-        img.addEventListener('click', () => {
-          this.zoomMode(img);
-        });
-      });
+    // this.modalElement
+    //   .querySelectorAll('.product-modal__slide-img')
+    //   .forEach((img) => {
+    //     img.addEventListener('click', () => {
+    //       this.zoomMode(img);
+    //     });
+    //   });
 
     // Bind close btn
     this.modalElement
@@ -188,6 +188,7 @@ export default class {
       );
       this.variant.init(variantElement);
     }
+
     // setup group options
     if (this.groupOptions.length > 0) {
       const groupOptionsElements = this.modalElement.querySelectorAll(
@@ -366,7 +367,6 @@ export default class {
     PubSub.publish('show_loader');
     // fetch the html for the modal
     this.productJSON = await this.api.getProduct(this.modalURL);
-    console.log(this.productJSON);
     // Create all the objects belonging to the product
     this.createProduct();
     // Create the modal (template) from the data and init it
