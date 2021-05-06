@@ -205,16 +205,17 @@
             </div>
           {{/each}}
         </div>
-        <!-- LONG DESCRIPTION -->
-        <div class="product-modal__long-description">
-          <!-- TITLE -->
-          <div class="product-modal__long-description-title">
-            Περιγραφή
-          </div>
-          <!-- RAW HTML -->
-          <div class="product-modal__long-description-html">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, pariatur
+        {{#if large_description}}
+          <!-- LONG DESCRIPTION -->
+          <div class="product-modal__long-description">
+            <!-- TITLE -->
+            <div class="product-modal__long-description-title">
+              Περιγραφή
+            </div>
+            <!-- RAW HTML -->
+            <div class="product-modal__long-description-html">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, pariatur
             praesentium quo iure error vel nam aliquid eveniet, magni optio
             recusandae tempore sunt odio repellat labore, deserunt corporis hic
             impedit. Eaque doloremque error, ipsum, nisi dignissimos iusto
@@ -278,13 +279,14 @@
             impedit. Blanditiis nulla amet magnam, quis, delectus a eaque officia
             necessitatibus rerum maxime quibusdam eum exercitationem iste dolore
             ex consequatur asperiores, saepe vel neque similique quidem?
-            </p>
+              </p>
+            </div>
+            <!-- DISCLAIMER -->
+            <div class="product-modal__long-description-disclaimer">
+              Information is provided by XXXXXXX.
+            </div>
           </div>
-          <!-- DISCLAIMER -->
-          <div class="product-modal__long-description-disclaimer">
-            Information is provided by XXXXXXX.
-          </div>
-        </div>
+        {{/if}}
       </div>
       <!-- ADD TO CART - ABSOLUTE POSITIONED -->
       <div class="product-modal__add-to-cart">

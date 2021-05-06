@@ -86,6 +86,12 @@ const currencyFormat = {
 const has = (obj, property) =>
   Object.prototype.hasOwnProperty.call(obj, property);
 
+const getFormData = (object) => {
+  const formData = new FormData();
+  Object.keys(object).forEach((key) => formData.append(key, object[key]));
+  return formData;
+};
+
 export {
   showFPS,
   makeid,
@@ -94,4 +100,5 @@ export {
   animateCSS,
   currencyFormat,
   has,
+  getFormData,
 };

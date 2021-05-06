@@ -150,6 +150,9 @@ CHROME PREVIOUS - NEXT
 ALT + LEFT ARROW
 ALT + RIGHT ARROW
 
+VSCODE CLOSE ACTIVE EDITOR
+-------
+CTRL  + W
 
 
 Navigate seartch results in the search PANE

@@ -8,7 +8,7 @@ import Panzoom from 'panzoom';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
-import { animateCSS, currencyFormat, has } from './utils';
+import { animateCSS, currencyFormat, has, getFormData } from './utils';
 // Product may have a variant
 // Variant is single option and uses a different class.
 // Variant changes the base price for the product.
@@ -77,7 +77,7 @@ export default class {
 
     // Create the variant if exists
     // ===========================================================
-    if (has(this.productJSON, 'variants')) {
+    if (has(this.productJSON, 'variants') && this.productJSON.variants.length) {
       console.log('product has variants');
       this.variant = new Variant(this.productJSON.variants);
       this.variant.on('selection', this.selectedVariant);
@@ -366,7 +366,7 @@ export default class {
   async raiseModal() {
     PubSub.publish('show_loader');
     // fetch the html for the modal
-    this.productJSON = await this.api.getProduct(this.modalURL);
+    this.productJSON = await this.api.getProduct(this.productID);
     // Create all the objects belonging to the product
     this.createProduct();
     // Create the modal (template) from the data and init it
@@ -383,9 +383,19 @@ export default class {
     console.log('adding to cart');
     PubSub.publish('show_loader');
 
-    // TODO: Prepare data for API
+    // Prepare data for API
 
-    const ingredients = {};
+    const data = {
+      itemGroupId: this.productID,
+      itemId: this.variant.selectedOption.id,
+      order_product_comments: 'TODO Comments about the product',
+      itemQuantity: this.quantity,
+    };
+
+    // Create form data from json
+    const bodyFormData = getFormData(data);
+
+    // Create form data array with keys
     this.groupOptions.forEach((groupOption) => {
       // const key = element.groupOption.ingredients;
       groupOption.groupOption.ingredients.forEach((ingredient) => {
@@ -394,23 +404,12 @@ export default class {
         if (groupOption.selectedOptions.includes(ingredient)) {
           value = 1;
         }
-        ingredients[key.toString()] = value;
+        bodyFormData.append(`ingredient[${key}]`, value);
       });
     });
 
-    const data = {
-      itemGroupId: this.productID,
-      itemId: this.variant.selectedOption.id,
-      order_product_comments: 'TODO Comments about the product',
-      itemQuantity: this.quantity,
-      ingredients,
-    };
-    console.log(data);
-
     // submit product and get the new cart
-    // this.cart = await this.api.dummy(data);
-    this.cart = await this.api.addProductToCart('XXX');
-
+    this.cart = await this.api.addProductToCart(bodyFormData);
     // this.emit('cartUpdate', this.cart);
     this.closeModal();
     PubSub.publish('hide_loader');

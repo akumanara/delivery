@@ -3,12 +3,9 @@ import product from './productData';
 import { context } from './context';
 
 export default class {
-  constructor() {
-    this.rootURL = context.rootURL;
-  }
-
   // eslint-disable-next-line class-methods-use-this
   getProduct(productID) {
+    // https://www.delivery.gr/api/menu/3153/product/1411216
     if (context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
@@ -17,13 +14,9 @@ export default class {
       );
     }
     return new Promise((resolve) => {
+      const url = `${context.rootURL}/api/menu/${context.storeID}/product/${productID}`;
       axios
-        .get('https://jsonplaceholder.typicode.com/todos/1', {
-          headers: {
-            'Content-Type': 'multipart/form-data',
-            'Hi-ads': 'Sup',
-          },
-        })
+        .get(url)
         .then((response) => {
           resolve(response.data);
         })
@@ -35,12 +28,25 @@ export default class {
 
   // eslint-disable-next-line class-methods-use-this
   addProductToCart(data) {
-    // placeholder
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        resolve({ tbd: 'ok' });
-      }, 500),
-    );
+    // https://www.delivery.gr/delivery/cart/3153/insert
+    if (context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve({ tbd: 'ok' });
+        }, 500),
+      );
+    }
+    return new Promise((resolve) => {
+      const url = `${context.rootURL}/delivery/cart/${context.storeID}/insert`;
+      axios
+        .post(url, data, { headers: { 'Content-Type': 'multipart/form-data' } })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    });
   }
 
   // eslint-disable-next-line class-methods-use-this
