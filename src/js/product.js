@@ -149,6 +149,9 @@ export default class {
       addToCartBtn: this.modalElement.querySelector(
         '.product-modal__add-to-cart-btn',
       ),
+      comments: this.modalElement.querySelector(
+        '.product-modal__comments-textarea',
+      ),
     };
 
     // Add event listeners
@@ -393,7 +396,7 @@ export default class {
     const data = {
       itemGroupId: this.productID,
       itemId: this.variant.selectedOption.id,
-      order_product_comments: 'TODO Comments about the product',
+      order_product_comments: this.DOM.comments.value,
       itemQuantity: this.quantity,
     };
 
