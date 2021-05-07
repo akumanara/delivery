@@ -16,8 +16,6 @@ export default class {
     const source = document.getElementById('entry-template').innerHTML;
     this.HandlebarsTemplate = Handlebars.compile(source);
 
-
-
     // On init we create the product from the catalogue because they already exist in html
     this.createProductsFromStoreCatalog();
 

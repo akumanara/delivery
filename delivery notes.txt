@@ -133,11 +133,7 @@ currency format
 
 
 
-Todo - Doing
-==================================
-change product. Clicked from cart. (will the btn change?)
-zoom on photos
-prosthiki tou item id sto store menu catalog san data attribute
+
 
 
 

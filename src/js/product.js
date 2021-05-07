@@ -112,6 +112,7 @@ export default class {
       name: this.productJSON.name,
       images: this.productJSON.images,
       comments: this.productJSON.comments,
+      large_description: this.productJSON.large_description,
       variant: this.variant,
       groupOptions: this.groupOptions,
       basePrice: this.basePrice,

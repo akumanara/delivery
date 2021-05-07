@@ -318,19 +318,68 @@ body {
   &__long-description {
     margin-top: 40px;
   }
-  &__long-description-title {
+  &__long-description-title-container {
+    display: flex;
+    align-items: center;
     padding: 22px 16px;
+  }
+  &__long-description-title {
     @include font-averta;
     @include font-size-5;
 
     font-weight: 700;
   }
+  &__long-description-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+
   &__long-description-html {
     padding: 0 16px;
+    p {
+      margin-top: 0;
+    }
   }
 
   &__long-description-disclaimer {
     padding: 16px;
     font-weight: 700;
+  }
+
+  &__comments {
+    margin-top: 40px;
+  }
+  &__comments-title-container {
+    display: flex;
+    align-items: center;
+    padding: 22px 16px;
+  }
+  &__comments-title {
+    @include font-averta;
+    @include font-size-5;
+
+    font-weight: 700;
+  }
+  &__comments-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+  &__comments-textarea-container {
+    padding: 16px;
+    border-bottom: 1px solid #eaebec;
+  }
+  &__comments-textarea {
+    border: 0;
+    padding: 0;
+    // background-color: red;
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    &::placeholder {
+      color: black;
+      font-weight: 500;
+    }
   }
 }

@@ -13,12 +13,15 @@ import Handlebars from 'handlebars';
 import { showFPS, makeid, deliveryConsole, currencyFormat } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
+import API from './api';
 
 class App {
   constructor() {
     const app = this;
     autoBind(this);
     showFPS();
+
+    this.api = new API();
 
     // Handlebars partials
     // Handlebars.registerPartial('myPartial', '{{prefix}}');
@@ -47,6 +50,25 @@ class App {
         },
         resistance: true,
         resistanceRatio: 0,
+      });
+      //  favorites button
+      const favoriteButton = document.querySelector(
+        '.store-carousel__badge--favorite',
+      );
+      let favoriteWaitingResponse = false;
+      favoriteButton.addEventListener('click', async () => {
+        if (favoriteWaitingResponse) return;
+        PubSub.publish('show_loader');
+        favoriteWaitingResponse = true;
+        if (!favoriteButton.classList.contains('active')) {
+          await this.api.addStoreToFavorites();
+          favoriteButton.classList.add('active');
+        } else {
+          await this.api.removeStoreToFavorites();
+          favoriteButton.classList.remove('active');
+        }
+        favoriteWaitingResponse = false;
+        PubSub.publish('hide_loader');
       });
     }
 

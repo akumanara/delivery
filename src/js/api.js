@@ -1,9 +1,9 @@
+/* eslint-disable class-methods-use-this */
 import axios from 'axios';
 import product from './productData';
 import { context } from './context';
 
 export default class {
-  // eslint-disable-next-line class-methods-use-this
   getProduct(productID) {
     // https://www.delivery.gr/api/menu/3153/product/1411216
     if (context.mode === 'development') {
@@ -26,7 +26,6 @@ export default class {
     });
   }
 
-  // eslint-disable-next-line class-methods-use-this
   addProductToCart(data) {
     // https://www.delivery.gr/delivery/cart/3153/insert
     if (context.mode === 'development') {
@@ -39,7 +38,11 @@ export default class {
     return new Promise((resolve) => {
       const url = `${context.rootURL}/delivery/cart/${context.storeID}/insert`;
       axios
-        .post(url, data, { headers: { 'Content-Type': 'multipart/form-data' } })
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        })
         .then((response) => {
           resolve(response.data);
         })
@@ -49,15 +52,12 @@ export default class {
     });
   }
 
-  // eslint-disable-next-line class-methods-use-this
   getProductFromCart(url) {
-    if (context.mode === 'development') {
-      return new Promise((resolve) =>
-        setTimeout(() => {
-          resolve(product);
-        }, 200),
-      );
-    }
+    return new Promise((resolve) =>
+      setTimeout(() => {
+        resolve(product);
+      }, 200),
+    );
   }
 
   quickAddProduct(data) {
@@ -91,5 +91,21 @@ export default class {
         console.log(error);
       });
     return request;
+  }
+
+  addStoreToFavorites() {
+    return new Promise((resolve) =>
+      setTimeout(() => {
+        resolve(product);
+      }, 500),
+    );
+  }
+
+  removeStoreToFavorites() {
+    return new Promise((resolve) =>
+      setTimeout(() => {
+        resolve(product);
+      }, 500),
+    );
   }
 }
