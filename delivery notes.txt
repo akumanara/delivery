@@ -205,5 +205,5 @@ API Comments
 max quantity 0 = unlimited? na valoume 100?
 min quantity 0. mipws einai 1?
 images array not working
-mporw na exw ta price formats sosta?
+mporw na exw ta price formats sosta? tha kanw to format egw.
 

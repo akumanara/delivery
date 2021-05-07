@@ -1,5 +1,5 @@
-import { property } from 'lodash';
 import Stats from 'stats.js';
+import currency from 'currency.js';
 
 // Show the FPS counter
 const showFPS = () => {
@@ -76,12 +76,15 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
     node.addEventListener('animationend', handleAnimationEnd, { once: true });
   });
 
-const currencyFormat = {
+const currencyFormatOptions = {
   symbol: '€',
   separator: '.',
   decimal: ',',
   pattern: `#!`,
+  precision: 2,
 };
+
+const currencyFormat = (cur) => currency(cur, currencyFormatOptions).format();
 
 const has = (obj, property) =>
   Object.prototype.hasOwnProperty.call(obj, property);
@@ -98,6 +101,7 @@ export {
   deliveryConsole,
   deliveryConsoleWithMessage,
   animateCSS,
+  currencyFormatOptions,
   currencyFormat,
   has,
   getFormData,

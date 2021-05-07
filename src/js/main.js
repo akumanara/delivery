@@ -10,7 +10,7 @@ import List from 'list.js';
 import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
 import Handlebars from 'handlebars';
-import { showFPS, makeid, deliveryConsole } from './utils';
+import { showFPS, makeid, deliveryConsole, currencyFormat } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
 
@@ -22,6 +22,7 @@ class App {
 
     // Handlebars partials
     // Handlebars.registerPartial('myPartial', '{{prefix}}');
+    Handlebars.registerHelper('currency', (price) => currencyFormat(price));
 
     // Subscribe to topics
     PubSub.subscribe('hide_loader', this.hideLoader);

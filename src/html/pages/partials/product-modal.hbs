@@ -112,10 +112,7 @@
                               <div class="product-modal__option-item-right">
                                 <div class="product-modal__option-item-price">
                                   <span class="js-price-value">
-                                    {{this.price}}
-                                  </span>
-                                  <span>
-                                    €
+                                    {{currency this.price}}
                                   </span>
                                 </div>
                               </div>
@@ -188,10 +185,7 @@
                             <div class="product-modal__option-item-right">
                               <div class="product-modal__option-item-price">
                                 <span class="js-price-value">
-                                  {{lookup this.price 0}}
-                                </span>
-                                <span>
-                                  €
+                                  {{currency (lookup this.price 0)}}
                                 </span>
                               </div>
                             </div>
@@ -323,7 +317,6 @@
             <div class="product-modal__add-to-cart-btn-price">
               <div class="js-product-modal-final-price">
                 {{basePrice}}
-                €
               </div>
             </div>
           </div>

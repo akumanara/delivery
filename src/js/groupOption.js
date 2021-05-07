@@ -1,6 +1,7 @@
 import EventEmitter from 'events';
 import currency from 'currency.js';
 import texts from './texts';
+import { currencyFormat } from './utils';
 
 export default class extends EventEmitter {
   constructor(groupOption) {
@@ -158,7 +159,9 @@ export default class extends EventEmitter {
 
   updatePricesOnUI() {
     this.groupOption.ingredients.forEach((element) => {
-      element.priceElement.innerText = element.price[this.selectedVariantID];
+      element.priceElement.innerText = currencyFormat(
+        element.price[this.selectedVariantID],
+      );
     });
   }
 

@@ -233,7 +233,11 @@ export default class {
   // Executes when we click the plus button
   addOneQty() {
     // User cant go to more than maxQty
-    if (this.quantity >= this.productJSON.maxQuantity) return;
+    if (
+      this.quantity >= this.productJSON.maxQuantity &&
+      this.productJSON.maxQuantity !== 0
+    )
+      return;
     // TODO min qty
     this.quantity += 1;
     this.DOM.qty.innerText = this.quantity;
@@ -309,12 +313,12 @@ export default class {
     calculatedPrice = calculatedPrice.multiply(this.quantity);
 
     // Final price
-    calculatedPrice = currency(calculatedPrice, currencyFormat);
+    // calculatedPrice = currency(calculatedPrice, currencyFormat);
 
     console.log(`----------`);
-    console.log(`finalPrice: ${calculatedPrice.format()}`);
+    console.log(`finalPrice: ${currencyFormat(calculatedPrice)}`);
     console.log('');
-    this.DOM.price.innerText = calculatedPrice.format();
+    this.DOM.price.innerText = currencyFormat(calculatedPrice);
 
     // If we calculate a different price. animate the element
     if (this.price && this.price.value !== calculatedPrice.value) {
