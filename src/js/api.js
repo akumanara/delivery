@@ -14,11 +14,12 @@ export default class {
       );
     }
     return new Promise((resolve) => {
-      const url = `/api/menu/${context.storeID}/product/${productID}`;
-      axios
-        .get(url, {
-          baseURL: context.rootURL,
-        })
+      const url = `${context.rootURL}api/menu/${context.storeID}/product/${productID}`;
+      axios({
+        method: 'get',
+        url,
+        responseType: 'json',
+      })
         .then((response) => {
           resolve(response.data);
         })
