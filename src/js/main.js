@@ -13,13 +13,14 @@ import Handlebars from 'handlebars';
 import { showFPS, makeid, deliveryConsole, currencyFormat } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
+import Cart from './cart';
 import API from './api';
 
 class App {
   constructor() {
     const app = this;
     autoBind(this);
-    showFPS();
+    // showFPS();
     document.querySelector('.header').addEventListener('click', () => {
       document.querySelector('.stats').classList.toggle('display-none');
     });
@@ -44,6 +45,9 @@ class App {
       this.productList = new ProductList(app);
     }
 
+    if (document.body.classList.contains('store-page')) {
+      this.cart = new Cart();
+    }
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');
     if (storeCarouselElement) {

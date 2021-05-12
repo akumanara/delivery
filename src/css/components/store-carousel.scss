@@ -80,6 +80,7 @@
     &--favorite {
       pointer-events: all;
       transition: $trans;
+      user-select: none;
       & path {
         transition: $trans;
         fill: transparent;

@@ -1,12 +1,17 @@
 Todo
 ==================================
-[General] lazy load stis store cards
+[General] lazy load stis store cards - @delivery dependency
 [General] svg icon css for dark/light - @misa dependency
-[Store] cart button toggle
-[product modal] hide/view large html description
-[product modal] zoom on photos
+[General] alerts (simple / timer / closable)
+[Product modal] hide/view large html description
+[Product modal] zoom on photos
+[Store] cart button toggle + cart
+[Store] favorite api bridge - @delivery dependency
 [Store] recent orders
-[Store] favorite api bridge
+[Store] delivery/takeaway accordion
+[Store] new / change address accordion
+[Store] closes store with suggestions
+
 
 
 Doing
@@ -17,8 +22,8 @@ Done
 ==================================
 Currency sto product modal
 favorite button
-[product modal] comments and long description change
-[product modal] comments
+[Product modal] comments and long description change
+[Product modal] comments
 [Store] message "Store doesn't support online payment"
 [Store] hide nav when one slide
 store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
