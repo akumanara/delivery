@@ -159,33 +159,38 @@ class App {
       };
     }
 
-    // Accordions
+    // Accordions for store info
     this.accordions = [];
-    document.querySelectorAll('.accordion__container').forEach((el) => {
-      const tmpAccordionContainer = new Accordion(el, {
-        duration: 600,
-        elementClass: 'accordion__item',
-        triggerClass: 'accordion__header',
-        panelClass: 'accordion__panel',
-        ariaEnabled: false,
-        // when we open/close the accordion we change its height thus performing a DOM reflow.
-        // Scrolltrigger need to be refreshed to re-calculate the scroll trigger positions.
-        onOpen() {
-          // dont reflow on the nested accordions because it already triggers once on the parent accordion.
-          // onOpen and onClose is triggered via transitionend event which is fired when a CSS transition has completed.
-          if (!el.classList.contains('accordion__container--nested')) {
-            app.reflow();
-          }
-        },
-        onClose() {
-          // see above onOpen comment
-          if (!el.classList.contains('accordion__container--nested')) {
-            app.reflow();
-          }
-        },
+    document
+      .querySelectorAll('.store-info .accordion__container')
+      .forEach((el) => {
+        const tmpAccordionContainer = new Accordion(el, {
+          duration: 600,
+          elementClass: 'accordion__item',
+          triggerClass: 'accordion__header',
+          panelClass: 'accordion__panel',
+          ariaEnabled: false,
+          // when we open/close the accordion we change its height thus performing a DOM reflow.
+          // Scrolltrigger need to be refreshed to re-calculate the scroll trigger positions.
+          onOpen() {
+            // dont reflow on the nested accordions because it already triggers once on the parent accordion.
+            // onOpen and onClose is triggered via transitionend event which is fired when a CSS transition has completed.
+            if (!el.classList.contains('accordion__container--nested')) {
+              app.reflow();
+            }
+          },
+          onClose() {
+            // see above onOpen comment
+            if (!el.classList.contains('accordion__container--nested')) {
+              app.reflow();
+            }
+          },
+        });
+        this.accordions.push(tmpAccordionContainer);
       });
-      this.accordions.push(tmpAccordionContainer);
-    });
+
+      
+
 
     // Featured slider
     this.sliders = [];
