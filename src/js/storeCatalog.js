@@ -85,7 +85,10 @@ export default class {
   }
 
   leaveBackCategory(index) {
-    // console.log(`leave back ${index}`);
+    if (index === 0) {
+      // the user scrolled before the first item. deselect all
+      this.removeActiveFromAll();
+    }
   }
 
   setItem(index) {

@@ -1,17 +1,16 @@
 Todo
 ==================================
-[product modal] zoom on photos
-svg icon css for dark/light
-cart button toggle
-lazy load stis store cards
+[General] lazy load stis store cards
+[General] svg icon css for dark/light - @misa dependency
+[Store] cart button toggle
 [product modal] hide/view large html description
+[product modal] zoom on photos
 [Store] recent orders
+[Store] favorite api bridge
 
 
 Doing
 ==================================
-[Store] message "Store doesn't support online payment"
-
 
 
 Done
@@ -20,3 +19,6 @@ Currency sto product modal
 favorite button
 [product modal] comments and long description change
 [product modal] comments
+[Store] message "Store doesn't support online payment"
+[Store] hide nav when one slide
+store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect

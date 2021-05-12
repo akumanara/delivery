@@ -102,6 +102,10 @@ X-- max (used for plus/minus)
 X-- default*
 
 
+currency format
+==================================
+1.236,20€
+
 
 
 ======================
@@ -109,9 +113,10 @@ Handlebars notes
 ======================
 triple {{{}}} do not escape values
 
+
 todo - Bugs (later)
 ==================================
-store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
+
 
 
 
@@ -124,12 +129,7 @@ yparxei periptwsi na mporw h na mi mporw na kanw instant add to basket TBD
 delivery / takeaway only one accordion open.
 otan einai anoixto ena apo ta 2 na krivei to basket button.
 sto product h klassi quick-add-to-basket mas epitrepei eisagogi sto basket xwris na sikwsei to modal. (markets only)
-
-
-currency format
-==================================
-1.236,20€
-
+[coupon] to progrss bar tou expiration ipologizete apo tin imerominia kataxorisis kai san telos exoume imerominia telous
 
 
 
@@ -204,6 +204,3 @@ images array not working
 mporw na exw ta price formats sosta? tha kanw to format egw.
 
 
-coupon
-----
-to progrss bar tou expiration ipologizete apo tin imerominia kataxorisis kai san telos exoume imerominia telous
