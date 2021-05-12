@@ -1,0 +1,53 @@
+{
+  "address_components": [
+    {
+      "long_name": "Γεωργίου Πατέλη",
+      "short_name": "Γεωργίου Πατέλη",
+      "types": ["route"]
+    },
+    {
+      "long_name": "Paros",
+      "short_name": "Paros",
+      "types": ["locality", "political"]
+    },
+    {
+      "long_name": "Paros",
+      "short_name": "Paros",
+      "types": ["administrative_area_level_3", "political"]
+    },
+    {
+      "long_name": "Greece",
+      "short_name": "GR",
+      "types": ["country", "political"]
+    },
+    {
+      "long_name": "844 00",
+      "short_name": "844 00",
+      "types": ["postal_code"]
+    }
+  ],
+  "adr_address": "<span class=\"street-address\">Γεωργίου Πατέλη</span>, <span class=\"locality\">Paros</span> <span class=\"postal-code\">844 00</span>, <span class=\"country-name\">Greece</span>",
+  "formatted_address": "Γεωργίου Πατέλη, Paros 844 00, Greece",
+  "geometry": {
+    "location": {
+      "lat": 37.0832424,
+      "lng": 25.1470469
+    },
+    "viewport": {
+      "south": 37.08189341970849,
+      "west": 25.1456979197085,
+      "north": 37.08459138029149,
+      "east": 25.1483958802915
+    }
+  },
+  "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+  "name": "Γεωργίου Πατέλη",
+  "place_id": "EjPOk861z4nPgc6zzq_Ov8-FIM6gzrHPhM6tzrvOtywgUGFyb3MgODQ0IDAwLCBHcmVlY2UiLiosChQKEglpJX8uAXGYFBGOAIvaBtTEyBIUChIJp7-0KA9xmBQRrqbkkMrtm_U",
+  "reference": "EjPOk861z4nPgc6zzq_Ov8-FIM6gzrHPhM6tzrvOtywgUGFyb3MgODQ0IDAwLCBHcmVlY2UiLiosChQKEglpJX8uAXGYFBGOAIvaBtTEyBIUChIJp7-0KA9xmBQRrqbkkMrtm_U",
+  "types": ["route"],
+  "url": "https://maps.google.com/?q=%CE%93%CE%B5%CF%89%CF%81%CE%B3%CE%AF%CE%BF%CF%85+%CE%A0%CE%B1%CF%84%CE%AD%CE%BB%CE%B7,+Paros+844+00,+Greece&ftid=0x149871012e7f2569:0xc8c4d406da8b008e",
+  "utc_offset": 180,
+  "vicinity": "Paros",
+  "html_attributions": [],
+  "utc_offset_minutes": 180
+}

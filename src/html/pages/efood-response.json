@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "error_code": "success",
+  "message": "Επιτυχής κλήση",
+  "data": {
+    "addresses": [
+      {
+        "region": {
+          "longitude": 25.152485,
+          "latitude": 37.083369,
+          "city": "Πάρος",
+          "area": "Παροικιά",
+          "area_slug": "paros-paroikia",
+          "is_served": true,
+          "aliases": ["paros/paroikia", "paroikia", "paros", "paros-paroikia"],
+          "zip": "84400",
+          "primary_alias": "paros"
+        },
+        "street": "Γεωργίου Πατέλη",
+        "zip": "84400",
+        "longitude": 25.1470469,
+        "latitude": 37.0832424,
+        "is_default": false,
+        "details": "",
+        "street_number": " ",
+        "floor": 0,
+        "doorbell_name": "",
+        "landphone": "",
+        "description": "Γεωργίου Πατέλη Πάρος, Παροικιά 84400",
+        "no_map": false,
+        "slug": null,
+        "scope": "personal",
+        "score": 2,
+        "logo": null,
+        "hash": "ed10019e2dbcb41f",
+        "friendly_name": null
+      }
+    ]
+  },
+  "provisioning": {}
+}

@@ -20,7 +20,7 @@ export default class {
     this.createProductsFromStoreCatalog();
 
     // TODO remove this. after develoment
-    this.products[0].raiseModal();
+    // this.products[0].raiseModal();
   }
 
   createProductsFromStoreCatalog() {

@@ -1,0 +1,19 @@
+.store-msg {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  &__icon-img {
+    max-width: 100%;
+    height: auto;
+  }
+  &__text {
+    @include font-size-1;
+
+    font-weight: 700;
+  }
+}

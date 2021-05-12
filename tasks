@@ -1,12 +1,16 @@
-Todo - Doing
+Todo
 ==================================
-[product modal] comments
-[product modal] hide/view large html description
 [product modal] zoom on photos
 svg icon css for dark/light
 cart button toggle
 lazy load stis store cards
+[product modal] hide/view large html description
+[Store] recent orders
 
+
+Doing
+==================================
+[Store] message "Store doesn't support online payment"
 
 
 
@@ -15,4 +19,4 @@ Done
 Currency sto product modal
 favorite button
 [product modal] comments and long description change
-
+[product modal] comments

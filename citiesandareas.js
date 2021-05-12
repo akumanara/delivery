@@ -1,4 +1,4 @@
-{
+window.cities = {
   "Αγιόκαμπος": {
     "Αγιόκαμπος": {
       "latitude": 39.694186,
@@ -7,8 +7,8 @@
       "search_name": "Αγιόκαμπος",
       "primary_alias": "agiokampos",
       "city": "Αγιόκαμπος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Άγιος Νικόλαος Κρήτη": {
     "Άγιος Νικόλαος": {
@@ -18,7 +18,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "agios-nikolaos-crete",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμμουδάρα": {
       "latitude": 35.161701,
@@ -27,7 +27,7 @@
       "search_name": "Αμμουδάρα",
       "primary_alias": "ammoydara",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έξω Λακκωνία": {
       "latitude": 35.20238,
@@ -36,7 +36,7 @@
       "search_name": "Έξω Λακκωνία",
       "primary_alias": "exo-lakkonia",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάλυβος": {
       "latitude": 35.176836,
@@ -45,7 +45,7 @@
       "search_name": "Κάλυβος",
       "primary_alias": "kalyvos",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατσίκια": {
       "latitude": 35.213915,
@@ -54,7 +54,7 @@
       "search_name": "Κατσίκια",
       "primary_alias": "katsikia",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 35.19068,
@@ -63,7 +63,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "agios-nikolaos-crete",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κριτσά": {
       "latitude": 35.15717,
@@ -72,7 +72,7 @@
       "search_name": "Κριτσά",
       "primary_alias": "kritsa",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηρόκαμπος": {
       "latitude": 35.204512,
@@ -81,7 +81,7 @@
       "search_name": "Ξηρόκαμπος",
       "primary_alias": "xirokampos",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πίσσιδος": {
       "latitude": 35.204143,
@@ -90,7 +90,7 @@
       "search_name": "Πίσσιδος",
       "primary_alias": "pissidos",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φλαμουριανά": {
       "latitude": 35.188643,
@@ -99,7 +99,7 @@
       "search_name": "Φλαμουριανά",
       "primary_alias": "flamoyriana",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελούντα": {
       "latitude": 35.261384,
@@ -108,7 +108,7 @@
       "search_name": "Ελούντα",
       "primary_alias": "eloynta",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 35.257938,
@@ -117,8 +117,8 @@
       "search_name": "Νεάπολη",
       "primary_alias": "neapolh",
       "city": "Άγιος Νικόλαος Κρήτη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Άγιος Στέφανος": {
     "Άγιος Στέφανος": {
@@ -128,7 +128,7 @@
       "search_name": "Άγιος Στέφανος",
       "primary_alias": "agios-stefanos",
       "city": "Άγιος Στέφανος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 38.142643,
@@ -137,7 +137,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "agia-paraskeui",
       "city": "Άγιος Στέφανος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 38.136588,
@@ -146,7 +146,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "agios-stefanos-agios-dimitrios",
       "city": "Άγιος Στέφανος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δάσος Κουρεμένου": {
       "latitude": 38.147249,
@@ -155,7 +155,7 @@
       "search_name": "Δάσος Κουρεμένου",
       "primary_alias": "dasos-koyremenoy",
       "city": "Άγιος Στέφανος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζοργιανή": {
       "latitude": 38.141602,
@@ -164,7 +164,7 @@
       "search_name": "Ζοργιανή",
       "primary_alias": "zorgiani",
       "city": "Άγιος Στέφανος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καπιτένια": {
       "latitude": 38.14065,
@@ -173,7 +173,7 @@
       "search_name": "Καπιτένια",
       "primary_alias": "kapitenia",
       "city": "Άγιος Στέφανος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λόφος Νυμφών": {
       "latitude": 38.134961,
@@ -182,7 +182,7 @@
       "search_name": "Λόφος Νυμφών",
       "primary_alias": "lofos-nymfon",
       "city": "Άγιος Στέφανος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οικισμός Ποντίων": {
       "latitude": 38.14933,
@@ -191,8 +191,8 @@
       "search_name": "Οικισμός Ποντίων",
       "primary_alias": "oikismos-pontion",
       "city": "Άγιος Στέφανος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αγκίστρι": {
     "Μεγαλοχώρι": {
@@ -202,7 +202,7 @@
       "search_name": "Μεγαλοχώρι",
       "primary_alias": "agkistri-megalohori",
       "city": "Αγκίστρι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα": {
       "latitude": 37.70815,
@@ -211,7 +211,7 @@
       "search_name": "Σκάλα",
       "primary_alias": "agkistri-skala",
       "city": "Αγκίστρι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιμενάρια": {
       "latitude": 37.679844,
@@ -220,8 +220,8 @@
       "search_name": "Λιμενάρια",
       "primary_alias": "agkistri-limenaria",
       "city": "Αγκίστρι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αγρίνιο": {
     "Αγρίνιο": {
@@ -231,7 +231,7 @@
       "search_name": "Αγρίνιο",
       "primary_alias": "agrinio",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 38.623708,
@@ -240,7 +240,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "agios-georgios",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κωνσταντίνος": {
       "latitude": 38.633972,
@@ -249,7 +249,7 @@
       "search_name": "Άγιος Κωνσταντίνος",
       "primary_alias": "agios-konstantinos",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Θωμάς": {
       "latitude": 38.634633,
@@ -258,7 +258,7 @@
       "search_name": "Άγιος Θωμάς",
       "primary_alias": "agios-thomas",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γκένοβα": {
       "latitude": 38.624928,
@@ -267,7 +267,7 @@
       "search_name": "Γκένοβα",
       "primary_alias": "gkenova",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διαμανταίικα": {
       "latitude": 38.647137,
@@ -276,7 +276,7 @@
       "search_name": "Διαμανταίικα",
       "primary_alias": "diamantaiika",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δοκίμιο": {
       "latitude": 38.614335,
@@ -285,7 +285,7 @@
       "search_name": "Δοκίμιο",
       "primary_alias": "dokimio",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δυο Ρέματα": {
       "latitude": 38.631305,
@@ -294,7 +294,7 @@
       "search_name": "Δυο Ρέματα",
       "primary_alias": "dyo-remata",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Αγίας Βαρβάρας": {
       "latitude": 38.617445,
@@ -303,7 +303,7 @@
       "search_name": "Εργατικές Κατοικίες Αγίας Βαρβάρας",
       "primary_alias": "ergatikes-katoikies-agias-varvaras",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Αγίου Ιωάννη": {
       "latitude": 38.611899,
@@ -312,7 +312,7 @@
       "search_name": "Εργατικές Κατοικίες Αγίου Ιωάννη",
       "primary_alias": "ergatikes-katoikies-agioy-ioanni",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Εθνικού Σταδίου": {
       "latitude": 38.621772,
@@ -321,7 +321,7 @@
       "search_name": "Εργατικές Κατοικίες Εθνικού Σταδίου",
       "primary_alias": "ergatikes-katoikies-ethnikoy-stadioy",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ερυθραία": {
       "latitude": 38.625391,
@@ -330,7 +330,7 @@
       "search_name": "Ερυθραία",
       "primary_alias": "erythraia",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καινούργιο": {
       "latitude": 38.60374,
@@ -339,7 +339,7 @@
       "search_name": "Καινούργιο",
       "primary_alias": "kainoyrgio",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμαρούλα": {
       "latitude": 38.630307,
@@ -348,7 +348,7 @@
       "search_name": "Καμαρούλα",
       "primary_alias": "kamaroyla",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλύβια": {
       "latitude": 38.617294,
@@ -357,7 +357,7 @@
       "search_name": "Καλύβια",
       "primary_alias": "kalyvia",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Τραγάνα": {
       "latitude": 38.609418,
@@ -366,7 +366,7 @@
       "search_name": "Κάτω Τραγάνα",
       "primary_alias": "kato-tragana",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκινοπύλια": {
       "latitude": 38.622366,
@@ -375,7 +375,7 @@
       "search_name": "Κοκκινοπύλια",
       "primary_alias": "kokkinopylia",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλη Χώρα": {
       "latitude": 38.644117,
@@ -384,7 +384,7 @@
       "search_name": "Μεγάλη Χώρα",
       "primary_alias": "megali-hora",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μούρεσι": {
       "latitude": 38.631551,
@@ -393,7 +393,7 @@
       "search_name": "Μούρεσι",
       "primary_alias": "moyresi",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπούζι": {
       "latitude": 38.62012,
@@ -402,7 +402,7 @@
       "search_name": "Μπούζι",
       "primary_alias": "mpoyzi",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Αβοράνη": {
       "latitude": 38.60858,
@@ -411,7 +411,7 @@
       "search_name": "Νέα Αβοράνη",
       "primary_alias": "nea-avorani",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 38.671652,
@@ -420,7 +420,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "agrinio-neapoli",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ντούτσαγα": {
       "latitude": 38.618825,
@@ -429,7 +429,7 @@
       "search_name": "Ντούτσαγα",
       "primary_alias": "ntoytsaga",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναιτώλιο": {
       "latitude": 38.58556,
@@ -438,7 +438,7 @@
       "search_name": "Παναιτώλιο",
       "primary_alias": "panaitolio",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραβόλα": {
       "latitude": 38.613783,
@@ -447,7 +447,7 @@
       "search_name": "Παραβόλα",
       "primary_alias": "paravola",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάρκο": {
       "latitude": 38.635078,
@@ -456,7 +456,7 @@
       "search_name": "Πάρκο",
       "primary_alias": "parko",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεταλούδα": {
       "latitude": 38.612267,
@@ -465,7 +465,7 @@
       "search_name": "Πεταλούδα",
       "primary_alias": "petaloyda",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στράτος": {
       "latitude": 38.667262,
@@ -474,7 +474,7 @@
       "search_name": "Στράτος",
       "primary_alias": "stratos",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τριανταίικα": {
       "latitude": 38.655406,
@@ -483,7 +483,7 @@
       "search_name": "Τριανταίικα",
       "primary_alias": "triantaiika",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φούσκαρη": {
       "latitude": 38.62507,
@@ -492,7 +492,7 @@
       "search_name": "Φούσκαρη",
       "primary_alias": "foyskari",
       "city": "Αγρίνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Χριστόφορος": {
       "latitude": 38.631046,
@@ -501,8 +501,8 @@
       "search_name": "Άγιος Χριστόφορος",
       "primary_alias": "agios-hristoforos",
       "city": "Αγρίνιο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αθήνα": {
     "Αγία Βαρβάρα": {
@@ -512,7 +512,7 @@
       "search_name": "Αγία Βαρβάρα",
       "primary_alias": "agia-barbara",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 38.010018,
@@ -521,7 +521,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "agia-paraskeyi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Ανάργυροι": {
       "latitude": 38.033262,
@@ -530,7 +530,7 @@
       "search_name": "Άγιοι Ανάργυροι",
       "primary_alias": "agioi-anarguroi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 37.933325,
@@ -539,7 +539,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "agios-dimitrios",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αθήνα": {
       "latitude": 37.991767,
@@ -548,7 +548,7 @@
       "search_name": "Αθήνα",
       "primary_alias": "athina",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αρτέμιος": {
       "latitude": 37.961012,
@@ -557,7 +557,7 @@
       "search_name": "Άγιος Αρτέμιος",
       "primary_alias": "agios-artemios",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ελευθέριος": {
       "latitude": 38.017459,
@@ -566,7 +566,7 @@
       "search_name": "Άγιος Ελευθέριος",
       "primary_alias": "agios-eleytherios",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Λουκάς": {
       "latitude": 38.014386,
@@ -575,7 +575,7 @@
       "search_name": "Άγιος Λουκάς",
       "primary_alias": "agios-loykas",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Παντελεήμονας": {
       "latitude": 37.998806,
@@ -584,7 +584,7 @@
       "search_name": "Άγιος Παντελεήμονας",
       "primary_alias": "agios-panteleimonas",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ακαδημία": {
       "latitude": 37.9825,
@@ -593,7 +593,7 @@
       "search_name": "Ακαδημία",
       "primary_alias": "akadimia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ακαδημία Πλάτωνος": {
       "latitude": 37.992525,
@@ -602,7 +602,7 @@
       "search_name": "Ακαδημία Πλάτωνος",
       "primary_alias": "akadimia-platonos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκηποι": {
       "latitude": 37.988747,
@@ -611,7 +611,7 @@
       "search_name": "Αμπελόκηποι",
       "primary_alias": "ampelokipoi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αναφιώτικα": {
       "latitude": 37.969472,
@@ -620,7 +620,7 @@
       "search_name": "Αναφιώτικα",
       "primary_alias": "anafiotika",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Κυψέλη": {
       "latitude": 38.005923,
@@ -629,7 +629,7 @@
       "search_name": "Άνω Κυψέλη",
       "primary_alias": "ano-kypseli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Πατήσια": {
       "latitude": 38.017523,
@@ -638,7 +638,7 @@
       "search_name": "Άνω Πατήσια",
       "primary_alias": "anw-pathsia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Πετράλωνα": {
       "latitude": 37.968367,
@@ -647,7 +647,7 @@
       "search_name": "Άνω Πετράλωνα",
       "primary_alias": "petralona",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βοτανικός": {
       "latitude": 37.982359,
@@ -656,7 +656,7 @@
       "search_name": "Βοτανικός",
       "primary_alias": "botanikos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γηροκομείο": {
       "latitude": 37.997834,
@@ -665,7 +665,7 @@
       "search_name": "Γηροκομείο",
       "primary_alias": "girokomeio",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γκάζι": {
       "latitude": 37.978664,
@@ -674,7 +674,7 @@
       "search_name": "Γκάζι",
       "primary_alias": "gazi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γκύζη": {
       "latitude": 37.990552,
@@ -683,7 +683,7 @@
       "search_name": "Γκύζη",
       "primary_alias": "gyzi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γούβα": {
       "latitude": 37.958983,
@@ -692,7 +692,7 @@
       "search_name": "Γούβα",
       "primary_alias": "goyva",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γουδί": {
       "latitude": 37.985944,
@@ -701,7 +701,7 @@
       "search_name": "Γουδί",
       "primary_alias": "goudi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δεξαμενή": {
       "latitude": 37.979033,
@@ -710,7 +710,7 @@
       "search_name": "Δεξαμενή",
       "primary_alias": "dexameni",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελληνορώσων": {
       "latitude": 37.996647,
@@ -719,7 +719,7 @@
       "search_name": "Ελληνορώσων",
       "primary_alias": "ellinoroson",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εξάρχεια": {
       "latitude": 37.986379,
@@ -728,7 +728,7 @@
       "search_name": "Εξάρχεια",
       "primary_alias": "exarheia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ερυθρός Σταυρός": {
       "latitude": 37.992934,
@@ -737,7 +737,7 @@
       "search_name": "Ερυθρός Σταυρός",
       "primary_alias": "erythros-stayros",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θησείο": {
       "latitude": 37.975012,
@@ -746,7 +746,7 @@
       "search_name": "Θησείο",
       "primary_alias": "thiseio",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θυμαράκια": {
       "latitude": 38.005957,
@@ -755,7 +755,7 @@
       "search_name": "Θυμαράκια",
       "primary_alias": "thymarakia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Πατήσια": {
       "latitude": 38.011088,
@@ -764,7 +764,7 @@
       "search_name": "Κάτω Πατήσια",
       "primary_alias": "katw-pathsia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Πετράλωνα": {
       "latitude": 37.971726,
@@ -773,7 +773,7 @@
       "search_name": "Κάτω Πετράλωνα",
       "primary_alias": "katw-petralwna",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεραμεικός": {
       "latitude": 37.978998,
@@ -782,7 +782,7 @@
       "search_name": "Κεραμεικός",
       "primary_alias": "kerameikos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κλωναρίδου": {
       "latitude": 38.018642,
@@ -791,7 +791,7 @@
       "search_name": "Κλωναρίδου",
       "primary_alias": "klonaridoy",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολοκυνθού": {
       "latitude": 38.001048,
@@ -800,7 +800,7 @@
       "search_name": "Κολοκυνθού",
       "primary_alias": "kolokynthoy",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολωνάκι": {
       "latitude": 37.977315,
@@ -809,7 +809,7 @@
       "search_name": "Κολωνάκι",
       "primary_alias": "kolonaki",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολωνός": {
       "latitude": 37.994421,
@@ -818,7 +818,7 @@
       "search_name": "Κολωνός",
       "primary_alias": "kolonos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουκάκι": {
       "latitude": 37.966496,
@@ -827,7 +827,7 @@
       "search_name": "Κουκάκι",
       "primary_alias": "koukaki",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυπριάδου": {
       "latitude": 38.019423,
@@ -836,7 +836,7 @@
       "search_name": "Κυπριάδου",
       "primary_alias": "kypriadoy",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυψέλη": {
       "latitude": 38.003811,
@@ -845,7 +845,7 @@
       "search_name": "Κυψέλη",
       "primary_alias": "kypseli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λόφος Σκουζέ": {
       "latitude": 38.001433,
@@ -854,7 +854,7 @@
       "search_name": "Λόφος Σκουζέ",
       "primary_alias": "lofos-skoyze",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυκαβηττός": {
       "latitude": 37.980373,
@@ -863,7 +863,7 @@
       "search_name": "Λυκαβηττός",
       "primary_alias": "lykavhtos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακρυγιάννη": {
       "latitude": 37.967965,
@@ -872,7 +872,7 @@
       "search_name": "Μακρυγιάννη",
       "primary_alias": "makrygiannh",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεταξουργείο": {
       "latitude": 37.985888,
@@ -881,7 +881,7 @@
       "search_name": "Μεταξουργείο",
       "primary_alias": "metaxourgeio",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μετς": {
       "latitude": 37.967418,
@@ -890,7 +890,7 @@
       "search_name": "Μετς",
       "primary_alias": "mets",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοναστηράκι": {
       "latitude": 37.976868,
@@ -899,7 +899,7 @@
       "search_name": "Μοναστηράκι",
       "primary_alias": "monasthraki",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχαιολογικό Μουσείο": {
       "latitude": 37.989865,
@@ -908,7 +908,7 @@
       "search_name": "Αρχαιολογικό Μουσείο",
       "primary_alias": "mouseio",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Κυψέλη": {
       "latitude": 37.998376,
@@ -917,7 +917,7 @@
       "search_name": "Νέα Κυψέλη",
       "primary_alias": "nea-kypseli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Φιλοθέη": {
       "latitude": 37.996428,
@@ -926,7 +926,7 @@
       "search_name": "Νέα Φιλοθέη",
       "primary_alias": "nea-filotheh",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 37.984346,
@@ -935,7 +935,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "neapoli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παγκράτι": {
       "latitude": 37.967688,
@@ -944,7 +944,7 @@
       "search_name": "Παγκράτι",
       "primary_alias": "pagrati",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πατήσια": {
       "latitude": 38.013408,
@@ -953,7 +953,7 @@
       "search_name": "Πατήσια",
       "primary_alias": "patisia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεδίον Άρεως": {
       "latitude": 37.991413,
@@ -962,7 +962,7 @@
       "search_name": "Πεδίον Άρεως",
       "primary_alias": "pedion-areos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλάκα": {
       "latitude": 37.970659,
@@ -971,7 +971,7 @@
       "search_name": "Πλάκα",
       "primary_alias": "plaka",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατεία Αμερικής": {
       "latitude": 38.002389,
@@ -980,7 +980,7 @@
       "search_name": "Πλατεία Αμερικής",
       "primary_alias": "plateia-amerikis",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατεία Βάθης": {
       "latitude": 37.987743,
@@ -989,7 +989,7 @@
       "search_name": "Πλατεία Βάθης",
       "primary_alias": "plateia-vathis",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατεία Κολιάτσου": {
       "latitude": 38.009464,
@@ -998,7 +998,7 @@
       "search_name": "Πλατεία Κολιάτσου",
       "primary_alias": "plateia-koliatsoy",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατεία Μαβίλη": {
       "latitude": 37.982788,
@@ -1007,7 +1007,7 @@
       "search_name": "Πλατεία Μαβίλη",
       "primary_alias": "plateia-mavili",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολύγωνο": {
       "latitude": 37.997536,
@@ -1016,7 +1016,7 @@
       "search_name": "Πολύγωνο",
       "primary_alias": "polugono",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολυτεχνείο": {
       "latitude": 37.988002,
@@ -1025,7 +1025,7 @@
       "search_name": "Πολυτεχνείο",
       "primary_alias": "polytehneio",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προφήτης Δανιήλ": {
       "latitude": 37.987784,
@@ -1034,7 +1034,7 @@
       "search_name": "Προφήτης Δανιήλ",
       "primary_alias": "profitis-daniil",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ριζούπολη": {
       "latitude": 38.027125,
@@ -1043,7 +1043,7 @@
       "search_name": "Ριζούπολη",
       "primary_alias": "rizoypolh",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρουφ": {
       "latitude": 37.979577,
@@ -1052,7 +1052,7 @@
       "search_name": "Ρουφ",
       "primary_alias": "rouf",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σεπόλια": {
       "latitude": 38.004662,
@@ -1061,7 +1061,7 @@
       "search_name": "Σεπόλια",
       "primary_alias": "sepolia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σύνταγμα": {
       "latitude": 37.975651,
@@ -1070,7 +1070,7 @@
       "search_name": "Σύνταγμα",
       "primary_alias": "syntagma",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλοπάππου": {
       "latitude": 37.964822,
@@ -1079,7 +1079,7 @@
       "search_name": "Φιλοπάππου",
       "primary_alias": "filopappoy",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χίλτον": {
       "latitude": 37.976072,
@@ -1088,7 +1088,7 @@
       "search_name": "Χίλτον",
       "primary_alias": "hilton",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψυρρή": {
       "latitude": 37.97877,
@@ -1097,7 +1097,7 @@
       "search_name": "Ψυρρή",
       "primary_alias": "psuri",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αιγάλεω": {
       "latitude": 37.990787,
@@ -1106,7 +1106,7 @@
       "search_name": "Αιγάλεω",
       "primary_alias": "aigalew",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άλιμος": {
       "latitude": 37.912351,
@@ -1115,7 +1115,7 @@
       "search_name": "Άλιμος",
       "primary_alias": "kalamaki",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθούσα": {
       "latitude": 38.02785,
@@ -1124,7 +1124,7 @@
       "search_name": "Ανθούσα",
       "primary_alias": "anthousa",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Λιόσια": {
       "latitude": 38.083104,
@@ -1133,7 +1133,7 @@
       "search_name": "Άνω Λιόσια",
       "primary_alias": "anw-liosia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αργυρούπολη": {
       "latitude": 37.909235,
@@ -1142,7 +1142,7 @@
       "search_name": "Αργυρούπολη",
       "primary_alias": "arguroupoli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αχαρνές": {
       "latitude": 38.101743,
@@ -1151,7 +1151,7 @@
       "search_name": "Αχαρνές",
       "primary_alias": "axarnes",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάρη": {
       "latitude": 37.832388,
@@ -1160,7 +1160,7 @@
       "search_name": "Βάρη",
       "primary_alias": "bari",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βούλα": {
       "latitude": 37.841527,
@@ -1169,7 +1169,7 @@
       "search_name": "Βούλα",
       "primary_alias": "boula",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βουλιαγμένη": {
       "latitude": 37.817649,
@@ -1178,7 +1178,7 @@
       "search_name": "Βουλιαγμένη",
       "primary_alias": "bouliagmeni",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βριλήσσια": {
       "latitude": 38.039826,
@@ -1187,7 +1187,7 @@
       "search_name": "Βριλήσσια",
       "primary_alias": "brilissia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βύρωνας": {
       "latitude": 37.957692,
@@ -1196,7 +1196,7 @@
       "search_name": "Βύρωνας",
       "primary_alias": "burwnas",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλάτσι": {
       "latitude": 38.017992,
@@ -1205,7 +1205,7 @@
       "search_name": "Γαλάτσι",
       "primary_alias": "galatsi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γέρακας": {
       "latitude": 38.021282,
@@ -1214,7 +1214,7 @@
       "search_name": "Γέρακας",
       "primary_alias": "gerakas",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλυκά Νερά": {
       "latitude": 37.99269,
@@ -1223,7 +1223,7 @@
       "search_name": "Γλυκά Νερά",
       "primary_alias": "gluka-nera",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλυφάδα": {
       "latitude": 37.876989,
@@ -1232,7 +1232,7 @@
       "search_name": "Γλυφάδα",
       "primary_alias": "glufada",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δάφνη": {
       "latitude": 37.951052,
@@ -1241,7 +1241,7 @@
       "search_name": "Δάφνη",
       "primary_alias": "dafni",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εκάλη": {
       "latitude": 38.10915,
@@ -1250,7 +1250,7 @@
       "search_name": "Εκάλη",
       "primary_alias": "ekali",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελληνικό": {
       "latitude": 37.894086,
@@ -1259,7 +1259,7 @@
       "search_name": "Ελληνικό",
       "primary_alias": "elliniko",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζεφύρι": {
       "latitude": 38.071197,
@@ -1268,7 +1268,7 @@
       "search_name": "Ζεφύρι",
       "primary_alias": "zefuri",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζωγράφου": {
       "latitude": 37.976454,
@@ -1277,7 +1277,7 @@
       "search_name": "Ζωγράφου",
       "primary_alias": "zwgrafoy",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηλιούπολη": {
       "latitude": 37.934039,
@@ -1286,7 +1286,7 @@
       "search_name": "Ηλιούπολη",
       "primary_alias": "ilioupoli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηράκλειο": {
       "latitude": 38.051641,
@@ -1295,7 +1295,7 @@
       "search_name": "Ηράκλειο",
       "primary_alias": "neo-irakleio",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ίλιον": {
       "latitude": 38.035085,
@@ -1304,7 +1304,7 @@
       "search_name": "Ίλιον",
       "primary_alias": "ilion",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καισαριανή": {
       "latitude": 37.967671,
@@ -1313,7 +1313,7 @@
       "search_name": "Καισαριανή",
       "primary_alias": "kaisariani",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 37.95213,
@@ -1322,7 +1322,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "kallithea",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καματερό": {
       "latitude": 38.055382,
@@ -1331,7 +1331,7 @@
       "search_name": "Καματερό",
       "primary_alias": "kamatero",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κηφισιά": {
       "latitude": 38.079592,
@@ -1340,7 +1340,7 @@
       "search_name": "Κηφισιά",
       "primary_alias": "kifisia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορυδαλλός": {
       "latitude": 37.983779,
@@ -1349,7 +1349,7 @@
       "search_name": "Κορυδαλλός",
       "primary_alias": "korudallos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυκόβρυση": {
       "latitude": 38.069458,
@@ -1358,7 +1358,7 @@
       "search_name": "Λυκόβρυση",
       "primary_alias": "lukobrusi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρούσι": {
       "latitude": 38.046609,
@@ -1367,7 +1367,7 @@
       "search_name": "Μαρούσι",
       "primary_alias": "marousi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελίσσια": {
       "latitude": 38.057714,
@@ -1376,7 +1376,7 @@
       "search_name": "Μελίσσια",
       "primary_alias": "melissia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεταμόρφωση": {
       "latitude": 38.066675,
@@ -1385,7 +1385,7 @@
       "search_name": "Μεταμόρφωση",
       "primary_alias": "metamorfwsi",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοσχάτο": {
       "latitude": 37.953157,
@@ -1394,7 +1394,7 @@
       "search_name": "Μοσχάτο",
       "primary_alias": "mosxato",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ερυθραία": {
       "latitude": 38.09723,
@@ -1403,7 +1403,7 @@
       "search_name": "Νέα Ερυθραία",
       "primary_alias": "nea-eruthraia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ιωνία": {
       "latitude": 38.037422,
@@ -1412,7 +1412,7 @@
       "search_name": "Νέα Ιωνία",
       "primary_alias": "nea-iwnia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Πεντέλη": {
       "latitude": 38.060758,
@@ -1421,7 +1421,7 @@
       "search_name": "Νέα Πεντέλη",
       "primary_alias": "nea-penteli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Σμύρνη": {
       "latitude": 37.943906,
@@ -1430,7 +1430,7 @@
       "search_name": "Νέα Σμύρνη",
       "primary_alias": "nea-smurni",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Φιλαδέλφεια": {
       "latitude": 38.043836,
@@ -1439,7 +1439,7 @@
       "search_name": "Νέα Φιλαδέλφεια",
       "primary_alias": "nea-filadelfeia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Χαλκηδόνα": {
       "latitude": 38.028569,
@@ -1448,7 +1448,7 @@
       "search_name": "Νέα Χαλκηδόνα",
       "primary_alias": "nea-xalkidona",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Ψυχικό": {
       "latitude": 38.005547,
@@ -1457,7 +1457,7 @@
       "search_name": "Νέο Ψυχικό",
       "primary_alias": "psyxiko",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Κόσμος": {
       "latitude": 37.958341,
@@ -1466,7 +1466,7 @@
       "search_name": "Νέος Κόσμος",
       "primary_alias": "neos-kosmos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιξ": {
       "latitude": 37.96289,
@@ -1475,7 +1475,7 @@
       "search_name": "Φιξ",
       "primary_alias": "fix",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιό Φάληρο": {
       "latitude": 37.932817,
@@ -1484,7 +1484,7 @@
       "search_name": "Παλαιό Φάληρο",
       "primary_alias": "palaio-faliro",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλλήνη": {
       "latitude": 38.004043,
@@ -1493,7 +1493,7 @@
       "search_name": "Παλλήνη",
       "primary_alias": "pallini",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παπάγου": {
       "latitude": 37.987385,
@@ -1502,7 +1502,7 @@
       "search_name": "Παπάγου",
       "primary_alias": "papagou",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεντέλη": {
       "latitude": 38.047611,
@@ -1511,7 +1511,7 @@
       "search_name": "Πεντέλη",
       "primary_alias": "penteli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιστέρι": {
       "latitude": 38.013644,
@@ -1520,7 +1520,7 @@
       "search_name": "Περιστέρι",
       "primary_alias": "peristeri",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πετρούπολη": {
       "latitude": 38.040425,
@@ -1529,7 +1529,7 @@
       "search_name": "Πετρούπολη",
       "primary_alias": "petroupoli",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεύκη": {
       "latitude": 38.059122,
@@ -1538,7 +1538,7 @@
       "search_name": "Πεύκη",
       "primary_alias": "peuki",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταύρος": {
       "latitude": 37.970321,
@@ -1547,7 +1547,7 @@
       "search_name": "Ταύρος",
       "primary_alias": "tauros",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Υμηττός": {
       "latitude": 37.951765,
@@ -1556,7 +1556,7 @@
       "search_name": "Υμηττός",
       "primary_alias": "umittos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλοθέη": {
       "latitude": 38.025193,
@@ -1565,7 +1565,7 @@
       "search_name": "Φιλοθέη",
       "primary_alias": "filothei",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαϊδάρι": {
       "latitude": 38.011238,
@@ -1574,7 +1574,7 @@
       "search_name": "Χαϊδάρι",
       "primary_alias": "xaidari",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλάνδρι": {
       "latitude": 38.019692,
@@ -1583,7 +1583,7 @@
       "search_name": "Χαλάνδρι",
       "primary_alias": "xalandri",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χολαργός": {
       "latitude": 37.999872,
@@ -1592,7 +1592,7 @@
       "search_name": "Χολαργός",
       "primary_alias": "xolargos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψυχικό": {
       "latitude": 38.010661,
@@ -1601,7 +1601,7 @@
       "search_name": "Ψυχικό",
       "primary_alias": "palaio-psuxiko",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καπανδρίτι": {
       "latitude": 38.216217,
@@ -1610,7 +1610,7 @@
       "search_name": "Καπανδρίτι",
       "primary_alias": "kapandriti",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός Λαρίσης": {
       "latitude": 37.992267,
@@ -1619,7 +1619,7 @@
       "search_name": "Σταθμός Λαρίσης",
       "primary_alias": "stathmos-larisis",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άλσος Ιλισίων": {
       "latitude": 37.974041,
@@ -1628,7 +1628,7 @@
       "search_name": "Άλσος Ιλισίων",
       "primary_alias": "alsos-ilision",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ομόνοια": {
       "latitude": 37.984069,
@@ -1637,7 +1637,7 @@
       "search_name": "Ομόνοια",
       "primary_alias": "omonoia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαμπρινή": {
       "latitude": 38.023647,
@@ -1646,7 +1646,7 @@
       "search_name": "Λαμπρινή",
       "primary_alias": "lamprini",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρηγίλλης": {
       "latitude": 37.973715,
@@ -1655,7 +1655,7 @@
       "search_name": "Ρηγίλλης",
       "primary_alias": "rigillis",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατεία Κλαυθμώνος": {
       "latitude": 37.979368,
@@ -1664,7 +1664,7 @@
       "search_name": "Πλατεία Κλαυθμώνος",
       "primary_alias": "plateia-klaythmonos",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρεις Γέφυρες": {
       "latitude": 38.016802,
@@ -1673,7 +1673,7 @@
       "search_name": "Τρεις Γέφυρες",
       "primary_alias": "treis-gefyres",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατεία Αγίου Γεωργίου": {
       "latitude": 37.998466,
@@ -1682,7 +1682,7 @@
       "search_name": "Πλατεία Αγίου Γεωργίου",
       "primary_alias": "plateia-agioy-georgioy",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιλίσια": {
       "latitude": 37.97792,
@@ -1691,7 +1691,7 @@
       "search_name": "Ιλίσια",
       "primary_alias": "ilisia",
       "city": "Αθήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατεία Κάνιγγος": {
       "latitude": 37.985289,
@@ -1700,8 +1700,8 @@
       "search_name": "Πλατεία Κάνιγγος",
       "primary_alias": "athina-plateia-kaniggos",
       "city": "Αθήνα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αίγινα": {
     "Αίγινα": {
@@ -1711,7 +1711,7 @@
       "search_name": "Αίγινα",
       "primary_alias": "aigina",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 37.74564,
@@ -1720,7 +1720,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "agia-marina",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλώνες": {
       "latitude": 37.737251,
@@ -1729,7 +1729,7 @@
       "search_name": "Αλώνες",
       "primary_alias": "alones",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάγια": {
       "latitude": 37.770127,
@@ -1738,7 +1738,7 @@
       "search_name": "Βάγια",
       "primary_alias": "vagia",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαθύ": {
       "latitude": 37.770243,
@@ -1747,7 +1747,7 @@
       "search_name": "Βαθύ",
       "primary_alias": "vathy",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάβος": {
       "latitude": 37.74803,
@@ -1756,7 +1756,7 @@
       "search_name": "Κάβος",
       "primary_alias": "kavos",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντός": {
       "latitude": 37.747305,
@@ -1765,7 +1765,7 @@
       "search_name": "Κοντός",
       "primary_alias": "kontos",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυψέλη": {
       "latitude": 37.760526,
@@ -1774,7 +1774,7 @@
       "search_name": "Κυψέλη",
       "primary_alias": "aigina-kypseli",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσαγρός": {
       "latitude": 37.755212,
@@ -1783,7 +1783,7 @@
       "search_name": "Μεσαγρός",
       "primary_alias": "mesagros",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παχειά Ράχη": {
       "latitude": 37.717605,
@@ -1792,7 +1792,7 @@
       "search_name": "Παχειά Ράχη",
       "primary_alias": "paheia-rahi",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέρδικα": {
       "latitude": 37.692315,
@@ -1801,7 +1801,7 @@
       "search_name": "Πέρδικα",
       "primary_alias": "perdika",
       "city": "Αίγινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πόρτες": {
       "latitude": 37.71122,
@@ -1810,8 +1810,8 @@
       "search_name": "Πόρτες",
       "primary_alias": "portes",
       "city": "Αίγινα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αίγιο": {
     "Αίγιο": {
@@ -1821,7 +1821,7 @@
       "search_name": "Αίγιο",
       "primary_alias": "aigio",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κωνσταντίνος": {
       "latitude": 38.2579,
@@ -1830,7 +1830,7 @@
       "search_name": "Άγιος Κωνσταντίνος",
       "primary_alias": "aigio-agios-konstantinos",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαλιμίτικα": {
       "latitude": 38.234722,
@@ -1839,7 +1839,7 @@
       "search_name": "Βαλιμίτικα",
       "primary_alias": "valimitika",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δημητρόπουλο": {
       "latitude": 38.248584,
@@ -1848,7 +1848,7 @@
       "search_name": "Δημητρόπουλο",
       "primary_alias": "dimitropoylo",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διακοπτό": {
       "latitude": 38.190075,
@@ -1857,7 +1857,7 @@
       "search_name": "Διακοπτό",
       "primary_alias": "diakopto",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διγελιώτικα": {
       "latitude": 38.250377,
@@ -1866,7 +1866,7 @@
       "search_name": "Διγελιώτικα",
       "primary_alias": "digeliotika",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελαιώνας": {
       "latitude": 38.199288,
@@ -1875,7 +1875,7 @@
       "search_name": "Ελαιώνας",
       "primary_alias": "elaionas",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζαχλωρίτικα": {
       "latitude": 38.187488,
@@ -1884,7 +1884,7 @@
       "search_name": "Ζαχλωρίτικα",
       "primary_alias": "zahloritika",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουλούρα": {
       "latitude": 38.239886,
@@ -1893,7 +1893,7 @@
       "search_name": "Κουλούρα",
       "primary_alias": "koyloyra",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λόγγος": {
       "latitude": 38.292666,
@@ -1902,7 +1902,7 @@
       "search_name": "Λόγγος",
       "primary_alias": "loggos",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυρτιά": {
       "latitude": 38.258524,
@@ -1911,7 +1911,7 @@
       "search_name": "Μυρτιά",
       "primary_alias": "myrtia",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Κερύνεια": {
       "latitude": 38.213071,
@@ -1920,7 +1920,7 @@
       "search_name": "Νέα Κερύνεια",
       "primary_alias": "nea-keryneia",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νικολαίικα": {
       "latitude": 38.209575,
@@ -1929,7 +1929,7 @@
       "search_name": "Νικολαίικα",
       "primary_alias": "nikolaiika",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρόδια": {
       "latitude": 38.207343,
@@ -1938,7 +1938,7 @@
       "search_name": "Ρόδια",
       "primary_alias": "rodia",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ροδοδάφνη": {
       "latitude": 38.26769,
@@ -1947,7 +1947,7 @@
       "search_name": "Ροδοδάφνη",
       "primary_alias": "rododafni",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σελιανίτικα": {
       "latitude": 38.282975,
@@ -1956,7 +1956,7 @@
       "search_name": "Σελιανίτικα",
       "primary_alias": "selianitika",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σελινούντας": {
       "latitude": 38.220657,
@@ -1965,7 +1965,7 @@
       "search_name": "Σελινούντας",
       "primary_alias": "selinoyntas",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τεμένη": {
       "latitude": 38.236949,
@@ -1974,7 +1974,7 @@
       "search_name": "Τεμένη",
       "primary_alias": "temeni",
       "city": "Αίγιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ακράτα": {
       "latitude": 38.154175,
@@ -1983,8 +1983,8 @@
       "search_name": "Ακράτα",
       "primary_alias": "akrata",
       "city": "Αίγιο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αλεξάνδρεια": {
     "Αγκάθια": {
@@ -1994,7 +1994,7 @@
       "search_name": "Αγκάθια",
       "primary_alias": "agkathia",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλεξάνδρεια": {
       "latitude": 40.627507,
@@ -2003,7 +2003,7 @@
       "search_name": "Αλεξάνδρεια",
       "primary_alias": "alexandreia",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτρός": {
       "latitude": 40.588414,
@@ -2012,7 +2012,7 @@
       "search_name": "Λουτρός",
       "primary_alias": "loytros",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βρυσάκι": {
       "latitude": 40.620519,
@@ -2021,7 +2021,7 @@
       "search_name": "Βρυσάκι",
       "primary_alias": "vrysaki",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμποχώρι": {
       "latitude": 40.609007,
@@ -2030,7 +2030,7 @@
       "search_name": "Καμποχώρι",
       "primary_alias": "kampohori",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καψοχώρι": {
       "latitude": 40.612657,
@@ -2039,7 +2039,7 @@
       "search_name": "Καψοχώρι",
       "primary_alias": "kapsohori",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορυφή": {
       "latitude": 40.603986,
@@ -2048,7 +2048,7 @@
       "search_name": "Κορυφή",
       "primary_alias": "koryfi",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιανοβέργι": {
       "latitude": 40.634362,
@@ -2057,7 +2057,7 @@
       "search_name": "Λιανοβέργι",
       "primary_alias": "lianovergi",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 40.665103,
@@ -2066,7 +2066,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "neohori",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νησέλλι": {
       "latitude": 40.593935,
@@ -2075,7 +2075,7 @@
       "search_name": "Νησέλλι",
       "primary_alias": "niselli",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νησί": {
       "latitude": 40.636642,
@@ -2084,7 +2084,7 @@
       "search_name": "Νησί",
       "primary_alias": "nisi",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατύ": {
       "latitude": 40.642585,
@@ -2093,7 +2093,7 @@
       "search_name": "Πλατύ",
       "primary_alias": "platy",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σχοινάς": {
       "latitude": 40.64886,
@@ -2102,7 +2102,7 @@
       "search_name": "Σχοινάς",
       "primary_alias": "shoinas",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρίκαλα": {
       "latitude": 40.598466,
@@ -2111,8 +2111,8 @@
       "search_name": "Τρίκαλα",
       "primary_alias": "alexandreia-trikala",
       "city": "Αλεξάνδρεια",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αλεξανδρούπολη": {
     "Αλεξανδρούπολη": {
@@ -2122,7 +2122,7 @@
       "search_name": "Αλεξανδρούπολη",
       "primary_alias": "alexandroupoli",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άβαντας": {
       "latitude": 40.930556,
@@ -2131,7 +2131,7 @@
       "search_name": "Άβαντας",
       "primary_alias": "avantas",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Κυριακή": {
       "latitude": 40.845971,
@@ -2140,7 +2140,7 @@
       "search_name": "Αγία Κυριακή",
       "primary_alias": "agia-kyriaki",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Βασίλειος": {
       "latitude": 40.84974,
@@ -2149,7 +2149,7 @@
       "search_name": "Άγιος Βασίλειος",
       "primary_alias": "agios-vasileios",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ελευθέριος": {
       "latitude": 40.849224,
@@ -2158,7 +2158,7 @@
       "search_name": "Άγιος Ελευθέριος",
       "primary_alias": "alexandroypoli-agios-eleytherios",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νεκτάριος": {
       "latitude": 40.851603,
@@ -2167,7 +2167,7 @@
       "search_name": "Άγιος Νεκτάριος",
       "primary_alias": "agios-nektarios",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγνάντια": {
       "latitude": 40.881906,
@@ -2176,7 +2176,7 @@
       "search_name": "Αγνάντια",
       "primary_alias": "agnantia",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμφιτρίτη": {
       "latitude": 40.891112,
@@ -2185,7 +2185,7 @@
       "search_name": "Αμφιτρίτη",
       "primary_alias": "amfitriti",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανατολικής Θράκης": {
       "latitude": 40.848079,
@@ -2194,7 +2194,7 @@
       "search_name": "Ανατολικής Θράκης",
       "primary_alias": "anatolikis-thrakis",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνθεια": {
       "latitude": 40.871344,
@@ -2203,7 +2203,7 @@
       "search_name": "Άνθεια",
       "primary_alias": "antheia",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απαλός": {
       "latitude": 40.85615,
@@ -2212,7 +2212,7 @@
       "search_name": "Απαλός",
       "primary_alias": "apalos",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απολλωνιάδος": {
       "latitude": 40.843011,
@@ -2221,7 +2221,7 @@
       "search_name": "Απολλωνιάδος",
       "primary_alias": "apolloniados",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρίστηνο": {
       "latitude": 40.872236,
@@ -2230,7 +2230,7 @@
       "search_name": "Αρίστηνο",
       "primary_alias": "aristino",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙ.ΠΕ Αλεξανδρούπολης": {
       "latitude": 40.924439,
@@ -2239,7 +2239,7 @@
       "search_name": "ΒΙ.ΠΕ Αλεξανδρούπολης",
       "primary_alias": "vi.pe-alexandroypolis",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλλλικός Σταθμός": {
       "latitude": 40.849294,
@@ -2248,7 +2248,7 @@
       "search_name": "Γαλλλικός Σταθμός",
       "primary_alias": "galllikos-stathmos",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δίκελλα": {
       "latitude": 40.865428,
@@ -2257,7 +2257,7 @@
       "search_name": "Δίκελλα",
       "primary_alias": "dikella",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δωρικό": {
       "latitude": 40.908565,
@@ -2266,7 +2266,7 @@
       "search_name": "Δωρικό",
       "primary_alias": "doriko",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Παλαγίας": {
       "latitude": 40.867384,
@@ -2275,7 +2275,7 @@
       "search_name": "Εργατικές Κατοικίες Παλαγίας",
       "primary_alias": "ergatikes-katoikies-palagias",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Νέας Χιλής": {
       "latitude": 40.851981,
@@ -2284,7 +2284,7 @@
       "search_name": "Εργατικές Κατοικίες Νέας Χιλής",
       "primary_alias": "ergatikes-katoikies-neas-hilis",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 40.850896,
@@ -2293,7 +2293,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "alexandroypoli-kallithea",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΚΕΓΕ": {
       "latitude": 40.85161,
@@ -2302,7 +2302,7 @@
       "search_name": "ΚΕΓΕ",
       "primary_alias": "kege",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.845024,
@@ -2311,7 +2311,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "alexandroupoli",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτρός": {
       "latitude": 40.881604,
@@ -2320,7 +2320,7 @@
       "search_name": "Λουτρός",
       "primary_alias": "alexandroypoli-loytros",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαΐστρος": {
       "latitude": 40.856937,
@@ -2329,7 +2329,7 @@
       "search_name": "Μαΐστρος",
       "primary_alias": "maistros",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάκρη": {
       "latitude": 40.854462,
@@ -2338,7 +2338,7 @@
       "search_name": "Μάκρη",
       "primary_alias": "makri",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσημβρία": {
       "latitude": 40.86763,
@@ -2347,7 +2347,7 @@
       "search_name": "Μεσημβρία",
       "primary_alias": "mesimvria",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεταμόρφωση Σωτήρος": {
       "latitude": 40.85631,
@@ -2356,7 +2356,7 @@
       "search_name": "Μεταμόρφωση Σωτήρος",
       "primary_alias": "metamorfosi-sotiros",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Χιλή": {
       "latitude": 40.851863,
@@ -2365,7 +2365,7 @@
       "search_name": "Νέα Χιλή",
       "primary_alias": "nea-hili",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νίψα": {
       "latitude": 40.929468,
@@ -2374,7 +2374,7 @@
       "search_name": "Νίψα",
       "primary_alias": "nipsa",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νοσοκομείο": {
       "latitude": 40.861699,
@@ -2383,7 +2383,7 @@
       "search_name": "Νοσοκομείο",
       "primary_alias": "nosokomeio",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οικισμός Νέα Βιζύη": {
       "latitude": 40.854281,
@@ -2392,7 +2392,7 @@
       "search_name": "Οικισμός Νέα Βιζύη",
       "primary_alias": "oikismos-nea-vizyi",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαγία": {
       "latitude": 40.885685,
@@ -2401,7 +2401,7 @@
       "search_name": "Παλαγία",
       "primary_alias": "palagia",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Γιαννούλη": {
       "latitude": 40.857105,
@@ -2410,7 +2410,7 @@
       "search_name": "Στρατόπεδο Γιαννούλη",
       "primary_alias": "stratopedo-giannoyli",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Ζήση": {
       "latitude": 40.863274,
@@ -2419,7 +2419,7 @@
       "search_name": "Στρατόπεδο Ζήση",
       "primary_alias": "stratopedo-zisi",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Ιωάννου": {
       "latitude": 40.863211,
@@ -2428,7 +2428,7 @@
       "search_name": "Στρατόπεδο Ιωάννου",
       "primary_alias": "stratopedo-ioannoy",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Κανδηλάπτη": {
       "latitude": 40.870594,
@@ -2437,7 +2437,7 @@
       "search_name": "Στρατόπεδο Κανδηλάπτη",
       "primary_alias": "stratopedo-kandilapti",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Πατσούκα": {
       "latitude": 40.853062,
@@ -2446,7 +2446,7 @@
       "search_name": "Στρατόπεδο Πατσούκα",
       "primary_alias": "stratopedo-patsoyka",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάρκο Αλτιναλμάζη": {
       "latitude": 40.860461,
@@ -2455,7 +2455,7 @@
       "search_name": "Πάρκο Αλτιναλμάζη",
       "primary_alias": "parko-altinalmazi",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόμβος Παλαιού Νοσοκομείου": {
       "latitude": 40.852936,
@@ -2464,8 +2464,8 @@
       "search_name": "Κόμβος Παλαιού Νοσοκομείου",
       "primary_alias": "komvos-palaioy-nosokomeioy",
       "city": "Αλεξανδρούπολη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αλόννησος": {
     "Πατητήρι": {
@@ -2475,7 +2475,7 @@
       "search_name": "Πατητήρι",
       "primary_alias": "alonnisos",
       "city": "Αλόννησος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βότση": {
       "latitude": 39.150989,
@@ -2484,7 +2484,7 @@
       "search_name": "Βότση",
       "primary_alias": "votsi",
       "city": "Αλόννησος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρπούντα": {
       "latitude": 39.13333,
@@ -2493,7 +2493,7 @@
       "search_name": "Μαρπούντα",
       "primary_alias": "marpoynta",
       "city": "Αλόννησος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στενή Βάλα": {
       "latitude": 39.193949,
@@ -2502,7 +2502,7 @@
       "search_name": "Στενή Βάλα",
       "primary_alias": "steni-vala",
       "city": "Αλόννησος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιά Χώρα": {
       "latitude": 39.149599,
@@ -2511,8 +2511,8 @@
       "search_name": "Παλιά Χώρα",
       "primary_alias": "palia-hora",
       "city": "Αλόννησος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αμαλιάδα": {
     "Αμαλιάδα": {
@@ -2522,7 +2522,7 @@
       "search_name": "Αμαλιάδα",
       "primary_alias": "amaliada",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 37.825012,
@@ -2531,7 +2531,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "agios-ioannis",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκαμπος": {
       "latitude": 37.831577,
@@ -2540,7 +2540,7 @@
       "search_name": "Αμπελόκαμπος",
       "primary_alias": "ampelokampos",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαστούνη": {
       "latitude": 37.850924,
@@ -2549,7 +2549,7 @@
       "search_name": "Γαστούνη",
       "primary_alias": "gastoyni",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γεράκι": {
       "latitude": 37.794904,
@@ -2558,7 +2558,7 @@
       "search_name": "Γεράκι",
       "primary_alias": "geraki",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δουναίικα": {
       "latitude": 37.74242,
@@ -2567,7 +2567,7 @@
       "search_name": "Δουναίικα",
       "primary_alias": "doynaiika",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρδαμάς": {
       "latitude": 37.767698,
@@ -2576,7 +2576,7 @@
       "search_name": "Καρδαμάς",
       "primary_alias": "kardamas",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαραθέα": {
       "latitude": 37.796803,
@@ -2585,7 +2585,7 @@
       "search_name": "Μαραθέα",
       "primary_alias": "marathea",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ροβιάτα": {
       "latitude": 37.810724,
@@ -2594,7 +2594,7 @@
       "search_name": "Ροβιάτα",
       "primary_alias": "roviata",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαβάλια": {
       "latitude": 37.820477,
@@ -2603,7 +2603,7 @@
       "search_name": "Σαβάλια",
       "primary_alias": "savalia",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χάβαρι": {
       "latitude": 37.848219,
@@ -2612,7 +2612,7 @@
       "search_name": "Χάβαρι",
       "primary_alias": "havari",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουρούτα": {
       "latitude": 37.770645,
@@ -2621,7 +2621,7 @@
       "search_name": "Κουρούτα",
       "primary_alias": "koyroyta",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανδραβίδα": {
       "latitude": 37.906347,
@@ -2630,7 +2630,7 @@
       "search_name": "Ανδραβίδα",
       "primary_alias": "andravida",
       "city": "Αμαλιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαρθολομιό": {
       "latitude": 37.861385,
@@ -2639,8 +2639,8 @@
       "search_name": "Βαρθολομιό",
       "primary_alias": "vartholomio",
       "city": "Αμαλιάδα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αμφιλοχία": {
     "Αμφιλοχία": {
@@ -2650,7 +2650,7 @@
       "search_name": "Αμφιλοχία",
       "primary_alias": "amfilohia",
       "city": "Αμφιλοχία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μενίδι": {
       "latitude": 39.042541,
@@ -2659,7 +2659,7 @@
       "search_name": "Μενίδι",
       "primary_alias": "menidi",
       "city": "Αμφιλοχία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαρδηνία": {
       "latitude": 38.88897,
@@ -2668,7 +2668,7 @@
       "search_name": "Σαρδηνία",
       "primary_alias": "sardinia",
       "city": "Αμφιλοχία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπάρτο": {
       "latitude": 38.901796,
@@ -2677,7 +2677,7 @@
       "search_name": "Σπάρτο",
       "primary_alias": "sparto",
       "city": "Αμφιλοχία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στανός": {
       "latitude": 38.803766,
@@ -2686,7 +2686,7 @@
       "search_name": "Στανός",
       "primary_alias": "stanos",
       "city": "Αμφιλοχία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτρό - Κρίκελλος": {
       "latitude": 38.945538,
@@ -2695,8 +2695,8 @@
       "search_name": "Λουτρό - Κρίκελλος",
       "primary_alias": "amfilohia-loytro-krikellos",
       "city": "Αμφιλοχία",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Άμφισσα": {
     "Άμφισσα": {
@@ -2706,7 +2706,7 @@
       "search_name": "Άμφισσα",
       "primary_alias": "amfissa",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Ευθυμία": {
       "latitude": 38.480535,
@@ -2715,7 +2715,7 @@
       "search_name": "Αγία Ευθυμία",
       "primary_alias": "agia-eythymia",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελαιώνας": {
       "latitude": 38.548264,
@@ -2724,7 +2724,7 @@
       "search_name": "Ελαιώνας",
       "primary_alias": "amfissa-elaionas",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σερνικάκι": {
       "latitude": 38.487639,
@@ -2733,7 +2733,7 @@
       "search_name": "Σερνικάκι",
       "primary_alias": "sernikaki",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γραβιά": {
       "latitude": 38.671212,
@@ -2742,7 +2742,7 @@
       "search_name": "Γραβιά",
       "primary_alias": "amfissa-gravia",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δελφοί": {
       "latitude": 38.480224,
@@ -2751,7 +2751,7 @@
       "search_name": "Δελφοί",
       "primary_alias": "amfissa-delfoi",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επτάλοφος": {
       "latitude": 38.595675,
@@ -2760,7 +2760,7 @@
       "search_name": "Επτάλοφος",
       "primary_alias": "amfissa-eptalofos",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ερατεινή": {
       "latitude": 38.360784,
@@ -2769,7 +2769,7 @@
       "search_name": "Ερατεινή",
       "primary_alias": "amfissa-erateini",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαριολάτα": {
       "latitude": 38.657584,
@@ -2778,7 +2778,7 @@
       "search_name": "Μαριολάτα",
       "primary_alias": "amfissa-mariolata",
       "city": "Άμφισσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολύδροσος": {
       "latitude": 38.640047,
@@ -2787,8 +2787,8 @@
       "search_name": "Πολύδροσος",
       "primary_alias": "amfissa-polydrosos",
       "city": "Άμφισσα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ανάβυσσος": {
     "Ανάβυσσος": {
@@ -2798,7 +2798,7 @@
       "search_name": "Ανάβυσσος",
       "primary_alias": "anabyssos",
       "city": "Ανάβυσσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Φώκαια": {
       "latitude": 37.720305,
@@ -2807,8 +2807,8 @@
       "search_name": "Παλαιά Φώκαια",
       "primary_alias": "palaia-fokaia",
       "city": "Ανάβυσσος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Άνδρος": {
     "Άνδρος": {
@@ -2818,7 +2818,7 @@
       "search_name": "Άνδρος",
       "primary_alias": "andros",
       "city": "Άνδρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαύριο": {
       "latitude": 37.88468,
@@ -2827,7 +2827,7 @@
       "search_name": "Γαύριο",
       "primary_alias": "gayrio",
       "city": "Άνδρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπατσί": {
       "latitude": 37.858099,
@@ -2836,7 +2836,7 @@
       "search_name": "Μπατσί",
       "primary_alias": "mpatsi",
       "city": "Άνδρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όρμος Κορθίου": {
       "latitude": 37.773051,
@@ -2845,8 +2845,8 @@
       "search_name": "Όρμος Κορθίου",
       "primary_alias": "ormos-korthioy",
       "city": "Άνδρος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Άνοιξη": {
     "Άνοιξη": {
@@ -2856,7 +2856,7 @@
       "search_name": "Άνοιξη",
       "primary_alias": "anoiksi",
       "city": "Άνοιξη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή Άνοιξης": {
       "latitude": 38.12641,
@@ -2865,7 +2865,7 @@
       "search_name": "Αγία Παρασκευή Άνοιξης",
       "primary_alias": "agia-paraskeyi-anoixis",
       "city": "Άνοιξη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Άγγελοι": {
       "latitude": 38.118443,
@@ -2874,7 +2874,7 @@
       "search_name": "Άγιοι Άγγελοι",
       "primary_alias": "agioi-aggeloi",
       "city": "Άνοιξη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Θεόδωροι": {
       "latitude": 38.124169,
@@ -2883,7 +2883,7 @@
       "search_name": "Άγιοι Θεόδωροι",
       "primary_alias": "agioi-theodoroi",
       "city": "Άνοιξη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθέων": {
       "latitude": 38.1278,
@@ -2892,7 +2892,7 @@
       "search_name": "Ανθέων",
       "primary_alias": "antheon",
       "city": "Άνοιξη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φασίδερη": {
       "latitude": 38.122879,
@@ -2901,8 +2901,8 @@
       "search_name": "Φασίδερη",
       "primary_alias": "fasideri",
       "city": "Άνοιξη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αράχωβα": {
     "Αράχωβα": {
@@ -2912,8 +2912,8 @@
       "search_name": "Αράχωβα",
       "primary_alias": "arahova",
       "city": "Αράχωβα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αργιθέα": {
     "Αργιθέα": {
@@ -2923,8 +2923,8 @@
       "search_name": "Αργιθέα",
       "primary_alias": "argithea",
       "city": "Αργιθέα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Άργος": {
     "Άργος": {
@@ -2934,7 +2934,7 @@
       "search_name": "Άργος",
       "primary_alias": "argos",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα": {
       "latitude": 37.638274,
@@ -2943,7 +2943,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "agia-triada",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανύφι": {
       "latitude": 37.658967,
@@ -2952,7 +2952,7 @@
       "search_name": "Ανύφι",
       "primary_alias": "anyfi",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαλαμανάρα": {
       "latitude": 37.617828,
@@ -2961,7 +2961,7 @@
       "search_name": "Δαλαμανάρα",
       "primary_alias": "dalamanara",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ήρα": {
       "latitude": 37.653698,
@@ -2970,7 +2970,7 @@
       "search_name": "Ήρα",
       "primary_alias": "ira",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ίναχος": {
       "latitude": 37.663859,
@@ -2979,7 +2979,7 @@
       "search_name": "Ίναχος",
       "primary_alias": "inahos",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 37.634893,
@@ -2988,7 +2988,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "argos",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεφαλάρι": {
       "latitude": 37.596993,
@@ -2997,7 +2997,7 @@
       "search_name": "Κεφαλάρι",
       "primary_alias": "kefalari",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουτσοπόδι": {
       "latitude": 37.686332,
@@ -3006,7 +3006,7 @@
       "search_name": "Κουτσοπόδι",
       "primary_alias": "koytsopodi",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυκήνες": {
       "latitude": 37.720148,
@@ -3015,7 +3015,7 @@
       "search_name": "Μυκήνες",
       "primary_alias": "mykines",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Κίος": {
       "latitude": 37.587935,
@@ -3024,7 +3024,7 @@
       "search_name": "Νέα Κίος",
       "primary_alias": "nea-kios",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Ηραίο": {
       "latitude": 37.671676,
@@ -3033,7 +3033,7 @@
       "search_name": "Νέο Ηραίο",
       "primary_alias": "neo-iraio",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναρίτη": {
       "latitude": 37.631197,
@@ -3042,7 +3042,7 @@
       "search_name": "Παναρίτη",
       "primary_alias": "panariti",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πουλλακίδα": {
       "latitude": 37.648649,
@@ -3051,7 +3051,7 @@
       "search_name": "Πουλλακίδα",
       "primary_alias": "poyllakida",
       "city": "Άργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυργέλλα": {
       "latitude": 37.633445,
@@ -3060,8 +3060,8 @@
       "search_name": "Πυργέλλα",
       "primary_alias": "pyrgella",
       "city": "Άργος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αριδαία": {
     "Αριδαία": {
@@ -3071,7 +3071,7 @@
       "search_name": "Αριδαία",
       "primary_alias": "aridaia",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγαθή": {
       "latitude": 41.008661,
@@ -3080,7 +3080,7 @@
       "search_name": "Αγαθή",
       "primary_alias": "agathi",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άλωρος": {
       "latitude": 40.927114,
@@ -3089,7 +3089,7 @@
       "search_name": "Άλωρος",
       "primary_alias": "aloros",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άψαλος": {
       "latitude": 40.892288,
@@ -3098,7 +3098,7 @@
       "search_name": "Άψαλος",
       "primary_alias": "apsalos",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βορεινό": {
       "latitude": 41.028414,
@@ -3107,7 +3107,7 @@
       "search_name": "Βορεινό",
       "primary_alias": "voreino",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαρέφειο": {
       "latitude": 41.027018,
@@ -3116,7 +3116,7 @@
       "search_name": "Γαρέφειο",
       "primary_alias": "garefeio",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δωροθέα": {
       "latitude": 40.994736,
@@ -3125,7 +3125,7 @@
       "search_name": "Δωροθέα",
       "primary_alias": "dorothea",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εξαπλάτανος": {
       "latitude": 40.976913,
@@ -3134,7 +3134,7 @@
       "search_name": "Εξαπλάτανος",
       "primary_alias": "exaplatanos",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κωνσταντία": {
       "latitude": 40.998485,
@@ -3143,7 +3143,7 @@
       "search_name": "Κωνσταντία",
       "primary_alias": "konstantia",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτράκι": {
       "latitude": 40.97204,
@@ -3152,7 +3152,7 @@
       "search_name": "Λουτράκι",
       "primary_alias": "loytraki",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυκόστομο": {
       "latitude": 40.988908,
@@ -3161,7 +3161,7 @@
       "search_name": "Λυκόστομο",
       "primary_alias": "lykostomo",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγαπλάτανος": {
       "latitude": 40.941015,
@@ -3170,7 +3170,7 @@
       "search_name": "Μεγαπλάτανος",
       "primary_alias": "megaplatanos",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μηλιά": {
       "latitude": 40.992292,
@@ -3179,7 +3179,7 @@
       "search_name": "Μηλιά",
       "primary_alias": "milia",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 41.027668,
@@ -3188,7 +3188,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "aridaia-neohori",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξιφιανή": {
       "latitude": 40.929837,
@@ -3197,7 +3197,7 @@
       "search_name": "Ξιφιανή",
       "primary_alias": "xifiani",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πιπεριά": {
       "latitude": 40.970089,
@@ -3206,7 +3206,7 @@
       "search_name": "Πιπεριά",
       "primary_alias": "piperia",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολυκάρπι": {
       "latitude": 40.926477,
@@ -3215,7 +3215,7 @@
       "search_name": "Πολυκάρπι",
       "primary_alias": "polykarpi",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρόμαχοι": {
       "latitude": 41.025065,
@@ -3224,7 +3224,7 @@
       "search_name": "Πρόμαχοι",
       "primary_alias": "promahoi",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ριζοχώρι": {
       "latitude": 41.007029,
@@ -3233,7 +3233,7 @@
       "search_name": "Ριζοχώρι",
       "primary_alias": "rizohori",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σωσάνδρα": {
       "latitude": 40.999375,
@@ -3242,7 +3242,7 @@
       "search_name": "Σωσάνδρα",
       "primary_alias": "sosandra",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσάκοι": {
       "latitude": 40.955674,
@@ -3251,7 +3251,7 @@
       "search_name": "Τσάκοι",
       "primary_alias": "tsakoi",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Υδραία": {
       "latitude": 40.960324,
@@ -3260,7 +3260,7 @@
       "search_name": "Υδραία",
       "primary_alias": "ydraia",
       "city": "Αριδαία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσή": {
       "latitude": 40.944974,
@@ -3269,8 +3269,8 @@
       "search_name": "Χρυσή",
       "primary_alias": "hrysi",
       "city": "Αριδαία",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Άρτα": {
     "Άρτα": {
@@ -3280,7 +3280,7 @@
       "search_name": "Άρτα",
       "primary_alias": "arta",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 39.099128,
@@ -3289,7 +3289,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "arta-agia-paraskeyi",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Ανάργυροι": {
       "latitude": 39.139023,
@@ -3298,7 +3298,7 @@
       "search_name": "Άγιοι Ανάργυροι",
       "primary_alias": "arta-agioi-anargyroi",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 39.15936,
@@ -3307,7 +3307,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "arta-agios-dimitrios",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σπυρίδων": {
       "latitude": 39.143882,
@@ -3316,7 +3316,7 @@
       "search_name": "Άγιος Σπυρίδων",
       "primary_alias": "agios-spyridon",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπέλια": {
       "latitude": 39.225767,
@@ -3325,7 +3325,7 @@
       "search_name": "Αμπέλια",
       "primary_alias": "ampelia",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμφιθέα": {
       "latitude": 39.129169,
@@ -3334,7 +3334,7 @@
       "search_name": "Αμφιθέα",
       "primary_alias": "amfithea",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανέζα": {
       "latitude": 39.086492,
@@ -3343,7 +3343,7 @@
       "search_name": "Ανέζα",
       "primary_alias": "aneza",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθότοπος": {
       "latitude": 39.10707,
@@ -3352,7 +3352,7 @@
       "search_name": "Ανθότοπος",
       "primary_alias": "anthotopos",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλαχέρνα": {
       "latitude": 39.173008,
@@ -3361,7 +3361,7 @@
       "search_name": "Βλαχέρνα",
       "primary_alias": "vlaherna",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαβριά": {
       "latitude": 39.103445,
@@ -3370,7 +3370,7 @@
       "search_name": "Γαβριά",
       "primary_alias": "gavria",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γραμμενίτσα": {
       "latitude": 39.184266,
@@ -3379,7 +3379,7 @@
       "search_name": "Γραμμενίτσα",
       "primary_alias": "grammenitsa",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελεούσα": {
       "latitude": 39.152872,
@@ -3388,7 +3388,7 @@
       "search_name": "Ελεούσα",
       "primary_alias": "eleoysa",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλάμια": {
       "latitude": 39.164805,
@@ -3397,7 +3397,7 @@
       "search_name": "Καλάμια",
       "primary_alias": "kalamia",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλογερικό": {
       "latitude": 39.08162,
@@ -3406,7 +3406,7 @@
       "search_name": "Καλογερικό",
       "primary_alias": "kalogeriko",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμπή": {
       "latitude": 39.216402,
@@ -3415,7 +3415,7 @@
       "search_name": "Καμπή",
       "primary_alias": "kampi",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 39.161024,
@@ -3424,7 +3424,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "arta",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιρκιζάτες": {
       "latitude": 39.143905,
@@ -3433,7 +3433,7 @@
       "search_name": "Κιρκιζάτες",
       "primary_alias": "kirkizates",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κομπότι": {
       "latitude": 39.102586,
@@ -3442,7 +3442,7 @@
       "search_name": "Κομπότι",
       "primary_alias": "kompoti",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κωστακιοί": {
       "latitude": 39.136326,
@@ -3451,7 +3451,7 @@
       "search_name": "Κωστακιοί",
       "primary_alias": "kostakioi",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 39.069836,
@@ -3460,7 +3460,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "arta-neohori",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παχυκάλαμος": {
       "latitude": 39.083388,
@@ -3469,7 +3469,7 @@
       "search_name": "Παχυκάλαμος",
       "primary_alias": "pahykalamos",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέτα": {
       "latitude": 39.167429,
@@ -3478,7 +3478,7 @@
       "search_name": "Πέτα",
       "primary_alias": "peta",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλησιοί": {
       "latitude": 39.136174,
@@ -3487,7 +3487,7 @@
       "search_name": "Πλησιοί",
       "primary_alias": "plisioi",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ράχη": {
       "latitude": 39.114089,
@@ -3496,7 +3496,7 @@
       "search_name": "Ράχη",
       "primary_alias": "rahi",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρόκκα": {
       "latitude": 39.167284,
@@ -3505,7 +3505,7 @@
       "search_name": "Ρόκκα",
       "primary_alias": "rokka",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σελλάδες": {
       "latitude": 39.108494,
@@ -3514,7 +3514,7 @@
       "search_name": "Σελλάδες",
       "primary_alias": "sellades",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Βέρση": {
       "latitude": 39.155306,
@@ -3523,7 +3523,7 @@
       "search_name": "Στρατόπεδο Βέρση",
       "primary_alias": "stratopedo-versi",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλκιάδες": {
       "latitude": 39.159252,
@@ -3532,7 +3532,7 @@
       "search_name": "Χαλκιάδες",
       "primary_alias": "halkiades",
       "city": "Άρτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χανόπουλο": {
       "latitude": 39.202413,
@@ -3541,8 +3541,8 @@
       "search_name": "Χανόπουλο",
       "primary_alias": "hanopoylo",
       "city": "Άρτα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Άρτεμις": {
     "Άρτεμις": {
@@ -3552,7 +3552,7 @@
       "search_name": "Άρτεμις",
       "primary_alias": "artemida",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 37.994745,
@@ -3561,7 +3561,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "artemis-agios-nikolaos",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλυκές": {
       "latitude": 37.992496,
@@ -3570,7 +3570,7 @@
       "search_name": "Αλυκές",
       "primary_alias": "alykes",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμυγδαλιές": {
       "latitude": 37.97067,
@@ -3579,7 +3579,7 @@
       "search_name": "Αμυγδαλιές",
       "primary_alias": "amygdalies",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασύρματος": {
       "latitude": 37.969714,
@@ -3588,7 +3588,7 @@
       "search_name": "Ασύρματος",
       "primary_alias": "asyrmatos",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλήνη": {
       "latitude": 37.995485,
@@ -3597,7 +3597,7 @@
       "search_name": "Γαλήνη",
       "primary_alias": "galini",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δεξαμενή": {
       "latitude": 37.951446,
@@ -3606,7 +3606,7 @@
       "search_name": "Δεξαμενή",
       "primary_alias": "artemis-dexameni",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάριζα": {
       "latitude": 37.955384,
@@ -3615,7 +3615,7 @@
       "search_name": "Καμάριζα",
       "primary_alias": "kamariza",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυνηγόπουλου": {
       "latitude": 37.942799,
@@ -3624,7 +3624,7 @@
       "search_name": "Κυνηγόπουλου",
       "primary_alias": "kynigopoyloy",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακριά Λαχίδια": {
       "latitude": 37.989472,
@@ -3633,7 +3633,7 @@
       "search_name": "Μακριά Λαχίδια",
       "primary_alias": "makria-lahidia",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγία Γιάτρισσα": {
       "latitude": 37.951649,
@@ -3642,7 +3642,7 @@
       "search_name": "Παναγία Γιάτρισσα",
       "primary_alias": "panagia-giatrissa",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 37.975634,
@@ -3651,7 +3651,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "panorama",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία": {
       "latitude": 37.957315,
@@ -3660,7 +3660,7 @@
       "search_name": "Παραλία",
       "primary_alias": "paralia",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πετρωτά": {
       "latitude": 37.936579,
@@ -3669,7 +3669,7 @@
       "search_name": "Πετρωτά",
       "primary_alias": "petrota",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πευκώνας": {
       "latitude": 37.991003,
@@ -3678,7 +3678,7 @@
       "search_name": "Πευκώνας",
       "primary_alias": "peykonas",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πηγάδι Κατσίκη": {
       "latitude": 37.940378,
@@ -3687,7 +3687,7 @@
       "search_name": "Πηγάδι Κατσίκη",
       "primary_alias": "pigadi-katsiki",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πράσινος Λόφος": {
       "latitude": 37.945795,
@@ -3696,7 +3696,7 @@
       "search_name": "Πράσινος Λόφος",
       "primary_alias": "prasinos-lofos",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιλίβανι": {
       "latitude": 37.966521,
@@ -3705,7 +3705,7 @@
       "search_name": "Σιλίβανι",
       "primary_alias": "silivani",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σοχώρια": {
       "latitude": 37.987291,
@@ -3714,7 +3714,7 @@
       "search_name": "Σοχώρια",
       "primary_alias": "sohoria",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Υπαπαντή": {
       "latitude": 37.989743,
@@ -3723,7 +3723,7 @@
       "search_name": "Υπαπαντή",
       "primary_alias": "ypapanti",
       "city": "Άρτεμις",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 37.966557,
@@ -3732,8 +3732,8 @@
       "search_name": "Νεάπολη",
       "primary_alias": "artemis-neapoli",
       "city": "Άρτεμις",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ασπρόπυργος": {
     "Ασπρόπυργος": {
@@ -3743,7 +3743,7 @@
       "search_name": "Ασπρόπυργος",
       "primary_alias": "aspropurgos",
       "city": "Ασπρόπυργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γκορυτσά": {
       "latitude": 38.077444,
@@ -3752,8 +3752,8 @@
       "search_name": "Γκορυτσά",
       "primary_alias": "gkorytsa",
       "city": "Ασπρόπυργος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αστυπάλαια": {
     "Αστυπάλαια": {
@@ -3763,8 +3763,8 @@
       "search_name": "Αστυπάλαια",
       "primary_alias": "astypalaia",
       "city": "Αστυπάλαια",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αυλώνα": {
     "Αυλώνα": {
@@ -3774,8 +3774,8 @@
       "search_name": "Αυλώνα",
       "primary_alias": "aylona",
       "city": "Αυλώνα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Αφίδνες": {
     "Αφίδνες": {
@@ -3785,8 +3785,8 @@
       "search_name": "Αφίδνες",
       "primary_alias": "afidnes",
       "city": "Αφίδνες",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Βέροια": {
     "Βέροια": {
@@ -3796,7 +3796,7 @@
       "search_name": "Βέροια",
       "primary_alias": "veria",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Βαρβάρα": {
       "latitude": 40.495715,
@@ -3805,7 +3805,7 @@
       "search_name": "Αγία Βαρβάρα",
       "primary_alias": "veroia-agia-varvara",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 40.597413,
@@ -3814,7 +3814,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "veroia-agia-marina",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 40.602143,
@@ -3823,7 +3823,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "veroia-agios-georgios",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασώματα": {
       "latitude": 40.487701,
@@ -3832,7 +3832,7 @@
       "search_name": "Ασώματα",
       "primary_alias": "asomata",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βεργίνα": {
       "latitude": 40.487544,
@@ -3841,7 +3841,7 @@
       "search_name": "Βεργίνα",
       "primary_alias": "vergina",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙΠΕ Βέροιας": {
       "latitude": 40.540334,
@@ -3850,7 +3850,7 @@
       "search_name": "ΒΙΠΕ Βέροιας",
       "primary_alias": "vipe-veroias",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διαβατός": {
       "latitude": 40.546426,
@@ -3859,7 +3859,7 @@
       "search_name": "Διαβατός",
       "primary_alias": "diavatos",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Πυροσβεστική": {
       "latitude": 40.530992,
@@ -3868,7 +3868,7 @@
       "search_name": "Εργατικές Κατοικίες Πυροσβεστική",
       "primary_alias": "ergatikes-katoikies-pyrosvestiki",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Καπετάν Ακρίτα": {
       "latitude": 40.515945,
@@ -3877,7 +3877,7 @@
       "search_name": "Στρατόπεδο Καπετάν Ακρίτα",
       "primary_alias": "stratopedo-kapetan-akrita",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άμμος": {
       "latitude": 40.501626,
@@ -3886,7 +3886,7 @@
       "search_name": "Άμμος",
       "primary_alias": "ammos",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργοχώρι": {
       "latitude": 40.539855,
@@ -3895,7 +3895,7 @@
       "search_name": "Εργοχώρι",
       "primary_alias": "ergohori",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 40.51008,
@@ -3904,7 +3904,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "veroia-kallithea",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.519509,
@@ -3913,7 +3913,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "veria",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουλούρα": {
       "latitude": 40.545897,
@@ -3922,7 +3922,7 @@
       "search_name": "Κουλούρα",
       "primary_alias": "veroia-koyloyra",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυριώτισσα": {
       "latitude": 40.52082,
@@ -3931,7 +3931,7 @@
       "search_name": "Κυριώτισσα",
       "primary_alias": "kyriotissa",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακροχώρι": {
       "latitude": 40.552481,
@@ -3940,7 +3940,7 @@
       "search_name": "Μακροχώρι",
       "primary_alias": "makrohori",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελίκη": {
       "latitude": 40.517609,
@@ -3949,7 +3949,7 @@
       "search_name": "Μελίκη",
       "primary_alias": "meliki",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέση": {
       "latitude": 40.527946,
@@ -3958,7 +3958,7 @@
       "search_name": "Μέση",
       "primary_alias": "mesi",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Νικομήδεια": {
       "latitude": 40.587452,
@@ -3967,7 +3967,7 @@
       "search_name": "Νέα Νικομήδεια",
       "primary_alias": "nea-nikomideia",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλατίτσια": {
       "latitude": 40.484595,
@@ -3976,7 +3976,7 @@
       "search_name": "Παλατίτσια",
       "primary_alias": "palatitsia",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 40.51291,
@@ -3985,7 +3985,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "veroia-panorama",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πατρίδα": {
       "latitude": 40.561076,
@@ -3994,7 +3994,7 @@
       "search_name": "Πατρίδα",
       "primary_alias": "patrida",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προμηθέας": {
       "latitude": 40.525625,
@@ -4003,7 +4003,7 @@
       "search_name": "Προμηθέας",
       "primary_alias": "promitheas",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ράχη": {
       "latitude": 40.484341,
@@ -4012,7 +4012,7 @@
       "search_name": "Ράχη",
       "primary_alias": "veroia-rahi",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρός": {
       "latitude": 40.589179,
@@ -4021,7 +4021,7 @@
       "search_name": "Σταυρός",
       "primary_alias": "stayros",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρίλοφο": {
       "latitude": 40.572146,
@@ -4030,7 +4030,7 @@
       "search_name": "Τρίλοφο",
       "primary_alias": "trilofo",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τριπόταμος": {
       "latitude": 40.49297,
@@ -4039,7 +4039,7 @@
       "search_name": "Τριπόταμος",
       "primary_alias": "tripotamos",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσερμένι": {
       "latitude": 40.518399,
@@ -4048,7 +4048,7 @@
       "search_name": "Τσερμένι",
       "primary_alias": "tsermeni",
       "city": "Βέροια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δημοτικό Στάδιο": {
       "latitude": 40.53413,
@@ -4057,8 +4057,8 @@
       "search_name": "Δημοτικό Στάδιο",
       "primary_alias": "dimotiko-stadio",
       "city": "Βέροια",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Βίλια": {
     "Βίλια": {
@@ -4068,8 +4068,8 @@
       "search_name": "Βίλια",
       "primary_alias": "vilia",
       "city": "Βίλια",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Βόλος": {
     "Βόλος": {
@@ -4079,7 +4079,7 @@
       "search_name": "Βόλος",
       "primary_alias": "volos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Αικατερίνη": {
       "latitude": 39.374518,
@@ -4088,7 +4088,7 @@
       "search_name": "Αγία Αικατερίνη",
       "primary_alias": "agia-aikaterini",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Βαρβάρα Νέας Ιωνίας": {
       "latitude": 39.371493,
@@ -4097,7 +4097,7 @@
       "search_name": "Αγία Βαρβάρα Νέας Ιωνίας",
       "primary_alias": "agia-varvara-neas-ionias",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Κυριακή": {
       "latitude": 39.384121,
@@ -4106,7 +4106,7 @@
       "search_name": "Αγία Κυριακή",
       "primary_alias": "volos-agia-kyriaki",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 39.3813,
@@ -4115,7 +4115,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "volos-agia-paraskeyi",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Σοφία": {
       "latitude": 39.374883,
@@ -4124,7 +4124,7 @@
       "search_name": "Αγία Σοφία",
       "primary_alias": "agia-sofia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Ανάργυροι": {
       "latitude": 39.368058,
@@ -4133,7 +4133,7 @@
       "search_name": "Άγιοι Ανάργυροι",
       "primary_alias": "volos-agioi-anargyroi",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Ταξιάρχες Νέας Ιωνίας": {
       "latitude": 39.37826,
@@ -4142,7 +4142,7 @@
       "search_name": "Άγιοι Ταξιάρχες Νέας Ιωνίας",
       "primary_alias": "agioi-taxiarhes-neas-ionias",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Βασίλειος": {
       "latitude": 39.369021,
@@ -4151,7 +4151,7 @@
       "search_name": "Άγιος Βασίλειος",
       "primary_alias": "volos-agios-vasileios",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεράσιμος": {
       "latitude": 39.375778,
@@ -4160,7 +4160,7 @@
       "search_name": "Άγιος Γεράσιμος",
       "primary_alias": "agios-gerasimos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 39.378912,
@@ -4169,7 +4169,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "volos-agios-georgios",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κωνσταντίνος": {
       "latitude": 39.358062,
@@ -4178,7 +4178,7 @@
       "search_name": "Άγιος Κωνσταντίνος",
       "primary_alias": "volos-agios-konstantinos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νεκτάριος": {
       "latitude": 39.386364,
@@ -4187,7 +4187,7 @@
       "search_name": "Άγιος Νεκτάριος",
       "primary_alias": "volos-agios-nektarios",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 39.36039,
@@ -4196,7 +4196,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "volos-agios-nikolaos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ονούφριος": {
       "latitude": 39.384206,
@@ -4205,7 +4205,7 @@
       "search_name": "Άγιος Ονούφριος",
       "primary_alias": "agios-onoyfrios",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Παντελεήμων": {
       "latitude": 39.369614,
@@ -4214,7 +4214,7 @@
       "search_name": "Άγιος Παντελεήμων",
       "primary_alias": "agios-panteleimon",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σπυρίδων Νέας Ιωνίας": {
       "latitude": 39.378091,
@@ -4223,7 +4223,7 @@
       "search_name": "Άγιος Σπυρίδων Νέας Ιωνίας",
       "primary_alias": "agios-spyridon-neas-ionias",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγριά": {
       "latitude": 39.339465,
@@ -4232,7 +4232,7 @@
       "search_name": "Αγριά",
       "primary_alias": "agria",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αηδονοφωλιές": {
       "latitude": 39.380019,
@@ -4241,7 +4241,7 @@
       "search_name": "Αηδονοφωλιές",
       "primary_alias": "aidonofolies",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άλλη Μεριά": {
       "latitude": 39.370713,
@@ -4250,7 +4250,7 @@
       "search_name": "Άλλη Μεριά",
       "primary_alias": "alli-meria",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλμυρός": {
       "latitude": 39.181968,
@@ -4259,7 +4259,7 @@
       "search_name": "Αλμυρός",
       "primary_alias": "almyros",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλυκές": {
       "latitude": 39.33537,
@@ -4268,7 +4268,7 @@
       "search_name": "Αλυκές",
       "primary_alias": "volos-alykes",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανακασιά": {
       "latitude": 39.381673,
@@ -4277,7 +4277,7 @@
       "search_name": "Ανακασιά",
       "primary_alias": "anakasia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάληψη": {
       "latitude": 39.36337,
@@ -4286,7 +4286,7 @@
       "search_name": "Ανάληψη",
       "primary_alias": "analipsi",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άναυρος": {
       "latitude": 39.353785,
@@ -4295,7 +4295,7 @@
       "search_name": "Άναυρος",
       "primary_alias": "anayros",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Βόλος": {
       "latitude": 39.379625,
@@ -4304,7 +4304,7 @@
       "search_name": "Άνω Βόλος",
       "primary_alias": "ano-volos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Ιωνία": {
       "latitude": 39.384742,
@@ -4313,7 +4313,7 @@
       "search_name": "Άνω Ιωνία",
       "primary_alias": "ano-ionia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Λεχώνια": {
       "latitude": 39.327233,
@@ -4322,7 +4322,7 @@
       "search_name": "Άνω Λεχώνια",
       "primary_alias": "ano-lehonia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αστέρια": {
       "latitude": 39.351308,
@@ -4331,7 +4331,7 @@
       "search_name": "Αστέρια",
       "primary_alias": "asteria",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βελεστίνο": {
       "latitude": 39.380878,
@@ -4340,7 +4340,7 @@
       "search_name": "Βελεστίνο",
       "primary_alias": "velestino",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙΠΕ Βόλου": {
       "latitude": 39.373109,
@@ -4349,7 +4349,7 @@
       "search_name": "ΒΙΠΕ Βόλου",
       "primary_alias": "vipe-voloy",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βροχιά": {
       "latitude": 39.333627,
@@ -4358,7 +4358,7 @@
       "search_name": "Βροχιά",
       "primary_alias": "vrohia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διμήνι": {
       "latitude": 39.358052,
@@ -4367,7 +4367,7 @@
       "search_name": "Διμήνι",
       "primary_alias": "dimini",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επτά Πλατάνια": {
       "latitude": 39.366223,
@@ -4376,7 +4376,7 @@
       "search_name": "Επτά Πλατάνια",
       "primary_alias": "epta-platania",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευαγγελίστρια Νέας Ιωνίας": {
       "latitude": 39.373995,
@@ -4385,7 +4385,7 @@
       "search_name": "Ευαγγελίστρια Νέας Ιωνίας",
       "primary_alias": "eyaggelistria-neas-ionias",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευξεινούπολη": {
       "latitude": 39.184227,
@@ -4394,7 +4394,7 @@
       "search_name": "Ευξεινούπολη",
       "primary_alias": "eyxeinoypoli",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θύλακας": {
       "latitude": 39.368115,
@@ -4403,7 +4403,7 @@
       "search_name": "Θύλακας",
       "primary_alias": "thylakas",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιλίσια": {
       "latitude": 39.36808,
@@ -4412,7 +4412,7 @@
       "search_name": "Ιλίσια",
       "primary_alias": "volos-ilisia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 39.372725,
@@ -4421,7 +4421,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "volos-kallithea",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καραγάτση": {
       "latitude": 39.365821,
@@ -4430,7 +4430,7 @@
       "search_name": "Καραγάτση",
       "primary_alias": "karagatsi",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατηχώρι": {
       "latitude": 39.382463,
@@ -4439,7 +4439,7 @@
       "search_name": "Κατηχώρι",
       "primary_alias": "katihori",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Λεχώνια": {
       "latitude": 39.328292,
@@ -4448,7 +4448,7 @@
       "search_name": "Κάτω Λεχώνια",
       "primary_alias": "kato-lehonia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 39.362359,
@@ -4457,7 +4457,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "volos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κογιάτικα": {
       "latitude": 39.398093,
@@ -4466,7 +4466,7 @@
       "search_name": "Κογιάτικα",
       "primary_alias": "kogiatika",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κριθαριά": {
       "latitude": 39.296831,
@@ -4475,7 +4475,7 @@
       "search_name": "Κριθαριά",
       "primary_alias": "kritharia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακρινίτσα": {
       "latitude": 39.4001,
@@ -4484,7 +4484,7 @@
       "search_name": "Μακρινίτσα",
       "primary_alias": "makrinitsa",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάραθος": {
       "latitude": 39.290926,
@@ -4493,7 +4493,7 @@
       "search_name": "Μάραθος",
       "primary_alias": "marathos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελισσιάτικα": {
       "latitude": 39.390392,
@@ -4502,7 +4502,7 @@
       "search_name": "Μελισσιάτικα",
       "primary_alias": "melissiatika",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικροθήβες": {
       "latitude": 39.263289,
@@ -4511,7 +4511,7 @@
       "search_name": "Μικροθήβες",
       "primary_alias": "mikrothives",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοσχάτο": {
       "latitude": 39.376063,
@@ -4520,7 +4520,7 @@
       "search_name": "Μοσχάτο",
       "primary_alias": "volos-moshato",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 39.362331,
@@ -4529,7 +4529,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "volos-neapoli",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Αγχίαλος": {
       "latitude": 39.27973,
@@ -4538,7 +4538,7 @@
       "search_name": "Νέα Αγχίαλος",
       "primary_alias": "nea-aghialos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Δημητριάδα": {
       "latitude": 39.359628,
@@ -4547,7 +4547,7 @@
       "search_name": "Νέα Δημητριάδα",
       "primary_alias": "nea-dimitriada",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέες Παγασές": {
       "latitude": 39.32283,
@@ -4556,7 +4556,7 @@
       "search_name": "Νέες Παγασές",
       "primary_alias": "nees-pagases",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Δέλτα Νέας Ιωνίας": {
       "latitude": 39.375721,
@@ -4565,7 +4565,7 @@
       "search_name": "Νέο Δέλτα Νέας Ιωνίας",
       "primary_alias": "neo-delta-neas-ionias",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηρόκαμπος": {
       "latitude": 39.381154,
@@ -4574,7 +4574,7 @@
       "search_name": "Ξηρόκαμπος",
       "primary_alias": "volos-xirokampos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οξυγόνο": {
       "latitude": 39.369594,
@@ -4583,7 +4583,7 @@
       "search_name": "Οξυγόνο",
       "primary_alias": "oxygono",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παγασές-Αϊβαλιώτικα": {
       "latitude": 39.347441,
@@ -4592,7 +4592,7 @@
       "search_name": "Παγασές-Αϊβαλιώτικα",
       "primary_alias": "pagases-aivaliotika",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Πόλη": {
       "latitude": 39.36348,
@@ -4601,7 +4601,7 @@
       "search_name": "Παλαιά Πόλη",
       "primary_alias": "palaia-poli",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιούρι": {
       "latitude": 39.347812,
@@ -4610,7 +4610,7 @@
       "search_name": "Παλιούρι",
       "primary_alias": "palioyri",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανταζόπουλου": {
       "latitude": 39.376234,
@@ -4619,7 +4619,7 @@
       "search_name": "Πανταζόπουλου",
       "primary_alias": "pantazopoyloy",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεδίον Άρεως": {
       "latitude": 39.355802,
@@ -4628,7 +4628,7 @@
       "search_name": "Πεδίον Άρεως",
       "primary_alias": "volos-pedion-areos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέτρου και Παύλου Νέας Ιωνίας": {
       "latitude": 39.37251,
@@ -4637,7 +4637,7 @@
       "search_name": "Πέτρου και Παύλου Νέας Ιωνίας",
       "primary_alias": "petroy-kai-payloy-neas-ionias",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πορταριά": {
       "latitude": 39.388741,
@@ -4646,7 +4646,7 @@
       "search_name": "Πορταριά",
       "primary_alias": "portaria",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προσφυγικά Νέας Ιωνίας": {
       "latitude": 39.37254,
@@ -4655,7 +4655,7 @@
       "search_name": "Προσφυγικά Νέας Ιωνίας",
       "primary_alias": "prosfygika-neas-ionias",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σέσκλο": {
       "latitude": 39.354806,
@@ -4664,7 +4664,7 @@
       "search_name": "Σέσκλο",
       "primary_alias": "sesklo",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταγιάτες": {
       "latitude": 39.389507,
@@ -4673,7 +4673,7 @@
       "search_name": "Σταγιάτες",
       "primary_alias": "stagiates",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Σχη Γεωργούλα": {
       "latitude": 39.377997,
@@ -4682,7 +4682,7 @@
       "search_name": "Στρατόπεδο Σχη Γεωργούλα",
       "primary_alias": "stratopedo-shi-georgoyla",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σωρός": {
       "latitude": 39.303585,
@@ -4691,7 +4691,7 @@
       "search_name": "Σωρός",
       "primary_alias": "soros",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρίγωνο": {
       "latitude": 39.36595,
@@ -4700,7 +4700,7 @@
       "search_name": "Τρίγωνο",
       "primary_alias": "trigono",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φυτόκο": {
       "latitude": 39.407433,
@@ -4709,7 +4709,7 @@
       "search_name": "Φυτόκο",
       "primary_alias": "fytoko",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χιλιαδού": {
       "latitude": 39.373146,
@@ -4718,7 +4718,7 @@
       "search_name": "Χιλιαδού",
       "primary_alias": "hiliadoy",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χορμοβέικα": {
       "latitude": 39.377938,
@@ -4727,7 +4727,7 @@
       "search_name": "Χορμοβέικα",
       "primary_alias": "hormoveika",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσοχοΐδη": {
       "latitude": 39.373986,
@@ -4736,7 +4736,7 @@
       "search_name": "Χρυσοχοΐδη",
       "primary_alias": "hrysohoidi",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Πλάτανος": {
       "latitude": 39.162627,
@@ -4745,7 +4745,7 @@
       "search_name": "Νέος Πλάτανος",
       "primary_alias": "neos-platanos",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ιωνία": {
       "latitude": 39.377666,
@@ -4754,7 +4754,7 @@
       "search_name": "Νέα Ιωνία",
       "primary_alias": "volos-nea-ionia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χορευτό": {
       "latitude": 39.452893,
@@ -4763,7 +4763,7 @@
       "search_name": "Χορευτό",
       "primary_alias": "horeyto",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρίκερι": {
       "latitude": 39.100462,
@@ -4772,7 +4772,7 @@
       "search_name": "Τρίκερι",
       "primary_alias": "trikeri",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλά Νερά": {
       "latitude": 39.306424,
@@ -4781,7 +4781,7 @@
       "search_name": "Καλά Νερά",
       "primary_alias": "kala-nera",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσαγκαράδα": {
       "latitude": 39.387624,
@@ -4790,7 +4790,7 @@
       "search_name": "Τσαγκαράδα",
       "primary_alias": "tsagkarada",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Λαυρέντιος": {
       "latitude": 39.361581,
@@ -4799,7 +4799,7 @@
       "search_name": "Άγιος Λαυρέντιος",
       "primary_alias": "agios-layrentios",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαλάκι": {
       "latitude": 39.314124,
@@ -4808,7 +4808,7 @@
       "search_name": "Μαλάκι",
       "primary_alias": "malaki",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μούρεσι": {
       "latitude": 39.401541,
@@ -4817,7 +4817,7 @@
       "search_name": "Μούρεσι",
       "primary_alias": "volos-moyresi",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατανίδια": {
       "latitude": 39.315681,
@@ -4826,7 +4826,7 @@
       "search_name": "Πλατανίδια",
       "primary_alias": "platanidia",
       "city": "Βόλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζαγορά": {
       "latitude": 39.441544,
@@ -4835,8 +4835,8 @@
       "search_name": "Ζαγορά",
       "primary_alias": "zagora",
       "city": "Βόλος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Γαλαξίδι": {
     "Γαλαξίδι": {
@@ -4846,8 +4846,8 @@
       "search_name": "Γαλαξίδι",
       "primary_alias": "galaxidi",
       "city": "Γαλαξίδι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Γιαννιτσά": {
     "Γιαννιτσά": {
@@ -4857,7 +4857,7 @@
       "search_name": "Γιαννιτσά",
       "primary_alias": "giannitsa",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγίου Γεωργίου": {
       "latitude": 40.789477,
@@ -4866,7 +4866,7 @@
       "search_name": "Αγίου Γεωργίου",
       "primary_alias": "agioy-georgioy",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελειές": {
       "latitude": 40.833956,
@@ -4875,7 +4875,7 @@
       "search_name": "Αμπελειές",
       "primary_alias": "ampeleies",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχοντικό": {
       "latitude": 40.790348,
@@ -4884,7 +4884,7 @@
       "search_name": "Αρχοντικό",
       "primary_alias": "arhontiko",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αξός": {
       "latitude": 40.802071,
@@ -4893,7 +4893,7 @@
       "search_name": "Αξός",
       "primary_alias": "axos",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αράβησσος": {
       "latitude": 40.844059,
@@ -4902,7 +4902,7 @@
       "search_name": "Αράβησσος",
       "primary_alias": "aravissos",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλατάδες": {
       "latitude": 40.755659,
@@ -4911,7 +4911,7 @@
       "search_name": "Γαλατάδες",
       "primary_alias": "galatades",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαμιανό": {
       "latitude": 40.828622,
@@ -4920,7 +4920,7 @@
       "search_name": "Δαμιανό",
       "primary_alias": "damiano",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρυώτισσα": {
       "latitude": 40.77009,
@@ -4929,7 +4929,7 @@
       "search_name": "Καρυώτισσα",
       "primary_alias": "karyotissa",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.792799,
@@ -4938,7 +4938,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "giannitsa",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρύα Βρύση": {
       "latitude": 40.687159,
@@ -4947,7 +4947,7 @@
       "search_name": "Κρύα Βρύση",
       "primary_alias": "krya-vrysi",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελίσσι": {
       "latitude": 40.774515,
@@ -4956,7 +4956,7 @@
       "search_name": "Μελίσσι",
       "primary_alias": "melissi",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσιάνο": {
       "latitude": 40.779778,
@@ -4965,7 +4965,7 @@
       "search_name": "Μεσιάνο",
       "primary_alias": "mesiano",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Πέλλα": {
       "latitude": 40.765351,
@@ -4974,7 +4974,7 @@
       "search_name": "Νέα Πέλλα",
       "primary_alias": "nea-pella",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Μυλότοπος": {
       "latitude": 40.818469,
@@ -4983,7 +4983,7 @@
       "search_name": "Νέος Μυλότοπος",
       "primary_alias": "neos-mylotopos",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Αγορά": {
       "latitude": 40.785854,
@@ -4992,7 +4992,7 @@
       "search_name": "Παλαιά Αγορά",
       "primary_alias": "palaia-agora",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιός Μυλότοπος": {
       "latitude": 40.803418,
@@ -5001,7 +5001,7 @@
       "search_name": "Παλαιός Μυλότοπος",
       "primary_alias": "palaios-mylotopos",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαίφυτο": {
       "latitude": 40.783115,
@@ -5010,7 +5010,7 @@
       "search_name": "Παλαίφυτο",
       "primary_alias": "palaifyto",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλίμνη": {
       "latitude": 40.751053,
@@ -5019,7 +5019,7 @@
       "search_name": "Παραλίμνη",
       "primary_alias": "paralimni",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέλλα": {
       "latitude": 40.761424,
@@ -5028,7 +5028,7 @@
       "search_name": "Πέλλα",
       "primary_alias": "pella",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πενταπλάτανο": {
       "latitude": 40.818637,
@@ -5037,7 +5037,7 @@
       "search_name": "Πενταπλάτανο",
       "primary_alias": "pentaplatano",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Μακεδονομάχου Άγρα": {
       "latitude": 40.789409,
@@ -5046,7 +5046,7 @@
       "search_name": "Στρατόπεδο Μακεδονομάχου Άγρα",
       "primary_alias": "stratopedo-makedonomahoy-agra",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συνοικισμός Καρυωτών": {
       "latitude": 40.797318,
@@ -5055,7 +5055,7 @@
       "search_name": "Συνοικισμός Καρυωτών",
       "primary_alias": "synoikismos-karyoton",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σφαγεία": {
       "latitude": 40.783949,
@@ -5064,7 +5064,7 @@
       "search_name": "Σφαγεία",
       "primary_alias": "sfageia",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσαλί": {
       "latitude": 40.802019,
@@ -5073,7 +5073,7 @@
       "search_name": "Τσαλί",
       "primary_alias": "tsali",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιβαδίτσα": {
       "latitude": 40.809662,
@@ -5082,7 +5082,7 @@
       "search_name": "Λιβαδίτσα",
       "primary_alias": "giannitsa-livaditsa",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ραχώνα": {
       "latitude": 40.811911,
@@ -5091,7 +5091,7 @@
       "search_name": "Ραχώνα",
       "primary_alias": "giannitsa-rahona",
       "city": "Γιαννιτσά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άθυρα": {
       "latitude": 40.826037,
@@ -5100,8 +5100,8 @@
       "search_name": "Άθυρα",
       "primary_alias": "giannitsa-athyra",
       "city": "Γιαννιτσά",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Γραμματικό": {
     "Γραμματικό": {
@@ -5111,8 +5111,8 @@
       "search_name": "Γραμματικό",
       "primary_alias": "grammatiko",
       "city": "Γραμματικό",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Γρεβενά": {
     "Γρεβενά": {
@@ -5122,7 +5122,7 @@
       "search_name": "Γρεβενά",
       "primary_alias": "grevena",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βατόλακκος": {
       "latitude": 40.152146,
@@ -5131,7 +5131,7 @@
       "search_name": "Βατόλακκος",
       "primary_alias": "vatolakkos",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δοξαράς": {
       "latitude": 40.062385,
@@ -5140,7 +5140,7 @@
       "search_name": "Δοξαράς",
       "primary_alias": "doxaras",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έλατος": {
       "latitude": 40.078407,
@@ -5149,7 +5149,7 @@
       "search_name": "Έλατος",
       "primary_alias": "elatos",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες": {
       "latitude": 40.088738,
@@ -5158,7 +5158,7 @@
       "search_name": "Εργατικές Κατοικίες",
       "primary_alias": "ergatikes-katoikies",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμίτσι": {
       "latitude": 40.085256,
@@ -5167,7 +5167,7 @@
       "search_name": "Καλαμίτσι",
       "primary_alias": "kalamitsi",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυρακαλή": {
       "latitude": 40.09689,
@@ -5176,7 +5176,7 @@
       "search_name": "Κυρακαλή",
       "primary_alias": "kyrakali",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυραναίοι": {
       "latitude": 40.034791,
@@ -5185,7 +5185,7 @@
       "search_name": "Μαυραναίοι",
       "primary_alias": "mayranaioi",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλο Σειρήνι": {
       "latitude": 40.119037,
@@ -5194,7 +5194,7 @@
       "search_name": "Μεγάλο Σειρήνι",
       "primary_alias": "megalo-seirini",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρό Σειρήνι": {
       "latitude": 40.129297,
@@ -5203,7 +5203,7 @@
       "search_name": "Μικρό Σειρήνι",
       "primary_alias": "mikro-seirini",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυρσίνα": {
       "latitude": 40.124386,
@@ -5212,7 +5212,7 @@
       "search_name": "Μυρσίνα",
       "primary_alias": "myrsina",
       "city": "Γρεβενά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δεσκάτη": {
       "latitude": 39.925493,
@@ -5221,8 +5221,8 @@
       "search_name": "Δεσκάτη",
       "primary_alias": "deskati",
       "city": "Γρεβενά",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Δασαμάρι": {
     "Δασαμάρι": {
@@ -5232,8 +5232,8 @@
       "search_name": "Δασαμάρι",
       "primary_alias": "dasamari",
       "city": "Δασαμάρι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Διδυμότειχο": {
     "Διδυμότειχο": {
@@ -5243,7 +5243,7 @@
       "search_name": "Διδυμότειχο",
       "primary_alias": "didymoteiho",
       "city": "Διδυμότειχο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελληνοχώρι": {
       "latitude": 41.372985,
@@ -5252,7 +5252,7 @@
       "search_name": "Ελληνοχώρι",
       "primary_alias": "ellinohori",
       "city": "Διδυμότειχο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ισαάκιο": {
       "latitude": 41.362136,
@@ -5261,7 +5261,7 @@
       "search_name": "Ισαάκιο",
       "primary_alias": "isaakio",
       "city": "Διδυμότειχο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουφόβουνο": {
       "latitude": 41.354259,
@@ -5270,8 +5270,8 @@
       "search_name": "Κουφόβουνο",
       "primary_alias": "koyfovoyno",
       "city": "Διδυμότειχο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Διόνυσος": {
     "Διόνυσος": {
@@ -5281,8 +5281,8 @@
       "search_name": "Διόνυσος",
       "primary_alias": "dionusos",
       "city": "Διόνυσος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Διώνη": {
     "Διώνη": {
@@ -5292,8 +5292,8 @@
       "search_name": "Διώνη",
       "primary_alias": "dioni",
       "city": "Διώνη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Δράμα": {
     "Δράμα": {
@@ -5303,7 +5303,7 @@
       "search_name": "Δράμα",
       "primary_alias": "drama",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αθανάσιος": {
       "latitude": 41.073711,
@@ -5312,7 +5312,7 @@
       "search_name": "Άγιος Αθανάσιος",
       "primary_alias": "agios-athanasios",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αδριανή": {
       "latitude": 41.136773,
@@ -5321,7 +5321,7 @@
       "search_name": "Αδριανή",
       "primary_alias": "adriani",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλιστράτη": {
       "latitude": 41.064725,
@@ -5330,7 +5330,7 @@
       "search_name": "Αλιστράτη",
       "primary_alias": "alistrati",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκηποι": {
       "latitude": 41.14133,
@@ -5339,7 +5339,7 @@
       "search_name": "Αμπελόκηποι",
       "primary_alias": "drama-ampelokipoi",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αργυρούπολη": {
       "latitude": 41.122014,
@@ -5348,7 +5348,7 @@
       "search_name": "Αργυρούπολη",
       "primary_alias": "drama-argyroypoli",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρκαδικός": {
       "latitude": 41.139204,
@@ -5357,7 +5357,7 @@
       "search_name": "Αρκαδικός",
       "primary_alias": "arkadikos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙΠΕ Δράμας": {
       "latitude": 41.170554,
@@ -5366,7 +5366,7 @@
       "search_name": "ΒΙΠΕ Δράμας",
       "primary_alias": "vipe-dramas",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δοξάτο": {
       "latitude": 41.092815,
@@ -5375,7 +5375,7 @@
       "search_name": "Δοξάτο",
       "primary_alias": "doxato",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Αεροδρομίου": {
       "latitude": 41.147839,
@@ -5384,7 +5384,7 @@
       "search_name": "Εργατικές Κατοικίες Αεροδρομίου",
       "primary_alias": "ergatikes-katoikies-aerodromioy",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμπάκι": {
       "latitude": 41.051337,
@@ -5393,7 +5393,7 @@
       "search_name": "Καλαμπάκι",
       "primary_alias": "kalampaki",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλίφυτος": {
       "latitude": 41.173475,
@@ -5402,7 +5402,7 @@
       "search_name": "Καλλίφυτος",
       "primary_alias": "kallifytos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλός Αγρός": {
       "latitude": 41.105667,
@@ -5411,7 +5411,7 @@
       "search_name": "Καλός Αγρός",
       "primary_alias": "kalos-agros",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 41.150001,
@@ -5420,7 +5420,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "drama",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουδούνια": {
       "latitude": 41.096606,
@@ -5429,7 +5429,7 @@
       "search_name": "Κουδούνια",
       "primary_alias": "koydoynia",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρατικά": {
       "latitude": 41.151165,
@@ -5438,7 +5438,7 @@
       "search_name": "Κρατικά",
       "primary_alias": "kratika",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κύργια": {
       "latitude": 41.098998,
@@ -5447,7 +5447,7 @@
       "search_name": "Κύργια",
       "primary_alias": "kyrgia",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυρόβατος": {
       "latitude": 41.111237,
@@ -5456,7 +5456,7 @@
       "search_name": "Μαυρόβατος",
       "primary_alias": "mayrovatos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυρολεύκη": {
       "latitude": 41.055066,
@@ -5465,7 +5465,7 @@
       "search_name": "Μαυρολεύκη",
       "primary_alias": "mayroleyki",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγαλόκαμπος": {
       "latitude": 41.112512,
@@ -5474,7 +5474,7 @@
       "search_name": "Μεγαλόκαμπος",
       "primary_alias": "megalokampos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικροχώρι": {
       "latitude": 41.102221,
@@ -5483,7 +5483,7 @@
       "search_name": "Μικροχώρι",
       "primary_alias": "mikrohori",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοναστηράκι": {
       "latitude": 41.188469,
@@ -5492,7 +5492,7 @@
       "search_name": "Μοναστηράκι",
       "primary_alias": "drama-monastiraki",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυλοπόταμος": {
       "latitude": 41.149245,
@@ -5501,7 +5501,7 @@
       "search_name": "Μυλοπόταμος",
       "primary_alias": "mylopotamos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Αμισσός": {
       "latitude": 41.131898,
@@ -5510,7 +5510,7 @@
       "search_name": "Νέα Αμισσός",
       "primary_alias": "nea-amissos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Κρώμνη": {
       "latitude": 41.153606,
@@ -5519,7 +5519,7 @@
       "search_name": "Νέα Κρώμνη",
       "primary_alias": "nea-kromni",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Σεβάστεια": {
       "latitude": 41.123609,
@@ -5528,7 +5528,7 @@
       "search_name": "Νέα Σεβάστεια",
       "primary_alias": "nea-sevasteia",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Στενήμαχος": {
       "latitude": 41.136851,
@@ -5537,7 +5537,7 @@
       "search_name": "Νέα Στενήμαχος",
       "primary_alias": "nea-stenimahos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεροφράκτης": {
       "latitude": 41.044694,
@@ -5546,7 +5546,7 @@
       "search_name": "Νεροφράκτης",
       "primary_alias": "nerofraktis",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηροπόταμος": {
       "latitude": 41.192261,
@@ -5555,7 +5555,7 @@
       "search_name": "Ξηροπόταμος",
       "primary_alias": "xiropotamos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ορτακινά": {
       "latitude": 41.150821,
@@ -5564,7 +5564,7 @@
       "search_name": "Ορτακινά",
       "primary_alias": "ortakina",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιά Πόλη": {
       "latitude": 41.151522,
@@ -5573,7 +5573,7 @@
       "search_name": "Παλιά Πόλη",
       "primary_alias": "palia-poli",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 41.156614,
@@ -5582,7 +5582,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "drama-panorama",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πετρούσσα": {
       "latitude": 41.194695,
@@ -5591,7 +5591,7 @@
       "search_name": "Πετρούσσα",
       "primary_alias": "petroyssa",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προσοτσάνη": {
       "latitude": 41.17977,
@@ -5600,7 +5600,7 @@
       "search_name": "Προσοτσάνη",
       "primary_alias": "prosotsani",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαρανταεκκλησιώτικα": {
       "latitude": 41.144419,
@@ -5609,7 +5609,7 @@
       "search_name": "Σαρανταεκκλησιώτικα",
       "primary_alias": "sarantaekklisiotika",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιταγροί": {
       "latitude": 41.111475,
@@ -5618,7 +5618,7 @@
       "search_name": "Σιταγροί",
       "primary_alias": "sitagroi",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φωτολίβος": {
       "latitude": 41.06047,
@@ -5627,7 +5627,7 @@
       "search_name": "Φωτολίβος",
       "primary_alias": "fotolivos",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χωριστή": {
       "latitude": 41.130689,
@@ -5636,7 +5636,7 @@
       "search_name": "Χωριστή",
       "primary_alias": "horisti",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Νευροκόπι": {
       "latitude": 41.342479,
@@ -5645,7 +5645,7 @@
       "search_name": "Κάτω Νευροκόπι",
       "primary_alias": "kato-neyrokopi",
       "city": "Δράμα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεταμόρφωση Σωτήρος": {
       "latitude": 41.155656,
@@ -5654,8 +5654,8 @@
       "search_name": "Μεταμόρφωση Σωτήρος",
       "primary_alias": "drama-metamorfosi-sotiros",
       "city": "Δράμα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Δροσιά": {
     "Δροσιά": {
@@ -5665,8 +5665,8 @@
       "search_name": "Δροσιά",
       "primary_alias": "drosia",
       "city": "Δροσιά",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Έδεσσα": {
     "Έδεσσα": {
@@ -5676,7 +5676,7 @@
       "search_name": "Έδεσσα",
       "primary_alias": "edessa",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Α Συνοικισμός": {
       "latitude": 40.795736,
@@ -5685,7 +5685,7 @@
       "search_name": "Α Συνοικισμός",
       "primary_alias": "a-synoikismos",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγράς": {
       "latitude": 40.805912,
@@ -5694,7 +5694,7 @@
       "search_name": "Αγράς",
       "primary_alias": "agras",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Β Συνοικισμός": {
       "latitude": 40.800828,
@@ -5703,7 +5703,7 @@
       "search_name": "Β Συνοικισμός",
       "primary_alias": "v-synoikismos",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εκκλησιοχώρι": {
       "latitude": 40.812414,
@@ -5712,7 +5712,7 @@
       "search_name": "Εκκλησιοχώρι",
       "primary_alias": "ekklisiohori",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες": {
       "latitude": 40.804798,
@@ -5721,7 +5721,7 @@
       "search_name": "Εργατικές Κατοικίες",
       "primary_alias": "edessa-ergatikes-katoikies",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Σμαρέκα": {
       "latitude": 40.80772,
@@ -5730,7 +5730,7 @@
       "search_name": "Εργατικές Κατοικίες Σμαρέκα",
       "primary_alias": "ergatikes-katoikies-smareka",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυροβούνι": {
       "latitude": 40.783147,
@@ -5739,7 +5739,7 @@
       "search_name": "Μαυροβούνι",
       "primary_alias": "mayrovoyni",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσημέρι": {
       "latitude": 40.793632,
@@ -5748,7 +5748,7 @@
       "search_name": "Μεσημέρι",
       "primary_alias": "mesimeri",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οικισμός Βαρόσι": {
       "latitude": 40.800737,
@@ -5757,7 +5757,7 @@
       "search_name": "Οικισμός Βαρόσι",
       "primary_alias": "oikismos-varosi",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατάνη": {
       "latitude": 40.761553,
@@ -5766,7 +5766,7 @@
       "search_name": "Πλατάνη",
       "primary_alias": "platani",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ριζάρι": {
       "latitude": 40.784032,
@@ -5775,7 +5775,7 @@
       "search_name": "Ριζάρι",
       "primary_alias": "rizari",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σεβαστιανά": {
       "latitude": 40.768765,
@@ -5784,7 +5784,7 @@
       "search_name": "Σεβαστιανά",
       "primary_alias": "sevastiana",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκύδρα": {
       "latitude": 40.767933,
@@ -5793,7 +5793,7 @@
       "search_name": "Σκύδρα",
       "primary_alias": "skydra",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φλαμουριά": {
       "latitude": 40.752659,
@@ -5802,7 +5802,7 @@
       "search_name": "Φλαμουριά",
       "primary_alias": "flamoyria",
       "city": "Έδεσσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προάστιο": {
       "latitude": 40.78637,
@@ -5811,8 +5811,8 @@
       "search_name": "Προάστιο",
       "primary_alias": "proastio",
       "city": "Έδεσσα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ελασσόνα": {
     "Ελασσόνα": {
@@ -5822,7 +5822,7 @@
       "search_name": "Ελασσόνα",
       "primary_alias": "elassona",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλανόβρυση": {
       "latitude": 39.84711,
@@ -5831,7 +5831,7 @@
       "search_name": "Γαλανόβρυση",
       "primary_alias": "galanovrysi",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεφαλόβρυσο": {
       "latitude": 39.890743,
@@ -5840,7 +5840,7 @@
       "search_name": "Κεφαλόβρυσο",
       "primary_alias": "kefalovryso",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσαριτσάνη": {
       "latitude": 39.881208,
@@ -5849,7 +5849,7 @@
       "search_name": "Τσαριτσάνη",
       "primary_alias": "tsaritsani",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευαγγελισμός": {
       "latitude": 39.839656,
@@ -5858,7 +5858,7 @@
       "search_name": "Ευαγγελισμός",
       "primary_alias": "eyaggelismos",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρυμός": {
       "latitude": 39.915254,
@@ -5867,7 +5867,7 @@
       "search_name": "Δρυμός",
       "primary_alias": "drymos",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ολυμπιάδα": {
       "latitude": 39.986296,
@@ -5876,7 +5876,7 @@
       "search_name": "Ολυμπιάδα",
       "primary_alias": "olympiada",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρό Ελευθεροχώρι": {
       "latitude": 39.945091,
@@ -5885,7 +5885,7 @@
       "search_name": "Μικρό Ελευθεροχώρι",
       "primary_alias": "mikro-eleytherohori",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λόφος": {
       "latitude": 40.015936,
@@ -5894,7 +5894,7 @@
       "search_name": "Λόφος",
       "primary_alias": "lofos",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαλανίδα": {
       "latitude": 39.926273,
@@ -5903,7 +5903,7 @@
       "search_name": "Βαλανίδα",
       "primary_alias": "valanida",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δομένικο": {
       "latitude": 39.791216,
@@ -5912,7 +5912,7 @@
       "search_name": "Δομένικο",
       "primary_alias": "domeniko",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 39.98061,
@@ -5921,7 +5921,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "elassona-kallithea",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φλάμπουρο": {
       "latitude": 39.969908,
@@ -5930,7 +5930,7 @@
       "search_name": "Φλάμπουρο",
       "primary_alias": "flampoyro",
       "city": "Ελασσόνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στεφανόβουνο": {
       "latitude": 39.844122,
@@ -5939,8 +5939,8 @@
       "search_name": "Στεφανόβουνο",
       "primary_alias": "stefanovoyno",
       "city": "Ελασσόνα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ελαφόνησος": {
     "Ελαφόνησος": {
@@ -5950,8 +5950,8 @@
       "search_name": "Ελαφόνησος",
       "primary_alias": "elafonisos",
       "city": "Ελαφόνησος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ελευσίνα": {
     "Ελευσίνα": {
@@ -5961,7 +5961,7 @@
       "search_name": "Ελευσίνα",
       "primary_alias": "eleusina",
       "city": "Ελευσίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αεροδρόμιο": {
       "latitude": 38.05814,
@@ -5970,7 +5970,7 @@
       "search_name": "Αεροδρόμιο",
       "primary_alias": "aerodromio",
       "city": "Ελευσίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Ελευσίνα": {
       "latitude": 38.051039,
@@ -5979,7 +5979,7 @@
       "search_name": "Άνω Ελευσίνα",
       "primary_alias": "ano-eleysina",
       "city": "Ελευσίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παράδεισος": {
       "latitude": 38.060563,
@@ -5988,7 +5988,7 @@
       "search_name": "Παράδεισος",
       "primary_alias": "paradeisos",
       "city": "Ελευσίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρύφι": {
       "latitude": 38.092377,
@@ -5997,8 +5997,8 @@
       "search_name": "Στρύφι",
       "primary_alias": "stryfi",
       "city": "Ελευσίνα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Εύβοια": {
     "Ερέτρια": {
@@ -6008,7 +6008,7 @@
       "search_name": "Ερέτρια",
       "primary_alias": "eretria",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαλακώντα": {
       "latitude": 38.398124,
@@ -6017,7 +6017,7 @@
       "search_name": "Μαλακώντα",
       "primary_alias": "malakonta",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εύβοια": {
       "latitude": 38.548558,
@@ -6026,7 +6026,7 @@
       "search_name": "Εύβοια",
       "primary_alias": "eyvoia",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιστιαία": {
       "latitude": 38.954025,
@@ -6035,7 +6035,7 @@
       "search_name": "Ιστιαία",
       "primary_alias": "istiaia",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αετός": {
       "latitude": 38.012191,
@@ -6044,7 +6044,7 @@
       "search_name": "Αετός",
       "primary_alias": "aetos",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάρυστος": {
       "latitude": 38.016238,
@@ -6053,7 +6053,7 @@
       "search_name": "Κάρυστος",
       "primary_alias": "karystos",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμάρυνθος": {
       "latitude": 38.393279,
@@ -6062,7 +6062,7 @@
       "search_name": "Αμάρυνθος",
       "primary_alias": "amarynthos",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αιδηψός": {
       "latitude": 38.878134,
@@ -6071,7 +6071,7 @@
       "search_name": "Αιδηψός",
       "primary_alias": "aidipsos",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτρά Αιδηψού": {
       "latitude": 38.858841,
@@ -6080,7 +6080,7 @@
       "search_name": "Λουτρά Αιδηψού",
       "primary_alias": "loytra-aidipsoy",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαούνης": {
       "latitude": 38.883817,
@@ -6089,7 +6089,7 @@
       "search_name": "Μαούνης",
       "primary_alias": "maoynis",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Αγίου Νικολάου": {
       "latitude": 38.878311,
@@ -6098,7 +6098,7 @@
       "search_name": "Παραλία Αγίου Νικολάου",
       "primary_alias": "paralia-agioy-nikolaoy",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλιβέρι": {
       "latitude": 38.409409,
@@ -6107,7 +6107,7 @@
       "search_name": "Αλιβέρι",
       "primary_alias": "aliveri",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαγούλα": {
       "latitude": 38.411161,
@@ -6116,7 +6116,7 @@
       "search_name": "Μαγούλα",
       "primary_alias": "magoyla",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Άννα": {
       "latitude": 38.859182,
@@ -6125,7 +6125,7 @@
       "search_name": "Αγία Άννα",
       "primary_alias": "agia-anna",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγκάλη": {
       "latitude": 38.874128,
@@ -6134,7 +6134,7 @@
       "search_name": "Αγκάλη",
       "primary_alias": "agkali",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Αγίας Άννας": {
       "latitude": 38.861196,
@@ -6143,7 +6143,7 @@
       "search_name": "Παραλία Αγίας Άννας",
       "primary_alias": "paralia-agias-annas",
       "city": "Εύβοια",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κύμη": {
       "latitude": 38.635518,
@@ -6152,8 +6152,8 @@
       "search_name": "Κύμη",
       "primary_alias": "eyvoia-kymi",
       "city": "Εύβοια",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ζάκυνθος": {
     "Ζάκυνθος": {
@@ -6163,7 +6163,7 @@
       "search_name": "Ζάκυνθος",
       "primary_alias": "zakynthos",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγαλάς": {
       "latitude": 37.708032,
@@ -6172,7 +6172,7 @@
       "search_name": "Αγαλάς",
       "primary_alias": "agalas",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κήρυκος": {
       "latitude": 37.787643,
@@ -6181,7 +6181,7 @@
       "search_name": "Άγιος Κήρυκος",
       "primary_alias": "agios-kirykos",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σώστης": {
       "latitude": 37.714562,
@@ -6190,7 +6190,7 @@
       "search_name": "Άγιος Σώστης",
       "primary_alias": "agios-sostis",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγριλιά": {
       "latitude": 37.745229,
@@ -6199,7 +6199,7 @@
       "search_name": "Αγριλιά",
       "primary_alias": "agrilia",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκηποι": {
       "latitude": 37.758019,
@@ -6208,7 +6208,7 @@
       "search_name": "Αμπελόκηποι",
       "primary_alias": "zakynthos-ampelokipoi",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αναφωνήτρια": {
       "latitude": 37.847292,
@@ -6217,7 +6217,7 @@
       "search_name": "Αναφωνήτρια",
       "primary_alias": "anafonitria",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Βολίμες": {
       "latitude": 37.875955,
@@ -6226,7 +6226,7 @@
       "search_name": "Άνω Βολίμες",
       "primary_alias": "ano-volimes",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αργάσι": {
       "latitude": 37.76291,
@@ -6235,7 +6235,7 @@
       "search_name": "Αργάσι",
       "primary_alias": "argasi",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βανάτο": {
       "latitude": 37.793846,
@@ -6244,7 +6244,7 @@
       "search_name": "Βανάτο",
       "primary_alias": "vanato",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βολίμες": {
       "latitude": 37.874409,
@@ -6253,7 +6253,7 @@
       "search_name": "Βολίμες",
       "primary_alias": "volimes",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δροσιά": {
       "latitude": 37.83428,
@@ -6262,7 +6262,7 @@
       "search_name": "Δροσιά",
       "primary_alias": "zakynthos-drosia",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμάκι": {
       "latitude": 37.742339,
@@ -6271,7 +6271,7 @@
       "search_name": "Καλαμάκι",
       "primary_alias": "alimos",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλίτερος": {
       "latitude": 37.759733,
@@ -6280,7 +6280,7 @@
       "search_name": "Καλλίτερος",
       "primary_alias": "kalliteros",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καταστάρι": {
       "latitude": 37.834492,
@@ -6289,7 +6289,7 @@
       "search_name": "Καταστάρι",
       "primary_alias": "katastari",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοιλιωμένος": {
       "latitude": 37.747431,
@@ -6298,7 +6298,7 @@
       "search_name": "Κοιλιωμένος",
       "primary_alias": "koiliomenos",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαγανάς": {
       "latitude": 37.730071,
@@ -6307,7 +6307,7 @@
       "search_name": "Λαγανάς",
       "primary_alias": "laganas",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιθακιά": {
       "latitude": 37.719496,
@@ -6316,7 +6316,7 @@
       "search_name": "Λιθακιά",
       "primary_alias": "lithakia",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαχαιράδο": {
       "latitude": 37.762682,
@@ -6325,7 +6325,7 @@
       "search_name": "Μαχαιράδο",
       "primary_alias": "mahairado",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παντοκράτωρας": {
       "latitude": 37.729739,
@@ -6334,7 +6334,7 @@
       "search_name": "Παντοκράτωρας",
       "primary_alias": "pantokratoras",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλάνος": {
       "latitude": 37.815028,
@@ -6343,7 +6343,7 @@
       "search_name": "Πλάνος",
       "primary_alias": "planos",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλικός": {
       "latitude": 37.713491,
@@ -6352,7 +6352,7 @@
       "search_name": "Βασιλικός",
       "primary_alias": "zakynthos-vasilikos",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τραγάκι": {
       "latitude": 37.812806,
@@ -6361,7 +6361,7 @@
       "search_name": "Τραγάκι",
       "primary_alias": "zakynthos-tragaki",
       "city": "Ζάκυνθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσιλιβί": {
       "latitude": 37.812172,
@@ -6370,8 +6370,8 @@
       "search_name": "Τσιλιβί",
       "primary_alias": "zakynthos-tsilivi",
       "city": "Ζάκυνθος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ηγουμενίτσα": {
     "Ηγουμενίτσα": {
@@ -6381,7 +6381,7 @@
       "search_name": "Ηγουμενίτσα",
       "primary_alias": "igoymenitsa",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Βλάσιος": {
       "latitude": 39.556062,
@@ -6390,7 +6390,7 @@
       "search_name": "Άγιος Βλάσιος",
       "primary_alias": "agios-vlasios",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γραικοχώρι": {
       "latitude": 39.498291,
@@ -6399,7 +6399,7 @@
       "search_name": "Γραικοχώρι",
       "primary_alias": "graikohori",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εθνική Αντίσταση": {
       "latitude": 39.527473,
@@ -6408,7 +6408,7 @@
       "search_name": "Εθνική Αντίσταση",
       "primary_alias": "ethniki-antistasi",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστρί": {
       "latitude": 39.553605,
@@ -6417,7 +6417,7 @@
       "search_name": "Καστρί",
       "primary_alias": "kastri",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαδοχώριον": {
       "latitude": 39.490341,
@@ -6426,7 +6426,7 @@
       "search_name": "Λαδοχώριον",
       "primary_alias": "ladohorion",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυρούδι": {
       "latitude": 39.54099,
@@ -6435,7 +6435,7 @@
       "search_name": "Μαυρούδι",
       "primary_alias": "mayroydi",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Σελεύκεια": {
       "latitude": 39.523866,
@@ -6444,7 +6444,7 @@
       "search_name": "Νέα Σελεύκεια",
       "primary_alias": "nea-seleykeia",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραπόταμος": {
       "latitude": 39.548189,
@@ -6453,7 +6453,7 @@
       "search_name": "Παραπόταμος",
       "primary_alias": "parapotamos",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλαταριά": {
       "latitude": 39.450254,
@@ -6462,7 +6462,7 @@
       "search_name": "Πλαταριά",
       "primary_alias": "plataria",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλοθέη": {
       "latitude": 39.489386,
@@ -6471,7 +6471,7 @@
       "search_name": "Φιλοθέη",
       "primary_alias": "igoymenitsa-filothei",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέρδικα": {
       "latitude": 39.369701,
@@ -6480,7 +6480,7 @@
       "search_name": "Πέρδικα",
       "primary_alias": "igoymenitsa-perdika",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σύβοτα": {
       "latitude": 39.407721,
@@ -6489,8 +6489,8 @@
       "search_name": "Σύβοτα",
       "primary_alias": "igoymenitsa-syvota",
       "city": "Ηγουμενίτσα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ηράκλειο Κρήτη": {
     "Ηράκλειο": {
@@ -6500,7 +6500,7 @@
       "search_name": "Ηράκλειο",
       "primary_alias": "iraklio-crete",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 35.329914,
@@ -6509,7 +6509,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "irakleio-kriti-agia-marina",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα": {
       "latitude": 35.339662,
@@ -6518,7 +6518,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "irakleio-kriti-agia-triada",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Θεόδωροι": {
       "latitude": 35.31753,
@@ -6527,7 +6527,7 @@
       "search_name": "Άγιοι Θεόδωροι",
       "primary_alias": "irakleio-kriti-agioi-theodoroi",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 35.333692,
@@ -6536,7 +6536,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "irakleio-kriti-agios-dimitrios",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος Παλαιά Πόλη": {
       "latitude": 35.34007,
@@ -6545,7 +6545,7 @@
       "search_name": "Άγιος Δημήτριος Παλαιά Πόλη",
       "primary_alias": "agios-dimitrios-palaia-poli",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 35.327477,
@@ -6554,7 +6554,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "irakleio-kriti-agios-ioannis",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κωνσταντίνος": {
       "latitude": 35.327289,
@@ -6563,7 +6563,7 @@
       "search_name": "Άγιος Κωνσταντίνος",
       "primary_alias": "irakleio-kriti-agios-konstantinos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Μηνάς": {
       "latitude": 35.335597,
@@ -6572,7 +6572,7 @@
       "search_name": "Άγιος Μηνάς",
       "primary_alias": "agios-minas",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Τίτος": {
       "latitude": 35.34011,
@@ -6581,7 +6581,7 @@
       "search_name": "Άγιος Τίτος",
       "primary_alias": "agios-titos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάληψη": {
       "latitude": 35.335449,
@@ -6590,7 +6590,7 @@
       "search_name": "Ανάληψη",
       "primary_alias": "irakleio-kriti-analipsi",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Φορτέτσα": {
       "latitude": 35.302124,
@@ -6599,7 +6599,7 @@
       "search_name": "Άνω Φορτέτσα",
       "primary_alias": "ano-fortetsa",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ατσαλένιο": {
       "latitude": 35.322974,
@@ -6608,7 +6608,7 @@
       "search_name": "Ατσαλένιο",
       "primary_alias": "atsalenio",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαλιδέ Τζαμί": {
       "latitude": 35.336513,
@@ -6617,7 +6617,7 @@
       "search_name": "Βαλιδέ Τζαμί",
       "primary_alias": "valide-tzami",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλειές": {
       "latitude": 35.271269,
@@ -6626,7 +6626,7 @@
       "search_name": "Βασιλειές",
       "primary_alias": "vasileies",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βιομηχανική Περιοχή": {
       "latitude": 35.320728,
@@ -6635,7 +6635,7 @@
       "search_name": "Βιομηχανική Περιοχή",
       "primary_alias": "viomihaniki-periohi",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γάζι": {
       "latitude": 35.325832,
@@ -6644,7 +6644,7 @@
       "search_name": "Γάζι",
       "primary_alias": "irakleio-kriti-gazi",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιοφυράκια": {
       "latitude": 35.311418,
@@ -6653,7 +6653,7 @@
       "search_name": "Γιοφυράκια",
       "primary_alias": "giofyrakia",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γούρνες": {
       "latitude": 35.299896,
@@ -6662,7 +6662,7 @@
       "search_name": "Γούρνες",
       "primary_alias": "goyrnes",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θέρισσος": {
       "latitude": 35.333136,
@@ -6671,7 +6671,7 @@
       "search_name": "Θέρισσος",
       "primary_alias": "therissos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καβροχώρι": {
       "latitude": 35.307701,
@@ -6680,7 +6680,7 @@
       "search_name": "Καβροχώρι",
       "primary_alias": "kavrohori",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλέσα": {
       "latitude": 35.287176,
@@ -6689,7 +6689,7 @@
       "search_name": "Καλέσα",
       "primary_alias": "kalesa",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 35.312473,
@@ -6698,7 +6698,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "irakleio-kriti-kallithea",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμίνια": {
       "latitude": 35.337116,
@@ -6707,7 +6707,7 @@
       "search_name": "Καμίνια",
       "primary_alias": "irakleio-kriti-kaminia",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρτερός": {
       "latitude": 35.329026,
@@ -6716,7 +6716,7 @@
       "search_name": "Καρτερός",
       "primary_alias": "karteros",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 35.338894,
@@ -6725,7 +6725,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "iraklio-crete",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κηπούπολη": {
       "latitude": 35.328213,
@@ -6734,7 +6734,7 @@
       "search_name": "Κηπούπολη",
       "primary_alias": "kipoypoli",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κνωσσός": {
       "latitude": 35.298494,
@@ -6743,7 +6743,7 @@
       "search_name": "Κνωσσός",
       "primary_alias": "knossos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκίνη Χάνι": {
       "latitude": 35.330777,
@@ -6752,7 +6752,7 @@
       "search_name": "Κοκκίνη Χάνι",
       "primary_alias": "kokkini-hani",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολλύβας": {
       "latitude": 35.316173,
@@ -6761,7 +6761,7 @@
       "search_name": "Κολλύβας",
       "primary_alias": "kollyvas",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορακοβούνι": {
       "latitude": 35.311453,
@@ -6770,7 +6770,7 @@
       "search_name": "Κορακοβούνι",
       "primary_alias": "korakovoyni",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λοφούπολη": {
       "latitude": 35.291385,
@@ -6779,7 +6779,7 @@
       "search_name": "Λοφούπολη",
       "primary_alias": "lofoypoli",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαραθίτης": {
       "latitude": 35.289961,
@@ -6788,7 +6788,7 @@
       "search_name": "Μαραθίτης",
       "primary_alias": "marathitis",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μασταμπάς": {
       "latitude": 35.326595,
@@ -6797,7 +6797,7 @@
       "search_name": "Μασταμπάς",
       "primary_alias": "mastampas",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέσα Καρτερός": {
       "latitude": 35.31829,
@@ -6806,7 +6806,7 @@
       "search_name": "Μέσα Καρτερός",
       "primary_alias": "mesa-karteros",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσαμπελιές": {
       "latitude": 35.316108,
@@ -6815,7 +6815,7 @@
       "search_name": "Μεσαμπελιές",
       "primary_alias": "mesampelies",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπεντεβή": {
       "latitude": 35.322642,
@@ -6824,7 +6824,7 @@
       "search_name": "Μπεντεβή",
       "primary_alias": "mpentevi",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Αλάτσατα": {
       "latitude": 35.308269,
@@ -6833,7 +6833,7 @@
       "search_name": "Νέα Αλάτσατα",
       "primary_alias": "nea-alatsata",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Αλικαρνασσός": {
       "latitude": 35.334969,
@@ -6842,7 +6842,7 @@
       "search_name": "Νέα Αλικαρνασσός",
       "primary_alias": "nea-alikarnassos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Φορτέτσα": {
       "latitude": 35.304978,
@@ -6851,7 +6851,7 @@
       "search_name": "Νέα Φορτέτσα",
       "primary_alias": "nea-fortetsa",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξεροπόταμος": {
       "latitude": 35.333258,
@@ -6860,7 +6860,7 @@
       "search_name": "Ξεροπόταμος",
       "primary_alias": "xeropotamos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όαση": {
       "latitude": 35.332632,
@@ -6869,7 +6869,7 @@
       "search_name": "Όαση",
       "primary_alias": "oasi",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ούλαφ Πάλμε": {
       "latitude": 35.314636,
@@ -6878,7 +6878,7 @@
       "search_name": "Ούλαφ Πάλμε",
       "primary_alias": "oylaf-palme",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πατέλες": {
       "latitude": 35.329277,
@@ -6887,7 +6887,7 @@
       "search_name": "Πατέλες",
       "primary_alias": "pateles",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πισκοπιανό": {
       "latitude": 35.308373,
@@ -6896,7 +6896,7 @@
       "search_name": "Πισκοπιανό",
       "primary_alias": "piskopiano",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατεία Σινάνη": {
       "latitude": 35.319257,
@@ -6905,7 +6905,7 @@
       "search_name": "Πλατεία Σινάνη",
       "primary_alias": "plateia-sinani",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πόρος": {
       "latitude": 35.339061,
@@ -6914,7 +6914,7 @@
       "search_name": "Πόρος",
       "primary_alias": "irakleio-kriti-poros",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρασσάς": {
       "latitude": 35.314816,
@@ -6923,7 +6923,7 @@
       "search_name": "Πρασσάς",
       "primary_alias": "prassas",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σεμέλη": {
       "latitude": 35.309678,
@@ -6932,7 +6932,7 @@
       "search_name": "Σεμέλη",
       "primary_alias": "semeli",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκαφιδαράς": {
       "latitude": 35.335609,
@@ -6941,7 +6941,7 @@
       "search_name": "Σκαφιδαράς",
       "primary_alias": "skafidaras",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταλίδα": {
       "latitude": 35.291099,
@@ -6950,7 +6950,7 @@
       "search_name": "Σταλίδα",
       "primary_alias": "stalida",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στόμιο": {
       "latitude": 35.337077,
@@ -6959,7 +6959,7 @@
       "search_name": "Στόμιο",
       "primary_alias": "stomio",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΤΕΙ": {
       "latitude": 35.316476,
@@ -6968,7 +6968,7 @@
       "search_name": "ΤΕΙ",
       "primary_alias": "tei",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρεις Βαγιές": {
       "latitude": 35.321977,
@@ -6977,7 +6977,7 @@
       "search_name": "Τρεις Βαγιές",
       "primary_alias": "treis-vagies",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρία Πεύκα": {
       "latitude": 35.330068,
@@ -6986,7 +6986,7 @@
       "search_name": "Τρία Πεύκα",
       "primary_alias": "tria-peyka",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φοινικιά": {
       "latitude": 35.281185,
@@ -6995,7 +6995,7 @@
       "search_name": "Φοινικιά",
       "primary_alias": "foinikia",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάλια": {
       "latitude": 35.283783,
@@ -7004,7 +7004,7 @@
       "search_name": "Μάλια",
       "primary_alias": "malia",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανισσαράς": {
       "latitude": 35.335179,
@@ -7013,7 +7013,7 @@
       "search_name": "Ανισσαράς",
       "primary_alias": "anissaras",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουτουλουφάρι": {
       "latitude": 35.306255,
@@ -7022,7 +7022,7 @@
       "search_name": "Κουτουλουφάρι",
       "primary_alias": "koytoyloyfari",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιμένας Χερσονήσου": {
       "latitude": 35.315254,
@@ -7031,7 +7031,7 @@
       "search_name": "Λιμένας Χερσονήσου",
       "primary_alias": "limenas-hersonisoy",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοχός": {
       "latitude": 35.263141,
@@ -7040,7 +7040,7 @@
       "search_name": "Μοχός",
       "primary_alias": "mohos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποταμιές": {
       "latitude": 35.255412,
@@ -7049,7 +7049,7 @@
       "search_name": "Ποταμιές",
       "primary_alias": "potamies",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σίσι": {
       "latitude": 35.307757,
@@ -7058,7 +7058,7 @@
       "search_name": "Σίσι",
       "primary_alias": "sisi",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χερσόνησος": {
       "latitude": 35.307481,
@@ -7067,7 +7067,7 @@
       "search_name": "Χερσόνησος",
       "primary_alias": "hersonisos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης Κνωσού": {
       "latitude": 35.317508,
@@ -7076,7 +7076,7 @@
       "search_name": "Άγιος Ιωάννης Κνωσού",
       "primary_alias": "agios-ioannis-knosoy",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαθειανός Κάμπος": {
       "latitude": 35.324365,
@@ -7085,7 +7085,7 @@
       "search_name": "Βαθειανός Κάμπος",
       "primary_alias": "vatheianos-kampos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γούρνες Παραλία": {
       "latitude": 35.328818,
@@ -7094,7 +7094,7 @@
       "search_name": "Γούρνες Παραλία",
       "primary_alias": "goyrnes-paralia",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πελεκητά": {
       "latitude": 35.326474,
@@ -7103,7 +7103,7 @@
       "search_name": "Πελεκητά",
       "primary_alias": "pelekita",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Γούβες": {
       "latitude": 35.331292,
@@ -7112,7 +7112,7 @@
       "search_name": "Κάτω Γούβες",
       "primary_alias": "kato-goyves",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Πελαγία": {
       "latitude": 35.33075,
@@ -7121,7 +7121,7 @@
       "search_name": "Αγία Πελαγία",
       "primary_alias": "agia-pelagia",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγκισαράς": {
       "latitude": 35.334352,
@@ -7130,7 +7130,7 @@
       "search_name": "Αγκισαράς",
       "primary_alias": "agkisaras",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιόφυρο": {
       "latitude": 35.329849,
@@ -7139,7 +7139,7 @@
       "search_name": "Γιόφυρο",
       "primary_alias": "giofyro",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δειλινά": {
       "latitude": 35.32653,
@@ -7148,7 +7148,7 @@
       "search_name": "Δειλινά",
       "primary_alias": "deilina",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης Χωστός": {
       "latitude": 35.315572,
@@ -7157,7 +7157,7 @@
       "search_name": "Άγιος Ιωάννης Χωστός",
       "primary_alias": "agios-ioannis-hostos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατσαμπάς": {
       "latitude": 35.337049,
@@ -7166,7 +7166,7 @@
       "search_name": "Κατσαμπάς",
       "primary_alias": "katsampas",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΠΑΓΝΗ": {
       "latitude": 35.305601,
@@ -7175,7 +7175,7 @@
       "search_name": "ΠΑΓΝΗ",
       "primary_alias": "pagni",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Αικατερίνη": {
       "latitude": 35.329051,
@@ -7184,7 +7184,7 @@
       "search_name": "Αγία Αικατερίνη",
       "primary_alias": "irakleio-kriti-agia-aikaterini",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσοπηγή": {
       "latitude": 35.335851,
@@ -7193,7 +7193,7 @@
       "search_name": "Χρυσοπηγή",
       "primary_alias": "hrysopigi",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λινοπεράματα": {
       "latitude": 35.345708,
@@ -7202,7 +7202,7 @@
       "search_name": "Λινοπεράματα",
       "primary_alias": "linoperamata",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παντάνασσα": {
       "latitude": 35.355662,
@@ -7211,7 +7211,7 @@
       "search_name": "Παντάνασσα",
       "primary_alias": "pantanassa",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοίρες": {
       "latitude": 35.050945,
@@ -7220,7 +7220,7 @@
       "search_name": "Μοίρες",
       "primary_alias": "moires",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τυμπάκι": {
       "latitude": 35.07197,
@@ -7229,7 +7229,7 @@
       "search_name": "Τυμπάκι",
       "primary_alias": "tympaki",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Αρχάνες": {
       "latitude": 35.249057,
@@ -7238,7 +7238,7 @@
       "search_name": "Κάτω Αρχάνες",
       "primary_alias": "kato-arhanes",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επάνω Αρχάνες": {
       "latitude": 35.235197,
@@ -7247,7 +7247,7 @@
       "search_name": "Επάνω Αρχάνες",
       "primary_alias": "epano-arhanes",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστέλλι": {
       "latitude": 35.208598,
@@ -7256,7 +7256,7 @@
       "search_name": "Καστέλλι",
       "primary_alias": "kastelli",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γούβες": {
       "latitude": 35.311629,
@@ -7265,7 +7265,7 @@
       "search_name": "Γούβες",
       "primary_alias": "goyves",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάταλα": {
       "latitude": 34.996236,
@@ -7274,7 +7274,7 @@
       "search_name": "Μάταλα",
       "primary_alias": "matala",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Βαρβάρα": {
       "latitude": 35.136949,
@@ -7283,7 +7283,7 @@
       "search_name": "Αγία Βαρβάρα",
       "primary_alias": "irakleio-kriti-agia-varvara",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρκαλοχώρι": {
       "latitude": 35.145877,
@@ -7292,7 +7292,7 @@
       "search_name": "Αρκαλοχώρι",
       "primary_alias": "irakleio-kriti-arkalohori",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζίντα": {
       "latitude": 35.148697,
@@ -7301,7 +7301,7 @@
       "search_name": "Ζίντα",
       "primary_alias": "irakleio-kriti-zinta",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχοντικό": {
       "latitude": 35.156939,
@@ -7310,7 +7310,7 @@
       "search_name": "Αρχοντικό",
       "primary_alias": "irakleio-kriti-arhontiko",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χουμέριο": {
       "latitude": 35.162374,
@@ -7319,7 +7319,7 @@
       "search_name": "Χουμέριο",
       "primary_alias": "irakleio-kriti-hoymerio",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκοχώρι": {
       "latitude": 35.113237,
@@ -7328,7 +7328,7 @@
       "search_name": "Λευκοχώρι",
       "primary_alias": "irakleio-kriti-leykohori",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πατσίδερος": {
       "latitude": 35.155978,
@@ -7337,7 +7337,7 @@
       "search_name": "Πατσίδερος",
       "primary_alias": "irakleio-kriti-patsideros",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμουργέλες": {
       "latitude": 35.132083,
@@ -7346,7 +7346,7 @@
       "search_name": "Αμουργέλες",
       "primary_alias": "irakleio-kriti-amoyrgeles",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλάγνι": {
       "latitude": 35.174154,
@@ -7355,7 +7355,7 @@
       "search_name": "Αλάγνι",
       "primary_alias": "irakleio-kriti-alagni",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγία": {
       "latitude": 35.118862,
@@ -7364,7 +7364,7 @@
       "search_name": "Παναγία",
       "primary_alias": "irakleio-kriti-panagia",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ίνιο": {
       "latitude": 35.093693,
@@ -7373,7 +7373,7 @@
       "search_name": "Ίνιο",
       "primary_alias": "irakleio-kriti-inio",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νιπιδιτός": {
       "latitude": 35.140354,
@@ -7382,7 +7382,7 @@
       "search_name": "Νιπιδιτός",
       "primary_alias": "irakleio-kriti-nipiditos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εσταυρωμένος": {
       "latitude": 35.32552,
@@ -7391,8 +7391,8 @@
       "search_name": "Εσταυρωμένος",
       "primary_alias": "irakleio-kriti-estayromenos",
       "city": "Ηράκλειο Κρήτη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Θάσος": {
     "Θάσος": {
@@ -7402,7 +7402,7 @@
       "search_name": "Θάσος",
       "primary_alias": "thasos",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιμένας Θάσου": {
       "latitude": 40.775771,
@@ -7411,7 +7411,7 @@
       "search_name": "Λιμένας Θάσου",
       "primary_alias": "limenas-thasoy",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 40.762307,
@@ -7420,7 +7420,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "thasos-agios-georgios",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλυκή": {
       "latitude": 40.605569,
@@ -7429,7 +7429,7 @@
       "search_name": "Αλυκή",
       "primary_alias": "alyki",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αστρίδα": {
       "latitude": 40.588435,
@@ -7438,7 +7438,7 @@
       "search_name": "Αστρίδα",
       "primary_alias": "astrida",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θεολόγος": {
       "latitude": 40.659887,
@@ -7447,7 +7447,7 @@
       "search_name": "Θεολόγος",
       "primary_alias": "theologos",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιράχη": {
       "latitude": 40.693948,
@@ -7456,7 +7456,7 @@
       "search_name": "Καλλιράχη",
       "primary_alias": "kallirahi",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλύβια": {
       "latitude": 40.638395,
@@ -7465,7 +7465,7 @@
       "search_name": "Καλύβια",
       "primary_alias": "thasos-kalyvia",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοίνυρα": {
       "latitude": 40.667923,
@@ -7474,7 +7474,7 @@
       "search_name": "Κοίνυρα",
       "primary_alias": "koinyra",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιμενάρια": {
       "latitude": 40.628107,
@@ -7483,7 +7483,7 @@
       "search_name": "Λιμενάρια",
       "primary_alias": "limenaria",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαριές": {
       "latitude": 40.690902,
@@ -7492,7 +7492,7 @@
       "search_name": "Μαριές",
       "primary_alias": "maries",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγία": {
       "latitude": 40.730735,
@@ -7501,7 +7501,7 @@
       "search_name": "Παναγία",
       "primary_alias": "panagia",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πευκάρι": {
       "latitude": 40.617224,
@@ -7510,7 +7510,7 @@
       "search_name": "Πευκάρι",
       "primary_alias": "peykari",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποταμιά": {
       "latitude": 40.716678,
@@ -7519,7 +7519,7 @@
       "search_name": "Ποταμιά",
       "primary_alias": "potamia",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποτός": {
       "latitude": 40.610949,
@@ -7528,7 +7528,7 @@
       "search_name": "Ποτός",
       "primary_alias": "potos",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρίνος": {
       "latitude": 40.740642,
@@ -7537,7 +7537,7 @@
       "search_name": "Πρίνος",
       "primary_alias": "prinos",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ραχώνι": {
       "latitude": 40.756483,
@@ -7546,7 +7546,7 @@
       "search_name": "Ραχώνι",
       "primary_alias": "rahoni",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Καλλιράχης": {
       "latitude": 40.706308,
@@ -7555,7 +7555,7 @@
       "search_name": "Σκάλα Καλλιράχης",
       "primary_alias": "skala-kallirahis",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Μαριών": {
       "latitude": 40.641488,
@@ -7564,7 +7564,7 @@
       "search_name": "Σκάλα Μαριών",
       "primary_alias": "skala-marion",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Πρίνου": {
       "latitude": 40.757558,
@@ -7573,7 +7573,7 @@
       "search_name": "Σκάλα Πρίνου",
       "primary_alias": "skala-prinoy",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Ραχωνίου": {
       "latitude": 40.78008,
@@ -7582,7 +7582,7 @@
       "search_name": "Σκάλα Ραχωνίου",
       "primary_alias": "skala-rahonioy",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Σωτήρος": {
       "latitude": 40.728356,
@@ -7591,7 +7591,7 @@
       "search_name": "Σκάλα Σωτήρος",
       "primary_alias": "skala-sotiros",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σωτήρας": {
       "latitude": 40.716465,
@@ -7600,7 +7600,7 @@
       "search_name": "Σωτήρας",
       "primary_alias": "sotiras",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσή Ακτή": {
       "latitude": 40.714016,
@@ -7609,7 +7609,7 @@
       "search_name": "Χρυσή Ακτή",
       "primary_alias": "hrysi-akti",
       "city": "Θάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσή Αμμουδιά": {
       "latitude": 40.727885,
@@ -7618,8 +7618,8 @@
       "search_name": "Χρυσή Αμμουδιά",
       "primary_alias": "hrysi-ammoydia",
       "city": "Θάσος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Θεσσαλονίκη": {
     "Αγία Τριάδα": {
@@ -7629,7 +7629,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "thessaloniki-agia-triada",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Παύλος": {
       "latitude": 40.639908,
@@ -7638,7 +7638,7 @@
       "search_name": "Άγιος Παύλος",
       "primary_alias": "thessaloniki-agios-paylos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκηποι": {
       "latitude": 40.653742,
@@ -7647,7 +7647,7 @@
       "search_name": "Αμπελόκηποι",
       "primary_alias": "thessaloniki-ampelokipoi",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασβεστοχώρι": {
       "latitude": 40.641244,
@@ -7656,7 +7656,7 @@
       "search_name": "Ασβεστοχώρι",
       "primary_alias": "thessaloniki-asvestohori",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διαβατά": {
       "latitude": 40.687644,
@@ -7665,7 +7665,7 @@
       "search_name": "Διαβατά",
       "primary_alias": "thessaloniki-diavata",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελευθέριο Κορδελιό": {
       "latitude": 40.671046,
@@ -7674,7 +7674,7 @@
       "search_name": "Ελευθέριο Κορδελιό",
       "primary_alias": "thessaloniki-eleytherio-kordelio",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εξοχή": {
       "latitude": 40.627758,
@@ -7683,7 +7683,7 @@
       "search_name": "Εξοχή",
       "primary_alias": "thessaloniki-exohi",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επανομή": {
       "latitude": 40.426221,
@@ -7692,7 +7692,7 @@
       "search_name": "Επανομή",
       "primary_alias": "thessaloniki-epanomi",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευκαρπία": {
       "latitude": 40.686087,
@@ -7701,7 +7701,7 @@
       "search_name": "Ευκαρπία",
       "primary_alias": "thessaloniki-eykarpia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εύοσμος": {
       "latitude": 40.672392,
@@ -7710,7 +7710,7 @@
       "search_name": "Εύοσμος",
       "primary_alias": "thessaloniki-eyosmos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θέρμη": {
       "latitude": 40.548124,
@@ -7719,7 +7719,7 @@
       "search_name": "Θέρμη",
       "primary_alias": "thessaloniki-thermi",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ραιδεστός": {
       "latitude": 40.524761,
@@ -7728,7 +7728,7 @@
       "search_name": "Νέα Ραιδεστός",
       "primary_alias": "thessaloniki-nea-raidestos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Ρύσιο": {
       "latitude": 40.496039,
@@ -7737,7 +7737,7 @@
       "search_name": "Νέο Ρύσιο",
       "primary_alias": "thessaloniki-neo-rysio",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταγαράδες": {
       "latitude": 40.488773,
@@ -7746,7 +7746,7 @@
       "search_name": "Ταγαράδες",
       "primary_alias": "thessaloniki-tagarades",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τριάδι": {
       "latitude": 40.547208,
@@ -7755,7 +7755,7 @@
       "search_name": "Τριάδι",
       "primary_alias": "thessaloniki-triadi",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θεσσαλονίκη": {
       "latitude": 40.624836,
@@ -7764,7 +7764,7 @@
       "search_name": "Θεσσαλονίκη",
       "primary_alias": "thessaloniki",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "40 Εκκλησιές": {
       "latitude": 40.632613,
@@ -7773,7 +7773,7 @@
       "search_name": "40 Εκκλησιές",
       "primary_alias": "thessaloniki-40-ekklisies",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα Φαλήρου": {
       "latitude": 40.6196,
@@ -7782,7 +7782,7 @@
       "search_name": "Αγία Τριάδα Φαλήρου",
       "primary_alias": "agia-triada-faliroy",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Φανούριος": {
       "latitude": 40.615691,
@@ -7791,7 +7791,7 @@
       "search_name": "Άγιος Φανούριος",
       "primary_alias": "thessaloniki-agios-fanoyrios",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάληψη": {
       "latitude": 40.605703,
@@ -7800,7 +7800,7 @@
       "search_name": "Ανάληψη",
       "primary_alias": "thessaloniki-analipsi",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Πόλη": {
       "latitude": 40.641842,
@@ -7809,7 +7809,7 @@
       "search_name": "Άνω Πόλη",
       "primary_alias": "thessaloniki-ano-poli",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Τούμπα": {
       "latitude": 40.617586,
@@ -7818,7 +7818,7 @@
       "search_name": "Άνω Τούμπα",
       "primary_alias": "thessaloniki-ano-toympa",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αριστοτέλους": {
       "latitude": 40.635251,
@@ -7827,7 +7827,7 @@
       "search_name": "Αριστοτέλους",
       "primary_alias": "thessaloniki-aristoteloys",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαρδάρης": {
       "latitude": 40.640649,
@@ -7836,7 +7836,7 @@
       "search_name": "Βαρδάρης",
       "primary_alias": "thessaloniki-vardaris",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Τούμπα": {
       "latitude": 40.61101,
@@ -7845,7 +7845,7 @@
       "search_name": "Κάτω Τούμπα",
       "primary_alias": "thessaloniki-kato-toympa",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.630989,
@@ -7854,7 +7854,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "thessaloniki",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαδάδικα": {
       "latitude": 40.635113,
@@ -7863,7 +7863,7 @@
       "search_name": "Λαδάδικα",
       "primary_alias": "thessaloniki-ladadika",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαχανόκηποι": {
       "latitude": 40.647166,
@@ -7872,7 +7872,7 @@
       "search_name": "Λαχανόκηποι",
       "primary_alias": "thessaloniki-lahanokipoi",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιμάνι": {
       "latitude": 40.635229,
@@ -7881,7 +7881,7 @@
       "search_name": "Λιμάνι",
       "primary_alias": "thessaloniki-limani",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ελβετία": {
       "latitude": 40.589689,
@@ -7890,7 +7890,7 @@
       "search_name": "Νέα Ελβετία",
       "primary_alias": "thessaloniki-nea-elvetia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ντεπώ": {
       "latitude": 40.591662,
@@ -7899,7 +7899,7 @@
       "search_name": "Ντεπώ",
       "primary_alias": "thessaloniki-ntepo",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηροκρήνη": {
       "latitude": 40.648647,
@@ -7908,7 +7908,7 @@
       "search_name": "Ξηροκρήνη",
       "primary_alias": "thessaloniki-xirokrini",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Παραλία": {
       "latitude": 40.597507,
@@ -7917,7 +7917,7 @@
       "search_name": "Παλαιά Παραλία",
       "primary_alias": "thessaloniki-palaia-paralia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιός Σταθμός": {
       "latitude": 40.641766,
@@ -7926,7 +7926,7 @@
       "search_name": "Παλαιός Σταθμός",
       "primary_alias": "thessaloniki-palaios-stathmos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ροτόντα": {
       "latitude": 40.633416,
@@ -7935,7 +7935,7 @@
       "search_name": "Ροτόντα",
       "primary_alias": "thessaloniki-rotonta",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σφαγεία": {
       "latitude": 40.642885,
@@ -7944,7 +7944,7 @@
       "search_name": "Σφαγεία",
       "primary_alias": "thessaloniki-sfageia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τούμπα": {
       "latitude": 40.613986,
@@ -7953,7 +7953,7 @@
       "search_name": "Τούμπα",
       "primary_alias": "thessaloniki-toympa",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσαλδάρη": {
       "latitude": 40.627759,
@@ -7962,7 +7962,7 @@
       "search_name": "Τσαλδάρη",
       "primary_alias": "thessaloniki-tsaldari",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φάληρο": {
       "latitude": 40.616964,
@@ -7971,7 +7971,7 @@
       "search_name": "Φάληρο",
       "primary_alias": "thessaloniki-faliro",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαριλάου": {
       "latitude": 40.5999,
@@ -7980,7 +7980,7 @@
       "search_name": "Χαριλάου",
       "primary_alias": "thessaloniki-harilaoy",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμαριά": {
       "latitude": 40.578606,
@@ -7989,7 +7989,7 @@
       "search_name": "Καλαμαριά",
       "primary_alias": "thessaloniki-kalamaria",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλοχώρι": {
       "latitude": 40.641404,
@@ -7998,7 +7998,7 @@
       "search_name": "Καλοχώρι",
       "primary_alias": "thessaloniki-kalohori",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρδία": {
       "latitude": 40.467866,
@@ -8007,7 +8007,7 @@
       "search_name": "Καρδία",
       "primary_alias": "thessaloniki-kardia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μενεμένη": {
       "latitude": 40.654869,
@@ -8016,7 +8016,7 @@
       "search_name": "Μενεμένη",
       "primary_alias": "thessaloniki-menemeni",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μηχανιώνα": {
       "latitude": 40.466477,
@@ -8025,7 +8025,7 @@
       "search_name": "Νέα Μηχανιώνα",
       "primary_alias": "thessaloniki-mihaniona",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μαγνησία": {
       "latitude": 40.687661,
@@ -8034,7 +8034,7 @@
       "search_name": "Νέα Μαγνησία",
       "primary_alias": "thessaloniki-nea-magnisia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 40.653178,
@@ -8043,7 +8043,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "thessaloniki-neapoli",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέοι Επιβάτες": {
       "latitude": 40.500847,
@@ -8052,7 +8052,7 @@
       "search_name": "Νέοι Επιβάτες",
       "primary_alias": "thessaloniki-neoi-epivates",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 40.585588,
@@ -8061,7 +8061,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "thessaloniki-panorama",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περαία": {
       "latitude": 40.503928,
@@ -8070,7 +8070,7 @@
       "search_name": "Περαία",
       "primary_alias": "thessaloniki-peraia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλαγιάρι": {
       "latitude": 40.473352,
@@ -8079,7 +8079,7 @@
       "search_name": "Πλαγιάρι",
       "primary_alias": "thessaloniki-plagiari",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολίχνη": {
       "latitude": 40.664547,
@@ -8088,7 +8088,7 @@
       "search_name": "Πολίχνη",
       "primary_alias": "thessaloniki-polihni",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυλαία": {
       "latitude": 40.601557,
@@ -8097,7 +8097,7 @@
       "search_name": "Πυλαία",
       "primary_alias": "thessaloniki-pylaia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρετζίκι": {
       "latitude": 40.658991,
@@ -8106,7 +8106,7 @@
       "search_name": "Ρετζίκι",
       "primary_alias": "thessaloniki-retziki",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σίνδος": {
       "latitude": 40.670396,
@@ -8115,7 +8115,7 @@
       "search_name": "Σίνδος",
       "primary_alias": "thessaloniki-sindos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρούπολη": {
       "latitude": 40.670911,
@@ -8124,7 +8124,7 @@
       "search_name": "Σταυρούπολη",
       "primary_alias": "thessaloniki-stayroypoli",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συκιές": {
       "latitude": 40.648741,
@@ -8133,7 +8133,7 @@
       "search_name": "Συκιές",
       "primary_alias": "thessaloniki-sykies",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τριανδρία": {
       "latitude": 40.622847,
@@ -8142,7 +8142,7 @@
       "search_name": "Τριανδρία",
       "primary_alias": "thessaloniki-triandria",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρίλοφος": {
       "latitude": 40.46812,
@@ -8151,7 +8151,7 @@
       "search_name": "Τρίλοφος",
       "primary_alias": "thessaloniki-trilofos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φίλυρο": {
       "latitude": 40.692305,
@@ -8160,7 +8160,7 @@
       "search_name": "Φίλυρο",
       "primary_alias": "thessaloniki-filyro",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χορτιάτης": {
       "latitude": 40.61119,
@@ -8169,7 +8169,7 @@
       "search_name": "Χορτιάτης",
       "primary_alias": "thessaloniki-hortiatis",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ωραιόκαστρο": {
       "latitude": 40.728633,
@@ -8178,7 +8178,7 @@
       "search_name": "Ωραιόκαστρο",
       "primary_alias": "thessaloniki-oraiokastro",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιόκαστρο": {
       "latitude": 40.721732,
@@ -8187,7 +8187,7 @@
       "search_name": "Παλαιόκαστρο",
       "primary_alias": "thessaloniki-palaiokastro",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουφάλια": {
       "latitude": 40.779236,
@@ -8196,7 +8196,7 @@
       "search_name": "Κουφάλια",
       "primary_alias": "koyfalia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασπροβάλτα": {
       "latitude": 40.721447,
@@ -8205,7 +8205,7 @@
       "search_name": "Ασπροβάλτα",
       "primary_alias": "asprovalta",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαγκαδάς": {
       "latitude": 40.750695,
@@ -8214,7 +8214,7 @@
       "search_name": "Λαγκαδάς",
       "primary_alias": "thessaloniki-lagkadas",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγίας Σοφίας": {
       "latitude": 40.633275,
@@ -8223,7 +8223,7 @@
       "search_name": "Αγίας Σοφίας",
       "primary_alias": "thessaloniki-agias-sofias",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρωμαϊκή Αγορά": {
       "latitude": 40.637731,
@@ -8232,7 +8232,7 @@
       "search_name": "Ρωμαϊκή Αγορά",
       "primary_alias": "thessaloniki",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιά Λαχαναγορά": {
       "latitude": 40.6449,
@@ -8241,7 +8241,7 @@
       "search_name": "Παλιά Λαχαναγορά",
       "primary_alias": "thessaloniki-palia-lahanagora",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παπάφειο": {
       "latitude": 40.620382,
@@ -8250,7 +8250,7 @@
       "search_name": "Παπάφειο",
       "primary_alias": "papafeio",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιπποκράτειο": {
       "latitude": 40.6113,
@@ -8259,7 +8259,7 @@
       "search_name": "Ιπποκράτειο",
       "primary_alias": "ippokrateio",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιδηροδρομικός Σταθμός": {
       "latitude": 40.649047,
@@ -8268,7 +8268,7 @@
       "search_name": "Σιδηροδρομικός Σταθμός",
       "primary_alias": "sidirodromikos-stathmos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλάστρα": {
       "latitude": 40.626881,
@@ -8277,7 +8277,7 @@
       "search_name": "Χαλάστρα",
       "primary_alias": "halastra",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μάλγαρα": {
       "latitude": 40.609005,
@@ -8286,7 +8286,7 @@
       "search_name": "Νέα Μάλγαρα",
       "primary_alias": "nea-malgara",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κύμινα": {
       "latitude": 40.613661,
@@ -8295,7 +8295,7 @@
       "search_name": "Κύμινα",
       "primary_alias": "kymina",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρυμός": {
       "latitude": 40.781909,
@@ -8304,7 +8304,7 @@
       "search_name": "Δρυμός",
       "primary_alias": "thessaloniki-drymos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλκηδόνα": {
       "latitude": 40.731242,
@@ -8313,7 +8313,7 @@
       "search_name": "Χαλκηδόνα",
       "primary_alias": "halkidona",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αεροδρόμιο Μακεδονία": {
       "latitude": 40.525112,
@@ -8322,7 +8322,7 @@
       "search_name": "Αεροδρόμιο Μακεδονία",
       "primary_alias": "aerodromio-makedonia",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρός": {
       "latitude": 40.663912,
@@ -8331,7 +8331,7 @@
       "search_name": "Σταυρός",
       "primary_alias": "thessaloniki-stayros",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λητή": {
       "latitude": 40.744687,
@@ -8340,7 +8340,7 @@
       "search_name": "Λητή",
       "primary_alias": "liti",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αθανάσιος": {
       "latitude": 40.716136,
@@ -8349,7 +8349,7 @@
       "search_name": "Άγιος Αθανάσιος",
       "primary_alias": "thessaloniki-agios-athanasios",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Βρασνά": {
       "latitude": 40.705995,
@@ -8358,7 +8358,7 @@
       "search_name": "Νέα Βρασνά",
       "primary_alias": "nea-vrasna",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μεσημβρία": {
       "latitude": 40.751846,
@@ -8367,7 +8367,7 @@
       "search_name": "Νέα Μεσημβρία",
       "primary_alias": "nea-mesimvria",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βρασνά": {
       "latitude": 40.704869,
@@ -8376,7 +8376,7 @@
       "search_name": "Βρασνά",
       "primary_alias": "vrasna",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρόχωμα": {
       "latitude": 40.797761,
@@ -8385,7 +8385,7 @@
       "search_name": "Πρόχωμα",
       "primary_alias": "thessaloniki-prohoma",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστανάς": {
       "latitude": 40.819056,
@@ -8394,7 +8394,7 @@
       "search_name": "Καστανάς",
       "primary_alias": "thessaloniki-kastanas",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μάδυτος": {
       "latitude": 40.622494,
@@ -8403,8 +8403,8 @@
       "search_name": "Νέα Μάδυτος",
       "primary_alias": "thessaloniki-nea-madytos",
       "city": "Θεσσαλονίκη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Θήβα": {
     "Θήβα": {
@@ -8414,7 +8414,7 @@
       "search_name": "Θήβα",
       "primary_alias": "thiva",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλίαρτος": {
       "latitude": 38.372778,
@@ -8423,7 +8423,7 @@
       "search_name": "Αλίαρτος",
       "primary_alias": "aliartos",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελοχώρι": {
       "latitude": 38.301011,
@@ -8432,7 +8432,7 @@
       "search_name": "Αμπελοχώρι",
       "primary_alias": "ampelohori",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάγια": {
       "latitude": 38.318846,
@@ -8441,7 +8441,7 @@
       "search_name": "Βάγια",
       "primary_alias": "thiva-vagia",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελαιώνας": {
       "latitude": 38.364849,
@@ -8450,7 +8450,7 @@
       "search_name": "Ελαιώνας",
       "primary_alias": "thiva-elaionas",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ερυθρές": {
       "latitude": 38.216962,
@@ -8459,7 +8459,7 @@
       "search_name": "Ερυθρές",
       "primary_alias": "erythres",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΚΕΠΒ": {
       "latitude": 38.29585,
@@ -8468,7 +8468,7 @@
       "search_name": "ΚΕΠΒ",
       "primary_alias": "kepv",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτούφι": {
       "latitude": 38.276933,
@@ -8477,7 +8477,7 @@
       "search_name": "Λουτούφι",
       "primary_alias": "loytoyfi",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελισσοχώρι": {
       "latitude": 38.266113,
@@ -8486,7 +8486,7 @@
       "search_name": "Μελισσοχώρι",
       "primary_alias": "melissohori",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχωράκι": {
       "latitude": 38.295288,
@@ -8495,7 +8495,7 @@
       "search_name": "Νεοχωράκι",
       "primary_alias": "neohoraki",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαζί": {
       "latitude": 38.361002,
@@ -8504,7 +8504,7 @@
       "search_name": "Μαζί",
       "primary_alias": "mazi",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καπαρέλλι": {
       "latitude": 38.23673,
@@ -8513,7 +8513,7 @@
       "search_name": "Καπαρέλλι",
       "primary_alias": "thiva-kaparelli",
       "city": "Θήβα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκούρτα": {
       "latitude": 38.213558,
@@ -8522,8 +8522,8 @@
       "search_name": "Σκούρτα",
       "primary_alias": "thiva-skoyrta",
       "city": "Θήβα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Θρακομακεδόνες": {
     "Θρακομακεδόνες": {
@@ -8533,8 +8533,8 @@
       "search_name": "Θρακομακεδόνες",
       "primary_alias": "thrakomakedones",
       "city": "Θρακομακεδόνες",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ιεράπετρα Κρήτη": {
     "Ιεράπετρα": {
@@ -8544,7 +8544,7 @@
       "search_name": "Ιεράπετρα",
       "primary_alias": "ierapetra-crete",
       "city": "Ιεράπετρα Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαϊνιά": {
       "latitude": 35.024923,
@@ -8553,7 +8553,7 @@
       "search_name": "Βαϊνιά",
       "primary_alias": "vainia",
       "city": "Ιεράπετρα Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γρα Λυγιά": {
       "latitude": 35.015484,
@@ -8562,7 +8562,7 @@
       "search_name": "Γρα Λυγιά",
       "primary_alias": "gra-lygia",
       "city": "Ιεράπετρα Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 35.023454,
@@ -8571,7 +8571,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "ierapetra-kriti-kallithea",
       "city": "Ιεράπετρα Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Χωριό": {
       "latitude": 35.048239,
@@ -8580,7 +8580,7 @@
       "search_name": "Κάτω Χωριό",
       "primary_alias": "kato-horio",
       "city": "Ιεράπετρα Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεντρί": {
       "latitude": 35.032772,
@@ -8589,7 +8589,7 @@
       "search_name": "Κεντρί",
       "primary_alias": "kentri",
       "city": "Ιεράπετρα Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποταμοί": {
       "latitude": 35.013136,
@@ -8598,7 +8598,7 @@
       "search_name": "Ποταμοί",
       "primary_alias": "potamoi",
       "city": "Ιεράπετρα Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στόμιο": {
       "latitude": 35.012945,
@@ -8607,8 +8607,8 @@
       "search_name": "Στόμιο",
       "primary_alias": "ierapetra-kriti-stomio",
       "city": "Ιεράπετρα Κρήτη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ιθάκη": {
     "Βαθύ": {
@@ -8618,7 +8618,7 @@
       "search_name": "Βαθύ",
       "primary_alias": "ithaki-vathy",
       "city": "Ιθάκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανωγή": {
       "latitude": 38.419944,
@@ -8627,7 +8627,7 @@
       "search_name": "Ανωγή",
       "primary_alias": "anogi",
       "city": "Ιθάκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιόνι": {
       "latitude": 38.449602,
@@ -8636,7 +8636,7 @@
       "search_name": "Κιόνι",
       "primary_alias": "kioni",
       "city": "Ιθάκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περαχώρι": {
       "latitude": 38.348398,
@@ -8645,7 +8645,7 @@
       "search_name": "Περαχώρι",
       "primary_alias": "perahori",
       "city": "Ιθάκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατρειθιάς": {
       "latitude": 38.46101,
@@ -8654,7 +8654,7 @@
       "search_name": "Πλατρειθιάς",
       "primary_alias": "platreithias",
       "city": "Ιθάκη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρός": {
       "latitude": 38.446603,
@@ -8663,8 +8663,8 @@
       "search_name": "Σταυρός",
       "primary_alias": "ithaki-stayros",
       "city": "Ιθάκη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ικαρία": {
     "Άγιος Κήρυκος": {
@@ -8674,7 +8674,7 @@
       "search_name": "Άγιος Κήρυκος",
       "primary_alias": "ikaria",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θερμά": {
       "latitude": 37.62319,
@@ -8683,7 +8683,7 @@
       "search_name": "Θερμά",
       "primary_alias": "therma",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρμενιστής": {
       "latitude": 37.63409,
@@ -8692,7 +8692,7 @@
       "search_name": "Αρμενιστής",
       "primary_alias": "armenistis",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εύδηλος": {
       "latitude": 37.631136,
@@ -8701,7 +8701,7 @@
       "search_name": "Εύδηλος",
       "primary_alias": "eydilos",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καραβόσταμο": {
       "latitude": 37.629905,
@@ -8710,7 +8710,7 @@
       "search_name": "Καραβόσταμο",
       "primary_alias": "karavostamo",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρκινάγρι": {
       "latitude": 37.517763,
@@ -8719,7 +8719,7 @@
       "search_name": "Καρκινάγρι",
       "primary_alias": "karkinagri",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαγγανίτης": {
       "latitude": 37.559256,
@@ -8728,7 +8728,7 @@
       "search_name": "Μαγγανίτης",
       "primary_alias": "magganitis",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξυλοσύρτης": {
       "latitude": 37.591364,
@@ -8737,7 +8737,7 @@
       "search_name": "Ξυλοσύρτης",
       "primary_alias": "xylosyrtis",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περδίκι": {
       "latitude": 37.663091,
@@ -8746,7 +8746,7 @@
       "search_name": "Περδίκι",
       "primary_alias": "perdiki",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φανάρι": {
       "latitude": 37.674133,
@@ -8755,7 +8755,7 @@
       "search_name": "Φανάρι",
       "primary_alias": "fanari",
       "city": "Ικαρία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χριστός Ραχών": {
       "latitude": 37.600274,
@@ -8764,8 +8764,8 @@
       "search_name": "Χριστός Ραχών",
       "primary_alias": "hristos-rahon",
       "city": "Ικαρία",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ίλιον": {
     "Αθήνα": {
@@ -8775,8 +8775,8 @@
       "search_name": "Αθήνα",
       "primary_alias": "ilion-athina",
       "city": "Ίλιον",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ιτέα": {
     "Ιτέα": {
@@ -8786,8 +8786,8 @@
       "search_name": "Ιτέα",
       "primary_alias": "itea",
       "city": "Ιτέα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ιωάννινα": {
     "Ιωάννινα": {
@@ -8797,7 +8797,7 @@
       "search_name": "Ιωάννινα",
       "primary_alias": "ioannina",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 39.701582,
@@ -8806,7 +8806,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "ioannina-agios-ioannis",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμφιθέα": {
       "latitude": 39.689849,
@@ -8815,7 +8815,7 @@
       "search_name": "Αμφιθέα",
       "primary_alias": "ioannina-amfithea",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άμμος": {
       "latitude": 39.665987,
@@ -8824,7 +8824,7 @@
       "search_name": "Άμμος",
       "primary_alias": "ioannina-ammos",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελεία": {
       "latitude": 39.566843,
@@ -8833,7 +8833,7 @@
       "search_name": "Αμπελεία",
       "primary_alias": "ampeleia",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκηποι": {
       "latitude": 39.680943,
@@ -8842,7 +8842,7 @@
       "search_name": "Αμπελόκηποι",
       "primary_alias": "ioannina-ampelokipoi",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάργυροι": {
       "latitude": 39.664935,
@@ -8851,7 +8851,7 @@
       "search_name": "Ανάργυροι",
       "primary_alias": "anargyroi",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανατολή": {
       "latitude": 39.635277,
@@ -8860,7 +8860,7 @@
       "search_name": "Ανατολή",
       "primary_alias": "anatoli",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθούπολη": {
       "latitude": 39.644065,
@@ -8869,7 +8869,7 @@
       "search_name": "Ανθούπολη",
       "primary_alias": "anthoypoli",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Λαψίστα": {
       "latitude": 39.742101,
@@ -8878,7 +8878,7 @@
       "search_name": "Άνω Λαψίστα",
       "primary_alias": "ano-lapsista",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασφάκα": {
       "latitude": 39.775693,
@@ -8887,7 +8887,7 @@
       "search_name": "Ασφάκα",
       "primary_alias": "asfaka",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλική": {
       "latitude": 39.641962,
@@ -8896,7 +8896,7 @@
       "search_name": "Βασιλική",
       "primary_alias": "vasiliki",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βοτανικός": {
       "latitude": 39.651242,
@@ -8905,7 +8905,7 @@
       "search_name": "Βοτανικός",
       "primary_alias": "ioannina-votanikos",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βουνοπλαγιά": {
       "latitude": 39.691245,
@@ -8914,7 +8914,7 @@
       "search_name": "Βουνοπλαγιά",
       "primary_alias": "voynoplagia",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βρυσούλα": {
       "latitude": 39.643639,
@@ -8923,7 +8923,7 @@
       "search_name": "Βρυσούλα",
       "primary_alias": "vrysoyla",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γηροκομείο": {
       "latitude": 39.674265,
@@ -8932,7 +8932,7 @@
       "search_name": "Γηροκομείο",
       "primary_alias": "ioannina-girokomeio",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γορίτσα": {
       "latitude": 39.582339,
@@ -8941,7 +8941,7 @@
       "search_name": "Γορίτσα",
       "primary_alias": "goritsa",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γραμμένο": {
       "latitude": 39.654439,
@@ -8950,7 +8950,7 @@
       "search_name": "Γραμμένο",
       "primary_alias": "grammeno",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δροσοχώρι": {
       "latitude": 39.626702,
@@ -8959,7 +8959,7 @@
       "search_name": "Δροσοχώρι",
       "primary_alias": "drosohori",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελεούσα": {
       "latitude": 39.705126,
@@ -8968,7 +8968,7 @@
       "search_name": "Ελεούσα",
       "primary_alias": "ioannina-eleoysa",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές κατοικίες": {
       "latitude": 39.639883,
@@ -8977,7 +8977,7 @@
       "search_name": "Εργατικές κατοικίες",
       "primary_alias": "ioannina-ergatikes-katoikies",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζωοδόχος": {
       "latitude": 39.69199,
@@ -8986,7 +8986,7 @@
       "search_name": "Ζωοδόχος",
       "primary_alias": "zoodohos",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηγουμενίτσα Ιωαννίνων": {
       "latitude": 39.661461,
@@ -8995,7 +8995,7 @@
       "search_name": "Ηγουμενίτσα Ιωαννίνων",
       "primary_alias": "igoymenitsa-ioanninon",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 39.673291,
@@ -9004,7 +9004,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "ioannina-kallithea",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλούτσιανη": {
       "latitude": 39.660262,
@@ -9013,7 +9013,7 @@
       "search_name": "Καλούτσιανη",
       "primary_alias": "kaloytsiani",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καραβατιά": {
       "latitude": 39.671565,
@@ -9022,7 +9022,7 @@
       "search_name": "Καραβατιά",
       "primary_alias": "karavatia",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρδαμίτσια": {
       "latitude": 39.678474,
@@ -9031,7 +9031,7 @@
       "search_name": "Καρδαμίτσια",
       "primary_alias": "kardamitsia",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρυές": {
       "latitude": 39.790654,
@@ -9040,7 +9040,7 @@
       "search_name": "Καρυές",
       "primary_alias": "karyes",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστρίτσα": {
       "latitude": 39.630881,
@@ -9049,7 +9049,7 @@
       "search_name": "Καστρίτσα",
       "primary_alias": "kastritsa",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατσικάς": {
       "latitude": 39.622415,
@@ -9058,7 +9058,7 @@
       "search_name": "Κατσικάς",
       "primary_alias": "katsikas",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Λαψίστα": {
       "latitude": 39.75159,
@@ -9067,7 +9067,7 @@
       "search_name": "Κάτω Λαψίστα",
       "primary_alias": "kato-lapsista",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Μάρμαρα": {
       "latitude": 39.642949,
@@ -9076,7 +9076,7 @@
       "search_name": "Κάτω Μάρμαρα",
       "primary_alias": "kato-marmara",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Νεοχωρόπουλο": {
       "latitude": 39.639482,
@@ -9085,7 +9085,7 @@
       "search_name": "Κάτω Νεοχωρόπουλο",
       "primary_alias": "kato-neohoropoylo",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 39.665595,
@@ -9094,7 +9094,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "ioannina",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιάφα": {
       "latitude": 39.652885,
@@ -9103,7 +9103,7 @@
       "search_name": "Κιάφα",
       "primary_alias": "kiafa",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κληματιά": {
       "latitude": 39.704498,
@@ -9112,7 +9112,7 @@
       "search_name": "Κληματιά",
       "primary_alias": "klimatia",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολχίδα": {
       "latitude": 39.665793,
@@ -9121,7 +9121,7 @@
       "search_name": "Κολχίδα",
       "primary_alias": "kolhida",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόντσικα": {
       "latitude": 39.641179,
@@ -9130,7 +9130,7 @@
       "search_name": "Κόντσικα",
       "primary_alias": "kontsika",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοσμηρά": {
       "latitude": 39.591441,
@@ -9139,7 +9139,7 @@
       "search_name": "Κοσμηρά",
       "primary_alias": "kosmira",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουρμανιό": {
       "latitude": 39.670778,
@@ -9148,7 +9148,7 @@
       "search_name": "Κουρμανιό",
       "primary_alias": "koyrmanio",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουτσελιό": {
       "latitude": 39.588091,
@@ -9157,7 +9157,7 @@
       "search_name": "Κουτσελιό",
       "primary_alias": "koytselio",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρανούλα": {
       "latitude": 39.74511,
@@ -9166,7 +9166,7 @@
       "search_name": "Κρανούλα",
       "primary_alias": "kranoyla",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρύα": {
       "latitude": 39.720217,
@@ -9175,7 +9175,7 @@
       "search_name": "Κρύα",
       "primary_alias": "krya",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λακκώματα": {
       "latitude": 39.658457,
@@ -9184,7 +9184,7 @@
       "search_name": "Λακκώματα",
       "primary_alias": "lakkomata",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λασπότοπος": {
       "latitude": 39.657031,
@@ -9193,7 +9193,7 @@
       "search_name": "Λασπότοπος",
       "primary_alias": "laspotopos",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκοθέα": {
       "latitude": 39.688568,
@@ -9202,7 +9202,7 @@
       "search_name": "Λευκοθέα",
       "primary_alias": "leykothea",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιγκιάδες": {
       "latitude": 39.690333,
@@ -9211,7 +9211,7 @@
       "search_name": "Λιγκιάδες",
       "primary_alias": "ligkiades",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λογγάδες": {
       "latitude": 39.660208,
@@ -9220,7 +9220,7 @@
       "search_name": "Λογγάδες",
       "primary_alias": "loggades",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λούτσα": {
       "latitude": 39.659734,
@@ -9229,7 +9229,7 @@
       "search_name": "Λούτσα",
       "primary_alias": "loytsa",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάρμαρα": {
       "latitude": 39.655531,
@@ -9238,7 +9238,7 @@
       "search_name": "Μάρμαρα",
       "primary_alias": "marmara",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλο Γαρδίκι": {
       "latitude": 39.714751,
@@ -9247,7 +9247,7 @@
       "search_name": "Μεγάλο Γαρδίκι",
       "primary_alias": "megalo-gardiki",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπάφρα": {
       "latitude": 39.599205,
@@ -9256,7 +9256,7 @@
       "search_name": "Μπάφρα",
       "primary_alias": "mpafra",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μώλος": {
       "latitude": 39.674364,
@@ -9265,7 +9265,7 @@
       "search_name": "Μώλος",
       "primary_alias": "molos",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ζωή (Εξοχή)": {
       "latitude": 39.686896,
@@ -9274,7 +9274,7 @@
       "search_name": "Νέα Ζωή (Εξοχή)",
       "primary_alias": "nea-zoi-exohi",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοκαισάρεια": {
       "latitude": 39.587373,
@@ -9283,7 +9283,7 @@
       "search_name": "Νεοκαισάρεια",
       "primary_alias": "neokaisareia",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχωρόπουλο": {
       "latitude": 39.626583,
@@ -9292,7 +9292,7 @@
       "search_name": "Νεοχωρόπουλο",
       "primary_alias": "neohoropoylo",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ολυμπιάδα": {
       "latitude": 39.672924,
@@ -9301,7 +9301,7 @@
       "search_name": "Ολυμπιάδα",
       "primary_alias": "ioannina-olympiada",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Πόλη (Κάστρο)": {
       "latitude": 39.671398,
@@ -9310,7 +9310,7 @@
       "search_name": "Παλαιά Πόλη (Κάστρο)",
       "primary_alias": "palaia-poli-kastro",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανεπιστήμιο": {
       "latitude": 39.617514,
@@ -9319,7 +9319,7 @@
       "search_name": "Πανεπιστήμιο",
       "primary_alias": "panepistimio",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεδινή": {
       "latitude": 39.600764,
@@ -9328,7 +9328,7 @@
       "search_name": "Πεδινή",
       "primary_alias": "pedini",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεντέλη": {
       "latitude": 39.665777,
@@ -9337,7 +9337,7 @@
       "search_name": "Πεντέλη",
       "primary_alias": "ioannina-penteli",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέραμα": {
       "latitude": 39.694069,
@@ -9346,7 +9346,7 @@
       "search_name": "Πέραμα",
       "primary_alias": "ioannina-perama",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περίβλεπτος": {
       "latitude": 39.763307,
@@ -9355,7 +9355,7 @@
       "search_name": "Περίβλεπτος",
       "primary_alias": "perivleptos",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πετσάλι": {
       "latitude": 39.787391,
@@ -9364,7 +9364,7 @@
       "search_name": "Πετσάλι",
       "primary_alias": "petsali",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλάτανος": {
       "latitude": 39.668377,
@@ -9373,7 +9373,7 @@
       "search_name": "Πλάτανος",
       "primary_alias": "platanos",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρωτόπαππας": {
       "latitude": 39.780262,
@@ -9382,7 +9382,7 @@
       "search_name": "Πρωτόπαππας",
       "primary_alias": "protopappas",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ροδοτόπι": {
       "latitude": 39.706933,
@@ -9391,7 +9391,7 @@
       "search_name": "Ροδοτόπι",
       "primary_alias": "rodotopi",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σεισμόπληκτα": {
       "latitude": 39.646798,
@@ -9400,7 +9400,7 @@
       "search_name": "Σεισμόπληκτα",
       "primary_alias": "seismoplikta",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα": {
       "latitude": 39.667758,
@@ -9409,7 +9409,7 @@
       "search_name": "Σκάλα",
       "primary_alias": "skala",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυράκι": {
       "latitude": 39.657346,
@@ -9418,7 +9418,7 @@
       "search_name": "Σταυράκι",
       "primary_alias": "stayraki",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Βελισσαρίου": {
       "latitude": 39.64775,
@@ -9427,7 +9427,7 @@
       "search_name": "Στρατόπεδο Βελισσαρίου",
       "primary_alias": "stratopedo-velissarioy",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσιφλικόπουλο": {
       "latitude": 39.655162,
@@ -9436,7 +9436,7 @@
       "search_name": "Τσιφλικόπουλο",
       "primary_alias": "tsiflikopoylo",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλοθέη": {
       "latitude": 39.573085,
@@ -9445,7 +9445,7 @@
       "search_name": "Φιλοθέη",
       "primary_alias": "ioannina-filothei",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φτέρη": {
       "latitude": 39.585935,
@@ -9454,7 +9454,7 @@
       "search_name": "Φτέρη",
       "primary_alias": "fteri",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χιονιάσα": {
       "latitude": 39.587315,
@@ -9463,7 +9463,7 @@
       "search_name": "Χιονιάσα",
       "primary_alias": "hioniasa",
       "city": "Ιωάννινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βελισσάριος": {
       "latitude": 39.651716,
@@ -9472,8 +9472,8 @@
       "search_name": "Βελισσάριος",
       "primary_alias": "velissarios",
       "city": "Ιωάννινα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Καβάλα": {
     "Καβάλα": {
@@ -9483,7 +9483,7 @@
       "search_name": "Καβάλα",
       "primary_alias": "kavala",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Ειρήνη": {
       "latitude": 40.92425,
@@ -9492,7 +9492,7 @@
       "search_name": "Αγία Ειρήνη",
       "primary_alias": "agia-eirini",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αθανάσιος": {
       "latitude": 40.943348,
@@ -9501,7 +9501,7 @@
       "search_name": "Άγιος Αθανάσιος",
       "primary_alias": "kavala-agios-athanasios",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 40.937557,
@@ -9510,7 +9510,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "kavala-agios-ioannis",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Λουκάς": {
       "latitude": 40.932243,
@@ -9519,7 +9519,7 @@
       "search_name": "Άγιος Λουκάς",
       "primary_alias": "kavala-agios-loykas",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Παύλος": {
       "latitude": 40.940624,
@@ -9528,7 +9528,7 @@
       "search_name": "Άγιος Παύλος",
       "primary_alias": "kavala-agios-paylos",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμισιανά": {
       "latitude": 40.933114,
@@ -9537,7 +9537,7 @@
       "search_name": "Αμισιανά",
       "primary_alias": "amisiana",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμυγδαλεώνας": {
       "latitude": 40.962648,
@@ -9546,7 +9546,7 @@
       "search_name": "Αμυγδαλεώνας",
       "primary_alias": "amygdaleonas",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άσπρη Άμμος": {
       "latitude": 40.947884,
@@ -9555,7 +9555,7 @@
       "search_name": "Άσπρη Άμμος",
       "primary_alias": "aspri-ammos",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βύρωνας": {
       "latitude": 40.932818,
@@ -9564,7 +9564,7 @@
       "search_name": "Βύρωνας",
       "primary_alias": "kavala-vyronas",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δάτο": {
       "latitude": 40.971008,
@@ -9573,7 +9573,7 @@
       "search_name": "Δάτο",
       "primary_alias": "dato",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δεξαμενή": {
       "latitude": 40.93948,
@@ -9582,7 +9582,7 @@
       "search_name": "Δεξαμενή",
       "primary_alias": "kavala-dexameni",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελευθερούπολη": {
       "latitude": 40.915597,
@@ -9591,7 +9591,7 @@
       "search_name": "Ελευθερούπολη",
       "primary_alias": "eleytheroypoli",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Περιγιαλίου": {
       "latitude": 40.951997,
@@ -9600,7 +9600,7 @@
       "search_name": "Εργατικές Κατοικίες Περιγιαλίου",
       "primary_alias": "ergatikes-katoikies-perigialioy",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζυγός": {
       "latitude": 41.015037,
@@ -9609,7 +9609,7 @@
       "search_name": "Ζυγός",
       "primary_alias": "zygos",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιχθυόσκαλα": {
       "latitude": 40.927878,
@@ -9618,7 +9618,7 @@
       "search_name": "Ιχθυόσκαλα",
       "primary_alias": "ihthyoskala",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμίτσα": {
       "latitude": 40.922924,
@@ -9627,7 +9627,7 @@
       "search_name": "Καλαμίτσα",
       "primary_alias": "kalamitsa",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.936908,
@@ -9636,7 +9636,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "kavala",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κηπούπολη": {
       "latitude": 40.926892,
@@ -9645,7 +9645,7 @@
       "search_name": "Κηπούπολη",
       "primary_alias": "kavala-kipoypoli",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκινόχωμα": {
       "latitude": 40.929914,
@@ -9654,7 +9654,7 @@
       "search_name": "Κοκκινόχωμα",
       "primary_alias": "kokkinohoma",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρηνίδες": {
       "latitude": 41.014344,
@@ -9663,7 +9663,7 @@
       "search_name": "Κρηνίδες",
       "primary_alias": "krinides",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρυονέρι": {
       "latitude": 41.025558,
@@ -9672,7 +9672,7 @@
       "search_name": "Κρυονέρι",
       "primary_alias": "kruoneri",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεταμόρφωση": {
       "latitude": 40.936521,
@@ -9681,7 +9681,7 @@
       "search_name": "Μεταμόρφωση",
       "primary_alias": "kavala-metamorfosi",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ηρακλείτσα": {
       "latitude": 40.874936,
@@ -9690,7 +9690,7 @@
       "search_name": "Νέα Ηρακλείτσα",
       "primary_alias": "nea-irakleitsa",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Καρβάλη": {
       "latitude": 40.961673,
@@ -9699,7 +9699,7 @@
       "search_name": "Νέα Καρβάλη",
       "primary_alias": "nea-karvali",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Πέραμος": {
       "latitude": 40.839129,
@@ -9708,7 +9708,7 @@
       "search_name": "Νέα Πέραμος",
       "primary_alias": "kavala-nea-peramos",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 40.925291,
@@ -9717,7 +9717,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "kavala-neapoli",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Ζυγός": {
       "latitude": 40.985417,
@@ -9726,7 +9726,7 @@
       "search_name": "Νέος Ζυγός",
       "primary_alias": "neos-zygos",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παληό": {
       "latitude": 40.898953,
@@ -9735,7 +9735,7 @@
       "search_name": "Παληό",
       "primary_alias": "palio",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγία": {
       "latitude": 40.933831,
@@ -9744,7 +9744,7 @@
       "search_name": "Παναγία",
       "primary_alias": "kavala-panagia",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεντακόσια": {
       "latitude": 40.938443,
@@ -9753,7 +9753,7 @@
       "search_name": "Πεντακόσια",
       "primary_alias": "pentakosia",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιγιάλι": {
       "latitude": 40.942308,
@@ -9762,7 +9762,7 @@
       "search_name": "Περιγιάλι",
       "primary_alias": "perigiali",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολύστυλο": {
       "latitude": 40.985027,
@@ -9771,7 +9771,7 @@
       "search_name": "Πολύστυλο",
       "primary_alias": "polystylo",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποταμούδια": {
       "latitude": 40.941038,
@@ -9780,7 +9780,7 @@
       "search_name": "Ποταμούδια",
       "primary_alias": "potamoydia",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προφήτης Ηλίας": {
       "latitude": 40.942987,
@@ -9789,7 +9789,7 @@
       "search_name": "Προφήτης Ηλίας",
       "primary_alias": "profitis-ilias",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ραψάνη": {
       "latitude": 40.936677,
@@ -9798,7 +9798,7 @@
       "search_name": "Ραψάνη",
       "primary_alias": "rapsani",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σούγελο": {
       "latitude": 40.938819,
@@ -9807,7 +9807,7 @@
       "search_name": "Σούγελο",
       "primary_alias": "soygelo",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Καρακώστα": {
       "latitude": 40.931546,
@@ -9816,7 +9816,7 @@
       "search_name": "Στρατόπεδο Καρακώστα",
       "primary_alias": "stratopedo-karakosta",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τίμιος Σταυρός": {
       "latitude": 40.93921,
@@ -9825,7 +9825,7 @@
       "search_name": "Τίμιος Σταυρός",
       "primary_alias": "timios-stayros",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φίλιπποι": {
       "latitude": 41.025605,
@@ -9834,7 +9834,7 @@
       "search_name": "Φίλιπποι",
       "primary_alias": "filippoi",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλκερό": {
       "latitude": 40.97795,
@@ -9843,7 +9843,7 @@
       "search_name": "Χαλκερό",
       "primary_alias": "halkero",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χίλια": {
       "latitude": 40.93917,
@@ -9852,7 +9852,7 @@
       "search_name": "Χίλια",
       "primary_alias": "hilia",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χωράφα": {
       "latitude": 40.942745,
@@ -9861,7 +9861,7 @@
       "search_name": "Χωράφα",
       "primary_alias": "horafa",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρός": {
       "latitude": 40.950147,
@@ -9870,7 +9870,7 @@
       "search_name": "Σταυρός",
       "primary_alias": "kavala-stayros",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΤΕΙ": {
       "latitude": 40.929482,
@@ -9879,7 +9879,7 @@
       "search_name": "ΤΕΙ",
       "primary_alias": "kavala-tei",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χορτοκόπι": {
       "latitude": 40.930637,
@@ -9888,7 +9888,7 @@
       "search_name": "Χορτοκόπι",
       "primary_alias": "hortokopi",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσούπολη": {
       "latitude": 40.986889,
@@ -9897,7 +9897,7 @@
       "search_name": "Χρυσούπολη",
       "primary_alias": "xrysoypolh",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 40.934326,
@@ -9906,7 +9906,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "kavala-kallithea",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέρνη": {
       "latitude": 41.000788,
@@ -9915,7 +9915,7 @@
       "search_name": "Πέρνη",
       "primary_alias": "perni",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσοχώρι": {
       "latitude": 40.932645,
@@ -9924,7 +9924,7 @@
       "search_name": "Χρυσοχώρι",
       "primary_alias": "hrysohori",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γραβούνα": {
       "latitude": 40.994695,
@@ -9933,7 +9933,7 @@
       "search_name": "Γραβούνα",
       "primary_alias": "gravoyna",
       "city": "Καβάλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζαρκάδια": {
       "latitude": 41.018738,
@@ -9942,8 +9942,8 @@
       "search_name": "Ζαρκάδια",
       "primary_alias": "zarkadia",
       "city": "Καβάλα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Καλάβρυτα": {
     "Καλάβρυτα": {
@@ -9953,7 +9953,7 @@
       "search_name": "Καλάβρυτα",
       "primary_alias": "kalavryta",
       "city": "Καλάβρυτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Λούσοι": {
       "latitude": 37.992689,
@@ -9962,7 +9962,7 @@
       "search_name": "Κάτω Λούσοι",
       "primary_alias": "kalavryta-kato-loysoi",
       "city": "Καλάβρυτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατανιώτισσα": {
       "latitude": 38.11066,
@@ -9971,7 +9971,7 @@
       "search_name": "Πλατανιώτισσα",
       "primary_alias": "kalavryta-plataniotissa",
       "city": "Καλάβρυτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκεπαστό": {
       "latitude": 38.041919,
@@ -9980,7 +9980,7 @@
       "search_name": "Σκεπαστό",
       "primary_alias": "kalavryta-skepasto",
       "city": "Καλάβρυτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Ζαχλωρού": {
       "latitude": 38.094773,
@@ -9989,8 +9989,8 @@
       "search_name": "Κάτω Ζαχλωρού",
       "primary_alias": "kalavryta-kato-zahloroy",
       "city": "Καλάβρυτα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Καλαμάτα": {
     "Καλαμάτα": {
@@ -10000,7 +10000,7 @@
       "search_name": "Καλαμάτα",
       "primary_alias": "kalamata",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αβία": {
       "latitude": 36.965487,
@@ -10009,7 +10009,7 @@
       "search_name": "Αβία",
       "primary_alias": "avia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αιθαία": {
       "latitude": 37.094274,
@@ -10018,7 +10018,7 @@
       "search_name": "Αιθαία",
       "primary_alias": "aithaia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ακοβίτικα": {
       "latitude": 37.03801,
@@ -10027,7 +10027,7 @@
       "search_name": "Ακοβίτικα",
       "primary_alias": "kalamata",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ακρογιάλι": {
       "latitude": 36.955893,
@@ -10036,7 +10036,7 @@
       "search_name": "Ακρογιάλι",
       "primary_alias": "akrogiali",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλώνια": {
       "latitude": 37.129428,
@@ -10045,7 +10045,7 @@
       "search_name": "Αλώνια",
       "primary_alias": "alonia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμφιθέα": {
       "latitude": 37.091319,
@@ -10054,7 +10054,7 @@
       "search_name": "Αμφιθέα",
       "primary_alias": "kalamata-amfithea",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άμμος": {
       "latitude": 37.10625,
@@ -10063,7 +10063,7 @@
       "search_name": "Άμμος",
       "primary_alias": "kalamata-ammos",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάληψη": {
       "latitude": 37.019822,
@@ -10072,7 +10072,7 @@
       "search_name": "Ανάληψη",
       "primary_alias": "kalamata-analipsi",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανατολικός Συνοικισμός": {
       "latitude": 37.024004,
@@ -10081,7 +10081,7 @@
       "search_name": "Ανατολικός Συνοικισμός",
       "primary_alias": "anatolikos-synoikismos",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνθεια": {
       "latitude": 37.112678,
@@ -10090,7 +10090,7 @@
       "search_name": "Άνθεια",
       "primary_alias": "kalamata-antheia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αντικάλαμος": {
       "latitude": 37.068448,
@@ -10099,7 +10099,7 @@
       "search_name": "Αντικάλαμος",
       "primary_alias": "antikalamos",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Άμφεια": {
       "latitude": 37.106129,
@@ -10108,7 +10108,7 @@
       "search_name": "Άνω Άμφεια",
       "primary_alias": "ano-amfeia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αριοχώρι": {
       "latitude": 37.130502,
@@ -10117,7 +10117,7 @@
       "search_name": "Αριοχώρι",
       "primary_alias": "ariohori",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άρις": {
       "latitude": 37.099719,
@@ -10126,7 +10126,7 @@
       "search_name": "Άρις",
       "primary_alias": "aris",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχοντικό Αβίας": {
       "latitude": 36.970517,
@@ -10135,7 +10135,7 @@
       "search_name": "Αρχοντικό Αβίας",
       "primary_alias": "arhontiko-avias",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασπροπουλιά": {
       "latitude": 37.118143,
@@ -10144,7 +10144,7 @@
       "search_name": "Ασπροπουλιά",
       "primary_alias": "aspropoylia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασπρόχωμα": {
       "latitude": 37.047934,
@@ -10153,7 +10153,7 @@
       "search_name": "Ασπρόχωμα",
       "primary_alias": "asprohoma",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρακονέρι": {
       "latitude": 37.019177,
@@ -10162,7 +10162,7 @@
       "search_name": "Δρακονέρι",
       "primary_alias": "drakoneri",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θουρία": {
       "latitude": 37.083006,
@@ -10171,7 +10171,7 @@
       "search_name": "Θουρία",
       "primary_alias": "thoyria",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλάμι": {
       "latitude": 37.062248,
@@ -10180,7 +10180,7 @@
       "search_name": "Καλάμι",
       "primary_alias": "kalami",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρτερόλι": {
       "latitude": 37.075306,
@@ -10189,7 +10189,7 @@
       "search_name": "Καρτερόλι",
       "primary_alias": "karteroli",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατσαρέικα": {
       "latitude": 37.070575,
@@ -10198,7 +10198,7 @@
       "search_name": "Κατσαρέικα",
       "primary_alias": "katsareika",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατσίκοβο": {
       "latitude": 37.065018,
@@ -10207,7 +10207,7 @@
       "search_name": "Κατσίκοβο",
       "primary_alias": "katsikovo",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Άμφεια": {
       "latitude": 37.110638,
@@ -10216,7 +10216,7 @@
       "search_name": "Κάτω Άμφεια",
       "primary_alias": "kato-amfeia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Βέργα": {
       "latitude": 36.997454,
@@ -10225,7 +10225,7 @@
       "search_name": "Κάτω Βέργα",
       "primary_alias": "kato-verga",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΚΕΔΒ": {
       "latitude": 37.048203,
@@ -10234,7 +10234,7 @@
       "search_name": "ΚΕΔΒ",
       "primary_alias": "kedv",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 37.039778,
@@ -10243,7 +10243,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "kalamata",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιτριές": {
       "latitude": 36.92938,
@@ -10252,7 +10252,7 @@
       "search_name": "Κιτριές",
       "primary_alias": "kitries",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορδιά": {
       "latitude": 37.028084,
@@ -10261,7 +10261,7 @@
       "search_name": "Κορδιά",
       "primary_alias": "kordia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαίικα": {
       "latitude": 37.059263,
@@ -10270,7 +10270,7 @@
       "search_name": "Λαίικα",
       "primary_alias": "laiika",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρίνα Καλαμάτας": {
       "latitude": 37.026101,
@@ -10279,7 +10279,7 @@
       "search_name": "Μαρίνα Καλαμάτας",
       "primary_alias": "marina-kalamatas",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυρομάτι": {
       "latitude": 37.064701,
@@ -10288,7 +10288,7 @@
       "search_name": "Μαυρομάτι",
       "primary_alias": "mayromati",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσσήνη": {
       "latitude": 37.050831,
@@ -10297,7 +10297,7 @@
       "search_name": "Μεσσήνη",
       "primary_alias": "messini",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρή Μαντίνεια": {
       "latitude": 36.986359,
@@ -10306,7 +10306,7 @@
       "search_name": "Μικρή Μαντίνεια",
       "primary_alias": "mikri-mantineia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρομάνη": {
       "latitude": 37.077161,
@@ -10315,7 +10315,7 @@
       "search_name": "Μικρομάνη",
       "primary_alias": "mikromani",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοσχοχώρι": {
       "latitude": 37.071334,
@@ -10324,7 +10324,7 @@
       "search_name": "Μοσχοχώρι",
       "primary_alias": "moshohori",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπουρνιάς": {
       "latitude": 37.042495,
@@ -10333,7 +10333,7 @@
       "search_name": "Μπουρνιάς",
       "primary_alias": "mpoyrnias",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νοσοκομείο": {
       "latitude": 37.067942,
@@ -10342,7 +10342,7 @@
       "search_name": "Νοσοκομείο",
       "primary_alias": "kalamata-nosokomeio",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξεροκάμπι": {
       "latitude": 37.061797,
@@ -10351,7 +10351,7 @@
       "search_name": "Ξεροκάμπι",
       "primary_alias": "xerokampi",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Πόλη": {
       "latitude": 37.044344,
@@ -10360,7 +10360,7 @@
       "search_name": "Παλαιά Πόλη",
       "primary_alias": "kalamata-palaia-poli",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανεπιστημιούπολη": {
       "latitude": 37.040125,
@@ -10369,7 +10369,7 @@
       "search_name": "Πανεπιστημιούπολη",
       "primary_alias": "panepistimioypoli",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Βέργας": {
       "latitude": 37.006417,
@@ -10378,7 +10378,7 @@
       "search_name": "Παραλία Βέργας",
       "primary_alias": "paralia-vergas",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πιλαλίστρα": {
       "latitude": 37.071222,
@@ -10387,7 +10387,7 @@
       "search_name": "Πιλαλίστρα",
       "primary_alias": "pilalistra",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πιπερίτσα": {
       "latitude": 37.077486,
@@ -10396,7 +10396,7 @@
       "search_name": "Πιπερίτσα",
       "primary_alias": "piperitsa",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπερχογεία": {
       "latitude": 37.073948,
@@ -10405,7 +10405,7 @@
       "search_name": "Σπερχογεία",
       "primary_alias": "sperhogeia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπιτάκια": {
       "latitude": 37.055282,
@@ -10414,7 +10414,7 @@
       "search_name": "Σπιτάκια",
       "primary_alias": "spitakia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρίοδος": {
       "latitude": 37.092985,
@@ -10423,7 +10423,7 @@
       "search_name": "Τρίοδος",
       "primary_alias": "triodos",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φάρες": {
       "latitude": 37.03169,
@@ -10432,7 +10432,7 @@
       "search_name": "Φάρες",
       "primary_alias": "fares",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαργαλιάνοι": {
       "latitude": 37.065488,
@@ -10441,7 +10441,7 @@
       "search_name": "Γαργαλιάνοι",
       "primary_alias": "gargalianoi",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλιατρά": {
       "latitude": 37.156972,
@@ -10450,7 +10450,7 @@
       "search_name": "Φιλιατρά",
       "primary_alias": "filiatra",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυπαρισσία": {
       "latitude": 37.250212,
@@ -10459,7 +10459,7 @@
       "search_name": "Κυπαρισσία",
       "primary_alias": "kyparissia",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πύλος": {
       "latitude": 36.912423,
@@ -10468,7 +10468,7 @@
       "search_name": "Πύλος",
       "primary_alias": "pylos",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελιγαλάς": {
       "latitude": 37.224128,
@@ -10477,7 +10477,7 @@
       "search_name": "Μελιγαλάς",
       "primary_alias": "meligalas",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μερόπη": {
       "latitude": 37.240675,
@@ -10486,7 +10486,7 @@
       "search_name": "Μερόπη",
       "primary_alias": "meropi",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατσαρός": {
       "latitude": 37.218848,
@@ -10495,7 +10495,7 @@
       "search_name": "Κατσαρός",
       "primary_alias": "katsaros",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα": {
       "latitude": 37.190654,
@@ -10504,7 +10504,7 @@
       "search_name": "Σκάλα",
       "primary_alias": "kalamata-skala",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαλύρα": {
       "latitude": 37.164682,
@@ -10513,7 +10513,7 @@
       "search_name": "Βαλύρα",
       "primary_alias": "valyra",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 37.22207,
@@ -10522,7 +10522,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "kalamata-neohori",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζευγολατειό": {
       "latitude": 37.250638,
@@ -10531,7 +10531,7 @@
       "search_name": "Ζευγολατειό",
       "primary_alias": "zeygolateio",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στούπα": {
       "latitude": 36.845562,
@@ -10540,7 +10540,7 @@
       "search_name": "Στούπα",
       "primary_alias": "stoypa",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρφαρά": {
       "latitude": 37.155901,
@@ -10549,7 +10549,7 @@
       "search_name": "Αρφαρά",
       "primary_alias": "arfara",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιάλοβα": {
       "latitude": 36.950647,
@@ -10558,7 +10558,7 @@
       "search_name": "Γιάλοβα",
       "primary_alias": "gialova",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φοινικούντα": {
       "latitude": 36.8084,
@@ -10567,7 +10567,7 @@
       "search_name": "Φοινικούντα",
       "primary_alias": "foinikoynta",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαραθόπολη": {
       "latitude": 37.059027,
@@ -10576,7 +10576,7 @@
       "search_name": "Μαραθόπολη",
       "primary_alias": "marathopoli",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορώνη": {
       "latitude": 36.79561,
@@ -10585,7 +10585,7 @@
       "search_name": "Κορώνη",
       "primary_alias": "koroni",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαροκοπιό": {
       "latitude": 36.808732,
@@ -10594,7 +10594,7 @@
       "search_name": "Χαροκοπιό",
       "primary_alias": "harokopio",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χώρα": {
       "latitude": 37.051039,
@@ -10603,7 +10603,7 @@
       "search_name": "Χώρα",
       "primary_alias": "hora",
       "city": "Καλαμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρδαμύλη": {
       "latitude": 36.887539,
@@ -10612,8 +10612,8 @@
       "search_name": "Καρδαμύλη",
       "primary_alias": "kardamyli",
       "city": "Καλαμάτα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Καλαμπάκα": {
     "Καλαμπάκα": {
@@ -10623,8 +10623,8 @@
       "search_name": "Καλαμπάκα",
       "primary_alias": "kalampaka",
       "city": "Καλαμπάκα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Καλύβια Θορικού": {
     "Καλύβια Θορικού": {
@@ -10634,7 +10634,7 @@
       "search_name": "Καλύβια Θορικού",
       "primary_alias": "kalybia",
       "city": "Καλύβια Θορικού",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλάζια Ακτή": {
       "latitude": 37.813987,
@@ -10643,7 +10643,7 @@
       "search_name": "Γαλάζια Ακτή",
       "primary_alias": "galazia-akti",
       "city": "Καλύβια Θορικού",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαγονήσι": {
       "latitude": 37.77963,
@@ -10652,8 +10652,8 @@
       "search_name": "Λαγονήσι",
       "primary_alias": "lagonhsi",
       "city": "Καλύβια Θορικού",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κάλυμνος": {
     "Κάλυμνος": {
@@ -10663,7 +10663,7 @@
       "search_name": "Κάλυμνος",
       "primary_alias": "kalymnos",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 36.944885,
@@ -10672,7 +10672,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "kalymnos-agios-nikolaos",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Στέφανος": {
       "latitude": 36.952095,
@@ -10681,7 +10681,7 @@
       "search_name": "Άγιος Στέφανος",
       "primary_alias": "kalymnos-agios-stefanos",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αργινώντα": {
       "latitude": 37.014961,
@@ -10690,7 +10690,7 @@
       "search_name": "Αργινώντα",
       "primary_alias": "arginonta",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άργος": {
       "latitude": 36.957068,
@@ -10699,7 +10699,7 @@
       "search_name": "Άργος",
       "primary_alias": "kalymnos-argos",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαθύς": {
       "latitude": 36.976662,
@@ -10708,7 +10708,7 @@
       "search_name": "Βαθύς",
       "primary_alias": "vathys",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλυχάδια": {
       "latitude": 36.932457,
@@ -10717,7 +10717,7 @@
       "search_name": "Βλυχάδια",
       "primary_alias": "vlyhadia",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βοθύνοι": {
       "latitude": 36.940367,
@@ -10726,7 +10726,7 @@
       "search_name": "Βοθύνοι",
       "primary_alias": "vothynoi",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εμπορειός": {
       "latitude": 37.046717,
@@ -10735,7 +10735,7 @@
       "search_name": "Εμπορειός",
       "primary_alias": "emporeios",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρι": {
       "latitude": 36.98506,
@@ -10744,7 +10744,7 @@
       "search_name": "Καμάρι",
       "primary_alias": "kamari",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυρτιές": {
       "latitude": 36.989239,
@@ -10753,7 +10753,7 @@
       "search_name": "Μυρτιές",
       "primary_alias": "myrties",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάνορμος": {
       "latitude": 36.974725,
@@ -10762,7 +10762,7 @@
       "search_name": "Πάνορμος",
       "primary_alias": "panormos",
       "city": "Κάλυμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χωριό": {
       "latitude": 36.962493,
@@ -10771,8 +10771,8 @@
       "search_name": "Χωριό",
       "primary_alias": "kalymnos",
       "city": "Κάλυμνος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Καρδίτσα": {
     "Καρδίτσα": {
@@ -10782,7 +10782,7 @@
       "search_name": "Καρδίτσα",
       "primary_alias": "karditsa",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 39.353903,
@@ -10791,7 +10791,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "stathmos",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγιοπηγή": {
       "latitude": 39.318718,
@@ -10800,7 +10800,7 @@
       "search_name": "Αγιοπηγή",
       "primary_alias": "agiopigi",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 39.363044,
@@ -10809,7 +10809,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "karditsa-agios-dimitrios",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Θεόδωρος": {
       "latitude": 39.369175,
@@ -10818,7 +10818,7 @@
       "search_name": "Άγιος Θεόδωρος",
       "primary_alias": "agios-theodoros",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Μηνάς": {
       "latitude": 39.353442,
@@ -10827,7 +10827,7 @@
       "search_name": "Άγιος Μηνάς",
       "primary_alias": "karditsa-agios-minas",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 39.371834,
@@ -10836,7 +10836,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "karditsa-agios-nikolaos",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σεραφείμ": {
       "latitude": 39.367784,
@@ -10845,7 +10845,7 @@
       "search_name": "Άγιος Σεραφείμ",
       "primary_alias": "agios-serafeim",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άμπελος": {
       "latitude": 39.288237,
@@ -10854,7 +10854,7 @@
       "search_name": "Άμπελος",
       "primary_alias": "ampelos",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρτεσιανό": {
       "latitude": 39.402292,
@@ -10863,7 +10863,7 @@
       "search_name": "Αρτεσιανό",
       "primary_alias": "artesiano",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παυσίλυπο": {
       "latitude": 39.365008,
@@ -10872,7 +10872,7 @@
       "search_name": "Παυσίλυπο",
       "primary_alias": "paysilypo",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαρδικάκι": {
       "latitude": 39.365119,
@@ -10881,7 +10881,7 @@
       "search_name": "Γαρδικάκι",
       "primary_alias": "gardikaki",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γεφύρια": {
       "latitude": 39.291494,
@@ -10890,7 +10890,7 @@
       "search_name": "Γεφύρια",
       "primary_alias": "gefyria",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γεωργικό": {
       "latitude": 39.332673,
@@ -10899,7 +10899,7 @@
       "search_name": "Γεωργικό",
       "primary_alias": "georgiko",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γοργοβίτες": {
       "latitude": 39.401681,
@@ -10908,7 +10908,7 @@
       "search_name": "Γοργοβίτες",
       "primary_alias": "gorgovites",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες": {
       "latitude": 39.351293,
@@ -10917,7 +10917,7 @@
       "search_name": "Εργατικές Κατοικίες",
       "primary_alias": "karditsa-ergatikes-katoikies",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευαγγελίστρια": {
       "latitude": 39.361599,
@@ -10926,7 +10926,7 @@
       "search_name": "Ευαγγελίστρια",
       "primary_alias": "eyaggelistria",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζαχαριώτες": {
       "latitude": 39.357629,
@@ -10935,7 +10935,7 @@
       "search_name": "Ζαχαριώτες",
       "primary_alias": "zahariotes",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιτέα": {
       "latitude": 39.457341,
@@ -10944,7 +10944,7 @@
       "search_name": "Ιτέα",
       "primary_alias": "karditsa-itea",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλίθηρο": {
       "latitude": 39.28165,
@@ -10953,7 +10953,7 @@
       "search_name": "Καλλίθηρο",
       "primary_alias": "kallithiro",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιφώνι": {
       "latitude": 39.277345,
@@ -10962,7 +10962,7 @@
       "search_name": "Καλλιφώνι",
       "primary_alias": "kallifoni",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμινάδες": {
       "latitude": 39.371683,
@@ -10971,7 +10971,7 @@
       "search_name": "Καμινάδες",
       "primary_alias": "kaminades",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρδιτσομαγούλα": {
       "latitude": 39.390934,
@@ -10980,7 +10980,7 @@
       "search_name": "Καρδιτσομαγούλα",
       "primary_alias": "karditsomagoyla",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρποχώρι": {
       "latitude": 39.335857,
@@ -10989,7 +10989,7 @@
       "search_name": "Καρποχώρι",
       "primary_alias": "karpohori",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 39.362692,
@@ -10998,7 +10998,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "karditsa",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρύα Βρύση": {
       "latitude": 39.323251,
@@ -11007,7 +11007,7 @@
       "search_name": "Κρύα Βρύση",
       "primary_alias": "karditsa-krya-vrysi",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιβάδι": {
       "latitude": 39.377017,
@@ -11016,7 +11016,7 @@
       "search_name": "Λιβάδι",
       "primary_alias": "livadi",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακρυχώρι": {
       "latitude": 39.439678,
@@ -11025,7 +11025,7 @@
       "search_name": "Μακρυχώρι",
       "primary_alias": "makryhori",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάρκος": {
       "latitude": 39.43062,
@@ -11034,7 +11034,7 @@
       "search_name": "Μάρκος",
       "primary_alias": "markos",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ματαράγκα": {
       "latitude": 39.392346,
@@ -11043,7 +11043,7 @@
       "search_name": "Ματαράγκα",
       "primary_alias": "mataragka",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέλισσα": {
       "latitude": 39.33164,
@@ -11052,7 +11052,7 @@
       "search_name": "Μέλισσα",
       "primary_alias": "melissa",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μητρόπολη": {
       "latitude": 39.33959,
@@ -11061,7 +11061,7 @@
       "search_name": "Μητρόπολη",
       "primary_alias": "mitropoli",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μύρινα": {
       "latitude": 39.408365,
@@ -11070,7 +11070,7 @@
       "search_name": "Μύρινα",
       "primary_alias": "myrina",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξινονέρι": {
       "latitude": 39.318099,
@@ -11079,7 +11079,7 @@
       "search_name": "Ξινονέρι",
       "primary_alias": "xinoneri",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιοκκλήσι": {
       "latitude": 39.37602,
@@ -11088,7 +11088,7 @@
       "search_name": "Παλαιοκκλήσι",
       "primary_alias": "palaiokklisi",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαμάς": {
       "latitude": 39.467544,
@@ -11097,7 +11097,7 @@
       "search_name": "Παλαμάς",
       "primary_alias": "palamas",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρόδρομος": {
       "latitude": 39.374846,
@@ -11106,7 +11106,7 @@
       "search_name": "Πρόδρομος",
       "primary_alias": "prodromos",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πτελοπούλα": {
       "latitude": 39.325358,
@@ -11115,7 +11115,7 @@
       "search_name": "Πτελοπούλα",
       "primary_alias": "ptelopoyla",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πύργος Κιερίου": {
       "latitude": 39.368885,
@@ -11124,7 +11124,7 @@
       "search_name": "Πύργος Κιερίου",
       "primary_alias": "pyrgos-kierioy",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ριζοβούνι": {
       "latitude": 39.438551,
@@ -11133,7 +11133,7 @@
       "search_name": "Ριζοβούνι",
       "primary_alias": "rizovoyni",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρούσσο": {
       "latitude": 39.312841,
@@ -11142,7 +11142,7 @@
       "search_name": "Ρούσσο",
       "primary_alias": "roysso",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σοφάδες": {
       "latitude": 39.335855,
@@ -11151,7 +11151,7 @@
       "search_name": "Σοφάδες",
       "primary_alias": "sofades",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 39.356011,
@@ -11160,7 +11160,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "karditsa-agia-paraskeyi",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρός": {
       "latitude": 39.362639,
@@ -11169,7 +11169,7 @@
       "search_name": "Σταυρός",
       "primary_alias": "karditsa-stayros",
       "city": "Καρδίτσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΤΕΙ Καρδίτσας": {
       "latitude": 39.374605,
@@ -11178,8 +11178,8 @@
       "search_name": "ΤΕΙ Καρδίτσας",
       "primary_alias": "tei-karditsas",
       "city": "Καρδίτσα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κάρπαθος": {
     "Κάρπαθος": {
@@ -11189,7 +11189,7 @@
       "search_name": "Κάρπαθος",
       "primary_alias": "karpathos",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απέρι": {
       "latitude": 35.54997,
@@ -11198,7 +11198,7 @@
       "search_name": "Απέρι",
       "primary_alias": "aperi",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρκάσα": {
       "latitude": 35.477726,
@@ -11207,7 +11207,7 @@
       "search_name": "Αρκάσα",
       "primary_alias": "arkasa",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βωλάδα": {
       "latitude": 35.551231,
@@ -11216,7 +11216,7 @@
       "search_name": "Βωλάδα",
       "primary_alias": "volada",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διαφάνι": {
       "latitude": 35.755718,
@@ -11225,7 +11225,7 @@
       "search_name": "Διαφάνι",
       "primary_alias": "diafani",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λακκί": {
       "latitude": 35.474659,
@@ -11234,7 +11234,7 @@
       "search_name": "Λακκί",
       "primary_alias": "lakki",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκός": {
       "latitude": 35.595435,
@@ -11243,7 +11243,7 @@
       "search_name": "Λευκός",
       "primary_alias": "leykos",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μενετές": {
       "latitude": 35.490719,
@@ -11252,7 +11252,7 @@
       "search_name": "Μενετές",
       "primary_alias": "menetes",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όθος": {
       "latitude": 35.542717,
@@ -11261,7 +11261,7 @@
       "search_name": "Όθος",
       "primary_alias": "othos",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όλυμπος": {
       "latitude": 35.740555,
@@ -11270,7 +11270,7 @@
       "search_name": "Όλυμπος",
       "primary_alias": "olympos",
       "city": "Κάρπαθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πύλες": {
       "latitude": 35.531894,
@@ -11279,8 +11279,8 @@
       "search_name": "Πύλες",
       "primary_alias": "pyles",
       "city": "Κάρπαθος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Καρπενήσι": {
     "Καρπενήσι": {
@@ -11290,8 +11290,8 @@
       "search_name": "Καρπενήσι",
       "primary_alias": "karpenisi",
       "city": "Καρπενήσι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κάσος": {
     "Φρυ": {
@@ -11301,7 +11301,7 @@
       "search_name": "Φρυ",
       "primary_alias": "kasos-fry",
       "city": "Κάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγία": {
       "latitude": 35.412599,
@@ -11310,7 +11310,7 @@
       "search_name": "Παναγία",
       "primary_alias": "kasos-panagia",
       "city": "Κάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 35.408953,
@@ -11319,7 +11319,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "kasos-agia-marina",
       "city": "Κάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρβανιτοχώρι": {
       "latitude": 35.402889,
@@ -11328,7 +11328,7 @@
       "search_name": "Αρβανιτοχώρι",
       "primary_alias": "kasos-arvanitohori",
       "city": "Κάσος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πόλι": {
       "latitude": 35.404546,
@@ -11337,8 +11337,8 @@
       "search_name": "Πόλι",
       "primary_alias": "kasos-poli",
       "city": "Κάσος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Καστοριά": {
     "Καστοριά": {
@@ -11348,7 +11348,7 @@
       "search_name": "Καστοριά",
       "primary_alias": "kastoria",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκηποι": {
       "latitude": 40.465688,
@@ -11357,7 +11357,7 @@
       "search_name": "Αμπελόκηποι",
       "primary_alias": "kastoria-ampelokipoi",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απόσκεπος": {
       "latitude": 40.558942,
@@ -11366,7 +11366,7 @@
       "search_name": "Απόσκεπος",
       "primary_alias": "aposkepos",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άργος Ορεστικό": {
       "latitude": 40.454269,
@@ -11375,7 +11375,7 @@
       "search_name": "Άργος Ορεστικό",
       "primary_alias": "argos-orestiko",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δισπηλιό": {
       "latitude": 40.481142,
@@ -11384,7 +11384,7 @@
       "search_name": "Δισπηλιό",
       "primary_alias": "dispilio",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Χλόης": {
       "latitude": 40.542008,
@@ -11393,7 +11393,7 @@
       "search_name": "Εργατικές Κατοικίες Χλόης",
       "primary_alias": "ergatikes-katoikies-hlois",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 40.524701,
@@ -11402,7 +11402,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "kastoria-kallithea",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεφαλάρι": {
       "latitude": 40.570151,
@@ -11411,7 +11411,7 @@
       "search_name": "Κεφαλάρι",
       "primary_alias": "kastoria-kefalari",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολοκυνθού": {
       "latitude": 40.505362,
@@ -11420,7 +11420,7 @@
       "search_name": "Κολοκυνθού",
       "primary_alias": "kastoria-kolokynthoy",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορομηλιά": {
       "latitude": 40.53567,
@@ -11429,7 +11429,7 @@
       "search_name": "Κορομηλιά",
       "primary_alias": "koromilia",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεύκη": {
       "latitude": 40.521206,
@@ -11438,7 +11438,7 @@
       "search_name": "Λεύκη",
       "primary_alias": "leyki",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μανιάκοι": {
       "latitude": 40.501587,
@@ -11447,7 +11447,7 @@
       "search_name": "Μανιάκοι",
       "primary_alias": "maniakoi",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυροχώρι": {
       "latitude": 40.51312,
@@ -11456,7 +11456,7 @@
       "search_name": "Μαυροχώρι",
       "primary_alias": "mayrohori",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσοποταμία": {
       "latitude": 40.50222,
@@ -11465,7 +11465,7 @@
       "search_name": "Μεσοποταμία",
       "primary_alias": "mesopotamia",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μηλίτσα": {
       "latitude": 40.453349,
@@ -11474,7 +11474,7 @@
       "search_name": "Μηλίτσα",
       "primary_alias": "militsa",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Λεύκη": {
       "latitude": 40.505638,
@@ -11483,7 +11483,7 @@
       "search_name": "Νέα Λεύκη",
       "primary_alias": "nea-leyki",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ντολτσό": {
       "latitude": 40.516125,
@@ -11492,7 +11492,7 @@
       "search_name": "Ντολτσό",
       "primary_alias": "ntoltso",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέτρα": {
       "latitude": 40.496012,
@@ -11501,7 +11501,7 @@
       "search_name": "Πέτρα",
       "primary_alias": "petra",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολυκάρπη": {
       "latitude": 40.521697,
@@ -11510,7 +11510,7 @@
       "search_name": "Πολυκάρπη",
       "primary_alias": "kastoria-polykarpi",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πορεία": {
       "latitude": 40.488276,
@@ -11519,7 +11519,7 @@
       "search_name": "Πορεία",
       "primary_alias": "poreia",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Δρακοπούλου": {
       "latitude": 40.502863,
@@ -11528,7 +11528,7 @@
       "search_name": "Στρατόπεδο Δρακοπούλου",
       "primary_alias": "stratopedo-drakopoyloy",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τοιχιό": {
       "latitude": 40.583145,
@@ -11537,7 +11537,7 @@
       "search_name": "Τοιχιό",
       "primary_alias": "toihio",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσάκονη": {
       "latitude": 40.477861,
@@ -11546,7 +11546,7 @@
       "search_name": "Τσάκονη",
       "primary_alias": "tsakoni",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χιλιόδενδρο": {
       "latitude": 40.487286,
@@ -11555,7 +11555,7 @@
       "search_name": "Χιλιόδενδρο",
       "primary_alias": "hiliodendro",
       "city": "Καστοριά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χλόη": {
       "latitude": 40.536599,
@@ -11564,8 +11564,8 @@
       "search_name": "Χλόη",
       "primary_alias": "hloi",
       "city": "Καστοριά",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κατερίνη": {
     "Κατερίνη": {
@@ -11575,7 +11575,7 @@
       "search_name": "Κατερίνη",
       "primary_alias": "katerini",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Αικατερίνη": {
       "latitude": 40.270083,
@@ -11584,7 +11584,7 @@
       "search_name": "Αγία Αικατερίνη",
       "primary_alias": "katerini-agia-aikaterini",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Άννα": {
       "latitude": 40.282623,
@@ -11593,7 +11593,7 @@
       "search_name": "Αγία Άννα",
       "primary_alias": "katerini-agia-anna",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 40.265051,
@@ -11602,7 +11602,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "katerini-agia-paraskeyi",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα": {
       "latitude": 40.26928,
@@ -11611,7 +11611,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "katerini-agia-triada",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Πάντες": {
       "latitude": 40.263729,
@@ -11620,7 +11620,7 @@
       "search_name": "Άγιοι Πάντες",
       "primary_alias": "agioi-pantes",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σπυρίδων": {
       "latitude": 40.206223,
@@ -11629,7 +11629,7 @@
       "search_name": "Άγιος Σπυρίδων",
       "primary_alias": "katerini-agios-spyridon",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Φώτιος": {
       "latitude": 40.274229,
@@ -11638,7 +11638,7 @@
       "search_name": "Άγιος Φώτιος",
       "primary_alias": "agios-fotios",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάληψη": {
       "latitude": 40.27129,
@@ -11647,7 +11647,7 @@
       "search_name": "Ανάληψη",
       "primary_alias": "katerini-analipsi",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανδρομάχη": {
       "latitude": 40.272625,
@@ -11656,7 +11656,7 @@
       "search_name": "Ανδρομάχη",
       "primary_alias": "andromahi",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Άγιος Ιωάννης": {
       "latitude": 40.319597,
@@ -11665,7 +11665,7 @@
       "search_name": "Άνω Άγιος Ιωάννης",
       "primary_alias": "ano-agios-ioannis",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρωνάς": {
       "latitude": 40.290083,
@@ -11674,7 +11674,7 @@
       "search_name": "Αρωνάς",
       "primary_alias": "aronas",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βατάν": {
       "latitude": 40.262982,
@@ -11683,7 +11683,7 @@
       "search_name": "Βατάν",
       "primary_alias": "vatan",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βροντού": {
       "latitude": 40.193573,
@@ -11692,7 +11692,7 @@
       "search_name": "Βροντού",
       "primary_alias": "vrontoy",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γανόχωρα": {
       "latitude": 40.3093,
@@ -11701,7 +11701,7 @@
       "search_name": "Γανόχωρα",
       "primary_alias": "ganohora",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δίον": {
       "latitude": 40.171776,
@@ -11710,7 +11710,7 @@
       "search_name": "Δίον",
       "primary_alias": "dion",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Πλαστήρα": {
       "latitude": 40.283954,
@@ -11719,7 +11719,7 @@
       "search_name": "Εργατικές Κατοικίες Πλαστήρα",
       "primary_alias": "ergatikes-katoikies-plastira",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Μυλαύλακου": {
       "latitude": 40.265101,
@@ -11728,7 +11728,7 @@
       "search_name": "Εργατικές Κατοικίες Μυλαύλακου",
       "primary_alias": "ergatikes-katoikies-mylaylakoy",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευαγγελικά": {
       "latitude": 40.276102,
@@ -11737,7 +11737,7 @@
       "search_name": "Ευαγγελικά",
       "primary_alias": "eyaggelika",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 40.273407,
@@ -11746,7 +11746,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "katerini-kallithea",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλύβια Βορικού": {
       "latitude": 40.184735,
@@ -11755,7 +11755,7 @@
       "search_name": "Καλύβια Βορικού",
       "primary_alias": "kalyvia-vorikoy",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρίτσα": {
       "latitude": 40.18761,
@@ -11764,7 +11764,7 @@
       "search_name": "Καρίτσα",
       "primary_alias": "karitsa",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καταφυγιώτικα": {
       "latitude": 40.273194,
@@ -11773,7 +11773,7 @@
       "search_name": "Καταφυγιώτικα",
       "primary_alias": "katafygiotika",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Άγιος Ιωάννης": {
       "latitude": 40.325181,
@@ -11782,7 +11782,7 @@
       "search_name": "Κάτω Άγιος Ιωάννης",
       "primary_alias": "kato-agios-ioannis",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Μηλιά": {
       "latitude": 40.25466,
@@ -11791,7 +11791,7 @@
       "search_name": "Κάτω Μηλιά",
       "primary_alias": "kato-milia",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.271682,
@@ -11800,7 +11800,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "katerini",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κίτρος": {
       "latitude": 40.371913,
@@ -11809,7 +11809,7 @@
       "search_name": "Κίτρος",
       "primary_alias": "kitros",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κονταριώτισσα": {
       "latitude": 40.227826,
@@ -11818,7 +11818,7 @@
       "search_name": "Κονταριώτισσα",
       "primary_alias": "kontariotissa",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορινός": {
       "latitude": 40.316512,
@@ -11827,7 +11827,7 @@
       "search_name": "Κορινός",
       "primary_alias": "korinos",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεπτοκαρυά": {
       "latitude": 40.059552,
@@ -11836,7 +11836,7 @@
       "search_name": "Λεπτοκαρυά",
       "primary_alias": "leptokarya",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιτόχωρο": {
       "latitude": 40.102426,
@@ -11845,7 +11845,7 @@
       "search_name": "Λιτόχωρο",
       "primary_alias": "litohoro",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λόφος": {
       "latitude": 40.244801,
@@ -11854,7 +11854,7 @@
       "search_name": "Λόφος",
       "primary_alias": "katerini-lofos",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοσχοχώρι": {
       "latitude": 40.265956,
@@ -11863,7 +11863,7 @@
       "search_name": "Μοσχοχώρι",
       "primary_alias": "katerini-moshohori",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυλαύλακος": {
       "latitude": 40.268169,
@@ -11872,7 +11872,7 @@
       "search_name": "Μυλαύλακος",
       "primary_alias": "mylaylakos",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Έφεσος": {
       "latitude": 40.229411,
@@ -11881,7 +11881,7 @@
       "search_name": "Νέα Έφεσος",
       "primary_alias": "nea-efesos",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ζωή": {
       "latitude": 40.278575,
@@ -11890,7 +11890,7 @@
       "search_name": "Νέα Ζωή",
       "primary_alias": "nea-zoi",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Τραπεζούντα": {
       "latitude": 40.333973,
@@ -11899,7 +11899,7 @@
       "search_name": "Νέα Τραπεζούντα",
       "primary_alias": "nea-trapezoynta",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Χράνη": {
       "latitude": 40.308354,
@@ -11908,7 +11908,7 @@
       "search_name": "Νέα Χράνη",
       "primary_alias": "nea-hrani",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Κεραμίδι": {
       "latitude": 40.287227,
@@ -11917,7 +11917,7 @@
       "search_name": "Νέο Κεραμίδι",
       "primary_alias": "neo-keramidi",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοκαισάρεια": {
       "latitude": 40.266306,
@@ -11926,7 +11926,7 @@
       "search_name": "Νεοκαισάρεια",
       "primary_alias": "katerini-neokaisareia",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ολυμπιακή Ακτή": {
       "latitude": 40.239483,
@@ -11935,7 +11935,7 @@
       "search_name": "Ολυμπιακή Ακτή",
       "primary_alias": "olympiaki-akti",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιό Κεραμίδι": {
       "latitude": 40.314211,
@@ -11944,7 +11944,7 @@
       "search_name": "Παλαιό Κεραμίδι",
       "primary_alias": "palaio-keramidi",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παράδεισος": {
       "latitude": 40.262332,
@@ -11953,7 +11953,7 @@
       "search_name": "Παράδεισος",
       "primary_alias": "katerini-paradeisos",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Κατερίνης": {
       "latitude": 40.267726,
@@ -11962,7 +11962,7 @@
       "search_name": "Παραλία Κατερίνης",
       "primary_alias": "paralia-katerinis",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Κορινού": {
       "latitude": 40.303873,
@@ -11971,7 +11971,7 @@
       "search_name": "Παραλία Κορινού",
       "primary_alias": "paralia-korinoy",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περίσταση": {
       "latitude": 40.274091,
@@ -11980,7 +11980,7 @@
       "search_name": "Περίσταση",
       "primary_alias": "peristasi",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ράχη": {
       "latitude": 40.244128,
@@ -11989,7 +11989,7 @@
       "search_name": "Ράχη",
       "primary_alias": "katerini-rahi",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σβορώνος": {
       "latitude": 40.269095,
@@ -11998,7 +11998,7 @@
       "search_name": "Σβορώνος",
       "primary_alias": "svoronos",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σεβαστή": {
       "latitude": 40.359022,
@@ -12007,7 +12007,7 @@
       "search_name": "Σεβαστή",
       "primary_alias": "sevasti",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 40.269611,
@@ -12016,7 +12016,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "katerini-stathmos",
       "city": "Κατερίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Υδραγωγείο": {
       "latitude": 40.277756,
@@ -12025,8 +12025,8 @@
       "search_name": "Υδραγωγείο",
       "primary_alias": "ydragogeio",
       "city": "Κατερίνη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κάτω Αχαΐα": {
     "Κάτω Αχαΐα": {
@@ -12036,7 +12036,7 @@
       "search_name": "Κάτω Αχαΐα",
       "primary_alias": "kato-ahaia",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγιοβλασίτικα": {
       "latitude": 38.120811,
@@ -12045,7 +12045,7 @@
       "search_name": "Αγιοβλασίτικα",
       "primary_alias": "agiovlasitika",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλισσός": {
       "latitude": 38.138366,
@@ -12054,7 +12054,7 @@
       "search_name": "Αλισσός",
       "primary_alias": "alissos",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλυκές": {
       "latitude": 38.155358,
@@ -12063,7 +12063,7 @@
       "search_name": "Αλυκές",
       "primary_alias": "kato-ahaia-alykes",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανεμόμυλος": {
       "latitude": 38.155555,
@@ -12072,7 +12072,7 @@
       "search_name": "Ανεμόμυλος",
       "primary_alias": "anemomylos",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Αχαΐα": {
       "latitude": 38.105305,
@@ -12081,7 +12081,7 @@
       "search_name": "Άνω Αχαΐα",
       "primary_alias": "ano-ahaia",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιαλός": {
       "latitude": 38.147852,
@@ -12090,7 +12090,7 @@
       "search_name": "Γιαλός",
       "primary_alias": "gialos",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θεριανό": {
       "latitude": 38.137958,
@@ -12099,7 +12099,7 @@
       "search_name": "Θεριανό",
       "primary_alias": "theriano",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιονική Ακτή": {
       "latitude": 38.180353,
@@ -12108,7 +12108,7 @@
       "search_name": "Ιονική Ακτή",
       "primary_alias": "ioniki-akti",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμάκι": {
       "latitude": 38.156917,
@@ -12117,7 +12117,7 @@
       "search_name": "Καλαμάκι",
       "primary_alias": "kato-ahaia-kalamaki",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμίνια": {
       "latitude": 38.152418,
@@ -12126,7 +12126,7 @@
       "search_name": "Καμίνια",
       "primary_alias": "kato-ahaia-kaminia",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καπέλη": {
       "latitude": 38.127187,
@@ -12135,7 +12135,7 @@
       "search_name": "Καπέλη",
       "primary_alias": "kapeli",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Αλισσός": {
       "latitude": 38.140467,
@@ -12144,7 +12144,7 @@
       "search_name": "Κάτω Αλισσός",
       "primary_alias": "kato-alissos",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λακκόπετρα": {
       "latitude": 38.169568,
@@ -12153,7 +12153,7 @@
       "search_name": "Λακκόπετρα",
       "primary_alias": "lakkopetra",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νιφοραίικα": {
       "latitude": 38.144196,
@@ -12162,7 +12162,7 @@
       "search_name": "Νιφοραίικα",
       "primary_alias": "niforaiika",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Αλισσού": {
       "latitude": 38.144115,
@@ -12171,7 +12171,7 @@
       "search_name": "Παραλία Αλισσού",
       "primary_alias": "paralia-alissoy",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Καλαμακίου": {
       "latitude": 38.173589,
@@ -12180,7 +12180,7 @@
       "search_name": "Παραλία Καλαμακίου",
       "primary_alias": "paralia-kalamakioy",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία κάτω Αχαΐας": {
       "latitude": 38.151888,
@@ -12189,7 +12189,7 @@
       "search_name": "Παραλία κάτω Αχαΐας",
       "primary_alias": "paralia-kato-ahaias",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσουκαλαίικα": {
       "latitude": 38.157495,
@@ -12198,7 +12198,7 @@
       "search_name": "Τσουκαλαίικα",
       "primary_alias": "tsoykalaiika",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φυλακές": {
       "latitude": 38.115822,
@@ -12207,8 +12207,8 @@
       "search_name": "Φυλακές",
       "primary_alias": "fylakes",
       "city": "Κάτω Αχαΐα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κερατέα": {
     "Κερατέα": {
@@ -12218,7 +12218,7 @@
       "search_name": "Κερατέα",
       "primary_alias": "keratea",
       "city": "Κερατέα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δασκαλειό": {
       "latitude": 37.824589,
@@ -12227,8 +12227,8 @@
       "search_name": "Δασκαλειό",
       "primary_alias": "daskaleio",
       "city": "Κερατέα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κέρκυρα": {
     "Κέρκυρα": {
@@ -12238,7 +12238,7 @@
       "search_name": "Κέρκυρα",
       "primary_alias": "kerkira",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Δέκα": {
       "latitude": 39.55389,
@@ -12247,7 +12247,7 @@
       "search_name": "Άγιοι Δέκα",
       "primary_alias": "agioi-deka",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 39.427465,
@@ -12256,7 +12256,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "kerkyra-agios-georgios",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 39.615587,
@@ -12265,7 +12265,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "kerkyra-agios-ioannis",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλεπού": {
       "latitude": 39.615012,
@@ -12274,7 +12274,7 @@
       "search_name": "Αλεπού",
       "primary_alias": "alepoy",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάληψη": {
       "latitude": 39.601867,
@@ -12283,7 +12283,7 @@
       "search_name": "Ανάληψη",
       "primary_alias": "kerkyra-analipsi",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανεμόμυλος": {
       "latitude": 39.610279,
@@ -12292,7 +12292,7 @@
       "search_name": "Ανεμόμυλος",
       "primary_alias": "kerkyra-anemomylos",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αφρά": {
       "latitude": 39.621879,
@@ -12301,7 +12301,7 @@
       "search_name": "Αφρά",
       "primary_alias": "afra",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάτος": {
       "latitude": 39.608966,
@@ -12310,7 +12310,7 @@
       "search_name": "Βάτος",
       "primary_alias": "vatos",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βιρός": {
       "latitude": 39.586442,
@@ -12319,7 +12319,7 @@
       "search_name": "Βιρός",
       "primary_alias": "viros",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαρίτσα": {
       "latitude": 39.613178,
@@ -12328,7 +12328,7 @@
       "search_name": "Γαρίτσα",
       "primary_alias": "garitsa",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαστούρι": {
       "latitude": 39.561285,
@@ -12337,7 +12337,7 @@
       "search_name": "Γαστούρι",
       "primary_alias": "gastoyri",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γέφυρα": {
       "latitude": 39.673565,
@@ -12346,7 +12346,7 @@
       "search_name": "Γέφυρα",
       "primary_alias": "gefyra",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιαννάδες": {
       "latitude": 39.632071,
@@ -12355,7 +12355,7 @@
       "search_name": "Γιαννάδες",
       "primary_alias": "giannades",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γουβιά": {
       "latitude": 39.653548,
@@ -12364,7 +12364,7 @@
       "search_name": "Γουβιά",
       "primary_alias": "goyvia",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εβροπούλοι": {
       "latitude": 39.626251,
@@ -12373,7 +12373,7 @@
       "search_name": "Εβροπούλοι",
       "primary_alias": "evropoyloi",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έρμονες": {
       "latitude": 39.610751,
@@ -12382,7 +12382,7 @@
       "search_name": "Έρμονες",
       "primary_alias": "ermones",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάβος": {
       "latitude": 39.388608,
@@ -12391,7 +12391,7 @@
       "search_name": "Κάβος",
       "primary_alias": "kerkyra-kavos",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κανάλια": {
       "latitude": 39.605655,
@@ -12400,7 +12400,7 @@
       "search_name": "Κανάλια",
       "primary_alias": "kanalia",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστελλάνοι": {
       "latitude": 39.567909,
@@ -12409,7 +12409,7 @@
       "search_name": "Καστελλάνοι",
       "primary_alias": "kastellanoi",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατακαλού": {
       "latitude": 39.603236,
@@ -12418,7 +12418,7 @@
       "search_name": "Κατακαλού",
       "primary_alias": "katakaloy",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 39.620632,
@@ -12427,7 +12427,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "kerkira",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεφαλομάντουκο": {
       "latitude": 39.627606,
@@ -12436,7 +12436,7 @@
       "search_name": "Κεφαλομάντουκο",
       "primary_alias": "kefalomantoyko",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντόκαλι": {
       "latitude": 39.643668,
@@ -12445,7 +12445,7 @@
       "search_name": "Κοντόκαλι",
       "primary_alias": "kontokali",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυνοπιάστες": {
       "latitude": 39.567456,
@@ -12454,7 +12454,7 @@
       "search_name": "Κυνοπιάστες",
       "primary_alias": "kynopiastes",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιαπάδες": {
       "latitude": 39.669575,
@@ -12463,7 +12463,7 @@
       "search_name": "Λιαπάδες",
       "primary_alias": "liapades",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λόφος του Κογεβίνα": {
       "latitude": 39.620252,
@@ -12472,7 +12472,7 @@
       "search_name": "Λόφος του Κογεβίνα",
       "primary_alias": "lofos-toy-kogevina",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαντούκι": {
       "latitude": 39.624516,
@@ -12481,7 +12481,7 @@
       "search_name": "Μαντούκι",
       "primary_alias": "mantoyki",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσογγή": {
       "latitude": 39.47814,
@@ -12490,7 +12490,7 @@
       "search_name": "Μεσογγή",
       "primary_alias": "mesoggi",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μώλος": {
       "latitude": 39.441217,
@@ -12499,7 +12499,7 @@
       "search_name": "Μώλος",
       "primary_alias": "kerkyra-molos",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μωραΐτικα": {
       "latitude": 39.485906,
@@ -12508,7 +12508,7 @@
       "search_name": "Μωραΐτικα",
       "primary_alias": "moraitika",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Πόλη": {
       "latitude": 39.619019,
@@ -12517,7 +12517,7 @@
       "search_name": "Νέα Πόλη",
       "primary_alias": "nea-poli",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παγκρατέικα": {
       "latitude": 39.613968,
@@ -12526,7 +12526,7 @@
       "search_name": "Παγκρατέικα",
       "primary_alias": "pagkrateika",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Πόλη": {
       "latitude": 39.624602,
@@ -12535,7 +12535,7 @@
       "search_name": "Παλαιά Πόλη",
       "primary_alias": "kerkyra-palaia-poli",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέραμα": {
       "latitude": 39.575656,
@@ -12544,7 +12544,7 @@
       "search_name": "Πέραμα",
       "primary_alias": "kerkyra-perama",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποταμός": {
       "latitude": 39.624102,
@@ -12553,7 +12553,7 @@
       "search_name": "Ποταμός",
       "primary_alias": "potamos",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρόκκος": {
       "latitude": 39.616012,
@@ -12562,7 +12562,7 @@
       "search_name": "Ρόκκος",
       "primary_alias": "rokkos",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιδάρι": {
       "latitude": 39.789915,
@@ -12571,7 +12571,7 @@
       "search_name": "Σιδάρι",
       "primary_alias": "sidari",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σολάρι": {
       "latitude": 39.623607,
@@ -12580,7 +12580,7 @@
       "search_name": "Σολάρι",
       "primary_alias": "solari",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατιά": {
       "latitude": 39.605656,
@@ -12589,7 +12589,7 @@
       "search_name": "Στρατιά",
       "primary_alias": "stratia",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιγαρέτο": {
       "latitude": 39.597719,
@@ -12598,7 +12598,7 @@
       "search_name": "Φιγαρέτο",
       "primary_alias": "figareto",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκίνι": {
       "latitude": 39.612264,
@@ -12607,7 +12607,7 @@
       "search_name": "Κοκκίνι",
       "primary_alias": "kokkini",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλυφάδα": {
       "latitude": 39.593281,
@@ -12616,7 +12616,7 @@
       "search_name": "Γλυφάδα",
       "primary_alias": "kerkyra-glyfada",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκινόγεια": {
       "latitude": 39.604913,
@@ -12625,7 +12625,7 @@
       "search_name": "Κοκκινόγεια",
       "primary_alias": "kokkinogeia",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντογυαλός": {
       "latitude": 39.576869,
@@ -12634,7 +12634,7 @@
       "search_name": "Κοντογυαλός",
       "primary_alias": "kontogyalos",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιναράδες": {
       "latitude": 39.566601,
@@ -12643,7 +12643,7 @@
       "search_name": "Σιναράδες",
       "primary_alias": "sinarades",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέλεκας": {
       "latitude": 39.592073,
@@ -12652,7 +12652,7 @@
       "search_name": "Πέλεκας",
       "primary_alias": "pelekas",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αβράμης": {
       "latitude": 39.584942,
@@ -12661,7 +12661,7 @@
       "search_name": "Αβράμης",
       "primary_alias": "avramis",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πικουλάτικα": {
       "latitude": 39.577004,
@@ -12670,7 +12670,7 @@
       "search_name": "Πικουλάτικα",
       "primary_alias": "pikoylatika",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπαστούνι": {
       "latitude": 39.593873,
@@ -12679,7 +12679,7 @@
       "search_name": "Μπαστούνι",
       "primary_alias": "mpastoyni",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστανιά": {
       "latitude": 39.596048,
@@ -12688,7 +12688,7 @@
       "search_name": "Καστανιά",
       "primary_alias": "kastania",
       "city": "Κέρκυρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φέλεκας": {
       "latitude": 39.677288,
@@ -12697,8 +12697,8 @@
       "search_name": "Φέλεκας",
       "primary_alias": "kerkyra-felekas",
       "city": "Κέρκυρα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κεφαλονιά": {
     "Κεφαλονιά": {
@@ -12708,7 +12708,7 @@
       "search_name": "Κεφαλονιά",
       "primary_alias": "kefalonia",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αργοστόλι": {
       "latitude": 38.171327,
@@ -12717,7 +12717,7 @@
       "search_name": "Αργοστόλι",
       "primary_alias": "argostoli",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Ευφημία": {
       "latitude": 38.302564,
@@ -12726,7 +12726,7 @@
       "search_name": "Αγία Ευφημία",
       "primary_alias": "agia-eyfimia",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαλεριάνος": {
       "latitude": 38.083069,
@@ -12735,7 +12735,7 @@
       "search_name": "Βαλεριάνος",
       "primary_alias": "valerianos",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλαχάτα": {
       "latitude": 38.121655,
@@ -12744,7 +12744,7 @@
       "search_name": "Βλαχάτα",
       "primary_alias": "vlahata",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διλινάτα": {
       "latitude": 38.225212,
@@ -12753,7 +12753,7 @@
       "search_name": "Διλινάτα",
       "primary_alias": "dilinata",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καραβάδος": {
       "latitude": 38.128306,
@@ -12762,7 +12762,7 @@
       "search_name": "Καραβάδος",
       "primary_alias": "karavados",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καραβόμυλος": {
       "latitude": 38.253915,
@@ -12771,7 +12771,7 @@
       "search_name": "Καραβόμυλος",
       "primary_alias": "karavomylos",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρδακάτα": {
       "latitude": 38.276952,
@@ -12780,7 +12780,7 @@
       "search_name": "Καρδακάτα",
       "primary_alias": "kardakata",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεραμειές": {
       "latitude": 38.119227,
@@ -12789,7 +12789,7 @@
       "search_name": "Κεραμειές",
       "primary_alias": "kerameies",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λακήθρα": {
       "latitude": 38.125694,
@@ -12798,7 +12798,7 @@
       "search_name": "Λακήθρα",
       "primary_alias": "lakithra",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ληξούρι": {
       "latitude": 38.201206,
@@ -12807,7 +12807,7 @@
       "search_name": "Ληξούρι",
       "primary_alias": "lixoyri",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακριώτικα": {
       "latitude": 38.311219,
@@ -12816,7 +12816,7 @@
       "search_name": "Μακριώτικα",
       "primary_alias": "makriotika",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πόρος": {
       "latitude": 38.154641,
@@ -12825,7 +12825,7 @@
       "search_name": "Πόρος",
       "primary_alias": "kefalonia-poros",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σάμη": {
       "latitude": 38.249868,
@@ -12834,7 +12834,7 @@
       "search_name": "Σάμη",
       "primary_alias": "sami",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα": {
       "latitude": 38.073702,
@@ -12843,7 +12843,7 @@
       "search_name": "Σκάλα",
       "primary_alias": "kefalonia-skala",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φισκάρδο": {
       "latitude": 38.459917,
@@ -12852,7 +12852,7 @@
       "search_name": "Φισκάρδο",
       "primary_alias": "fiskardo",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαλσαμάτα": {
       "latitude": 38.175441,
@@ -12861,7 +12861,7 @@
       "search_name": "Βαλσαμάτα",
       "primary_alias": "valsamata",
       "city": "Κεφαλονιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπαρτιά": {
       "latitude": 38.110364,
@@ -12870,8 +12870,8 @@
       "search_name": "Σπαρτιά",
       "primary_alias": "kefalonia-spartia",
       "city": "Κεφαλονιά",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κιλκίς": {
     "Κιλκίς": {
@@ -12881,7 +12881,7 @@
       "search_name": "Κιλκίς",
       "primary_alias": "kilkis",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αργυρούπολη": {
       "latitude": 40.993478,
@@ -12890,7 +12890,7 @@
       "search_name": "Αργυρούπολη",
       "primary_alias": "kilkis-argyroypoli",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαπτιστής": {
       "latitude": 40.992115,
@@ -12899,7 +12899,7 @@
       "search_name": "Βαπτιστής",
       "primary_alias": "vaptistis",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙΠΕ Κιλκίς": {
       "latitude": 41.052766,
@@ -12908,7 +12908,7 @@
       "search_name": "ΒΙΠΕ Κιλκίς",
       "primary_alias": "vipe-kilkis",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Αγίων Αναργύρων": {
       "latitude": 41.007343,
@@ -12917,7 +12917,7 @@
       "search_name": "Εργατικές Κατοικίες Αγίων Αναργύρων",
       "primary_alias": "ergatikes-katoikies-agion-anargyron",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευκαρπία": {
       "latitude": 41.073866,
@@ -12926,7 +12926,7 @@
       "search_name": "Ευκαρπία",
       "primary_alias": "kilkis-eykarpia",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζαχαράτο": {
       "latitude": 41.025856,
@@ -12935,7 +12935,7 @@
       "search_name": "Ζαχαράτο",
       "primary_alias": "zaharato",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστανιές": {
       "latitude": 41.025878,
@@ -12944,7 +12944,7 @@
       "search_name": "Καστανιές",
       "primary_alias": "kastanies",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Ποταμιά": {
       "latitude": 40.95653,
@@ -12953,7 +12953,7 @@
       "search_name": "Κάτω Ποταμιά",
       "primary_alias": "kato-potamia",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.994922,
@@ -12962,7 +12962,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "kilkis",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορομηλιά": {
       "latitude": 41.076064,
@@ -12971,7 +12971,7 @@
       "search_name": "Κορομηλιά",
       "primary_alias": "kilkis-koromilia",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρηστώνη": {
       "latitude": 40.958697,
@@ -12980,7 +12980,7 @@
       "search_name": "Κρηστώνη",
       "primary_alias": "kristoni",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεβεντοχώρι": {
       "latitude": 40.951719,
@@ -12989,7 +12989,7 @@
       "search_name": "Λεβεντοχώρι",
       "primary_alias": "leventohori",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλη Βρύση": {
       "latitude": 41.007841,
@@ -12998,7 +12998,7 @@
       "search_name": "Μεγάλη Βρύση",
       "primary_alias": "megali-vrysi",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεταλλικό": {
       "latitude": 41.01657,
@@ -13007,7 +13007,7 @@
       "search_name": "Μεταλλικό",
       "primary_alias": "metalliko",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηρόβρυση": {
       "latitude": 41.036297,
@@ -13016,7 +13016,7 @@
       "search_name": "Ξηρόβρυση",
       "primary_alias": "xirovrysi",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυργωτός": {
       "latitude": 40.983812,
@@ -13025,7 +13025,7 @@
       "search_name": "Πυργωτός",
       "primary_alias": "pyrgotos",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σεβαστό": {
       "latitude": 40.981496,
@@ -13034,7 +13034,7 @@
       "search_name": "Σεβαστό",
       "primary_alias": "sevasto",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυροχώρι": {
       "latitude": 41.036638,
@@ -13043,7 +13043,7 @@
       "search_name": "Σταυροχώρι",
       "primary_alias": "stayrohori",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Δογάνη": {
       "latitude": 40.980434,
@@ -13052,7 +13052,7 @@
       "search_name": "Στρατόπεδο Δογάνη",
       "primary_alias": "stratopedo-dogani",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Καμπάνη": {
       "latitude": 41.000162,
@@ -13061,7 +13061,7 @@
       "search_name": "Στρατόπεδο Καμπάνη",
       "primary_alias": "stratopedo-kampani",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τέρπυλλος": {
       "latitude": 41.040044,
@@ -13070,7 +13070,7 @@
       "search_name": "Τέρπυλλος",
       "primary_alias": "terpyllos",
       "city": "Κιλκίς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολύκαστρο": {
       "latitude": 40.995055,
@@ -13079,8 +13079,8 @@
       "search_name": "Πολύκαστρο",
       "primary_alias": "polykastro",
       "city": "Κιλκίς",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κοζάνη": {
     "Κοζάνη": {
@@ -13090,7 +13090,7 @@
       "search_name": "Κοζάνη",
       "primary_alias": "kozanh",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Κυριακή": {
       "latitude": 40.293552,
@@ -13099,7 +13099,7 @@
       "search_name": "Αγία Κυριακή",
       "primary_alias": "kozani-agia-kyriaki",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 40.220816,
@@ -13108,7 +13108,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "kozani-agia-paraskeyi",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αθανάσιος": {
       "latitude": 40.291591,
@@ -13117,7 +13117,7 @@
       "search_name": "Άγιος Αθανάσιος",
       "primary_alias": "kozani-agios-athanasios",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 40.30473,
@@ -13126,7 +13126,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "kozani-agios-dimitrios",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κωνσταντίνος": {
       "latitude": 40.296248,
@@ -13135,7 +13135,7 @@
       "search_name": "Άγιος Κωνσταντίνος",
       "primary_alias": "kozani-agios-konstantinos",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 40.300662,
@@ -13144,7 +13144,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "kozani-agios-nikolaos",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Χριστόφορος": {
       "latitude": 40.300309,
@@ -13153,7 +13153,7 @@
       "search_name": "Άγιος Χριστόφορος",
       "primary_alias": "kozani-agios-hristoforos",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλωνάκια": {
       "latitude": 40.306863,
@@ -13162,7 +13162,7 @@
       "search_name": "Αλωνάκια",
       "primary_alias": "alonakia",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Κώμη": {
       "latitude": 40.226686,
@@ -13171,7 +13171,7 @@
       "search_name": "Άνω Κώμη",
       "primary_alias": "ano-komi",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Πόλη": {
       "latitude": 40.307252,
@@ -13180,7 +13180,7 @@
       "search_name": "Άνω Πόλη",
       "primary_alias": "kozani-ano-poli",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άργιλος": {
       "latitude": 40.266882,
@@ -13189,7 +13189,7 @@
       "search_name": "Άργιλος",
       "primary_alias": "argilos",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βατερό": {
       "latitude": 40.292038,
@@ -13198,7 +13198,7 @@
       "search_name": "Βατερό",
       "primary_alias": "vatero",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρέπανο": {
       "latitude": 40.349619,
@@ -13207,7 +13207,7 @@
       "search_name": "Δρέπανο",
       "primary_alias": "drepano",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες ΖΕΠ": {
       "latitude": 40.275655,
@@ -13216,7 +13216,7 @@
       "search_name": "Εργατικές Κατοικίες ΖΕΠ",
       "primary_alias": "ergatikes-katoikies-zep",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηπειρώτικα": {
       "latitude": 40.300458,
@@ -13225,7 +13225,7 @@
       "search_name": "Ηπειρώτικα",
       "primary_alias": "ipeirotika",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρυδίτσα": {
       "latitude": 40.251245,
@@ -13234,7 +13234,7 @@
       "search_name": "Καρυδίτσα",
       "primary_alias": "karyditsa",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.302149,
@@ -13243,7 +13243,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "kozanh",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοίλα": {
       "latitude": 40.330135,
@@ -13252,7 +13252,7 @@
       "search_name": "Κοίλα",
       "primary_alias": "koila",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κονάκια": {
       "latitude": 40.348634,
@@ -13261,7 +13261,7 @@
       "search_name": "Κονάκια",
       "primary_alias": "konakia",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρόκος": {
       "latitude": 40.264339,
@@ -13270,7 +13270,7 @@
       "search_name": "Κρόκος",
       "primary_alias": "krokos",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκόβρυση": {
       "latitude": 40.271769,
@@ -13279,7 +13279,7 @@
       "search_name": "Λευκόβρυση",
       "primary_alias": "leykovrysi",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκοπηγή": {
       "latitude": 40.231281,
@@ -13288,7 +13288,7 @@
       "search_name": "Λευκοπηγή",
       "primary_alias": "leykopigi",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυγερή": {
       "latitude": 40.328651,
@@ -13297,7 +13297,7 @@
       "search_name": "Λυγερή",
       "primary_alias": "lygeri",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελίσσια": {
       "latitude": 40.328475,
@@ -13306,7 +13306,7 @@
       "search_name": "Μελίσσια",
       "primary_alias": "kozani-melissia",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Καρδιά": {
       "latitude": 40.336506,
@@ -13315,7 +13315,7 @@
       "search_name": "Νέα Καρδιά",
       "primary_alias": "nea-kardia",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Νικόπολη": {
       "latitude": 40.327471,
@@ -13324,7 +13324,7 @@
       "search_name": "Νέα Νικόπολη",
       "primary_alias": "nea-nikopoli",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Χαραυγή": {
       "latitude": 40.32531,
@@ -13333,7 +13333,7 @@
       "search_name": "Νέα Χαραυγή",
       "primary_alias": "nea-haraygi",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηρολίμνη": {
       "latitude": 40.298016,
@@ -13342,7 +13342,7 @@
       "search_name": "Ξηρολίμνη",
       "primary_alias": "xirolimni",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πετρανά": {
       "latitude": 40.290744,
@@ -13351,7 +13351,7 @@
       "search_name": "Πετρανά",
       "primary_alias": "petrana",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρωτοχώρι": {
       "latitude": 40.244804,
@@ -13360,7 +13360,7 @@
       "search_name": "Πρωτοχώρι",
       "primary_alias": "protohori",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πτελέα": {
       "latitude": 40.330381,
@@ -13369,7 +13369,7 @@
       "search_name": "Πτελέα",
       "primary_alias": "ptelea",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκρκα": {
       "latitude": 40.300992,
@@ -13378,7 +13378,7 @@
       "search_name": "Σκρκα",
       "primary_alias": "skrka",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπινάρης": {
       "latitude": 40.298078,
@@ -13387,7 +13387,7 @@
       "search_name": "Σπινάρης",
       "primary_alias": "spinaris",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 40.296102,
@@ -13396,7 +13396,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "kozani-stathmos",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Γαζή": {
       "latitude": 40.340688,
@@ -13405,7 +13405,7 @@
       "search_name": "Στρατόπεδο Γαζή",
       "primary_alias": "stratopedo-gazi",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Μακεδονομάχων": {
       "latitude": 40.291571,
@@ -13414,7 +13414,7 @@
       "search_name": "Στρατόπεδο Μακεδονομάχων",
       "primary_alias": "stratopedo-makedonomahon",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φανερωμένη": {
       "latitude": 40.291752,
@@ -13423,7 +13423,7 @@
       "search_name": "Φανερωμένη",
       "primary_alias": "faneromeni",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιάτιστα": {
       "latitude": 40.259309,
@@ -13432,7 +13432,7 @@
       "search_name": "Σιάτιστα",
       "primary_alias": "siatista",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 40.303647,
@@ -13441,7 +13441,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "kozani-agios-georgios",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 40.312784,
@@ -13450,7 +13450,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "kozani-neapoli",
       "city": "Κοζάνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σέρβια": {
       "latitude": 40.185117,
@@ -13459,8 +13459,8 @@
       "search_name": "Σέρβια",
       "primary_alias": "servia",
       "city": "Κοζάνη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κομοτηνή": {
     "Κομοτηνή": {
@@ -13470,7 +13470,7 @@
       "search_name": "Κομοτηνή",
       "primary_alias": "komotini",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Βαρβάρα": {
       "latitude": 41.128049,
@@ -13479,7 +13479,7 @@
       "search_name": "Αγία Βαρβάρα",
       "primary_alias": "komotini-agia-varvara",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγίασμα": {
       "latitude": 41.165031,
@@ -13488,7 +13488,7 @@
       "search_name": "Αγίασμα",
       "primary_alias": "agiasma",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Θεόδωροι": {
       "latitude": 41.04298,
@@ -13497,7 +13497,7 @@
       "search_name": "Άγιοι Θεόδωροι",
       "primary_alias": "komotini-agioi-theodoroi",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 41.114558,
@@ -13506,7 +13506,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "komotini-agios-georgios",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Στυλιανός": {
       "latitude": 41.107407,
@@ -13515,7 +13515,7 @@
       "search_name": "Άγιος Στυλιανός",
       "primary_alias": "agios-stylianos",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αίγειρος": {
       "latitude": 41.087639,
@@ -13524,7 +13524,7 @@
       "search_name": "Αίγειρος",
       "primary_alias": "aigeiros",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασώματοι": {
       "latitude": 41.156518,
@@ -13533,7 +13533,7 @@
       "search_name": "Ασώματοι",
       "primary_alias": "asomatoi",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙ.ΠΕ Κομοτηνής": {
       "latitude": 41.069296,
@@ -13542,7 +13542,7 @@
       "search_name": "ΒΙ.ΠΕ Κομοτηνής",
       "primary_alias": "vi.pe-komotinis",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δικαστήρια": {
       "latitude": 41.120999,
@@ -13551,7 +13551,7 @@
       "search_name": "Δικαστήρια",
       "primary_alias": "dikastiria",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δύμη": {
       "latitude": 41.169347,
@@ -13560,7 +13560,7 @@
       "search_name": "Δύμη",
       "primary_alias": "dymi",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εγνατίας": {
       "latitude": 41.124155,
@@ -13569,7 +13569,7 @@
       "search_name": "Εγνατίας",
       "primary_alias": "egnatias",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εκτενοπόλ": {
       "latitude": 41.124026,
@@ -13578,7 +13578,7 @@
       "search_name": "Εκτενοπόλ",
       "primary_alias": "ektenopol",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζυμβρακάκη": {
       "latitude": 41.111293,
@@ -13587,7 +13587,7 @@
       "search_name": "Ζυμβρακάκη",
       "primary_alias": "zymvrakaki",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ήφαιστος": {
       "latitude": 41.130265,
@@ -13596,7 +13596,7 @@
       "search_name": "Ήφαιστος",
       "primary_alias": "ifaistos",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θάμνα": {
       "latitude": 41.162638,
@@ -13605,7 +13605,7 @@
       "search_name": "Θάμνα",
       "primary_alias": "thamna",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θρυλόριο": {
       "latitude": 41.078792,
@@ -13614,7 +13614,7 @@
       "search_name": "Θρυλόριο",
       "primary_alias": "thrylorio",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ίασμος": {
       "latitude": 41.127405,
@@ -13623,7 +13623,7 @@
       "search_name": "Ίασμος",
       "primary_alias": "iasmos",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ίσαλο": {
       "latitude": 41.058573,
@@ -13632,7 +13632,7 @@
       "search_name": "Ίσαλο",
       "primary_alias": "isalo",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιτέα": {
       "latitude": 41.093078,
@@ -13641,7 +13641,7 @@
       "search_name": "Ιτέα",
       "primary_alias": "komotini-itea",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καβακλιώτικα": {
       "latitude": 41.110616,
@@ -13650,7 +13650,7 @@
       "search_name": "Καβακλιώτικα",
       "primary_alias": "kavakliotika",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμόκαστρο": {
       "latitude": 41.049292,
@@ -13659,7 +13659,7 @@
       "search_name": "Καλαμόκαστρο",
       "primary_alias": "kalamokastro",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 41.051127,
@@ -13668,7 +13668,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "komotini-kallithea",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάλχας": {
       "latitude": 41.141287,
@@ -13677,7 +13677,7 @@
       "search_name": "Κάλχας",
       "primary_alias": "kalhas",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρυδιά": {
       "latitude": 41.145616,
@@ -13686,7 +13686,7 @@
       "search_name": "Καρυδιά",
       "primary_alias": "karydia",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 41.117965,
@@ -13695,7 +13695,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "komotini",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κηκίδιο": {
       "latitude": 41.107205,
@@ -13704,7 +13704,7 @@
       "search_name": "Κηκίδιο",
       "primary_alias": "kikidio",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολυμβητήριο": {
       "latitude": 41.122742,
@@ -13713,7 +13713,7 @@
       "search_name": "Κολυμβητήριο",
       "primary_alias": "kolymvitirio",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόσμιο": {
       "latitude": 41.089282,
@@ -13722,7 +13722,7 @@
       "search_name": "Κόσμιο",
       "primary_alias": "kosmio",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέγα Δουκάτο": {
       "latitude": 41.049345,
@@ -13731,7 +13731,7 @@
       "search_name": "Μέγα Δουκάτο",
       "primary_alias": "mega-doykato",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέγα Κρανοβούνι": {
       "latitude": 41.06076,
@@ -13740,7 +13740,7 @@
       "search_name": "Μέγα Κρανοβούνι",
       "primary_alias": "mega-kranovoyni",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέγα Πιστό": {
       "latitude": 41.146559,
@@ -13749,7 +13749,7 @@
       "search_name": "Μέγα Πιστό",
       "primary_alias": "mega-pisto",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελέτη": {
       "latitude": 41.113577,
@@ -13758,7 +13758,7 @@
       "search_name": "Μελέτη",
       "primary_alias": "meleti",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσσούνη": {
       "latitude": 41.091981,
@@ -13767,7 +13767,7 @@
       "search_name": "Μεσσούνη",
       "primary_alias": "messoyni",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσοχώρι": {
       "latitude": 41.093316,
@@ -13776,7 +13776,7 @@
       "search_name": "Μεσοχώρι",
       "primary_alias": "mesohori",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μητρόπολη": {
       "latitude": 41.120503,
@@ -13785,7 +13785,7 @@
       "search_name": "Μητρόπολη",
       "primary_alias": "komotini-mitropoli",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρό Δουκάτο": {
       "latitude": 41.037236,
@@ -13794,7 +13794,7 @@
       "search_name": "Μικρό Δουκάτο",
       "primary_alias": "mikro-doykato",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρό Κρανοβούνι": {
       "latitude": 41.053024,
@@ -13803,7 +13803,7 @@
       "search_name": "Μικρό Κρανοβούνι",
       "primary_alias": "mikro-kranovoyni",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μίσχος": {
       "latitude": 41.152883,
@@ -13812,7 +13812,7 @@
       "search_name": "Μίσχος",
       "primary_alias": "mishos",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μουσινοχώρι": {
       "latitude": 41.150931,
@@ -13821,7 +13821,7 @@
       "search_name": "Μουσινοχώρι",
       "primary_alias": "moysinohori",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μοσυνούπολη": {
       "latitude": 41.130614,
@@ -13830,7 +13830,7 @@
       "search_name": "Νέα Μοσυνούπολη",
       "primary_alias": "nea-mosynoypoli",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεόκτιστα": {
       "latitude": 41.120499,
@@ -13839,7 +13839,7 @@
       "search_name": "Νεόκτιστα",
       "primary_alias": "neoktista",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανεπιστημιούπολη": {
       "latitude": 41.140989,
@@ -13848,7 +13848,7 @@
       "search_name": "Πανεπιστημιούπολη",
       "primary_alias": "komotini-panepistimioypoli",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραδημή": {
       "latitude": 41.07796,
@@ -13857,7 +13857,7 @@
       "search_name": "Παραδημή",
       "primary_alias": "paradimi",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρέμβη": {
       "latitude": 41.116997,
@@ -13866,7 +13866,7 @@
       "search_name": "Ρέμβη",
       "primary_alias": "remvi",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρίζωμα": {
       "latitude": 41.153379,
@@ -13875,7 +13875,7 @@
       "search_name": "Ρίζωμα",
       "primary_alias": "rizoma",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ροδίτης": {
       "latitude": 41.097231,
@@ -13884,7 +13884,7 @@
       "search_name": "Ροδίτης",
       "primary_alias": "roditis",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 41.113913,
@@ -13893,7 +13893,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "komotini-stathmos",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδα": {
       "latitude": 41.126402,
@@ -13902,7 +13902,7 @@
       "search_name": "Στρατόπεδα",
       "primary_alias": "stratopeda",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σύμβολα": {
       "latitude": 41.174209,
@@ -13911,7 +13911,7 @@
       "search_name": "Σύμβολα",
       "primary_alias": "symvola",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σχολή Αστυνομίας": {
       "latitude": 41.105372,
@@ -13920,7 +13920,7 @@
       "search_name": "Σχολή Αστυνομίας",
       "primary_alias": "sholi-astynomias",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Υφαντές": {
       "latitude": 41.115437,
@@ -13929,7 +13929,7 @@
       "search_name": "Υφαντές",
       "primary_alias": "yfantes",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φύλακας": {
       "latitude": 41.056855,
@@ -13938,7 +13938,7 @@
       "search_name": "Φύλακας",
       "primary_alias": "fylakas",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φωλιά": {
       "latitude": 41.165133,
@@ -13947,7 +13947,7 @@
       "search_name": "Φωλιά",
       "primary_alias": "folia",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαμηλό": {
       "latitude": 41.147564,
@@ -13956,7 +13956,7 @@
       "search_name": "Χαμηλό",
       "primary_alias": "hamilo",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολύανθο": {
       "latitude": 41.128244,
@@ -13965,7 +13965,7 @@
       "search_name": "Πολύανθο",
       "primary_alias": "komotini-polyantho",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλήνη": {
       "latitude": 41.107546,
@@ -13974,7 +13974,7 @@
       "search_name": "Γαλήνη",
       "primary_alias": "komotini-galini",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μωσαϊκό": {
       "latitude": 41.092605,
@@ -13983,7 +13983,7 @@
       "search_name": "Μωσαϊκό",
       "primary_alias": "komotini-mosaiko",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διαλαμπή": {
       "latitude": 41.089506,
@@ -13992,7 +13992,7 @@
       "search_name": "Διαλαμπή",
       "primary_alias": "komotini-dialampi",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοπτερό": {
       "latitude": 41.118993,
@@ -14001,7 +14001,7 @@
       "search_name": "Κοπτερό",
       "primary_alias": "komotini-koptero",
       "city": "Κομοτηνή",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σώστης": {
       "latitude": 41.135277,
@@ -14010,8 +14010,8 @@
       "search_name": "Σώστης",
       "primary_alias": "komotini-sostis",
       "city": "Κομοτηνή",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κόρινθος": {
     "Κόρινθος": {
@@ -14021,7 +14021,7 @@
       "search_name": "Κόρινθος",
       "primary_alias": "korinthos",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Άννα": {
       "latitude": 37.931449,
@@ -14030,7 +14030,7 @@
       "search_name": "Αγία Άννα",
       "primary_alias": "korinthos-agia-anna",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 37.930664,
@@ -14039,7 +14039,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "korinthos-agios-georgios",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 37.897775,
@@ -14048,7 +14048,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "korinthos-agios-dimitrios",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Χαράλαμπος": {
       "latitude": 37.922938,
@@ -14057,7 +14057,7 @@
       "search_name": "Άγιος Χαράλαμπος",
       "primary_alias": "agios-haralampos",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχαία Κόρινθος": {
       "latitude": 37.906357,
@@ -14066,7 +14066,7 @@
       "search_name": "Αρχαία Κόρινθος",
       "primary_alias": "arhaia-korinthos",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχαίο Λιμάνι": {
       "latitude": 37.930392,
@@ -14075,7 +14075,7 @@
       "search_name": "Αρχαίο Λιμάνι",
       "primary_alias": "arhaio-limani",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άσσος": {
       "latitude": 37.939165,
@@ -14084,7 +14084,7 @@
       "search_name": "Άσσος",
       "primary_alias": "assos",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εξαμίλια": {
       "latitude": 37.896756,
@@ -14093,7 +14093,7 @@
       "search_name": "Εξαμίλια",
       "primary_alias": "examilia",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζευγολατειό": {
       "latitude": 37.938686,
@@ -14102,7 +14102,7 @@
       "search_name": "Ζευγολατειό",
       "primary_alias": "korinthos-zeygolateio",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ίσθμια": {
       "latitude": 37.915772,
@@ -14111,7 +14111,7 @@
       "search_name": "Ίσθμια",
       "primary_alias": "isthmia",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάβος": {
       "latitude": 37.905752,
@@ -14120,7 +14120,7 @@
       "search_name": "Κάβος",
       "primary_alias": "korinthos-kavos",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Άσσος": {
       "latitude": 37.949127,
@@ -14129,7 +14129,7 @@
       "search_name": "Κάτω Άσσος",
       "primary_alias": "kato-assos",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Εξαμίλια": {
       "latitude": 37.907525,
@@ -14138,7 +14138,7 @@
       "search_name": "Κάτω Εξαμίλια",
       "primary_alias": "kato-examilia",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 37.938279,
@@ -14147,7 +14147,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "korinthos",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεραμιδάκι": {
       "latitude": 37.936225,
@@ -14156,7 +14156,7 @@
       "search_name": "Κεραμιδάκι",
       "primary_alias": "keramidaki",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεχριές": {
       "latitude": 37.883923,
@@ -14165,7 +14165,7 @@
       "search_name": "Κεχριές",
       "primary_alias": "kehries",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυράς Βρύση": {
       "latitude": 37.913222,
@@ -14174,7 +14174,7 @@
       "search_name": "Κυράς Βρύση",
       "primary_alias": "kyras-vrysi",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λέχαιο": {
       "latitude": 37.935504,
@@ -14183,7 +14183,7 @@
       "search_name": "Λέχαιο",
       "primary_alias": "lehaio",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτράκι": {
       "latitude": 37.974636,
@@ -14192,7 +14192,7 @@
       "search_name": "Λουτράκι",
       "primary_alias": "loutraki",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 37.925485,
@@ -14201,7 +14201,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "korinthos-neapoli",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέες Εργατικές Κατοικίες": {
       "latitude": 37.942858,
@@ -14210,7 +14210,7 @@
       "search_name": "Νέες Εργατικές Κατοικίες",
       "primary_alias": "nees-ergatikes-katoikies",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξυλοκέριζα": {
       "latitude": 37.88302,
@@ -14219,7 +14219,7 @@
       "search_name": "Ξυλοκέριζα",
       "primary_alias": "xylokeriza",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιό Καλαμάκι": {
       "latitude": 37.900803,
@@ -14228,7 +14228,7 @@
       "search_name": "Παλαιό Καλαμάκι",
       "primary_alias": "palaio-kalamaki",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιγιάλι": {
       "latitude": 37.940791,
@@ -14237,7 +14237,7 @@
       "search_name": "Περιγιάλι",
       "primary_alias": "korinthos-perigiali",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποσειδωνία": {
       "latitude": 37.944596,
@@ -14246,7 +14246,7 @@
       "search_name": "Ποσειδωνία",
       "primary_alias": "poseidonia",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Αντ/χου Καλογερογιάννη": {
       "latitude": 37.931329,
@@ -14255,7 +14255,7 @@
       "search_name": "Στρατόπεδο Αντ/χου Καλογερογιάννη",
       "primary_alias": "stratopedo-ant-hoy-kalogerogianni",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλοθέη": {
       "latitude": 37.930696,
@@ -14264,7 +14264,7 @@
       "search_name": "Φιλοθέη",
       "primary_alias": "korinthos-filothei",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Θεόδωροι": {
       "latitude": 37.931904,
@@ -14273,7 +14273,7 @@
       "search_name": "Άγιοι Θεόδωροι",
       "primary_alias": "korinthos-agioi-theodoroi",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεμέα": {
       "latitude": 37.820425,
@@ -14282,7 +14282,7 @@
       "search_name": "Νεμέα",
       "primary_alias": "nemea",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξυλόκαστρο": {
       "latitude": 38.076814,
@@ -14291,7 +14291,7 @@
       "search_name": "Ξυλόκαστρο",
       "primary_alias": "xylokastro",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιάτο": {
       "latitude": 38.010618,
@@ -14300,7 +14300,7 @@
       "search_name": "Κιάτο",
       "primary_alias": "kiato",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Διμηνιό": {
       "latitude": 38.02732,
@@ -14309,7 +14309,7 @@
       "search_name": "Κάτω Διμηνιό",
       "primary_alias": "kato-diminio",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάσιο": {
       "latitude": 38.01327,
@@ -14318,7 +14318,7 @@
       "search_name": "Πάσιο",
       "primary_alias": "pasio",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δουρβατιώνα": {
       "latitude": 38.000977,
@@ -14327,7 +14327,7 @@
       "search_name": "Δουρβατιώνα",
       "primary_alias": "doyrvationa",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βραχάτι": {
       "latitude": 37.956527,
@@ -14336,7 +14336,7 @@
       "search_name": "Βραχάτι",
       "primary_alias": "vrahati",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βοχαϊκό": {
       "latitude": 37.946508,
@@ -14345,7 +14345,7 @@
       "search_name": "Βοχαϊκό",
       "primary_alias": "vohaiko",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πουλλίτσα": {
       "latitude": 37.958058,
@@ -14354,7 +14354,7 @@
       "search_name": "Πουλλίτσα",
       "primary_alias": "poyllitsa",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βέλο": {
       "latitude": 37.979548,
@@ -14363,7 +14363,7 @@
       "search_name": "Βέλο",
       "primary_alias": "velo",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεράντζα": {
       "latitude": 37.983128,
@@ -14372,7 +14372,7 @@
       "search_name": "Νεράντζα",
       "primary_alias": "nerantza",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκώνι": {
       "latitude": 37.970383,
@@ -14381,7 +14381,7 @@
       "search_name": "Κοκκώνι",
       "primary_alias": "kokkoni",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μερτικαίικα": {
       "latitude": 38.065064,
@@ -14390,7 +14390,7 @@
       "search_name": "Μερτικαίικα",
       "primary_alias": "mertikaiika",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καριώτικα Καρυάς": {
       "latitude": 38.063168,
@@ -14399,7 +14399,7 @@
       "search_name": "Καριώτικα Καρυάς",
       "primary_alias": "kariotika-karyas",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γελινιάτικα": {
       "latitude": 38.058842,
@@ -14408,7 +14408,7 @@
       "search_name": "Γελινιάτικα",
       "primary_alias": "geliniatika",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συκιά": {
       "latitude": 38.063028,
@@ -14417,7 +14417,7 @@
       "search_name": "Συκιά",
       "primary_alias": "sykia",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καριώτικα Καμαρίου": {
       "latitude": 38.087283,
@@ -14426,7 +14426,7 @@
       "search_name": "Καριώτικα Καμαρίου",
       "primary_alias": "kariotika-kamarioy",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρι": {
       "latitude": 38.09296,
@@ -14435,7 +14435,7 @@
       "search_name": "Καμάρι",
       "primary_alias": "korinthos-kamari",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρίζα": {
       "latitude": 38.044809,
@@ -14444,7 +14444,7 @@
       "search_name": "Ρίζα",
       "primary_alias": "riza",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γεωργανταίικα": {
       "latitude": 38.050958,
@@ -14453,7 +14453,7 @@
       "search_name": "Γεωργανταίικα",
       "primary_alias": "georgantaiika",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Λουτρό": {
       "latitude": 38.101418,
@@ -14462,7 +14462,7 @@
       "search_name": "Κάτω Λουτρό",
       "primary_alias": "kato-loytro",
       "city": "Κόρινθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελίσσι": {
       "latitude": 38.046091,
@@ -14471,8 +14471,8 @@
       "search_name": "Μελίσσι",
       "primary_alias": "korinthos-melissi",
       "city": "Κόρινθος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κορωπί": {
     "Κορωπί": {
@@ -14482,7 +14482,7 @@
       "search_name": "Κορωπί",
       "primary_alias": "koropi",
       "city": "Κορωπί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βόκα": {
       "latitude": 37.896495,
@@ -14491,7 +14491,7 @@
       "search_name": "Βόκα",
       "primary_alias": "voka",
       "city": "Κορωπί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντράσι": {
       "latitude": 37.913274,
@@ -14500,7 +14500,7 @@
       "search_name": "Κοντράσι",
       "primary_alias": "kontrasi",
       "city": "Κορωπί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουπί": {
       "latitude": 37.909061,
@@ -14509,7 +14509,7 @@
       "search_name": "Κουπί",
       "primary_alias": "koypi",
       "city": "Κορωπί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρελλάς": {
       "latitude": 37.933182,
@@ -14518,7 +14518,7 @@
       "search_name": "Καρελλάς",
       "primary_alias": "karellas",
       "city": "Κορωπί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 37.821868,
@@ -14527,7 +14527,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "koropi-agia-marina",
       "city": "Κορωπί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 37.807561,
@@ -14536,7 +14536,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "koropi-agios-dimitrios",
       "city": "Κορωπί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βιομηχανική Περιοχή": {
       "latitude": 37.880888,
@@ -14545,8 +14545,8 @@
       "search_name": "Βιομηχανική Περιοχή",
       "primary_alias": "koropi-viomihaniki-periohi",
       "city": "Κορωπί",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κρυονέρι": {
     "Κρυονέρι": {
@@ -14556,8 +14556,8 @@
       "search_name": "Κρυονέρι",
       "primary_alias": "kryoneri",
       "city": "Κρυονέρι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κύθηρα": {
     "Κύθηρα": {
@@ -14567,8 +14567,8 @@
       "search_name": "Κύθηρα",
       "primary_alias": "kythira",
       "city": "Κύθηρα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κύθνος": {
     "Κύθνος": {
@@ -14578,8 +14578,8 @@
       "search_name": "Κύθνος",
       "primary_alias": "kythnos",
       "city": "Κύθνος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Κως": {
     "Κως": {
@@ -14589,7 +14589,7 @@
       "search_name": "Κως",
       "primary_alias": "kos",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αντιμάχεια": {
       "latitude": 36.809873,
@@ -14598,7 +14598,7 @@
       "search_name": "Αντιμάχεια",
       "primary_alias": "antimaheia",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζηπάρι": {
       "latitude": 36.876588,
@@ -14607,7 +14607,7 @@
       "search_name": "Ζηπάρι",
       "primary_alias": "zipari",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κακό Πρινάρι": {
       "latitude": 36.883206,
@@ -14616,7 +14616,7 @@
       "search_name": "Κακό Πρινάρι",
       "primary_alias": "kako-prinari",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιά Πόλη": {
       "latitude": 36.892309,
@@ -14625,7 +14625,7 @@
       "search_name": "Παλιά Πόλη",
       "primary_alias": "kos",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραδείσι": {
       "latitude": 36.882588,
@@ -14634,7 +14634,7 @@
       "search_name": "Παραδείσι",
       "primary_alias": "paradeisi",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατάνι": {
       "latitude": 36.882581,
@@ -14643,7 +14643,7 @@
       "search_name": "Πλατάνι",
       "primary_alias": "kos-platani",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψαλίδι": {
       "latitude": 36.885525,
@@ -14652,7 +14652,7 @@
       "search_name": "Ψαλίδι",
       "primary_alias": "psalidi",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τιγκάκι": {
       "latitude": 36.884389,
@@ -14661,7 +14661,7 @@
       "search_name": "Τιγκάκι",
       "primary_alias": "tigkaki",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρμάρι": {
       "latitude": 36.872336,
@@ -14670,7 +14670,7 @@
       "search_name": "Μαρμάρι",
       "primary_alias": "marmari",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυλί": {
       "latitude": 36.852419,
@@ -14679,7 +14679,7 @@
       "search_name": "Πυλί",
       "primary_alias": "pyli",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάμπος": {
       "latitude": 36.753455,
@@ -14688,7 +14688,7 @@
       "search_name": "Κάμπος",
       "primary_alias": "kos-kampos",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όνια": {
       "latitude": 36.750178,
@@ -14697,7 +14697,7 @@
       "search_name": "Όνια",
       "primary_alias": "kos-onia",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέφαλος": {
       "latitude": 36.746078,
@@ -14706,7 +14706,7 @@
       "search_name": "Κέφαλος",
       "primary_alias": "kos-kefalos",
       "city": "Κως",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρι": {
       "latitude": 36.738205,
@@ -14715,8 +14715,8 @@
       "search_name": "Καμάρι",
       "primary_alias": "kos-kamari",
       "city": "Κως",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Λαμία": {
     "Λαμία": {
@@ -14726,7 +14726,7 @@
       "search_name": "Λαμία",
       "primary_alias": "lamia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Βαρβάρα": {
       "latitude": 38.898568,
@@ -14735,7 +14735,7 @@
       "search_name": "Αγία Βαρβάρα",
       "primary_alias": "lamia-agia-varvara",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 38.901022,
@@ -14744,7 +14744,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "lamia-agia-paraskeyi",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ανδρέας": {
       "latitude": 38.896217,
@@ -14753,7 +14753,7 @@
       "search_name": "Άγιος Ανδρέας",
       "primary_alias": "agios-andreas",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Λουκάς": {
       "latitude": 38.901074,
@@ -14762,7 +14762,7 @@
       "search_name": "Άγιος Λουκάς",
       "primary_alias": "lamia-agios-loykas",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγριλιά": {
       "latitude": 38.930685,
@@ -14771,7 +14771,7 @@
       "search_name": "Αγριλιά",
       "primary_alias": "lamia-agrilia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλεπόσπιτα": {
       "latitude": 38.826844,
@@ -14780,7 +14780,7 @@
       "search_name": "Αλεπόσπιτα",
       "primary_alias": "alepospita",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμούρι": {
       "latitude": 38.900298,
@@ -14789,7 +14789,7 @@
       "search_name": "Αμούρι",
       "primary_alias": "amoyri",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμφιθέα": {
       "latitude": 38.914356,
@@ -14798,7 +14798,7 @@
       "search_name": "Αμφιθέα",
       "primary_alias": "lamia-amfithea",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθήλη": {
       "latitude": 38.849592,
@@ -14807,7 +14807,7 @@
       "search_name": "Ανθήλη",
       "primary_alias": "anthili",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνοιξη": {
       "latitude": 38.905851,
@@ -14816,7 +14816,7 @@
       "search_name": "Άνοιξη",
       "primary_alias": "lamia-anoixi",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αυλάκι": {
       "latitude": 38.910018,
@@ -14825,7 +14825,7 @@
       "search_name": "Αυλάκι",
       "primary_alias": "aylaki",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλανέικα": {
       "latitude": 38.914994,
@@ -14834,7 +14834,7 @@
       "search_name": "Γαλανέικα",
       "primary_alias": "galaneika",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙΠΕ Λαμίας": {
       "latitude": 38.906084,
@@ -14843,7 +14843,7 @@
       "search_name": "ΒΙΠΕ Λαμίας",
       "primary_alias": "vipe-lamias",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γοργοπόταμος": {
       "latitude": 38.833232,
@@ -14852,7 +14852,7 @@
       "search_name": "Γοργοπόταμος",
       "primary_alias": "gorgopotamos",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες": {
       "latitude": 38.919829,
@@ -14861,7 +14861,7 @@
       "search_name": "Εργατικές Κατοικίες",
       "primary_alias": "lamia-ergatikes-katoikies",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηράκλεια": {
       "latitude": 38.806145,
@@ -14870,7 +14870,7 @@
       "search_name": "Ηράκλεια",
       "primary_alias": "irakleia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θερμοπύλες": {
       "latitude": 38.799496,
@@ -14879,7 +14879,7 @@
       "search_name": "Θερμοπύλες",
       "primary_alias": "thermopyles",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλύβια": {
       "latitude": 38.892981,
@@ -14888,7 +14888,7 @@
       "search_name": "Καλύβια",
       "primary_alias": "lamia-kalyvia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 38.899408,
@@ -14897,7 +14897,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "lamia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κ.Ε.Υ.Π.": {
       "latitude": 38.89444,
@@ -14906,7 +14906,7 @@
       "search_name": "Κ.Ε.Υ.Π.",
       "primary_alias": "k.e.y.p.",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόμμα": {
       "latitude": 38.856197,
@@ -14915,7 +14915,7 @@
       "search_name": "Κόμμα",
       "primary_alias": "komma",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κομποτάδες": {
       "latitude": 38.867543,
@@ -14924,7 +14924,7 @@
       "search_name": "Κομποτάδες",
       "primary_alias": "kompotades",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κωσταλέξης": {
       "latitude": 38.858412,
@@ -14933,7 +14933,7 @@
       "search_name": "Κωσταλέξης",
       "primary_alias": "kostalexis",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λειανοκλάδι": {
       "latitude": 38.916109,
@@ -14942,7 +14942,7 @@
       "search_name": "Λειανοκλάδι",
       "primary_alias": "leianokladi",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτρά Υπάτης": {
       "latitude": 38.89307,
@@ -14951,7 +14951,7 @@
       "search_name": "Λουτρά Υπάτης",
       "primary_alias": "loytra-ypatis",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυγαριά": {
       "latitude": 38.938891,
@@ -14960,7 +14960,7 @@
       "search_name": "Λυγαριά",
       "primary_alias": "lygaria",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλη Βρύση": {
       "latitude": 38.893805,
@@ -14969,7 +14969,7 @@
       "search_name": "Μεγάλη Βρύση",
       "primary_alias": "lamia-megali-vrysi",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεξιάτες": {
       "latitude": 38.882964,
@@ -14978,7 +14978,7 @@
       "search_name": "Μεξιάτες",
       "primary_alias": "mexiates",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοσχοχώρι": {
       "latitude": 38.827487,
@@ -14987,7 +14987,7 @@
       "search_name": "Μοσχοχώρι",
       "primary_alias": "lamia-moshohori",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Άμπλιανη": {
       "latitude": 38.888182,
@@ -14996,7 +14996,7 @@
       "search_name": "Νέα Άμπλιανη",
       "primary_alias": "nea-ampliani",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ιωνία": {
       "latitude": 38.909044,
@@ -15005,7 +15005,7 @@
       "search_name": "Νέα Ιωνία",
       "primary_alias": "lamia-nea-ionia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μαγνησία": {
       "latitude": 38.901521,
@@ -15014,7 +15014,7 @@
       "search_name": "Νέα Μαγνησία",
       "primary_alias": "lamia-nea-magnisia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Κρίκελλο": {
       "latitude": 38.824874,
@@ -15023,7 +15023,7 @@
       "search_name": "Νέο Κρίκελλο",
       "primary_alias": "neo-krikello",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νταμάρια": {
       "latitude": 38.901642,
@@ -15032,7 +15032,7 @@
       "search_name": "Νταμάρια",
       "primary_alias": "ntamaria",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οικισμός Ευρυτάνων": {
       "latitude": 38.92331,
@@ -15041,7 +15041,7 @@
       "search_name": "Οικισμός Ευρυτάνων",
       "primary_alias": "oikismos-eyrytanon",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παγκράτι": {
       "latitude": 38.889956,
@@ -15050,7 +15050,7 @@
       "search_name": "Παγκράτι",
       "primary_alias": "lamia-pagkrati",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρεβένια": {
       "latitude": 38.891553,
@@ -15059,7 +15059,7 @@
       "search_name": "Ρεβένια",
       "primary_alias": "revenia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ροδίτσα": {
       "latitude": 38.889031,
@@ -15068,7 +15068,7 @@
       "search_name": "Ροδίτσα",
       "primary_alias": "roditsa",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εκκοκκιστήρια": {
       "latitude": 38.895439,
@@ -15077,7 +15077,7 @@
       "search_name": "Εκκοκκιστήρια",
       "primary_alias": "ekkokkistiria",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός Λειανοκλαδίου": {
       "latitude": 38.892459,
@@ -15086,7 +15086,7 @@
       "search_name": "Σταθμός Λειανοκλαδίου",
       "primary_alias": "stathmos-leianokladioy",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρός": {
       "latitude": 38.901253,
@@ -15095,7 +15095,7 @@
       "search_name": "Σταυρός",
       "primary_alias": "lamia-stayros",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στίρφακα": {
       "latitude": 38.955527,
@@ -15104,7 +15104,7 @@
       "search_name": "Στίρφακα",
       "primary_alias": "stirfaka",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στυλίδα": {
       "latitude": 38.914362,
@@ -15113,7 +15113,7 @@
       "search_name": "Στυλίδα",
       "primary_alias": "stylida",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταράτσα Αφράτη": {
       "latitude": 38.926009,
@@ -15122,7 +15122,7 @@
       "search_name": "Ταράτσα Αφράτη",
       "primary_alias": "taratsa-afrati",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φραντζής": {
       "latitude": 38.849472,
@@ -15131,7 +15131,7 @@
       "search_name": "Φραντζής",
       "primary_alias": "frantzis",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αταλάντη": {
       "latitude": 38.653674,
@@ -15140,7 +15140,7 @@
       "search_name": "Αταλάντη",
       "primary_alias": "atalanti",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 38.895969,
@@ -15149,7 +15149,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "lamia-stathmos",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακρακώμη": {
       "latitude": 38.94178,
@@ -15158,7 +15158,7 @@
       "search_name": "Μακρακώμη",
       "primary_alias": "makrakomi",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατύστομο": {
       "latitude": 38.970251,
@@ -15167,7 +15167,7 @@
       "search_name": "Πλατύστομο",
       "primary_alias": "platystomo",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχάνι": {
       "latitude": 38.972357,
@@ -15176,7 +15176,7 @@
       "search_name": "Αρχάνι",
       "primary_alias": "arhani",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακρή": {
       "latitude": 38.947054,
@@ -15185,7 +15185,7 @@
       "search_name": "Μακρή",
       "primary_alias": "lamia-makri",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστρί": {
       "latitude": 38.945979,
@@ -15194,7 +15194,7 @@
       "search_name": "Καστρί",
       "primary_alias": "lamia-kastri",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσοποταμία": {
       "latitude": 38.924262,
@@ -15203,7 +15203,7 @@
       "search_name": "Μεσοποταμία",
       "primary_alias": "lamia-mesopotamia",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Καλλιθέα": {
       "latitude": 38.90255,
@@ -15212,7 +15212,7 @@
       "search_name": "Κάτω Καλλιθέα",
       "primary_alias": "kato-kallithea",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σώστης": {
       "latitude": 38.895977,
@@ -15221,7 +15221,7 @@
       "search_name": "Άγιος Σώστης",
       "primary_alias": "lamia-agios-sostis",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπερχειάδα": {
       "latitude": 38.908052,
@@ -15230,7 +15230,7 @@
       "search_name": "Σπερχειάδα",
       "primary_alias": "sperheiada",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φτέρη": {
       "latitude": 38.900412,
@@ -15239,7 +15239,7 @@
       "search_name": "Φτέρη",
       "primary_alias": "lamia-fteri",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιοβράχα": {
       "latitude": 38.898794,
@@ -15248,7 +15248,7 @@
       "search_name": "Παλαιοβράχα",
       "primary_alias": "palaiovraha",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βίτολη": {
       "latitude": 38.938164,
@@ -15257,7 +15257,7 @@
       "search_name": "Βίτολη",
       "primary_alias": "vitoli",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γραμμένη": {
       "latitude": 38.964717,
@@ -15266,7 +15266,7 @@
       "search_name": "Γραμμένη",
       "primary_alias": "grammeni",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσούκκα": {
       "latitude": 38.956138,
@@ -15275,7 +15275,7 @@
       "search_name": "Τσούκκα",
       "primary_alias": "tsoykka",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμένα Βούρλα": {
       "latitude": 38.777333,
@@ -15284,7 +15284,7 @@
       "search_name": "Καμένα Βούρλα",
       "primary_alias": "lamia-kamena-voyrla",
       "city": "Λαμία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Αγίας Μαρίνας": {
       "latitude": 38.895702,
@@ -15293,8 +15293,8 @@
       "search_name": "Παραλία Αγίας Μαρίνας",
       "primary_alias": "lamia-paralia-agias-marinas",
       "city": "Λαμία",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Λάρισα": {
     "Λάρισα": {
@@ -15304,7 +15304,7 @@
       "search_name": "Λάρισα",
       "primary_alias": "larisa",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ά Βιομηχανική Περιοχή": {
       "latitude": 39.68248,
@@ -15313,7 +15313,7 @@
       "search_name": "Ά Βιομηχανική Περιοχή",
       "primary_alias": "a-viomihaniki-periohi",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αβέρωφ": {
       "latitude": 39.606346,
@@ -15322,7 +15322,7 @@
       "search_name": "Αβέρωφ",
       "primary_alias": "averof",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα-Καλύβες": {
       "latitude": 39.65636,
@@ -15331,7 +15331,7 @@
       "search_name": "Αγία Μαρίνα-Καλύβες",
       "primary_alias": "agia-marina-kalyves",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή-Μεζούρλο": {
       "latitude": 39.61023,
@@ -15340,7 +15340,7 @@
       "search_name": "Αγία Παρασκευή-Μεζούρλο",
       "primary_alias": "agia-paraskeyi-mezoyrlo",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Σαράντα": {
       "latitude": 39.642011,
@@ -15349,7 +15349,7 @@
       "search_name": "Άγιοι Σαράντα",
       "primary_alias": "agioi-saranta",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αθανάσιος": {
       "latitude": 39.636528,
@@ -15358,7 +15358,7 @@
       "search_name": "Άγιος Αθανάσιος",
       "primary_alias": "larisa-agios-athanasios",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αντώνιος": {
       "latitude": 39.634078,
@@ -15367,7 +15367,7 @@
       "search_name": "Άγιος Αντώνιος",
       "primary_alias": "agios-antonios",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αχίλλειος": {
       "latitude": 39.640857,
@@ -15376,7 +15376,7 @@
       "search_name": "Άγιος Αχίλλειος",
       "primary_alias": "agios-ahilleios",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 39.632738,
@@ -15385,7 +15385,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "larisa-agios-georgios",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Θωμάς": {
       "latitude": 39.631729,
@@ -15394,7 +15394,7 @@
       "search_name": "Άγιος Θωμάς",
       "primary_alias": "larisa-agios-thomas",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κωνσταντίνος": {
       "latitude": 39.636711,
@@ -15403,7 +15403,7 @@
       "search_name": "Άγιος Κωνσταντίνος",
       "primary_alias": "larisa-agios-konstantinos",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 39.634248,
@@ -15412,7 +15412,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "larisa-agios-nikolaos",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλκαζάρ": {
       "latitude": 39.648154,
@@ -15421,7 +15421,7 @@
       "search_name": "Αλκαζάρ",
       "primary_alias": "alkazar",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκηποι": {
       "latitude": 39.645853,
@@ -15430,7 +15430,7 @@
       "search_name": "Αμπελόκηποι",
       "primary_alias": "larisa-ampelokipoi",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανατολή": {
       "latitude": 39.630065,
@@ -15439,7 +15439,7 @@
       "search_name": "Ανατολή",
       "primary_alias": "larisa-anatoli",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανατολική Βιομηχανική περιοχή": {
       "latitude": 39.625839,
@@ -15448,7 +15448,7 @@
       "search_name": "Ανατολική Βιομηχανική περιοχή",
       "primary_alias": "anatoliki-viomihaniki-periohi",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθούπολη": {
       "latitude": 39.624843,
@@ -15457,7 +15457,7 @@
       "search_name": "Ανθούπολη",
       "primary_alias": "larisa-anthoypoli",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλήνη": {
       "latitude": 39.623194,
@@ -15466,7 +15466,7 @@
       "search_name": "Γαλήνη",
       "primary_alias": "larisa-galini",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιάννουλη": {
       "latitude": 39.665207,
@@ -15475,7 +15475,7 @@
       "search_name": "Γιάννουλη",
       "primary_alias": "giannoyli",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλαύκη": {
       "latitude": 39.611923,
@@ -15484,7 +15484,7 @@
       "search_name": "Γλαύκη",
       "primary_alias": "glayki",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δασοχώρι": {
       "latitude": 39.691996,
@@ -15493,7 +15493,7 @@
       "search_name": "Δασοχώρι",
       "primary_alias": "dasohori",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δένδρα": {
       "latitude": 39.688595,
@@ -15502,7 +15502,7 @@
       "search_name": "Δένδρα",
       "primary_alias": "dendra",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηπειρώτικα": {
       "latitude": 39.619927,
@@ -15511,7 +15511,7 @@
       "search_name": "Ηπειρώτικα",
       "primary_alias": "larisa-ipeirotika",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιπποκράτης": {
       "latitude": 39.643865,
@@ -15520,7 +15520,7 @@
       "search_name": "Ιπποκράτης",
       "primary_alias": "ippokratis",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάμπος-Κτήματα": {
       "latitude": 39.609212,
@@ -15529,7 +15529,7 @@
       "search_name": "Κάμπος-Κτήματα",
       "primary_alias": "kampos-ktimata",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 39.637733,
@@ -15538,7 +15538,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "larisa",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουλούρι": {
       "latitude": 39.704122,
@@ -15547,7 +15547,7 @@
       "search_name": "Κουλούρι",
       "primary_alias": "koyloyri",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαχανόκηποι": {
       "latitude": 39.639138,
@@ -15556,7 +15556,7 @@
       "search_name": "Λαχανόκηποι",
       "primary_alias": "larisa-lahanokipoi",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιβαδάκι": {
       "latitude": 39.625547,
@@ -15565,7 +15565,7 @@
       "search_name": "Λιβαδάκι",
       "primary_alias": "livadaki",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελισσοχώρι": {
       "latitude": 39.63111,
@@ -15574,7 +15574,7 @@
       "search_name": "Μελισσοχώρι",
       "primary_alias": "larisa-melissohori",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Εκάλη-Λοφάκι": {
       "latitude": 39.606547,
@@ -15583,7 +15583,7 @@
       "search_name": "Νέα Εκάλη-Λοφάκι",
       "primary_alias": "nea-ekali-lofaki",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Πολιτεία": {
       "latitude": 39.61623,
@@ -15592,7 +15592,7 @@
       "search_name": "Νέα Πολιτεία",
       "primary_alias": "nea-politeia",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Σμύρνη-Καμίνια": {
       "latitude": 39.648671,
@@ -15601,7 +15601,7 @@
       "search_name": "Νέα Σμύρνη-Καμίνια",
       "primary_alias": "nea-smyrni-kaminia",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 39.623077,
@@ -15610,7 +15610,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "larisa-neapoli",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεράιδα": {
       "latitude": 39.627839,
@@ -15619,7 +15619,7 @@
       "search_name": "Νεράιδα",
       "primary_alias": "neraida",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νίκαια": {
       "latitude": 39.563931,
@@ -15628,7 +15628,7 @@
       "search_name": "Νίκαια",
       "primary_alias": "larisa-nikaia",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νότια Βιομηχανική περιοχή": {
       "latitude": 39.594976,
@@ -15637,7 +15637,7 @@
       "search_name": "Νότια Βιομηχανική περιοχή",
       "primary_alias": "notia-viomihaniki-periohi",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ομορφοχώρι": {
       "latitude": 39.675287,
@@ -15646,7 +15646,7 @@
       "search_name": "Ομορφοχώρι",
       "primary_alias": "omorfohori",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παπασταύρου": {
       "latitude": 39.65032,
@@ -15655,7 +15655,7 @@
       "search_name": "Παπασταύρου",
       "primary_alias": "papastayroy",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατύκαμπος": {
       "latitude": 39.620615,
@@ -15664,7 +15664,7 @@
       "search_name": "Πλατύκαμπος",
       "primary_alias": "platykampos",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποταμόπολη": {
       "latitude": 39.634393,
@@ -15673,7 +15673,7 @@
       "search_name": "Ποταμόπολη",
       "primary_alias": "potamopoli",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυροβολικά-Φάρος": {
       "latitude": 39.617194,
@@ -15682,7 +15682,7 @@
       "search_name": "Πυροβολικά-Φάρος",
       "primary_alias": "pyrovolika-faros",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 39.630641,
@@ -15691,7 +15691,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "larisa-stathmos",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τερψιθέα": {
       "latitude": 39.620491,
@@ -15700,7 +15700,7 @@
       "search_name": "Τερψιθέα",
       "primary_alias": "terpsithea",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τούμπα": {
       "latitude": 39.628053,
@@ -15709,7 +15709,7 @@
       "search_name": "Τούμπα",
       "primary_alias": "larisa-toympa",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φαλάνη": {
       "latitude": 39.720051,
@@ -15718,7 +15718,7 @@
       "search_name": "Φαλάνη",
       "primary_alias": "falani",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλιππούπολη": {
       "latitude": 39.631361,
@@ -15727,7 +15727,7 @@
       "search_name": "Φιλιππούπολη",
       "primary_alias": "filippoypoli",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χάλκη": {
       "latitude": 39.568238,
@@ -15736,7 +15736,7 @@
       "search_name": "Χάλκη",
       "primary_alias": "halki",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαραυγή": {
       "latitude": 39.625378,
@@ -15745,7 +15745,7 @@
       "search_name": "Χαραυγή",
       "primary_alias": "haraygi",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΤΕΙ": {
       "latitude": 39.628597,
@@ -15754,7 +15754,7 @@
       "search_name": "ΤΕΙ",
       "primary_alias": "larisa-tei",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έξι δρόμοι": {
       "latitude": 39.637332,
@@ -15763,7 +15763,7 @@
       "search_name": "Έξι δρόμοι",
       "primary_alias": "exi-dromoi",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγιά": {
       "latitude": 39.718244,
@@ -15772,7 +15772,7 @@
       "search_name": "Αγιά",
       "primary_alias": "agia",
       "city": "Λάρισα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βελίκα": {
       "latitude": 39.749893,
@@ -15781,8 +15781,8 @@
       "search_name": "Βελίκα",
       "primary_alias": "velika",
       "city": "Λάρισα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Λαύριο": {
     "Λαύριο": {
@@ -15792,7 +15792,7 @@
       "search_name": "Λαύριο",
       "primary_alias": "layrio",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 37.715478,
@@ -15801,7 +15801,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "layrio-agia-paraskeyi",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ανδρέας": {
       "latitude": 37.713675,
@@ -15810,7 +15810,7 @@
       "search_name": "Άγιος Ανδρέας",
       "primary_alias": "layrio-agios-andreas",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Όρια": {
       "latitude": 37.717028,
@@ -15819,7 +15819,7 @@
       "search_name": "Άνω Όρια",
       "primary_alias": "ano-oria",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δεξαμενή": {
       "latitude": 37.705618,
@@ -15828,7 +15828,7 @@
       "search_name": "Δεξαμενή",
       "primary_alias": "layrio-dexameni",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες": {
       "latitude": 37.717798,
@@ -15837,7 +15837,7 @@
       "search_name": "Εργατικές Κατοικίες",
       "primary_alias": "layrio-ergatikes-katoikies",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θηραίικα Σαντοριναίικα": {
       "latitude": 37.718473,
@@ -15846,7 +15846,7 @@
       "search_name": "Θηραίικα Σαντοριναίικα",
       "primary_alias": "thiraiika-santorinaiika",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 37.710016,
@@ -15855,7 +15855,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "layrio-neapoli",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νυχτοχώρι": {
       "latitude": 37.718397,
@@ -15864,7 +15864,7 @@
       "search_name": "Νυχτοχώρι",
       "primary_alias": "nyhtohori",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρουμανικά": {
       "latitude": 37.715546,
@@ -15873,7 +15873,7 @@
       "search_name": "Ρουμανικά",
       "primary_alias": "roymanika",
       "city": "Λαύριο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φοινικόδασος": {
       "latitude": 37.720185,
@@ -15882,8 +15882,8 @@
       "search_name": "Φοινικόδασος",
       "primary_alias": "foinikodasos",
       "city": "Λαύριο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Λέρος": {
     "Λέρος": {
@@ -15893,7 +15893,7 @@
       "search_name": "Λέρος",
       "primary_alias": "leros",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 37.15413,
@@ -15902,7 +15902,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "leros-agia-marina",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άλινδα": {
       "latitude": 37.164107,
@@ -15911,7 +15911,7 @@
       "search_name": "Άλινδα",
       "primary_alias": "alinda",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γούρνα": {
       "latitude": 37.152068,
@@ -15920,7 +15920,7 @@
       "search_name": "Γούρνα",
       "primary_alias": "goyrna",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρυμώνας": {
       "latitude": 37.140368,
@@ -15929,7 +15929,7 @@
       "search_name": "Δρυμώνας",
       "primary_alias": "drymonas",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρα": {
       "latitude": 37.161786,
@@ -15938,7 +15938,7 @@
       "search_name": "Καμάρα",
       "primary_alias": "kamara",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λακκί": {
       "latitude": 37.134086,
@@ -15947,7 +15947,7 @@
       "search_name": "Λακκί",
       "primary_alias": "leros-lakki",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηρόκαμπος": {
       "latitude": 37.112709,
@@ -15956,7 +15956,7 @@
       "search_name": "Ξηρόκαμπος",
       "primary_alias": "leros-xirokampos",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλάκες": {
       "latitude": 37.142512,
@@ -15965,7 +15965,7 @@
       "search_name": "Πλάκες",
       "primary_alias": "plakes",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τεμένια": {
       "latitude": 37.127622,
@@ -15974,7 +15974,7 @@
       "search_name": "Τεμένια",
       "primary_alias": "temenia",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεπίδα": {
       "latitude": 37.118112,
@@ -15983,7 +15983,7 @@
       "search_name": "Λεπίδα",
       "primary_alias": "lepida",
       "city": "Λέρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόκκαλη": {
       "latitude": 37.156673,
@@ -15992,8 +15992,8 @@
       "search_name": "Κόκκαλη",
       "primary_alias": "kokkali",
       "city": "Λέρος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Λέσβος": {
     "Νεάπολη": {
@@ -16003,7 +16003,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "lesvos-neapoli",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυτιλήνη": {
       "latitude": 39.099144,
@@ -16012,7 +16012,7 @@
       "search_name": "Μυτιλήνη",
       "primary_alias": "lesvos",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 39.063636,
@@ -16021,7 +16021,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "lesvos-agia-marina",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 39.247859,
@@ -16030,7 +16030,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "lesvos-agia-paraskeyi",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγιάσος": {
       "latitude": 39.083262,
@@ -16039,7 +16039,7 @@
       "search_name": "Αγιάσος",
       "primary_alias": "agiasos",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ισίδωρος": {
       "latitude": 38.968991,
@@ -16048,7 +16048,7 @@
       "search_name": "Άγιος Ισίδωρος",
       "primary_alias": "agios-isidoros",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγρα": {
       "latitude": 39.158053,
@@ -16057,7 +16057,7 @@
       "search_name": "Άγρα",
       "primary_alias": "agra",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άναξος Σκουτάρου": {
       "latitude": 39.316961,
@@ -16066,7 +16066,7 @@
       "search_name": "Άναξος Σκουτάρου",
       "primary_alias": "anaxos-skoytaroy",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άντισσα": {
       "latitude": 39.233721,
@@ -16075,7 +16075,7 @@
       "search_name": "Άντισσα",
       "primary_alias": "antissa",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρίσβη": {
       "latitude": 39.230172,
@@ -16084,7 +16084,7 @@
       "search_name": "Αρίσβη",
       "primary_alias": "arisvi",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αφάλωνας": {
       "latitude": 39.147633,
@@ -16093,7 +16093,7 @@
       "search_name": "Αφάλωνας",
       "primary_alias": "afalonas",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαρειά": {
       "latitude": 39.0771,
@@ -16102,7 +16102,7 @@
       "search_name": "Βαρειά",
       "primary_alias": "vareia",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλικά": {
       "latitude": 39.102897,
@@ -16111,7 +16111,7 @@
       "search_name": "Βασιλικά",
       "primary_alias": "vasilika",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βατερά": {
       "latitude": 39.020653,
@@ -16120,7 +16120,7 @@
       "search_name": "Βατερά",
       "primary_alias": "vatera",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βρίσα": {
       "latitude": 39.040074,
@@ -16129,7 +16129,7 @@
       "search_name": "Βρίσα",
       "primary_alias": "vrisa",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δάφια": {
       "latitude": 39.241391,
@@ -16138,7 +16138,7 @@
       "search_name": "Δάφια",
       "primary_alias": "dafia",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ερεσός": {
       "latitude": 39.169749,
@@ -16147,7 +16147,7 @@
       "search_name": "Ερεσός",
       "primary_alias": "eresos",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευρειακή": {
       "latitude": 39.062041,
@@ -16156,7 +16156,7 @@
       "search_name": "Ευρειακή",
       "primary_alias": "eyreiaki",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ίππειο": {
       "latitude": 39.11629,
@@ -16165,7 +16165,7 @@
       "search_name": "Ίππειο",
       "primary_alias": "ippeio",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλονή": {
       "latitude": 39.233045,
@@ -16174,7 +16174,7 @@
       "search_name": "Καλλονή",
       "primary_alias": "kalloni",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτρά": {
       "latitude": 39.056747,
@@ -16183,7 +16183,7 @@
       "search_name": "Λουτρά",
       "primary_alias": "loytra",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτρόπολη Θέρμης": {
       "latitude": 39.180489,
@@ -16192,7 +16192,7 @@
       "search_name": "Λουτρόπολη Θέρμης",
       "primary_alias": "loytropoli-thermis",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μανταμάδος": {
       "latitude": 39.310725,
@@ -16201,7 +16201,7 @@
       "search_name": "Μανταμάδος",
       "primary_alias": "mantamados",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσαγρός": {
       "latitude": 39.036366,
@@ -16210,7 +16210,7 @@
       "search_name": "Μεσαγρός",
       "primary_alias": "lesvos-mesagros",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσότοπος": {
       "latitude": 39.131829,
@@ -16219,7 +16219,7 @@
       "search_name": "Μεσότοπος",
       "primary_alias": "mesotopos",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μήθυμνα": {
       "latitude": 39.367482,
@@ -16228,7 +16228,7 @@
       "search_name": "Μήθυμνα",
       "primary_alias": "mithymna",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μιστεγνά": {
       "latitude": 39.211717,
@@ -16237,7 +16237,7 @@
       "search_name": "Μιστεγνά",
       "primary_alias": "mistegna",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μόρια": {
       "latitude": 39.132443,
@@ -16246,7 +16246,7 @@
       "search_name": "Μόρια",
       "primary_alias": "moria",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέες Κυδωνιές": {
       "latitude": 39.227651,
@@ -16255,7 +16255,7 @@
       "search_name": "Νέες Κυδωνιές",
       "primary_alias": "nees-kydonies",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιόκηπος": {
       "latitude": 39.055378,
@@ -16264,7 +16264,7 @@
       "search_name": "Παλαιόκηπος",
       "primary_alias": "palaiokipos",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάμφιλα": {
       "latitude": 39.156783,
@@ -16273,7 +16273,7 @@
       "search_name": "Πάμφιλα",
       "primary_alias": "pamfila",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγιούδα": {
       "latitude": 39.14774,
@@ -16282,7 +16282,7 @@
       "search_name": "Παναγιούδα",
       "primary_alias": "panagioyda",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παππάδος": {
       "latitude": 39.037844,
@@ -16291,7 +16291,7 @@
       "search_name": "Παππάδος",
       "primary_alias": "pappados",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παράκοιλα": {
       "latitude": 39.169475,
@@ -16300,7 +16300,7 @@
       "search_name": "Παράκοιλα",
       "primary_alias": "parakoila",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Θέρμης": {
       "latitude": 39.181187,
@@ -16309,7 +16309,7 @@
       "search_name": "Παραλία Θέρμης",
       "primary_alias": "paralia-thermis",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέραμα": {
       "latitude": 39.041809,
@@ -16318,7 +16318,7 @@
       "search_name": "Πέραμα",
       "primary_alias": "lesvos-perama",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέτρα": {
       "latitude": 39.326811,
@@ -16327,7 +16327,7 @@
       "search_name": "Πέτρα",
       "primary_alias": "lesvos-petra",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλακάδος": {
       "latitude": 39.044598,
@@ -16336,7 +16336,7 @@
       "search_name": "Πλακάδος",
       "primary_alias": "plakados",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλωμάρι": {
       "latitude": 38.974993,
@@ -16345,7 +16345,7 @@
       "search_name": "Πλωμάρι",
       "primary_alias": "plomari",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολιχνίτος": {
       "latitude": 39.079851,
@@ -16354,7 +16354,7 @@
       "search_name": "Πολιχνίτος",
       "primary_alias": "polihnitos",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πύργοι Θέρμης": {
       "latitude": 39.17419,
@@ -16363,7 +16363,7 @@
       "search_name": "Πύργοι Θέρμης",
       "primary_alias": "pyrgoi-thermis",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σίγρι": {
       "latitude": 39.211581,
@@ -16372,7 +16372,7 @@
       "search_name": "Σίγρι",
       "primary_alias": "sigri",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Ερεσού": {
       "latitude": 39.137837,
@@ -16381,7 +16381,7 @@
       "search_name": "Σκάλα Ερεσού",
       "primary_alias": "skala-eresoy",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Καλλονής": {
       "latitude": 39.207245,
@@ -16390,7 +16390,7 @@
       "search_name": "Σκάλα Καλλονής",
       "primary_alias": "skala-kallonis",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Λουτρών": {
       "latitude": 39.045493,
@@ -16399,7 +16399,7 @@
       "search_name": "Σκάλα Λουτρών",
       "primary_alias": "skala-loytron",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκόπελος": {
       "latitude": 39.029344,
@@ -16408,7 +16408,7 @@
       "search_name": "Σκόπελος",
       "primary_alias": "lesvos-skopelos",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκουτάρος": {
       "latitude": 39.291828,
@@ -16417,7 +16417,7 @@
       "search_name": "Σκουτάρος",
       "primary_alias": "skoytaros",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στύψη": {
       "latitude": 39.310891,
@@ -16426,7 +16426,7 @@
       "search_name": "Στύψη",
       "primary_alias": "stypsi",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συκούντα": {
       "latitude": 39.110332,
@@ -16435,7 +16435,7 @@
       "search_name": "Συκούντα",
       "primary_alias": "sykoynta",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταβάρι": {
       "latitude": 39.109636,
@@ -16444,7 +16444,7 @@
       "search_name": "Ταβάρι",
       "primary_alias": "tavari",
       "city": "Λέσβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταξιάρχες": {
       "latitude": 39.068935,
@@ -16453,8 +16453,8 @@
       "search_name": "Ταξιάρχες",
       "primary_alias": "taxiarhes",
       "city": "Λέσβος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Λευκάδα": {
     "Λευκάδα": {
@@ -16464,7 +16464,7 @@
       "search_name": "Λευκάδα",
       "primary_alias": "leykada",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικήτας": {
       "latitude": 38.7886,
@@ -16473,7 +16473,7 @@
       "search_name": "Άγιος Νικήτας",
       "primary_alias": "agios-nikitas",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Πέτρος": {
       "latitude": 38.665383,
@@ -16482,7 +16482,7 @@
       "search_name": "Άγιος Πέτρος",
       "primary_alias": "agios-petros",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Χριστόφορος": {
       "latitude": 38.701594,
@@ -16491,7 +16491,7 @@
       "search_name": "Άγιος Χριστόφορος",
       "primary_alias": "leykada-agios-hristoforos",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αθάνι": {
       "latitude": 38.664604,
@@ -16500,7 +16500,7 @@
       "search_name": "Αθάνι",
       "primary_alias": "athani",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απόλπαινα": {
       "latitude": 38.817491,
@@ -16509,7 +16509,7 @@
       "search_name": "Απόλπαινα",
       "primary_alias": "apolpaina",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασπρογερακάτα": {
       "latitude": 38.783099,
@@ -16518,7 +16518,7 @@
       "search_name": "Ασπρογερακάτα",
       "primary_alias": "asprogerakata",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλική": {
       "latitude": 38.630655,
@@ -16527,7 +16527,7 @@
       "search_name": "Βασιλική",
       "primary_alias": "leykada-vasiliki",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλυχό": {
       "latitude": 38.683005,
@@ -16536,7 +16536,7 @@
       "search_name": "Βλυχό",
       "primary_alias": "vlyho",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βούρνικας": {
       "latitude": 38.668066,
@@ -16545,7 +16545,7 @@
       "search_name": "Βούρνικας",
       "primary_alias": "voyrnikas",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επίσκοπος": {
       "latitude": 38.770788,
@@ -16554,7 +16554,7 @@
       "search_name": "Επίσκοπος",
       "primary_alias": "episkopos",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εύγηρος": {
       "latitude": 38.620693,
@@ -16563,7 +16563,7 @@
       "search_name": "Εύγηρος",
       "primary_alias": "eygiros",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάβαλλος": {
       "latitude": 38.787669,
@@ -16572,7 +16572,7 @@
       "search_name": "Κάβαλλος",
       "primary_alias": "kavallos",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμίτσι": {
       "latitude": 38.757012,
@@ -16581,7 +16581,7 @@
       "search_name": "Καλαμίτσι",
       "primary_alias": "leykada-kalamitsi",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιγόνι": {
       "latitude": 38.819573,
@@ -16590,7 +16590,7 @@
       "search_name": "Καλλιγόνι",
       "primary_alias": "kalligoni",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 38.703024,
@@ -16599,7 +16599,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "leykada-kallithea",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καριώτες": {
       "latitude": 38.800923,
@@ -16608,7 +16608,7 @@
       "search_name": "Καριώτες",
       "primary_alias": "kariotes",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρυά": {
       "latitude": 38.759936,
@@ -16617,7 +16617,7 @@
       "search_name": "Καρυά",
       "primary_alias": "karya",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατούνα": {
       "latitude": 38.780905,
@@ -16626,7 +16626,7 @@
       "search_name": "Κατούνα",
       "primary_alias": "katoyna",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατωχώρι": {
       "latitude": 38.666297,
@@ -16635,7 +16635,7 @@
       "search_name": "Κατωχώρι",
       "primary_alias": "katohori",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντάραινα": {
       "latitude": 38.628588,
@@ -16644,7 +16644,7 @@
       "search_name": "Κοντάραινα",
       "primary_alias": "kontaraina",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαζαράτα": {
       "latitude": 38.778769,
@@ -16653,7 +16653,7 @@
       "search_name": "Λαζαράτα",
       "primary_alias": "lazarata",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυγιά": {
       "latitude": 38.791161,
@@ -16662,7 +16662,7 @@
       "search_name": "Λυγιά",
       "primary_alias": "lygia",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαραντοχώρι": {
       "latitude": 38.629925,
@@ -16671,7 +16671,7 @@
       "search_name": "Μαραντοχώρι",
       "primary_alias": "marantohori",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νικιάνα": {
       "latitude": 38.757519,
@@ -16680,7 +16680,7 @@
       "search_name": "Νικιάνα",
       "primary_alias": "nikiana",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νυδρί": {
       "latitude": 38.709688,
@@ -16689,7 +16689,7 @@
       "search_name": "Νυδρί",
       "primary_alias": "nydri",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιγιάλι": {
       "latitude": 38.719808,
@@ -16698,7 +16698,7 @@
       "search_name": "Περιγιάλι",
       "primary_alias": "leykada-perigiali",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πινακοχώρι": {
       "latitude": 38.775613,
@@ -16707,7 +16707,7 @@
       "search_name": "Πινακοχώρι",
       "primary_alias": "pinakohori",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σύβοτα": {
       "latitude": 38.623656,
@@ -16716,7 +16716,7 @@
       "search_name": "Σύβοτα",
       "primary_alias": "syvota",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σύβρος": {
       "latitude": 38.669977,
@@ -16725,7 +16725,7 @@
       "search_name": "Σύβρος",
       "primary_alias": "syvros",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσουκαλάδες": {
       "latitude": 38.821326,
@@ -16734,7 +16734,7 @@
       "search_name": "Τσουκαλάδες",
       "primary_alias": "tsoykalades",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φρύνι": {
       "latitude": 38.828242,
@@ -16743,7 +16743,7 @@
       "search_name": "Φρύνι",
       "primary_alias": "fryni",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φτερνό": {
       "latitude": 38.656328,
@@ -16752,7 +16752,7 @@
       "search_name": "Φτερνό",
       "primary_alias": "fterno",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαραδιάτικα": {
       "latitude": 38.685914,
@@ -16761,7 +16761,7 @@
       "search_name": "Χαραδιάτικα",
       "primary_alias": "haradiatika",
       "city": "Λευκάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάλαμος": {
       "latitude": 38.621608,
@@ -16770,8 +16770,8 @@
       "search_name": "Κάλαμος",
       "primary_alias": "leykada-kalamos",
       "city": "Λευκάδα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Λήμνος": {
     "Λήμνος": {
@@ -16781,7 +16781,7 @@
       "search_name": "Λήμνος",
       "primary_alias": "limnos",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Σοφία": {
       "latitude": 39.83003,
@@ -16790,7 +16790,7 @@
       "search_name": "Αγία Σοφία",
       "primary_alias": "limnos-agia-sofia",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 39.911396,
@@ -16799,7 +16799,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "limnos-agios-dimitrios",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 39.92609,
@@ -16808,7 +16808,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "limnos-agios-ioannis",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγκαρυώνες": {
       "latitude": 39.895939,
@@ -16817,7 +16817,7 @@
       "search_name": "Αγκαρυώνες",
       "primary_alias": "agkaryones",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ατσική": {
       "latitude": 39.945754,
@@ -16826,7 +16826,7 @@
       "search_name": "Ατσική",
       "primary_alias": "atsiki",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάρος": {
       "latitude": 39.929566,
@@ -16835,7 +16835,7 @@
       "search_name": "Βάρος",
       "primary_alias": "varos",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θάνος": {
       "latitude": 39.854738,
@@ -16844,7 +16844,7 @@
       "search_name": "Θάνος",
       "primary_alias": "thanos",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 39.902308,
@@ -16853,7 +16853,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "limnos-kallithea",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιόπη": {
       "latitude": 39.920296,
@@ -16862,7 +16862,7 @@
       "search_name": "Καλλιόπη",
       "primary_alias": "kalliopi",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμίνια": {
       "latitude": 39.863511,
@@ -16871,7 +16871,7 @@
       "search_name": "Καμίνια",
       "primary_alias": "limnos-kaminia",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρπάσι": {
       "latitude": 39.933828,
@@ -16880,7 +16880,7 @@
       "search_name": "Καρπάσι",
       "primary_alias": "karpasi",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάσπακας": {
       "latitude": 39.913705,
@@ -16889,7 +16889,7 @@
       "search_name": "Κάσπακας",
       "primary_alias": "kaspakas",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντιάς": {
       "latitude": 39.864983,
@@ -16898,7 +16898,7 @@
       "search_name": "Κοντιάς",
       "primary_alias": "kontias",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντοπούλι": {
       "latitude": 39.927562,
@@ -16907,7 +16907,7 @@
       "search_name": "Κοντοπούλι",
       "primary_alias": "kontopoyli",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόρνος": {
       "latitude": 39.917633,
@@ -16916,7 +16916,7 @@
       "search_name": "Κόρνος",
       "primary_alias": "kornos",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιβαδοχώρι": {
       "latitude": 39.909269,
@@ -16925,7 +16925,7 @@
       "search_name": "Λιβαδοχώρι",
       "primary_alias": "livadohori",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λύχνα": {
       "latitude": 39.916128,
@@ -16934,7 +16934,7 @@
       "search_name": "Λύχνα",
       "primary_alias": "lyhna",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μούδρος": {
       "latitude": 39.874879,
@@ -16943,7 +16943,7 @@
       "search_name": "Μούδρος",
       "primary_alias": "moydros",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μύρινα": {
       "latitude": 39.87919,
@@ -16952,7 +16952,7 @@
       "search_name": "Μύρινα",
       "primary_alias": "limnos-myrina",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Κούταλη": {
       "latitude": 39.893544,
@@ -16961,7 +16961,7 @@
       "search_name": "Νέα Κούταλη",
       "primary_alias": "nea-koytali",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγία": {
       "latitude": 39.980913,
@@ -16970,7 +16970,7 @@
       "search_name": "Παναγία",
       "primary_alias": "limnos-panagia",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλάκα": {
       "latitude": 40.00395,
@@ -16979,7 +16979,7 @@
       "search_name": "Πλάκα",
       "primary_alias": "limnos-plaka",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατύ": {
       "latitude": 39.860525,
@@ -16988,7 +16988,7 @@
       "search_name": "Πλατύ",
       "primary_alias": "limnos-platy",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πορτιανό": {
       "latitude": 39.882217,
@@ -16997,7 +16997,7 @@
       "search_name": "Πορτιανό",
       "primary_alias": "portiano",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρεπανίδι": {
       "latitude": 39.922813,
@@ -17006,7 +17006,7 @@
       "search_name": "Ρεπανίδι",
       "primary_alias": "repanidi",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρουσοπούλι": {
       "latitude": 39.882496,
@@ -17015,7 +17015,7 @@
       "search_name": "Ρουσοπούλι",
       "primary_alias": "roysopoyli",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρωμανό": {
       "latitude": 39.906069,
@@ -17024,7 +17024,7 @@
       "search_name": "Ρωμανό",
       "primary_alias": "romano",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκανδάλι": {
       "latitude": 39.804463,
@@ -17033,7 +17033,7 @@
       "search_name": "Σκανδάλι",
       "primary_alias": "skandali",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσιμάνδρια": {
       "latitude": 39.868324,
@@ -17042,7 +17042,7 @@
       "search_name": "Τσιμάνδρια",
       "primary_alias": "tsimandria",
       "city": "Λήμνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φισίνη": {
       "latitude": 39.81474,
@@ -17051,8 +17051,8 @@
       "search_name": "Φισίνη",
       "primary_alias": "fisini",
       "city": "Λήμνος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Λιβαδειά": {
     "Λιβαδειά": {
@@ -17062,7 +17062,7 @@
       "search_name": "Λιβαδειά",
       "primary_alias": "livadia",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάληψη": {
       "latitude": 38.409423,
@@ -17071,7 +17071,7 @@
       "search_name": "Ανάληψη",
       "primary_alias": "livadeia-analipsi",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ισώματα": {
       "latitude": 38.44287,
@@ -17080,7 +17080,7 @@
       "search_name": "Ισώματα",
       "primary_alias": "isomata",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καραμπατσαίικα": {
       "latitude": 38.439072,
@@ -17089,7 +17089,7 @@
       "search_name": "Καραμπατσαίικα",
       "primary_alias": "karampatsaiika",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαφύστιο": {
       "latitude": 38.430556,
@@ -17098,7 +17098,7 @@
       "search_name": "Λαφύστιο",
       "primary_alias": "lafystio",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ορχομενός": {
       "latitude": 38.492651,
@@ -17107,7 +17107,7 @@
       "search_name": "Ορχομενός",
       "primary_alias": "orhomenos",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περαχώρι": {
       "latitude": 38.455518,
@@ -17116,7 +17116,7 @@
       "search_name": "Περαχώρι",
       "primary_alias": "livadeia-perahori",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 38.468749,
@@ -17125,7 +17125,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "livadeia-stathmos",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τζιμαίικα": {
       "latitude": 38.455582,
@@ -17134,7 +17134,7 @@
       "search_name": "Τζιμαίικα",
       "primary_alias": "tzimaiika",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσουκαλάδες": {
       "latitude": 38.454245,
@@ -17143,7 +17143,7 @@
       "search_name": "Τσουκαλάδες",
       "primary_alias": "livadeia-tsoykalades",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 38.393861,
@@ -17152,7 +17152,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "livadeia-agios-georgios",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δομβραίνα": {
       "latitude": 38.253261,
@@ -17161,7 +17161,7 @@
       "search_name": "Δομβραίνα",
       "primary_alias": "livadeia-domvraina",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θίσβη": {
       "latitude": 38.257574,
@@ -17170,7 +17170,7 @@
       "search_name": "Θίσβη",
       "primary_alias": "livadeia-thisvi",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρόδρομος": {
       "latitude": 38.2583,
@@ -17179,7 +17179,7 @@
       "search_name": "Πρόδρομος",
       "primary_alias": "livadeia-prodromos",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία": {
       "latitude": 38.239229,
@@ -17188,7 +17188,7 @@
       "search_name": "Παραλία",
       "primary_alias": "livadeia-paralia",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Άννα": {
       "latitude": 38.316668,
@@ -17197,7 +17197,7 @@
       "search_name": "Αγία Άννα",
       "primary_alias": "livadeia-agia-anna",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλυκή": {
       "latitude": 38.195945,
@@ -17206,7 +17206,7 @@
       "search_name": "Αλυκή",
       "primary_alias": "livadeia-alyki",
       "city": "Λιβαδειά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 38.213415,
@@ -17215,8 +17215,8 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "livadeia-agios-nikolaos",
       "city": "Λιβαδειά",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μαγούλα": {
     "Μαγούλα": {
@@ -17226,7 +17226,7 @@
       "search_name": "Μαγούλα",
       "primary_alias": "magoyla",
       "city": "Μαγούλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Πόντος": {
       "latitude": 38.086852,
@@ -17235,7 +17235,7 @@
       "search_name": "Νέος Πόντος",
       "primary_alias": "neos-pontos",
       "city": "Μαγούλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάτημα": {
       "latitude": 38.070163,
@@ -17244,8 +17244,8 @@
       "search_name": "Πάτημα",
       "primary_alias": "patima",
       "city": "Μαγούλα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μαλακάσα": {
     "Μαλακάσα": {
@@ -17255,8 +17255,8 @@
       "search_name": "Μαλακάσα",
       "primary_alias": "malakasa",
       "city": "Μαλακάσα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μάνδρα": {
     "Μάνδρα": {
@@ -17266,7 +17266,7 @@
       "search_name": "Μάνδρα",
       "primary_alias": "mandra",
       "city": "Μάνδρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσαία Γέφυρα": {
       "latitude": 38.063274,
@@ -17275,8 +17275,8 @@
       "search_name": "Μεσαία Γέφυρα",
       "primary_alias": "mesaia-gefyra",
       "city": "Μάνδρα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μαραθώνας": {
     "Μαραθώνας": {
@@ -17286,7 +17286,7 @@
       "search_name": "Μαραθώνας",
       "primary_alias": "marathonas",
       "city": "Μαραθώνας",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Μαραθώνα": {
       "latitude": 38.120129,
@@ -17295,8 +17295,8 @@
       "search_name": "Παραλία Μαραθώνα",
       "primary_alias": "paralia-marathona",
       "city": "Μαραθώνας",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μαρκόπουλο": {
     "Μαρκόπουλο": {
@@ -17306,8 +17306,8 @@
       "search_name": "Μαρκόπουλο",
       "primary_alias": "markopoulo",
       "city": "Μαρκόπουλο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μεγαλόπολη": {
     "Μεγαλόπολη": {
@@ -17317,8 +17317,8 @@
       "search_name": "Μεγαλόπολη",
       "primary_alias": "megalopoli",
       "city": "Μεγαλόπολη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μέγαρα": {
     "Μέγαρα": {
@@ -17328,7 +17328,7 @@
       "search_name": "Μέγαρα",
       "primary_alias": "megara",
       "city": "Μέγαρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα": {
       "latitude": 37.975784,
@@ -17337,7 +17337,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "megara-agia-triada",
       "city": "Μέγαρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αιγειρούσες": {
       "latitude": 38.068496,
@@ -17346,7 +17346,7 @@
       "search_name": "Αιγειρούσες",
       "primary_alias": "aigeiroyses",
       "city": "Μέγαρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλεποχώρι": {
       "latitude": 38.083906,
@@ -17355,7 +17355,7 @@
       "search_name": "Αλεποχώρι",
       "primary_alias": "alepohori",
       "city": "Μέγαρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κινέτα": {
       "latitude": 37.969748,
@@ -17364,7 +17364,7 @@
       "search_name": "Κινέτα",
       "primary_alias": "kineta",
       "city": "Μέγαρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λάκκα Καλογήρου": {
       "latitude": 37.991948,
@@ -17373,7 +17373,7 @@
       "search_name": "Λάκκα Καλογήρου",
       "primary_alias": "lakka-kalogiroy",
       "city": "Μέγαρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάχη": {
       "latitude": 37.974413,
@@ -17382,7 +17382,7 @@
       "search_name": "Πάχη",
       "primary_alias": "pahi",
       "city": "Μέγαρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στίκας": {
       "latitude": 37.974715,
@@ -17391,8 +17391,8 @@
       "search_name": "Στίκας",
       "primary_alias": "stikas",
       "city": "Μέγαρα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μεσολόγγι": {
     "Μεσολόγγι": {
@@ -17402,7 +17402,7 @@
       "search_name": "Μεσολόγγι",
       "primary_alias": "mesologgi",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 38.382848,
@@ -17411,7 +17411,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "mesologgi-agios-dimitrios",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Θωμάς": {
       "latitude": 38.386997,
@@ -17420,7 +17420,7 @@
       "search_name": "Άγιος Θωμάς",
       "primary_alias": "mesologgi-agios-thomas",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγριλιά": {
       "latitude": 38.40016,
@@ -17429,7 +17429,7 @@
       "search_name": "Αγριλιά",
       "primary_alias": "mesologgi-agrilia",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αιτωλικό": {
       "latitude": 38.437089,
@@ -17438,7 +17438,7 @@
       "search_name": "Αιτωλικό",
       "primary_alias": "aitoliko",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανατολικά Αλίπεδα": {
       "latitude": 38.367483,
@@ -17447,7 +17447,7 @@
       "search_name": "Ανατολικά Αλίπεδα",
       "primary_alias": "anatolika-alipeda",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Ευηνοχώρι": {
       "latitude": 38.369966,
@@ -17456,7 +17456,7 @@
       "search_name": "Άνω Ευηνοχώρι",
       "primary_alias": "ano-eyinohori",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρβανιταίικα": {
       "latitude": 38.383384,
@@ -17465,7 +17465,7 @@
       "search_name": "Αρβανιταίικα",
       "primary_alias": "arvanitaiika",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βίγλα": {
       "latitude": 38.378436,
@@ -17474,7 +17474,7 @@
       "search_name": "Βίγλα",
       "primary_alias": "vigla",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλατάς": {
       "latitude": 38.355223,
@@ -17483,7 +17483,7 @@
       "search_name": "Γαλατάς",
       "primary_alias": "galatas",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευηνοχώρι": {
       "latitude": 38.359611,
@@ -17492,7 +17492,7 @@
       "search_name": "Ευηνοχώρι",
       "primary_alias": "eyinohori",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζέστη": {
       "latitude": 38.379792,
@@ -17501,7 +17501,7 @@
       "search_name": "Ζέστη",
       "primary_alias": "zesti",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατοχή": {
       "latitude": 38.412568,
@@ -17510,7 +17510,7 @@
       "search_name": "Κατοχή",
       "primary_alias": "katohi",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεφαλόβρυσο": {
       "latitude": 38.4599,
@@ -17519,7 +17519,7 @@
       "search_name": "Κεφαλόβρυσο",
       "primary_alias": "mesologgi-kefalovryso",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκώρη": {
       "latitude": 38.376065,
@@ -17528,7 +17528,7 @@
       "search_name": "Κοκώρη",
       "primary_alias": "kokori",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσόκαμπος": {
       "latitude": 38.397106,
@@ -17537,7 +17537,7 @@
       "search_name": "Μεσόκαμπος",
       "primary_alias": "mesokampos",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μετόχι": {
       "latitude": 38.391838,
@@ -17546,7 +17546,7 @@
       "search_name": "Μετόχι",
       "primary_alias": "metohi",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 38.408748,
@@ -17555,7 +17555,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "mesologgi-neohori",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Πόλη": {
       "latitude": 38.367368,
@@ -17564,7 +17564,7 @@
       "search_name": "Παλαιά Πόλη",
       "primary_alias": "mesologgi-palaia-poli",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιόστανη": {
       "latitude": 38.362782,
@@ -17573,7 +17573,7 @@
       "search_name": "Παλιόστανη",
       "primary_alias": "paliostani",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πατλαίικα": {
       "latitude": 38.389584,
@@ -17582,7 +17582,7 @@
       "search_name": "Πατλαίικα",
       "primary_alias": "patlaiika",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταμπακαριά": {
       "latitude": 38.372038,
@@ -17591,7 +17591,7 @@
       "search_name": "Ταμπακαριά",
       "primary_alias": "tampakaria",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρελάγκαθα": {
       "latitude": 38.392864,
@@ -17600,7 +17600,7 @@
       "search_name": "Τρελάγκαθα",
       "primary_alias": "trelagkatha",
       "city": "Μεσολόγγι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αστακός": {
       "latitude": 38.535537,
@@ -17609,8 +17609,8 @@
       "search_name": "Αστακός",
       "primary_alias": "mesologgi-astakos",
       "city": "Μεσολόγγι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μέτσοβο": {
     "Μέτσοβο": {
@@ -17620,7 +17620,7 @@
       "search_name": "Μέτσοβο",
       "primary_alias": "metsovo",
       "city": "Μέτσοβο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανήλιο": {
       "latitude": 39.759151,
@@ -17629,8 +17629,8 @@
       "search_name": "Ανήλιο",
       "primary_alias": "anilio",
       "city": "Μέτσοβο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μήλος": {
     "Μήλος": {
@@ -17640,7 +17640,7 @@
       "search_name": "Μήλος",
       "primary_alias": "milos",
       "city": "Μήλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αδάμας": {
       "latitude": 36.726515,
@@ -17649,7 +17649,7 @@
       "search_name": "Αδάμας",
       "primary_alias": "adamas",
       "city": "Μήλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέρα Τριοβάσαλος": {
       "latitude": 36.741171,
@@ -17658,7 +17658,7 @@
       "search_name": "Πέρα Τριοβάσαλος",
       "primary_alias": "pera-triovasalos",
       "city": "Μήλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλάκα": {
       "latitude": 36.743864,
@@ -17667,7 +17667,7 @@
       "search_name": "Πλάκα",
       "primary_alias": "milos-plaka",
       "city": "Μήλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολλώνια": {
       "latitude": 36.763143,
@@ -17676,7 +17676,7 @@
       "search_name": "Πολλώνια",
       "primary_alias": "pollonia",
       "city": "Μήλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τριοβάσαλος": {
       "latitude": 36.744606,
@@ -17685,7 +17685,7 @@
       "search_name": "Τριοβάσαλος",
       "primary_alias": "triovasalos",
       "city": "Μήλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρυπητή": {
       "latitude": 36.737907,
@@ -17694,7 +17694,7 @@
       "search_name": "Τρυπητή",
       "primary_alias": "trypiti",
       "city": "Μήλος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατηφόρα": {
       "latitude": 36.735181,
@@ -17703,8 +17703,8 @@
       "search_name": "Κατηφόρα",
       "primary_alias": "katifora",
       "city": "Μήλος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μονεμβασιά": {
     "Μονεμβασιά": {
@@ -17714,7 +17714,7 @@
       "search_name": "Μονεμβασιά",
       "primary_alias": "monemvasia",
       "city": "Μονεμβασιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Κυριακή": {
       "latitude": 36.701943,
@@ -17723,7 +17723,7 @@
       "search_name": "Αγία Κυριακή",
       "primary_alias": "monemvasia-agia-kyriaki",
       "city": "Μονεμβασιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 36.66493,
@@ -17732,7 +17732,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "monemvasia-agia-paraskeyi",
       "city": "Μονεμβασιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γέφυρα": {
       "latitude": 36.686995,
@@ -17741,8 +17741,8 @@
       "search_name": "Γέφυρα",
       "primary_alias": "monemvasia-gefyra",
       "city": "Μονεμβασιά",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Μύκονος": {
     "Μύκονος": {
@@ -17752,7 +17752,7 @@
       "search_name": "Μύκονος",
       "primary_alias": "mykonos",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης Διακόφτης": {
       "latitude": 37.422756,
@@ -17761,7 +17761,7 @@
       "search_name": "Άγιος Ιωάννης Διακόφτης",
       "primary_alias": "agios-ioannis-diakoftis",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Στέφανος": {
       "latitude": 37.470508,
@@ -17770,7 +17770,7 @@
       "search_name": "Άγιος Στέφανος",
       "primary_alias": "mykonos-agios-stefanos",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σώστης": {
       "latitude": 37.486838,
@@ -17779,7 +17779,7 @@
       "search_name": "Άγιος Σώστης",
       "primary_alias": "mykonos-agios-sostis",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Μέρα": {
       "latitude": 37.447397,
@@ -17788,7 +17788,7 @@
       "search_name": "Άνω Μέρα",
       "primary_alias": "ano-mera",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελιά": {
       "latitude": 37.424101,
@@ -17797,7 +17797,7 @@
       "search_name": "Ελιά",
       "primary_alias": "elia",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαφάτη": {
       "latitude": 37.44204,
@@ -17806,7 +17806,7 @@
       "search_name": "Καλαφάτη",
       "primary_alias": "kalafati",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κλούβας": {
       "latitude": 37.451913,
@@ -17815,7 +17815,7 @@
       "search_name": "Κλούβας",
       "primary_alias": "kloyvas",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ορνός": {
       "latitude": 37.424281,
@@ -17824,7 +17824,7 @@
       "search_name": "Ορνός",
       "primary_alias": "ornos",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάνορμος": {
       "latitude": 37.474827,
@@ -17833,7 +17833,7 @@
       "search_name": "Πάνορμος",
       "primary_alias": "mykonos-panormos",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατύς Γιαλός": {
       "latitude": 37.41556,
@@ -17842,7 +17842,7 @@
       "search_name": "Πλατύς Γιαλός",
       "primary_alias": "platys-gialos",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλιντρί": {
       "latitude": 37.423982,
@@ -17851,7 +17851,7 @@
       "search_name": "Πλιντρί",
       "primary_alias": "plintri",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τούρλος": {
       "latitude": 37.463556,
@@ -17860,7 +17860,7 @@
       "search_name": "Τούρλος",
       "primary_alias": "toyrlos",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φάρος Αρμενιστής": {
       "latitude": 37.485092,
@@ -17869,7 +17869,7 @@
       "search_name": "Φάρος Αρμενιστής",
       "primary_alias": "faros-armenistis",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χώρα": {
       "latitude": 37.446102,
@@ -17878,7 +17878,7 @@
       "search_name": "Χώρα",
       "primary_alias": "mykonos-hora",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψαρρού": {
       "latitude": 37.421702,
@@ -17887,7 +17887,7 @@
       "search_name": "Ψαρρού",
       "primary_alias": "psarroy",
       "city": "Μύκονος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλό Λιβάδι": {
       "latitude": 37.434124,
@@ -17896,8 +17896,8 @@
       "search_name": "Καλό Λιβάδι",
       "primary_alias": "kalo-livadi",
       "city": "Μύκονος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Νάξος": {
     "Νάξος": {
@@ -17907,7 +17907,7 @@
       "search_name": "Νάξος",
       "primary_alias": "naxos",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Άννα": {
       "latitude": 37.066634,
@@ -17916,7 +17916,7 @@
       "search_name": "Αγία Άννα",
       "primary_alias": "naxos-agia-anna",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Πάντες": {
       "latitude": 37.062594,
@@ -17925,7 +17925,7 @@
       "search_name": "Άγιοι Πάντες",
       "primary_alias": "naxos-agioi-pantes",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αρσένιος": {
       "latitude": 37.06256,
@@ -17934,7 +17934,7 @@
       "search_name": "Άγιος Αρσένιος",
       "primary_alias": "agios-arsenios",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Προκόπιος": {
       "latitude": 37.076499,
@@ -17943,7 +17943,7 @@
       "search_name": "Άγιος Προκόπιος",
       "primary_alias": "agios-prokopios",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγκίδια": {
       "latitude": 37.096996,
@@ -17952,7 +17952,7 @@
       "search_name": "Αγκίδια",
       "primary_alias": "agkidia",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Ποταμιά": {
       "latitude": 37.069164,
@@ -17961,7 +17961,7 @@
       "search_name": "Άνω Ποταμιά",
       "primary_alias": "ano-potamia",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απείρανθος": {
       "latitude": 37.071441,
@@ -17970,7 +17970,7 @@
       "search_name": "Απείρανθος",
       "primary_alias": "apeiranthos",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απόλλωνας": {
       "latitude": 37.179979,
@@ -17979,7 +17979,7 @@
       "search_name": "Απόλλωνας",
       "primary_alias": "apollonas",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βίβλος": {
       "latitude": 37.058758,
@@ -17988,7 +17988,7 @@
       "search_name": "Βίβλος",
       "primary_alias": "vivlos",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλανάδο": {
       "latitude": 37.074931,
@@ -17997,7 +17997,7 @@
       "search_name": "Γαλανάδο",
       "primary_alias": "galanado",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλήνη": {
       "latitude": 37.117754,
@@ -18006,7 +18006,7 @@
       "search_name": "Γαλήνη",
       "primary_alias": "naxos-galini",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλινάδο": {
       "latitude": 37.071854,
@@ -18015,7 +18015,7 @@
       "search_name": "Γλινάδο",
       "primary_alias": "glinado",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαμαριώνας": {
       "latitude": 37.052558,
@@ -18024,7 +18024,7 @@
       "search_name": "Δαμαριώνας",
       "primary_alias": "damarionas",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εγγαρές": {
       "latitude": 37.116584,
@@ -18033,7 +18033,7 @@
       "search_name": "Εγγαρές",
       "primary_alias": "eggares",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστράκι": {
       "latitude": 37.007259,
@@ -18042,7 +18042,7 @@
       "search_name": "Καστράκι",
       "primary_alias": "kastraki",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Ποταμιά": {
       "latitude": 37.067487,
@@ -18051,7 +18051,7 @@
       "search_name": "Κάτω Ποταμιά",
       "primary_alias": "naxos-kato-potamia",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κινίδαρος": {
       "latitude": 37.101152,
@@ -18060,7 +18060,7 @@
       "search_name": "Κινίδαρος",
       "primary_alias": "kinidaros",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορωνίδα": {
       "latitude": 37.145439,
@@ -18069,7 +18069,7 @@
       "search_name": "Κορωνίδα",
       "primary_alias": "koronida",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόρωνος": {
       "latitude": 37.119205,
@@ -18078,7 +18078,7 @@
       "search_name": "Κόρωνος",
       "primary_alias": "koronos",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάραγκας": {
       "latitude": 37.060988,
@@ -18087,7 +18087,7 @@
       "search_name": "Μάραγκας",
       "primary_alias": "maragkas",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελανές": {
       "latitude": 37.089805,
@@ -18096,7 +18096,7 @@
       "search_name": "Μελανές",
       "primary_alias": "melanes",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρή Βίγλα": {
       "latitude": 37.026202,
@@ -18105,7 +18105,7 @@
       "search_name": "Μικρή Βίγλα",
       "primary_alias": "mikri-vigla",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μουτσούνα": {
       "latitude": 37.077651,
@@ -18114,7 +18114,7 @@
       "search_name": "Μουτσούνα",
       "primary_alias": "moytsoyna",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλάκα": {
       "latitude": 37.034436,
@@ -18123,7 +18123,7 @@
       "search_name": "Πλάκα",
       "primary_alias": "naxos-plaka",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαγκρί": {
       "latitude": 37.041215,
@@ -18132,7 +18132,7 @@
       "search_name": "Σαγκρί",
       "primary_alias": "sagkri",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκαδό": {
       "latitude": 37.12608,
@@ -18141,7 +18141,7 @@
       "search_name": "Σκαδό",
       "primary_alias": "skado",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στελίδα": {
       "latitude": 37.083551,
@@ -18150,7 +18150,7 @@
       "search_name": "Στελίδα",
       "primary_alias": "stelida",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλότι": {
       "latitude": 37.051307,
@@ -18159,7 +18159,7 @@
       "search_name": "Φιλότι",
       "primary_alias": "filoti",
       "city": "Νάξος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλκείο": {
       "latitude": 37.064096,
@@ -18168,8 +18168,8 @@
       "search_name": "Χαλκείο",
       "primary_alias": "halkeio",
       "city": "Νάξος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Νάουσα": {
     "Νάουσα": {
@@ -18179,7 +18179,7 @@
       "search_name": "Νάουσα",
       "primary_alias": "naoysa",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 40.617892,
@@ -18188,7 +18188,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "naoysa-agios-nikolaos",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιαννακοχώρι": {
       "latitude": 40.671489,
@@ -18197,7 +18197,7 @@
       "search_name": "Γιαννακοχώρι",
       "primary_alias": "giannakohori",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοπανός": {
       "latitude": 40.634925,
@@ -18206,7 +18206,7 @@
       "search_name": "Κοπανός",
       "primary_alias": "kopanos",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκάδια": {
       "latitude": 40.653618,
@@ -18215,7 +18215,7 @@
       "search_name": "Λευκάδια",
       "primary_alias": "leykadia",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρίνα": {
       "latitude": 40.692071,
@@ -18224,7 +18224,7 @@
       "search_name": "Μαρίνα",
       "primary_alias": "marina",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ροδακινιά": {
       "latitude": 40.652599,
@@ -18233,7 +18233,7 @@
       "search_name": "Ροδακινιά",
       "primary_alias": "rodakinia",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στενήμαχος": {
       "latitude": 40.603792,
@@ -18242,7 +18242,7 @@
       "search_name": "Στενήμαχος",
       "primary_alias": "stenimahos",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επισκοπή": {
       "latitude": 40.687893,
@@ -18251,7 +18251,7 @@
       "search_name": "Επισκοπή",
       "primary_alias": "episkopi",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαρίεσσα": {
       "latitude": 40.651942,
@@ -18260,7 +18260,7 @@
       "search_name": "Χαρίεσσα",
       "primary_alias": "hariessa",
       "city": "Νάουσα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μονόσπιτα": {
       "latitude": 40.618328,
@@ -18269,8 +18269,8 @@
       "search_name": "Μονόσπιτα",
       "primary_alias": "monospita",
       "city": "Νάουσα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ναύπακτος": {
     "Ναύπακτος": {
@@ -18280,7 +18280,7 @@
       "search_name": "Ναύπακτος",
       "primary_alias": "naupaktos",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Πολύκαρπος": {
       "latitude": 38.395182,
@@ -18289,7 +18289,7 @@
       "search_name": "Άγιος Πολύκαρπος",
       "primary_alias": "agios-polykarpos",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αντίρριο": {
       "latitude": 38.331908,
@@ -18298,7 +18298,7 @@
       "search_name": "Αντίρριο",
       "primary_alias": "antirrio",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Πλατανίτης": {
       "latitude": 38.372929,
@@ -18307,7 +18307,7 @@
       "search_name": "Άνω Πλατανίτης",
       "primary_alias": "ano-platanitis",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δάφνη": {
       "latitude": 38.421735,
@@ -18316,7 +18316,7 @@
       "search_name": "Δάφνη",
       "primary_alias": "naypaktos-dafni",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελαιοστάσι": {
       "latitude": 38.393663,
@@ -18325,7 +18325,7 @@
       "search_name": "Ελαιοστάσι",
       "primary_alias": "elaiostasi",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευπάλιο": {
       "latitude": 38.420116,
@@ -18334,7 +18334,7 @@
       "search_name": "Ευπάλιο",
       "primary_alias": "eypalio",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστράκι": {
       "latitude": 38.416844,
@@ -18343,7 +18343,7 @@
       "search_name": "Καστράκι",
       "primary_alias": "naypaktos-kastraki",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Αφροξυλιά": {
       "latitude": 38.408324,
@@ -18352,7 +18352,7 @@
       "search_name": "Κάτω Αφροξυλιά",
       "primary_alias": "kato-afroxylia",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Δάφνη": {
       "latitude": 38.415784,
@@ -18361,7 +18361,7 @@
       "search_name": "Κάτω Δάφνη",
       "primary_alias": "kato-dafni",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Μαμουλάδα": {
       "latitude": 38.404983,
@@ -18370,7 +18370,7 @@
       "search_name": "Κάτω Μαμουλάδα",
       "primary_alias": "kato-mamoylada",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεύκα": {
       "latitude": 38.396792,
@@ -18379,7 +18379,7 @@
       "search_name": "Λεύκα",
       "primary_alias": "leyka",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυγιάς": {
       "latitude": 38.408892,
@@ -18388,7 +18388,7 @@
       "search_name": "Λυγιάς",
       "primary_alias": "lygias",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαλάματα": {
       "latitude": 38.394977,
@@ -18397,7 +18397,7 @@
       "search_name": "Μαλάματα",
       "primary_alias": "malamata",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαναγούλη": {
       "latitude": 38.39626,
@@ -18406,7 +18406,7 @@
       "search_name": "Μαναγούλη",
       "primary_alias": "managoyli",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μολύκρειο": {
       "latitude": 38.359034,
@@ -18415,7 +18415,7 @@
       "search_name": "Μολύκρειο",
       "primary_alias": "molykreio",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοναστηράκι": {
       "latitude": 38.40742,
@@ -18424,7 +18424,7 @@
       "search_name": "Μοναστηράκι",
       "primary_alias": "naypaktos-monastiraki",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηροπήγαδο": {
       "latitude": 38.402553,
@@ -18433,7 +18433,7 @@
       "search_name": "Ξηροπήγαδο",
       "primary_alias": "xiropigado",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Πόλη": {
       "latitude": 38.39395,
@@ -18442,7 +18442,7 @@
       "search_name": "Παλαιά Πόλη",
       "primary_alias": "naypaktos-palaia-poli",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιοπαναγιά": {
       "latitude": 38.380121,
@@ -18451,7 +18451,7 @@
       "search_name": "Παλαιοπαναγιά",
       "primary_alias": "palaiopanagia",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατανίτης": {
       "latitude": 38.363149,
@@ -18460,7 +18460,7 @@
       "search_name": "Πλατανίτης",
       "primary_alias": "platanitis",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαϊτά": {
       "latitude": 38.389233,
@@ -18469,7 +18469,7 @@
       "search_name": "Σαϊτά",
       "primary_alias": "saita",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα": {
       "latitude": 38.423166,
@@ -18478,7 +18478,7 @@
       "search_name": "Σκάλα",
       "primary_alias": "naypaktos-skala",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χιλιαδού": {
       "latitude": 38.390408,
@@ -18487,7 +18487,7 @@
       "search_name": "Χιλιαδού",
       "primary_alias": "naypaktos-hiliadoy",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλωμα": {
       "latitude": 38.397095,
@@ -18496,7 +18496,7 @@
       "search_name": "Σκάλωμα",
       "primary_alias": "skaloma",
       "city": "Ναύπακτος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαραθιάς": {
       "latitude": 38.393084,
@@ -18505,8 +18505,8 @@
       "search_name": "Μαραθιάς",
       "primary_alias": "marathias",
       "city": "Ναύπακτος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ναύπλιο": {
     "Πόρτο Χέλι": {
@@ -18516,7 +18516,7 @@
       "search_name": "Πόρτο Χέλι",
       "primary_alias": "porto-heli",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ναύπλιο": {
       "latitude": 37.570314,
@@ -18525,7 +18525,7 @@
       "search_name": "Ναύπλιο",
       "primary_alias": "nauplio",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Κυριακή": {
       "latitude": 37.580145,
@@ -18534,7 +18534,7 @@
       "search_name": "Αγία Κυριακή",
       "primary_alias": "nayplio-agia-kyriaki",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 37.548942,
@@ -18543,7 +18543,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "nayplio-agia-paraskeyi",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αδριανός": {
       "latitude": 37.59934,
@@ -18552,7 +18552,7 @@
       "search_name": "Άγιος Αδριανός",
       "primary_alias": "agios-adrianos",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άρια": {
       "latitude": 37.57176,
@@ -18561,7 +18561,7 @@
       "search_name": "Άρια",
       "primary_alias": "aria",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασίνη": {
       "latitude": 37.544674,
@@ -18570,7 +18570,7 @@
       "search_name": "Ασίνη",
       "primary_alias": "asini",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρέπανο": {
       "latitude": 37.539079,
@@ -18579,7 +18579,7 @@
       "search_name": "Δρέπανο",
       "primary_alias": "nayplio-drepano",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εξώστης": {
       "latitude": 37.571079,
@@ -18588,7 +18588,7 @@
       "search_name": "Εξώστης",
       "primary_alias": "exostis",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκάκια": {
       "latitude": 37.559275,
@@ -18597,7 +18597,7 @@
       "search_name": "Λευκάκια",
       "primary_alias": "leykakia",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Τίρυνθα": {
       "latitude": 37.607929,
@@ -18606,7 +18606,7 @@
       "search_name": "Νέα Τίρυνθα",
       "primary_alias": "nea-tiryntha",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέες Εργατικές Κατοικίες": {
       "latitude": 37.585555,
@@ -18615,7 +18615,7 @@
       "search_name": "Νέες Εργατικές Κατοικίες",
       "primary_alias": "nayplio-nees-ergatikes-katoikies",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιά Πόλη": {
       "latitude": 37.566065,
@@ -18624,7 +18624,7 @@
       "search_name": "Παλιά Πόλη",
       "primary_alias": "nayplio-palia-poli",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυργιώτικα": {
       "latitude": 37.581929,
@@ -18633,7 +18633,7 @@
       "search_name": "Πυργιώτικα",
       "primary_alias": "pyrgiotika",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Σχου Ζησιμόπουλου": {
       "latitude": 37.5742,
@@ -18642,7 +18642,7 @@
       "search_name": "Στρατόπεδο Σχου Ζησιμόπουλου",
       "primary_alias": "stratopedo-shoy-zisimopoyloy",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τολό": {
       "latitude": 37.522303,
@@ -18651,7 +18651,7 @@
       "search_name": "Τολό",
       "primary_alias": "tolo",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρανίδι": {
       "latitude": 37.379208,
@@ -18660,7 +18660,7 @@
       "search_name": "Κρανίδι",
       "primary_alias": "kranidi",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ερμιόνη": {
       "latitude": 37.385539,
@@ -18669,7 +18669,7 @@
       "search_name": "Ερμιόνη",
       "primary_alias": "ermioni",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Επίδαυρος": {
       "latitude": 37.676794,
@@ -18678,7 +18678,7 @@
       "search_name": "Νέα Επίδαυρος",
       "primary_alias": "nea-epidayros",
       "city": "Ναύπλιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυγουριό": {
       "latitude": 37.612551,
@@ -18687,8 +18687,8 @@
       "search_name": "Λυγουριό",
       "primary_alias": "lygoyrio",
       "city": "Ναύπλιο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Νέα Μάκρη": {
     "Νέα Μάκρη": {
@@ -18698,7 +18698,7 @@
       "search_name": "Νέα Μάκρη",
       "primary_alias": "nea-makri",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 38.062792,
@@ -18707,7 +18707,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "nea-makri-agia-marina",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ανδρέας": {
       "latitude": 38.06465,
@@ -18716,7 +18716,7 @@
       "search_name": "Άγιος Ανδρέας",
       "primary_alias": "nea-makri-agios-andreas",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανατολή": {
       "latitude": 38.088017,
@@ -18725,7 +18725,7 @@
       "search_name": "Ανατολή",
       "primary_alias": "nea-makri-anatoli",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάλτος": {
       "latitude": 38.096707,
@@ -18734,7 +18734,7 @@
       "search_name": "Βάλτος",
       "primary_alias": "valtos",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βιθυνία": {
       "latitude": 38.063423,
@@ -18743,7 +18743,7 @@
       "search_name": "Βιθυνία",
       "primary_alias": "vithynia",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ερυθρός": {
       "latitude": 38.092328,
@@ -18752,7 +18752,7 @@
       "search_name": "Ερυθρός",
       "primary_alias": "erythros",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζούμπερι": {
       "latitude": 38.071817,
@@ -18761,7 +18761,7 @@
       "search_name": "Ζούμπερι",
       "primary_alias": "zoymperi",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιβίσι": {
       "latitude": 38.073061,
@@ -18770,7 +18770,7 @@
       "search_name": "Λιβίσι",
       "primary_alias": "livisi",
       "city": "Νέα Μάκρη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάτι": {
       "latitude": 38.044665,
@@ -18779,8 +18779,8 @@
       "search_name": "Μάτι",
       "primary_alias": "mati",
       "city": "Νέα Μάκρη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Νέα Πέραμος": {
     "Βλυχάδα": {
@@ -18790,7 +18790,7 @@
       "search_name": "Βλυχάδα",
       "primary_alias": "vlyhada",
       "city": "Νέα Πέραμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Βλυχάδα": {
       "latitude": 38.013102,
@@ -18799,7 +18799,7 @@
       "search_name": "Κάτω Βλυχάδα",
       "primary_alias": "kato-vlyhada",
       "city": "Νέα Πέραμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτρόπυργος": {
       "latitude": 38.027155,
@@ -18808,7 +18808,7 @@
       "search_name": "Λουτρόπυργος",
       "primary_alias": "loytropyrgos",
       "city": "Νέα Πέραμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Πέραμος": {
       "latitude": 38.007427,
@@ -18817,8 +18817,8 @@
       "search_name": "Νέα Πέραμος",
       "primary_alias": "nea-peramos",
       "city": "Νέα Πέραμος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Νέος Βουτζάς": {
     "Νέος Βουτζάς": {
@@ -18828,8 +18828,8 @@
       "search_name": "Νέος Βουτζάς",
       "primary_alias": "neos-voutsas",
       "city": "Νέος Βουτζάς",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ντράφι": {
     "Ντράφι": {
@@ -18839,8 +18839,8 @@
       "search_name": "Ντράφι",
       "primary_alias": "ntrafi",
       "city": "Ντράφι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ξάνθη": {
     "Ξάνθη": {
@@ -18850,7 +18850,7 @@
       "search_name": "Ξάνθη",
       "primary_alias": "ksanthi",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αστικός Συνοικισμός": {
       "latitude": 41.135774,
@@ -18859,7 +18859,7 @@
       "search_name": "Αστικός Συνοικισμός",
       "primary_alias": "astikos-synoikismos",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙ.ΠΕ Ξάνθης": {
       "latitude": 41.101242,
@@ -18868,7 +18868,7 @@
       "search_name": "ΒΙ.ΠΕ Ξάνθης",
       "primary_alias": "vi.pe-xanthis",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διομήδεια": {
       "latitude": 41.089417,
@@ -18877,7 +18877,7 @@
       "search_name": "Διομήδεια",
       "primary_alias": "diomideia",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δροσερό": {
       "latitude": 41.131076,
@@ -18886,7 +18886,7 @@
       "search_name": "Δροσερό",
       "primary_alias": "drosero",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εύμοιρο": {
       "latitude": 41.110015,
@@ -18895,7 +18895,7 @@
       "search_name": "Εύμοιρο",
       "primary_alias": "eymoiro",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 41.119656,
@@ -18904,7 +18904,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "xanthi-kallithea",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 41.139193,
@@ -18913,7 +18913,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "ksanthi",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιμμέρια": {
       "latitude": 41.148174,
@@ -18922,7 +18922,7 @@
       "search_name": "Κιμμέρια",
       "primary_alias": "kimmeria",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυψέλη": {
       "latitude": 41.130567,
@@ -18931,7 +18931,7 @@
       "search_name": "Κυψέλη",
       "primary_alias": "xanthi-kypseli",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαχανόκηποι": {
       "latitude": 41.137126,
@@ -18940,7 +18940,7 @@
       "search_name": "Λαχανόκηποι",
       "primary_alias": "xanthi-lahanokipoi",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεύκη": {
       "latitude": 41.081713,
@@ -18949,7 +18949,7 @@
       "search_name": "Λεύκη",
       "primary_alias": "xanthi-leyki",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλου Αλεξάνδρου": {
       "latitude": 41.137207,
@@ -18958,7 +18958,7 @@
       "search_name": "Μεγάλου Αλεξάνδρου",
       "primary_alias": "megaloy-alexandroy",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μορσίνη": {
       "latitude": 41.118413,
@@ -18967,7 +18967,7 @@
       "search_name": "Νέα Μορσίνη",
       "primary_alias": "nea-morsini",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη-Εκτενεπόλ": {
       "latitude": 41.124504,
@@ -18976,7 +18976,7 @@
       "search_name": "Νεάπολη-Εκτενεπόλ",
       "primary_alias": "neapoli-ektenepol",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Ζυγός": {
       "latitude": 41.116447,
@@ -18985,7 +18985,7 @@
       "search_name": "Νέος Ζυγός",
       "primary_alias": "xanthi-neos-zygos",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οικισμός Παλιννοστούντων Ποντίων": {
       "latitude": 41.123107,
@@ -18994,7 +18994,7 @@
       "search_name": "Οικισμός Παλιννοστούντων Ποντίων",
       "primary_alias": "oikismos-palinnostoynton-pontion",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Μορσίνη": {
       "latitude": 41.129405,
@@ -19003,7 +19003,7 @@
       "search_name": "Παλαιά Μορσίνη",
       "primary_alias": "palaia-morsini",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Χρύσα": {
       "latitude": 41.12909,
@@ -19012,7 +19012,7 @@
       "search_name": "Παλαιά Χρύσα",
       "primary_alias": "palaia-hrysa",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιός Ζυγός": {
       "latitude": 41.109111,
@@ -19021,7 +19021,7 @@
       "search_name": "Παλαιός Ζυγός",
       "primary_alias": "palaios-zygos",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιά Πόλη": {
       "latitude": 41.143212,
@@ -19030,7 +19030,7 @@
       "search_name": "Παλιά Πόλη",
       "primary_alias": "xanthi-palia-poli",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιές Εργατικές Κατοικίες": {
       "latitude": 41.129879,
@@ -19039,7 +19039,7 @@
       "search_name": "Παλιές Εργατικές Κατοικίες",
       "primary_alias": "palies-ergatikes-katoikies",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 41.139197,
@@ -19048,7 +19048,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "xanthi-panorama",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανεπιστημιούπολη": {
       "latitude": 41.144675,
@@ -19057,7 +19057,7 @@
       "search_name": "Πανεπιστημιούπολη",
       "primary_alias": "xanthi-panepistimioypoli",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πετεινός": {
       "latitude": 41.101158,
@@ -19066,7 +19066,7 @@
       "search_name": "Πετεινός",
       "primary_alias": "peteinos",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πετροχώρι": {
       "latitude": 41.087507,
@@ -19075,7 +19075,7 @@
       "search_name": "Πετροχώρι",
       "primary_alias": "petrohori",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πηγάδια": {
       "latitude": 41.116443,
@@ -19084,7 +19084,7 @@
       "search_name": "Πηγάδια",
       "primary_alias": "pigadia",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρέμβη": {
       "latitude": 41.129556,
@@ -19093,7 +19093,7 @@
       "search_name": "Ρέμβη",
       "primary_alias": "xanthi-remvi",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 41.12622,
@@ -19102,7 +19102,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "xanthi-stathmos",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Αποστολίδη": {
       "latitude": 41.135652,
@@ -19111,7 +19111,7 @@
       "search_name": "Στρατόπεδο Αποστολίδη",
       "primary_alias": "stratopedo-apostolidi",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Επ/χου Στεφανίδη": {
       "latitude": 41.132777,
@@ -19120,7 +19120,7 @@
       "search_name": "Στρατόπεδο Επ/χου Στεφανίδη",
       "primary_alias": "stratopedo-ep-hoy-stefanidi",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συνοικία Γυμναστηρίου": {
       "latitude": 41.14362,
@@ -19129,7 +19129,7 @@
       "search_name": "Συνοικία Γυμναστηρίου",
       "primary_alias": "synoikia-gymnastirioy",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συνοικία Σαμακώβ": {
       "latitude": 41.145327,
@@ -19138,7 +19138,7 @@
       "search_name": "Συνοικία Σαμακώβ",
       "primary_alias": "synoikia-samakov",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φελώνη": {
       "latitude": 41.098221,
@@ -19147,7 +19147,7 @@
       "search_name": "Φελώνη",
       "primary_alias": "feloni",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρύσα": {
       "latitude": 41.133046,
@@ -19156,7 +19156,7 @@
       "search_name": "Χρύσα",
       "primary_alias": "hrysa",
       "city": "Ξάνθη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρούπολη": {
       "latitude": 41.198336,
@@ -19165,8 +19165,8 @@
       "search_name": "Σταυρούπολη",
       "primary_alias": "xanthi-stayroypoli",
       "city": "Ξάνθη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Οινόη": {
     "Οινόη": {
@@ -19176,8 +19176,8 @@
       "search_name": "Οινόη",
       "primary_alias": "oinoh",
       "city": "Οινόη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ορεστιάδα": {
     "Ορεστιάδα": {
@@ -19187,7 +19187,7 @@
       "search_name": "Ορεστιάδα",
       "primary_alias": "orestiada",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θούριο": {
       "latitude": 41.433518,
@@ -19196,7 +19196,7 @@
       "search_name": "Θούριο",
       "primary_alias": "thoyrio",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καβύλη": {
       "latitude": 41.562446,
@@ -19205,7 +19205,7 @@
       "search_name": "Καβύλη",
       "primary_alias": "kavyli",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεπτή": {
       "latitude": 41.499525,
@@ -19214,7 +19214,7 @@
       "search_name": "Λεπτή",
       "primary_alias": "lepti",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Βύσσα": {
       "latitude": 41.583645,
@@ -19223,7 +19223,7 @@
       "search_name": "Νέα Βύσσα",
       "primary_alias": "nea-vyssa",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Χειμώνιο": {
       "latitude": 41.450845,
@@ -19232,7 +19232,7 @@
       "search_name": "Νέο Χειμώνιο",
       "primary_alias": "neo-heimonio",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Πύργος": {
       "latitude": 41.494877,
@@ -19241,7 +19241,7 @@
       "search_name": "Νέος Πύργος",
       "primary_alias": "neos-pyrgos",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 41.511564,
@@ -19250,7 +19250,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "orestiada-neohori",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σάκκος": {
       "latitude": 41.537531,
@@ -19259,7 +19259,7 @@
       "search_name": "Σάκκος",
       "primary_alias": "sakkos",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σοφικό": {
       "latitude": 41.419958,
@@ -19268,7 +19268,7 @@
       "search_name": "Σοφικό",
       "primary_alias": "sofiko",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στέρνα": {
       "latitude": 41.565931,
@@ -19277,7 +19277,7 @@
       "search_name": "Στέρνα",
       "primary_alias": "sterna",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Οινόη": {
       "latitude": 41.519457,
@@ -19286,7 +19286,7 @@
       "search_name": "Κάτω Οινόη",
       "primary_alias": "kato-oinoi",
       "city": "Ορεστιάδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Οινόη": {
       "latitude": 41.514442,
@@ -19295,8 +19295,8 @@
       "search_name": "Άνω Οινόη",
       "primary_alias": "ano-oinoi",
       "city": "Ορεστιάδα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Παιανία": {
     "Παιανία": {
@@ -19306,7 +19306,7 @@
       "search_name": "Παιανία",
       "primary_alias": "paiania",
       "city": "Παιανία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 37.95808,
@@ -19315,7 +19315,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "paiania-agia-marina",
       "city": "Παιανία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα": {
       "latitude": 37.963221,
@@ -19324,7 +19324,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "paiania-agia-triada",
       "city": "Παιανία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ανδρέας": {
       "latitude": 37.970745,
@@ -19333,7 +19333,7 @@
       "search_name": "Άγιος Ανδρέας",
       "primary_alias": "paiania-agios-andreas",
       "city": "Παιανία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ουλιντζί": {
       "latitude": 37.951411,
@@ -19342,7 +19342,7 @@
       "search_name": "Ουλιντζί",
       "primary_alias": "oylintzi",
       "city": "Παιανία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προσήλιο": {
       "latitude": 37.970076,
@@ -19351,7 +19351,7 @@
       "search_name": "Προσήλιο",
       "primary_alias": "prosilio",
       "city": "Παιανία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προφήτης Ηλίας": {
       "latitude": 37.947686,
@@ -19360,7 +19360,7 @@
       "search_name": "Προφήτης Ηλίας",
       "primary_alias": "paiania-profitis-ilias",
       "city": "Παιανία",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χουσμούζα": {
       "latitude": 37.97105,
@@ -19369,8 +19369,8 @@
       "search_name": "Χουσμούζα",
       "primary_alias": "hoysmoyza",
       "city": "Παιανία",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Παλαιό Φάληρο": {
     "Παλαιό Φάληρο": {
@@ -19380,8 +19380,8 @@
       "search_name": "Παλαιό Φάληρο",
       "primary_alias": "palaio-faliro",
       "city": "Παλαιό Φάληρο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Παξοί": {
     "Παξοί": {
@@ -19391,7 +19391,7 @@
       "search_name": "Παξοί",
       "primary_alias": "paxoi",
       "city": "Παξοί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γάιος": {
       "latitude": 39.195858,
@@ -19400,7 +19400,7 @@
       "search_name": "Γάιος",
       "primary_alias": "gaios",
       "city": "Παξοί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λάκκα": {
       "latitude": 39.233163,
@@ -19409,7 +19409,7 @@
       "search_name": "Λάκκα",
       "primary_alias": "lakka",
       "city": "Παξοί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λόγγος": {
       "latitude": 39.225141,
@@ -19418,8 +19418,8 @@
       "search_name": "Λόγγος",
       "primary_alias": "paxoi-loggos",
       "city": "Παξοί",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Παραλία Οφρυνίου": {
     "Παραλία Οφρυνίου": {
@@ -19429,8 +19429,8 @@
       "search_name": "Παραλία Οφρυνίου",
       "primary_alias": "paralia-ofrynioy",
       "city": "Παραλία Οφρυνίου",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Παραμυθιά": {
     "Παραμυθιά": {
@@ -19440,7 +19440,7 @@
       "search_name": "Παραμυθιά",
       "primary_alias": "paramythia",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δονάτος": {
       "latitude": 39.475915,
@@ -19449,7 +19449,7 @@
       "search_name": "Άγιος Δονάτος",
       "primary_alias": "agios-donatos",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαρδίκι": {
       "latitude": 39.360611,
@@ -19458,7 +19458,7 @@
       "search_name": "Γαρδίκι",
       "primary_alias": "gardiki",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γκρίκα": {
       "latitude": 39.465024,
@@ -19467,7 +19467,7 @@
       "search_name": "Γκρίκα",
       "primary_alias": "gkrika",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλυκή": {
       "latitude": 39.326661,
@@ -19476,7 +19476,7 @@
       "search_name": "Γλυκή",
       "primary_alias": "glyki",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαφνούλα": {
       "latitude": 39.426124,
@@ -19485,7 +19485,7 @@
       "search_name": "Δαφνούλα",
       "primary_alias": "dafnoyla",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμίνι": {
       "latitude": 39.41674,
@@ -19494,7 +19494,7 @@
       "search_name": "Καμίνι",
       "primary_alias": "kamini",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρβουνάρι": {
       "latitude": 39.390892,
@@ -19503,7 +19503,7 @@
       "search_name": "Καρβουνάρι",
       "primary_alias": "karvoynari",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καριώτι": {
       "latitude": 39.449694,
@@ -19512,7 +19512,7 @@
       "search_name": "Καριώτι",
       "primary_alias": "karioti",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεφαλόβρυσο": {
       "latitude": 39.488639,
@@ -19521,7 +19521,7 @@
       "search_name": "Κεφαλόβρυσο",
       "primary_alias": "paramythia-kefalovryso",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρυσταλλοπηγή": {
       "latitude": 39.492113,
@@ -19530,7 +19530,7 @@
       "search_name": "Κρυσταλλοπηγή",
       "primary_alias": "krystallopigi",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυρά Παναγία": {
       "latitude": 39.40266,
@@ -19539,7 +19539,7 @@
       "search_name": "Κυρά Παναγία",
       "primary_alias": "kyra-panagia",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 39.509671,
@@ -19548,7 +19548,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "paramythia-neohori",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηρόλοφος": {
       "latitude": 39.415687,
@@ -19557,7 +19557,7 @@
       "search_name": "Ξηρόλοφος",
       "primary_alias": "xirolofos",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παγκράτες": {
       "latitude": 39.442994,
@@ -19566,7 +19566,7 @@
       "search_name": "Παγκράτες",
       "primary_alias": "pagkrates",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποταμιά": {
       "latitude": 39.31896,
@@ -19575,7 +19575,7 @@
       "search_name": "Ποταμιά",
       "primary_alias": "paramythia-potamia",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ραχούλι": {
       "latitude": 39.421851,
@@ -19584,7 +19584,7 @@
       "search_name": "Ραχούλι",
       "primary_alias": "rahoyli",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σεβαστό": {
       "latitude": 39.424016,
@@ -19593,7 +19593,7 @@
       "search_name": "Σεβαστό",
       "primary_alias": "paramythia-sevasto",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάνδαλο": {
       "latitude": 39.368166,
@@ -19602,7 +19602,7 @@
       "search_name": "Σκάνδαλο",
       "primary_alias": "skandalo",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζερβοχώρι": {
       "latitude": 39.414154,
@@ -19611,7 +19611,7 @@
       "search_name": "Ζερβοχώρι",
       "primary_alias": "zervohori",
       "city": "Παραμυθιά",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγορά": {
       "latitude": 39.374451,
@@ -19620,8 +19620,8 @@
       "search_name": "Αγορά",
       "primary_alias": "agora",
       "city": "Παραμυθιά",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πάργα": {
     "Πάργα": {
@@ -19631,7 +19631,7 @@
       "search_name": "Πάργα",
       "primary_alias": "parga",
       "city": "Πάργα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία": {
       "latitude": 39.313037,
@@ -19640,7 +19640,7 @@
       "search_name": "Αγία",
       "primary_alias": "parga-agia",
       "city": "Πάργα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Κυριακή": {
       "latitude": 39.284137,
@@ -19649,7 +19649,7 @@
       "search_name": "Αγία Κυριακή",
       "primary_alias": "parga-agia-kyriaki",
       "city": "Πάργα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθούσα": {
       "latitude": 39.298664,
@@ -19658,7 +19658,7 @@
       "search_name": "Ανθούσα",
       "primary_alias": "parga-anthoysa",
       "city": "Πάργα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λύχνας": {
       "latitude": 39.282945,
@@ -19667,7 +19667,7 @@
       "search_name": "Λύχνας",
       "primary_alias": "lyhnas",
       "city": "Πάργα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσογιάλι": {
       "latitude": 39.284879,
@@ -19676,8 +19676,8 @@
       "search_name": "Χρυσογιάλι",
       "primary_alias": "hrysogiali",
       "city": "Πάργα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πάρος": {
     "Παροικιά": {
@@ -19687,7 +19687,7 @@
       "search_name": "Παροικιά",
       "primary_alias": "paros",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Χαράλαμπος": {
       "latitude": 37.100559,
@@ -19696,7 +19696,7 @@
       "search_name": "Άγιος Χαράλαμπος",
       "primary_alias": "paros-agios-haralampos",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγκαιριά": {
       "latitude": 36.999568,
@@ -19705,7 +19705,7 @@
       "search_name": "Αγκαιριά",
       "primary_alias": "agkairia",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλυκή": {
       "latitude": 36.998267,
@@ -19714,7 +19714,7 @@
       "search_name": "Αλυκή",
       "primary_alias": "paros-alyki",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελάς": {
       "latitude": 37.10473,
@@ -19723,7 +19723,7 @@
       "search_name": "Αμπελάς",
       "primary_alias": "ampelas",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άσπρο Χωριό": {
       "latitude": 37.003747,
@@ -19732,7 +19732,7 @@
       "search_name": "Άσπρο Χωριό",
       "primary_alias": "aspro-horio",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρυός": {
       "latitude": 37.004367,
@@ -19741,7 +19741,7 @@
       "search_name": "Δρυός",
       "primary_alias": "dryos",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κακάπετρα": {
       "latitude": 37.070334,
@@ -19750,7 +19750,7 @@
       "search_name": "Κακάπετρα",
       "primary_alias": "kakapetra",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάμπος": {
       "latitude": 37.022276,
@@ -19759,7 +19759,7 @@
       "search_name": "Κάμπος",
       "primary_alias": "kampos",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολυμπήθρες": {
       "latitude": 37.132369,
@@ -19768,7 +19768,7 @@
       "search_name": "Κολυμπήθρες",
       "primary_alias": "kolympithres",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουκουμαύλες": {
       "latitude": 37.065338,
@@ -19777,7 +19777,7 @@
       "search_name": "Κουκουμαύλες",
       "primary_alias": "koykoymayles",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρωτήρι": {
       "latitude": 37.098697,
@@ -19786,7 +19786,7 @@
       "search_name": "Κρωτήρι",
       "primary_alias": "krotiri",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κώστος": {
       "latitude": 37.077444,
@@ -19795,7 +19795,7 @@
       "search_name": "Κώστος",
       "primary_alias": "kostos",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκές": {
       "latitude": 37.055618,
@@ -19804,7 +19804,7 @@
       "search_name": "Λευκές",
       "primary_alias": "leykes",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιβάδια": {
       "latitude": 37.119958,
@@ -19813,7 +19813,7 @@
       "search_name": "Λιβάδια",
       "primary_alias": "paros-livadia",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάρμαρα": {
       "latitude": 37.051227,
@@ -19822,7 +19822,7 @@
       "search_name": "Μάρμαρα",
       "primary_alias": "paros-marmara",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάρπησσα": {
       "latitude": 37.043828,
@@ -19831,7 +19831,7 @@
       "search_name": "Μάρπησσα",
       "primary_alias": "marpissa",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μώλος": {
       "latitude": 37.053234,
@@ -19840,7 +19840,7 @@
       "search_name": "Μώλος",
       "primary_alias": "paros-molos",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νάουσα": {
       "latitude": 37.121145,
@@ -19849,7 +19849,7 @@
       "search_name": "Νάουσα",
       "primary_alias": "paros-naoysa",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παράσπορος": {
       "latitude": 37.072289,
@@ -19858,7 +19858,7 @@
       "search_name": "Παράσπορος",
       "primary_alias": "parasporos",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πίσω Λιβάδι": {
       "latitude": 37.035501,
@@ -19867,7 +19867,7 @@
       "search_name": "Πίσω Λιβάδι",
       "primary_alias": "piso-livadi",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πούντα": {
       "latitude": 37.037063,
@@ -19876,7 +19876,7 @@
       "search_name": "Πούντα",
       "primary_alias": "poynta",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρόδρομος": {
       "latitude": 37.049994,
@@ -19885,7 +19885,7 @@
       "search_name": "Πρόδρομος",
       "primary_alias": "paros-prodromos",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σάντα Μαρία": {
       "latitude": 37.135636,
@@ -19894,7 +19894,7 @@
       "search_name": "Σάντα Μαρία",
       "primary_alias": "santa-maria",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαρακίνικο": {
       "latitude": 37.05887,
@@ -19903,7 +19903,7 @@
       "search_name": "Σαρακίνικο",
       "primary_alias": "sarakiniko",
       "city": "Πάρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσή Ακτή": {
       "latitude": 37.013001,
@@ -19912,8 +19912,8 @@
       "search_name": "Χρυσή Ακτή",
       "primary_alias": "paros-hrysi-akti",
       "city": "Πάρος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πάτμος": {
     "Πάτμος": {
@@ -19923,7 +19923,7 @@
       "search_name": "Πάτμος",
       "primary_alias": "patmos",
       "city": "Πάτμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γροίκος": {
       "latitude": 37.304599,
@@ -19932,7 +19932,7 @@
       "search_name": "Γροίκος",
       "primary_alias": "groikos",
       "city": "Πάτμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάμπος": {
       "latitude": 37.352651,
@@ -19941,7 +19941,7 @@
       "search_name": "Κάμπος",
       "primary_alias": "patmos-kampos",
       "city": "Πάτμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα": {
       "latitude": 37.324501,
@@ -19950,8 +19950,8 @@
       "search_name": "Σκάλα",
       "primary_alias": "patmos-skala",
       "city": "Πάτμος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πάτρα": {
     "Πάτρα": {
@@ -19961,7 +19961,7 @@
       "search_name": "Πάτρα",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Βαρβάρα": {
       "latitude": 38.238472,
@@ -19970,7 +19970,7 @@
       "search_name": "Αγία Βαρβάρα",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα": {
       "latitude": 38.257846,
@@ -19979,7 +19979,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα Προσφυγικών": {
       "latitude": 38.235815,
@@ -19988,7 +19988,7 @@
       "search_name": "Αγία Τριάδα Προσφυγικών",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Φωτεινή": {
       "latitude": 38.234206,
@@ -19997,7 +19997,7 @@
       "search_name": "Αγία Φωτεινή",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Απόστολοι": {
       "latitude": 38.226951,
@@ -20006,7 +20006,7 @@
       "search_name": "Άγιοι Απόστολοι",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αλέξιος": {
       "latitude": 38.256185,
@@ -20015,7 +20015,7 @@
       "search_name": "Άγιος Αλέξιος",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ανδρέας": {
       "latitude": 38.241697,
@@ -20024,7 +20024,7 @@
       "search_name": "Άγιος Ανδρέας",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεράσιμος": {
       "latitude": 38.235188,
@@ -20033,7 +20033,7 @@
       "search_name": "Άγιος Γεράσιμος",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Διονύσιος": {
       "latitude": 38.253562,
@@ -20042,7 +20042,7 @@
       "search_name": "Άγιος Διονύσιος",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελόκηποι": {
       "latitude": 38.266789,
@@ -20051,7 +20051,7 @@
       "search_name": "Αμπελόκηποι",
       "primary_alias": "patra-ampelokipoi",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αναστασόπουλου": {
       "latitude": 38.225538,
@@ -20060,7 +20060,7 @@
       "search_name": "Αναστασόπουλου",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνθεια": {
       "latitude": 38.223726,
@@ -20069,7 +20069,7 @@
       "search_name": "Άνθεια",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθούπολη": {
       "latitude": 38.26122,
@@ -20078,7 +20078,7 @@
       "search_name": "Ανθούπολη",
       "primary_alias": "patra-anthoypoli",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Συχαινά": {
       "latitude": 38.258803,
@@ -20087,7 +20087,7 @@
       "search_name": "Άνω Συχαινά",
       "primary_alias": "ano-syhaina",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρόη": {
       "latitude": 38.243435,
@@ -20096,7 +20096,7 @@
       "search_name": "Αρόη",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αστυνομικά": {
       "latitude": 38.234736,
@@ -20105,7 +20105,7 @@
       "search_name": "Αστυνομικά",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασύρματος": {
       "latitude": 38.248229,
@@ -20114,7 +20114,7 @@
       "search_name": "Ασύρματος",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάλτος": {
       "latitude": 38.277918,
@@ -20123,7 +20123,7 @@
       "search_name": "Βάλτος",
       "primary_alias": "patra-valtos",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλατερό": {
       "latitude": 38.246075,
@@ -20132,7 +20132,7 @@
       "search_name": "Βλατερό",
       "primary_alias": "patra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βρωμολάγκαδο": {
       "latitude": 38.239341,
@@ -20141,7 +20141,7 @@
       "search_name": "Βρωμολάγκαδο",
       "primary_alias": "vromolagkado",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γεραναίικα": {
       "latitude": 38.237051,
@@ -20150,7 +20150,7 @@
       "search_name": "Γεραναίικα",
       "primary_alias": "geranaiika",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γηροκομείο": {
       "latitude": 38.236407,
@@ -20159,7 +20159,7 @@
       "search_name": "Γηροκομείο",
       "primary_alias": "patra-girokomeio",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γκαζοχώρι": {
       "latitude": 38.242631,
@@ -20168,7 +20168,7 @@
       "search_name": "Γκαζοχώρι",
       "primary_alias": "gkazohori",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλαράκη": {
       "latitude": 38.238613,
@@ -20177,7 +20177,7 @@
       "search_name": "Γλαράκη",
       "primary_alias": "glaraki",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλαύκος": {
       "latitude": 38.221464,
@@ -20186,7 +20186,7 @@
       "search_name": "Γλαύκος",
       "primary_alias": "glaykos",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γούβα": {
       "latitude": 38.252458,
@@ -20195,7 +20195,7 @@
       "search_name": "Γούβα",
       "primary_alias": "patra-goyva",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δάφνες": {
       "latitude": 38.286193,
@@ -20204,7 +20204,7 @@
       "search_name": "Δάφνες",
       "primary_alias": "dafnes",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δεμένικα": {
       "latitude": 38.201158,
@@ -20213,7 +20213,7 @@
       "search_name": "Δεμένικα",
       "primary_alias": "demenika",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διάκου": {
       "latitude": 38.23909,
@@ -20222,7 +20222,7 @@
       "search_name": "Διάκου",
       "primary_alias": "diakoy",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εγλυκάδα": {
       "latitude": 38.232386,
@@ -20231,7 +20231,7 @@
       "search_name": "Εγλυκάδα",
       "primary_alias": "eglykada",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έξω Αγυιά": {
       "latitude": 38.27286,
@@ -20240,7 +20240,7 @@
       "search_name": "Έξω Αγυιά",
       "primary_alias": "exo-agyia",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Αγίου Νεκταρίου": {
       "latitude": 38.230168,
@@ -20249,7 +20249,7 @@
       "search_name": "Εργατικές Κατοικίες Αγίου Νεκταρίου",
       "primary_alias": "ergatikes-katoikies-agioy-nektarioy",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εσχατοβούνι": {
       "latitude": 38.25049,
@@ -20258,7 +20258,7 @@
       "search_name": "Εσχατοβούνι",
       "primary_alias": "eshatovoyni",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζαβλάνι": {
       "latitude": 38.257477,
@@ -20267,7 +20267,7 @@
       "search_name": "Ζαβλάνι",
       "primary_alias": "zavlani",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηπειρώτικα": {
       "latitude": 38.201816,
@@ -20276,7 +20276,7 @@
       "search_name": "Ηπειρώτικα",
       "primary_alias": "patra-ipeirotika",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιτιές": {
       "latitude": 38.212175,
@@ -20285,7 +20285,7 @@
       "search_name": "Ιτιές",
       "primary_alias": "ities",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καντριάνικα": {
       "latitude": 38.238949,
@@ -20294,7 +20294,7 @@
       "search_name": "Καντριάνικα",
       "primary_alias": "kantrianika",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστελλόκαμπος": {
       "latitude": 38.291418,
@@ -20303,7 +20303,7 @@
       "search_name": "Καστελλόκαμπος",
       "primary_alias": "kastellokampos",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόκκινος Μύλος": {
       "latitude": 38.204854,
@@ -20312,7 +20312,7 @@
       "search_name": "Κόκκινος Μύλος",
       "primary_alias": "kokkinos-mylos",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοτρώνι": {
       "latitude": 38.271643,
@@ -20321,7 +20321,7 @@
       "search_name": "Κοτρώνι",
       "primary_alias": "kotroni",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουκούλι": {
       "latitude": 38.216453,
@@ -20330,7 +20330,7 @@
       "search_name": "Κουκούλι",
       "primary_alias": "koykoyli",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουτσά": {
       "latitude": 38.223569,
@@ -20339,7 +20339,7 @@
       "search_name": "Κουτσά",
       "primary_alias": "koytsa",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρητικά": {
       "latitude": 38.243697,
@@ -20348,7 +20348,7 @@
       "search_name": "Κρητικά",
       "primary_alias": "kritika",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρύα Ιτεών": {
       "latitude": 38.214602,
@@ -20357,7 +20357,7 @@
       "search_name": "Κρύα Ιτεών",
       "primary_alias": "krya-iteon",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυψέλη": {
       "latitude": 38.223594,
@@ -20366,7 +20366,7 @@
       "search_name": "Κυψέλη",
       "primary_alias": "patra-kypseli",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λάγγουρα": {
       "latitude": 38.227719,
@@ -20375,7 +20375,7 @@
       "search_name": "Λάγγουρα",
       "primary_alias": "laggoyra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυκόχορος": {
       "latitude": 38.228642,
@@ -20384,7 +20384,7 @@
       "search_name": "Λυκόχορος",
       "primary_alias": "lykohoros",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακρυγιάννη": {
       "latitude": 38.21148,
@@ -20393,7 +20393,7 @@
       "search_name": "Μακρυγιάννη",
       "primary_alias": "patra-makrygianni",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαραγκοπούλου": {
       "latitude": 38.201868,
@@ -20402,7 +20402,7 @@
       "search_name": "Μαραγκοπούλου",
       "primary_alias": "maragkopoyloy",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρούδα": {
       "latitude": 38.237486,
@@ -20411,7 +20411,7 @@
       "search_name": "Μαρούδα",
       "primary_alias": "maroyda",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέσα Αγυιά": {
       "latitude": 38.265519,
@@ -20420,7 +20420,7 @@
       "search_name": "Μέσα Αγυιά",
       "primary_alias": "mesa-agyia",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεταμόρφωση Σωτήρος": {
       "latitude": 38.205799,
@@ -20429,7 +20429,7 @@
       "search_name": "Μεταμόρφωση Σωτήρος",
       "primary_alias": "patra-metamorfosi-sotiros",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρό Γύρι": {
       "latitude": 38.237054,
@@ -20438,7 +20438,7 @@
       "search_name": "Μικρό Γύρι",
       "primary_alias": "mikro-gyri",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπεγουλάκι": {
       "latitude": 38.212119,
@@ -20447,7 +20447,7 @@
       "search_name": "Μπεγουλάκι",
       "primary_alias": "mpegoylaki",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Κύπρος": {
       "latitude": 38.23324,
@@ -20456,7 +20456,7 @@
       "search_name": "Νέα Κύπρος",
       "primary_alias": "nea-kypros",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη": {
       "latitude": 38.216473,
@@ -20465,7 +20465,7 @@
       "search_name": "Νεάπολη",
       "primary_alias": "patra-neapoli",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νοσοκομείου": {
       "latitude": 38.23479,
@@ -20474,7 +20474,7 @@
       "search_name": "Νοσοκομείου",
       "primary_alias": "nosokomeioy",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παγώνα": {
       "latitude": 38.240479,
@@ -20483,7 +20483,7 @@
       "search_name": "Παγώνα",
       "primary_alias": "pagona",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανεπιστημιούπολη": {
       "latitude": 38.290217,
@@ -20492,7 +20492,7 @@
       "search_name": "Πανεπιστημιούπολη",
       "primary_alias": "patra-panepistimioypoli",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Προαστίου": {
       "latitude": 38.284771,
@@ -20501,7 +20501,7 @@
       "search_name": "Παραλία Προαστίου",
       "primary_alias": "paralia-proastioy",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πόρτες": {
       "latitude": 38.213755,
@@ -20510,7 +20510,7 @@
       "search_name": "Πόρτες",
       "primary_alias": "patra-portes",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πράτσικα": {
       "latitude": 38.231542,
@@ -20519,7 +20519,7 @@
       "search_name": "Πράτσικα",
       "primary_alias": "pratsika",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προάστιο": {
       "latitude": 38.280129,
@@ -20528,7 +20528,7 @@
       "search_name": "Προάστιο",
       "primary_alias": "patra-proastio",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προφήτης Ηλίας": {
       "latitude": 38.236354,
@@ -20537,7 +20537,7 @@
       "search_name": "Προφήτης Ηλίας",
       "primary_alias": "patra-profitis-ilias",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαμάκια": {
       "latitude": 38.242222,
@@ -20546,7 +20546,7 @@
       "search_name": "Σαμάκια",
       "primary_alias": "samakia",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκαγιοπούλειο": {
       "latitude": 38.235553,
@@ -20555,7 +20555,7 @@
       "search_name": "Σκαγιοπούλειο",
       "primary_alias": "skagiopoyleio",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σύνορα": {
       "latitude": 38.2373,
@@ -20564,7 +20564,7 @@
       "search_name": "Σύνορα",
       "primary_alias": "synora",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταμπάχανα": {
       "latitude": 38.241297,
@@ -20573,7 +20573,7 @@
       "search_name": "Ταμπάχανα",
       "primary_alias": "tampahana",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταραμπούρα": {
       "latitude": 38.218192,
@@ -20582,7 +20582,7 @@
       "search_name": "Ταραμπούρα",
       "primary_alias": "tarampoyra",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τέρψη": {
       "latitude": 38.229834,
@@ -20591,7 +20591,7 @@
       "search_name": "Τέρψη",
       "primary_alias": "terpsi",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τερψιθέα": {
       "latitude": 38.266982,
@@ -20600,7 +20600,7 @@
       "search_name": "Τερψιθέα",
       "primary_alias": "patra-terpsithea",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσίβδη": {
       "latitude": 38.244151,
@@ -20609,7 +20609,7 @@
       "search_name": "Τσίβδη",
       "primary_alias": "tsivdi",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Υψηλά Αλώνια": {
       "latitude": 38.241252,
@@ -20618,7 +20618,7 @@
       "search_name": "Υψηλά Αλώνια",
       "primary_alias": "ypsila-alonia",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φρούριο": {
       "latitude": 38.245088,
@@ -20627,7 +20627,7 @@
       "search_name": "Φρούριο",
       "primary_alias": "froyrio",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψαροφάι": {
       "latitude": 38.225692,
@@ -20636,7 +20636,7 @@
       "search_name": "Ψαροφάι",
       "primary_alias": "psarofai",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψάχου": {
       "latitude": 38.227487,
@@ -20645,7 +20645,7 @@
       "search_name": "Ψάχου",
       "primary_alias": "psahoy",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαραβάλι": {
       "latitude": 38.192522,
@@ -20654,7 +20654,7 @@
       "search_name": "Σαραβάλι",
       "primary_alias": "saravali",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βραχναίικα": {
       "latitude": 38.162944,
@@ -20663,7 +20663,7 @@
       "search_name": "Βραχναίικα",
       "primary_alias": "vrahnaiika",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Βασίλειος": {
       "latitude": 38.313215,
@@ -20672,7 +20672,7 @@
       "search_name": "Άγιος Βασίλειος",
       "primary_alias": "patra-agios-vasileios",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ακταίο": {
       "latitude": 38.306071,
@@ -20681,7 +20681,7 @@
       "search_name": "Ακταίο",
       "primary_alias": "aktaio",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρίο": {
       "latitude": 38.299444,
@@ -20690,7 +20690,7 @@
       "search_name": "Ρίο",
       "primary_alias": "rio",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οβριά": {
       "latitude": 38.192582,
@@ -20699,7 +20699,7 @@
       "search_name": "Οβριά",
       "primary_alias": "ovria",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Σοφία": {
       "latitude": 38.256369,
@@ -20708,7 +20708,7 @@
       "search_name": "Αγία Σοφία",
       "primary_alias": "patra-agia-sofia",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιβόλα": {
       "latitude": 38.208128,
@@ -20717,7 +20717,7 @@
       "search_name": "Περιβόλα",
       "primary_alias": "patra-perivola",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρέπανο": {
       "latitude": 38.321586,
@@ -20726,7 +20726,7 @@
       "search_name": "Δρέπανο",
       "primary_alias": "patra-drepano",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αραχωβίτικα": {
       "latitude": 38.325322,
@@ -20735,7 +20735,7 @@
       "search_name": "Αραχωβίτικα",
       "primary_alias": "patra-arahovitika",
       "city": "Πάτρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Αραχωβίτικα": {
       "latitude": 38.327988,
@@ -20744,8 +20744,8 @@
       "search_name": "Κάτω Αραχωβίτικα",
       "primary_alias": "patra-kato-arahovitika",
       "city": "Πάτρα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πειραιάς": {
     "Άγιος Ιωάννης Ρέντης": {
@@ -20755,7 +20755,7 @@
       "search_name": "Άγιος Ιωάννης Ρέντης",
       "primary_alias": "agios-iwannis-renti",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δραπετσώνα": {
       "latitude": 37.947863,
@@ -20764,7 +20764,7 @@
       "search_name": "Δραπετσώνα",
       "primary_alias": "drapetswna",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κερατσίνι": {
       "latitude": 37.964393,
@@ -20773,7 +20773,7 @@
       "search_name": "Κερατσίνι",
       "primary_alias": "keratsini",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νίκαια": {
       "latitude": 37.969731,
@@ -20782,7 +20782,7 @@
       "search_name": "Νίκαια",
       "primary_alias": "nikaia",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πειραιάς": {
       "latitude": 37.946977,
@@ -20791,7 +20791,7 @@
       "search_name": "Πειραιάς",
       "primary_alias": "peiraias",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Σοφία": {
       "latitude": 37.954775,
@@ -20800,7 +20800,7 @@
       "search_name": "Αγία Σοφία",
       "primary_alias": "peiraias-agia-sofia",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Διονύσιος": {
       "latitude": 37.952042,
@@ -20809,7 +20809,7 @@
       "search_name": "Άγιος Διονύσιος",
       "primary_alias": "peiraias-agios-dionysios",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απόλλωνος": {
       "latitude": 37.952558,
@@ -20818,7 +20818,7 @@
       "search_name": "Απόλλωνος",
       "primary_alias": "apollonos",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βρυώνη": {
       "latitude": 37.93744,
@@ -20827,7 +20827,7 @@
       "search_name": "Βρυώνη",
       "primary_alias": "vryoni",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ευαγγελίστρια": {
       "latitude": 37.945807,
@@ -20836,7 +20836,7 @@
       "search_name": "Ευαγγελίστρια",
       "primary_alias": "peiraias-eyaggelistria",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλίπολη": {
       "latitude": 37.931409,
@@ -20845,7 +20845,7 @@
       "search_name": "Καλλίπολη",
       "primary_alias": "kallipolh",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμίνια": {
       "latitude": 37.952486,
@@ -20854,7 +20854,7 @@
       "search_name": "Καμίνια",
       "primary_alias": "kaminia",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστέλλα": {
       "latitude": 37.940855,
@@ -20863,7 +20863,7 @@
       "search_name": "Καστέλλα",
       "primary_alias": "kastella",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκινιά": {
       "latitude": 37.961924,
@@ -20872,7 +20872,7 @@
       "search_name": "Κοκκινιά",
       "primary_alias": "kokkinia",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μανιάτικα": {
       "latitude": 37.956199,
@@ -20881,7 +20881,7 @@
       "search_name": "Μανιάτικα",
       "primary_alias": "maniatika",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Φάληρο": {
       "latitude": 37.94864,
@@ -20890,7 +20890,7 @@
       "search_name": "Νέο Φάληρο",
       "primary_alias": "neo-falhro",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παπαστράτειο": {
       "latitude": 37.952591,
@@ -20899,7 +20899,7 @@
       "search_name": "Παπαστράτειο",
       "primary_alias": "papastrateio",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πασαλιμάνι": {
       "latitude": 37.937966,
@@ -20908,7 +20908,7 @@
       "search_name": "Πασαλιμάνι",
       "primary_alias": "pasalimani",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πειραϊκή": {
       "latitude": 37.931176,
@@ -20917,7 +20917,7 @@
       "search_name": "Πειραϊκή",
       "primary_alias": "peiraiki",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προφήτης Ηλίας": {
       "latitude": 37.939238,
@@ -20926,7 +20926,7 @@
       "search_name": "Προφήτης Ηλίας",
       "primary_alias": "peiraias-profitis-ilias",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταμπούρια": {
       "latitude": 37.961192,
@@ -20935,7 +20935,7 @@
       "search_name": "Ταμπούρια",
       "primary_alias": "tampoyria",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τερψιθέα": {
       "latitude": 37.940453,
@@ -20944,7 +20944,7 @@
       "search_name": "Τερψιθέα",
       "primary_alias": "peiraias-terpsithea",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Υδραίικα": {
       "latitude": 37.936008,
@@ -20953,7 +20953,7 @@
       "search_name": "Υδραίικα",
       "primary_alias": "ydraiika",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φρεαττύδα": {
       "latitude": 37.931547,
@@ -20962,7 +20962,7 @@
       "search_name": "Φρεαττύδα",
       "primary_alias": "freattyda",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χατζηκυριάκειο": {
       "latitude": 37.935055,
@@ -20971,7 +20971,7 @@
       "search_name": "Χατζηκυριάκειο",
       "primary_alias": "hatzikyriakeio",
       "city": "Πειραιάς",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέραμα": {
       "latitude": 37.962862,
@@ -20980,8 +20980,8 @@
       "search_name": "Πέραμα",
       "primary_alias": "perama",
       "city": "Πειραιάς",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πικέρμι": {
     "Πικέρμι": {
@@ -20991,8 +20991,8 @@
       "search_name": "Πικέρμι",
       "primary_alias": "pikermi",
       "city": "Πικέρμι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πλαταμώνας": {
     "Πλαταμώνας": {
@@ -21002,8 +21002,8 @@
       "search_name": "Πλαταμώνας",
       "primary_alias": "platamonas",
       "city": "Πλαταμώνας",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πόρος": {
     "Πόρος": {
@@ -21013,7 +21013,7 @@
       "search_name": "Πόρος",
       "primary_alias": "poros",
       "city": "Πόρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλατάς": {
       "latitude": 37.495318,
@@ -21022,8 +21022,8 @@
       "search_name": "Γαλατάς",
       "primary_alias": "poros-galatas",
       "city": "Πόρος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πόρτο Ράφτη": {
     "Πόρτο Ράφτη": {
@@ -21033,7 +21033,7 @@
       "search_name": "Πόρτο Ράφτη",
       "primary_alias": "porto-rafti",
       "city": "Πόρτο Ράφτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 37.872978,
@@ -21042,7 +21042,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "porto-rafti-agia-marina",
       "city": "Πόρτο Ράφτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμφιθέα": {
       "latitude": 37.863153,
@@ -21051,7 +21051,7 @@
       "search_name": "Αμφιθέα",
       "primary_alias": "porto-rafti-amfithea",
       "city": "Πόρτο Ράφτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αυλάκι": {
       "latitude": 37.865608,
@@ -21060,7 +21060,7 @@
       "search_name": "Αυλάκι",
       "primary_alias": "porto-rafti-aylaki",
       "city": "Πόρτο Ράφτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορώνη": {
       "latitude": 37.870295,
@@ -21069,7 +21069,7 @@
       "search_name": "Κορώνη",
       "primary_alias": "porto-rafti-koroni",
       "city": "Πόρτο Ράφτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπαθιστά": {
       "latitude": 37.871468,
@@ -21078,7 +21078,7 @@
       "search_name": "Μπαθιστά",
       "primary_alias": "mpathista",
       "city": "Πόρτο Ράφτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 37.865244,
@@ -21087,7 +21087,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "porto-rafti-panorama",
       "city": "Πόρτο Ράφτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χειλίστρα": {
       "latitude": 37.860787,
@@ -21096,8 +21096,8 @@
       "search_name": "Χειλίστρα",
       "primary_alias": "heilistra",
       "city": "Πόρτο Ράφτη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πρέβεζα": {
     "Νέα Κερασούντα": {
@@ -21107,7 +21107,7 @@
       "search_name": "Νέα Κερασούντα",
       "primary_alias": "nea-kerasoynta",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλιππιάδα": {
       "latitude": 39.20494,
@@ -21116,7 +21116,7 @@
       "search_name": "Φιλιππιάδα",
       "primary_alias": "filippiada",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρέβεζα": {
       "latitude": 38.959006,
@@ -21125,7 +21125,7 @@
       "search_name": "Πρέβεζα",
       "primary_alias": "preveza",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Θωμάς": {
       "latitude": 38.975348,
@@ -21134,7 +21134,7 @@
       "search_name": "Άγιος Θωμάς",
       "primary_alias": "preveza-agios-thomas",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμίτσι": {
       "latitude": 38.960739,
@@ -21143,7 +21143,7 @@
       "search_name": "Καλαμίτσι",
       "primary_alias": "preveza-kalamitsi",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μύτικας": {
       "latitude": 38.99736,
@@ -21152,7 +21152,7 @@
       "search_name": "Μύτικας",
       "primary_alias": "mytikas",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 38.983713,
@@ -21161,7 +21161,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "preveza-neohori",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νικόπολη": {
       "latitude": 39.026564,
@@ -21170,7 +21170,7 @@
       "search_name": "Νικόπολη",
       "primary_alias": "nikopoli",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψαθάκι": {
       "latitude": 38.977131,
@@ -21179,7 +21179,7 @@
       "search_name": "Ψαθάκι",
       "primary_alias": "psathaki",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λούρος": {
       "latitude": 39.164441,
@@ -21188,7 +21188,7 @@
       "search_name": "Λούρος",
       "primary_alias": "preveza-loyros",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Ωρωπός": {
       "latitude": 39.149656,
@@ -21197,7 +21197,7 @@
       "search_name": "Νέος Ωρωπός",
       "primary_alias": "preveza-neos-oropos",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καναλλάκι": {
       "latitude": 39.2325,
@@ -21206,7 +21206,7 @@
       "search_name": "Καναλλάκι",
       "primary_alias": "preveza-kanallaki",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χόχλα": {
       "latitude": 39.216893,
@@ -21215,7 +21215,7 @@
       "search_name": "Χόχλα",
       "primary_alias": "preveza-hohla",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστρί": {
       "latitude": 39.249566,
@@ -21224,7 +21224,7 @@
       "search_name": "Καστρί",
       "primary_alias": "preveza-kastri",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυροχώρι": {
       "latitude": 39.261717,
@@ -21233,7 +21233,7 @@
       "search_name": "Σταυροχώρι",
       "primary_alias": "preveza-stayrohori",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νάρκισσος": {
       "latitude": 39.253985,
@@ -21242,7 +21242,7 @@
       "search_name": "Νάρκισσος",
       "primary_alias": "preveza-narkissos",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αχερουσία": {
       "latitude": 39.258194,
@@ -21251,7 +21251,7 @@
       "search_name": "Αχερουσία",
       "primary_alias": "preveza-aheroysia",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκεπαστό": {
       "latitude": 39.231557,
@@ -21260,7 +21260,7 @@
       "search_name": "Σκεπαστό",
       "primary_alias": "preveza-skepasto",
       "city": "Πρέβεζα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστροσυκιά": {
       "latitude": 39.10467,
@@ -21269,8 +21269,8 @@
       "search_name": "Καστροσυκιά",
       "primary_alias": "preveza-kastrosykia",
       "city": "Πρέβεζα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πτολεμαΐδα": {
     "Πτολεμαΐδα": {
@@ -21280,7 +21280,7 @@
       "search_name": "Πτολεμαΐδα",
       "primary_alias": "ptolemaida",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Χριστόφορος": {
       "latitude": 40.514913,
@@ -21289,7 +21289,7 @@
       "search_name": "Άγιος Χριστόφορος",
       "primary_alias": "ptolemaida-agios-hristoforos",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αναρράχη": {
       "latitude": 40.492452,
@@ -21298,7 +21298,7 @@
       "search_name": "Αναρράχη",
       "primary_alias": "anarrahi",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανατολικό": {
       "latitude": 40.544131,
@@ -21307,7 +21307,7 @@
       "search_name": "Ανατολικό",
       "primary_alias": "anatoliko",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άρδασσα": {
       "latitude": 40.477309,
@@ -21316,7 +21316,7 @@
       "search_name": "Άρδασσα",
       "primary_alias": "ardassa",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασβεστόπετρα": {
       "latitude": 40.459433,
@@ -21325,7 +21325,7 @@
       "search_name": "Ασβεστόπετρα",
       "primary_alias": "asvestopetra",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλάτεια": {
       "latitude": 40.55792,
@@ -21334,7 +21334,7 @@
       "search_name": "Γαλάτεια",
       "primary_alias": "galateia",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες": {
       "latitude": 40.527024,
@@ -21343,7 +21343,7 @@
       "search_name": "Εργατικές Κατοικίες",
       "primary_alias": "ptolemaida-ergatikes-katoikies",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρυοχώρι": {
       "latitude": 40.503168,
@@ -21352,7 +21352,7 @@
       "search_name": "Καρυοχώρι",
       "primary_alias": "karyohori",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 40.513444,
@@ -21361,7 +21361,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "ptolemaida",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κομνηνά": {
       "latitude": 40.590561,
@@ -21370,7 +21370,7 @@
       "search_name": "Κομνηνά",
       "primary_alias": "komnina",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρυόβρυση": {
       "latitude": 40.483887,
@@ -21379,7 +21379,7 @@
       "search_name": "Κρυόβρυση",
       "primary_alias": "kryovrysi",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεβαία": {
       "latitude": 40.645521,
@@ -21388,7 +21388,7 @@
       "search_name": "Λεβαία",
       "primary_alias": "levaia",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυροπηγή": {
       "latitude": 40.448595,
@@ -21397,7 +21397,7 @@
       "search_name": "Μαυροπηγή",
       "primary_alias": "mayropigi",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οικισμός Καρδιάς": {
       "latitude": 40.525972,
@@ -21406,7 +21406,7 @@
       "search_name": "Οικισμός Καρδιάς",
       "primary_alias": "oikismos-kardias",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ολυμπιάδα": {
       "latitude": 40.56989,
@@ -21415,7 +21415,7 @@
       "search_name": "Ολυμπιάδα",
       "primary_alias": "ptolemaida-olympiada",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεντάβρυσος": {
       "latitude": 40.554824,
@@ -21424,7 +21424,7 @@
       "search_name": "Πεντάβρυσος",
       "primary_alias": "pentavrysos",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περδίκκας": {
       "latitude": 40.560347,
@@ -21433,7 +21433,7 @@
       "search_name": "Περδίκκας",
       "primary_alias": "perdikkas",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προάστιο": {
       "latitude": 40.488,
@@ -21442,7 +21442,7 @@
       "search_name": "Προάστιο",
       "primary_alias": "ptolemaida-proastio",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φιλώτας": {
       "latitude": 40.624804,
@@ -21451,8 +21451,8 @@
       "search_name": "Φιλώτας",
       "primary_alias": "filotas",
       "city": "Πτολεμαΐδα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Πύργος": {
     "Πύργος": {
@@ -21462,7 +21462,7 @@
       "search_name": "Πύργος",
       "primary_alias": "pirgos",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 37.702094,
@@ -21471,7 +21471,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "pyrgos-agios-georgios",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 37.679493,
@@ -21480,7 +21480,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "pyrgos-agios-ioannis",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλφειούσα": {
       "latitude": 37.640148,
@@ -21489,7 +21489,7 @@
       "search_name": "Αλφειούσα",
       "primary_alias": "alfeioysa",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανθόπυργος": {
       "latitude": 37.684759,
@@ -21498,7 +21498,7 @@
       "search_name": "Ανθόπυργος",
       "primary_alias": "anthopyrgos",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαρβάσαινα": {
       "latitude": 37.672088,
@@ -21507,7 +21507,7 @@
       "search_name": "Βαρβάσαινα",
       "primary_alias": "varvasaina",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βυτιναίικα": {
       "latitude": 37.683172,
@@ -21516,7 +21516,7 @@
       "search_name": "Βυτιναίικα",
       "primary_alias": "vytinaiika",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γρανιτσαίικα": {
       "latitude": 37.682935,
@@ -21525,7 +21525,7 @@
       "search_name": "Γρανιτσαίικα",
       "primary_alias": "granitsaiika",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επιτάλιο": {
       "latitude": 37.62717,
@@ -21534,7 +21534,7 @@
       "search_name": "Επιτάλιο",
       "primary_alias": "epitalio",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καβούρι": {
       "latitude": 37.66256,
@@ -21543,7 +21543,7 @@
       "search_name": "Καβούρι",
       "primary_alias": "kavoyri",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 37.662914,
@@ -21552,7 +21552,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "pyrgos-kallithea",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατάκολο": {
       "latitude": 37.650082,
@@ -21561,7 +21561,7 @@
       "search_name": "Κατάκολο",
       "primary_alias": "katakolo",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Καβούρι": {
       "latitude": 37.663859,
@@ -21570,7 +21570,7 @@
       "search_name": "Κάτω Καβούρι",
       "primary_alias": "kato-kavoyri",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 37.671542,
@@ -21579,7 +21579,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "pirgos",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολίρι": {
       "latitude": 37.686761,
@@ -21588,7 +21588,7 @@
       "search_name": "Κολίρι",
       "primary_alias": "koliri",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυανή Ακτή": {
       "latitude": 37.656056,
@@ -21597,7 +21597,7 @@
       "search_name": "Κυανή Ακτή",
       "primary_alias": "kyani-akti",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαμπέτι": {
       "latitude": 37.689148,
@@ -21606,7 +21606,7 @@
       "search_name": "Λαμπέτι",
       "primary_alias": "lampeti",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λασταίικα": {
       "latitude": 37.693143,
@@ -21615,7 +21615,7 @@
       "search_name": "Λασταίικα",
       "primary_alias": "lastaiika",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λέτρινα": {
       "latitude": 37.646366,
@@ -21624,7 +21624,7 @@
       "search_name": "Λέτρινα",
       "primary_alias": "letrina",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυρτιά": {
       "latitude": 37.714761,
@@ -21633,7 +21633,7 @@
       "search_name": "Μυρτιά",
       "primary_alias": "pyrgos-myrtia",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαλμώνη": {
       "latitude": 37.66046,
@@ -21642,7 +21642,7 @@
       "search_name": "Σαλμώνη",
       "primary_alias": "salmoni",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκουροχώρι": {
       "latitude": 37.685722,
@@ -21651,7 +21651,7 @@
       "search_name": "Σκουροχώρι",
       "primary_alias": "skoyrohori",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπιάτζα": {
       "latitude": 37.629481,
@@ -21660,7 +21660,7 @@
       "search_name": "Σπιάτζα",
       "primary_alias": "spiatza",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρέφι": {
       "latitude": 37.668341,
@@ -21669,7 +21669,7 @@
       "search_name": "Στρέφι",
       "primary_alias": "strefi",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πράσινο": {
       "latitude": 37.715336,
@@ -21678,7 +21678,7 @@
       "search_name": "Πράσινο",
       "primary_alias": "prasino",
       "city": "Πύργος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχαία Ολυμπία": {
       "latitude": 37.644965,
@@ -21687,8 +21687,8 @@
       "search_name": "Αρχαία Ολυμπία",
       "primary_alias": "arhaia-olympia",
       "city": "Πύργος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ραφήνα": {
     "Ραφήνα": {
@@ -21698,7 +21698,7 @@
       "search_name": "Ραφήνα",
       "primary_alias": "rafina",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Βαρβάρα": {
       "latitude": 38.027213,
@@ -21707,7 +21707,7 @@
       "search_name": "Αγία Βαρβάρα",
       "primary_alias": "rafina-agia-varvara",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα": {
       "latitude": 38.008155,
@@ -21716,7 +21716,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "rafina-agia-triada",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αίολος": {
       "latitude": 38.017496,
@@ -21725,7 +21725,7 @@
       "search_name": "Αίολος",
       "primary_alias": "aiolos",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αύρα": {
       "latitude": 38.014852,
@@ -21734,7 +21734,7 @@
       "search_name": "Αύρα",
       "primary_alias": "ayra",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βγένα": {
       "latitude": 38.021573,
@@ -21743,7 +21743,7 @@
       "search_name": "Βγένα",
       "primary_alias": "vgena",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διασταύρωση": {
       "latitude": 38.02055,
@@ -21752,7 +21752,7 @@
       "search_name": "Διασταύρωση",
       "primary_alias": "diastayrosi",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δροσιά": {
       "latitude": 38.004202,
@@ -21761,7 +21761,7 @@
       "search_name": "Δροσιά",
       "primary_alias": "rafina-drosia",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιτεχνούπολη": {
       "latitude": 38.026204,
@@ -21770,7 +21770,7 @@
       "search_name": "Καλλιτεχνούπολη",
       "primary_alias": "kallitehnoypoli",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιούπι": {
       "latitude": 38.029931,
@@ -21779,7 +21779,7 @@
       "search_name": "Κιούπι",
       "primary_alias": "kioypi",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόκκινο Λιμανάκι": {
       "latitude": 38.02928,
@@ -21788,7 +21788,7 @@
       "search_name": "Κόκκινο Λιμανάκι",
       "primary_alias": "kokkino-limanaki",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελτέμι": {
       "latitude": 38.001703,
@@ -21797,7 +21797,7 @@
       "search_name": "Μελτέμι",
       "primary_alias": "meltemi",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεόκτιστα": {
       "latitude": 38.019264,
@@ -21806,7 +21806,7 @@
       "search_name": "Νεόκτιστα",
       "primary_alias": "rafina-neoktista",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Πόντος": {
       "latitude": 38.030316,
@@ -21815,7 +21815,7 @@
       "search_name": "Νέος Πόντος",
       "primary_alias": "rafina-neos-pontos",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ορειχαλκουργοί": {
       "latitude": 38.008149,
@@ -21824,7 +21824,7 @@
       "search_name": "Ορειχαλκουργοί",
       "primary_alias": "oreihalkoyrgoi",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 38.007652,
@@ -21833,7 +21833,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "rafina-panorama",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεύκο": {
       "latitude": 38.016509,
@@ -21842,7 +21842,7 @@
       "search_name": "Πεύκο",
       "primary_alias": "peyko",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πευκώνας": {
       "latitude": 38.02222,
@@ -21851,7 +21851,7 @@
       "search_name": "Πευκώνας",
       "primary_alias": "rafina-peykonas",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιβολάκια": {
       "latitude": 38.017809,
@@ -21860,7 +21860,7 @@
       "search_name": "Περιβολάκια",
       "primary_alias": "perivolakia",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρωτέας": {
       "latitude": 38.014834,
@@ -21869,7 +21869,7 @@
       "search_name": "Πρωτέας",
       "primary_alias": "proteas",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκαλοπάτι": {
       "latitude": 38.008268,
@@ -21878,7 +21878,7 @@
       "search_name": "Σκαλοπάτι",
       "primary_alias": "skalopati",
       "city": "Ραφήνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκουφέικα": {
       "latitude": 38.026698,
@@ -21887,8 +21887,8 @@
       "search_name": "Σκουφέικα",
       "primary_alias": "skoyfeika",
       "city": "Ραφήνα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ρέθυμνο Κρήτη": {
     "Ρέθυμνο": {
@@ -21898,7 +21898,7 @@
       "search_name": "Ρέθυμνο",
       "primary_alias": "rethimno",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Ειρήνη": {
       "latitude": 35.340376,
@@ -21907,7 +21907,7 @@
       "search_name": "Αγία Ειρήνη",
       "primary_alias": "rethymno-kriti-agia-eirini",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 35.352985,
@@ -21916,7 +21916,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "rethymno-kriti-agia-paraskeyi",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Τριάδα": {
       "latitude": 35.342355,
@@ -21925,7 +21925,7 @@
       "search_name": "Αγία Τριάδα",
       "primary_alias": "rethymno-kriti-agia-triada",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ανδρέας": {
       "latitude": 35.31823,
@@ -21934,7 +21934,7 @@
       "search_name": "Άγιος Ανδρέας",
       "primary_alias": "rethymno-kriti-agios-andreas",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 35.29549,
@@ -21943,7 +21943,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "rethymno-kriti-agios-georgios",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Δημήτριος": {
       "latitude": 35.353995,
@@ -21952,7 +21952,7 @@
       "search_name": "Άγιος Δημήτριος",
       "primary_alias": "rethymno-kriti-agios-dimitrios",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Μάρκος": {
       "latitude": 35.360326,
@@ -21961,7 +21961,7 @@
       "search_name": "Άγιος Μάρκος",
       "primary_alias": "agios-markos",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγνά": {
       "latitude": 35.361663,
@@ -21970,7 +21970,7 @@
       "search_name": "Αγνά",
       "primary_alias": "agna",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άδελε": {
       "latitude": 35.357914,
@@ -21979,7 +21979,7 @@
       "search_name": "Άδελε",
       "primary_alias": "adele",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αδελιανός Κάμπος": {
       "latitude": 35.372473,
@@ -21988,7 +21988,7 @@
       "search_name": "Αδελιανός Κάμπος",
       "primary_alias": "adelianos-kampos",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Βαλσαμόνερο": {
       "latitude": 35.30116,
@@ -21997,7 +21997,7 @@
       "search_name": "Άνω Βαλσαμόνερο",
       "primary_alias": "ano-valsamonero",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανώγεια": {
       "latitude": 35.34313,
@@ -22006,7 +22006,7 @@
       "search_name": "Ανώγεια",
       "primary_alias": "anogeia",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρμένοι": {
       "latitude": 35.302971,
@@ -22015,7 +22015,7 @@
       "search_name": "Αρμένοι",
       "primary_alias": "armenoi",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αστέρι": {
       "latitude": 35.368509,
@@ -22024,7 +22024,7 @@
       "search_name": "Αστέρι",
       "primary_alias": "asteri",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ατσιπόπουλο": {
       "latitude": 35.352932,
@@ -22033,7 +22033,7 @@
       "search_name": "Ατσιπόπουλο",
       "primary_alias": "atsipopoylo",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βιολί Χαράκι": {
       "latitude": 35.360403,
@@ -22042,7 +22042,7 @@
       "search_name": "Βιολί Χαράκι",
       "primary_alias": "violi-haraki",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γάλλος": {
       "latitude": 35.347262,
@@ -22051,7 +22051,7 @@
       "search_name": "Γάλλος",
       "primary_alias": "gallos",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γεράνι": {
       "latitude": 35.353206,
@@ -22060,7 +22060,7 @@
       "search_name": "Γεράνι",
       "primary_alias": "gerani",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιαννούδι": {
       "latitude": 35.348776,
@@ -22069,7 +22069,7 @@
       "search_name": "Γιαννούδι",
       "primary_alias": "giannoydi",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γωνιά": {
       "latitude": 35.323485,
@@ -22078,7 +22078,7 @@
       "search_name": "Γωνιά",
       "primary_alias": "gonia",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δίλοφο": {
       "latitude": 35.349526,
@@ -22087,7 +22087,7 @@
       "search_name": "Δίλοφο",
       "primary_alias": "dilofo",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 35.362529,
@@ -22096,7 +22096,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "rethymno-kriti-kallithea",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστελάκια": {
       "latitude": 35.358559,
@@ -22105,7 +22105,7 @@
       "search_name": "Καστελάκια",
       "primary_alias": "kastelakia",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστέλλος": {
       "latitude": 35.308894,
@@ -22114,7 +22114,7 @@
       "search_name": "Καστέλλος",
       "primary_alias": "kastellos",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Βαλσαμόνερο": {
       "latitude": 35.326221,
@@ -22123,7 +22123,7 @@
       "search_name": "Κάτω Βαλσαμόνερο",
       "primary_alias": "kato-valsamonero",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 35.364403,
@@ -22132,7 +22132,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "rethimno",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουμπές": {
       "latitude": 35.363104,
@@ -22141,7 +22141,7 @@
       "search_name": "Κουμπές",
       "primary_alias": "koympes",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυριάννα": {
       "latitude": 35.343686,
@@ -22150,7 +22150,7 @@
       "search_name": "Κυριάννα",
       "primary_alias": "kyrianna",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λούτρα": {
       "latitude": 35.354789,
@@ -22159,7 +22159,7 @@
       "search_name": "Λούτρα",
       "primary_alias": "rethymno-kriti-loytra",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαγνησία": {
       "latitude": 35.377623,
@@ -22168,7 +22168,7 @@
       "search_name": "Μαγνησία",
       "primary_alias": "magnisia",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρούλας": {
       "latitude": 35.346939,
@@ -22177,7 +22177,7 @@
       "search_name": "Μαρούλας",
       "primary_alias": "maroylas",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μασταμπάς": {
       "latitude": 35.360358,
@@ -22186,7 +22186,7 @@
       "search_name": "Μασταμπάς",
       "primary_alias": "rethymno-kriti-mastampas",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλο Μετόχι": {
       "latitude": 35.353074,
@@ -22195,7 +22195,7 @@
       "search_name": "Μεγάλο Μετόχι",
       "primary_alias": "megalo-metohi",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέση": {
       "latitude": 35.343763,
@@ -22204,7 +22204,7 @@
       "search_name": "Μέση",
       "primary_alias": "rethymno-kriti-mesi",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μικρό Μετόχι": {
       "latitude": 35.341664,
@@ -22213,7 +22213,7 @@
       "search_name": "Μικρό Μετόχι",
       "primary_alias": "mikro-metohi",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μισίρια": {
       "latitude": 35.363614,
@@ -22222,7 +22222,7 @@
       "search_name": "Μισίρια",
       "primary_alias": "misiria",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μύλοι": {
       "latitude": 35.33845,
@@ -22231,7 +22231,7 @@
       "search_name": "Μύλοι",
       "primary_alias": "myloi",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηρόν Χωρίον": {
       "latitude": 35.350643,
@@ -22240,7 +22240,7 @@
       "search_name": "Ξηρόν Χωρίον",
       "primary_alias": "xiron-horion",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παγκαλοχώρι": {
       "latitude": 35.369834,
@@ -22249,7 +22249,7 @@
       "search_name": "Παγκαλοχώρι",
       "primary_alias": "pagkalohori",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Πόλη": {
       "latitude": 35.369766,
@@ -22258,7 +22258,7 @@
       "search_name": "Παλαιά Πόλη",
       "primary_alias": "rethymno-kriti-palaia-poli",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανεπιστημιούπολη": {
       "latitude": 35.353804,
@@ -22267,7 +22267,7 @@
       "search_name": "Πανεπιστημιούπολη",
       "primary_alias": "rethymno-kriti-panepistimioypoli",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 35.362486,
@@ -22276,7 +22276,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "rethymno-kriti-panorama",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία": {
       "latitude": 35.365431,
@@ -22285,7 +22285,7 @@
       "search_name": "Παραλία",
       "primary_alias": "rethymno-kriti-paralia",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιβόλια": {
       "latitude": 35.36644,
@@ -22294,7 +22294,7 @@
       "search_name": "Περιβόλια",
       "primary_alias": "perivolia",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πηγή": {
       "latitude": 35.36043,
@@ -22303,7 +22303,7 @@
       "search_name": "Πηγή",
       "primary_alias": "pigi",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πηγιανός Κάμπος": {
       "latitude": 35.377586,
@@ -22312,7 +22312,7 @@
       "search_name": "Πηγιανός Κάμπος",
       "primary_alias": "pigianos-kampos",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατανιάς": {
       "latitude": 35.36857,
@@ -22321,7 +22321,7 @@
       "search_name": "Πλατανιάς",
       "primary_alias": "platanias",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρασιές": {
       "latitude": 35.3198,
@@ -22330,7 +22330,7 @@
       "search_name": "Πρασιές",
       "primary_alias": "prasies",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρινέδες": {
       "latitude": 35.33168,
@@ -22339,7 +22339,7 @@
       "search_name": "Πρινέδες",
       "primary_alias": "prinedes",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρινές": {
       "latitude": 35.346009,
@@ -22348,7 +22348,7 @@
       "search_name": "Πρινές",
       "primary_alias": "prines",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρουσσοσπίτι": {
       "latitude": 35.334107,
@@ -22357,7 +22357,7 @@
       "search_name": "Ρουσσοσπίτι",
       "primary_alias": "royssospiti",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκαλέτα": {
       "latitude": 35.387688,
@@ -22366,7 +22366,7 @@
       "search_name": "Σκαλέτα",
       "primary_alias": "skaleta",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σοχώρα": {
       "latitude": 35.368044,
@@ -22375,7 +22375,7 @@
       "search_name": "Σοχώρα",
       "primary_alias": "sohora",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρωμένος": {
       "latitude": 35.384942,
@@ -22384,7 +22384,7 @@
       "search_name": "Σταυρωμένος",
       "primary_alias": "stayromenos",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Θεοδωράκη": {
       "latitude": 35.366173,
@@ -22393,7 +22393,7 @@
       "search_name": "Στρατόπεδο Θεοδωράκη",
       "primary_alias": "stratopedo-theodoraki",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σφακάκι": {
       "latitude": 35.37908,
@@ -22402,7 +22402,7 @@
       "search_name": "Σφακάκι",
       "primary_alias": "sfakaki",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σωματάς": {
       "latitude": 35.324817,
@@ -22411,7 +22411,7 @@
       "search_name": "Σωματάς",
       "primary_alias": "somatas",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρία Μοναστήρια": {
       "latitude": 35.345798,
@@ -22420,7 +22420,7 @@
       "search_name": "Τρία Μοναστήρια",
       "primary_alias": "tria-monastiria",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φραντζεσκιανά Μετόχια": {
       "latitude": 35.327913,
@@ -22429,7 +22429,7 @@
       "search_name": "Φραντζεσκιανά Μετόχια",
       "primary_alias": "frantzeskiana-metohia",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαμαλεύρι": {
       "latitude": 35.372671,
@@ -22438,7 +22438,7 @@
       "search_name": "Χαμαλεύρι",
       "primary_alias": "hamaleyri",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρομοναστήρι": {
       "latitude": 35.326915,
@@ -22447,7 +22447,7 @@
       "search_name": "Χρομοναστήρι",
       "primary_alias": "hromonastiri",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέραμα": {
       "latitude": 35.369256,
@@ -22456,7 +22456,7 @@
       "search_name": "Πέραμα",
       "primary_alias": "rethymno-kriti-perama",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγγελιανά": {
       "latitude": 35.382323,
@@ -22465,7 +22465,7 @@
       "search_name": "Αγγελιανά",
       "primary_alias": "aggeliana",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρούμελη": {
       "latitude": 35.404636,
@@ -22474,7 +22474,7 @@
       "search_name": "Ρούμελη",
       "primary_alias": "roymeli",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκεπαστή": {
       "latitude": 35.413505,
@@ -22483,7 +22483,7 @@
       "search_name": "Σκεπαστή",
       "primary_alias": "skepasti",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αχλάδες": {
       "latitude": 35.394774,
@@ -22492,7 +22492,7 @@
       "search_name": "Αχλάδες",
       "primary_alias": "ahlades",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μελιδόνι": {
       "latitude": 35.378712,
@@ -22501,7 +22501,7 @@
       "search_name": "Μελιδόνι",
       "primary_alias": "melidoni",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαφνέδες": {
       "latitude": 35.356556,
@@ -22510,7 +22510,7 @@
       "search_name": "Δαφνέδες",
       "primary_alias": "dafnedes",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαμάβολος": {
       "latitude": 35.346286,
@@ -22519,7 +22519,7 @@
       "search_name": "Δαμάβολος",
       "primary_alias": "damavolos",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ορθές": {
       "latitude": 35.337352,
@@ -22528,7 +22528,7 @@
       "search_name": "Ορθές",
       "primary_alias": "orthes",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαργαρίτες": {
       "latitude": 35.340083,
@@ -22537,7 +22537,7 @@
       "search_name": "Μαργαρίτες",
       "primary_alias": "margarites",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλευριανά": {
       "latitude": 35.350955,
@@ -22546,7 +22546,7 @@
       "search_name": "Πλευριανά",
       "primary_alias": "pleyriana",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλφά": {
       "latitude": 35.359117,
@@ -22555,7 +22555,7 @@
       "search_name": "Αλφά",
       "primary_alias": "alfa",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάνορμος": {
       "latitude": 35.417358,
@@ -22564,7 +22564,7 @@
       "search_name": "Πάνορμος",
       "primary_alias": "rethymno-kriti-panormos",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χουμέρι": {
       "latitude": 35.344741,
@@ -22573,7 +22573,7 @@
       "search_name": "Χουμέρι",
       "primary_alias": "hoymeri",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλυχάδα": {
       "latitude": 35.398361,
@@ -22582,7 +22582,7 @@
       "search_name": "Βλυχάδα",
       "primary_alias": "rethymno-kriti-vlyhada",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εξάντης": {
       "latitude": 35.402779,
@@ -22591,7 +22591,7 @@
       "search_name": "Εξάντης",
       "primary_alias": "rethymno-kriti-exantis",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαμεριανά": {
       "latitude": 35.397189,
@@ -22600,7 +22600,7 @@
       "search_name": "Λαμεριανά",
       "primary_alias": "rethymno-kriti-lameriana",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπαλί": {
       "latitude": 35.410647,
@@ -22609,7 +22609,7 @@
       "search_name": "Μπαλί",
       "primary_alias": "rethymno-kriti-mpali",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιριπιδιανά": {
       "latitude": 35.405409,
@@ -22618,7 +22618,7 @@
       "search_name": "Σιριπιδιανά",
       "primary_alias": "rethymno-kriti-siripidiana",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σολοχιανά": {
       "latitude": 35.38957,
@@ -22627,7 +22627,7 @@
       "search_name": "Σολοχιανά",
       "primary_alias": "rethymno-kriti-solohiana",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χάρακας": {
       "latitude": 35.394001,
@@ -22636,8 +22636,8 @@
       "search_name": "Χάρακας",
       "primary_alias": "rethymno-kriti-harakas",
       "city": "Ρέθυμνο Κρήτη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ροδόπολη": {
     "Ροδόπολη": {
@@ -22647,8 +22647,8 @@
       "search_name": "Ροδόπολη",
       "primary_alias": "rodopoli",
       "city": "Ροδόπολη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ρόδος": {
     "Ρόδος": {
@@ -22658,7 +22658,7 @@
       "search_name": "Ρόδος",
       "primary_alias": "rodos",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 36.438288,
@@ -22667,7 +22667,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "rodos-agios-nikolaos",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανάληψη": {
       "latitude": 36.427354,
@@ -22676,7 +22676,7 @@
       "search_name": "Ανάληψη",
       "primary_alias": "rodos-analipsi",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απόλλωνα": {
       "latitude": 36.260642,
@@ -22685,7 +22685,7 @@
       "search_name": "Απόλλωνα",
       "primary_alias": "apollona",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχάγγελος": {
       "latitude": 36.214365,
@@ -22694,7 +22694,7 @@
       "search_name": "Αρχάγγελος",
       "primary_alias": "arhaggelos",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρχίπολη": {
       "latitude": 36.266545,
@@ -22703,7 +22703,7 @@
       "search_name": "Αρχίπολη",
       "primary_alias": "arhipoli",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αφάντου": {
       "latitude": 36.294214,
@@ -22712,7 +22712,7 @@
       "search_name": "Αφάντου",
       "primary_alias": "afantoy",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θεολόγος": {
       "latitude": 36.373962,
@@ -22721,7 +22721,7 @@
       "search_name": "Θεολόγος",
       "primary_alias": "rodos-theologos",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιαλυσός": {
       "latitude": 36.41409,
@@ -22730,7 +22730,7 @@
       "search_name": "Ιαλυσός",
       "primary_alias": "ialysos",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιξιά": {
       "latitude": 36.419691,
@@ -22739,7 +22739,7 @@
       "search_name": "Ιξιά",
       "primary_alias": "ixia",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαβάρδα": {
       "latitude": 36.341741,
@@ -22748,7 +22748,7 @@
       "search_name": "Καλαβάρδα",
       "primary_alias": "kalavarda",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 36.391508,
@@ -22757,7 +22757,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "rodos-kallithea",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλυθιές": {
       "latitude": 36.336263,
@@ -22766,7 +22766,7 @@
       "search_name": "Καλυθιές",
       "primary_alias": "kalythies",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρακόνερο": {
       "latitude": 36.418382,
@@ -22775,7 +22775,7 @@
       "search_name": "Καρακόνερο",
       "primary_alias": "karakonero",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολύμπια": {
       "latitude": 36.25538,
@@ -22784,7 +22784,7 @@
       "search_name": "Κολύμπια",
       "primary_alias": "kolympia",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοσκινού": {
       "latitude": 36.387101,
@@ -22793,7 +22793,7 @@
       "search_name": "Κοσκινού",
       "primary_alias": "koskinoy",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρεμαστή": {
       "latitude": 36.411024,
@@ -22802,7 +22802,7 @@
       "search_name": "Κρεμαστή",
       "primary_alias": "kremasti",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρητικά": {
       "latitude": 36.434372,
@@ -22811,7 +22811,7 @@
       "search_name": "Κρητικά",
       "primary_alias": "rodos-kritika",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λάρδος": {
       "latitude": 36.093215,
@@ -22820,7 +22820,7 @@
       "search_name": "Λάρδος",
       "primary_alias": "lardos",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λίνδος": {
       "latitude": 36.090249,
@@ -22829,7 +22829,7 @@
       "search_name": "Λίνδος",
       "primary_alias": "lindos",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαντράκι": {
       "latitude": 36.45094,
@@ -22838,7 +22838,7 @@
       "search_name": "Μαντράκι",
       "primary_alias": "mantraki",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαριτσά": {
       "latitude": 36.359851,
@@ -22847,7 +22847,7 @@
       "search_name": "Μαριτσά",
       "primary_alias": "maritsa",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιά Πόλη": {
       "latitude": 36.442932,
@@ -22856,7 +22856,7 @@
       "search_name": "Παλιά Πόλη",
       "primary_alias": "rodos-palia-poli",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραδείσι": {
       "latitude": 36.399197,
@@ -22865,7 +22865,7 @@
       "search_name": "Παραδείσι",
       "primary_alias": "rodos-paradeisi",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παστίδα": {
       "latitude": 36.387266,
@@ -22874,7 +22874,7 @@
       "search_name": "Παστίδα",
       "primary_alias": "pastida",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ροδίνι": {
       "latitude": 36.424442,
@@ -22883,7 +22883,7 @@
       "search_name": "Ροδίνι",
       "primary_alias": "rodini",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σγουρού": {
       "latitude": 36.405358,
@@ -22892,7 +22892,7 @@
       "search_name": "Σγουρού",
       "primary_alias": "sgoyroy",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σορώνη": {
       "latitude": 36.363014,
@@ -22901,7 +22901,7 @@
       "search_name": "Σορώνη",
       "primary_alias": "soroni",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσαΐρι": {
       "latitude": 36.384483,
@@ -22910,7 +22910,7 @@
       "search_name": "Τσαΐρι",
       "primary_alias": "tsairi",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φαληράκι": {
       "latitude": 36.342618,
@@ -22919,7 +22919,7 @@
       "search_name": "Φαληράκι",
       "primary_alias": "faliraki",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φάνες": {
       "latitude": 36.350499,
@@ -22928,7 +22928,7 @@
       "search_name": "Φάνες",
       "primary_alias": "fanes",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δασκάλων": {
       "latitude": 36.430053,
@@ -22937,7 +22937,7 @@
       "search_name": "Δασκάλων",
       "primary_alias": "daskalon",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεύκοι": {
       "latitude": 36.072681,
@@ -22946,7 +22946,7 @@
       "search_name": "Πεύκοι",
       "primary_alias": "peykoi",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάλαθος": {
       "latitude": 36.124064,
@@ -22955,7 +22955,7 @@
       "search_name": "Κάλαθος",
       "primary_alias": "kalathos",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυλώνας": {
       "latitude": 36.105797,
@@ -22964,7 +22964,7 @@
       "search_name": "Πυλώνας",
       "primary_alias": "pylonas",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάσαρη": {
       "latitude": 36.178516,
@@ -22973,7 +22973,7 @@
       "search_name": "Μάσαρη",
       "primary_alias": "masari",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαλώνας": {
       "latitude": 36.199013,
@@ -22982,7 +22982,7 @@
       "search_name": "Μαλώνας",
       "primary_alias": "malonas",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλυχά": {
       "latitude": 36.105937,
@@ -22991,7 +22991,7 @@
       "search_name": "Βλυχά",
       "primary_alias": "vlyha",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Απόστολοι": {
       "latitude": 36.413213,
@@ -23000,7 +23000,7 @@
       "search_name": "Άγιοι Απόστολοι",
       "primary_alias": "rodos-agioi-apostoloi",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαματριά": {
       "latitude": 36.380728,
@@ -23009,7 +23009,7 @@
       "search_name": "Δαματριά",
       "primary_alias": "damatria",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιοτάρι": {
       "latitude": 36.051729,
@@ -23018,7 +23018,7 @@
       "search_name": "Κιοτάρι",
       "primary_alias": "rodos-kiotari",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γεννάδι": {
       "latitude": 36.022989,
@@ -23027,7 +23027,7 @@
       "search_name": "Γεννάδι",
       "primary_alias": "rodos-gennadi",
       "city": "Ρόδος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαχανιά": {
       "latitude": 35.966841,
@@ -23036,8 +23036,8 @@
       "search_name": "Λαχανιά",
       "primary_alias": "rodos-lahania",
       "city": "Ρόδος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σαλαμίνα": {
     "Σαλαμίνα": {
@@ -23047,7 +23047,7 @@
       "search_name": "Σαλαμίνα",
       "primary_alias": "salamina",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αθανάσιος": {
       "latitude": 37.937535,
@@ -23056,7 +23056,7 @@
       "search_name": "Άγιος Αθανάσιος",
       "primary_alias": "salamina-agios-athanasios",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος Στενού": {
       "latitude": 37.970978,
@@ -23065,7 +23065,7 @@
       "search_name": "Άγιος Γεώργιος Στενού",
       "primary_alias": "agios-georgios-stenoy",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αιάντειο": {
       "latitude": 37.922219,
@@ -23074,7 +23074,7 @@
       "search_name": "Αιάντειο",
       "primary_alias": "aianteio",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλώνι Λαζάρου": {
       "latitude": 37.998705,
@@ -23083,7 +23083,7 @@
       "search_name": "Αλώνι Λαζάρου",
       "primary_alias": "aloni-lazaroy",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελάκια": {
       "latitude": 37.951066,
@@ -23092,7 +23092,7 @@
       "search_name": "Αμπελάκια",
       "primary_alias": "ampelakia",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βρομοπούσι": {
       "latitude": 37.983699,
@@ -23101,7 +23101,7 @@
       "search_name": "Βρομοπούσι",
       "primary_alias": "vromopoysi",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κακή Βίγλα": {
       "latitude": 37.91481,
@@ -23110,7 +23110,7 @@
       "search_name": "Κακή Βίγλα",
       "primary_alias": "kaki-vigla",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρακιάνι": {
       "latitude": 37.906943,
@@ -23119,7 +23119,7 @@
       "search_name": "Καρακιάνι",
       "primary_alias": "karakiani",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκινόβραχος": {
       "latitude": 37.945764,
@@ -23128,7 +23128,7 @@
       "search_name": "Κοκκινόβραχος",
       "primary_alias": "kokkinovrahos",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολώνες": {
       "latitude": 37.879666,
@@ -23137,7 +23137,7 @@
       "search_name": "Κολώνες",
       "primary_alias": "kolones",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυνόσουρα": {
       "latitude": 37.943517,
@@ -23146,7 +23146,7 @@
       "search_name": "Κυνόσουρα",
       "primary_alias": "kynosoyra",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευτέρι": {
       "latitude": 37.914502,
@@ -23155,7 +23155,7 @@
       "search_name": "Λευτέρι",
       "primary_alias": "leyteri",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρούδι": {
       "latitude": 37.891116,
@@ -23164,7 +23164,7 @@
       "search_name": "Μαρούδι",
       "primary_alias": "maroydi",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλο Ντοροτό": {
       "latitude": 37.947999,
@@ -23173,7 +23173,7 @@
       "search_name": "Μεγάλο Ντοροτό",
       "primary_alias": "megalo-ntoroto",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπατσί": {
       "latitude": 37.998405,
@@ -23182,7 +23182,7 @@
       "search_name": "Μπατσί",
       "primary_alias": "salamina-mpatsi",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξένο": {
       "latitude": 37.965102,
@@ -23191,7 +23191,7 @@
       "search_name": "Ξένο",
       "primary_alias": "xeno",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιάμπελα": {
       "latitude": 37.979418,
@@ -23200,7 +23200,7 @@
       "search_name": "Παλιάμπελα",
       "primary_alias": "paliampela",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλούκια": {
       "latitude": 37.964888,
@@ -23209,7 +23209,7 @@
       "search_name": "Παλούκια",
       "primary_alias": "paloykia",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιστέρια": {
       "latitude": 37.884557,
@@ -23218,7 +23218,7 @@
       "search_name": "Περιστέρια",
       "primary_alias": "peristeria",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ράχη Ζαρλή": {
       "latitude": 37.904928,
@@ -23227,7 +23227,7 @@
       "search_name": "Ράχη Ζαρλή",
       "primary_alias": "rahi-zarli",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σελήνια": {
       "latitude": 37.933057,
@@ -23236,7 +23236,7 @@
       "search_name": "Σελήνια",
       "primary_alias": "selinia",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σουράβλια": {
       "latitude": 37.992452,
@@ -23245,7 +23245,7 @@
       "search_name": "Σουράβλια",
       "primary_alias": "soyravlia",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπιθάρι": {
       "latitude": 37.948954,
@@ -23254,7 +23254,7 @@
       "search_name": "Σπιθάρι",
       "primary_alias": "spithari",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στενό": {
       "latitude": 37.976829,
@@ -23263,7 +23263,7 @@
       "search_name": "Στενό",
       "primary_alias": "steno",
       "city": "Σαλαμίνα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψιλή Άμμος": {
       "latitude": 37.977619,
@@ -23272,8 +23272,8 @@
       "search_name": "Ψιλή Άμμος",
       "primary_alias": "psili-ammos",
       "city": "Σαλαμίνα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σαμοθράκη": {
     "Σαμοθράκη": {
@@ -23283,8 +23283,8 @@
       "search_name": "Σαμοθράκη",
       "primary_alias": "samothraki",
       "city": "Σαμοθράκη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σάμος": {
     "Σάμος": {
@@ -23294,7 +23294,7 @@
       "search_name": "Σάμος",
       "primary_alias": "samos",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαθύ": {
       "latitude": 37.747911,
@@ -23303,7 +23303,7 @@
       "search_name": "Βαθύ",
       "primary_alias": "samos-vathy",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βελανιδιά Μαραθόκαμπου": {
       "latitude": 37.711728,
@@ -23312,7 +23312,7 @@
       "search_name": "Βελανιδιά Μαραθόκαμπου",
       "primary_alias": "velanidia-marathokampoy",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηραίο": {
       "latitude": 37.664017,
@@ -23321,7 +23321,7 @@
       "search_name": "Ηραίο",
       "primary_alias": "iraio",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάμπος Μαραθόκαμπου": {
       "latitude": 37.708953,
@@ -23330,7 +23330,7 @@
       "search_name": "Κάμπος Μαραθόκαμπου",
       "primary_alias": "kampos-marathokampoy",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρλόβασι": {
       "latitude": 37.794473,
@@ -23339,7 +23339,7 @@
       "search_name": "Καρλόβασι",
       "primary_alias": "karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκάρι": {
       "latitude": 37.777995,
@@ -23348,7 +23348,7 @@
       "search_name": "Κοκκάρι",
       "primary_alias": "kokkari",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντακαίικα": {
       "latitude": 37.802613,
@@ -23357,7 +23357,7 @@
       "search_name": "Κοντακαίικα",
       "primary_alias": "kontakaiika",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουμαίικα": {
       "latitude": 37.709856,
@@ -23366,7 +23366,7 @@
       "search_name": "Κουμαίικα",
       "primary_alias": "koymaiika",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαραθόκαμπος": {
       "latitude": 37.727237,
@@ -23375,7 +23375,7 @@
       "search_name": "Μαραθόκαμπος",
       "primary_alias": "marathokampos",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυτιληνιοί": {
       "latitude": 37.726677,
@@ -23384,7 +23384,7 @@
       "search_name": "Μυτιληνιοί",
       "primary_alias": "mytilinioi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όρμος Μαραθόκαμπου": {
       "latitude": 37.711147,
@@ -23393,7 +23393,7 @@
       "search_name": "Όρμος Μαραθόκαμπου",
       "primary_alias": "ormos-marathokampoy",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιόκαστρο": {
       "latitude": 37.738378,
@@ -23402,7 +23402,7 @@
       "search_name": "Παλαιόκαστρο",
       "primary_alias": "samos-palaiokastro",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυθαγόρειο": {
       "latitude": 37.691336,
@@ -23411,7 +23411,7 @@
       "search_name": "Πυθαγόρειο",
       "primary_alias": "pythagoreio",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χώρα": {
       "latitude": 37.7033,
@@ -23420,7 +23420,7 @@
       "search_name": "Χώρα",
       "primary_alias": "samos-hora",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Καρλόβασι": {
       "latitude": 37.791796,
@@ -23429,7 +23429,7 @@
       "search_name": "Νέο Καρλόβασι",
       "primary_alias": "neo-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσαίο Καρλόβασι": {
       "latitude": 37.793497,
@@ -23438,7 +23438,7 @@
       "search_name": "Μεσαίο Καρλόβασι",
       "primary_alias": "mesaio-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιό Καρλόβασι": {
       "latitude": 37.790151,
@@ -23447,7 +23447,7 @@
       "search_name": "Παλαιό Καρλόβασι",
       "primary_alias": "palaio-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εστίες Καρλόβασι": {
       "latitude": 37.791146,
@@ -23456,7 +23456,7 @@
       "search_name": "Εστίες Καρλόβασι",
       "primary_alias": "esties-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Ματρώνα Καρλόβασι": {
       "latitude": 37.795567,
@@ -23465,7 +23465,7 @@
       "search_name": "Αγία Ματρώνα Καρλόβασι",
       "primary_alias": "agia-matrona-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης Καρλόβασι": {
       "latitude": 37.79269,
@@ -23474,7 +23474,7 @@
       "search_name": "Άγιος Ιωάννης Καρλόβασι",
       "primary_alias": "agios-ioannis-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέγαρο Καρλόβασι": {
       "latitude": 37.790284,
@@ -23483,7 +23483,7 @@
       "search_name": "Μέγαρο Καρλόβασι",
       "primary_alias": "megaro-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καναπτσέικα": {
       "latitude": 37.788583,
@@ -23492,7 +23492,7 @@
       "search_name": "Καναπτσέικα",
       "primary_alias": "kanaptseika",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όρμος Καρλόβασι": {
       "latitude": 37.80252,
@@ -23501,7 +23501,7 @@
       "search_name": "Όρμος Καρλόβασι",
       "primary_alias": "ormos-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιμάνι Καρλόβασι": {
       "latitude": 37.794296,
@@ -23510,8 +23510,8 @@
       "search_name": "Λιμάνι Καρλόβασι",
       "primary_alias": "limani-karlovasi",
       "city": "Σάμος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σαντορίνη": {
     "Θήρα": {
@@ -23521,7 +23521,7 @@
       "search_name": "Θήρα",
       "primary_alias": "santorini",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εμπορειό": {
       "latitude": 36.35556,
@@ -23530,7 +23530,7 @@
       "search_name": "Εμπορειό",
       "primary_alias": "santorini-emporeio",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περίσσα": {
       "latitude": 36.35179,
@@ -23539,7 +23539,7 @@
       "search_name": "Περίσσα",
       "primary_alias": "santorini-perissa",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 36.341924,
@@ -23548,7 +23548,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "santorini-agios-georgios",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εξωμύτης": {
       "latitude": 36.335202,
@@ -23557,7 +23557,7 @@
       "search_name": "Εξωμύτης",
       "primary_alias": "santorini-exomytis",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλυχάδα": {
       "latitude": 36.3381,
@@ -23566,7 +23566,7 @@
       "search_name": "Βλυχάδα",
       "primary_alias": "santorini-vlyhada",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ακρωτήρι": {
       "latitude": 36.35942,
@@ -23575,7 +23575,7 @@
       "search_name": "Ακρωτήρι",
       "primary_alias": "santorini-akrotiri",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγαλοχώρι": {
       "latitude": 36.377097,
@@ -23584,7 +23584,7 @@
       "search_name": "Μεγαλοχώρι",
       "primary_alias": "santorini-megalohori",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρι": {
       "latitude": 36.377435,
@@ -23593,7 +23593,7 @@
       "search_name": "Καμάρι",
       "primary_alias": "santorini-kamari",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όρμος Αθηνιός": {
       "latitude": 36.386433,
@@ -23602,7 +23602,7 @@
       "search_name": "Όρμος Αθηνιός",
       "primary_alias": "santorini-ormos-athinios",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έξω Γωνιά": {
       "latitude": 36.38721,
@@ -23611,7 +23611,7 @@
       "search_name": "Έξω Γωνιά",
       "primary_alias": "santorini-exo-gonia",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πύργος Καλλίστης": {
       "latitude": 36.382384,
@@ -23620,7 +23620,7 @@
       "search_name": "Πύργος Καλλίστης",
       "primary_alias": "santorini-pyrgos-kallistis",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιβόλια": {
       "latitude": 36.388349,
@@ -23629,7 +23629,7 @@
       "search_name": "Περιβόλια",
       "primary_alias": "santorini-perivolia",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 36.399825,
@@ -23638,7 +23638,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "santorini-agia-paraskeyi",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μονόλιθος": {
       "latitude": 36.411587,
@@ -23647,7 +23647,7 @@
       "search_name": "Μονόλιθος",
       "primary_alias": "santorini-monolithos",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσαριά": {
       "latitude": 36.399293,
@@ -23656,7 +23656,7 @@
       "search_name": "Μεσαριά",
       "primary_alias": "santorini-mesaria",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρτεράδος": {
       "latitude": 36.411265,
@@ -23665,7 +23665,7 @@
       "search_name": "Καρτεράδος",
       "primary_alias": "santorini-karterados",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έξω Γιαλός Καρτεράδου": {
       "latitude": 36.419072,
@@ -23674,7 +23674,7 @@
       "search_name": "Έξω Γιαλός Καρτεράδου",
       "primary_alias": "santorini-exo-gialos-karteradoy",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έξω Γιαλός Θήρας": {
       "latitude": 36.430381,
@@ -23683,7 +23683,7 @@
       "search_name": "Έξω Γιαλός Θήρας",
       "primary_alias": "santorini-exo-gialos-thiras",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέσα Κατοικίες": {
       "latitude": 36.419035,
@@ -23692,7 +23692,7 @@
       "search_name": "Μέσα Κατοικίες",
       "primary_alias": "santorini-mesa-katoikies",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έξω Κατοικίες": {
       "latitude": 36.424114,
@@ -23701,7 +23701,7 @@
       "search_name": "Έξω Κατοικίες",
       "primary_alias": "santorini-exo-katoikies",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ημεροβίγλι": {
       "latitude": 36.432433,
@@ -23710,7 +23710,7 @@
       "search_name": "Ημεροβίγλι",
       "primary_alias": "santorini-imerovigli",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βουρβούλος": {
       "latitude": 36.437692,
@@ -23719,7 +23719,7 @@
       "search_name": "Βουρβούλος",
       "primary_alias": "santorini-voyrvoylos",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγία Καλού": {
       "latitude": 36.462301,
@@ -23728,7 +23728,7 @@
       "search_name": "Παναγία Καλού",
       "primary_alias": "santorini-panagia-kaloy",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολούμπος": {
       "latitude": 36.474964,
@@ -23737,7 +23737,7 @@
       "search_name": "Κολούμπος",
       "primary_alias": "santorini-koloympos",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όρμος Αρμένης": {
       "latitude": 36.476907,
@@ -23746,7 +23746,7 @@
       "search_name": "Όρμος Αρμένης",
       "primary_alias": "santorini-ormos-armenis",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φοινικιά": {
       "latitude": 36.462642,
@@ -23755,7 +23755,7 @@
       "search_name": "Φοινικιά",
       "primary_alias": "santorini-foinikia",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θόλος": {
       "latitude": 36.467557,
@@ -23764,7 +23764,7 @@
       "search_name": "Θόλος",
       "primary_alias": "santorini-tholos",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οία": {
       "latitude": 36.462386,
@@ -23773,7 +23773,7 @@
       "search_name": "Οία",
       "primary_alias": "santorini-oia",
       "city": "Σαντορίνη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παράδεισος": {
       "latitude": 36.479162,
@@ -23782,8 +23782,8 @@
       "search_name": "Παράδεισος",
       "primary_alias": "santorini-paradeisos",
       "city": "Σαντορίνη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σαρωνίδα": {
     "Σαρωνίδα": {
@@ -23793,8 +23793,8 @@
       "search_name": "Σαρωνίδα",
       "primary_alias": "sarwnida",
       "city": "Σαρωνίδα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σέριφος": {
     "Σέριφος": {
@@ -23804,7 +23804,7 @@
       "search_name": "Σέριφος",
       "primary_alias": "serifos",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιβάδι": {
       "latitude": 37.143848,
@@ -23813,7 +23813,7 @@
       "search_name": "Λιβάδι",
       "primary_alias": "serifos-livadi",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ράμος": {
       "latitude": 37.132398,
@@ -23822,7 +23822,7 @@
       "search_name": "Ράμος",
       "primary_alias": "serifos-ramos",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουταλάς": {
       "latitude": 37.138739,
@@ -23831,7 +23831,7 @@
       "search_name": "Κουταλάς",
       "primary_alias": "serifos-koytalas",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλο Λιβάδι": {
       "latitude": 37.14106,
@@ -23840,7 +23840,7 @@
       "search_name": "Μεγάλο Λιβάδι",
       "primary_alias": "serifos-megalo-livadi",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συκαμιά": {
       "latitude": 37.194075,
@@ -23849,7 +23849,7 @@
       "search_name": "Συκαμιά",
       "primary_alias": "serifos-sykamia",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλάνη": {
       "latitude": 37.19139,
@@ -23858,7 +23858,7 @@
       "search_name": "Γαλάνη",
       "primary_alias": "serifos-galani",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατύς Γιαλός": {
       "latitude": 37.198625,
@@ -23867,7 +23867,7 @@
       "search_name": "Πλατύς Γιαλός",
       "primary_alias": "serifos-platys-gialos",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κένταρχος": {
       "latitude": 37.185338,
@@ -23876,7 +23876,7 @@
       "search_name": "Κένταρχος",
       "primary_alias": "serifos-kentarhos",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παναγία": {
       "latitude": 37.177658,
@@ -23885,7 +23885,7 @@
       "search_name": "Παναγία",
       "primary_alias": "serifos-panagia",
       "city": "Σέριφος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πύργος": {
       "latitude": 37.180334,
@@ -23894,8 +23894,8 @@
       "search_name": "Πύργος",
       "primary_alias": "serifos-pyrgos",
       "city": "Σέριφος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σέρρες": {
     "Σέρρες": {
@@ -23905,7 +23905,7 @@
       "search_name": "Σέρρες",
       "primary_alias": "serres",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Ελένη": {
       "latitude": 41.002789,
@@ -23914,7 +23914,7 @@
       "search_name": "Αγία Ελένη",
       "primary_alias": "agia-eleni",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιο Πνεύμα": {
       "latitude": 41.101622,
@@ -23923,7 +23923,7 @@
       "search_name": "Άγιο Πνεύμα",
       "primary_alias": "agio-pneyma",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Ανάργυροι": {
       "latitude": 41.095605,
@@ -23932,7 +23932,7 @@
       "search_name": "Άγιοι Ανάργυροι",
       "primary_alias": "serres-agioi-anargyroi",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αθανάσιος": {
       "latitude": 41.077597,
@@ -23941,7 +23941,7 @@
       "search_name": "Άγιος Αθανάσιος",
       "primary_alias": "serres-agios-athanasios",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Αντώνιος": {
       "latitude": 41.093329,
@@ -23950,7 +23950,7 @@
       "search_name": "Άγιος Αντώνιος",
       "primary_alias": "serres-agios-antonios",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 41.099537,
@@ -23959,7 +23959,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "serres-agios-ioannis",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικήτας": {
       "latitude": 41.078792,
@@ -23968,7 +23968,7 @@
       "search_name": "Άγιος Νικήτας",
       "primary_alias": "serres-agios-nikitas",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Παντελεήμονας": {
       "latitude": 41.095764,
@@ -23977,7 +23977,7 @@
       "search_name": "Άγιος Παντελεήμονας",
       "primary_alias": "serres-agios-panteleimonas",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αδελφικό": {
       "latitude": 41.01483,
@@ -23986,7 +23986,7 @@
       "search_name": "Αδελφικό",
       "primary_alias": "adelfiko",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Καμήλα": {
       "latitude": 41.0568,
@@ -23995,7 +23995,7 @@
       "search_name": "Άνω Καμήλα",
       "primary_alias": "ano-kamila",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αυτοκινητοδρόμιο Σερρών": {
       "latitude": 41.072117,
@@ -24004,7 +24004,7 @@
       "search_name": "Αυτοκινητοδρόμιο Σερρών",
       "primary_alias": "aytokinitodromio-serron",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαλτοτόπι": {
       "latitude": 40.993981,
@@ -24013,7 +24013,7 @@
       "search_name": "Βαλτοτόπι",
       "primary_alias": "valtotopi",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙΠΕ Σερρών": {
       "latitude": 41.105112,
@@ -24022,7 +24022,7 @@
       "search_name": "ΒΙΠΕ Σερρών",
       "primary_alias": "vipe-serron",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βυζάντιο": {
       "latitude": 41.087284,
@@ -24031,7 +24031,7 @@
       "search_name": "Βυζάντιο",
       "primary_alias": "vyzantio",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επτάμυλοι": {
       "latitude": 41.099917,
@@ -24040,7 +24040,7 @@
       "search_name": "Επτάμυλοι",
       "primary_alias": "eptamyloi",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ηράκλεια": {
       "latitude": 41.182138,
@@ -24049,7 +24049,7 @@
       "search_name": "Ηράκλεια",
       "primary_alias": "serres-irakleia",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιωνία": {
       "latitude": 41.079232,
@@ -24058,7 +24058,7 @@
       "search_name": "Ιωνία",
       "primary_alias": "ionia",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλά Δέντρα": {
       "latitude": 41.099478,
@@ -24067,7 +24067,7 @@
       "search_name": "Καλά Δέντρα",
       "primary_alias": "kala-dentra",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλύβια": {
       "latitude": 41.082237,
@@ -24076,7 +24076,7 @@
       "search_name": "Καλύβια",
       "primary_alias": "serres-kalyvia",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμενίκια": {
       "latitude": 41.08595,
@@ -24085,7 +24085,7 @@
       "search_name": "Καμενίκια",
       "primary_alias": "kamenikia",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Καμήλα": {
       "latitude": 41.021211,
@@ -24094,7 +24094,7 @@
       "search_name": "Κάτω Καμήλα",
       "primary_alias": "kato-kamila",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Μητρούσι": {
       "latitude": 41.058784,
@@ -24103,7 +24103,7 @@
       "search_name": "Κάτω Μητρούσι",
       "primary_alias": "kato-mitroysi",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 41.09031,
@@ -24112,7 +24112,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "serres",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιούπλια": {
       "latitude": 41.084875,
@@ -24121,7 +24121,7 @@
       "search_name": "Κιούπλια",
       "primary_alias": "kioyplia",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουμαριά": {
       "latitude": 41.016005,
@@ -24130,7 +24130,7 @@
       "search_name": "Κουμαριά",
       "primary_alias": "koymaria",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κωνσταντινάτο": {
       "latitude": 41.017773,
@@ -24139,7 +24139,7 @@
       "search_name": "Κωνσταντινάτο",
       "primary_alias": "konstantinato",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκώνας": {
       "latitude": 41.098349,
@@ -24148,7 +24148,7 @@
       "search_name": "Λευκώνας",
       "primary_alias": "leykonas",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακεδονομάχων": {
       "latitude": 41.083313,
@@ -24157,7 +24157,7 @@
       "search_name": "Μακεδονομάχων",
       "primary_alias": "makedonomahon",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μητρούσι": {
       "latitude": 41.070955,
@@ -24166,7 +24166,7 @@
       "search_name": "Μητρούσι",
       "primary_alias": "mitroysi",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μονόβρυση": {
       "latitude": 41.059994,
@@ -24175,7 +24175,7 @@
       "search_name": "Μονόβρυση",
       "primary_alias": "monovrysi",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μονοκκλησιά": {
       "latitude": 41.057929,
@@ -24184,7 +24184,7 @@
       "search_name": "Μονοκκλησιά",
       "primary_alias": "monokklisia",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Σούλι": {
       "latitude": 41.093711,
@@ -24193,7 +24193,7 @@
       "search_name": "Νέο Σούλι",
       "primary_alias": "neo-soyli",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Σκοπός": {
       "latitude": 41.024693,
@@ -24202,7 +24202,7 @@
       "search_name": "Νέος Σκοπός",
       "primary_alias": "neos-skopos",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 41.051999,
@@ -24211,7 +24211,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "serres-neohori",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νιγρίτα": {
       "latitude": 40.908099,
@@ -24220,7 +24220,7 @@
       "search_name": "Νιγρίτα",
       "primary_alias": "nigrita",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νίκαια": {
       "latitude": 41.084522,
@@ -24229,7 +24229,7 @@
       "search_name": "Νίκαια",
       "primary_alias": "serres-nikaia",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οινούσσα": {
       "latitude": 41.102496,
@@ -24238,7 +24238,7 @@
       "search_name": "Οινούσσα",
       "primary_alias": "oinoyssa",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ομόνοια": {
       "latitude": 41.078748,
@@ -24247,7 +24247,7 @@
       "search_name": "Ομόνοια",
       "primary_alias": "serres-omonoia",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 41.090792,
@@ -24256,7 +24256,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "serres-panorama",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεντάπολη": {
       "latitude": 41.049864,
@@ -24265,7 +24265,7 @@
       "search_name": "Πεντάπολη",
       "primary_alias": "pentapoli",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προβατάς": {
       "latitude": 41.068341,
@@ -24274,7 +24274,7 @@
       "search_name": "Προβατάς",
       "primary_alias": "provatas",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προφήτης Ηλίας": {
       "latitude": 41.088231,
@@ -24283,7 +24283,7 @@
       "search_name": "Προφήτης Ηλίας",
       "primary_alias": "serres-profitis-ilias",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαράντα Μάρτυρες": {
       "latitude": 41.078521,
@@ -24292,7 +24292,7 @@
       "search_name": "Σαράντα Μάρτυρες",
       "primary_alias": "saranta-martyres",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιδηρόκαστρο": {
       "latitude": 41.236245,
@@ -24301,7 +24301,7 @@
       "search_name": "Σιδηρόκαστρο",
       "primary_alias": "sidirokastro",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σίρις": {
       "latitude": 41.090543,
@@ -24310,7 +24310,7 @@
       "search_name": "Σίρις",
       "primary_alias": "siris",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκούταρι": {
       "latitude": 41.01916,
@@ -24319,7 +24319,7 @@
       "search_name": "Σκούταρι",
       "primary_alias": "skoytari",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Κλεισάρη": {
       "latitude": 41.088008,
@@ -24328,7 +24328,7 @@
       "search_name": "Στρατόπεδο Κλεισάρη",
       "primary_alias": "stratopedo-kleisari",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Κολοκοτρώνη": {
       "latitude": 41.085301,
@@ -24337,7 +24337,7 @@
       "search_name": "Στρατόπεδο Κολοκοτρώνη",
       "primary_alias": "stratopedo-kolokotroni",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρατόπεδο Παπαλουκά": {
       "latitude": 41.085961,
@@ -24346,7 +24346,7 @@
       "search_name": "Στρατόπεδο Παπαλουκά",
       "primary_alias": "stratopedo-papaloyka",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χριστός": {
       "latitude": 41.119389,
@@ -24355,7 +24355,7 @@
       "search_name": "Χριστός",
       "primary_alias": "hristos",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσό": {
       "latitude": 41.058632,
@@ -24364,7 +24364,7 @@
       "search_name": "Χρυσό",
       "primary_alias": "hryso",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψυχικό": {
       "latitude": 41.004182,
@@ -24373,7 +24373,7 @@
       "search_name": "Ψυχικό",
       "primary_alias": "serres-psyhiko",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νοσοκομείο": {
       "latitude": 41.090485,
@@ -24382,7 +24382,7 @@
       "search_name": "Νοσοκομείο",
       "primary_alias": "serres-nosokomeio",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταξιάρχης": {
       "latitude": 41.092673,
@@ -24391,7 +24391,7 @@
       "search_name": "Ταξιάρχης",
       "primary_alias": "taxiarhis",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ζίχνη": {
       "latitude": 41.030588,
@@ -24400,7 +24400,7 @@
       "search_name": "Νέα Ζίχνη",
       "primary_alias": "nea-zihni",
       "city": "Σέρρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γάζωρος": {
       "latitude": 41.026561,
@@ -24409,8 +24409,8 @@
       "search_name": "Γάζωρος",
       "primary_alias": "gazoros",
       "city": "Σέρρες",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σητεία Κρήτη": {
     "Σητεία": {
@@ -24420,8 +24420,8 @@
       "search_name": "Σητεία",
       "primary_alias": "shteia",
       "city": "Σητεία Κρήτη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σίφνος": {
     "Κάτω Πετάλι": {
@@ -24431,7 +24431,7 @@
       "search_name": "Κάτω Πετάλι",
       "primary_alias": "sifnos-kato-petali",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρες": {
       "latitude": 36.988447,
@@ -24440,7 +24440,7 @@
       "search_name": "Καμάρες",
       "primary_alias": "sifnos-kamares",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 36.99231,
@@ -24449,7 +24449,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "sifnos-agia-marina",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρουλάκι": {
       "latitude": 37.009459,
@@ -24458,7 +24458,7 @@
       "search_name": "Τρουλάκι",
       "primary_alias": "sifnos-troylaki",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαθύ": {
       "latitude": 36.932711,
@@ -24467,7 +24467,7 @@
       "search_name": "Βαθύ",
       "primary_alias": "sifnos-vathy",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατύς Γιαλός": {
       "latitude": 36.932232,
@@ -24476,7 +24476,7 @@
       "search_name": "Πλατύς Γιαλός",
       "primary_alias": "sifnos-platys-gialos",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσοπηγή": {
       "latitude": 36.938076,
@@ -24485,7 +24485,7 @@
       "search_name": "Χρυσοπηγή",
       "primary_alias": "sifnos-hrysopigi",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φάρος": {
       "latitude": 36.944183,
@@ -24494,7 +24494,7 @@
       "search_name": "Φάρος",
       "primary_alias": "sifnos-faros",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απολλωνία": {
       "latitude": 36.970721,
@@ -24503,7 +24503,7 @@
       "search_name": "Απολλωνία",
       "primary_alias": "sifnos-apollonia",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάστρο": {
       "latitude": 36.974386,
@@ -24512,7 +24512,7 @@
       "search_name": "Κάστρο",
       "primary_alias": "sifnos-kastro",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρτεμώνας": {
       "latitude": 36.981204,
@@ -24521,7 +24521,7 @@
       "search_name": "Αρτεμώνας",
       "primary_alias": "sifnos-artemonas",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χερρόνησος": {
       "latitude": 37.034956,
@@ -24530,7 +24530,7 @@
       "search_name": "Χερρόνησος",
       "primary_alias": "sifnos-herronisos",
       "city": "Σίφνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Πετάλι": {
       "latitude": 36.973774,
@@ -24539,8 +24539,8 @@
       "search_name": "Άνω Πετάλι",
       "primary_alias": "sifnos-ano-petali",
       "city": "Σίφνος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σκαραμαγκάς": {
     "Σκαραμαγκάς": {
@@ -24550,8 +24550,8 @@
       "search_name": "Σκαραμαγκάς",
       "primary_alias": "skaramagkas",
       "city": "Σκαραμαγκάς",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σκιάθος": {
     "Σκιάθος": {
@@ -24561,7 +24561,7 @@
       "search_name": "Σκιάθος",
       "primary_alias": "skiathos",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αχλαδιάς": {
       "latitude": 39.147409,
@@ -24570,7 +24570,7 @@
       "search_name": "Αχλαδιάς",
       "primary_alias": "ahladias",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλύβια": {
       "latitude": 39.184257,
@@ -24579,7 +24579,7 @@
       "search_name": "Καλύβια",
       "primary_alias": "skiathos-kalyvia",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καναπίτσα": {
       "latitude": 39.137544,
@@ -24588,7 +24588,7 @@
       "search_name": "Καναπίτσα",
       "primary_alias": "kanapitsa",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατσαρός": {
       "latitude": 39.153028,
@@ -24597,7 +24597,7 @@
       "search_name": "Κατσαρός",
       "primary_alias": "skiathos-katsaros",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολιός": {
       "latitude": 39.140917,
@@ -24606,7 +24606,7 @@
       "search_name": "Κολιός",
       "primary_alias": "kolios",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουκουναριές": {
       "latitude": 39.15282,
@@ -24615,7 +24615,7 @@
       "search_name": "Κουκουναριές",
       "primary_alias": "koykoynaries",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατανιάς": {
       "latitude": 39.143687,
@@ -24624,7 +24624,7 @@
       "search_name": "Πλατανιάς",
       "primary_alias": "skiathos-platanias",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκληθρί": {
       "latitude": 39.143903,
@@ -24633,7 +24633,7 @@
       "search_name": "Σκληθρί",
       "primary_alias": "sklithri",
       "city": "Σκιάθος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρούλος": {
       "latitude": 39.143467,
@@ -24642,8 +24642,8 @@
       "search_name": "Τρούλος",
       "primary_alias": "troylos",
       "city": "Σκιάθος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σκόπελος": {
     "Σκόπελος": {
@@ -24653,7 +24653,7 @@
       "search_name": "Σκόπελος",
       "primary_alias": "skopelos",
       "city": "Σκόπελος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγνώντας": {
       "latitude": 39.083569,
@@ -24662,7 +24662,7 @@
       "search_name": "Αγνώντας",
       "primary_alias": "agnontas",
       "city": "Σκόπελος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γλώσσα": {
       "latitude": 39.174957,
@@ -24671,7 +24671,7 @@
       "search_name": "Γλώσσα",
       "primary_alias": "glossa",
       "city": "Σκόπελος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιό Κλήμα": {
       "latitude": 39.160539,
@@ -24680,7 +24680,7 @@
       "search_name": "Παλαιό Κλήμα",
       "primary_alias": "palaio-klima",
       "city": "Σκόπελος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λουτράκι": {
       "latitude": 39.168562,
@@ -24689,7 +24689,7 @@
       "search_name": "Λουτράκι",
       "primary_alias": "skopelos-loytraki",
       "city": "Σκόπελος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Κλήμα": {
       "latitude": 39.139305,
@@ -24698,7 +24698,7 @@
       "search_name": "Νέο Κλήμα",
       "primary_alias": "neo-klima",
       "city": "Σκόπελος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάνορμος": {
       "latitude": 39.110777,
@@ -24707,7 +24707,7 @@
       "search_name": "Πάνορμος",
       "primary_alias": "skopelos-panormos",
       "city": "Σκόπελος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στάφυλος": {
       "latitude": 39.091503,
@@ -24716,8 +24716,8 @@
       "search_name": "Στάφυλος",
       "primary_alias": "stafylos",
       "city": "Σκόπελος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σκύρος": {
     "Σκύρος": {
@@ -24727,7 +24727,7 @@
       "search_name": "Σκύρος",
       "primary_alias": "skyros",
       "city": "Σκύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μώλος": {
       "latitude": 38.915972,
@@ -24736,7 +24736,7 @@
       "search_name": "Μώλος",
       "primary_alias": "skyros-molos",
       "city": "Σκύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιναριά": {
       "latitude": 38.843175,
@@ -24745,7 +24745,7 @@
       "search_name": "Λιναριά",
       "primary_alias": "linaria",
       "city": "Σκύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμίτσα": {
       "latitude": 38.842439,
@@ -24754,7 +24754,7 @@
       "search_name": "Καλαμίτσα",
       "primary_alias": "skyros-kalamitsa",
       "city": "Σκύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ασπούς": {
       "latitude": 38.875793,
@@ -24763,7 +24763,7 @@
       "search_name": "Ασπούς",
       "primary_alias": "aspoys",
       "city": "Σκύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ατσίτσα": {
       "latitude": 38.916273,
@@ -24772,7 +24772,7 @@
       "search_name": "Ατσίτσα",
       "primary_alias": "atsitsa",
       "city": "Σκύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αχερούνες": {
       "latitude": 38.854296,
@@ -24781,8 +24781,8 @@
       "search_name": "Αχερούνες",
       "primary_alias": "aheroynes",
       "city": "Σκύρος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σούνιο": {
     "Σούνιο": {
@@ -24792,7 +24792,7 @@
       "search_name": "Σούνιο",
       "primary_alias": "soynio",
       "city": "Σούνιο",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεγρενά": {
       "latitude": 37.666474,
@@ -24801,8 +24801,8 @@
       "search_name": "Λεγρενά",
       "primary_alias": "legrena",
       "city": "Σούνιο",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σουφλί": {
     "Γιαννούλη": {
@@ -24812,7 +24812,7 @@
       "search_name": "Γιαννούλη",
       "primary_alias": "soyfli-giannoyli",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σουφλί": {
       "latitude": 41.194396,
@@ -24821,7 +24821,7 @@
       "search_name": "Σουφλί",
       "primary_alias": "soyfli",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορνοφωλιά": {
       "latitude": 41.156639,
@@ -24830,7 +24830,7 @@
       "search_name": "Κορνοφωλιά",
       "primary_alias": "kornofolia",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυκόφως": {
       "latitude": 41.119684,
@@ -24839,7 +24839,7 @@
       "search_name": "Λυκόφως",
       "primary_alias": "lykofos",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαδιά": {
       "latitude": 41.1289,
@@ -24848,7 +24848,7 @@
       "search_name": "Δαδιά",
       "primary_alias": "dadia",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λάβαρα": {
       "latitude": 41.269381,
@@ -24857,7 +24857,7 @@
       "search_name": "Λάβαρα",
       "primary_alias": "lavara",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαγυνά": {
       "latitude": 41.083079,
@@ -24866,7 +24866,7 @@
       "search_name": "Λαγυνά",
       "primary_alias": "lagyna",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκίμη": {
       "latitude": 41.023282,
@@ -24875,7 +24875,7 @@
       "search_name": "Λευκίμη",
       "primary_alias": "leykimi",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λύρα": {
       "latitude": 41.071145,
@@ -24884,7 +24884,7 @@
       "search_name": "Λύρα",
       "primary_alias": "lyra",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάνδρα": {
       "latitude": 41.27023,
@@ -24893,7 +24893,7 @@
       "search_name": "Μάνδρα",
       "primary_alias": "soyfli-mandra",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προβατώνας": {
       "latitude": 41.024815,
@@ -24902,7 +24902,7 @@
       "search_name": "Προβατώνας",
       "primary_alias": "provatonas",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τυχερό": {
       "latitude": 41.027275,
@@ -24911,7 +24911,7 @@
       "search_name": "Τυχερό",
       "primary_alias": "tyhero",
       "city": "Σουφλί",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φυλακτό": {
       "latitude": 41.053813,
@@ -24920,8 +24920,8 @@
       "search_name": "Φυλακτό",
       "primary_alias": "fylakto",
       "city": "Σουφλί",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σπάρτη": {
     "Σπάρτη": {
@@ -24931,7 +24931,7 @@
       "search_name": "Σπάρτη",
       "primary_alias": "sparti",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 37.048644,
@@ -24940,7 +24940,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "sparti-agios-ioannis",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμύκλες": {
       "latitude": 37.026532,
@@ -24949,7 +24949,7 @@
       "search_name": "Αμύκλες",
       "primary_alias": "amykles",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανώγεια": {
       "latitude": 36.990321,
@@ -24958,7 +24958,7 @@
       "search_name": "Ανώγεια",
       "primary_alias": "sparti-anogeia",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αφισού": {
       "latitude": 37.089704,
@@ -24967,7 +24967,7 @@
       "search_name": "Αφισού",
       "primary_alias": "afisoy",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαρίκα": {
       "latitude": 37.0587,
@@ -24976,7 +24976,7 @@
       "search_name": "Βαρίκα",
       "primary_alias": "varika",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλάμι": {
       "latitude": 37.044138,
@@ -24985,7 +24985,7 @@
       "search_name": "Καλάμι",
       "primary_alias": "sparti-kalami",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλογωνιά": {
       "latitude": 37.064459,
@@ -24994,7 +24994,7 @@
       "search_name": "Καλογωνιά",
       "primary_alias": "kalogonia",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρες": {
       "latitude": 37.062928,
@@ -25003,7 +25003,7 @@
       "search_name": "Καμάρες",
       "primary_alias": "kamares",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 37.073784,
@@ -25012,7 +25012,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "sparti",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κλαδάς": {
       "latitude": 37.108307,
@@ -25021,7 +25021,7 @@
       "search_name": "Κλαδάς",
       "primary_alias": "kladas",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοκκινοράχη": {
       "latitude": 37.100911,
@@ -25030,7 +25030,7 @@
       "search_name": "Κοκκινοράχη",
       "primary_alias": "kokkinorahi",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαγούλα": {
       "latitude": 37.079796,
@@ -25039,7 +25039,7 @@
       "search_name": "Μαγούλα",
       "primary_alias": "sparti-magoyla",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυστράς": {
       "latitude": 37.069774,
@@ -25048,7 +25048,7 @@
       "search_name": "Μυστράς",
       "primary_alias": "mystras",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Κόσμος": {
       "latitude": 37.072524,
@@ -25057,7 +25057,7 @@
       "search_name": "Νέος Κόσμος",
       "primary_alias": "sparti-neos-kosmos",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηροκάμπι": {
       "latitude": 36.959456,
@@ -25066,7 +25066,7 @@
       "search_name": "Ξηροκάμπι",
       "primary_alias": "xirokampi",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιοπαναγιά": {
       "latitude": 36.980772,
@@ -25075,7 +25075,7 @@
       "search_name": "Παλαιοπαναγιά",
       "primary_alias": "sparti-palaiopanagia",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολύδενδρο": {
       "latitude": 37.057172,
@@ -25084,7 +25084,7 @@
       "search_name": "Πολύδενδρο",
       "primary_alias": "polydendro",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκούρα": {
       "latitude": 37.012984,
@@ -25093,7 +25093,7 @@
       "search_name": "Σκούρα",
       "primary_alias": "skoyra",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συκαράκι": {
       "latitude": 37.054075,
@@ -25102,7 +25102,7 @@
       "search_name": "Συκαράκι",
       "primary_alias": "sykaraki",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαρίσιο": {
       "latitude": 37.066041,
@@ -25111,7 +25111,7 @@
       "search_name": "Χαρίσιο",
       "primary_alias": "harisio",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιολόγιο": {
       "latitude": 37.0706,
@@ -25120,7 +25120,7 @@
       "search_name": "Παλαιολόγιο",
       "primary_alias": "palaiologio",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεάπολη Βοιών": {
       "latitude": 36.512492,
@@ -25129,7 +25129,7 @@
       "search_name": "Νεάπολη Βοιών",
       "primary_alias": "neapoli-voion",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δερματιάνικα": {
       "latitude": 36.544076,
@@ -25138,7 +25138,7 @@
       "search_name": "Δερματιάνικα",
       "primary_alias": "dermatianika",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παντάνασσα": {
       "latitude": 36.60172,
@@ -25147,7 +25147,7 @@
       "search_name": "Παντάνασσα",
       "primary_alias": "sparti-pantanassa",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Απόστολοι": {
       "latitude": 36.551959,
@@ -25156,7 +25156,7 @@
       "search_name": "Άγιοι Απόστολοι",
       "primary_alias": "sparti-agioi-apostoloi",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φαρακλό": {
       "latitude": 36.527618,
@@ -25165,7 +25165,7 @@
       "search_name": "Φαρακλό",
       "primary_alias": "faraklo",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Φωκάς": {
       "latitude": 36.596361,
@@ -25174,7 +25174,7 @@
       "search_name": "Άγιος Φωκάς",
       "primary_alias": "agios-fokas",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βιγκλάφια": {
       "latitude": 36.526774,
@@ -25183,7 +25183,7 @@
       "search_name": "Βιγκλάφια",
       "primary_alias": "vigklafia",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Καστανιά": {
       "latitude": 36.541016,
@@ -25192,7 +25192,7 @@
       "search_name": "Άνω Καστανιά",
       "primary_alias": "ano-kastania",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Καστανιά": {
       "latitude": 36.528987,
@@ -25201,7 +25201,7 @@
       "search_name": "Κάτω Καστανιά",
       "primary_alias": "kato-kastania",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λάχι": {
       "latitude": 36.497534,
@@ -25210,7 +25210,7 @@
       "search_name": "Λάχι",
       "primary_alias": "lahi",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 36.476339,
@@ -25219,7 +25219,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "sparti-agios-nikolaos",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βελανιδιά": {
       "latitude": 36.47797,
@@ -25228,7 +25228,7 @@
       "search_name": "Βελανιδιά",
       "primary_alias": "velanidia",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 36.541524,
@@ -25237,7 +25237,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "sparti-agios-georgios",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γύθειο": {
       "latitude": 36.756381,
@@ -25246,7 +25246,7 @@
       "search_name": "Γύθειο",
       "primary_alias": "gytheio",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα": {
       "latitude": 36.85208,
@@ -25255,7 +25255,7 @@
       "search_name": "Σκάλα",
       "primary_alias": "sparti-skala",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλαχιώτης": {
       "latitude": 36.861654,
@@ -25264,7 +25264,7 @@
       "search_name": "Βλαχιώτης",
       "primary_alias": "vlahiotis",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιστέρι": {
       "latitude": 36.86938,
@@ -25273,7 +25273,7 @@
       "search_name": "Περιστέρι",
       "primary_alias": "sparti-peristeri",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στεφανιά": {
       "latitude": 36.844642,
@@ -25282,7 +25282,7 @@
       "search_name": "Στεφανιά",
       "primary_alias": "stefania",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έλος": {
       "latitude": 36.832558,
@@ -25291,7 +25291,7 @@
       "search_name": "Έλος",
       "primary_alias": "elos",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεήμονας": {
       "latitude": 36.826958,
@@ -25300,7 +25300,7 @@
       "search_name": "Λεήμονας",
       "primary_alias": "leimonas",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυρτιά": {
       "latitude": 36.881191,
@@ -25309,7 +25309,7 @@
       "search_name": "Μυρτιά",
       "primary_alias": "sparti-myrtia",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρίνησα": {
       "latitude": 36.805579,
@@ -25318,7 +25318,7 @@
       "search_name": "Τρίνησα",
       "primary_alias": "trinisa",
       "city": "Σπάρτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μολάοι": {
       "latitude": 36.80443,
@@ -25327,8 +25327,8 @@
       "search_name": "Μολάοι",
       "primary_alias": "molaoi",
       "city": "Σπάρτη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σπάτα": {
     "Σπάτα": {
@@ -25338,7 +25338,7 @@
       "search_name": "Σπάτα",
       "primary_alias": "spata",
       "city": "Σπάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αεροδρόμιο Ελευθέριος Βενιζέλος": {
       "latitude": 37.937058,
@@ -25347,8 +25347,8 @@
       "search_name": "Αεροδρόμιο Ελευθέριος Βενιζέλος",
       "primary_alias": "aerodromio-eleytherios-venizelos",
       "city": "Σπάτα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σπέτσες": {
     "Σπέτσες": {
@@ -25358,8 +25358,8 @@
       "search_name": "Σπέτσες",
       "primary_alias": "spetses",
       "city": "Σπέτσες",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σταμάτα": {
     "Σταμάτα": {
@@ -25369,7 +25369,7 @@
       "search_name": "Σταμάτα",
       "primary_alias": "stamata",
       "city": "Σταμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμυγδαλέζα": {
       "latitude": 38.139011,
@@ -25378,7 +25378,7 @@
       "search_name": "Αμυγδαλέζα",
       "primary_alias": "amygdaleza",
       "city": "Σταμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εύξεινος Πόντος": {
       "latitude": 38.131969,
@@ -25387,7 +25387,7 @@
       "search_name": "Εύξεινος Πόντος",
       "primary_alias": "eyxeinos-pontos",
       "city": "Σταμάτα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προκόννησος": {
       "latitude": 38.134343,
@@ -25396,8 +25396,8 @@
       "search_name": "Προκόννησος",
       "primary_alias": "prokonnisos",
       "city": "Σταμάτα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σύρος": {
     "Ερμούπολη": {
@@ -25407,7 +25407,7 @@
       "search_name": "Ερμούπολη",
       "primary_alias": "siros",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αζόλιμνος": {
       "latitude": 37.410556,
@@ -25416,7 +25416,7 @@
       "search_name": "Αζόλιμνος",
       "primary_alias": "azolimnos",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αληθινή": {
       "latitude": 37.447755,
@@ -25425,7 +25425,7 @@
       "search_name": "Αληθινή",
       "primary_alias": "alithini",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Μάννα": {
       "latitude": 37.417,
@@ -25434,7 +25434,7 @@
       "search_name": "Άνω Μάννα",
       "primary_alias": "ano-manna",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Σύρος": {
       "latitude": 37.449798,
@@ -25443,7 +25443,7 @@
       "search_name": "Άνω Σύρος",
       "primary_alias": "ano-syros",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάρη": {
       "latitude": 37.397114,
@@ -25452,7 +25452,7 @@
       "search_name": "Βάρη",
       "primary_alias": "syros-vari",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βήσσα": {
       "latitude": 37.404152,
@@ -25461,7 +25461,7 @@
       "search_name": "Βήσσα",
       "primary_alias": "vissa",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλησσάς": {
       "latitude": 37.420747,
@@ -25470,7 +25470,7 @@
       "search_name": "Γαλησσάς",
       "primary_alias": "galissas",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επισκοπείο": {
       "latitude": 37.435273,
@@ -25479,7 +25479,7 @@
       "search_name": "Επισκοπείο",
       "primary_alias": "episkopeio",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κίνι": {
       "latitude": 37.445273,
@@ -25488,7 +25488,7 @@
       "search_name": "Κίνι",
       "primary_alias": "kini",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάννα": {
       "latitude": 37.419474,
@@ -25497,7 +25497,7 @@
       "search_name": "Μάννα",
       "primary_alias": "manna",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαζαρέττα": {
       "latitude": 37.428284,
@@ -25506,7 +25506,7 @@
       "search_name": "Λαζαρέττα",
       "primary_alias": "lazaretta",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μέγας Γιαλός": {
       "latitude": 37.38038,
@@ -25515,7 +25515,7 @@
       "search_name": "Μέγας Γιαλός",
       "primary_alias": "megas-gialos",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεσαριά": {
       "latitude": 37.422122,
@@ -25524,7 +25524,7 @@
       "search_name": "Μεσαριά",
       "primary_alias": "mesaria",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παρακοπή": {
       "latitude": 37.409787,
@@ -25533,7 +25533,7 @@
       "search_name": "Παρακοπή",
       "primary_alias": "parakopi",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περδίκι": {
       "latitude": 37.403323,
@@ -25542,7 +25542,7 @@
       "search_name": "Περδίκι",
       "primary_alias": "syros-perdiki",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέτρα": {
       "latitude": 37.431892,
@@ -25551,7 +25551,7 @@
       "search_name": "Πέτρα",
       "primary_alias": "syros-petra",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποσειδωνία": {
       "latitude": 37.387929,
@@ -25560,7 +25560,7 @@
       "search_name": "Ποσειδωνία",
       "primary_alias": "syros-poseidonia",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τάλαντα": {
       "latitude": 37.427067,
@@ -25569,7 +25569,7 @@
       "search_name": "Τάλαντα",
       "primary_alias": "talanta",
       "city": "Σύρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φοίνικας": {
       "latitude": 37.401427,
@@ -25578,8 +25578,8 @@
       "search_name": "Φοίνικας",
       "primary_alias": "foinikas",
       "city": "Σύρος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σχηματάρι": {
     "Σχηματάρι": {
@@ -25589,7 +25589,7 @@
       "search_name": "Σχηματάρι",
       "primary_alias": "shimatari",
       "city": "Σχηματάρι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οινόη": {
       "latitude": 38.323449,
@@ -25598,7 +25598,7 @@
       "search_name": "Οινόη",
       "primary_alias": "shimatari-oinoi",
       "city": "Σχηματάρι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τανάγρα": {
       "latitude": 38.327238,
@@ -25607,7 +25607,7 @@
       "search_name": "Τανάγρα",
       "primary_alias": "tanagra",
       "city": "Σχηματάρι",
-      "nomap": 0
+      "nomap": 0,
     },
     "Οινόφυτα": {
       "latitude": 38.307995,
@@ -25616,8 +25616,8 @@
       "search_name": "Οινόφυτα",
       "primary_alias": "oinofyta",
       "city": "Σχηματάρι",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Σχινιάς": {
     "Σχινιάς": {
@@ -25627,8 +25627,8 @@
       "search_name": "Σχινιάς",
       "primary_alias": "shinias",
       "city": "Σχινιάς",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Τήλος": {
     "Λιβάδια": {
@@ -25638,8 +25638,8 @@
       "search_name": "Λιβάδια",
       "primary_alias": "tilos-livadia",
       "city": "Τήλος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Τήνος": {
     "Τήνος": {
@@ -25649,7 +25649,7 @@
       "search_name": "Τήνος",
       "primary_alias": "tinos",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγάπη": {
       "latitude": 37.607338,
@@ -25658,7 +25658,7 @@
       "search_name": "Αγάπη",
       "primary_alias": "agapi",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Βαρβάρα": {
       "latitude": 37.541064,
@@ -25667,7 +25667,7 @@
       "search_name": "Αγία Βαρβάρα",
       "primary_alias": "tinos-agia-varvara",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ρωμανός": {
       "latitude": 37.572306,
@@ -25676,7 +25676,7 @@
       "search_name": "Άγιος Ρωμανός",
       "primary_alias": "agios-romanos",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σώστης": {
       "latitude": 37.530978,
@@ -25685,7 +25685,7 @@
       "search_name": "Άγιος Σώστης",
       "primary_alias": "tinos-agios-sostis",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Φωκάς": {
       "latitude": 37.532187,
@@ -25694,7 +25694,7 @@
       "search_name": "Άγιος Φωκάς",
       "primary_alias": "tinos-agios-fokas",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλονή": {
       "latitude": 37.610427,
@@ -25703,7 +25703,7 @@
       "search_name": "Καλλονή",
       "primary_alias": "tinos-kalloni",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάμπος": {
       "latitude": 37.577568,
@@ -25712,7 +25712,7 @@
       "search_name": "Κάμπος",
       "primary_alias": "tinos-kampos",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρδιανή": {
       "latitude": 37.604583,
@@ -25721,7 +25721,7 @@
       "search_name": "Καρδιανή",
       "primary_alias": "kardiani",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κιόνια": {
       "latitude": 37.553914,
@@ -25730,7 +25730,7 @@
       "search_name": "Κιόνια",
       "primary_alias": "kionia",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κώμη": {
       "latitude": 37.603842,
@@ -25739,7 +25739,7 @@
       "search_name": "Κώμη",
       "primary_alias": "komi",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όρμος Αγίου Ιωάννη": {
       "latitude": 37.536663,
@@ -25748,7 +25748,7 @@
       "search_name": "Όρμος Αγίου Ιωάννη",
       "primary_alias": "ormos-agioy-ioanni",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όρμος Πανόρμου": {
       "latitude": 37.651716,
@@ -25757,7 +25757,7 @@
       "search_name": "Όρμος Πανόρμου",
       "primary_alias": "ormos-panormoy",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πάνορμος": {
       "latitude": 37.639377,
@@ -25766,7 +25766,7 @@
       "search_name": "Πάνορμος",
       "primary_alias": "tinos-panormos",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στενή": {
       "latitude": 37.57622,
@@ -25775,7 +25775,7 @@
       "search_name": "Στενή",
       "primary_alias": "steni",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τριαντάρος": {
       "latitude": 37.559066,
@@ -25784,7 +25784,7 @@
       "search_name": "Τριαντάρος",
       "primary_alias": "triantaros",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τριπόταμος": {
       "latitude": 37.56967,
@@ -25793,7 +25793,7 @@
       "search_name": "Τριπόταμος",
       "primary_alias": "tinos-tripotamos",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Υστέρνια": {
       "latitude": 37.621679,
@@ -25802,7 +25802,7 @@
       "search_name": "Υστέρνια",
       "primary_alias": "ysternia",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φαλατάδος": {
       "latitude": 37.582334,
@@ -25811,7 +25811,7 @@
       "search_name": "Φαλατάδος",
       "primary_alias": "falatados",
       "city": "Τήνος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κτικάδος": {
       "latitude": 37.565837,
@@ -25820,8 +25820,8 @@
       "search_name": "Κτικάδος",
       "primary_alias": "ktikados",
       "city": "Τήνος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Τρίκαλα": {
     "Τρίκαλα": {
@@ -25831,7 +25831,7 @@
       "search_name": "Τρίκαλα",
       "primary_alias": "trikala",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Ειρήνη": {
       "latitude": 39.556184,
@@ -25840,7 +25840,7 @@
       "search_name": "Αγία Ειρήνη",
       "primary_alias": "trikala-agia-eirini",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 39.561898,
@@ -25849,7 +25849,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "trikala-agia-marina",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μονή": {
       "latitude": 39.54207,
@@ -25858,7 +25858,7 @@
       "search_name": "Αγία Μονή",
       "primary_alias": "agia-moni",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κοσμάς": {
       "latitude": 39.552074,
@@ -25867,7 +25867,7 @@
       "search_name": "Άγιος Κοσμάς",
       "primary_alias": "agios-kosmas",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κωνσταντίνος": {
       "latitude": 39.549574,
@@ -25876,7 +25876,7 @@
       "search_name": "Άγιος Κωνσταντίνος",
       "primary_alias": "trikala-agios-konstantinos",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νεκτάριος": {
       "latitude": 39.565373,
@@ -25885,7 +25885,7 @@
       "search_name": "Άγιος Νεκτάριος",
       "primary_alias": "trikala-agios-nektarios",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγναντερό": {
       "latitude": 39.48623,
@@ -25894,7 +25894,7 @@
       "search_name": "Αγναντερό",
       "primary_alias": "agnantero",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμυγδαλιές": {
       "latitude": 39.552385,
@@ -25903,7 +25903,7 @@
       "search_name": "Αμυγδαλιές",
       "primary_alias": "trikala-amygdalies",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Απόστολοι": {
       "latitude": 39.578065,
@@ -25912,7 +25912,7 @@
       "search_name": "Απόστολοι",
       "primary_alias": "apostoloi",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαλτινό": {
       "latitude": 39.548818,
@@ -25921,7 +25921,7 @@
       "search_name": "Βαλτινό",
       "primary_alias": "valtino",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλική": {
       "latitude": 39.639131,
@@ -25930,7 +25930,7 @@
       "search_name": "Βασιλική",
       "primary_alias": "trikala-vasiliki",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙΠΕ Τρικάλων": {
       "latitude": 39.556796,
@@ -25939,7 +25939,7 @@
       "search_name": "ΒΙΠΕ Τρικάλων",
       "primary_alias": "vipe-trikalon",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαρδικάκι": {
       "latitude": 39.549622,
@@ -25948,7 +25948,7 @@
       "search_name": "Γαρδικάκι",
       "primary_alias": "trikala-gardikaki",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γελάνθη": {
       "latitude": 39.439169,
@@ -25957,7 +25957,7 @@
       "search_name": "Γελάνθη",
       "primary_alias": "gelanthi",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γόμφοι": {
       "latitude": 39.464743,
@@ -25966,7 +25966,7 @@
       "search_name": "Γόμφοι",
       "primary_alias": "gomfoi",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δενδροχώρι": {
       "latitude": 39.552514,
@@ -25975,7 +25975,7 @@
       "search_name": "Δενδροχώρι",
       "primary_alias": "dendrohori",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διαλεκτό": {
       "latitude": 39.593994,
@@ -25984,7 +25984,7 @@
       "search_name": "Διαλεκτό",
       "primary_alias": "dialekto",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Διπόταμος": {
       "latitude": 39.568126,
@@ -25993,7 +25993,7 @@
       "search_name": "Διπόταμος",
       "primary_alias": "dipotamos",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ελευθεροχώρι": {
       "latitude": 39.528231,
@@ -26002,7 +26002,7 @@
       "search_name": "Ελευθεροχώρι",
       "primary_alias": "eleytherohori",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζηλευτή": {
       "latitude": 39.586579,
@@ -26011,7 +26011,7 @@
       "search_name": "Ζηλευτή",
       "primary_alias": "zileyti",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλογριανά": {
       "latitude": 39.465704,
@@ -26020,7 +26020,7 @@
       "search_name": "Καλογριανά",
       "primary_alias": "kalogriana",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρυές": {
       "latitude": 39.53012,
@@ -26029,7 +26029,7 @@
       "search_name": "Καρυές",
       "primary_alias": "trikala-karyes",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεραμαριά": {
       "latitude": 39.558475,
@@ -26038,7 +26038,7 @@
       "search_name": "Κεραμαριά",
       "primary_alias": "keramaria",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κεφαλόβρυσο": {
       "latitude": 39.580629,
@@ -26047,7 +26047,7 @@
       "search_name": "Κεφαλόβρυσο",
       "primary_alias": "trikala-kefalovryso",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κηπάκι": {
       "latitude": 39.570478,
@@ -26056,7 +26056,7 @@
       "search_name": "Κηπάκι",
       "primary_alias": "kipaki",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρανία": {
       "latitude": 39.445964,
@@ -26065,7 +26065,7 @@
       "search_name": "Κρανία",
       "primary_alias": "krania",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρηνίτσα": {
       "latitude": 39.588234,
@@ -26074,7 +26074,7 @@
       "search_name": "Κρηνίτσα",
       "primary_alias": "krinitsa",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λαζαρίνια": {
       "latitude": 39.462358,
@@ -26083,7 +26083,7 @@
       "search_name": "Λαζαρίνια",
       "primary_alias": "lazarinia",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεπτοκαρυά": {
       "latitude": 39.573283,
@@ -26092,7 +26092,7 @@
       "search_name": "Λεπτοκαρυά",
       "primary_alias": "trikala-leptokarya",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λογγάκι": {
       "latitude": 39.57898,
@@ -26101,7 +26101,7 @@
       "search_name": "Λογγάκι",
       "primary_alias": "loggaki",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυγαριά": {
       "latitude": 39.494442,
@@ -26110,7 +26110,7 @@
       "search_name": "Λυγαριά",
       "primary_alias": "trikala-lygaria",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαγούλα": {
       "latitude": 39.454542,
@@ -26119,7 +26119,7 @@
       "search_name": "Μαγούλα",
       "primary_alias": "trikala-magoyla",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαγουλίτσα": {
       "latitude": 39.43899,
@@ -26128,7 +26128,7 @@
       "search_name": "Μαγουλίτσα",
       "primary_alias": "magoylitsa",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαραθέα": {
       "latitude": 39.53025,
@@ -26137,7 +26137,7 @@
       "search_name": "Μαραθέα",
       "primary_alias": "trikala-marathea",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαυρομμάτι": {
       "latitude": 39.423877,
@@ -26146,7 +26146,7 @@
       "search_name": "Μαυρομμάτι",
       "primary_alias": "mayrommati",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλα Καλύβια": {
       "latitude": 39.497582,
@@ -26155,7 +26155,7 @@
       "search_name": "Μεγάλα Καλύβια",
       "primary_alias": "megala-kalyvia",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάλο Κεφαλόβρυσο": {
       "latitude": 39.589122,
@@ -26164,7 +26164,7 @@
       "search_name": "Μεγάλο Κεφαλόβρυσο",
       "primary_alias": "megalo-kefalovryso",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγαλοχώρι": {
       "latitude": 39.559605,
@@ -26173,7 +26173,7 @@
       "search_name": "Μεγαλοχώρι",
       "primary_alias": "megalohori",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μεγάρχη": {
       "latitude": 39.61046,
@@ -26182,7 +26182,7 @@
       "search_name": "Μεγάρχη",
       "primary_alias": "megarhi",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μουζάκι": {
       "latitude": 39.429396,
@@ -26191,7 +26191,7 @@
       "search_name": "Μουζάκι",
       "primary_alias": "moyzaki",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μουριά": {
       "latitude": 39.48895,
@@ -26200,7 +26200,7 @@
       "search_name": "Μουριά",
       "primary_alias": "moyria",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μπάρα": {
       "latitude": 39.560789,
@@ -26209,7 +26209,7 @@
       "search_name": "Μπάρα",
       "primary_alias": "mpara",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νομή": {
       "latitude": 39.53072,
@@ -26218,7 +26218,7 @@
       "search_name": "Νομή",
       "primary_alias": "nomi",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιά Πόλη": {
       "latitude": 39.558528,
@@ -26227,7 +26227,7 @@
       "search_name": "Παλαιά Πόλη",
       "primary_alias": "trikala-palaia-poli",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιό Δεσποτικό": {
       "latitude": 39.553198,
@@ -26236,7 +26236,7 @@
       "search_name": "Παλαιό Δεσποτικό",
       "primary_alias": "palaio-despotiko",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιομονάστηρο": {
       "latitude": 39.462346,
@@ -26245,7 +26245,7 @@
       "search_name": "Παλαιομονάστηρο",
       "primary_alias": "palaiomonastiro",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιόπυργος": {
       "latitude": 39.6076,
@@ -26254,7 +26254,7 @@
       "search_name": "Παλαιόπυργος",
       "primary_alias": "palaiopyrgos",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πεδινό": {
       "latitude": 39.517631,
@@ -26263,7 +26263,7 @@
       "search_name": "Πεδινό",
       "primary_alias": "pedino",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πετρόπορος": {
       "latitude": 39.561713,
@@ -26272,7 +26272,7 @@
       "search_name": "Πετρόπορος",
       "primary_alias": "petroporos",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πηγή": {
       "latitude": 39.510263,
@@ -26281,7 +26281,7 @@
       "search_name": "Πηγή",
       "primary_alias": "trikala-pigi",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πράσινη Γωνιά": {
       "latitude": 39.565703,
@@ -26290,7 +26290,7 @@
       "search_name": "Πράσινη Γωνιά",
       "primary_alias": "prasini-gonia",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πρίνος": {
       "latitude": 39.569483,
@@ -26299,7 +26299,7 @@
       "search_name": "Πρίνος",
       "primary_alias": "trikala-prinos",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προάστιο": {
       "latitude": 39.487423,
@@ -26308,7 +26308,7 @@
       "search_name": "Προάστιο",
       "primary_alias": "trikala-proastio",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Προφήτης Ηλίας": {
       "latitude": 39.56496,
@@ -26317,7 +26317,7 @@
       "search_name": "Προφήτης Ηλίας",
       "primary_alias": "trikala-profitis-ilias",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πύλη": {
       "latitude": 39.459251,
@@ -26326,7 +26326,7 @@
       "search_name": "Πύλη",
       "primary_alias": "trikala-pyli",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυργετός": {
       "latitude": 39.552985,
@@ -26335,7 +26335,7 @@
       "search_name": "Πυργετός",
       "primary_alias": "pyrgetos",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πύργος": {
       "latitude": 39.561769,
@@ -26344,7 +26344,7 @@
       "search_name": "Πύργος",
       "primary_alias": "trikala-pyrgos",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ράξα": {
       "latitude": 39.609923,
@@ -26353,7 +26353,7 @@
       "search_name": "Ράξα",
       "primary_alias": "raxa",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ριζάρειο": {
       "latitude": 39.539226,
@@ -26362,7 +26362,7 @@
       "search_name": "Ριζάρειο",
       "primary_alias": "rizareio",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρίζωμα": {
       "latitude": 39.664526,
@@ -26371,7 +26371,7 @@
       "search_name": "Ρίζωμα",
       "primary_alias": "trikala-rizoma",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρόγκια": {
       "latitude": 39.56057,
@@ -26380,7 +26380,7 @@
       "search_name": "Ρόγκια",
       "primary_alias": "rogkia",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σαράγια": {
       "latitude": 39.54476,
@@ -26389,7 +26389,7 @@
       "search_name": "Σαράγια",
       "primary_alias": "saragia",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σεισμόπληκτα": {
       "latitude": 39.568288,
@@ -26398,7 +26398,7 @@
       "search_name": "Σεισμόπληκτα",
       "primary_alias": "trikala-seismoplikta",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σερβωτά": {
       "latitude": 39.504534,
@@ -26407,7 +26407,7 @@
       "search_name": "Σερβωτά",
       "primary_alias": "servota",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σωτήρα": {
       "latitude": 39.586387,
@@ -26416,7 +26416,7 @@
       "search_name": "Σωτήρα",
       "primary_alias": "sotira",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταξιάρχες": {
       "latitude": 39.574359,
@@ -26425,7 +26425,7 @@
       "search_name": "Ταξιάρχες",
       "primary_alias": "trikala-taxiarhes",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τρικκαίογλου": {
       "latitude": 39.556492,
@@ -26434,7 +26434,7 @@
       "search_name": "Τρικκαίογλου",
       "primary_alias": "trikkaiogloy",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φανερωμένη": {
       "latitude": 39.547102,
@@ -26443,7 +26443,7 @@
       "search_name": "Φανερωμένη",
       "primary_alias": "trikala-faneromeni",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φήκη": {
       "latitude": 39.516628,
@@ -26452,7 +26452,7 @@
       "search_name": "Φήκη",
       "primary_alias": "fiki",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φλαμούλι": {
       "latitude": 39.527044,
@@ -26461,7 +26461,7 @@
       "search_name": "Φλαμούλι",
       "primary_alias": "flamoyli",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φωτάδα": {
       "latitude": 39.553404,
@@ -26470,7 +26470,7 @@
       "search_name": "Φωτάδα",
       "primary_alias": "fotada",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δροσερό": {
       "latitude": 39.510401,
@@ -26479,7 +26479,7 @@
       "search_name": "Δροσερό",
       "primary_alias": "trikala-drosero",
       "city": "Τρίκαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Κυριακή": {
       "latitude": 39.51628,
@@ -26488,8 +26488,8 @@
       "search_name": "Αγία Κυριακή",
       "primary_alias": "trikala-agia-kyriaki",
       "city": "Τρίκαλα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Τρίπολη": {
     "Τρίπολη": {
@@ -26499,7 +26499,7 @@
       "search_name": "Τρίπολη",
       "primary_alias": "tripoli",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "11ο Σύνταγμα Πεζικού": {
       "latitude": 37.516363,
@@ -26508,7 +26508,7 @@
       "search_name": "11ο Σύνταγμα Πεζικού",
       "primary_alias": "11o-syntagma-pezikoy",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Βασίλειος": {
       "latitude": 37.513289,
@@ -26517,7 +26517,7 @@
       "search_name": "Άγιος Βασίλειος",
       "primary_alias": "tripoli-agios-vasileios",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Κωνσταντίνος": {
       "latitude": 37.523745,
@@ -26526,7 +26526,7 @@
       "search_name": "Άγιος Κωνσταντίνος",
       "primary_alias": "tripoli-agios-konstantinos",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Σώστης": {
       "latitude": 37.477008,
@@ -26535,7 +26535,7 @@
       "search_name": "Άγιος Σώστης",
       "primary_alias": "tripoli-agios-sostis",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγιωργίτικα": {
       "latitude": 37.496854,
@@ -26544,7 +26544,7 @@
       "search_name": "Αγιωργίτικα",
       "primary_alias": "agiorgitika",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αεροπορική Βάση Τριπόλεως": {
       "latitude": 37.527741,
@@ -26553,7 +26553,7 @@
       "search_name": "Αεροπορική Βάση Τριπόλεως",
       "primary_alias": "aeroporiki-vasi-tripoleos",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλέα": {
       "latitude": 37.454834,
@@ -26562,7 +26562,7 @@
       "search_name": "Αλέα",
       "primary_alias": "alea",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΒΙΠΕ Τρίπολης": {
       "latitude": 37.512519,
@@ -26571,7 +26571,7 @@
       "search_name": "ΒΙΠΕ Τρίπολης",
       "primary_alias": "vipe-tripolis",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βουνό": {
       "latitude": 37.446565,
@@ -26580,7 +26580,7 @@
       "search_name": "Βουνό",
       "primary_alias": "voyno",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δεμίρι": {
       "latitude": 37.456975,
@@ -26589,7 +26589,7 @@
       "search_name": "Δεμίρι",
       "primary_alias": "demiri",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Επισκοπή": {
       "latitude": 37.464184,
@@ -26598,7 +26598,7 @@
       "search_name": "Επισκοπή",
       "primary_alias": "tripoli-episkopi",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζευγολατειό": {
       "latitude": 37.517841,
@@ -26607,7 +26607,7 @@
       "search_name": "Ζευγολατειό",
       "primary_alias": "tripoli-zeygolateio",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θάνας": {
       "latitude": 37.473238,
@@ -26616,7 +26616,7 @@
       "search_name": "Θάνας",
       "primary_alias": "thanas",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρι": {
       "latitude": 37.44015,
@@ -26625,7 +26625,7 @@
       "search_name": "Καμάρι",
       "primary_alias": "tripoli-kamari",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 37.510303,
@@ -26634,7 +26634,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "tripoli",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαγούλα": {
       "latitude": 37.458185,
@@ -26643,7 +26643,7 @@
       "search_name": "Μαγούλα",
       "primary_alias": "tripoli-magoyla",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάκρη": {
       "latitude": 37.471427,
@@ -26652,7 +26652,7 @@
       "search_name": "Μάκρη",
       "primary_alias": "tripoli-makri",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μερκοβούνι": {
       "latitude": 37.541731,
@@ -26661,7 +26661,7 @@
       "search_name": "Μερκοβούνι",
       "primary_alias": "merkovoyni",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 37.50853,
@@ -26670,7 +26670,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "tripoli-neohori",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλλάντιο": {
       "latitude": 37.45881,
@@ -26679,7 +26679,7 @@
       "search_name": "Παλλάντιο",
       "primary_alias": "pallantio",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παρόριο": {
       "latitude": 37.539376,
@@ -26688,7 +26688,7 @@
       "search_name": "Παρόριο",
       "primary_alias": "parorio",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέλαγος": {
       "latitude": 37.525143,
@@ -26697,7 +26697,7 @@
       "search_name": "Πέλαγος",
       "primary_alias": "pelagos",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περπατάρης": {
       "latitude": 37.46026,
@@ -26706,7 +26706,7 @@
       "search_name": "Περπατάρης",
       "primary_alias": "perpataris",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ρίζες": {
       "latitude": 37.446338,
@@ -26715,7 +26715,7 @@
       "search_name": "Ρίζες",
       "primary_alias": "rizes",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιλίμνα": {
       "latitude": 37.508384,
@@ -26724,7 +26724,7 @@
       "search_name": "Σιλίμνα",
       "primary_alias": "silimna",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκοπή": {
       "latitude": 37.557187,
@@ -26733,7 +26733,7 @@
       "search_name": "Σκοπή",
       "primary_alias": "skopi",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στάδιο": {
       "latitude": 37.45765,
@@ -26742,7 +26742,7 @@
       "search_name": "Στάδιο",
       "primary_alias": "stadio",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στενό": {
       "latitude": 37.495688,
@@ -26751,7 +26751,7 @@
       "search_name": "Στενό",
       "primary_alias": "tripoli-steno",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στρίγκος": {
       "latitude": 37.451901,
@@ -26760,7 +26760,7 @@
       "search_name": "Στρίγκος",
       "primary_alias": "strigkos",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συνοικισμός Κολοκοτρώνη": {
       "latitude": 37.505255,
@@ -26769,7 +26769,7 @@
       "search_name": "Συνοικισμός Κολοκοτρώνη",
       "primary_alias": "synoikismos-kolokotroni",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τζίβας": {
       "latitude": 37.465784,
@@ -26778,7 +26778,7 @@
       "search_name": "Τζίβας",
       "primary_alias": "tzivas",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χάνια": {
       "latitude": 37.549375,
@@ -26787,7 +26787,7 @@
       "search_name": "Χάνια",
       "primary_alias": "tripoli-hania",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λεωνίδιο": {
       "latitude": 37.167136,
@@ -26796,7 +26796,7 @@
       "search_name": "Λεωνίδιο",
       "primary_alias": "leonidio",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τυρός": {
       "latitude": 37.247032,
@@ -26805,7 +26805,7 @@
       "search_name": "Τυρός",
       "primary_alias": "tyros",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άστρος": {
       "latitude": 37.403914,
@@ -26814,7 +26814,7 @@
       "search_name": "Άστρος",
       "primary_alias": "astros",
       "city": "Τρίπολη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Δολιανά": {
       "latitude": 37.431637,
@@ -26823,8 +26823,8 @@
       "search_name": "Κάτω Δολιανά",
       "primary_alias": "kato-doliana",
       "city": "Τρίπολη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Τύρναβος": {
     "Τύρναβος": {
@@ -26834,7 +26834,7 @@
       "search_name": "Τύρναβος",
       "primary_alias": "tirnavos",
       "city": "Τύρναβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελώνας": {
       "latitude": 39.746038,
@@ -26843,7 +26843,7 @@
       "search_name": "Αμπελώνας",
       "primary_alias": "ampelonas",
       "city": "Τύρναβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κριτήρι": {
       "latitude": 39.755744,
@@ -26852,7 +26852,7 @@
       "search_name": "Κριτήρι",
       "primary_alias": "kritiri",
       "city": "Τύρναβος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αργυροπούλειο": {
       "latitude": 39.825908,
@@ -26861,8 +26861,8 @@
       "search_name": "Αργυροπούλειο",
       "primary_alias": "argyropoyleio",
       "city": "Τύρναβος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ύδρα": {
     "Ύδρα": {
@@ -26872,7 +26872,7 @@
       "search_name": "Ύδρα",
       "primary_alias": "udra",
       "city": "Ύδρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλυχός": {
       "latitude": 37.341924,
@@ -26881,7 +26881,7 @@
       "search_name": "Βλυχός",
       "primary_alias": "vlyhos",
       "city": "Ύδρα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μανδράκι": {
       "latitude": 37.352867,
@@ -26890,8 +26890,8 @@
       "search_name": "Μανδράκι",
       "primary_alias": "mandraki",
       "city": "Ύδρα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Φάρσαλα": {
     "Φάρσαλα": {
@@ -26901,7 +26901,7 @@
       "search_name": "Φάρσαλα",
       "primary_alias": "farsala",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμπελεία": {
       "latitude": 39.309976,
@@ -26910,7 +26910,7 @@
       "search_name": "Αμπελεία",
       "primary_alias": "farsala-ampeleia",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ανωχώρι": {
       "latitude": 39.317613,
@@ -26919,7 +26919,7 @@
       "search_name": "Ανωχώρι",
       "primary_alias": "anohori",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αχίλλειο": {
       "latitude": 39.266703,
@@ -26928,7 +26928,7 @@
       "search_name": "Αχίλλειο",
       "primary_alias": "ahilleio",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαμβακού": {
       "latitude": 39.336494,
@@ -26937,7 +26937,7 @@
       "search_name": "Βαμβακού",
       "primary_alias": "vamvakoy",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλή": {
       "latitude": 39.33078,
@@ -26946,7 +26946,7 @@
       "search_name": "Βασιλή",
       "primary_alias": "vasili",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βρυσιά": {
       "latitude": 39.260251,
@@ -26955,7 +26955,7 @@
       "search_name": "Βρυσιά",
       "primary_alias": "vrysia",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δενδράκι": {
       "latitude": 39.338304,
@@ -26964,7 +26964,7 @@
       "search_name": "Δενδράκι",
       "primary_alias": "dendraki",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατωχώρι": {
       "latitude": 39.311294,
@@ -26973,7 +26973,7 @@
       "search_name": "Κατωχώρι",
       "primary_alias": "farsala-katohori",
       "city": "Φάρσαλα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σιτόχωρο": {
       "latitude": 39.337978,
@@ -26982,8 +26982,8 @@
       "search_name": "Σιτόχωρο",
       "primary_alias": "sitohoro",
       "city": "Φάρσαλα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Φέρες": {
     "Φέρες": {
@@ -26993,7 +26993,7 @@
       "search_name": "Φέρες",
       "primary_alias": "feres",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δορίσκος": {
       "latitude": 40.867849,
@@ -27002,7 +27002,7 @@
       "search_name": "Δορίσκος",
       "primary_alias": "feres-doriskos",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μοναστηράκι": {
       "latitude": 40.851855,
@@ -27011,7 +27011,7 @@
       "search_name": "Μοναστηράκι",
       "primary_alias": "feres-monastiraki",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καβησός": {
       "latitude": 40.924659,
@@ -27020,7 +27020,7 @@
       "search_name": "Καβησός",
       "primary_alias": "feres-kavisos",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κήποι": {
       "latitude": 40.95314,
@@ -27029,7 +27029,7 @@
       "search_name": "Κήποι",
       "primary_alias": "feres-kipoi",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τελωνείο Κήπων": {
       "latitude": 40.945017,
@@ -27038,7 +27038,7 @@
       "search_name": "Τελωνείο Κήπων",
       "primary_alias": "feres-teloneio-kipon",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρδάνιο": {
       "latitude": 40.931325,
@@ -27047,7 +27047,7 @@
       "search_name": "Αρδάνιο",
       "primary_alias": "feres-ardanio",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέπλος": {
       "latitude": 40.95702,
@@ -27056,7 +27056,7 @@
       "search_name": "Πέπλος",
       "primary_alias": "feres-peplos",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φυλάκιο Πέπλου": {
       "latitude": 40.928748,
@@ -27065,7 +27065,7 @@
       "search_name": "Φυλάκιο Πέπλου",
       "primary_alias": "feres-fylakio-peploy",
       "city": "Φέρες",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καβησός Στρατόπεδα": {
       "latitude": 40.91325,
@@ -27074,8 +27074,8 @@
       "search_name": "Καβησός Στρατόπεδα",
       "primary_alias": "feres-kavisos-stratopeda",
       "city": "Φέρες",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Φλώρινα": {
     "Αμύνταιο": {
@@ -27085,7 +27085,7 @@
       "search_name": "Αμύνταιο",
       "primary_alias": "amyntaio",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φλώρινα": {
       "latitude": 40.781887,
@@ -27094,7 +27094,7 @@
       "search_name": "Φλώρινα",
       "primary_alias": "florina",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άλωνα": {
       "latitude": 40.777019,
@@ -27103,7 +27103,7 @@
       "search_name": "Άλωνα",
       "primary_alias": "alona",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αμμοχώρι": {
       "latitude": 40.782004,
@@ -27112,7 +27112,7 @@
       "search_name": "Αμμοχώρι",
       "primary_alias": "ammohori",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Καλλινίκη": {
       "latitude": 40.860136,
@@ -27121,7 +27121,7 @@
       "search_name": "Άνω Καλλινίκη",
       "primary_alias": "ano-kalliniki",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Κλεινές": {
       "latitude": 40.845303,
@@ -27130,7 +27130,7 @@
       "search_name": "Άνω Κλεινές",
       "primary_alias": "ano-kleines",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρμενοχώρι": {
       "latitude": 40.802411,
@@ -27139,7 +27139,7 @@
       "search_name": "Αρμενοχώρι",
       "primary_alias": "armenohori",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Εργατικές Κατοικίες Αγίου Μηνά": {
       "latitude": 40.779795,
@@ -27148,7 +27148,7 @@
       "search_name": "Εργατικές Κατοικίες Αγίου Μηνά",
       "primary_alias": "ergatikes-katoikies-agioy-mina",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Κλεινές": {
       "latitude": 40.84912,
@@ -27157,7 +27157,7 @@
       "search_name": "Κάτω Κλεινές",
       "primary_alias": "kato-kleines",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολχική": {
       "latitude": 40.739052,
@@ -27166,7 +27166,7 @@
       "search_name": "Κολχική",
       "primary_alias": "kolhiki",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχωράκι": {
       "latitude": 40.828038,
@@ -27175,7 +27175,7 @@
       "search_name": "Νεοχωράκι",
       "primary_alias": "florina-neohoraki",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παππαγιάννης": {
       "latitude": 40.839058,
@@ -27184,7 +27184,7 @@
       "search_name": "Παππαγιάννης",
       "primary_alias": "pappagiannis",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πέρασμα": {
       "latitude": 40.753127,
@@ -27193,7 +27193,7 @@
       "search_name": "Πέρασμα",
       "primary_alias": "perasma",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σίμος Ιωαννίδης": {
       "latitude": 40.777639,
@@ -27202,7 +27202,7 @@
       "search_name": "Σίμος Ιωαννίδης",
       "primary_alias": "simos-ioannidis",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκοπιά": {
       "latitude": 40.763757,
@@ -27211,7 +27211,7 @@
       "search_name": "Σκοπιά",
       "primary_alias": "skopia",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταθμός": {
       "latitude": 40.797104,
@@ -27220,7 +27220,7 @@
       "search_name": "Σταθμός",
       "primary_alias": "florina-stathmos",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τριπόταμος": {
       "latitude": 40.824187,
@@ -27229,7 +27229,7 @@
       "search_name": "Τριπόταμος",
       "primary_alias": "florina-tripotamos",
       "city": "Φλώρινα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τροπαιούχος": {
       "latitude": 40.739766,
@@ -27238,8 +27238,8 @@
       "search_name": "Τροπαιούχος",
       "primary_alias": "tropaioyhos",
       "city": "Φλώρινα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Φολέγανδρος": {
     "Φολέγανδρος": {
@@ -27249,7 +27249,7 @@
       "search_name": "Φολέγανδρος",
       "primary_alias": "folegandros",
       "city": "Φολέγανδρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγκάλη": {
       "latitude": 36.631545,
@@ -27258,7 +27258,7 @@
       "search_name": "Αγκάλη",
       "primary_alias": "folegandros-agkali",
       "city": "Φολέγανδρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Μεριά": {
       "latitude": 36.646981,
@@ -27267,7 +27267,7 @@
       "search_name": "Άνω Μεριά",
       "primary_alias": "ano-meria",
       "city": "Φολέγανδρος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καραβοστάσης": {
       "latitude": 36.615397,
@@ -27276,8 +27276,8 @@
       "search_name": "Καραβοστάσης",
       "primary_alias": "karavostasis",
       "city": "Φολέγανδρος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Φυλή": {
     "Φυλή": {
@@ -27287,8 +27287,8 @@
       "search_name": "Φυλή",
       "primary_alias": "fyli",
       "city": "Φυλή",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Χαλκίδα": {
     "Χαλκίδα": {
@@ -27298,7 +27298,7 @@
       "search_name": "Χαλκίδα",
       "primary_alias": "chalkida",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Μηνάς": {
       "latitude": 38.488846,
@@ -27307,7 +27307,7 @@
       "search_name": "Άγιος Μηνάς",
       "primary_alias": "halkida-agios-minas",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Νικόλαος": {
       "latitude": 38.421517,
@@ -27316,7 +27316,7 @@
       "search_name": "Άγιος Νικόλαος",
       "primary_alias": "halkida-agios-nikolaos",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αφράτι": {
       "latitude": 38.450757,
@@ -27325,7 +27325,7 @@
       "search_name": "Αφράτι",
       "primary_alias": "afrati",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαθύ": {
       "latitude": 38.406808,
@@ -27334,7 +27334,7 @@
       "search_name": "Βαθύ",
       "primary_alias": "halkida-vathy",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλικό": {
       "latitude": 38.425448,
@@ -27343,7 +27343,7 @@
       "search_name": "Βασιλικό",
       "primary_alias": "vasiliko",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βατώντας": {
       "latitude": 38.519542,
@@ -27352,7 +27352,7 @@
       "search_name": "Βατώντας",
       "primary_alias": "vatontas",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δοκός": {
       "latitude": 38.466898,
@@ -27361,7 +27361,7 @@
       "search_name": "Δοκός",
       "primary_alias": "dokos",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δροσιά": {
       "latitude": 38.484173,
@@ -27370,7 +27370,7 @@
       "search_name": "Δροσιά",
       "primary_alias": "halkida-drosia",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δύο Δέντρα": {
       "latitude": 38.462842,
@@ -27379,7 +27379,7 @@
       "search_name": "Δύο Δέντρα",
       "primary_alias": "dyo-dentra",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάνηθος": {
       "latitude": 38.47055,
@@ -27388,7 +27388,7 @@
       "search_name": "Κάνηθος",
       "primary_alias": "kanithos",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καστέλλα": {
       "latitude": 38.570655,
@@ -27397,7 +27397,7 @@
       "search_name": "Καστέλλα",
       "primary_alias": "halkida-kastella",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 38.462316,
@@ -27406,7 +27406,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "chalkida",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λευκαντί": {
       "latitude": 38.410865,
@@ -27415,7 +27415,7 @@
       "search_name": "Λευκαντί",
       "primary_alias": "leykanti",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιανή Άμμος": {
       "latitude": 38.471689,
@@ -27424,7 +27424,7 @@
       "search_name": "Λιανή Άμμος",
       "primary_alias": "liani-ammos",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακεδονικά": {
       "latitude": 38.461976,
@@ -27433,7 +27433,7 @@
       "search_name": "Μακεδονικά",
       "primary_alias": "makedonika",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μύτικας": {
       "latitude": 38.44471,
@@ -27442,7 +27442,7 @@
       "search_name": "Μύτικας",
       "primary_alias": "halkida-mytikas",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Αρτάκη": {
       "latitude": 38.518806,
@@ -27451,7 +27451,7 @@
       "search_name": "Νέα Αρτάκη",
       "primary_alias": "nea-artaki",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Λάμψακος": {
       "latitude": 38.437758,
@@ -27460,7 +27460,7 @@
       "search_name": "Νέα Λάμψακος",
       "primary_alias": "nea-lampsakos",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέες Εργατικές Κατοικίες": {
       "latitude": 38.470231,
@@ -27469,7 +27469,7 @@
       "search_name": "Νέες Εργατικές Κατοικίες",
       "primary_alias": "halkida-nees-ergatikes-katoikies",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξηρόβρυση": {
       "latitude": 38.469006,
@@ -27478,7 +27478,7 @@
       "search_name": "Ξηρόβρυση",
       "primary_alias": "halkida-xirovrysi",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλυκές Δροσιάς": {
       "latitude": 38.497115,
@@ -27487,7 +27487,7 @@
       "search_name": "Αλυκές Δροσιάς",
       "primary_alias": "alykes-drosias",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανόραμα": {
       "latitude": 38.41546,
@@ -27496,7 +27496,7 @@
       "search_name": "Πανόραμα",
       "primary_alias": "halkida-panorama",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυργάκι (Μπούρτζι)": {
       "latitude": 38.404976,
@@ -27505,7 +27505,7 @@
       "search_name": "Πυργάκι (Μπούρτζι)",
       "primary_alias": "pyrgaki-mpoyrtzi",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σωρός": {
       "latitude": 38.478301,
@@ -27514,7 +27514,7 @@
       "search_name": "Σωρός",
       "primary_alias": "halkida-soros",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φάρος": {
       "latitude": 38.399012,
@@ -27523,7 +27523,7 @@
       "search_name": "Φάρος",
       "primary_alias": "faros",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φύλλα": {
       "latitude": 38.441759,
@@ -27532,7 +27532,7 @@
       "search_name": "Φύλλα",
       "primary_alias": "fylla",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψαχνά": {
       "latitude": 38.576924,
@@ -27541,7 +27541,7 @@
       "search_name": "Ψαχνά",
       "primary_alias": "psahna",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αυλίδα": {
       "latitude": 38.381508,
@@ -27550,7 +27550,7 @@
       "search_name": "Αυλίδα",
       "primary_alias": "aylida",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμάρες": {
       "latitude": 38.462391,
@@ -27559,7 +27559,7 @@
       "search_name": "Καμάρες",
       "primary_alias": "halkida-kamares",
       "city": "Χαλκίδα",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έξω Παναγίτσα": {
       "latitude": 38.490895,
@@ -27568,8 +27568,8 @@
       "search_name": "Έξω Παναγίτσα",
       "primary_alias": "exo-panagitsa",
       "city": "Χαλκίδα",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Χαλκιδική": {
     "Νέα Καλλικράτεια": {
@@ -27579,7 +27579,7 @@
       "search_name": "Νέα Καλλικράτεια",
       "primary_alias": "nea-kallikrateia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μετόχι": {
       "latitude": 40.277147,
@@ -27588,7 +27588,7 @@
       "search_name": "Μετόχι",
       "primary_alias": "halkidiki-metohi",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Γωνιά": {
       "latitude": 40.361815,
@@ -27597,7 +27597,7 @@
       "search_name": "Νέα Γωνιά",
       "primary_alias": "nea-gonia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ηράκλεια": {
       "latitude": 40.346166,
@@ -27606,7 +27606,7 @@
       "search_name": "Νέα Ηράκλεια",
       "primary_alias": "nea-irakleia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Σίλατα": {
       "latitude": 40.329227,
@@ -27615,7 +27615,7 @@
       "search_name": "Νέα Σίλατα",
       "primary_alias": "nea-silata",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σωζόπολη": {
       "latitude": 40.277647,
@@ -27624,7 +27624,7 @@
       "search_name": "Σωζόπολη",
       "primary_alias": "sozopoli",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Μουδανιά": {
       "latitude": 40.241579,
@@ -27633,7 +27633,7 @@
       "search_name": "Νέα Μουδανιά",
       "primary_alias": "nea-moydania",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Μάμας": {
       "latitude": 40.259307,
@@ -27642,7 +27642,7 @@
       "search_name": "Άγιος Μάμας",
       "primary_alias": "agios-mamas",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Διονυσίου": {
       "latitude": 40.273946,
@@ -27651,7 +27651,7 @@
       "search_name": "Παραλία Διονυσίου",
       "primary_alias": "paralia-dionysioy",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζωγράφου": {
       "latitude": 40.2876,
@@ -27660,7 +27660,7 @@
       "search_name": "Ζωγράφου",
       "primary_alias": "halkidiki-zografoy",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Νέας Τρίγλιας": {
       "latitude": 40.27092,
@@ -27669,7 +27669,7 @@
       "search_name": "Παραλία Νέας Τρίγλιας",
       "primary_alias": "paralia-neas-triglias",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Ποτίδαια": {
       "latitude": 40.194363,
@@ -27678,7 +27678,7 @@
       "search_name": "Νέα Ποτίδαια",
       "primary_alias": "nea-potidaia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Τρίγλια": {
       "latitude": 40.305639,
@@ -27687,7 +27687,7 @@
       "search_name": "Νέα Τρίγλια",
       "primary_alias": "nea-triglia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πορταριά": {
       "latitude": 40.283932,
@@ -27696,7 +27696,7 @@
       "search_name": "Πορταριά",
       "primary_alias": "halkidiki-portaria",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φλογητά": {
       "latitude": 40.260373,
@@ -27705,7 +27705,7 @@
       "search_name": "Φλογητά",
       "primary_alias": "flogita",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλκιδική": {
       "latitude": 40.378588,
@@ -27714,7 +27714,7 @@
       "search_name": "Χαλκιδική",
       "primary_alias": "polygyros",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολύγυρος": {
       "latitude": 40.378588,
@@ -27723,7 +27723,7 @@
       "search_name": "Πολύγυρος",
       "primary_alias": "polygyros",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χανιώτης": {
       "latitude": 39.99976,
@@ -27732,7 +27732,7 @@
       "search_name": "Χανιώτης",
       "primary_alias": "haniotis",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πευκοχώρι": {
       "latitude": 39.988386,
@@ -27741,7 +27741,7 @@
       "search_name": "Πευκοχώρι",
       "primary_alias": "peykohori",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Παρασκευή": {
       "latitude": 39.953474,
@@ -27750,7 +27750,7 @@
       "search_name": "Αγία Παρασκευή",
       "primary_alias": "halkidiki-agia-paraskeyi",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιούρι": {
       "latitude": 39.941625,
@@ -27759,7 +27759,7 @@
       "search_name": "Παλιούρι",
       "primary_alias": "halkidiki-palioyri",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολύχρονο": {
       "latitude": 40.016552,
@@ -27768,7 +27768,7 @@
       "search_name": "Πολύχρονο",
       "primary_alias": "polyhrono",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέος Μαρμαράς": {
       "latitude": 40.093765,
@@ -27777,7 +27777,7 @@
       "search_name": "Νέος Μαρμαράς",
       "primary_alias": "neos-marmaras",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ψακούδια": {
       "latitude": 40.259084,
@@ -27786,7 +27786,7 @@
       "search_name": "Ψακούδια",
       "primary_alias": "psakoydia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Γερακινής": {
       "latitude": 40.269116,
@@ -27795,7 +27795,7 @@
       "search_name": "Παραλία Γερακινής",
       "primary_alias": "paralia-gerakinis",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ορμύλια": {
       "latitude": 40.294347,
@@ -27804,7 +27804,7 @@
       "search_name": "Ορμύλια",
       "primary_alias": "ormylia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νικήτη": {
       "latitude": 40.217243,
@@ -27813,7 +27813,7 @@
       "search_name": "Νικήτη",
       "primary_alias": "nikiti",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μουριές": {
       "latitude": 40.251446,
@@ -27822,7 +27822,7 @@
       "search_name": "Μουριές",
       "primary_alias": "moyries",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Πλάγια": {
       "latitude": 40.265599,
@@ -27831,7 +27831,7 @@
       "search_name": "Νέα Πλάγια",
       "primary_alias": "nea-plagia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Φούρκας": {
       "latitude": 40.000324,
@@ -27840,7 +27840,7 @@
       "search_name": "Σκάλα Φούρκας",
       "primary_alias": "skala-foyrkas",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σίβηρη": {
       "latitude": 40.038023,
@@ -27849,7 +27849,7 @@
       "search_name": "Σίβηρη",
       "primary_alias": "siviri",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κασσανδρεία": {
       "latitude": 40.04732,
@@ -27858,7 +27858,7 @@
       "search_name": "Κασσανδρεία",
       "primary_alias": "kassandreia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιθέα": {
       "latitude": 40.075622,
@@ -27867,7 +27867,7 @@
       "search_name": "Καλλιθέα",
       "primary_alias": "halkidiki-kallithea",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άφυτος": {
       "latitude": 40.098681,
@@ -27876,7 +27876,7 @@
       "search_name": "Άφυτος",
       "primary_alias": "afytos",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Φώκαια": {
       "latitude": 40.133649,
@@ -27885,7 +27885,7 @@
       "search_name": "Νέα Φώκαια",
       "primary_alias": "nea-fokaia",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ιερισσός": {
       "latitude": 40.397721,
@@ -27894,7 +27894,7 @@
       "search_name": "Ιερισσός",
       "primary_alias": "ierissos",
       "city": "Χαλκιδική",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κρυοπηγή": {
       "latitude": 40.03585,
@@ -27903,8 +27903,8 @@
       "search_name": "Κρυοπηγή",
       "primary_alias": "kryopigi",
       "city": "Χαλκιδική",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Χανιά Κρήτη": {
     "Χανιά": {
@@ -27914,7 +27914,7 @@
       "search_name": "Χανιά",
       "primary_alias": "chania",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Μαρίνα": {
       "latitude": 35.516098,
@@ -27923,7 +27923,7 @@
       "search_name": "Αγία Μαρίνα",
       "primary_alias": "hania-kriti-agia-marina",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Απόστολοι": {
       "latitude": 35.510139,
@@ -27932,7 +27932,7 @@
       "search_name": "Άγιοι Απόστολοι",
       "primary_alias": "hania-kriti-agioi-apostoloi",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιοι Σαράντα": {
       "latitude": 35.482431,
@@ -27941,7 +27941,7 @@
       "search_name": "Άγιοι Σαράντα",
       "primary_alias": "hania-kriti-agioi-saranta",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ιωάννης": {
       "latitude": 35.50519,
@@ -27950,7 +27950,7 @@
       "search_name": "Άγιος Ιωάννης",
       "primary_alias": "hania-kriti-agios-ioannis",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ματθαίος": {
       "latitude": 35.516653,
@@ -27959,7 +27959,7 @@
       "search_name": "Άγιος Ματθαίος",
       "primary_alias": "agios-matthaios",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Ονούφριος": {
       "latitude": 35.54396,
@@ -27968,7 +27968,7 @@
       "search_name": "Άγιος Ονούφριος",
       "primary_alias": "hania-kriti-agios-onoyfrios",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγιά": {
       "latitude": 35.472437,
@@ -27977,7 +27977,7 @@
       "search_name": "Αγιά",
       "primary_alias": "hania-kriti-agia",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλικιανός": {
       "latitude": 35.454146,
@@ -27986,7 +27986,7 @@
       "search_name": "Αλικιανός",
       "primary_alias": "alikianos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αλμυρίδα": {
       "latitude": 35.448505,
@@ -27995,7 +27995,7 @@
       "search_name": "Αλμυρίδα",
       "primary_alias": "almyrida",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνω Κουμ Καπί": {
       "latitude": 35.513555,
@@ -28004,7 +28004,7 @@
       "search_name": "Άνω Κουμ Καπί",
       "primary_alias": "ano-koym-kapi",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αργουλιδές": {
       "latitude": 35.524143,
@@ -28013,7 +28013,7 @@
       "search_name": "Αργουλιδές",
       "primary_alias": "argoylides",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αρώνι": {
       "latitude": 35.51595,
@@ -28022,7 +28022,7 @@
       "search_name": "Αρώνι",
       "primary_alias": "aroni",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαμβακόπουλο": {
       "latitude": 35.496173,
@@ -28031,7 +28031,7 @@
       "search_name": "Βαμβακόπουλο",
       "primary_alias": "vamvakopoylo",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βάμος": {
       "latitude": 35.407573,
@@ -28040,7 +28040,7 @@
       "search_name": "Βάμος",
       "primary_alias": "vamos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαρύπετρο": {
       "latitude": 35.466357,
@@ -28049,7 +28049,7 @@
       "search_name": "Βαρύπετρο",
       "primary_alias": "varypetro",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βατόλακκος": {
       "latitude": 35.449001,
@@ -28058,7 +28058,7 @@
       "search_name": "Βατόλακκος",
       "primary_alias": "hania-kriti-vatolakkos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βλητές Σούδας": {
       "latitude": 35.498767,
@@ -28067,7 +28067,7 @@
       "search_name": "Βλητές Σούδας",
       "primary_alias": "vlites-soydas",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γαλατάς": {
       "latitude": 35.498861,
@@ -28076,7 +28076,7 @@
       "search_name": "Γαλατάς",
       "primary_alias": "hania-kriti-galatas",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γεράνι": {
       "latitude": 35.518535,
@@ -28085,7 +28085,7 @@
       "search_name": "Γεράνι",
       "primary_alias": "hania-kriti-gerani",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γερμανικό Πουλί": {
       "latitude": 35.505889,
@@ -28094,7 +28094,7 @@
       "search_name": "Γερμανικό Πουλί",
       "primary_alias": "germaniko-poyli",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαράτσος": {
       "latitude": 35.500268,
@@ -28103,7 +28103,7 @@
       "search_name": "Δαράτσος",
       "primary_alias": "daratsos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δέμπλα": {
       "latitude": 35.524451,
@@ -28112,7 +28112,7 @@
       "search_name": "Δέμπλα",
       "primary_alias": "dempla",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δικαστήρια": {
       "latitude": 35.509487,
@@ -28121,7 +28121,7 @@
       "search_name": "Δικαστήρια",
       "primary_alias": "hania-kriti-dikastiria",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καθιανά": {
       "latitude": 35.534563,
@@ -28130,7 +28130,7 @@
       "search_name": "Καθιανά",
       "primary_alias": "kathiana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαθάς": {
       "latitude": 35.548766,
@@ -28139,7 +28139,7 @@
       "search_name": "Καλαθάς",
       "primary_alias": "kalathas",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλαμάκι": {
       "latitude": 35.510751,
@@ -28148,7 +28148,7 @@
       "search_name": "Καλαμάκι",
       "primary_alias": "hania-kriti-kalamaki",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλύβες": {
       "latitude": 35.451144,
@@ -28157,7 +28157,7 @@
       "search_name": "Καλύβες",
       "primary_alias": "kalyves",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμισιανά": {
       "latitude": 35.525568,
@@ -28166,7 +28166,7 @@
       "search_name": "Καμισιανά",
       "primary_alias": "kamisiana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καμπάνι": {
       "latitude": 35.540189,
@@ -28175,7 +28175,7 @@
       "search_name": "Καμπάνι",
       "primary_alias": "kampani",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κατσιφαριανά": {
       "latitude": 35.486303,
@@ -28184,7 +28184,7 @@
       "search_name": "Κατσιφαριανά",
       "primary_alias": "katsifariana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Γαλατάς": {
       "latitude": 35.510271,
@@ -28193,7 +28193,7 @@
       "search_name": "Κάτω Γαλατάς",
       "primary_alias": "kato-galatas",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Κουμ Καπί": {
       "latitude": 35.515168,
@@ -28202,7 +28202,7 @@
       "search_name": "Κάτω Κουμ Καπί",
       "primary_alias": "kato-koym-kapi",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάτω Στάλος": {
       "latitude": 35.513676,
@@ -28211,7 +28211,7 @@
       "search_name": "Κάτω Στάλος",
       "primary_alias": "kato-stalos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κέντρο": {
       "latitude": 35.512463,
@@ -28220,7 +28220,7 @@
       "search_name": "Κέντρο",
       "primary_alias": "chania",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κίσσαμος": {
       "latitude": 35.494561,
@@ -28229,7 +28229,7 @@
       "search_name": "Κίσσαμος",
       "primary_alias": "kissamos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κόκκινο Μετόχι": {
       "latitude": 35.493755,
@@ -28238,7 +28238,7 @@
       "search_name": "Κόκκινο Μετόχι",
       "primary_alias": "kokkino-metohi",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κολυμβάρι": {
       "latitude": 35.537884,
@@ -28247,7 +28247,7 @@
       "search_name": "Κολυμβάρι",
       "primary_alias": "kolymvari",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κορακιές": {
       "latitude": 35.518814,
@@ -28256,7 +28256,7 @@
       "search_name": "Κορακιές",
       "primary_alias": "korakies",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουμπελή": {
       "latitude": 35.534461,
@@ -28265,7 +28265,7 @@
       "search_name": "Κουμπελή",
       "primary_alias": "koympeli",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουμπές": {
       "latitude": 35.502626,
@@ -28274,7 +28274,7 @@
       "search_name": "Κουμπές",
       "primary_alias": "hania-kriti-koympes",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κουνουπιδιανά": {
       "latitude": 35.5334,
@@ -28283,7 +28283,7 @@
       "search_name": "Κουνουπιδιανά",
       "primary_alias": "koynoypidiana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυρτωμάδος": {
       "latitude": 35.482118,
@@ -28292,7 +28292,7 @@
       "search_name": "Κυρτωμάδος",
       "primary_alias": "kyrtomados",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λενταριανά": {
       "latitude": 35.51071,
@@ -28301,7 +28301,7 @@
       "search_name": "Λενταριανά",
       "primary_alias": "lentariana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λιβάδια": {
       "latitude": 35.498038,
@@ -28310,7 +28310,7 @@
       "search_name": "Λιβάδια",
       "primary_alias": "hania-kriti-livadia",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Λυγίδες": {
       "latitude": 35.483955,
@@ -28319,7 +28319,7 @@
       "search_name": "Λυγίδες",
       "primary_alias": "lygides",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μακρύς Τοίχος": {
       "latitude": 35.507667,
@@ -28328,7 +28328,7 @@
       "search_name": "Μακρύς Τοίχος",
       "primary_alias": "makrys-toihos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μάλεμε": {
       "latitude": 35.522036,
@@ -28337,7 +28337,7 @@
       "search_name": "Μάλεμε",
       "primary_alias": "maleme",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαράθι": {
       "latitude": 35.505784,
@@ -28346,7 +28346,7 @@
       "search_name": "Μαράθι",
       "primary_alias": "marathi",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μαρμαράς": {
       "latitude": 35.479274,
@@ -28355,7 +28355,7 @@
       "search_name": "Μαρμαράς",
       "primary_alias": "marmaras",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μετόχι Φυντίκι": {
       "latitude": 35.504646,
@@ -28364,7 +28364,7 @@
       "search_name": "Μετόχι Φυντίκι",
       "primary_alias": "metohi-fyntiki",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μουζουράς": {
       "latitude": 35.538931,
@@ -28373,7 +28373,7 @@
       "search_name": "Μουζουράς",
       "primary_alias": "moyzoyras",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μουρνιές": {
       "latitude": 35.48253,
@@ -28382,7 +28382,7 @@
       "search_name": "Μουρνιές",
       "primary_alias": "moyrnies",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μυλωνιανά": {
       "latitude": 35.465547,
@@ -28391,7 +28391,7 @@
       "search_name": "Μυλωνιανά",
       "primary_alias": "myloniana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Χώρα": {
       "latitude": 35.512702,
@@ -28400,7 +28400,7 @@
       "search_name": "Νέα Χώρα",
       "primary_alias": "nea-hora",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεροκούρος": {
       "latitude": 35.475359,
@@ -28409,7 +28409,7 @@
       "search_name": "Νεροκούρος",
       "primary_alias": "nerokoyros",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ξυλοκαμάρα": {
       "latitude": 35.488546,
@@ -28418,7 +28418,7 @@
       "search_name": "Ξυλοκαμάρα",
       "primary_alias": "xylokamara",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παζινός": {
       "latitude": 35.523212,
@@ -28427,7 +28427,7 @@
       "search_name": "Παζινός",
       "primary_alias": "pazinos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλιά Πόλη": {
       "latitude": 35.516221,
@@ -28436,7 +28436,7 @@
       "search_name": "Παλιά Πόλη",
       "primary_alias": "hania-kriti-palia-poli",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παρηγοριά": {
       "latitude": 35.506658,
@@ -28445,7 +28445,7 @@
       "search_name": "Παρηγοριά",
       "primary_alias": "parigoria",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πασακάκι": {
       "latitude": 35.499378,
@@ -28454,7 +28454,7 @@
       "search_name": "Πασακάκι",
       "primary_alias": "pasakaki",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παχιανά": {
       "latitude": 35.507142,
@@ -28463,7 +28463,7 @@
       "search_name": "Παχιανά",
       "primary_alias": "pahiana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πελεκαπίνα": {
       "latitude": 35.496753,
@@ -28472,7 +28472,7 @@
       "search_name": "Πελεκαπίνα",
       "primary_alias": "pelekapina",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Περιβόλια": {
       "latitude": 35.483631,
@@ -28481,7 +28481,7 @@
       "search_name": "Περιβόλια",
       "primary_alias": "hania-kriti-perivolia",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλάκα": {
       "latitude": 35.450699,
@@ -28490,7 +28490,7 @@
       "search_name": "Πλάκα",
       "primary_alias": "hania-kriti-plaka",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλακούρες": {
       "latitude": 35.534321,
@@ -28499,7 +28499,7 @@
       "search_name": "Πλακούρες",
       "primary_alias": "plakoyres",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πλατανιάς": {
       "latitude": 35.517386,
@@ -28508,7 +28508,7 @@
       "search_name": "Πλατανιάς",
       "primary_alias": "hania-kriti-platanias",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πολυτεχνείο": {
       "latitude": 35.529319,
@@ -28517,7 +28517,7 @@
       "search_name": "Πολυτεχνείο",
       "primary_alias": "hania-kriti-polytehneio",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ποτιστήρια": {
       "latitude": 35.476643,
@@ -28526,7 +28526,7 @@
       "search_name": "Ποτιστήρια",
       "primary_alias": "potistiria",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πυθάρι": {
       "latitude": 35.516718,
@@ -28535,7 +28535,7 @@
       "search_name": "Πυθάρι",
       "primary_alias": "pythari",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ραπανιανά": {
       "latitude": 35.532504,
@@ -28544,7 +28544,7 @@
       "search_name": "Ραπανιανά",
       "primary_alias": "rapaniana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκουτελώνας": {
       "latitude": 35.534758,
@@ -28553,7 +28553,7 @@
       "search_name": "Σκουτελώνας",
       "primary_alias": "skoytelonas",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "ΣΟΔΥ Προφήτη Ηλία": {
       "latitude": 35.525032,
@@ -28562,7 +28562,7 @@
       "search_name": "ΣΟΔΥ Προφήτη Ηλία",
       "primary_alias": "sody-profiti-ilia",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σούδα": {
       "latitude": 35.48633,
@@ -28571,7 +28571,7 @@
       "search_name": "Σούδα",
       "primary_alias": "soyda",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στάλος": {
       "latitude": 35.503793,
@@ -28580,7 +28580,7 @@
       "search_name": "Στάλος",
       "primary_alias": "stalos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σταυρός": {
       "latitude": 35.587077,
@@ -28589,7 +28589,7 @@
       "search_name": "Σταυρός",
       "primary_alias": "hania-kriti-stayros",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στέρνες": {
       "latitude": 35.511233,
@@ -28598,7 +28598,7 @@
       "search_name": "Στέρνες",
       "primary_alias": "sternes",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ταυρωνίτης": {
       "latitude": 35.527372,
@@ -28607,7 +28607,7 @@
       "search_name": "Ταυρωνίτης",
       "primary_alias": "tayronitis",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τσικαλαριά": {
       "latitude": 35.477179,
@@ -28616,7 +28616,7 @@
       "search_name": "Τσικαλαριά",
       "primary_alias": "tsikalaria",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλέπα": {
       "latitude": 35.517848,
@@ -28625,7 +28625,7 @@
       "search_name": "Χαλέπα",
       "primary_alias": "halepa",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χρυσοπηγή": {
       "latitude": 35.495649,
@@ -28634,7 +28634,7 @@
       "search_name": "Χρυσοπηγή",
       "primary_alias": "hania-kriti-hrysopigi",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χωραφάκια": {
       "latitude": 35.563303,
@@ -28643,7 +28643,7 @@
       "search_name": "Χωραφάκια",
       "primary_alias": "horafakia",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χωρδάκι": {
       "latitude": 35.552034,
@@ -28652,7 +28652,7 @@
       "search_name": "Χωρδάκι",
       "primary_alias": "hordaki",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κυδωνία": {
       "latitude": 35.507636,
@@ -28661,7 +28661,7 @@
       "search_name": "Κυδωνία",
       "primary_alias": "kydonia",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Όαση": {
       "latitude": 35.481695,
@@ -28670,7 +28670,7 @@
       "search_name": "Όαση",
       "primary_alias": "hania-kriti-oasi",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάνδανος": {
       "latitude": 35.326976,
@@ -28679,7 +28679,7 @@
       "search_name": "Κάνδανος",
       "primary_alias": "kandanos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κακοδίκι": {
       "latitude": 35.305044,
@@ -28688,7 +28688,7 @@
       "search_name": "Κακοδίκι",
       "primary_alias": "kakodiki",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σπανιακός": {
       "latitude": 35.269703,
@@ -28697,7 +28697,7 @@
       "search_name": "Σπανιακός",
       "primary_alias": "spaniakos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φλώρια": {
       "latitude": 35.378385,
@@ -28706,7 +28706,7 @@
       "search_name": "Φλώρια",
       "primary_alias": "floria",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δρυς": {
       "latitude": 35.33682,
@@ -28715,7 +28715,7 @@
       "search_name": "Δρυς",
       "primary_alias": "drys",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γιαλός": {
       "latitude": 35.236926,
@@ -28724,7 +28724,7 @@
       "search_name": "Γιαλός",
       "primary_alias": "hania-kriti-gialos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παλαιόχωρα": {
       "latitude": 35.234365,
@@ -28733,7 +28733,7 @@
       "search_name": "Παλαιόχωρα",
       "primary_alias": "palaiohora",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαμβακάδες": {
       "latitude": 35.312864,
@@ -28742,7 +28742,7 @@
       "search_name": "Βαμβακάδες",
       "primary_alias": "vamvakades",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τεμένια": {
       "latitude": 35.29216,
@@ -28751,7 +28751,7 @@
       "search_name": "Τεμένια",
       "primary_alias": "hania-kriti-temenia",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άνυδροι": {
       "latitude": 35.253265,
@@ -28760,7 +28760,7 @@
       "search_name": "Άνυδροι",
       "primary_alias": "anydroi",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Έλος": {
       "latitude": 35.361764,
@@ -28769,7 +28769,7 @@
       "search_name": "Έλος",
       "primary_alias": "hania-kriti-elos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Στροβλές": {
       "latitude": 35.36546,
@@ -28778,7 +28778,7 @@
       "search_name": "Στροβλές",
       "primary_alias": "strovles",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλυβιανή": {
       "latitude": 35.511724,
@@ -28787,7 +28787,7 @@
       "search_name": "Καλυβιανή",
       "primary_alias": "hania-kriti-kalyviani",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Τράχηλος": {
       "latitude": 35.511129,
@@ -28796,7 +28796,7 @@
       "search_name": "Τράχηλος",
       "primary_alias": "hania-kriti-trahilos",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέο Χωριό": {
       "latitude": 35.502307,
@@ -28805,7 +28805,7 @@
       "search_name": "Νέο Χωριό",
       "primary_alias": "hania-kriti-neo-horio",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος": {
       "latitude": 35.498106,
@@ -28814,7 +28814,7 @@
       "search_name": "Άγιος Γεώργιος",
       "primary_alias": "hania-kriti-agios-georgios",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Ζερβιανά": {
       "latitude": 35.492751,
@@ -28823,7 +28823,7 @@
       "search_name": "Ζερβιανά",
       "primary_alias": "hania-kriti-zerviana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρεφιλιανά": {
       "latitude": 35.495011,
@@ -28832,7 +28832,7 @@
       "search_name": "Καρεφιλιανά",
       "primary_alias": "hania-kriti-karefiliana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πιπεριανά": {
       "latitude": 35.499516,
@@ -28841,7 +28841,7 @@
       "search_name": "Πιπεριανά",
       "primary_alias": "hania-kriti-piperiana",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Φουρνάδος": {
       "latitude": 35.495992,
@@ -28850,7 +28850,7 @@
       "search_name": "Φουρνάδος",
       "primary_alias": "hania-kriti-foyrnados",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αζογυράς": {
       "latitude": 35.508211,
@@ -28859,8 +28859,8 @@
       "search_name": "Αζογυράς",
       "primary_alias": "hania-kriti-azogyras",
       "city": "Χανιά Κρήτη",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Χίος": {
     "Χίος": {
@@ -28870,7 +28870,7 @@
       "search_name": "Χίος",
       "primary_alias": "chios",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Αγία Ερμιόνη": {
       "latitude": 38.302273,
@@ -28879,7 +28879,7 @@
       "search_name": "Αγία Ερμιόνη",
       "primary_alias": "agia-ermioni",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Άγιος Γεώργιος Συκούσης": {
       "latitude": 38.319249,
@@ -28888,7 +28888,7 @@
       "search_name": "Άγιος Γεώργιος Συκούσης",
       "primary_alias": "agios-georgios-sykoysis",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαρβάσι": {
       "latitude": 38.35659,
@@ -28897,7 +28897,7 @@
       "search_name": "Βαρβάσι",
       "primary_alias": "varvasi",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βασιλεώνοικο": {
       "latitude": 38.328721,
@@ -28906,7 +28906,7 @@
       "search_name": "Βασιλεώνοικο",
       "primary_alias": "vasileonoiko",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βερβεράτο": {
       "latitude": 38.334339,
@@ -28915,7 +28915,7 @@
       "search_name": "Βερβεράτο",
       "primary_alias": "ververato",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βροντάδος": {
       "latitude": 38.409172,
@@ -28924,7 +28924,7 @@
       "search_name": "Βροντάδος",
       "primary_alias": "vrontados",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Δαφνώνας": {
       "latitude": 38.346621,
@@ -28933,7 +28933,7 @@
       "search_name": "Δαφνώνας",
       "primary_alias": "dafnonas",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Πανεπιστήμιο Αιγαίου": {
       "latitude": 38.366072,
@@ -28942,7 +28942,7 @@
       "search_name": "Πανεπιστήμιο Αιγαίου",
       "primary_alias": "panepistimio-aigaioy",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θολοποτάμι": {
       "latitude": 38.294989,
@@ -28951,7 +28951,7 @@
       "search_name": "Θολοποτάμι",
       "primary_alias": "tholopotami",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Θυμιανά": {
       "latitude": 38.313393,
@@ -28960,7 +28960,7 @@
       "search_name": "Θυμιανά",
       "primary_alias": "thymiana",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καλλιμασιά": {
       "latitude": 38.293246,
@@ -28969,7 +28969,7 @@
       "search_name": "Καλλιμασιά",
       "primary_alias": "kallimasia",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρυές": {
       "latitude": 38.391657,
@@ -28978,7 +28978,7 @@
       "search_name": "Καρυές",
       "primary_alias": "hios-karyes",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρφάς": {
       "latitude": 38.321256,
@@ -28987,7 +28987,7 @@
       "search_name": "Καρφάς",
       "primary_alias": "karfas",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καταρράκτης": {
       "latitude": 38.26499,
@@ -28996,7 +28996,7 @@
       "search_name": "Καταρράκτης",
       "primary_alias": "katarraktis",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νεοχώρι": {
       "latitude": 38.307955,
@@ -29005,7 +29005,7 @@
       "search_name": "Νεοχώρι",
       "primary_alias": "hios-neohori",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Χαλκείο": {
       "latitude": 38.333662,
@@ -29014,7 +29014,7 @@
       "search_name": "Χαλκείο",
       "primary_alias": "hios-halkeio",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Μονολιά": {
       "latitude": 38.283621,
@@ -29023,7 +29023,7 @@
       "search_name": "Μονολιά",
       "primary_alias": "monolia",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Παραλία Αγίας Φωτεινής": {
       "latitude": 38.286812,
@@ -29032,7 +29032,7 @@
       "search_name": "Παραλία Αγίας Φωτεινής",
       "primary_alias": "paralia-agias-foteinis",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νοσοκομείο": {
       "latitude": 38.383805,
@@ -29041,7 +29041,7 @@
       "search_name": "Νοσοκομείο",
       "primary_alias": "hios-nosokomeio",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κοντάρι": {
       "latitude": 38.333799,
@@ -29050,7 +29050,7 @@
       "search_name": "Κοντάρι",
       "primary_alias": "kontari",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Γρου": {
       "latitude": 38.338821,
@@ -29059,7 +29059,7 @@
       "search_name": "Γρου",
       "primary_alias": "groy",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βαβύλοι": {
       "latitude": 38.316079,
@@ -29068,7 +29068,7 @@
       "search_name": "Βαβύλοι",
       "primary_alias": "vavyloi",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βέσσα": {
       "latitude": 38.296994,
@@ -29077,7 +29077,7 @@
       "search_name": "Βέσσα",
       "primary_alias": "vessa",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Κάμπος": {
       "latitude": 38.323694,
@@ -29086,7 +29086,7 @@
       "search_name": "Κάμπος",
       "primary_alias": "hios-kampos",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Βιάλ Hotspot": {
       "latitude": 38.323828,
@@ -29095,7 +29095,7 @@
       "search_name": "Βιάλ Hotspot",
       "primary_alias": "vial-hotspot",
       "city": "Χίος",
-      "nomap": 0
+      "nomap": 0,
     },
     "Καρδαμάδα": {
       "latitude": 38.321786,
@@ -29104,8 +29104,8 @@
       "search_name": "Καρδαμάδα",
       "primary_alias": "kardamada",
       "city": "Χίος",
-      "nomap": 0
-    }
+      "nomap": 0,
+    },
   },
   "Ωρωπός": {
     "Ωρωπός": {
@@ -29115,7 +29115,7 @@
       "search_name": "Ωρωπός",
       "primary_alias": "oropos",
       "city": "Ωρωπός",
-      "nomap": 0
+      "nomap": 0,
     },
     "Σκάλα Ωρωπού": {
       "latitude": 38.318468,
@@ -29124,7 +29124,7 @@
       "search_name": "Σκάλα Ωρωπού",
       "primary_alias": "skala-oropoy",
       "city": "Ωρωπός",
-      "nomap": 0
+      "nomap": 0,
     },
     "Νέα Πολιτεία": {
       "latitude": 38.302467,
@@ -29133,7 +29133,7 @@
       "search_name": "Νέα Πολιτεία",
       "primary_alias": "oropos-nea-politeia",
       "city": "Ωρωπός",
-      "nomap": 0
+      "nomap": 0,
     },
     "Συκάμινο": {
       "latitude": 38.303209,
@@ -29142,10 +29142,7 @@
       "search_name": "Συκάμινο",
       "primary_alias": "sykamino",
       "city": "Ωρωπός",
-      "nomap": 0
-    }
-  }
-}
-
-
-
+      "nomap": 0,
+    },
+  },
+};
