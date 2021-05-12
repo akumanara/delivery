@@ -4,6 +4,10 @@ import product from './productData';
 import { context } from './context';
 
 export default class {
+  constructor() {
+    this.instance = axios.create({ baseURL: context.rootURL });
+  }
+
   getProduct(productID) {
     // https://www.delivery.gr/api/menu/3153/product/1411216
     if (context.mode === 'development') {
@@ -14,12 +18,8 @@ export default class {
       );
     }
     return new Promise((resolve) => {
-      const url = `${context.rootURL}api/menu/${context.storeID}/product/${productID}`;
-      axios({
-        method: 'get',
-        url,
-        responseType: 'json',
-      })
+      const url = `/api/menu/${context.storeID}/product/${productID}`;
+      this.instance(url)
         .then((response) => {
           resolve(response.data);
         })
