@@ -19,7 +19,8 @@ export default class {
     }
     return new Promise((resolve) => {
       const url = `/api/menu/${context.storeID}/product/${productID}`;
-      this.instance(url)
+      this.instance
+        .get(url)
         .then((response) => {
           resolve(response.data);
         })

@@ -20,6 +20,9 @@ class App {
     const app = this;
     autoBind(this);
     showFPS();
+    document.querySelector('.header').addEventListener('click', () => {
+      document.querySelector('.stats').classList.toggle('display-none');
+    });
 
     this.api = new API();
 
