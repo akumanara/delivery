@@ -51,6 +51,14 @@ class App {
         resistance: true,
         resistanceRatio: 0,
       });
+
+      // hide nav bullets if one slide
+      if (this.StoreCarouselSwiper.slides.length === 1) {
+        storeCarouselElement
+          .querySelector('.swiper-pagination-bullets')
+          .classList.add('hide-nav-bullets');
+      }
+
       //  favorites button
       const favoriteButton = document.querySelector(
         '.store-carousel__badge--favorite',

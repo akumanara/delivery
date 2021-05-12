@@ -176,6 +176,10 @@
   }
   .swiper-pagination-bullets {
     text-align: right;
+
+    &.hide-nav-bullets {
+      display: none;
+    }
   }
 
   .swiper-container-horizontal
