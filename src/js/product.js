@@ -392,7 +392,6 @@ export default class {
     PubSub.publish('show_loader');
 
     // Prepare data for API
-
     const data = {
       itemGroupId: this.productID,
       itemId: this.variant.selectedOption.id,
@@ -405,7 +404,6 @@ export default class {
 
     // Create form data array with keys
     this.groupOptions.forEach((groupOption) => {
-      // const key = element.groupOption.ingredients;
       groupOption.groupOption.ingredients.forEach((ingredient) => {
         const key = ingredient.id;
         let value = 0;
@@ -416,9 +414,12 @@ export default class {
       });
     });
 
-    // submit product and get the new cart
-    this.cart = await this.api.addProductToCart(bodyFormData);
-    // this.emit('cartUpdate', this.cart);
+    // Submit product and get the new cart
+    const cart = await this.api.addProductToCart(bodyFormData);
+
+    // Publish the event to the cart with the data
+    PubSub.publish('cart_update', cart);
+
     this.closeModal();
     PubSub.publish('hide_loader');
   }
