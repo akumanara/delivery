@@ -250,7 +250,6 @@
     display: flex;
     color: #fff;
     font-weight: 700;
-    outline: 1px solid red;
 
     &-inner {
       // display: flex;
@@ -271,5 +270,17 @@
     box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
     border-radius: 10px;
     transition: $trans;
+  }
+  &__checkout-btn-left {
+    display: flex;
+  }
+  &__checkout-btn-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+  &__checkout-btn-icon-img {
+    max-width: 100%;
+    height: auto;
   }
 }
