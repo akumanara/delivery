@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import axios from 'axios';
-import product from './productData2';
+import product from './productData';
 import { context } from './context';
 
 export default class {
