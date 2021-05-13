@@ -204,3 +204,5 @@ images array not working
 mporw na exw ta price formats sosta? tha kanw to format egw.
 
 
+on change delivery type /
+------

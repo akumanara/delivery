@@ -1,22 +1,22 @@
 Todo
 ==================================
+[Store] new / change address accordion - priority - alert! - big
+[Store] delivery/takeaway accordion - priority
+[Product modal] - offers - big
 [General] lazy load stis store cards - @delivery dependency
 [General] svg icon css for dark/light - @misa dependency
 [General] alerts (simple / timer / closable)
+[General] sentry implementation
 [Product modal] hide/view large html description
 [Product modal] zoom on photos
-[Store] cart button toggle + cart
 [Store] favorite api bridge - @delivery dependency
 [Store] recent orders
-[Store] delivery/takeaway accordion
-[Store] new / change address accordion
 [Store] closes store with suggestions
-
 
 
 Doing
 ==================================
-
+[Store] cart button toggle + cart - big
 
 Done
 ==================================

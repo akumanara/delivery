@@ -1,13 +1,18 @@
 const path = require('path');
-// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: 'app.js',
   },
-  devtool: 'eval-source-map',
+  plugins: [
+    new BundleAnalyzerPlugin({
+      generateStatsFile: true,
+    }),
+  ],
+  // devtool: 'eval-source-map',
   module: {
     rules: [
       {
