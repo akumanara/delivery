@@ -12,6 +12,8 @@ Todo
 [Store] favorite api bridge - @delivery dependency
 [Store] recent orders
 [Store] closes store with suggestions
+[BUG] product modal sti patsavouropita den ksekinaei me to swsto currency
+[BUG] to handlebars mou kanei breakline sto auto formatter kai vazei ti teleia apo katw
 
 
 Doing

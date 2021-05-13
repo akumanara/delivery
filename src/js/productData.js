@@ -1,5 +1,3 @@
-// {
-
 export default {
   large_description: '<p>description</p>',
   start_price: 5.55,

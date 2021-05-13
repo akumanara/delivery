@@ -9,6 +9,8 @@ import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
 import { animateCSS, currencyFormat, has, getFormData } from './utils';
+import { HandlebarsTemplate } from './handlebarTemplate';
+import { context } from './context';
 // Product may have a variant
 // Variant is single option and uses a different class.
 // Variant changes the base price for the product.
@@ -44,9 +46,9 @@ import { animateCSS, currencyFormat, has, getFormData } from './utils';
 // Τι σημαίνει done στα group options
 
 export default class {
-  constructor(productElement, template) {
+  constructor(productElement) {
     autoBind(this);
-    this.template = template;
+    this.template = HandlebarsTemplate;
     this.element = productElement;
     this.api = new API();
 
@@ -56,10 +58,33 @@ export default class {
   init() {
     // Get product id
     this.productID = this.element.dataset.productId;
-    // Setup event listeners
-    this.element.addEventListener('click', this.raiseModal);
 
-    // TODO setup *instant* add to cart/ minus /plus
+    // Setup based on store menu or cart product
+    if (this.element.classList.contains('cart__product')) {
+      // CART PRODUCT
+      console.log('product is cart product');
+      this.setupCartProduct();
+    } else {
+      // STORE MENU PRODUCT
+      console.log('product is store menu product');
+      this.setupStoreMenuProduct();
+    }
+  }
+
+  setupStoreMenuProduct() {
+    this.element.addEventListener('click', this.raiseModal);
+  }
+
+  setupCartProduct() {
+    // Get the cart index
+    this.cartIndex = this.element.dataset.cartIndex;
+
+    this.element
+      .querySelector('.cart__product-actions-edit')
+      .addEventListener('click', this.cartRaiseModal);
+    this.element
+      .querySelector('.cart__product-actions-delete')
+      .addEventListener('click', this.cartDeleteProduct);
   }
 
   // Creates the product after we get the JSON from the API
@@ -116,6 +141,7 @@ export default class {
       variant: this.variant,
       groupOptions: this.groupOptions,
       basePrice: this.basePrice,
+      storeName: context.storeName,
     };
   }
 
@@ -370,17 +396,28 @@ export default class {
     Panzoom(img);
   }
 
+  // STORE MENU API FUNCTIONS
+  // ==============================================================================================
+  // ==============================================================================================
+
   // Executes when we click on an product from the product list
   async raiseModal() {
     PubSub.publish('show_loader');
     // fetch the html for the modal
-    this.productJSON = await this.api.getProduct(this.productID);
-    // Create all the objects belonging to the product
-    this.createProduct();
-    // Create the modal (template) from the data and init it
-    this.createModal();
-    // Init the modal
-    this.initModal();
+    await this.api
+      .getProduct(this.productID)
+      .then((result) => {
+        this.productJSON = result;
+        // Create all the objects belonging to the product
+        this.createProduct();
+        // Create the modal (template) from the data and init it
+        this.createModal();
+        // Init the modal
+        this.initModal();
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
 
     PubSub.publish('hide_loader');
   }
@@ -394,10 +431,19 @@ export default class {
     // Prepare data for API
     const data = {
       itemGroupId: this.productID,
-      itemId: this.variant.selectedOption.id,
       order_product_comments: this.DOM.comments.value,
       itemQuantity: this.quantity,
     };
+
+    // If it has variant
+    if (this.variant) {
+      data.itemId = this.variant.selectedOption.id;
+    }
+
+    // if the product is cart product then also send the cart index
+    if (this.cartIndex) {
+      data.cartId = this.cartIndex;
+    }
 
     // Create form data from json
     const bodyFormData = getFormData(data);
@@ -432,9 +478,45 @@ export default class {
     };
 
     // after we call the api we get the updated cart
-    this.cartHTML = await this.api.quickAddProduct(this.data);
+    const cart = await this.api.quickAddProduct(this.data);
 
     // TODO update the cart
+    PubSub.publish('hide_loader');
+  }
+
+  // CART API FUNCTIONS
+  // ==============================================================================================
+  // ==============================================================================================
+  async cartRaiseModal() {
+    console.log('cartRaiseModal');
+    PubSub.publish('show_loader');
+    // fetch the product in json
+    await this.api
+      .getProductFromCart(this.productID, this.cartIndex)
+      .then((result) => {
+        this.productJSON = result;
+        // Create all the objects belonging to the product
+        this.createProduct();
+        // Create the modal (template) from the data and init it
+        this.createModal();
+        // Init the modal
+        this.initModal();
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+
+    PubSub.publish('hide_loader');
+  }
+
+  async cartDeleteProduct() {
+    PubSub.publish('show_loader');
+    // fetch the html for the modal
+    const cart = await this.api.deleteProductFromCart(this.cartIndex);
+
+    // Publish the event to the cart with the data
+    PubSub.publish('cart_update', cart);
+
     PubSub.publish('hide_loader');
   }
 }

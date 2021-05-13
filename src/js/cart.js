@@ -1,16 +1,19 @@
 import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
 import PubSub from 'pubsub-js';
+import Product from './product';
 
 export default class {
   constructor() {
-    console.log('cart init');
     autoBind(this);
     this.DOM = {};
     this.DOM.toggler = document.querySelector('.cart__toggler');
     this.DOM.togglerBtn = document.querySelector('.cart__toggler-btn');
 
     this.isOpen = false;
+    // The products from cart
+    this.products = [];
+
     this.DOM.togglerBtn.addEventListener('click', this.toggleCart);
 
     // Subscribe to cart update event
@@ -40,18 +43,26 @@ export default class {
       });
       this.accordions.push(tmpAccordionContainer);
     });
+
+    // Create products
+    this.DOM.cart
+      .querySelectorAll('.cart__product')
+      .forEach((productElement) => {
+        const tmpProduct = new Product(productElement);
+        this.products.push(tmpProduct);
+      });
   }
 
   showCart() {
     console.log('showing cart');
-    this.DOM.cart.classList.toggle('cart--active');
-    document.body.classList.toggle('hide-overflow');
+    this.DOM.cart.classList.add('cart--active');
+    document.body.classList.add('hide-overflow');
   }
 
   hideCart() {
     console.log('hiding cart');
-    this.DOM.cart.classList.toggle('cart--active');
-    document.body.classList.toggle('hide-overflow');
+    this.DOM.cart.classList.remove('cart--active');
+    document.body.classList.remove('hide-overflow');
   }
 
   toggleCart() {
