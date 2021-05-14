@@ -219,6 +219,13 @@ export default class {
       resistanceRatio: 0,
     });
 
+    // hide nav bullets if one slide
+    if (this.slider.slides.length === 1) {
+      sliderElement
+        .querySelector('.swiper-pagination-bullets')
+        .classList.add('hide-nav-bullets');
+    }
+
     // Zoom
     // this.modalElement
     //   .querySelectorAll('.product-modal__slide-img')

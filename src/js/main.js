@@ -20,15 +20,12 @@ class App {
   constructor() {
     const app = this;
     autoBind(this);
-    // showFPS();
+    showFPS();
     document.querySelector('.header').addEventListener('click', () => {
       document.querySelector('.stats').classList.toggle('display-none');
     });
 
     this.api = new API();
-
-    // Handlebars partials
-    // Handlebars.registerPartial('myPartial', '{{prefix}}');
 
     // Subscribe to topics
     PubSub.subscribe('hide_loader', this.hideLoader);
@@ -119,8 +116,10 @@ class App {
       };
 
       const storeList = new List(storesListElement, options);
+      // TODO remove this
       window.list = storeList;
 
+      // TODO remove this
       // populate demo stores
       for (let index = 0; index < 100; index += 1) {
         const native = Math.floor(Math.random() * 100);
