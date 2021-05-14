@@ -27,6 +27,7 @@ export default class {
   // this function must run everytime the cart is being updated
   init() {
     console.log('init cart');
+    const self = this;
     // Query the DOM elements
     this.DOM.cartBody = document.querySelector('.cart__body');
     this.DOM.closeBtn = document.querySelector('.cart__header-close');
@@ -43,6 +44,10 @@ export default class {
         triggerClass: 'accordion__header',
         panelClass: 'accordion__panel',
         ariaEnabled: false,
+        beforeOpen() {
+          // close other accordions if opened
+          self.closeGroupOptions(tmpAccordionContainer);
+        },
       });
       this.accordions.push(tmpAccordionContainer);
     });
@@ -74,6 +79,15 @@ export default class {
     } else {
       this.DOM.toggler.classList.remove('cart__toggler--active');
     }
+  }
+
+  // Closes all the accordions except the one to be opened
+  closeGroupOptions(accordionToBeOpened) {
+    this.accordions.forEach((accordion) => {
+      if (accordionToBeOpened !== accordion) {
+        accordion.close(0);
+      }
+    });
   }
 
   destroy() {

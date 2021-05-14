@@ -79,12 +79,22 @@ export default class {
     // Get the cart index
     this.cartIndex = this.element.dataset.cartIndex;
 
+    // Edit
     this.element
       .querySelector('.cart__product-actions-edit')
       .addEventListener('click', this.cartRaiseModal);
+    // Delete
     this.element
       .querySelector('.cart__product-actions-delete')
       .addEventListener('click', this.cartDeleteProduct);
+    // Plus one
+    this.element
+      .querySelector('.cart__product-actions-quantity-plus')
+      .addEventListener('click', this.cartPlusOneProduct);
+    // Minus one
+    this.element
+      .querySelector('.cart__product-actions-quantity-minus')
+      .addEventListener('click', this.cartMinusOneProduct);
   }
 
   // Creates the product after we get the JSON from the API
@@ -525,6 +535,28 @@ export default class {
     PubSub.publish('show_loader');
     // fetch the html for the modal
     const cart = await this.api.deleteProductFromCart(this.cartIndex);
+
+    // Publish the event to the cart with the data
+    PubSub.publish('cart_update', cart);
+
+    PubSub.publish('hide_loader');
+  }
+
+  async cartPlusOneProduct() {
+    PubSub.publish('show_loader');
+    // fetch the html for the modal
+    const cart = await this.api.plusOneProductFromCart(this.cartIndex);
+
+    // Publish the event to the cart with the data
+    PubSub.publish('cart_update', cart);
+
+    PubSub.publish('hide_loader');
+  }
+
+  async cartMinusOneProduct() {
+    PubSub.publish('show_loader');
+    // fetch the html for the modal
+    const cart = await this.api.minusOneProductFromCart(this.cartIndex);
 
     // Publish the event to the cart with the data
     PubSub.publish('cart_update', cart);
