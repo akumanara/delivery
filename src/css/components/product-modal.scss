@@ -96,6 +96,7 @@ body {
 
   //group options and variant
   &__options {
+    margin-bottom: 40px;
   }
   &__option {
     // outline: 1px solid red;
@@ -316,7 +317,7 @@ body {
 
   // LONG DESCRIPTION
   &__long-description {
-    margin-top: 40px;
+    margin-bottom: 40px;
   }
   &__long-description-title-container {
     display: flex;
@@ -348,7 +349,7 @@ body {
   }
 
   &__comments {
-    margin-top: 40px;
+    // margin-bottom: 40px;
   }
   &__comments-title-container {
     display: flex;

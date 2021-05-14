@@ -130,6 +130,17 @@ export default class {
       charset: 'alphabetic',
     });
 
+    // Check variable to see if we need to show options div
+    // We show the options div if we have variant or at least one group option
+    // ===========================================================
+    let showOptionsDiv = false;
+    if (this.groupOptions.length > 0) {
+      showOptionsDiv = true;
+    }
+    if (this.variant) {
+      showOptionsDiv = true;
+    }
+
     // Create object used for templating
     // ===========================================================
     this.templateData = {
@@ -142,6 +153,7 @@ export default class {
       groupOptions: this.groupOptions,
       basePrice: this.basePrice,
       storeName: context.storeName,
+      showOptionsDiv,
     };
   }
 

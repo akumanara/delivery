@@ -17,7 +17,7 @@ export default class {
         }, 200),
       );
     }
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
       const url = `api/menu/${context.storeID}/product/${productID}`;
       this.instance
         .get(url)
@@ -25,7 +25,7 @@ export default class {
           resolve(response.data);
         })
         .catch((error) => {
-          console.log(error);
+          reject(error);
         });
     });
   }
@@ -55,7 +55,7 @@ export default class {
   deleteProductFromCart(cartIndex) {
     // https://www.delivery.gr/delivery/cart/{store id}/remove-item/{cart index}
     if (context.mode === 'development') {
-      return new Promise((resolve) => {
+      return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
         axios
           .get(url)
@@ -63,11 +63,11 @@ export default class {
             setTimeout(() => resolve(response.data), 500);
           })
           .catch((error) => {
-            console.log(error);
+            reject(error);
           });
       });
     }
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
       const url = `delivery/cart/${context.storeID}/remove-item/${cartIndex}`;
       this.instance
         .get(url)
@@ -75,16 +75,15 @@ export default class {
           resolve(response.data);
         })
         .catch((error) => {
-          console.log(error);
+          reject(error);
         });
     });
   }
 
   addProductToCart(data) {
-    console.log(data);
     // https://www.delivery.gr/delivery/cart/3153/insert
     if (context.mode === 'development') {
-      return new Promise((resolve) => {
+      return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
         axios
           .get(url)
@@ -92,11 +91,11 @@ export default class {
             setTimeout(() => resolve(response.data), 500);
           })
           .catch((error) => {
-            console.log(error);
+            reject(error);
           });
       });
     }
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
       const url = `delivery/cart/${context.storeID}/insert`;
       this.instance
         .post(url, data, {
@@ -108,7 +107,63 @@ export default class {
           resolve(response.data);
         })
         .catch((error) => {
-          console.log(error);
+          reject(error);
+        });
+    });
+  }
+
+  changeCartTypeToPickup() {
+    // https://www.delivery.gr/delivery/cart/3783/pickup
+    if (context.mode === 'development') {
+      return new Promise((resolve, reject) => {
+        const url = '/partials/cart-body.html';
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      });
+    }
+    return new Promise((resolve, reject) => {
+      const url = `delivery/cart/${context.storeID}/pickup`;
+      this.instance
+        .put(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  changeCartTypeToDelivery() {
+    // https://www.delivery.gr/delivery/cart/3783/delivery
+    if (context.mode === 'development') {
+      return new Promise((resolve, reject) => {
+        const url = '/partials/cart-body.html';
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      });
+    }
+    return new Promise((resolve, reject) => {
+      const url = `delivery/cart/${context.storeID}/delivery`;
+      this.instance
+        .put(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
         });
     });
   }

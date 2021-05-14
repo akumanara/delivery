@@ -20,38 +20,121 @@
     </div>
     <!-- BODY -->
     <div class="product-modal__body">
-      <!-- PHOTOS SLIDER -->
-      <div class="product-modal__slider swiper-container">
-        <div class="swiper-wrapper">
-          <!-- SLIDES -->
-          {{#each images}}
-            <!-- SLIDE ITEM -->
-            <div class="swiper-slide">
-              <div class="product-modal__slide">
-                <img
-                  src="{{this}}"
-                  data-zoom="{{this}}"
-                  alt=""
-                  class="product-modal__slide-img"
-                />
+      {{#if images}}
+        <!-- PHOTOS SLIDER -->
+        <div class="product-modal__slider swiper-container">
+          <div class="swiper-wrapper">
+            <!-- SLIDES -->
+            {{#each images}}
+              <!-- SLIDE ITEM -->
+              <div class="swiper-slide">
+                <div class="product-modal__slide">
+                  <img
+                    src="{{this}}"
+                    data-zoom="{{this}}"
+                    alt=""
+                    class="product-modal__slide-img"
+                  />
+                </div>
               </div>
-            </div>
-          {{/each}}
+            {{/each}}
+          </div>
+          <!-- PAGINATION -->
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- PAGINATION -->
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- DESCRIPTION -->
-      <div class="product-modal__description">
-        {{comments}}
-      </div>
-      <!-- PRODUCT OPTIONS -->
-      <div class="product-modal__options">
-        <!-- PRODUCT VARIANT -->
-        {{#if variant}}
-          {{#with variant}}
+      {{/if}}
+      {{#if comments}}
+        <!-- DESCRIPTION -->
+        <div class="product-modal__description">
+          {{comments}}
+        </div>
+      {{/if}}
+      {{#if showOptionsDiv}}
+        <!-- PRODUCT OPTIONS -->
+        <div class="product-modal__options">
+          <!-- PRODUCT VARIANT -->
+          {{#if variant}}
+            {{#with variant}}
+              <!-- OPTION -->
+              <div
+                class="product-modal__option js-product-modal__option-variant"
+              >
+                <!-- ACCORDION ITEM -->
+                <div
+                  class="accordion__container accordion__container--product-option"
+                >
+                  <div class="accordion__item">
+                    <div class="accordion__header">
+                      <div class="product-modal__option-header">
+                        <!-- TOP AND BOTTOM COPY -->
+                        <div class="product-modal__option-header-top">
+                          {{mandatoryOrOptionalText}}
+                        </div>
+                        <div class="product-modal__option-header-bottom">
+                          {{name}}
+                        </div>
+                        <div
+                          class="product-modal__option-header-opened-container"
+                        >
+                          <div class="product-modal__option-header-opened-copy">
+                            {{maxLimitText}}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion__right-side">
+                        <div class="accordion__header-arrow">
+                          <img
+                            src="./images/icons/accordion-arrow.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__panel">
+                      <div class="accordion__content">
+                        <!-- PRODUCT OPTION ITEMS -->
+                        <div class="product-modal__option-items">
+                          {{#each variants}}
+                            <!-- ITEM -->
+                            <div class="product-modal__option-item">
+                              <!-- LEFT -->
+                              <div class="product-modal__option-item-left">
+                                <div class="product-modal__option-icon">
+                                  <div class="product-modal__option-icon-inner">
+                                    <img
+                                      src="./images/icons/checkmark.svg"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="product-modal__option-name">
+                                  {{this.name}}
+                                </div>
+                              </div>
+                              <!-- RIGHT -->
+                              <div class="product-modal__option-item-right">
+                                <div class="product-modal__option-item-price">
+                                  <span class="js-price-value">
+                                    {{currency this.price}}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          {{/each}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/with}}
+          {{/if}}
+          {{! GROUP OPTIONS }}
+          {{#each groupOptions}}
             <!-- OPTION -->
-            <div class="product-modal__option js-product-modal__option-variant">
+            <div
+              class="product-modal__option js-product-modal__option-group-option"
+            >
               <!-- ACCORDION ITEM -->
               <div
                 class="accordion__container accordion__container--product-option"
@@ -61,16 +144,16 @@
                     <div class="product-modal__option-header">
                       <!-- TOP AND BOTTOM COPY -->
                       <div class="product-modal__option-header-top">
-                        {{mandatoryOrOptionalText}}
+                        {{this.mandatoryOrOptionalText}}
                       </div>
                       <div class="product-modal__option-header-bottom">
-                        {{name}}
+                        {{this.name}}
                       </div>
                       <div
                         class="product-modal__option-header-opened-container"
                       >
                         <div class="product-modal__option-header-opened-copy">
-                          {{maxLimitText}}
+                          {{this.maxLimitText}}
                         </div>
                       </div>
                     </div>
@@ -84,7 +167,7 @@
                     <div class="accordion__content">
                       <!-- PRODUCT OPTION ITEMS -->
                       <div class="product-modal__option-items">
-                        {{#each variants}}
+                        {{#each this.groupOption.ingredients}}
                           <!-- ITEM -->
                           <div class="product-modal__option-item">
                             <!-- LEFT -->
@@ -105,7 +188,7 @@
                             <div class="product-modal__option-item-right">
                               <div class="product-modal__option-item-price">
                                 <span class="js-price-value">
-                                  {{currency this.price}}
+                                  {{currency (lookup this.price 0)}}
                                 </span>
                               </div>
                             </div>
@@ -117,79 +200,9 @@
                 </div>
               </div>
             </div>
-          {{/with}}
-        {{/if}}
-        {{! GROUP OPTIONS }}
-        {{#each groupOptions}}
-          <!-- OPTION -->
-          <div
-            class="product-modal__option js-product-modal__option-group-option"
-          >
-            <!-- ACCORDION ITEM -->
-            <div
-              class="accordion__container accordion__container--product-option"
-            >
-              <div class="accordion__item">
-                <div class="accordion__header">
-                  <div class="product-modal__option-header">
-                    <!-- TOP AND BOTTOM COPY -->
-                    <div class="product-modal__option-header-top">
-                      {{this.mandatoryOrOptionalText}}
-                    </div>
-                    <div class="product-modal__option-header-bottom">
-                      {{this.name}}
-                    </div>
-                    <div class="product-modal__option-header-opened-container">
-                      <div class="product-modal__option-header-opened-copy">
-                        {{this.maxLimitText}}
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion__right-side">
-                    <div class="accordion__header-arrow">
-                      <img src="./images/icons/accordion-arrow.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion__panel">
-                  <div class="accordion__content">
-                    <!-- PRODUCT OPTION ITEMS -->
-                    <div class="product-modal__option-items">
-                      {{#each this.groupOption.ingredients}}
-                        <!-- ITEM -->
-                        <div class="product-modal__option-item">
-                          <!-- LEFT -->
-                          <div class="product-modal__option-item-left">
-                            <div class="product-modal__option-icon">
-                              <div class="product-modal__option-icon-inner">
-                                <img
-                                  src="./images/icons/checkmark.svg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div class="product-modal__option-name">
-                              {{this.name}}
-                            </div>
-                          </div>
-                          <!-- RIGHT -->
-                          <div class="product-modal__option-item-right">
-                            <div class="product-modal__option-item-price">
-                              <span class="js-price-value">
-                                {{currency (lookup this.price 0)}}
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      {{/each}}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        {{/each}}
-      </div>
+          {{/each}}
+        </div>
+      {{/if}}
       <!-- LONG DESCRIPTION -->
       {{#if large_description}}
         <div class="product-modal__long-description">
