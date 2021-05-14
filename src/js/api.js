@@ -55,11 +55,17 @@ export default class {
   deleteProductFromCart(cartIndex) {
     // https://www.delivery.gr/delivery/cart/{store id}/remove-item/{cart index}
     if (context.mode === 'development') {
-      return new Promise((resolve) =>
-        setTimeout(() => {
-          resolve({ TODO: 'CART IN HTML' });
-        }, 200),
-      );
+      return new Promise((resolve) => {
+        const url = '/partials/cart-body.html';
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      });
     }
     return new Promise((resolve) => {
       const url = `delivery/cart/${context.storeID}/remove-item/${cartIndex}`;
@@ -78,11 +84,17 @@ export default class {
     console.log(data);
     // https://www.delivery.gr/delivery/cart/3153/insert
     if (context.mode === 'development') {
-      return new Promise((resolve) =>
-        setTimeout(() => {
-          resolve({ TODO: 'CART IN HTML' });
-        }, 500),
-      );
+      return new Promise((resolve) => {
+        const url = '/partials/cart-body.html';
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      });
     }
     return new Promise((resolve) => {
       const url = `delivery/cart/${context.storeID}/insert`;

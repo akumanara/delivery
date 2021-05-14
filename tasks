@@ -9,6 +9,7 @@ Todo
 [General] sentry implementation
 [Product modal] hide/view large html description
 [Product modal] zoom on photos
+[Product modal] fix layout on different product variations. - no photos, - no desc, etc @delivery dependency
 [Store] favorite api bridge - @delivery dependency
 [Store] recent orders
 [Store] closes store with suggestions
@@ -17,10 +18,10 @@ Todo
 
 Doing
 ==================================
-[Store] cart button toggle + cart - big
 
 Done
 ==================================
+[Store] cart button toggle + cart - big
 Currency sto product modal
 favorite button
 [Product modal] comments and long description change
