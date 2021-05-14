@@ -62,7 +62,11 @@ gulp.task('css', gulp.series('css-dev', 'validate-css'));
 gulp.task('html-dev', (done) => {
   return gulp
     .src([src_folder + 'html/pages/**/*.html'])
-    .pipe(injectPartials())
+    .pipe(
+      injectPartials({
+        removeTags: true,
+      }),
+    )
     .on('error', function (error) {
       console.log(error);
       done();

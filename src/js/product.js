@@ -4,7 +4,7 @@ import Accordion from 'accordion-js';
 import Swiper from 'swiper/bundle';
 import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
-import Panzoom from 'panzoom';
+// import Panzoom from 'panzoom';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';

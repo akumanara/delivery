@@ -12,7 +12,7 @@ module.exports = {
   //     generateStatsFile: true,
   //   }),
   // ],
-  // devtool: 'eval-source-map',
+  devtool: 'eval',
   module: {
     rules: [
       {

@@ -1,6 +1,6 @@
 // core js in order to add new features of js
 // import 'core-js/stable';
-import 'regenerator-runtime/runtime';
+// import 'regenerator-runtime/runtime';
 import autoBind from 'auto-bind';
 import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
@@ -9,7 +9,6 @@ import Accordion from 'accordion-js';
 import List from 'list.js';
 import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
-// import Handlebars from 'handlebars';
 import { showFPS, makeid, deliveryConsole } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';

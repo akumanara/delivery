@@ -39,9 +39,8 @@ export default class extends EventEmitter {
     // Map the elements to the ingredients array
     this.groupOption.ingredients.forEach((ingredient, index) => {
       ingredient.element = optionsElements[index];
-      ingredient.priceElement = ingredient.element.querySelector(
-        '.js-price-value',
-      );
+      ingredient.priceElement =
+        ingredient.element.querySelector('.js-price-value');
     });
 
     // Add event listeners on the dom elements
@@ -107,9 +106,8 @@ export default class extends EventEmitter {
     } else {
       textToDisplay = this.mandatoryOrOptionalText;
     }
-    this.element.querySelector(
-      '.product-modal__option-header-top',
-    ).innerText = textToDisplay;
+    this.element.querySelector('.product-modal__option-header-top').innerText =
+      textToDisplay;
   }
 
   selectOption(option) {
