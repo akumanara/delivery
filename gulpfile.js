@@ -13,6 +13,7 @@ const gulp = require('gulp'),
   svgmin = require('gulp-svgmin'),
   sass = require('gulp-sass'),
   rename = require('gulp-rename');
+var compress = require('compression');
 
 const src_folder = './src/';
 const dist_folder = './dist/';
@@ -180,6 +181,7 @@ gulp.task('serve', () => {
     port: 3000,
     open: false,
     notify: false,
+    middleware: [compress()],
   });
 });
 

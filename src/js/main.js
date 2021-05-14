@@ -1,6 +1,6 @@
 // core js in order to add new features of js
 // import 'core-js/stable';
-// import 'regenerator-runtime/runtime';
+import 'regenerator-runtime/runtime';
 import autoBind from 'auto-bind';
 import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
