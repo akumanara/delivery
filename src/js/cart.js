@@ -20,7 +20,12 @@ export default class {
 
     // Subscribe to cart update event
     PubSub.subscribe('cart_update', this.cartUpdate);
+    PubSub.subscribe(
+      'cart_set_index_stay_open',
+      this.setCartIndexAccordionToStayOpen,
+    );
 
+    this.cartIndexToStayOpen = undefined;
     this.init();
   }
 
@@ -37,20 +42,27 @@ export default class {
 
     // Create product accordions
     this.accordions = [];
-    document.querySelectorAll('.cart .accordion__container').forEach((el) => {
-      const tmpAccordionContainer = new Accordion(el, {
-        duration: 600,
-        elementClass: 'accordion__item',
-        triggerClass: 'accordion__header',
-        panelClass: 'accordion__panel',
-        ariaEnabled: false,
-        beforeOpen() {
-          // close other accordions if opened
-          self.closeGroupOptions(tmpAccordionContainer);
-        },
+    document
+      .querySelectorAll('.cart .accordion__container')
+      .forEach((el, index) => {
+        let tmpAccordionContainer;
+        const accordionOptions = {
+          duration: 600,
+          elementClass: 'accordion__item',
+          triggerClass: 'accordion__header',
+          panelClass: 'accordion__panel',
+          ariaEnabled: false,
+          beforeOpen() {
+            // close other accordions if opened
+            self.closeGroupOptions(tmpAccordionContainer);
+          },
+        };
+        if (this.cartIndexToStayOpen === index) {
+          accordionOptions.openOnInit = [0];
+        }
+        tmpAccordionContainer = new Accordion(el, accordionOptions);
+        this.accordions.push(tmpAccordionContainer);
       });
-      this.accordions.push(tmpAccordionContainer);
-    });
 
     // Create products
     this.DOM.cart
@@ -79,6 +91,10 @@ export default class {
     } else {
       this.DOM.toggler.classList.remove('cart__toggler--active');
     }
+  }
+
+  setCartIndexAccordionToStayOpen(msg, data) {
+    this.cartIndexToStayOpen = data;
   }
 
   // Closes all the accordions except the one to be opened
