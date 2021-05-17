@@ -21,6 +21,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.0",
+    "git-revision-webpack-plugin": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
@@ -37,7 +38,7 @@
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^21.0.0",
-    "webpack": "^5.37.0",
+    "webpack": "^4.26.1",
     "webpack-bundle-analyzer": "^4.4.1",
     "webpack-cli": "^4.7.0",
     "webpack-merge": "^5.7.3",
@@ -45,15 +46,15 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "@sentry/browser": "^6.4.0",
+    "@sentry/tracing": "^6.4.0",
     "accordion-js": "^3.1.1",
     "animate.css": "^4.1.1",
     "array-move": "^3.0.1",
     "auto-bind": "^4.0.0",
     "axios": "^0.21.1",
-    "core-js": "^3.12.1",
     "currency.js": "^2.0.3",
     "drift-zoom": "^1.4.3",
-    "es6-template-strings": "^2.0.1",
     "events": "^3.3.0",
     "fast-average-color": "^6.4.0",
     "gsap": "^3.6.1",
@@ -65,8 +66,6 @@
     "panzoom": "^9.4.2",
     "pubsub-js": "^1.9.3",
     "randomstring": "^1.2.1",
-    "regenerator-runtime": "^0.13.7",
-    "smooth-corners": "^1.0.6",
     "stats.js": "^0.17.0",
     "swiper": "^6.6.1"
   }

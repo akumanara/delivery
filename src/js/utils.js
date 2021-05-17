@@ -1,5 +1,9 @@
+// Variables coming from webpack
+/* global MODE, VERSION */
 import Stats from 'stats.js';
 import currency from 'currency.js';
+import * as Sentry from '@sentry/browser';
+import { Integrations } from '@sentry/tracing';
 
 // Show the FPS counter
 const showFPS = () => {
@@ -61,7 +65,7 @@ const deliveryConsoleWithMessage = (msg) => {
 
 const animateCSS = (element, animation, prefix = 'animate__') =>
   // We create a Promise and return it
-  new Promise((resolve, reject) => {
+  new Promise((resolve) => {
     const animationName = `${prefix}${animation}`;
     const node = element;
 
@@ -96,6 +100,20 @@ const getFormData = (object) => {
   return formData;
 };
 
+const initSentry = () => {
+  Sentry.init({
+    dsn: 'https://638d2b3b62374e10acdd8359960a28cb@o346983.ingest.sentry.io/5769914',
+    integrations: [new Integrations.BrowserTracing()],
+    environment: MODE,
+    release: `delivery@${VERSION}`,
+
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 1.0,
+  });
+};
+
 export {
   showFPS,
   makeid,
@@ -106,4 +124,5 @@ export {
   currencyFormat,
   has,
   getFormData,
+  initSentry,
 };

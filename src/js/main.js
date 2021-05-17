@@ -1,6 +1,5 @@
+/* global MODE */
 // core js in order to add new features of js
-// import 'core-js/stable';
-// import 'regenerator-runtime/runtime';
 import autoBind from 'auto-bind';
 import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
@@ -9,14 +8,23 @@ import Accordion from 'accordion-js';
 import List from 'list.js';
 import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
-import { showFPS, makeid, deliveryConsole } from './utils';
+import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
 import Cart from './cart';
 import API from './api';
+import { store } from './store';
 
 class App {
   constructor() {
+    initSentry();
+    deliveryConsole();
+
+    // kill console logs in production
+    if (MODE === 'production') {
+      // console.log = () => {};
+    }
+
     const app = this;
     autoBind(this);
     showFPS();
@@ -230,7 +238,6 @@ class App {
       },
     });
     observer.observe();
-    deliveryConsole();
   }
 
   // must be called when a reflow occurs
@@ -249,10 +256,6 @@ class App {
   hideLoader() {
     console.log('hideLoader');
     this.DOM.loader.classList.remove('active');
-  }
-
-  subscriber(data) {
-    console.log(data);
   }
 }
 

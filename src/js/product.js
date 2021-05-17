@@ -11,6 +11,7 @@ import GroupOption from './groupOption';
 import { animateCSS, currencyFormat, has, getFormData } from './utils';
 import { HandlebarsTemplate } from './handlebarTemplate';
 import { context } from './context';
+
 // Product may have a variant
 // Variant is single option and uses a different class.
 // Variant changes the base price for the product.

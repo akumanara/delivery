@@ -5,7 +5,6 @@ Todo
 [General] lazy load stis store cards - @delivery dependency
 [General] svg icon css for dark/light - @misa dependency
 [General] alerts (simple / timer / closable)
-[General] sentry implementation
 [Product modal] hide/view large html description
 [Product modal] zoom on photos
 [Store] favorite api bridge - @delivery dependency
@@ -19,8 +18,11 @@ Doing
 
 
 
+
+
 Done
 ==================================
+[General] sentry implementation
 [Store] cart button toggle + cart - big
 Currency sto product modal
 favorite button
