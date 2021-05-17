@@ -1,4 +1,4 @@
-const { EnvironmentPlugin } = require('webpack');
+// const { EnvironmentPlugin } = require('webpack');
 
 const path = require('path');
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');

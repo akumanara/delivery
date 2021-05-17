@@ -31,7 +31,6 @@ export default class {
 
   // this function must run everytime the cart is being updated
   init() {
-    console.log(process);
     console.log('init cart');
     const self = this;
     // Query the DOM elements

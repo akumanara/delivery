@@ -206,3 +206,10 @@ images array not working
 
 on change delivery type /
 ------
+
+
+checkout
+------
+otan den yparxei default karta to accordion einai anoixto.
+
+
