@@ -1,0 +1,30 @@
+Todo:
+  ☐ @store new / change address accordion - @critical
+  ☐ @product_modal - offers - @critical
+  ☐ @general lazy load stis store cards - @delivery dependency
+  ☐ @general svg icon css for dark/light - @misa dependency
+  ☐ @general alerts (simple / timer / closable)
+  ☐ @product_modal hide/view large html description
+  ☐ @product_modal zoom on photos
+  ☐ @store favorite api bridge - @delivery dependency
+  ☐ @store previous orders - add previous order to basket modal
+  ☐ @store closes store with suggestions
+  ☐ @cart open on init accordion. otan erxete pali to cart apo to server
+
+
+Doing:
+  [] @store delivery/takeaway accordion - priority @critical
+
+
+Done:
+  ✔ @general sentry implementation
+  ✔ @store cart button toggle + cart - big
+  ✔ Currency sto product modal
+  ✔ favorite button
+  ✔ @product_modal comments and long description change
+  ✔ @product_modal comments
+  ✔ @store message "Store doesn't support online payment"
+  ✔ @store hide nav when one slide
+  ✔ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
+  ✔ @bug to handlebars mou kanei breakline sto auto formatter kai vazei ti teleia apo katw
+  ✔ @product_modal fix layout on different product variations. - no photos, - no desc, etc @delivery dependency

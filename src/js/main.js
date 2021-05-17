@@ -1,5 +1,4 @@
 /* global MODE */
-// core js in order to add new features of js
 import autoBind from 'auto-bind';
 import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
@@ -24,6 +23,7 @@ class App {
     if (MODE === 'production') {
       // console.log = () => {};
     }
+    console.log(COMMITHASH);
 
     const app = this;
     autoBind(this);

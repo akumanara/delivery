@@ -25,7 +25,7 @@ export default class {
       this.setCartIndexAccordionToStayOpen,
     );
 
-    this.cartIndexToStayOpen = undefined;
+    this.cartIndexToStayOpen = false;
     this.init();
   }
 
