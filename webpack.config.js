@@ -25,7 +25,7 @@ module.exports = {
       BRANCH: JSON.stringify(gitRevisionPlugin.branch()),
     }),
   ],
-  devtool: mode === 'development' ? 'eval-source-map' : false,
+  devtool: mode === 'development' ? 'eval' : false,
   module: {
     rules: [
       {

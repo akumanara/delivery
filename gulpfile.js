@@ -108,6 +108,19 @@ gulp.task('js-dev', (done) => {
   );
 });
 
+gulp.task('js-dev-delivery', (done) => {
+  return gulp
+    .src(src_folder + 'js/main.js')
+    .pipe(webpack(require('./webpack.config.js')))
+    .on('error', function (error) {
+      console.log(error);
+      done();
+    })
+    .pipe(gulp.dest(dist_folder + 'js/'))
+    .pipe(gulp.dest(aura_folder_js + '/'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('js-release', (done) => {
   return (
     gulp
@@ -124,6 +137,7 @@ gulp.task('js-release', (done) => {
 });
 
 gulp.task('js', gulp.series('js-dev', 'js-vendor'));
+gulp.task('js-del', gulp.series('js-dev-delivery', 'js-vendor'));
 
 //==================================
 // IMAGES TASK
@@ -204,4 +218,7 @@ gulp.task(
   gulp.series('clean', 'css', 'html', 'js', 'images', 'fonts', 'assets'),
 );
 gulp.task('dev-build', gulp.series('build', gulp.parallel('serve', 'watch')));
+
 gulp.task('dev', gulp.parallel('serve', 'watch'));
+
+gulp.task('build-js', gulp.series('js-del'));
