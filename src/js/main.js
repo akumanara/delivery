@@ -48,7 +48,8 @@ class App {
       this.productList = new ProductList(app);
     }
 
-    if (document.body.classList.contains('store-page')) {
+    const cartElement = document.querySelector('.cart');
+    if (cartElement) {
       this.cart = new Cart();
     }
     // Store carousel
