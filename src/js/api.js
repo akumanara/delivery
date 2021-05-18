@@ -1,16 +1,16 @@
 /* eslint-disable class-methods-use-this */
 import axios from 'axios';
 import product from './productData';
-import { context } from './context';
+import { store } from './store';
 
 export default class {
   constructor() {
-    this.instance = axios.create({ baseURL: context.rootURL });
+    this.instance = axios.create({ baseURL: store.context.rootURL });
   }
 
   getProduct(productID) {
     // https://www.delivery.gr/api/menu/3153/product/1411216
-    if (context.mode === 'development') {
+    if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
           resolve(product);
@@ -18,7 +18,7 @@ export default class {
       );
     }
     return new Promise((resolve, reject) => {
-      const url = `api/menu/${context.storeID}/product/${productID}`;
+      const url = `api/menu/${store.context.storeID}/product/${productID}`;
       this.instance
         .get(url)
         .then((response) => {
@@ -32,7 +32,7 @@ export default class {
 
   getProductFromCart(productID, cartIndex) {
     // https://www.delivery.gr/api/menu/11658/product/update/1277099/0
-    if (context.mode === 'development') {
+    if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
           resolve(product);
@@ -40,7 +40,7 @@ export default class {
       );
     }
     return new Promise((resolve, reject) => {
-      const url = `api/menu/${context.storeID}/product/update/${productID}/${cartIndex}`;
+      const url = `api/menu/${store.context.storeID}/product/update/${productID}/${cartIndex}`;
       this.instance
         .get(url)
         .then((response) => {
@@ -54,7 +54,7 @@ export default class {
 
   deleteProductFromCart(cartIndex) {
     // https://www.delivery.gr/delivery/cart/{store id}/remove-item/{cart index}
-    if (context.mode === 'development') {
+    if (store.context.mode === 'development') {
       return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
         axios
@@ -68,7 +68,7 @@ export default class {
       });
     }
     return new Promise((resolve, reject) => {
-      const url = `delivery/cart/${context.storeID}/remove-item/${cartIndex}`;
+      const url = `delivery/cart/${store.context.storeID}/remove-item/${cartIndex}`;
       this.instance
         .get(url)
         .then((response) => {
@@ -82,7 +82,7 @@ export default class {
 
   addProductToCart(data) {
     // https://www.delivery.gr/delivery/cart/3153/insert
-    if (context.mode === 'development') {
+    if (store.context.mode === 'development') {
       return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
         axios
@@ -96,7 +96,7 @@ export default class {
       });
     }
     return new Promise((resolve, reject) => {
-      const url = `delivery/cart/${context.storeID}/insert`;
+      const url = `delivery/cart/${store.context.storeID}/insert`;
       this.instance
         .post(url, data, {
           headers: {
@@ -114,7 +114,7 @@ export default class {
 
   changeCartTypeToPickup() {
     // https://www.delivery.gr/delivery/cart/3783/pickup
-    if (context.mode === 'development') {
+    if (store.context.mode === 'development') {
       return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
         axios
@@ -128,7 +128,7 @@ export default class {
       });
     }
     return new Promise((resolve, reject) => {
-      const url = `delivery/cart/${context.storeID}/pickup`;
+      const url = `delivery/cart/${store.context.storeID}/pickup`;
       this.instance
         .put(url)
         .then((response) => {
@@ -142,7 +142,7 @@ export default class {
 
   changeCartTypeToDelivery() {
     // https://www.delivery.gr/delivery/cart/3783/delivery
-    if (context.mode === 'development') {
+    if (store.context.mode === 'development') {
       return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
         axios
@@ -156,7 +156,7 @@ export default class {
       });
     }
     return new Promise((resolve, reject) => {
-      const url = `delivery/cart/${context.storeID}/delivery`;
+      const url = `delivery/cart/${store.context.storeID}/delivery`;
       this.instance
         .put(url)
         .then((response) => {
@@ -170,7 +170,7 @@ export default class {
 
   plusOneProductFromCart(cartIndex) {
     // https://www.delivery.gr/delivery/cart/{store id}/add-one-item/{cart index}
-    if (context.mode === 'development') {
+    if (store.context.mode === 'development') {
       return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
         axios
@@ -184,7 +184,7 @@ export default class {
       });
     }
     return new Promise((resolve, reject) => {
-      const url = `delivery/cart/${context.storeID}/add-one-item/${cartIndex}`;
+      const url = `delivery/cart/${store.context.storeID}/add-one-item/${cartIndex}`;
       this.instance
         .get(url)
         .then((response) => {
@@ -198,7 +198,7 @@ export default class {
 
   minusOneProductFromCart(cartIndex) {
     // https://www.delivery.gr/delivery/cart/{store id}/remove-one-item/{cart index}
-    if (context.mode === 'development') {
+    if (store.context.mode === 'development') {
       return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
         axios
@@ -212,7 +212,7 @@ export default class {
       });
     }
     return new Promise((resolve, reject) => {
-      const url = `delivery/cart/${context.storeID}/remove-one-item/${cartIndex}`;
+      const url = `delivery/cart/${store.context.storeID}/remove-one-item/${cartIndex}`;
       this.instance
         .get(url)
         .then((response) => {
@@ -228,7 +228,7 @@ export default class {
   // =====================
   quickAddProduct(data) {
     // https://www.delivery.gr/delivery/cart/3153/insert
-    const url = `${this.rootURL}/delivery/cart/${context.storeID}/insert`;
+    const url = `${this.rootURL}/delivery/cart/${store.context.storeID}/insert`;
     axios
       .post(url, data, {})
       .then((response) => {
@@ -241,7 +241,7 @@ export default class {
 
   dummy(data) {
     // https://www.delivery.gr/delivery/cart/3153/insert
-    const url = `${this.rootURL}/delivery/cart/${context.storeID}/insert`;
+    const url = `${this.rootURL}/delivery/cart/${store.context.storeID}/insert`;
     console.log(url);
     const request = axios
       .post('https://jsonplaceholder.typicode.com/posts/1', data, {

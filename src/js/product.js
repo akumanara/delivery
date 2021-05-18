@@ -10,7 +10,7 @@ import Variant from './variant';
 import GroupOption from './groupOption';
 import { animateCSS, currencyFormat, has, getFormData } from './utils';
 import { HandlebarsTemplate } from './handlebarTemplate';
-import { context } from './context';
+import { store } from './store';
 
 // Product may have a variant
 // Variant is single option and uses a different class.
@@ -163,7 +163,7 @@ export default class {
       variant: this.variant,
       groupOptions: this.groupOptions,
       basePrice: this.basePrice,
-      storeName: context.storeName,
+      storeName: store.context.storeName,
       showOptionsDiv,
     };
   }
