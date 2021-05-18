@@ -2,15 +2,18 @@ import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
 import PubSub from 'pubsub-js';
 import Product from './product';
+import API from './api';
 
 export default class {
   constructor() {
     autoBind(this);
+    this.api = new API();
     this.DOM = {};
     this.DOM.cart = document.querySelector('.cart');
     this.DOM.toggler = document.querySelector('.cart__toggler');
     this.DOM.togglerBtn = document.querySelector('.cart__toggler-btn');
     this.DOM.togglerPrice = document.querySelector('.cart__checkout-btn-price');
+    this.DOM.cartBody = document.querySelector('.cart__body');
 
     this.isOpen = false;
     // The products from cart
@@ -25,14 +28,18 @@ export default class {
       this.setCartIndexAccordionToStayOpen,
     );
 
-    this.cartIndexToStayOpen = 3;
-    this.init();
+    this.cartIndexToStayOpen = false;
+    // Hook the load event to get the cart dynamically
+    // document.addEventListener('DOMContentLoaded', this.getCart);
+    window.addEventListener('load', this.getCart);
+    // this.init();
   }
 
   // this function must run everytime the cart is being updated
   init() {
     console.log('init cart');
     const self = this;
+
     // Query the DOM elements
     this.DOM.cartBody = document.querySelector('.cart__body');
     this.DOM.closeBtn = document.querySelector('.cart__header-close');
@@ -146,5 +153,20 @@ export default class {
     this.DOM.cart.insertAdjacentHTML('beforeend', data);
     // Re init
     this.init();
+  }
+
+  // First time we get the cart on page load
+  async getCart() {
+    PubSub.publish('show_loader');
+    // fetch the html for the modal
+    const cart = await this.api.getCart();
+
+    // Insert the new body
+    this.DOM.cart.insertAdjacentHTML('beforeend', cart);
+
+    // Re init
+    this.init();
+
+    PubSub.publish('hide_loader');
   }
 }

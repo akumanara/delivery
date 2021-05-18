@@ -168,6 +168,34 @@ export default class {
     });
   }
 
+  getCart() {
+    // https://www.delivery.gr/delivery/cart/3153/show
+    if (store.context.mode === 'development') {
+      return new Promise((resolve, reject) => {
+        const url = '/partials/cart-body.html';
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      });
+    }
+    return new Promise((resolve, reject) => {
+      const url = `delivery/cart/${store.context.storeID}/show`;
+      this.instance
+        .get(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
   plusOneProductFromCart(cartIndex) {
     // https://www.delivery.gr/delivery/cart/{store id}/add-one-item/{cart index}
     if (store.context.mode === 'development') {
