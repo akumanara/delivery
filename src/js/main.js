@@ -11,11 +11,15 @@ import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
 import Cart from './cart';
+import DeliveryType from './deliveryType';
 import API from './api';
 import { store } from './store';
 
 class App {
   constructor() {
+    // save the main object for later use
+    store.app = this;
+
     initSentry();
     deliveryConsole();
 
@@ -23,7 +27,6 @@ class App {
     if (MODE === 'production') {
       // console.log = () => {};
     }
-    console.log(COMMITHASH);
 
     const app = this;
     autoBind(this);
@@ -42,16 +45,24 @@ class App {
       loader: document.querySelector('.delivery-loader'),
     };
 
-    // product modal (add product to basket)
+    // Product modal (add product to basket)
     const storeMenuCatalog = document.querySelector('.store-menu__catalog');
     if (storeMenuCatalog) {
       this.productList = new ProductList(app);
     }
 
+    // Cart element
     const cartElement = document.querySelector('.cart');
     if (cartElement) {
       this.cart = new Cart();
     }
+
+    // Delivery type
+    const deliveryTypeElement = document.querySelector('.delivery-type');
+    if (deliveryTypeElement) {
+      this.deliveryType = new DeliveryType();
+    }
+
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');
     if (storeCarouselElement) {
