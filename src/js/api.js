@@ -267,25 +267,7 @@ export default class {
       });
   }
 
-  dummy(data) {
-    // https://www.delivery.gr/delivery/cart/3153/insert
-    const url = `${this.rootURL}/delivery/cart/${store.context.storeID}/insert`;
-    console.log(url);
-    const request = axios
-      .post('https://jsonplaceholder.typicode.com/posts/1', data, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-          'Hi-ads': 'Sup',
-        },
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-    return request;
-  }
+
 
   // TODO
   addStoreToFavorites() {
