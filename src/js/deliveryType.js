@@ -67,7 +67,7 @@ export default class {
     this.setCopies();
 
     // Publish the event to the cart with the data
-    PubSub.publish('cart_update', cart);
+  PubSub.publish('cart_update', cart);
 
     PubSub.publish('hide_loader');
   }

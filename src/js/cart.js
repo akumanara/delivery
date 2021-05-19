@@ -23,12 +23,8 @@ export default class {
 
     // Subscribe to cart update event
     PubSub.subscribe('cart_update', this.cartUpdate);
-    PubSub.subscribe(
-      'cart_set_index_stay_open',
-      this.setCartIndexAccordionToStayOpen,
-    );
 
-    this.cartIndexToStayOpen = false;
+    // this.cartIndexToStayOpen = false;
     // Hook the load event to get the cart dynamically
     // document.addEventListener('DOMContentLoaded', this.getCart);
     window.addEventListener('load', this.getCart);
@@ -64,7 +60,8 @@ export default class {
             self.closeGroupOptions(tmpAccordionContainer);
           },
         };
-        if (this.cartIndexToStayOpen === index) {
+        if (el.dataset.open) {
+          console.log('hi');
           accordionOptions.openOnInit = [0];
         }
         tmpAccordionContainer = new Accordion(el, accordionOptions);
@@ -98,10 +95,6 @@ export default class {
     } else {
       this.DOM.toggler.classList.remove('cart__toggler--active');
     }
-  }
-
-  setCartIndexAccordionToStayOpen(msg, data) {
-    this.cartIndexToStayOpen = data;
   }
 
   // Closes all the accordions except the one to be opened
