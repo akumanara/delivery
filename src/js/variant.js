@@ -7,7 +7,7 @@ export default class extends EventEmitter {
     this.variants = variants;
     this.name = texts.variantName;
     this.mandatoryOrOptionalText = texts.mandatory;
-    this.maxLimitText = `${texts.maxLimit} 1`;
+    this.maxLimitText = texts.maxLimit('1');
   }
 
   init(element) {
@@ -54,9 +54,8 @@ export default class extends EventEmitter {
     );
 
     // Change the upper text with the selected option
-    this.element.querySelector(
-      '.product-modal__option-header-top',
-    ).innerText = this.selectedOption.name;
+    this.element.querySelector('.product-modal__option-header-top').innerText =
+      this.selectedOption.name;
 
     // Emit to the product class
     this.emit('selection', this.selectedOption);

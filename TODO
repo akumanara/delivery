@@ -13,10 +13,10 @@ Todo:
 
 
 Doing:
-  [] [store] delivery/takeaway accordion - priority @critical
 
 
 Done:
+  ✔ [store] delivery/takeaway accordion - priority @critical @done(21-05-19 13:07)
   ✔ [general] sentry implementation
   ✔ [store] cart button toggle + cart - big
   ✔ [product_modal] comments and long description change

@@ -3,6 +3,8 @@ import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
 import { store } from './store';
 import API from './api';
+import texts from './texts';
+import { currencyFormat } from './utils';
 
 const deliveryTypes = {
   DELIVERY: 'delivery',
@@ -28,6 +30,7 @@ export default class {
     };
     this.deliveryMethod = deliveryTypes.DELIVERY;
 
+    this.setCopies();
     this.init();
   }
 
@@ -60,6 +63,9 @@ export default class {
     this.DOM.takeawayButton.classList.remove('active');
     this.DOM.deliveryButton.classList.add('active');
 
+    // Change copies
+    this.setCopies();
+
     // Publish the event to the cart with the data
     PubSub.publish('cart_update', cart);
 
@@ -75,9 +81,29 @@ export default class {
     this.DOM.deliveryButton.classList.remove('active');
     this.DOM.takeawayButton.classList.add('active');
 
+    // Change copies
+    this.setCopies();
+
     // Publish the event to the cart with the data
     PubSub.publish('cart_update', cart);
 
     PubSub.publish('hide_loader');
+  }
+
+  setCopies() {
+    if (this.deliveryMethod === deliveryTypes.DELIVERY) {
+      const deliveryFee = currencyFormat(store.context.deliveryFee);
+      this.DOM.topCopy.innerText = texts.deliveryFee(deliveryFee);
+      this.DOM.openedCopy.innerText = texts.deliveryFee(deliveryFee);
+      this.DOM.bottomCopy.innerText = texts.delivery;
+    } else {
+      this.DOM.topCopy.innerText = texts.takeawayLocation(
+        store.context.storeAddress,
+      );
+      this.DOM.openedCopy.innerText = texts.takeawayLocation(
+        store.context.storeAddress,
+      );
+      this.DOM.bottomCopy.innerText = texts.takeaway;
+    }
   }
 }

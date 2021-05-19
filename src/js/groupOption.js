@@ -17,7 +17,7 @@ export default class extends EventEmitter {
     } else {
       this.mandatoryOrOptionalText = texts.optional;
     }
-    this.maxLimitText = `${texts.maxLimit} ${this.groupOption.max}`;
+    this.maxLimitText = texts.maxLimit(this.groupOption.max);
     this.selectedOptions = [];
     this.max = this.groupOption.max;
     this.min = this.groupOption.min;
