@@ -216,3 +216,16 @@ otan den yparxei default karta to accordion einai anoixto.
 FOR MISA
 --------------------
 background color per pages? sto store to accordion me to delivery method einai xwris xrwma.
+
+
+
+
+address managment / new address.
+------------
+dom trigger me lektika (fake accordion)
+on click 
+
+
+
+
+

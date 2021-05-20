@@ -1,5 +1,4 @@
 Todo:
-  ☐ [store] new / change address accordion - @critical
   ☐ [product_modal] - offers - @critical
   ☐ [general] lazy load stis store cards - @delivery dependency
   ☐ [general] svg icon css for dark/light - @misa dependency
@@ -12,7 +11,7 @@ Todo:
 
 
 Doing:
-
+  ☐ [store] new / change address accordion - @critical
 
 
 Done:

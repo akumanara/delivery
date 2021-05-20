@@ -41,7 +41,8 @@ body {
 
   &__body {
     // used because we have the add to cart and qty buttons
-    padding-bottom: 100px;
+    //only for fixed not sticky
+    // padding-bottom: 100px;
   }
 
   &__title {
@@ -240,7 +241,9 @@ body {
     user-select: none;
     transform: translate3d(0, 0, 0);
     // it must be position: fixed or it jumps around when scrolling
-    position: fixed;
+    // position: fixed;
+    // sticky so it doesnt overlap desktop scrollbar
+    position: sticky;
     bottom: 0;
     left: 0;
     width: 100%;
