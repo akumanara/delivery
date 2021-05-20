@@ -270,6 +270,22 @@ body {
     flex-grow: 0; /* do not grow   - initial value: 0 */
     flex-shrink: 0; /* do not shrink - initial value: 1 */
     flex-basis: calc(140px - 32px); /* width/height  - initial value: auto */
+    position: relative;
+  }
+
+  &__add-to-cart-qty-minus-trigger {
+    // outline: 1px solid red;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  &__add-to-cart-qty-plus-trigger {
+    // outline: 1px solid red;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
   }
 
   &__add-to-cart-qty-minus {

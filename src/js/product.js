@@ -90,11 +90,11 @@ export default class {
       .addEventListener('click', this.cartDeleteProduct);
     // Plus one
     this.element
-      .querySelector('.cart__product-actions-quantity-plus')
+      .querySelector('.cart__product-actions-quantity-plus-trigger')
       .addEventListener('click', this.cartPlusOneProduct);
     // Minus one
     this.element
-      .querySelector('.cart__product-actions-quantity-minus')
+      .querySelector('.cart__product-actions-quantity-minus-trigger')
       .addEventListener('click', this.cartMinusOneProduct);
   }
 
@@ -190,10 +190,10 @@ export default class {
       ),
       qty: this.modalElement.querySelector('.js-product-modal-qty'),
       plusBtn: this.modalElement.querySelector(
-        '.product-modal__add-to-cart-qty-plus',
+        '.product-modal__add-to-cart-qty-plus-trigger',
       ),
       minusBtn: this.modalElement.querySelector(
-        '.product-modal__add-to-cart-qty-minus',
+        '.product-modal__add-to-cart-qty-minus-trigger',
       ),
       addToCartBtn: this.modalElement.querySelector(
         '.product-modal__add-to-cart-btn',
