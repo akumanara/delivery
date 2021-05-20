@@ -1,10 +1,14 @@
+/* eslint-disable class-methods-use-this */
 import Product from './product';
+import { querySelectorFrom } from './utils';
 
 export default class {
   constructor() {
     // Products from catalog
     this.products = [];
-
+    this.DOM = {
+      products: document.querySelectorAll('.store-menu__product'),
+    };
     this.init();
   }
 
@@ -17,11 +21,24 @@ export default class {
   }
 
   createProductsFromStoreCatalog() {
-    document
-      .querySelectorAll('.store-menu__product')
-      .forEach((productElement) => {
-        const tmpProduct = new Product(productElement);
-        this.products.push(tmpProduct);
-      });
+    this.DOM.products.forEach((productElement) => {
+      const tmpProduct = new Product(productElement);
+      this.products.push(tmpProduct);
+    });
+  }
+
+  removeInCartStatusFromAllProducts() {
+    this.DOM.products.forEach((productElement) => {
+      productElement.classList.remove('store-menu__product--in-cart');
+    });
+  }
+
+  addInCartStatusToProduct(productID) {
+    const element = document.querySelector(
+      `.store-menu__product[data-product-id='${productID}']`,
+    );
+    if (element) {
+      element.classList.add('store-menu__product--in-cart');
+    }
   }
 }

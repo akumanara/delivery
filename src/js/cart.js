@@ -3,6 +3,7 @@ import autoBind from 'auto-bind';
 import PubSub from 'pubsub-js';
 import Product from './product';
 import API from './api';
+import { store } from './store';
 
 export default class {
   constructor() {
@@ -68,12 +69,19 @@ export default class {
         this.accordions.push(tmpAccordionContainer);
       });
 
+    // Remove the in cart class for all the products
+    store.app.productList.removeInCartStatusFromAllProducts();
+
     // Create products
     this.DOM.cart
       .querySelectorAll('.cart__product')
       .forEach((productElement) => {
+        // Create the product object
         const tmpProduct = new Product(productElement);
         this.products.push(tmpProduct);
+
+        // Tag the product in the store menu with (in cart class)
+        store.app.productList.addInCartStatusToProduct(tmpProduct.productID);
       });
 
     // Update the show cart button with the summary

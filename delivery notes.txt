@@ -192,7 +192,7 @@ Registration Flow
 ------
 email mandatory?
 phone mandatory?
-what is the main
+
 
 
 
@@ -204,15 +204,6 @@ images array not working
 
 
 
-on change delivery type /
-------
-
-
-checkout
-------
-otan den yparxei default karta to accordion einai anoixto.
-
-
 FOR MISA
 --------------------
 background color per pages? sto store to accordion me to delivery method einai xwris xrwma.
@@ -222,8 +213,18 @@ background color per pages? sto store to accordion me to delivery method einai x
 
 address managment / new address.
 ------------
+fenete:
+- catalog / category
+- store
+- homepage?
+
 dom trigger me lektika (fake accordion)
-on click 
+on click
+-LOGGED IN: modal me addresses
+-GUEST: new address modal (map)
+
+
+ta address buttons einai links (allazei to url)
 
 
 

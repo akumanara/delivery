@@ -114,6 +114,9 @@ const initSentry = () => {
   });
 };
 
+const querySelectorFrom = (selector, elements) =>
+  [].filter.call(elements, (element) => element.matches(selector));
+
 export {
   showFPS,
   makeid,
@@ -125,4 +128,5 @@ export {
   has,
   getFormData,
   initSentry,
+  querySelectorFrom,
 };
