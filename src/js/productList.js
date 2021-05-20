@@ -1,6 +1,5 @@
 /* eslint-disable class-methods-use-this */
 import Product from './product';
-import { querySelectorFrom } from './utils';
 
 export default class {
   constructor() {

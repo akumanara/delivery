@@ -208,6 +208,8 @@ FOR MISA
 --------------------
 background color per pages? sto store to accordion me to delivery method einai xwris xrwma.
 
+FOR ROUVALIS
+--------------------
 
 
 
@@ -216,7 +218,7 @@ address managment / new address.
 fenete:
 - catalog / category
 - store
-- homepage?
+- homepage? *critical* (cities / cuisines)
 
 dom trigger me lektika (fake accordion)
 on click
@@ -224,9 +226,23 @@ on click
 -GUEST: new address modal (map)
 
 
-ta address buttons einai links (allazei to url)
+*ta address buttons einai links (allazei to url)
+
+on confirmed address
+- api call on google to get address data
+- an ta data einai full comple.
+-- ginete ena put request se https://www.delivery.gr/delivery/find/shops-by-location me to location (form data)
+-- referesh the current page
 
 
 
 
+stous logged in xristes an den exei kamia diefthinsi ton pame kateftheian sto map
 
+for meeting
+----------
+- homepage? *critical* (cities / cuisines)
+autosuggestion leipei.
+
+
+1 epilogi

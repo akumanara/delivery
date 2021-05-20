@@ -15,9 +15,11 @@ Doing:
 
 
 Done:
+  ✔ [cart] kathe fora p erxete to cart na vazoume ta prointa pou yparxoun sto cart me status in-cart sto store menu list. @done(21-05-20 15:28)
   ✔ [IMPROVMENT] na valoume 2 div sto product modal kai sto cart gia ta +/- wsta einai 50% kai na patiounte pio efkola @done(21-05-20 13:02)
   ✔ [cart] open on init accordion. otan erxete pali to cart apo to server @done(21-05-20 12:52)
   ✔ [BUG] position fixed / width 100% overlaps scrollbar @done(21-05-20 12:52) (position sticky to cart btn)
+
   ✔ [store] delivery/takeaway accordion - priority @critical @done(21-05-19 13:07)
   ✔ [general] sentry implementation
   ✔ [store] cart button toggle + cart - big
