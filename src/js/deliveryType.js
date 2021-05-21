@@ -55,12 +55,8 @@ export default class {
     // fetch the html for the modal
     const cart = await this.api.changeCartTypeToDelivery();
 
-    this.deliveryMethod = deliveryTypes.DELIVERY;
-    this.DOM.takeawayButton.classList.remove('active');
-    this.DOM.deliveryButton.classList.add('active');
-
-    // Change copies
-    this.setCopies();
+    // Active states and copies
+    this.updateMethodToDelivery();
 
     // Publish the event to the cart with the data
     PubSub.publish('cart_update', cart);
@@ -73,12 +69,8 @@ export default class {
     // fetch the html for the modal
     const cart = await this.api.changeCartTypeToPickup();
 
-    this.deliveryMethod = deliveryTypes.TAKEAWAY;
-    this.DOM.deliveryButton.classList.remove('active');
-    this.DOM.takeawayButton.classList.add('active');
-
-    // Change copies
-    this.setCopies();
+    // Active states and copies
+    this.updateMethodToTakeAway();
 
     // Publish the event to the cart with the data
     PubSub.publish('cart_update', cart);
@@ -103,7 +95,7 @@ export default class {
     }
   }
 
-  setMethodTakeAwayWithoutAPICall() {
+  updateMethodToTakeAway() {
     this.deliveryMethod = deliveryTypes.TAKEAWAY;
     this.DOM.deliveryButton.classList.remove('active');
     this.DOM.takeawayButton.classList.add('active');
@@ -112,7 +104,7 @@ export default class {
     this.setCopies();
   }
 
-  setMethodDeliveryWithoutAPICall() {
+  updateMethodToDelivery() {
     this.deliveryMethod = deliveryTypes.DELIVERY;
     this.DOM.takeawayButton.classList.remove('active');
     this.DOM.deliveryButton.classList.add('active');
@@ -121,5 +113,3 @@ export default class {
     this.setCopies();
   }
 }
-
-

@@ -171,11 +171,11 @@ export default class {
 
     // Set delivery type
     if (this.DOM.cartBody.dataset.deliveryType === deliveryTypes.DELIVERY) {
-      store.app.deliveryType.setMethodDeliveryWithoutAPICall();
+      store.app.deliveryType.updateMethodToDelivery();
     } else if (
       this.DOM.cartBody.dataset.deliveryType === deliveryTypes.TAKEAWAY
     ) {
-      store.app.deliveryType.setMethodTakeAwayWithoutAPICall();
+      store.app.deliveryType.updateMethodToTakeAway();
     }
 
     PubSub.publish('hide_loader');
