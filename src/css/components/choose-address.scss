@@ -1,0 +1,186 @@
+.choose-address {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  align-items: flex-start;
+  display: none;
+  // display: flex;
+  &--active {
+    display: flex;
+  }
+  &__window {
+    width: 100%;
+    max-height: calc(100vh - 105px);
+    height: 100%;
+    margin-top: 46px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background: #f6f7f9;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 16px;
+    background-color: white;
+  }
+  &__header-left {
+  }
+  &__header-right {
+    padding-left: 10px;
+    margin-left: auto;
+  }
+
+  &__body {
+    // used because we have the add to cart and qty buttons
+    //only for fixed not sticky
+    // padding-bottom: 100px;
+  }
+
+  &__title {
+    @include font-averta;
+    @include font-size-8;
+
+    font-weight: 700;
+  }
+
+  &__status {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    background: #fff;
+  }
+  &__status-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  &__status-icon-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__status-tag {
+    padding: 6px 10px;
+    background: #f6f7f9;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  &__status-time {
+    font-weight: 500;
+  }
+  &__list {
+    // outline: 1px solid red;
+    height: 100%;
+    flex-grow: 0;
+    overflow-y: scroll;
+    padding: 18px 16px;
+    padding-bottom: 0;
+  }
+
+  &__options-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 16px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    transition: $trans;
+    font-weight: 700;
+    @include font-size-1;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      color: white;
+      background: #5a88ff;
+      box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
+    }
+  }
+
+  &__options-button-icon {
+    width: 26px;
+    height: 26px;
+    background-color: #e7edfa;
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: $trans;
+
+    .active & {
+      background-color: rgba(#fff, 0.1);
+    }
+  }
+
+  &__options-button-icon-inner {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #5a88ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $trans;
+
+    img {
+      opacity: 0;
+      transition: $trans;
+    }
+
+    .active & {
+      width: 16px;
+      height: 16px;
+      background-color: #5a88ff;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__add-new {
+    height: calc(100px - 40px);
+    // outline: 1px solid red;
+    padding: 20px 16px;
+    display: flex;
+  }
+
+  &__add-new-btn {
+    // outline: 1px solid red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 18px 16px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+  }
+  &__add-new-btn-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+  &__add-new-btn-icon-img {
+    max-width: 100%;
+    height: auto;
+  }
+  &__add-new-btn-copy {
+    font-weight: 700;
+  }
+}

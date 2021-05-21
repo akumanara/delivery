@@ -220,13 +220,16 @@ fenete:
 - store
 - homepage? *critical* (cities / cuisines)
 
+notes:
+otan fenete sto catalog / category. den tha prepei na exei 20-25mins
+
+stous logged in xristes an den exei kamia diefthinsi ton pame kateftheian sto map
+
 dom trigger me lektika (fake accordion)
 on click
 -LOGGED IN: modal me addresses
 -GUEST: new address modal (map)
 
-
-*ta address buttons einai links (allazei to url)
 
 on confirmed address
 - api call on google to get address data
@@ -234,15 +237,36 @@ on confirmed address
 -- ginete ena put request se https://www.delivery.gr/delivery/find/shops-by-location me to location (form data)
 -- referesh the current page
 
+AddressComponent
+================
+- DOM queries gia na vrei ta elements kai na kanei setup event listeners
+- Raise and Init Modal "Choose address"
+- Raise and Init Modal "Gimme your address"
+- Raise and Init 2-step Modal "New Address"
+-- Autocomplete modal
+-- Confirm Address modal
+- API: PUT method with address
+- Google Maps API load and calls + Geocoding
+-- Places autocomplete
+-- Get Place
+-- Locate address
+
+
+Styling
+==================
+https://developers.google.com/maps/documentation/javascript/places-autocomplete#style-autocomplete
 
 
 
-stous logged in xristes an den exei kamia diefthinsi ton pame kateftheian sto map
-
-for meeting
-----------
-- homepage? *critical* (cities / cuisines)
-autosuggestion leipei.
 
 
-1 epilogi
+
+
+// page load
+// pernoume to kalathi me ajax call
+// checkaroume ti metaviliti data delivery type gia na kanoume set to delivery type
+
+
+
+
+

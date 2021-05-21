@@ -14,6 +14,7 @@ import Cart from './cart';
 import DeliveryType from './deliveryType';
 import API from './api';
 import { store } from './store';
+import AddressComponent from './addressComponent';
 
 class App {
   constructor() {
@@ -45,10 +46,15 @@ class App {
       loader: document.querySelector('.delivery-loader'),
     };
 
-    // Product modal (add product to basket)
+    // Product modal (add product to basket) (must be before cart)
     const storeMenuCatalog = document.querySelector('.store-menu__catalog');
     if (storeMenuCatalog) {
       this.productList = new ProductList(app);
+    }
+    // Delivery type (must be before cart)
+    const deliveryTypeElement = document.querySelector('.delivery-type');
+    if (deliveryTypeElement) {
+      this.deliveryType = new DeliveryType();
     }
 
     // Cart element
@@ -57,11 +63,8 @@ class App {
       this.cart = new Cart();
     }
 
-    // Delivery type
-    const deliveryTypeElement = document.querySelector('.delivery-type');
-    if (deliveryTypeElement) {
-      this.deliveryType = new DeliveryType();
-    }
+    // Address Component
+    this.addressComponent = new AddressComponent();
 
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');

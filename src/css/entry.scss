@@ -10,7 +10,6 @@
 @import './base/fonts.scss';
 @import './base/containers.scss';
 
-@import './components/custom-scroll.scss';
 // Components
 @import './components/header.scss';
 @import './components/footer.scss';
@@ -32,3 +31,6 @@
 @import './components/product-modal.scss';
 @import './components/cart.scss';
 @import './components/delivery-type.scss';
+@import './components/custom-scroll.scss';
+@import './components/choose-address.scss';
+@import './components/address-trigger.scss';

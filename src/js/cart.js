@@ -4,10 +4,12 @@ import PubSub from 'pubsub-js';
 import Product from './product';
 import API from './api';
 import { store } from './store';
+import { deliveryTypes } from './enum';
 
 export default class {
   constructor() {
     autoBind(this);
+
     this.api = new API();
     this.DOM = {};
     this.DOM.cart = document.querySelector('.cart');
@@ -62,7 +64,6 @@ export default class {
           },
         };
         if (el.dataset.open) {
-          console.log('hi');
           accordionOptions.openOnInit = [0];
         }
         tmpAccordionContainer = new Accordion(el, accordionOptions);
@@ -167,6 +168,15 @@ export default class {
 
     // Re init
     this.init();
+
+    // Set delivery type
+    if (this.DOM.cartBody.dataset.deliveryType === deliveryTypes.DELIVERY) {
+      store.app.deliveryType.setMethodDeliveryWithoutAPICall();
+    } else if (
+      this.DOM.cartBody.dataset.deliveryType === deliveryTypes.TAKEAWAY
+    ) {
+      store.app.deliveryType.setMethodTakeAwayWithoutAPICall();
+    }
 
     PubSub.publish('hide_loader');
   }

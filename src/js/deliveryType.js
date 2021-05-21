@@ -5,11 +5,7 @@ import { store } from './store';
 import API from './api';
 import texts from './texts';
 import { currencyFormat } from './utils';
-
-const deliveryTypes = {
-  DELIVERY: 'delivery',
-  TAKEAWAY: 'takeaway',
-};
+import { deliveryTypes } from './enum';
 
 export default class {
   constructor() {
@@ -67,7 +63,7 @@ export default class {
     this.setCopies();
 
     // Publish the event to the cart with the data
-  PubSub.publish('cart_update', cart);
+    PubSub.publish('cart_update', cart);
 
     PubSub.publish('hide_loader');
   }
@@ -106,4 +102,24 @@ export default class {
       this.DOM.bottomCopy.innerText = texts.takeaway;
     }
   }
+
+  setMethodTakeAwayWithoutAPICall() {
+    this.deliveryMethod = deliveryTypes.TAKEAWAY;
+    this.DOM.deliveryButton.classList.remove('active');
+    this.DOM.takeawayButton.classList.add('active');
+
+    // Change copies
+    this.setCopies();
+  }
+
+  setMethodDeliveryWithoutAPICall() {
+    this.deliveryMethod = deliveryTypes.DELIVERY;
+    this.DOM.takeawayButton.classList.remove('active');
+    this.DOM.deliveryButton.classList.add('active');
+
+    // Change copies
+    this.setCopies();
+  }
 }
+
+
