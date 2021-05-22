@@ -1,0 +1,29 @@
+.layout {
+  display: flex;
+  &__a {
+    width: 50%;
+  }
+  &__b {
+    width: 50%;
+  }
+}
+
+.content {
+  outline: 1px solid red;
+  margin: 30px;
+}
+.content-900 {
+  height: 900px;
+}
+.content-300 {
+  height: 300px;
+}
+
+.width-info {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
