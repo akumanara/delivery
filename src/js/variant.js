@@ -1,5 +1,6 @@
 import EventEmitter from 'events';
 import texts from './texts';
+import { has } from './utils';
 
 export default class extends EventEmitter {
   constructor(variants) {
@@ -59,5 +60,13 @@ export default class extends EventEmitter {
 
     // Emit to the product class
     this.emit('selection', this.selectedOption);
+  }
+
+  preselectCartValue() {
+    this.variants.forEach((element) => {
+      if (has(element, 'selected') && element.selected === true) {
+        this.selectOption(element);
+      }
+    });
   }
 }

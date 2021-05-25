@@ -269,3 +269,12 @@ an valoume ta filtra mesa sto idio container me sticky top.
 
 
 
+
+todo for internal launch
+==================
+- new address / change address
+- favorite api
+- [product modal] on edit from cart. quantity field to be updated on show modal
+- [product modal] on edit from cart. selected attribute on variants and ingredients as key selected: '1',
+- [dummy] catalog page - search - img
+- [dummy] catalog page  - header navigation - img - link to catalog

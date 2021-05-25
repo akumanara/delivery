@@ -1,6 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import axios from 'axios';
 import product from './productData';
+import productFromCart from './productDataFromCart';
 import { store } from './store';
 
 export default class {
@@ -35,7 +36,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(product);
+          resolve(productFromCart);
         }, 200),
       );
     }
@@ -266,8 +267,6 @@ export default class {
         console.log(error);
       });
   }
-
-
 
   // TODO
   addStoreToFavorites() {

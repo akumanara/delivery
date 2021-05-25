@@ -52,7 +52,6 @@ export default class {
     this.template = HandlebarsTemplate;
     this.element = productElement;
     this.api = new API();
-
     this.init();
   }
 
@@ -426,6 +425,23 @@ export default class {
     Panzoom(img);
   }
 
+  preselectCartValues() {
+    console.log('preselecting values');
+    // Qty
+    this.quantity = this.productJSON.quantity;
+    this.DOM.qty.innerText = this.quantity;
+    // variant if exists
+    if (this.variant) {
+      this.variant.preselectCartValue();
+    }
+    // group options
+    this.groupOptions.forEach((groupOption) => {
+      groupOption.preselectCartValue();
+    });
+
+    // this.calculatePrice();
+  }
+
   // STORE MENU API FUNCTIONS
   // ==============================================================================================
   // ==============================================================================================
@@ -444,6 +460,8 @@ export default class {
         this.createModal();
         // Init the modal
         this.initModal();
+        // Calculate the final price
+        this.calculatePrice();
       })
       .catch((error) => {
         alert(error.message);
@@ -531,6 +549,10 @@ export default class {
         this.createModal();
         // Init the modal
         this.initModal();
+        // Preselect values
+        this.preselectCartValues();
+        // Calculate the final price
+        this.calculatePrice();
       })
       .catch((error) => {
         alert(error.message);

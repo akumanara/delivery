@@ -1,7 +1,7 @@
 import EventEmitter from 'events';
 import currency from 'currency.js';
 import texts from './texts';
-import { currencyFormat } from './utils';
+import { currencyFormat, has } from './utils';
 
 export default class extends EventEmitter {
   constructor(groupOption) {
@@ -134,7 +134,6 @@ export default class extends EventEmitter {
     let calculatedPrice = currency(0);
     this.selectedOptions.forEach((ingredient) => {
       if (Number(ingredient.default) === 1) {
-        // TODO numeric ingredients
         // It is default ingredient. We dont add to the price
         return;
       }
@@ -176,5 +175,13 @@ export default class extends EventEmitter {
     }
 
     this.updateTopText();
+  }
+
+  preselectCartValue() {
+    this.groupOption.ingredients.forEach((option) => {
+      if (has(option, 'selected') && option.selected === true) {
+        this.optionClicked(option);
+      }
+    });
   }
 }

@@ -10,11 +10,15 @@ Todo:
   ☐ [general] alerts (simple / timer / closable)
 
 
+
+
 Doing:
   ☐ [store] new / change address accordion - @critical
 
 
 Done:
+  ✔ [product modal] on edit from cart. quantity field to be updated on show modal @done(21-05-25 18:51)
+  ✔ [product modal] on edit from cart. selected attribute on variants and ingredients as key selected: '1', @done(21-05-25 18:51)
   ✔ [cart] kathe fora p erxete to cart na vazoume ta prointa pou yparxoun sto cart me status in-cart sto store menu list. @done(21-05-20 15:28)
   ✔ [IMPROVMENT] na valoume 2 div sto product modal kai sto cart gia ta +/- wsta einai 50% kai na patiounte pio efkola @done(21-05-20 13:02)
   ✔ [cart] open on init accordion. otan erxete pali to cart apo to server @done(21-05-20 12:52)
@@ -31,3 +35,7 @@ Done:
   ✔ favorite button
   ✔ Currency sto product modal
   ✔ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
+
+
+
+
