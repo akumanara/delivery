@@ -1,21 +1,21 @@
 /* global MODE */
-// import autoBind from 'auto-bind';
-// import Swiper from 'swiper/bundle';
-// import lozad from 'lozad';
-// import FastAverageColor from 'fast-average-color';
-// import Accordion from 'accordion-js';
-// import List from 'list.js';
-// import arrayMove from 'array-move';
-// import PubSub from 'pubsub-js';
-// import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
-// import StoreCatalog from './storeCatalog';
-// import ProductList from './productList';
-// import Cart from './cart';
-// import DeliveryType from './deliveryType';
-// import API from './api';
-// import { store } from './store';
-// import AddressComponent from './addressComponent';
-import Layout from './layout';
+import autoBind from 'auto-bind';
+import Swiper from 'swiper/bundle';
+import lozad from 'lozad';
+import FastAverageColor from 'fast-average-color';
+import Accordion from 'accordion-js';
+import List from 'list.js';
+import arrayMove from 'array-move';
+import PubSub from 'pubsub-js';
+import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
+import StoreCatalog from './storeCatalog';
+import ProductList from './productList';
+import Cart from './cart';
+import DeliveryType from './deliveryType';
+import API from './api';
+import { store } from './store';
+import AddressComponent from './addressComponent';
+// import Layout from './layout';
 
 class App {
   constructor() {
@@ -275,6 +275,6 @@ class App {
   }
 }
 
-// window.globalApp = new App();
+window.globalApp = new App();
 
-const a = new Layout();
+// const a = new Layout();

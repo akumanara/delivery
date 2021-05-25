@@ -137,4 +137,20 @@
     width: 100%;
     object-fit: cover;
   }
+
+  @media (min-width: 600px) {
+    & {
+      display: flex;
+      flex-direction: row;
+    }
+    &__slider {
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+
+      .swiper-wrapper {
+        flex-direction: column;
+      }
+    }
+  }
 }

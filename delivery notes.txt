@@ -259,13 +259,12 @@ https://developers.google.com/maps/documentation/javascript/places-autocomplete#
 
 
 
-
-
-
-// page load
-// pernoume to kalathi me ajax call
-// checkaroume ti metaviliti data delivery type gia na kanoume set to delivery type
-
+Responsive
+==================
+an valoume ta filtra mesa sto idio container me sticky top.
+- Den xreiazete na kanoume 2 versions tou header (min/max). tha exoume mono to max.
+- eiani poli pio aplo se layout kai se container pou prepei na ftiaksoume (maintanence / error prone)
+-
 
 
 

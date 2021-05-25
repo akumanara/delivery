@@ -92,7 +92,9 @@ export default class {
   }
 
   setItem(index) {
-    this.swiper.slideTo(index, 300, true);
+    if (this.swiper) {
+      this.swiper.slideTo(index, 300, true);
+    }
     this.removeActiveFromAll();
     this.makeActive(index);
   }
