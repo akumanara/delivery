@@ -1,7 +1,7 @@
 /* eslint-disable class-methods-use-this */
 import axios from 'axios';
 import product from './productData';
-import productFromCart from './productDataFromCart';
+import productFromCart from './productDataFromCart2';
 import { store } from './store';
 
 export default class {

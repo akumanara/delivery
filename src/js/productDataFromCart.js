@@ -108,6 +108,7 @@ export default {
           },
           default: '0',
           max: 1,
+          selected: true,
         },
         {
           id: 2012867,
@@ -128,6 +129,7 @@ export default {
           },
           default: '1',
           max: 1,
+          selected: true,
         },
         {
           id: 2012868,

@@ -425,7 +425,15 @@ export default class {
     Panzoom(img);
   }
 
+  preselectDefaultIngredients() {
+    // group options
+    this.groupOptions.forEach((groupOption) => {
+      groupOption.preselectDefaultIngredients();
+    });
+  }
+
   preselectCartValues() {
+    // debugger;
     console.log('preselecting values');
     // Qty
     this.quantity = this.productJSON.quantity;
@@ -460,6 +468,8 @@ export default class {
         this.createModal();
         // Init the modal
         this.initModal();
+        // Preselect default ingredients
+        this.preselectDefaultIngredients();
         // Calculate the final price
         this.calculatePrice();
       })

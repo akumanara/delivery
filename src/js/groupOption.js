@@ -56,10 +56,7 @@ export default class extends EventEmitter {
     };
 
     // Preselect
-    this.preselectDefaultIngredients();
-
-    // Check for text
-    this.checkAddToCartFeasibility();
+    // this.preselectDefaultIngredients();
   }
 
   optionClicked(option) {
@@ -128,6 +125,8 @@ export default class extends EventEmitter {
         this.selectOption(ingredient);
       }
     });
+    // Check for text
+    this.checkAddToCartFeasibility();
   }
 
   calculateGroupOptionPrice() {
@@ -179,7 +178,9 @@ export default class extends EventEmitter {
 
   preselectCartValue() {
     this.groupOption.ingredients.forEach((option) => {
+      console.log(option);
       if (has(option, 'selected') && option.selected === true) {
+        console.log('selecting option');
         this.optionClicked(option);
       }
     });
