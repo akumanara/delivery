@@ -5,7 +5,10 @@ import { currencyFormat } from './utils';
 // Handlebars.registerPartial('myPartial', '{{prefix}}');
 
 Handlebars.registerHelper('currency', (price) => currencyFormat(price));
-const source = document.getElementById('entry-template').innerHTML;
-const HandlebarsTemplate = Handlebars.compile(source);
+const source = document.getElementById('entry-template');
+let HandlebarsTemplate;
+if (source) {
+  HandlebarsTemplate = Handlebars.compile(source.innerHTML);
+}
 
 export { HandlebarsTemplate };

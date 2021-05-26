@@ -8,6 +8,7 @@ export default class {
     this.DOM = {};
     this.DOM.trigger = document.querySelector('.address-trigger');
     this.DOM.chooseAddress = document.querySelector('.choose-address');
+    this.DOM.closeModal = document.querySelector('.choose-address__close-btn');
     // this.DOM.chooseAddress.querySelector('')
     this.init();
   }
@@ -15,6 +16,10 @@ export default class {
   init() {
     if (this.DOM.trigger) {
       this.DOM.trigger.addEventListener('click', this.triggerClicked);
+      this.DOM.closeModal.addEventListener(
+        'click',
+        this.hideChooseAddressModal,
+      );
     }
   }
 
@@ -32,5 +37,10 @@ export default class {
   showChooseAddressModal() {
     document.body.classList.add('hide-overflow');
     this.DOM.chooseAddress.classList.add('choose-address--active');
+  }
+
+  hideChooseAddressModal() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.chooseAddress.classList.remove('choose-address--active');
   }
 }

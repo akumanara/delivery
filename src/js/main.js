@@ -32,10 +32,14 @@ class App {
 
     const app = this;
     autoBind(this);
-    showFPS();
-    document.querySelector('.header').addEventListener('click', () => {
-      document.querySelector('.stats').classList.toggle('display-none');
-    });
+
+    // FPS
+    if (MODE === 'development') {
+      showFPS();
+      document.querySelector('.header').addEventListener('click', () => {
+        document.querySelector('.stats').classList.toggle('display-none');
+      });
+    }
 
     this.api = new API();
 
@@ -128,57 +132,57 @@ class App {
 
     // List.js for sorting and searching on stores
     // always visible items. https://github.com/javve/list.js/issues/421
-    const storesListElement = document.querySelector('.stores');
-    if (storesListElement) {
-      const options = {
-        listClass: 'stores__list',
-        valueNames: [
-          'card__title',
-          { data: ['native', 'name', 'distance', 'rating'] },
-        ],
-      };
+    // const storesListElement = document.querySelector('.stores');
+    // if (storesListElement) {
+    //   const options = {
+    //     listClass: 'stores__list',
+    //     valueNames: [
+    //       'card__title',
+    //       { data: ['native', 'name', 'distance', 'rating'] },
+    //     ],
+    //   };
 
-      const storeList = new List(storesListElement, options);
-      // TODO remove this
-      window.list = storeList;
+    //   const storeList = new List(storesListElement, options);
+    //   // TODO remove this
+    //   window.list = storeList;
 
-      // TODO remove this
-      // populate demo stores
-      for (let index = 0; index < 100; index += 1) {
-        const native = Math.floor(Math.random() * 100);
-        const name = makeid(5);
-        const rating = Math.floor(Math.random() * 10);
-        const distance = Math.floor(Math.random() * 1000);
-        storeList.add({
-          card__title: `${name}.${native}.${rating}.${distance}`,
-          native,
-          name,
-          rating,
-          distance,
-        });
-      }
-      // search and filter
-      document.querySelector('#search-field').addEventListener('keyup', (e) => {
-        const searchString = document.querySelector('#search-field').value;
-        storeList.search(searchString);
-      });
+    //   // TODO remove this
+    //   // populate demo stores
+    //   for (let index = 0; index < 100; index += 1) {
+    //     const native = Math.floor(Math.random() * 100);
+    //     const name = makeid(5);
+    //     const rating = Math.floor(Math.random() * 10);
+    //     const distance = Math.floor(Math.random() * 1000);
+    //     storeList.add({
+    //       card__title: `${name}.${native}.${rating}.${distance}`,
+    //       native,
+    //       name,
+    //       rating,
+    //       distance,
+    //     });
+    //   }
+    //   // search and filter
+    //   document.querySelector('#search-field').addEventListener('keyup', (e) => {
+    //     const searchString = document.querySelector('#search-field').value;
+    //     storeList.search(searchString);
+    //   });
 
-      storeList.on('updated', (list) => {
-        console.log('updated');
-      });
-      storeList.on('searchStart', (list) => {
-        console.log('searchStart');
-      });
-      storeList.on('searchComplete', (list) => {
-        console.log('searchComplete');
-      });
+    //   storeList.on('updated', (list) => {
+    //     console.log('updated');
+    //   });
+    //   storeList.on('searchStart', (list) => {
+    //     console.log('searchStart');
+    //   });
+    //   storeList.on('searchComplete', (list) => {
+    //     console.log('searchComplete');
+    //   });
 
-      // how to change order manually.
-      window.doThat = function () {
-        arrayMove.mutate(storeList.items, 0, 10);
-        storeList.update();
-      };
-    }
+    //   // how to change order manually.
+    //   window.doThat = function () {
+    //     arrayMove.mutate(storeList.items, 0, 10);
+    //     storeList.update();
+    //   };
+    // }
 
     // Accordions for store info
     this.accordions = [];
