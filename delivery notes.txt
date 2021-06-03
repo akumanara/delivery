@@ -277,3 +277,8 @@ todo for internal launch
 - [dummy] catalog page - search - img
 - [dummy] catalog page - ad banner - img
 - [dummy] catalog page  - header navigation - img - link to catalog
+
+
+
+Bugs
+https://staging.delivery.gr/athina/ampelokipoi/roma-pizza-7865/online

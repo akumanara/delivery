@@ -166,12 +166,12 @@ export default class extends EventEmitter {
     if (this.selectedOptions.length < this.min) {
       this.cartFeasibility = false;
       this.DOM.topText.classList.add('has-error');
-      this.emit('disableAddToCart');
     } else {
       this.cartFeasibility = true;
       this.DOM.topText.classList.remove('has-error');
-      this.emit('enableAddToCart');
     }
+
+    this.emit('checkAddToCartFeasibility');
 
     this.updateTopText();
   }

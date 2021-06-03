@@ -127,8 +127,10 @@ export default class {
       this.productJSON.ingredient_categories.forEach((groupOption) => {
         const tmpGroupOption = new GroupOption(groupOption);
         tmpGroupOption.on('selection', this.selectedGroupOption);
-        tmpGroupOption.on('disableAddToCart', this.disableAddToCart);
-        tmpGroupOption.on('enableAddToCart', this.enableAddToCart);
+        tmpGroupOption.on(
+          'checkAddToCartFeasibility',
+          this.checkAddToCartFeasibility,
+        );
         this.groupOptions.push(tmpGroupOption);
       });
     }
@@ -404,6 +406,7 @@ export default class {
   }
 
   enableAddToCart() {
+    console.log('enableAddToCart');
     this.isAddToCartEnabled = true;
     this.DOM.addToCartBtn.classList.remove(
       'product-modal__add-to-cart-btn--disabled',
@@ -411,11 +414,23 @@ export default class {
   }
 
   checkAddToCartFeasibility() {
-    this.groupOptions.forEach((element) => {
-      if (!element.cartFeasibility) {
-        this.disableAddToCart();
-      }
+    console.log('checking add to cart feasibility');
+    const feasibility = !this.groupOptions.some((el) => {
+      console.log(el);
+      return !el.cartFeasibility;
     });
+
+    if (feasibility) {
+      this.enableAddToCart();
+    } else {
+      this.disableAddToCart();
+    }
+
+    // this.groupOptions.forEach((element) => {
+    //   if (!element.cartFeasibility) {
+    //     this.disableAddToCart();
+    //   }
+    // });
   }
 
   zoomMode(img) {
