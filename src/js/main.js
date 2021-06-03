@@ -19,6 +19,7 @@ import AddressComponent from './addressComponent';
 
 class App {
   constructor() {
+    window.addEventListener('load', this.windowLoaded);
     // save the main object for later use
     store.app = this;
 
@@ -276,6 +277,10 @@ class App {
   hideLoader() {
     console.log('hideLoader');
     this.DOM.loader.classList.remove('active');
+  }
+
+  windowLoaded() {
+    document.body.classList.add('page-loaded');
   }
 }
 

@@ -13,6 +13,9 @@
 
 @import './components/dummy.scss';
 
+// Helper classes
+@import './base/helpers.scss';
+
 // Components
 @import './components/header.scss';
 @import './components/footer.scss';

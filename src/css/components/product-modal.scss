@@ -20,6 +20,8 @@ body {
     overflow-y: scroll;
     // outline: 1px solid red;
     background-color: white;
+    display: flex;
+    flex-direction: column;
   }
 
   &__header {
@@ -43,6 +45,7 @@ body {
     // used because we have the add to cart and qty buttons
     //only for fixed not sticky
     // padding-bottom: 100px;
+    flex-grow: 1;
   }
 
   &__title {
