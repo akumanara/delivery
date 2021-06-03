@@ -4467,5 +4467,1573 @@
         ]
       }
     ]
+  },
+  {
+    "timeStamp": 1622713740678,
+    "time": 18781,
+    "hash": "a769f18776d5410783c1",
+    "errors": [],
+    "size": 1128371,
+    "assets": [
+      {
+        "name": "app.js",
+        "chunks": [
+          0
+        ],
+        "size": 1128371,
+        "miniSize": 1133224,
+        "minified": false
+      }
+    ],
+    "chunks": [
+      {
+        "size": 3043550,
+        "files": [
+          "app.js"
+        ],
+        "modules": [
+          {
+            "name": "./node_modules/tslib/tslib.es6.js",
+            "size": 10274,
+            "id": 0
+          },
+          {
+            "name": "./node_modules/inherits/inherits_browser.js",
+            "size": 753,
+            "id": 1
+          },
+          {
+            "name": "./node_modules/@sentry/tracing/esm/utils.js",
+            "size": 2210,
+            "id": 3
+          },
+          {
+            "name": "./node_modules/safe-buffer/index.js",
+            "size": 1529,
+            "id": 4
+          },
+          {
+            "name": "./node_modules/pubsub-js/src/pubsub.js",
+            "size": 11109,
+            "id": 5
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/logger.js",
+            "size": 2039,
+            "id": 6
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/is.js",
+            "size": 4258,
+            "id": 7
+          },
+          {
+            "name": "./node_modules/@sentry/tracing/esm/spanstatus.js",
+            "size": 3612,
+            "id": 8
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/misc.js",
+            "size": 8761,
+            "id": 9
+          },
+          {
+            "name": "(webpack)/buildin/global.js",
+            "size": 472,
+            "id": 10
+          },
+          {
+            "name": "./node_modules/process/browser.js",
+            "size": 5418,
+            "id": 11
+          },
+          {
+            "name": "./node_modules/buffer/index.js",
+            "size": 48590,
+            "id": 12
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/utils.js",
+            "size": 10309,
+            "id": 13
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/object.js",
+            "size": 12047,
+            "id": 14
+          },
+          {
+            "name": "./node_modules/axios/lib/utils.js",
+            "size": 8947,
+            "id": 15
+          },
+          {
+            "name": "./node_modules/minimalistic-assert/index.js",
+            "size": 252,
+            "id": 16
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/utils.js",
+            "size": 2361,
+            "id": 17
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/exception.js",
+            "size": 5950,
+            "id": 18
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/node.js",
+            "size": 1755,
+            "id": 19
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/utils.js",
+            "size": 6527,
+            "id": 20
+          },
+          {
+            "name": "./node_modules/auto-bind/index.js",
+            "size": 978,
+            "id": 21
+          },
+          {
+            "name": "./node_modules/axios/index.js",
+            "size": 40,
+            "id": 22
+          },
+          {
+            "name": "./node_modules/elliptic/node_modules/bn.js/lib/bn.js",
+            "size": 87731,
+            "id": 24
+          },
+          {
+            "name": "./node_modules/events/events.js",
+            "size": 14890,
+            "id": 25
+          },
+          {
+            "name": "./node_modules/currency.js/dist/currency.min.js",
+            "size": 2400,
+            "id": 26
+          },
+          {
+            "name": "(webpack)/buildin/module.js",
+            "size": 497,
+            "id": 28
+          },
+          {
+            "name": "./node_modules/cipher-base/index.js",
+            "size": 2227,
+            "id": 29
+          },
+          {
+            "name": "./node_modules/accordion-js/dist/accordion.min.js",
+            "size": 7227,
+            "id": 30
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/lib/_stream_duplex.js",
+            "size": 4015,
+            "id": 31
+          },
+          {
+            "name": "./node_modules/@sentry/tracing/esm/hubextensions.js",
+            "size": 9769,
+            "id": 32
+          },
+          {
+            "name": "./node_modules/@sentry/tracing/esm/span.js",
+            "size": 7964,
+            "id": 33
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/string.js",
+            "size": 2681,
+            "id": 34
+          },
+          {
+            "name": "./node_modules/randombytes/browser.js",
+            "size": 1577,
+            "id": 35
+          },
+          {
+            "name": "./node_modules/readable-stream/errors-browser.js",
+            "size": 4197,
+            "id": 36
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/_stream_duplex.js",
+            "size": 4399,
+            "id": 37
+          },
+          {
+            "name": "./node_modules/sha.js/hash.js",
+            "size": 1889,
+            "id": 38
+          },
+          {
+            "name": "./node_modules/@sentry/tracing/esm/idletransaction.js",
+            "size": 11017,
+            "id": 39
+          },
+          {
+            "name": "./node_modules/@sentry/tracing/esm/transaction.js",
+            "size": 5122,
+            "id": 40
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/time.js",
+            "size": 7287,
+            "id": 41
+          },
+          {
+            "name": "./node_modules/@sentry/hub/esm/hub.js + 1 modules",
+            "size": 26142,
+            "id": 42
+          },
+          {
+            "name": "./node_modules/create-hash/browser.js",
+            "size": 625,
+            "id": 43
+          },
+          {
+            "name": "./node_modules/string_decoder/lib/string_decoder.js",
+            "size": 9465,
+            "id": 44
+          },
+          {
+            "name": "./node_modules/core-util-is/lib/util.js",
+            "size": 3021,
+            "id": 45
+          },
+          {
+            "name": "./node_modules/buffer-xor/index.js",
+            "size": 206,
+            "id": 46
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/common.js",
+            "size": 2312,
+            "id": 47
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/base/buffer.js",
+            "size": 4141,
+            "id": 48
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/syncpromise.js",
+            "size": 6524,
+            "id": 49
+          },
+          {
+            "name": "./node_modules/process-nextick-args/index.js",
+            "size": 1083,
+            "id": 50
+          },
+          {
+            "name": "./node_modules/browserify-aes/aes.js",
+            "size": 6242,
+            "id": 51
+          },
+          {
+            "name": "./node_modules/evp_bytestokey/index.js",
+            "size": 1192,
+            "id": 52
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/curve/base.js",
+            "size": 9202,
+            "id": 53
+          },
+          {
+            "name": "./node_modules/parse-asn1/index.js",
+            "size": 3713,
+            "id": 54
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/stacktrace.js",
+            "size": 531,
+            "id": 55
+          },
+          {
+            "name": "./node_modules/@sentry/hub/esm/scope.js",
+            "size": 15481,
+            "id": 56
+          },
+          {
+            "name": "./node_modules/@sentry/types/esm/transaction.js",
+            "size": 424,
+            "id": 57
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/events.js",
+            "size": 1833,
+            "id": 58
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/classes.js",
+            "size": 2859,
+            "id": 59
+          },
+          {
+            "name": "(webpack)/buildin/harmony-module.js",
+            "size": 573,
+            "id": 60
+          },
+          {
+            "name": "./node_modules/md5.js/index.js",
+            "size": 4606,
+            "id": 61
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/internal/streams/end-of-stream.js",
+            "size": 3102,
+            "id": 62
+          },
+          {
+            "name": "./node_modules/ripemd160/index.js",
+            "size": 4576,
+            "id": 63
+          },
+          {
+            "name": "./node_modules/sha.js/index.js",
+            "size": 468,
+            "id": 64
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/readable-browser.js",
+            "size": 351,
+            "id": 65
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/lib/_stream_writable.js",
+            "size": 20317,
+            "id": 66
+          },
+          {
+            "name": "./node_modules/des.js/lib/des/cipher.js",
+            "size": 3326,
+            "id": 67
+          },
+          {
+            "name": "./node_modules/browserify-aes/browser.js",
+            "size": 500,
+            "id": 68
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/index.js",
+            "size": 364,
+            "id": 69
+          },
+          {
+            "name": "./node_modules/brorand/index.js",
+            "size": 1510,
+            "id": 70
+          },
+          {
+            "name": "./node_modules/browserify-sign/node_modules/safe-buffer/index.js",
+            "size": 1670,
+            "id": 71
+          },
+          {
+            "name": "./node_modules/browserify-rsa/index.js",
+            "size": 1083,
+            "id": 72
+          },
+          {
+            "name": "./node_modules/bn.js/lib/bn.js",
+            "size": 90429,
+            "id": 73
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic.js",
+            "size": 371,
+            "id": 74
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/curves.js",
+            "size": 6453,
+            "id": 75
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash.js",
+            "size": 444,
+            "id": 76
+          },
+          {
+            "name": "./node_modules/safer-buffer/safer.js",
+            "size": 2110,
+            "id": 77
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/base/node.js",
+            "size": 16732,
+            "id": 78
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/base/reporter.js",
+            "size": 2682,
+            "id": 79
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/constants/der.js",
+            "size": 1012,
+            "id": 80
+          },
+          {
+            "name": "./node_modules/public-encrypt/node_modules/bn.js/lib/bn.js",
+            "size": 87731,
+            "id": 81
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/base.js",
+            "size": 9636,
+            "id": 82
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/browser.js",
+            "size": 2640,
+            "id": 83
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/supports.js",
+            "size": 5210,
+            "id": 84
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars.js",
+            "size": 4900,
+            "id": 85
+          },
+          {
+            "name": "./node_modules/list.js/src/index.js",
+            "size": 6397,
+            "id": 86
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/get-by-class.js",
+            "size": 1870,
+            "id": 87
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/extend.js",
+            "size": 444,
+            "id": 88
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/index-of.js",
+            "size": 205,
+            "id": 89
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/to-array.js",
+            "size": 1171,
+            "id": 90
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/to-string.js",
+            "size": 121,
+            "id": 91
+          },
+          {
+            "name": "./node_modules/list.js/src/item.js",
+            "size": 1602,
+            "id": 92
+          },
+          {
+            "name": "./node_modules/isarray/index.js",
+            "size": 132,
+            "id": 93
+          },
+          {
+            "name": "./node_modules/hash-base/index.js",
+            "size": 2323,
+            "id": 94
+          },
+          {
+            "name": "./node_modules/readable-stream/readable-browser.js",
+            "size": 488,
+            "id": 95
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/_stream_readable.js",
+            "size": 35972,
+            "id": 96
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/internal/streams/stream-browser.js",
+            "size": 49,
+            "id": 97
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/internal/streams/destroy.js",
+            "size": 3117,
+            "id": 98
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/internal/streams/state.js",
+            "size": 749,
+            "id": 99
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/_stream_writable.js",
+            "size": 21821,
+            "id": 100
+          },
+          {
+            "name": "./node_modules/util-deprecate/browser.js",
+            "size": 1614,
+            "id": 101
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/_stream_transform.js",
+            "size": 7947,
+            "id": 102
+          },
+          {
+            "name": "./node_modules/sha.js/sha256.js",
+            "size": 3275,
+            "id": 103
+          },
+          {
+            "name": "./node_modules/sha.js/sha512.js",
+            "size": 7180,
+            "id": 104
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/lib/_stream_readable.js",
+            "size": 31324,
+            "id": 105
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/lib/internal/streams/stream-browser.js",
+            "size": 49,
+            "id": 106
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/lib/internal/streams/destroy.js",
+            "size": 1849,
+            "id": 107
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/lib/_stream_transform.js",
+            "size": 7742,
+            "id": 108
+          },
+          {
+            "name": "./node_modules/create-hmac/browser.js",
+            "size": 1584,
+            "id": 109
+          },
+          {
+            "name": "./node_modules/create-hash/md5.js",
+            "size": 111,
+            "id": 110
+          },
+          {
+            "name": "./node_modules/browserify-sign/browser/algorithms.json",
+            "size": 2863,
+            "id": 111
+          },
+          {
+            "name": "./node_modules/pbkdf2/browser.js",
+            "size": 83,
+            "id": 112
+          },
+          {
+            "name": "./node_modules/pbkdf2/lib/precondition.js",
+            "size": 507,
+            "id": 113
+          },
+          {
+            "name": "./node_modules/pbkdf2/lib/default-encoding.js",
+            "size": 336,
+            "id": 114
+          },
+          {
+            "name": "./node_modules/pbkdf2/lib/sync-browser.js",
+            "size": 2514,
+            "id": 115
+          },
+          {
+            "name": "./node_modules/pbkdf2/lib/to-buffer.js",
+            "size": 414,
+            "id": 116
+          },
+          {
+            "name": "./node_modules/des.js/lib/des/utils.js",
+            "size": 6606,
+            "id": 117
+          },
+          {
+            "name": "./node_modules/des.js/lib/des/des.js",
+            "size": 3159,
+            "id": 118
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/ctr.js",
+            "size": 908,
+            "id": 119
+          },
+          {
+            "name": "./node_modules/browserify-aes/incr32.js",
+            "size": 260,
+            "id": 120
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/list.json",
+            "size": 3087,
+            "id": 121
+          },
+          {
+            "name": "./node_modules/browserify-aes/authCipher.js",
+            "size": 3019,
+            "id": 122
+          },
+          {
+            "name": "./node_modules/browserify-aes/streamCipher.js",
+            "size": 659,
+            "id": 123
+          },
+          {
+            "name": "./node_modules/diffie-hellman/lib/generatePrime.js",
+            "size": 2237,
+            "id": 124
+          },
+          {
+            "name": "./node_modules/diffie-hellman/node_modules/bn.js/lib/bn.js",
+            "size": 87731,
+            "id": 125
+          },
+          {
+            "name": "./node_modules/miller-rabin/lib/mr.js",
+            "size": 2490,
+            "id": 126
+          },
+          {
+            "name": "./node_modules/minimalistic-crypto-utils/lib/utils.js",
+            "size": 1140,
+            "id": 127
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/curve/index.js",
+            "size": 173,
+            "id": 128
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/sha/common.js",
+            "size": 907,
+            "id": 129
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/sha/256.js",
+            "size": 2878,
+            "id": 130
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/sha/512.js",
+            "size": 8342,
+            "id": 131
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1.js",
+            "size": 285,
+            "id": 132
+          },
+          {
+            "name": "./node_modules/asn1.js/node_modules/bn.js/lib/bn.js",
+            "size": 87731,
+            "id": 133
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/encoders/index.js",
+            "size": 108,
+            "id": 134
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/encoders/der.js",
+            "size": 7878,
+            "id": 135
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/decoders/index.js",
+            "size": 108,
+            "id": 136
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/decoders/der.js",
+            "size": 8062,
+            "id": 137
+          },
+          {
+            "name": "./node_modules/browserify-sign/browser/curves.json",
+            "size": 178,
+            "id": 138
+          },
+          {
+            "name": "./node_modules/public-encrypt/mgf.js",
+            "size": 423,
+            "id": 139
+          },
+          {
+            "name": "./node_modules/public-encrypt/xor.js",
+            "size": 129,
+            "id": 140
+          },
+          {
+            "name": "./node_modules/public-encrypt/withPublic.js",
+            "size": 275,
+            "id": 141
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/bind.js",
+            "size": 256,
+            "id": 142
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/buildURL.js",
+            "size": 1644,
+            "id": 143
+          },
+          {
+            "name": "./node_modules/axios/lib/cancel/isCancel.js",
+            "size": 102,
+            "id": 144
+          },
+          {
+            "name": "./node_modules/axios/lib/defaults.js",
+            "size": 2563,
+            "id": 145
+          },
+          {
+            "name": "./node_modules/axios/lib/adapters/xhr.js",
+            "size": 5869,
+            "id": 146
+          },
+          {
+            "name": "./node_modules/axios/lib/core/createError.js",
+            "size": 625,
+            "id": 147
+          },
+          {
+            "name": "./node_modules/axios/lib/core/mergeConfig.js",
+            "size": 2895,
+            "id": 148
+          },
+          {
+            "name": "./node_modules/axios/lib/cancel/Cancel.js",
+            "size": 385,
+            "id": 149
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/helpers.js",
+            "size": 3909,
+            "id": 150
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/logger.js",
+            "size": 3883,
+            "id": 151
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/internal/proto-access.js",
+            "size": 8678,
+            "id": 152
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/no-conflict.js",
+            "size": 1532,
+            "id": 153
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/ast.js",
+            "size": 3425,
+            "id": 154
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js",
+            "size": 12631,
+            "id": 155
+          },
+          {
+            "name": "./node_modules/lozad/dist/lozad.min.js",
+            "size": 3095,
+            "id": 156
+          },
+          {
+            "name": "./node_modules/stats.js/build/stats.min.js",
+            "size": 1965,
+            "id": 157
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/memo.js",
+            "size": 1634,
+            "id": 158
+          },
+          {
+            "name": "./node_modules/@sentry/tracing/esm/errors.js",
+            "size": 868,
+            "id": 159
+          },
+          {
+            "name": "./node_modules/randomstring/index.js",
+            "size": 47,
+            "id": 160
+          },
+          {
+            "name": "./node_modules/@sentry/utils/esm/instrument.js",
+            "size": 22019,
+            "id": 161
+          },
+          {
+            "name": "./node_modules/string-natural-compare/natural-compare.js",
+            "size": 2864,
+            "id": 171
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/get-attribute.js",
+            "size": 645,
+            "id": 172
+          },
+          {
+            "name": "./node_modules/list.js/src/add-async.js",
+            "size": 403,
+            "id": 173
+          },
+          {
+            "name": "./node_modules/list.js/src/pagination.js",
+            "size": 3701,
+            "id": 174
+          },
+          {
+            "name": "./node_modules/list.js/src/parse.js",
+            "size": 1256,
+            "id": 175
+          },
+          {
+            "name": "./node_modules/list.js/src/templater.js",
+            "size": 5463,
+            "id": 176
+          },
+          {
+            "name": "./node_modules/list.js/src/search.js",
+            "size": 4343,
+            "id": 177
+          },
+          {
+            "name": "./node_modules/list.js/src/filter.js",
+            "size": 748,
+            "id": 178
+          },
+          {
+            "name": "./node_modules/list.js/src/sort.js",
+            "size": 3387,
+            "id": 179
+          },
+          {
+            "name": "./node_modules/list.js/src/fuzzy-search.js",
+            "size": 2017,
+            "id": 180
+          },
+          {
+            "name": "./node_modules/list.js/src/utils/fuzzy.js",
+            "size": 4513,
+            "id": 181
+          },
+          {
+            "name": "./node_modules/array-move/index.js",
+            "size": 495,
+            "id": 182
+          },
+          {
+            "name": "./node_modules/randomstring/lib/randomstring.js",
+            "size": 2206,
+            "id": 183
+          },
+          {
+            "name": "./node_modules/crypto-browserify/index.js",
+            "size": 2942,
+            "id": 184
+          },
+          {
+            "name": "./node_modules/base64-js/index.js",
+            "size": 3932,
+            "id": 185
+          },
+          {
+            "name": "./node_modules/ieee754/index.js",
+            "size": 2154,
+            "id": 186
+          },
+          {
+            "name": "./node_modules/hash-base/node_modules/safe-buffer/index.js",
+            "size": 1670,
+            "id": 187
+          },
+          {
+            "name": "util (ignored)",
+            "size": 15,
+            "id": 188
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/internal/streams/buffer_list.js",
+            "size": 6335,
+            "id": 189
+          },
+          {
+            "name": "util (ignored)",
+            "size": 15,
+            "id": 190
+          },
+          {
+            "name": "./node_modules/string_decoder/node_modules/safe-buffer/index.js",
+            "size": 1670,
+            "id": 191
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/internal/streams/async_iterator.js",
+            "size": 5957,
+            "id": 192
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/internal/streams/from-browser.js",
+            "size": 101,
+            "id": 193
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/_stream_passthrough.js",
+            "size": 1630,
+            "id": 194
+          },
+          {
+            "name": "./node_modules/readable-stream/lib/internal/streams/pipeline.js",
+            "size": 2428,
+            "id": 195
+          },
+          {
+            "name": "./node_modules/sha.js/sha.js",
+            "size": 1913,
+            "id": 196
+          },
+          {
+            "name": "./node_modules/sha.js/sha1.js",
+            "size": 2030,
+            "id": 197
+          },
+          {
+            "name": "./node_modules/sha.js/sha224.js",
+            "size": 1091,
+            "id": 198
+          },
+          {
+            "name": "./node_modules/sha.js/sha384.js",
+            "size": 1167,
+            "id": 199
+          },
+          {
+            "name": "./node_modules/stream-browserify/index.js",
+            "size": 3627,
+            "id": 200
+          },
+          {
+            "name": "util (ignored)",
+            "size": 15,
+            "id": 201
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/lib/internal/streams/BufferList.js",
+            "size": 2059,
+            "id": 202
+          },
+          {
+            "name": "util (ignored)",
+            "size": 15,
+            "id": 203
+          },
+          {
+            "name": "./node_modules/timers-browserify/main.js",
+            "size": 2022,
+            "id": 204
+          },
+          {
+            "name": "./node_modules/setimmediate/setImmediate.js",
+            "size": 6475,
+            "id": 205
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/lib/_stream_passthrough.js",
+            "size": 1753,
+            "id": 206
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/writable-browser.js",
+            "size": 55,
+            "id": 207
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/duplex-browser.js",
+            "size": 53,
+            "id": 208
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/transform.js",
+            "size": 49,
+            "id": 209
+          },
+          {
+            "name": "./node_modules/stream-browserify/node_modules/readable-stream/passthrough.js",
+            "size": 51,
+            "id": 210
+          },
+          {
+            "name": "./node_modules/create-hmac/legacy.js",
+            "size": 969,
+            "id": 211
+          },
+          {
+            "name": "./node_modules/browserify-sign/algos.js",
+            "size": 54,
+            "id": 212
+          },
+          {
+            "name": "./node_modules/pbkdf2/lib/async.js",
+            "size": 2639,
+            "id": 213
+          },
+          {
+            "name": "./node_modules/browserify-cipher/browser.js",
+            "size": 2021,
+            "id": 214
+          },
+          {
+            "name": "./node_modules/browserify-des/index.js",
+            "size": 1203,
+            "id": 215
+          },
+          {
+            "name": "./node_modules/des.js/lib/des.js",
+            "size": 205,
+            "id": 216
+          },
+          {
+            "name": "./node_modules/des.js/lib/des/cbc.js",
+            "size": 1444,
+            "id": 217
+          },
+          {
+            "name": "./node_modules/des.js/lib/des/ede.js",
+            "size": 1330,
+            "id": 218
+          },
+          {
+            "name": "./node_modules/browserify-aes/encrypter.js",
+            "size": 2864,
+            "id": 219
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/ecb.js",
+            "size": 175,
+            "id": 220
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/cbc.js",
+            "size": 342,
+            "id": 221
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/cfb.js",
+            "size": 869,
+            "id": 222
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/cfb8.js",
+            "size": 518,
+            "id": 223
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/cfb1.js",
+            "size": 917,
+            "id": 224
+          },
+          {
+            "name": "./node_modules/browserify-aes/modes/ofb.js",
+            "size": 415,
+            "id": 225
+          },
+          {
+            "name": "./node_modules/browserify-aes/ghash.js",
+            "size": 1958,
+            "id": 226
+          },
+          {
+            "name": "./node_modules/browserify-aes/decrypter.js",
+            "size": 3218,
+            "id": 227
+          },
+          {
+            "name": "./node_modules/browserify-des/modes.js",
+            "size": 301,
+            "id": 228
+          },
+          {
+            "name": "./node_modules/diffie-hellman/browser.js",
+            "size": 1133,
+            "id": 229
+          },
+          {
+            "name": "buffer (ignored)",
+            "size": 15,
+            "id": 230
+          },
+          {
+            "name": "./node_modules/miller-rabin/node_modules/bn.js/lib/bn.js",
+            "size": 87731,
+            "id": 231
+          },
+          {
+            "name": "buffer (ignored)",
+            "size": 15,
+            "id": 232
+          },
+          {
+            "name": "crypto (ignored)",
+            "size": 15,
+            "id": 233
+          },
+          {
+            "name": "./node_modules/diffie-hellman/lib/primes.json",
+            "size": 7231,
+            "id": 234
+          },
+          {
+            "name": "./node_modules/diffie-hellman/lib/dh.js",
+            "size": 3885,
+            "id": 235
+          },
+          {
+            "name": "./node_modules/browserify-sign/browser/index.js",
+            "size": 2230,
+            "id": 236
+          },
+          {
+            "name": "./node_modules/browserify-sign/browser/sign.js",
+            "size": 3914,
+            "id": 237
+          },
+          {
+            "name": "buffer (ignored)",
+            "size": 15,
+            "id": 238
+          },
+          {
+            "name": "./node_modules/elliptic/package.json",
+            "size": 2249,
+            "id": 239
+          },
+          {
+            "name": "buffer (ignored)",
+            "size": 15,
+            "id": 240
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/curve/short.js",
+            "size": 22969,
+            "id": 241
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/curve/mont.js",
+            "size": 4581,
+            "id": 242
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/curve/edwards.js",
+            "size": 10908,
+            "id": 243
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/sha.js",
+            "size": 206,
+            "id": 244
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/sha/1.js",
+            "size": 1567,
+            "id": 245
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/sha/224.js",
+            "size": 670,
+            "id": 246
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/sha/384.js",
+            "size": 768,
+            "id": 247
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/ripemd.js",
+            "size": 3551,
+            "id": 248
+          },
+          {
+            "name": "./node_modules/hash.js/lib/hash/hmac.js",
+            "size": 1139,
+            "id": 249
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/precomputed/secp256k1.js",
+            "size": 32535,
+            "id": 250
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/ec/index.js",
+            "size": 6246,
+            "id": 251
+          },
+          {
+            "name": "./node_modules/hmac-drbg/lib/hmac-drbg.js",
+            "size": 2988,
+            "id": 252
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/ec/key.js",
+            "size": 3117,
+            "id": 253
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/ec/signature.js",
+            "size": 3261,
+            "id": 254
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/eddsa/index.js",
+            "size": 3497,
+            "id": 255
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/eddsa/key.js",
+            "size": 2496,
+            "id": 256
+          },
+          {
+            "name": "./node_modules/elliptic/lib/elliptic/eddsa/signature.js",
+            "size": 1703,
+            "id": 257
+          },
+          {
+            "name": "./node_modules/parse-asn1/asn1.js",
+            "size": 3217,
+            "id": 258
+          },
+          {
+            "name": "buffer (ignored)",
+            "size": 15,
+            "id": 259
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/api.js",
+            "size": 1431,
+            "id": 260
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/encoders/pem.js",
+            "size": 614,
+            "id": 261
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/decoders/pem.js",
+            "size": 1219,
+            "id": 262
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/base/index.js",
+            "size": 229,
+            "id": 263
+          },
+          {
+            "name": "./node_modules/asn1.js/lib/asn1/constants/index.js",
+            "size": 368,
+            "id": 264
+          },
+          {
+            "name": "./node_modules/parse-asn1/certificate.js",
+            "size": 2425,
+            "id": 265
+          },
+          {
+            "name": "./node_modules/parse-asn1/aesid.json",
+            "size": 501,
+            "id": 266
+          },
+          {
+            "name": "./node_modules/parse-asn1/fixProc.js",
+            "size": 1231,
+            "id": 267
+          },
+          {
+            "name": "./node_modules/browserify-sign/browser/verify.js",
+            "size": 2430,
+            "id": 268
+          },
+          {
+            "name": "./node_modules/create-ecdh/browser.js",
+            "size": 2696,
+            "id": 269
+          },
+          {
+            "name": "./node_modules/create-ecdh/node_modules/bn.js/lib/bn.js",
+            "size": 87731,
+            "id": 270
+          },
+          {
+            "name": "buffer (ignored)",
+            "size": 15,
+            "id": 271
+          },
+          {
+            "name": "./node_modules/public-encrypt/browser.js",
+            "size": 327,
+            "id": 272
+          },
+          {
+            "name": "./node_modules/public-encrypt/publicEncrypt.js",
+            "size": 2326,
+            "id": 273
+          },
+          {
+            "name": "buffer (ignored)",
+            "size": 15,
+            "id": 274
+          },
+          {
+            "name": "./node_modules/public-encrypt/privateDecrypt.js",
+            "size": 2428,
+            "id": 275
+          },
+          {
+            "name": "./node_modules/randomfill/browser.js",
+            "size": 2999,
+            "id": 276
+          },
+          {
+            "name": "./node_modules/randomstring/node_modules/randombytes/browser.js",
+            "size": 1031,
+            "id": 277
+          },
+          {
+            "name": "./node_modules/randomstring/lib/charset.js",
+            "size": 1405,
+            "id": 278
+          },
+          {
+            "name": "./node_modules/array-uniq/index.js",
+            "size": 1117,
+            "id": 279
+          },
+          {
+            "name": "./node_modules/axios/lib/axios.js",
+            "size": 1503,
+            "id": 280
+          },
+          {
+            "name": "./node_modules/axios/lib/core/Axios.js",
+            "size": 2648,
+            "id": 281
+          },
+          {
+            "name": "./node_modules/axios/lib/core/InterceptorManager.js",
+            "size": 1251,
+            "id": 282
+          },
+          {
+            "name": "./node_modules/axios/lib/core/dispatchRequest.js",
+            "size": 1934,
+            "id": 283
+          },
+          {
+            "name": "./node_modules/axios/lib/core/transformData.js",
+            "size": 550,
+            "id": 284
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/normalizeHeaderName.js",
+            "size": 357,
+            "id": 285
+          },
+          {
+            "name": "./node_modules/axios/lib/core/settle.js",
+            "size": 706,
+            "id": 286
+          },
+          {
+            "name": "./node_modules/axios/lib/core/enhanceError.js",
+            "size": 1049,
+            "id": 287
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/cookies.js",
+            "size": 1435,
+            "id": 288
+          },
+          {
+            "name": "./node_modules/axios/lib/core/buildFullPath.js",
+            "size": 695,
+            "id": 289
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/isAbsoluteURL.js",
+            "size": 563,
+            "id": 290
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/combineURLs.js",
+            "size": 380,
+            "id": 291
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/parseHeaders.js",
+            "size": 1393,
+            "id": 292
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/isURLSameOrigin.js",
+            "size": 2305,
+            "id": 293
+          },
+          {
+            "name": "./node_modules/axios/lib/cancel/CancelToken.js",
+            "size": 1240,
+            "id": 294
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/spread.js",
+            "size": 564,
+            "id": 295
+          },
+          {
+            "name": "./node_modules/axios/lib/helpers/isAxiosError.js",
+            "size": 343,
+            "id": 296
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars.runtime.js",
+            "size": 4606,
+            "id": 297
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/helpers/block-helper-missing.js",
+            "size": 3831,
+            "id": 298
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/helpers/each.js",
+            "size": 9894,
+            "id": 299
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/helpers/helper-missing.js",
+            "size": 2013,
+            "id": 300
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/helpers/if.js",
+            "size": 4458,
+            "id": 301
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/helpers/log.js",
+            "size": 2507,
+            "id": 302
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/helpers/lookup.js",
+            "size": 1244,
+            "id": 303
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/helpers/with.js",
+            "size": 3759,
+            "id": 304
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/decorators.js",
+            "size": 1000,
+            "id": 305
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/decorators/inline.js",
+            "size": 2696,
+            "id": 306
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/internal/create-new-lookup-object.js",
+            "size": 1783,
+            "id": 307
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/safe-string.js",
+            "size": 1164,
+            "id": 308
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/runtime.js",
+            "size": 44768,
+            "id": 309
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/internal/wrapHelper.js",
+            "size": 2192,
+            "id": 310
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/base.js",
+            "size": 3926,
+            "id": 311
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js",
+            "size": 205666,
+            "id": 312
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js",
+            "size": 23162,
+            "id": 313
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js",
+            "size": 19212,
+            "id": 314
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js",
+            "size": 58116,
+            "id": 315
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js",
+            "size": 121362,
+            "id": 316
+          },
+          {
+            "name": "./node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js",
+            "size": 15857,
+            "id": 317
+          },
+          {
+            "name": "./src/js/main.js + 168 modules",
+            "size": 916071,
+            "id": 318
+          },
+          {
+            "name": "./node_modules/@sentry/types/esm/session.js",
+            "size": 697,
+            "id": 322
+          }
+        ]
+      }
+    ]
   }
 ]
