@@ -1,0 +1,37 @@
+Product from catalog
+
+===========================================
+On Click - Raise Modal
+===========================================
+1. call api and get product JSON
+2. create product objects and prepare template data
+3. compile handlebars template (modal) and append to body
+4. init modal
+- add event listeners
+- init swiper photos slider
+- init variant object (if exists)
+- init group options (if exists)
+- check product add to cart feasibility
+5. preselect default ingredients
+6. calculate final price
+
+
+===========================================
+On Variant Change
+===========================================
+1. variant class emits "variant change" event on product class
+2. for each group option object:
+- update its selected variant
+- update its corresponding prices on UI
+- calculate its price
+3. calculate product price
+
+
+===========================================
+On Group Option Change
+===========================================
+1. check "group option" add to cart feasibility.
+2. "group option" class emits an event on product class to check product add to cart feasibility
+3. calculate "group option" price
+4. group option class emits "option change" event on product class
+5. calculate product price

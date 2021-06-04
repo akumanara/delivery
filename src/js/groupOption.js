@@ -55,8 +55,8 @@ export default class extends EventEmitter {
       topText: this.element.querySelector('.product-modal__option-header-top'),
     };
 
-    // Preselect
-    // this.preselectDefaultIngredients();
+    // Check add to cart feasibility
+    this.checkAddToCartFeasibility();
   }
 
   optionClicked(option) {
@@ -144,6 +144,7 @@ export default class extends EventEmitter {
   }
 
   changeVariant(variantID) {
+    // console.log(`changing variant ${variantID}`);
     this.selectedVariantID = variantID;
 
     // update texts on ui
@@ -178,9 +179,7 @@ export default class extends EventEmitter {
 
   preselectCartValue() {
     this.groupOption.ingredients.forEach((option) => {
-      console.log(option);
       if (has(option, 'selected') && option.selected === true) {
-        console.log('selecting option');
         this.optionClicked(option);
       }
     });

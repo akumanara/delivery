@@ -12,6 +12,8 @@ import { animateCSS, currencyFormat, has, getFormData } from './utils';
 import { HandlebarsTemplate } from './handlebarTemplate';
 import { store } from './store';
 
+// Rules and Notes
+// ===========================================
 // Product may have a variant
 // Variant is single option and uses a different class.
 // Variant changes the base price for the product.
@@ -279,9 +281,6 @@ export default class {
       this.variant.preselectDefaultVariant();
     }
 
-    // Check group options to see if we are ok with add to cart btn
-    this.checkAddToCartFeasibility();
-
     // hide overflow
     document.body.classList.add('hide-overflow');
   }
@@ -345,6 +344,8 @@ export default class {
 
   // Calculates the final price
   calculatePrice() {
+    // Before we initalize the modal we dont need those checks.
+    if (!this.modalInitialized) return;
     let calculatedPrice = currency(0);
     // First set the base price. If we use a variant and a selected variant is set, use the price from the selected variant.
     // Else get the price from the initial JSON.
@@ -409,8 +410,14 @@ export default class {
   }
 
   checkAddToCartFeasibility() {
+    // Before we initalize the modal we dont need those checks.
+    if (!this.modalInitialized) return;
     console.log('checking add to cart feasibility');
     const feasibility = !this.groupOptions.some((el) => !el.cartFeasibility);
+
+    // this.groupOptions.forEach((el) => {
+    //   console.log(el.cartFeasibility);
+    // });
 
     if (feasibility) {
       this.enableAddToCart();
@@ -458,6 +465,7 @@ export default class {
   // Executes when we click on an product from the product list
   async raiseModal() {
     PubSub.publish('show_loader');
+    this.modalInitialized = false;
     // fetch the html for the modal
     await this.api
       .getProduct(this.productID)
@@ -471,6 +479,10 @@ export default class {
         this.initModal();
         // Preselect default ingredients
         this.preselectDefaultIngredients();
+        // Set the modal initialized to true
+        this.modalInitialized = true;
+        // Check group options to see if we are ok with add to cart btn
+        this.checkAddToCartFeasibility();
         // Calculate the final price
         this.calculatePrice();
       })
@@ -549,6 +561,7 @@ export default class {
   async cartRaiseModal() {
     console.log('cartRaiseModal');
     PubSub.publish('show_loader');
+    this.modalInitialized = false;
     // fetch the product in json
     await this.api
       .getProductFromCart(this.productID, this.cartIndex)
@@ -562,6 +575,10 @@ export default class {
         this.initModal();
         // Preselect values
         this.preselectCartValues();
+        // Set the modal initialized to true
+        this.modalInitialized = true;
+        // Check group options to see if we are ok with add to cart btn
+        this.checkAddToCartFeasibility();
         // Calculate the final price
         this.calculatePrice();
       })
