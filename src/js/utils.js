@@ -101,6 +101,8 @@ const getFormData = (object) => {
 };
 
 const initSentry = () => {
+  console.log(`MODE IS  ${MODE}`);
+  console.log(`RELEASE IS  ${VERSION}`);
   Sentry.init({
     dsn: 'https://638d2b3b62374e10acdd8359960a28cb@o346983.ingest.sentry.io/5769914',
     integrations: [new Integrations.BrowserTracing()],
