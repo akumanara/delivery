@@ -3,6 +3,7 @@ import axios from 'axios';
 import product from './productData';
 import productFromCart from './productDataFromCart2';
 import { store } from './store';
+import { getFormData } from './utils';
 
 export default class {
   constructor() {
@@ -253,6 +254,74 @@ export default class {
     });
   }
 
+  addStoreToFavorites() {
+    // https://www.delivery.gr/user/favorite-shop
+    // crfToken: 181383886460ba211e1f2c97.78353421
+    // action: true/false
+    // shop_id: 3153
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(product);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `user/favorite-shop`;
+      const data = getFormData({
+        crfToken: store.context.csrfToken,
+        action: true,
+        shop_id: store.context.storeID,
+      });
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  removeStoreToFavorites() {
+    // https://www.delivery.gr/user/favorite-shop
+    // crfToken: 181383886460ba211e1f2c97.78353421
+    // action: true/false
+    // shop_id: 3153
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(product);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `user/favorite-shop`;
+      const data = getFormData({
+        crfToken: store.context.csrfToken,
+        action: false,
+        shop_id: store.context.storeID,
+      });
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
   // TODO
   // =====================
   quickAddProduct(data) {
@@ -266,23 +335,5 @@ export default class {
       .catch((error) => {
         console.log(error);
       });
-  }
-
-  // TODO
-  addStoreToFavorites() {
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        resolve(product);
-      }, 500),
-    );
-  }
-
-  // TODO
-  removeStoreToFavorites() {
-    return new Promise((resolve) =>
-      setTimeout(() => {
-        resolve(product);
-      }, 500),
-    );
   }
 }

@@ -281,4 +281,4 @@ todo for internal launch
 
 
 Bugs
-https://staging.delivery.gr/athina/ampelokipoi/roma-pizza-7865/online
+currency format is wrong.
