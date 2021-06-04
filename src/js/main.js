@@ -234,7 +234,7 @@ class App {
     // Lazy load card images with average color afterwards
     // TODO module
     const fac = new FastAverageColor();
-    const elements = document.querySelectorAll('.card__img');
+    const elements = document.querySelectorAll('.lozad');
     const observer = lozad(elements, {
       loaded(el) {
         // console.log('loaded element');
