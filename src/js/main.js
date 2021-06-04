@@ -238,24 +238,24 @@ class App {
     const observer = lozad(elements, {
       loaded(el) {
         // console.log('loaded element');
-        fac
-          .getColorAsync(el, {
-            algorithm: 'dominant',
-          })
-          .then((color) => {
-            // console.log(color);
-            // console.log(`average color run`);
-            // console.log(el);
-            // console.log(color);
-            if (color.isDark) {
-              if (!el.closest('.card').classList.contains('card--closed')) {
-                el.closest('.card').classList.add('card--dark');
-              }
-            }
-          })
-          .catch((e) => {
-            console.log(e);
-          });
+        // fac
+        //   .getColorAsync(el, {
+        //     algorithm: 'dominant',
+        //   })
+        //   .then((color) => {
+        //     // console.log(color);
+        //     // console.log(`average color run`);
+        //     // console.log(el);
+        //     // console.log(color);
+        //     if (color.isDark) {
+        //       if (!el.closest('.card').classList.contains('card--closed')) {
+        //         el.closest('.card').classList.add('card--dark');
+        //       }
+        //     }
+        //   })
+        //   .catch((e) => {
+        //     console.log(e);
+        //   });
       },
     });
     observer.observe();
