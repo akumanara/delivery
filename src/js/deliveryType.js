@@ -46,8 +46,12 @@ export default class {
     });
 
     // event listeners
-    this.DOM.deliveryButton.addEventListener('click', this.setMethodDelivery);
-    this.DOM.takeawayButton.addEventListener('click', this.setMethodTakeAway);
+    if (this.DOM.deliveryButton) {
+      this.DOM.deliveryButton.addEventListener('click', this.setMethodDelivery);
+    }
+    if (this.DOM.takeawayButton) {
+      this.DOM.takeawayButton.addEventListener('click', this.setMethodTakeAway);
+    }
   }
 
   async setMethodDelivery() {

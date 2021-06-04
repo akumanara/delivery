@@ -41,11 +41,6 @@ import { store } from './store';
 // * UI does not communicate when there is more than 1 min.
 // ** UI does not communicate how this works.
 
-// an mia katigoria ilikou exei max 2, kai sto iliko mporeis na valeis panw apo 1. tote prepei na sinipologistei sto max tis katigorias.
-// an exeis default ingredient 1, kai max einai kai afto 1 (einai checkbox option) tote i timi sto UI deixni 0euro.
-// an exeis default ingredient 1, kai max einai panw apo 1 (to option einai number input) tote i timi sto UI ti deixni?
-// Τι σημαίνει done στα group options
-
 export default class {
   constructor(productElement) {
     autoBind(this);
@@ -415,22 +410,13 @@ export default class {
 
   checkAddToCartFeasibility() {
     console.log('checking add to cart feasibility');
-    const feasibility = !this.groupOptions.some((el) => {
-      console.log(el);
-      return !el.cartFeasibility;
-    });
+    const feasibility = !this.groupOptions.some((el) => !el.cartFeasibility);
 
     if (feasibility) {
       this.enableAddToCart();
     } else {
       this.disableAddToCart();
     }
-
-    // this.groupOptions.forEach((element) => {
-    //   if (!element.cartFeasibility) {
-    //     this.disableAddToCart();
-    //   }
-    // });
   }
 
   zoomMode(img) {
