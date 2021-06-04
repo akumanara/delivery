@@ -1,23 +1,20 @@
 const path = require('path');
-// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-// const WebpackMonitor = require('webpack-monitor');
 const webpack = require('webpack');
 const { GitRevisionPlugin } = require('git-revision-webpack-plugin');
 
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const mode = 'production';
 const gitRevisionPlugin = new GitRevisionPlugin();
 
-const { merge } = require('webpack-merge');
-
-const config = require('./webpack.config');
-
-const mode = 'production';
-
-module.exports = merge(config, {
+module.exports = {
   mode,
+  output: {
+    path: path.resolve(__dirname, '../dist'),
+    filename: 'app.js',
+  },
   // plugins: [
-  //   new WebpackMonitor({
-  //     capture: true,
-  //     launch: true,
+  //   new BundleAnalyzerPlugin({
+  //     generateStatsFile: true,
   //   }),
   // ],
   plugins: [
@@ -28,8 +25,19 @@ module.exports = merge(config, {
       BRANCH: JSON.stringify(gitRevisionPlugin.branch()),
     }),
   ],
-  devtool: false,
-  output: {
-    path: path.join(__dirname, 'public'),
+  devtool: mode === 'development' ? 'eval' : false,
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [['@babel/preset-env']],
+          },
+        },
+      },
+    ],
   },
-});
+};
