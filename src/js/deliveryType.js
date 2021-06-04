@@ -101,8 +101,12 @@ export default class {
 
   updateMethodToTakeAway() {
     this.deliveryMethod = deliveryTypes.TAKEAWAY;
-    this.DOM.deliveryButton.classList.remove('active');
-    this.DOM.takeawayButton.classList.add('active');
+    if (this.DOM.deliveryButton) {
+      this.DOM.deliveryButton.classList.remove('active');
+    }
+    if (this.DOM.takeawayButton) {
+      this.DOM.takeawayButton.classList.add('active');
+    }
 
     // Change copies
     this.setCopies();
@@ -110,8 +114,13 @@ export default class {
 
   updateMethodToDelivery() {
     this.deliveryMethod = deliveryTypes.DELIVERY;
-    this.DOM.takeawayButton.classList.remove('active');
-    this.DOM.deliveryButton.classList.add('active');
+
+    if (this.DOM.takeawayButton) {
+      this.DOM.takeawayButton.classList.remove('active');
+    }
+    if (this.DOM.deliveryButton) {
+      this.DOM.deliveryButton.classList.add('active');
+    }
 
     // Change copies
     this.setCopies();
