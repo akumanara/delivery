@@ -35,7 +35,7 @@ export default class {
       panelClass: 'accordion__panel',
       ariaEnabled: false,
     });
-    this.accordion.openAll();
+    // this.accordion.openAll();
 
     // // event listeners
     // if (this.DOM.deliveryButton) {

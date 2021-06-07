@@ -15,14 +15,14 @@ export default class {
     this.swiper = new Swiper(this.DOM.slider, {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      slidesOffsetAfter: 16,
-      slidesOffsetBefore: 16,
       loop: false,
       centeredSlides: true,
       centeredSlidesBounds: true,
       freeMode: true,
       freeModeMomentumBounce: false,
       resistanceRatio: 0,
+      // slidesOffsetAfter: 16,
+      // slidesOffsetBefore: 16,
     });
 
     this.init();
