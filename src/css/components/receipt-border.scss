@@ -1,0 +1,11 @@
+.receipt-border {
+  background-color: #f6f7f9;
+  height: 180px;
+  overflow: hidden;
+  &__img {
+    height: 30px;
+    background-image: url('../images/icons/receipt-border.svg');
+    background-repeat: repeat-x;
+    width: 100%;
+  }
+}

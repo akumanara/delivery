@@ -1,0 +1,33 @@
+.pay-now {
+  user-select: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 70;
+  color: #fff;
+  font-weight: 700;
+  transform: translateZ(0);
+  display: flex;
+
+  &__inner {
+    padding: 20px 16px;
+    // width: 100%;
+    flex-grow: 1;
+  }
+
+  &__btn {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    background: #5a88ff;
+    box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
+    border-radius: 10px;
+    transition: $trans;
+  }
+  &__btn-left {
+    display: flex;
+  }
+}

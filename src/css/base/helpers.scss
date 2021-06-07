@@ -27,7 +27,7 @@
 }
 
 // For margin
-$spacings: 6, 10, 28, 30;
+$spacings: 6, 10, 20, 28, 30;
 @each $spacing in $spacings {
   .mr-#{$spacing} {
     margin-right: #{$spacing}px;
@@ -40,5 +40,18 @@ $spacings: 6, 10, 28, 30;
   }
   .mb-#{$spacing} {
     margin-bottom: #{$spacing}px;
+  }
+
+  .pr-#{$spacing} {
+    padding-right: #{$spacing}px;
+  }
+  .pl-#{$spacing} {
+    padding-left: #{$spacing}px;
+  }
+  .pt-#{$spacing} {
+    padding-top: #{$spacing}px;
+  }
+  .pb-#{$spacing} {
+    padding-bottom: #{$spacing}px;
   }
 }
