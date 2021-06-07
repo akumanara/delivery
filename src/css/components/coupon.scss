@@ -1,0 +1,67 @@
+.coupon {
+  // margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 126px;
+  border-radius: 8px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #5a88ff;
+  background-image: url('../images/icons/coupon-small-bg.svg');
+  &--active {
+    color: #fff;
+    background-image: url('../images/icons/coupon-small-bg-active.svg');
+  }
+  &--non-eligible {
+    color: #c5c6c7;
+    background-image: url('../images/icons/coupon-small-bg-non-eligible.svg');
+  }
+  &__checkmark {
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 26px;
+    height: 26px;
+  }
+  &--active &__checkmark {
+    display: block;
+  }
+  &__top {
+    height: 80px;
+    // outline: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__bottom {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__amount {
+    @include font-averta;
+    @include font-size-9;
+
+    font-weight: 700;
+  }
+
+  &__expires-container {
+    display: flex;
+    font-weight: 700;
+    @include font-size-0;
+
+    // outline: 1px solid red;
+    width: 100%;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  &__expires-copy {
+  }
+  &__expires-days {
+    margin-left: auto;
+  }
+}

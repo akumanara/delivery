@@ -4,3 +4,41 @@
 .mr-auto {
   margin-right: auto;
 }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.mw-22 {
+  max-width: 22px;
+}
+
+.mw-26 {
+  max-width: 26px;
+}
+
+.mw-38 {
+  max-width: 38px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+// For margin
+$spacings: 6, 10, 28, 30;
+@each $spacing in $spacings {
+  .mr-#{$spacing} {
+    margin-right: #{$spacing}px;
+  }
+  .ml-#{$spacing} {
+    margin-left: #{$spacing}px;
+  }
+  .mt-#{$spacing} {
+    margin-top: #{$spacing}px;
+  }
+  .mb-#{$spacing} {
+    margin-bottom: #{$spacing}px;
+  }
+}

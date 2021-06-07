@@ -274,4 +274,5 @@ for meeting / dimitris
 ==============
 currency format is wrong.
 fixed cart body and changed layout a bit. gia na paei to koumpei epomeno vima katw katw
-fotografies (contain/cover)
+fotografies (contain/cover) tha mpei class gia na exoume k ta 2
+backgroun images with css. thes na tis kanw inline me style?

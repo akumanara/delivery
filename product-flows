@@ -1,5 +1,3 @@
-Product from catalog
-
 ===========================================
 On Click - Raise Modal
 ===========================================
@@ -11,9 +9,10 @@ On Click - Raise Modal
 - init swiper photos slider
 - init variant object (if exists)
 - init group options (if exists)
-- check product add to cart feasibility
-5. preselect default ingredients
-6. calculate final price
+- check product "add to cart" feasibility
+5. preselect default ingredients OR preselect values from cart
+6. Check product "add to cart" feasibility
+7. calculate product price
 
 
 ===========================================
@@ -30,7 +29,7 @@ On Variant Change
 ===========================================
 On Group Option Change
 ===========================================
-1. check "group option" add to cart feasibility.
+1. check "group option" "add to cart" feasibility.
 2. "group option" class emits an event on product class to check product add to cart feasibility
 3. calculate "group option" price
 4. group option class emits "option change" event on product class

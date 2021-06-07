@@ -9,6 +9,8 @@
     @include font-size-5;
 
     font-weight: 700;
+    display: flex;
+    align-items: center;
   }
 
   &__description {
@@ -28,13 +30,8 @@
   &__swiper {
     padding-top: 18px;
     padding-bottom: 28px;
-
-    // padding-left: 16px;
-    // // padding-right: 16px;
-    // overflow-x: auto;
-    // .card {
-    //   margin-right: 16px;
-    // }
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .swiper-slide {
     width: auto;

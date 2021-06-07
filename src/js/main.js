@@ -7,6 +7,7 @@ import Accordion from 'accordion-js';
 import List from 'list.js';
 import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
+import { doc } from 'prettier';
 import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
@@ -15,6 +16,7 @@ import DeliveryType from './deliveryType';
 import API from './api';
 import { store } from './store';
 import AddressComponent from './addressComponent';
+import PaymentType from './paymentType';
 // import Layout from './layout';
 
 class App {
@@ -52,6 +54,13 @@ class App {
       loader: document.querySelector('.delivery-loader'),
     };
 
+    // dummy todo delete later
+    document.querySelectorAll('.payment-type__button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('payment-type__button--active');
+      });
+    });
+
     // Product modal (add product to basket) (must be before cart)
     const storeMenuCatalog = document.querySelector('.store-menu__catalog');
     if (storeMenuCatalog) {
@@ -71,6 +80,12 @@ class App {
 
     // Address Component
     this.addressComponent = new AddressComponent();
+
+    // Delivery type (must be before cart)
+    const paymentTypeElement = document.querySelector('.payment-type');
+    if (paymentTypeElement) {
+      this.paymentType = new PaymentType();
+    }
 
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');
@@ -225,8 +240,8 @@ class App {
         freeModeMomentumBounce: false,
         resistanceRatio: 0,
         spaceBetween: 16,
-        slidesOffsetAfter: 16,
-        slidesOffsetBefore: 16,
+        // slidesOffsetAfter: 16,
+        // slidesOffsetBefore: 16,
       });
       this.sliders.push(tmpSlider);
     });
@@ -263,7 +278,7 @@ class App {
 
   // must be called when a reflow occurs
   reflow() {
-    console.log('DOM reflow');
+    // console.log('DOM reflow');
     if (this.storeCatalog) {
       this.storeCatalog.refreshScrollTrigger();
     }
