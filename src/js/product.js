@@ -5,6 +5,7 @@ import Swiper from 'swiper/bundle';
 import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
 // import Panzoom from 'panzoom';
+import autosize from 'autosize';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
@@ -275,6 +276,8 @@ export default class {
         });
         this.accordions.push(tmpAccordionContainer);
       });
+
+    autosize(this.modalElement.querySelectorAll('textarea'));
 
     // Preselect the default variant
     if (this.variant) {

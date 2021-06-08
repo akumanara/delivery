@@ -16,8 +16,9 @@ export default class {
       slidesPerView: 'auto',
       spaceBetween: 16,
       loop: false,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
+      // Those two create a bug with  the offset
+      // centeredSlides: true,
+      // centeredSlidesBounds: true,
       freeMode: true,
       freeModeMomentumBounce: false,
       resistanceRatio: 0,

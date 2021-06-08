@@ -9,9 +9,11 @@ Todo:
   ☐ [store] previous orders - add previous order to basket modal
   ☐ [store] closes store with suggestions
   ☐ [general] alerts (simple / timer / closable)
-  ☐ [bug] - an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
-  ☐ [bug] - an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment)
-  ☐ [bug] - store catalog titles slider is offset
+  ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
+  ☐ [bug] an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment)
+  ☐ [checkout] show more/show less on receipt
+  ☐ [checkout/general] textarea focus /placeholder
+
 
 
 Doing:
@@ -20,6 +22,7 @@ Doing:
 
 
 Done:
+  ✔ [bug] - store catalog titles slider is offset @done(21-06-08 11:22)
     ✔ favorite api @done(21-06-07 11:04)
     ✔ [store card] - an exeis mono to deksia prepei na erxete deksia kai na mi paei aristera @done(21-06-03 14:43)
     ✔ [general] - se ola ta accordions na einai hidden mexri na ginei to page load @done(21-06-03 14:21)

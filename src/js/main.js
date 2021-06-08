@@ -7,7 +7,7 @@ import Accordion from 'accordion-js';
 import List from 'list.js';
 import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
-import { doc } from 'prettier';
+import autosize from 'autosize';
 import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
@@ -17,6 +17,7 @@ import API from './api';
 import { store } from './store';
 import AddressComponent from './addressComponent';
 import PaymentType from './paymentType';
+
 // import Layout from './layout';
 
 class App {
@@ -38,11 +39,14 @@ class App {
 
     // FPS
     if (MODE === 'development') {
-      showFPS();
-      document.querySelector('.header').addEventListener('click', () => {
-        document.querySelector('.stats').classList.toggle('display-none');
-      });
+      // showFPS();
+      // document.querySelector('.header').addEventListener('click', () => {
+      //   document.querySelector('.stats').classList.toggle('display-none');
+      // });
     }
+
+    // Autosize all textareas
+    autosize(document.querySelectorAll('textarea'));
 
     this.api = new API();
 

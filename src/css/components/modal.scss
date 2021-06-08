@@ -1,0 +1,57 @@
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  display: flex;
+  align-items: flex-start;
+
+  &__window {
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+
+    @include font-averta;
+    @include font-size-8;
+
+    font-weight: 700;
+  }
+
+  &__header-left {
+  }
+  &__header-right {
+    padding-left: 10px;
+    margin-left: auto;
+  }
+  &__body {
+    flex-grow: 1;
+  }
+  &__action {
+    user-select: none;
+    transform: translate3d(0, 0, 0);
+    // sticky so it doesnt overlap desktop scrollbar
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+  }
+}

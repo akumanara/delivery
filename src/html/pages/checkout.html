@@ -4,7 +4,7 @@
   <!-- partial:partials/head.html -->
   <!-- partial -->
 
-  <body class="checkout-page">
+  <body class="checkout-page hide-overflow">
     <main>
       <!-- HEADER -->
       <!-- partial:partials/header.html -->
@@ -509,13 +509,22 @@
         </div>
 
         <!-- TEXTAREA -->
-        <div class="product-modal__comments-textarea-container">
+        <!-- <div class="product-modal__comments-textarea-container">
           <textarea
             class="product-modal__comments-textarea"
             name=""
             rows="3"
             placeholder="Αφήστε το σχόλιό σας εδώ..."
           ></textarea>
+        </div> -->
+
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Αφήστε το σχόλιό σας εδώ..."
+            id="floatingTextarea"
+          ></textarea>
+          <label for="floatingTextarea">Αφήστε το σχόλιό σας εδώ...</label>
         </div>
       </section>
 
@@ -630,6 +639,10 @@
 
     <!-- ADDRESS MODALS -->
     <!-- partial:partials/address-modals.html -->
+    <!-- partial -->
+
+    <!-- MODAL -->
+    <!-- partial:partials/coupon-modal.html -->
     <!-- partial -->
 
     <script src="./js/app.js"></script>

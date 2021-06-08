@@ -1,13 +1,14 @@
-.ml-auto {
-  margin-left: auto;
-}
-.mr-auto {
-  margin-right: auto;
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+.fit-contain {
+  object-fit: contain;
 }
 
 .mw-22 {
@@ -26,8 +27,21 @@
   display: flex;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+
 // For margin
-$spacings: 6, 10, 20, 28, 30;
+$spacings: 6, 16, 10, 20, 28, 30;
 @each $spacing in $spacings {
   .mr-#{$spacing} {
     margin-right: #{$spacing}px;
@@ -42,6 +56,16 @@ $spacings: 6, 10, 20, 28, 30;
     margin-bottom: #{$spacing}px;
   }
 
+  .my-#{$spacing} {
+    margin-top: #{$spacing}px;
+    margin-bottom: #{$spacing}px;
+  }
+
+  .mx-#{$spacing} {
+    margin-left: #{$spacing}px;
+    margin-right: #{$spacing}px;
+  }
+
   .pr-#{$spacing} {
     padding-right: #{$spacing}px;
   }
@@ -53,5 +77,15 @@ $spacings: 6, 10, 20, 28, 30;
   }
   .pb-#{$spacing} {
     padding-bottom: #{$spacing}px;
+  }
+
+  .py-#{$spacing} {
+    padding-top: #{$spacing}px;
+    padding-bottom: #{$spacing}px;
+  }
+
+  .px-#{$spacing} {
+    padding-left: #{$spacing}px;
+    padding-right: #{$spacing}px;
   }
 }

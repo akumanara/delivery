@@ -1,0 +1,77 @@
+Thank you
+------------------------
+
+
+
+Store with our app
+====
+1. We have your order. (estimated time from delivery.gr ~ 30 minutes)
+2. Someone has seen your order (hidden) (estimated time from delivery.gr ~ 30 minutes)
+3. Accepted order (estimated time from store ~ 45 minutes)
+
+
+
+1. We have your order. (estimated time from delivery.gr ~ 30 minutes)
+2. Someone has seen your order (hidden) (estimated time from delivery.gr ~ 30 minutes)
+3. Rejected order
+4. Refunded (+ transaction id) (if online payment)
+
+----------------------------
+
+Store with our app and app is online
+---
+Order is sent to delivery.gr
+Order is sent to app on store premises
+Store accepted order in less than 2 mins and gave estimation delivery time 25mins
+
+
+
+Store with our app and app is online
+---
+Order is sent to delivery.gr
+Order is sent to app on store premises
+After 2 mins the order is sent to the call center to ping the store
+Call center holds the order in less than 4 mins
+Order is accepted via call center or via store app
+
+
+
+Store with our app and app is online
+---
+Order is sent to delivery.gr
+Order is sent to app on store premises
+After 2 mins the order is sent to the call center to ping the store
+Call center is unavailabe order is rejected (4 mins passed)
+
+
+
+Store with our app and app is online
+---
+Order is sent to delivery.gr
+Order is sent to app on store premises
+After 2 mins the order is sent to the call center to ping the store
+Call center holds the order
+Call center is unavailabe to find the store so the order is rejected
+
+
+
+Store without our app
+---
+Order is sent to delivery.gr
+Order is sent to call center
+Call center holds the order in less than 9 mins
+Call center accepts the order with estimated delivery time from the store (ie. 25mins)
+
+
+Store without our app
+---
+Order is sent to delivery.gr
+Order is sent to call center
+Call center doesnt hold in less than 9 mins
+The order is rejected
+
+================================
+
+
+Stores with offline app are tagged as temporary closed.
+

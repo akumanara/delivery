@@ -1,0 +1,56 @@
+.form-floating {
+  position: relative;
+  .form-control {
+    height: 70px;
+    min-height: 70px;
+    display: block;
+    width: 100%;
+    border-width: 0;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    @include font-size-4;
+
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid #eff0f1;
+    transition: background-color $trans-time1 $trans-easing,
+      border $trans-time1 $trans-easing;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      padding-top: 36px;
+      padding-bottom: 12px;
+    }
+    &:focus {
+      border-bottom: 1px solid #5a88ff;
+      background-color: #f6f7f9;
+    }
+  }
+  label {
+    @include font-size-2;
+
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 24px 16px;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: $trans;
+  }
+
+  .form-control:focus ~ label,
+  .form-control:not(:placeholder-shown) ~ label {
+    transform: translateY(-15px);
+    color: #676970;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
