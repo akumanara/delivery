@@ -33,6 +33,7 @@ body {
     z-index: 100;
     background-color: white;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
   }
   &__header-left {
   }
@@ -254,6 +255,7 @@ body {
     display: flex;
     color: white;
     font-weight: 700;
+    flex-shrink: 0;
 
     &-inner {
       display: flex;

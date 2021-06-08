@@ -13,7 +13,7 @@ Todo:
   ☐ [bug] an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment)
   ☐ [checkout] show more/show less on receipt
   ☐ [checkout/general] textarea focus /placeholder
-
+  ☐ [bug] @critical  add flex-shrin to modals full screen. see yday commit
 
 
 Doing:
