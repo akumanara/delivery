@@ -275,10 +275,38 @@ for meeting / dimitris
 currency format is wrong.
 opou exoume paths sta CSS na ginoun me inline style.
 pws pezoun ta illustrations sto modal coupon? responsive? megalonoun?
+sto checkoout page na feroume to cart diaforetika apo to store page. tha checkaroume to body class gia to pws tha feroume to cart
 
 
 where did i left off
 ==============
 sto coupon modal
 
+
+
+
+
+
+
+
+
+// Front end update
+==========================
+// for elible coupon and applicable
+1. Define coupon eligibility Server side (in json response)
+2. Add coupon html.
+3. api call to apply the coupon to the cart
+4. refresh the cart HTML
+
+
+// for elible coupon and NON-applicable
+1. Define coupon eligibility Server side (in json response)
+2. Add coupon html.
+3. alert the user that the coupon has been added but it is not applicable for this checkout
+
+
+
+// On page load with an applied non-eligible coupon
+1. Remove the coupon from the cart (api call)
+2. alert the user that the coupon applied has been removed because it is not longer eligible.
 

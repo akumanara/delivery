@@ -3,6 +3,7 @@ import axios from 'axios';
 import product from './serverResponses/productData';
 import productFromCart from './serverResponses/productDataFromCart2';
 import voucherFail from './serverResponses/voucherFail';
+import voucherSuccess from './serverResponses/voucherSuccess';
 import { store } from './store';
 import { getFormData } from './utils';
 
@@ -330,7 +331,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(voucherFail);
+          resolve(voucherSuccess);
         }, 500),
       );
     }

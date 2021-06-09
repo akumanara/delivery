@@ -14,6 +14,7 @@ const gulp = require('gulp'),
   sass = require('gulp-sass'),
   rename = require('gulp-rename');
 var compress = require('compression');
+// https://www.npmjs.com/package/gulp-css-replace-url
 
 const src_folder = './src/';
 const dist_folder = './dist/';

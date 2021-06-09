@@ -72,6 +72,7 @@ export default class {
         this.DOM.input.classList.add('form-control--has-error');
       } else if (result.status === 'ok') {
         // ok TODO
+        window.location.reload();
       }
     });
     PubSub.publish('hide_loader');
