@@ -15,6 +15,7 @@
 
 // Helper classes
 @import './base/helpers.scss';
+@import './base/flex-helpers.scss';
 
 // Components
 @import './components/header.scss';
@@ -44,7 +45,8 @@
 @import './components/page-title.scss';
 @import './components/coupon.scss';
 @import './components/payment-type.scss';
-@import './components/edit-order-btn.scss';
+@import './components/secondary-btn.scss';
+@import './components/primary-btn.scss';
 @import './components/receipt-border.scss';
 @import './components/pay-now.scss';
 @import './components/modal.scss';

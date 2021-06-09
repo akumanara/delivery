@@ -17,11 +17,16 @@ Todo:
 
 
 Doing:
-    ☐ checkout page
+  ☐ [checkout page] add coupon modal
+  ☐ [checkout page] - layout - guest
+  ☐ [checkout page] add card modal
+  ☐ [checkout page] verify phone number modal - guest
 
 
 
-Done:
+
+  Done:
+    ✔ [checkout page] - layout - logged in @done(21-06-09 15:04)
   ✔ [bug] - store catalog titles slider is offset @done(21-06-08 11:22)
     ✔ favorite api @done(21-06-07 11:04)
     ✔ [store card] - an exeis mono to deksia prepei na erxete deksia kai na mi paei aristera @done(21-06-03 14:43)

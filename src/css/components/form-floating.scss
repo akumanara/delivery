@@ -30,6 +30,25 @@
       border-bottom: 1px solid #5a88ff;
       background-color: #f6f7f9;
     }
+
+    &:focus ~ label,
+    &:not(:placeholder-shown) ~ label {
+      transform: translateY(-15px);
+      color: #676970;
+    }
+
+    // ERROR
+    &--has-error {
+      &,
+      &:focus {
+        border-bottom: 1px solid #ec5176;
+      }
+      & ~ label,
+      &:focus ~ label,
+      &:not(:placeholder-shown) ~ label {
+        color: #ec5176;
+      }
+    }
   }
   label {
     @include font-size-2;
@@ -43,12 +62,6 @@
     pointer-events: none;
     transform-origin: 0 0;
     transition: $trans;
-  }
-
-  .form-control:focus ~ label,
-  .form-control:not(:placeholder-shown) ~ label {
-    transform: translateY(-15px);
-    color: #676970;
   }
 
   textarea {

@@ -12,6 +12,7 @@ import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
 import Cart from './cart';
+import Coupon from './coupon';
 import DeliveryType from './deliveryType';
 import API from './api';
 import { store } from './store';
@@ -47,6 +48,12 @@ class App {
 
     // Autosize all textareas
     autosize(document.querySelectorAll('textarea'));
+
+    // Coupon
+    const couponModalElement = document.querySelector('.js-coupon-modal');
+    if (couponModalElement) {
+      this.coupon = new Coupon(couponModalElement);
+    }
 
     this.api = new API();
 

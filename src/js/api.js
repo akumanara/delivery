@@ -1,7 +1,8 @@
 /* eslint-disable class-methods-use-this */
 import axios from 'axios';
-import product from './productData2';
-import productFromCart from './productDataFromCart2';
+import product from './serverResponses/productData';
+import productFromCart from './serverResponses/productDataFromCart2';
+import voucherFail from './serverResponses/voucherFail';
 import { store } from './store';
 import { getFormData } from './utils';
 
@@ -269,7 +270,7 @@ export default class {
     return new Promise((resolve, reject) => {
       const url = `user/favorite-shop`;
       const data = getFormData({
-        crfToken: store.context.csrfToken,
+        csrfToken: store.context.csrfToken,
         action: true,
         shop_id: store.context.storeID,
       });
@@ -303,9 +304,41 @@ export default class {
     return new Promise((resolve, reject) => {
       const url = `user/favorite-shop`;
       const data = getFormData({
-        crfToken: store.context.csrfToken,
+        csrfToken: store.context.csrfToken,
         action: false,
         shop_id: store.context.storeID,
+      });
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  addVoucher(voucherID) {
+    // https://www.delivery.gr/user/voucher/add/json
+    // voucher_id: sadfsadf
+    // __csrf_token__: 113577275560c0b70b0672c4.77156464
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(voucherFail);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `user/voucher/add/json`;
+      const data = getFormData({
+        csrfToken: store.context.csrfToken,
+        voucher_id: voucherID,
       });
       this.instance
         .post(url, data, {

@@ -1,11 +1,13 @@
-<div class="modal">
+<div class="modal js-coupon-modal active">
   <!-- THE ACTUAL WINDOW -->
   <div class="modal__window">
     <!-- HEADER -->
     <div class="modal__header">
       <div class="modal__header-left">Add Coupon</div>
       <div class="modal__header-right">
-        <img src="./images/icons/modal-close.svg" alt="" class="" />
+        <div class="js-close-coupon-modal">
+          <img src="./images/icons/modal-close.svg" alt="" class="" />
+        </div>
       </div>
     </div>
     <!-- HEADER -->
@@ -17,145 +19,33 @@
         <span class="color-dark-gray">ex. BB-600N31HG</span>
       </div>
 
+      <!-- ERROR -->
+      <div class="p-16 js-coupon-error coupon__error">
+        <img
+          src="./images/icons/error.svg"
+          alt=""
+          class="img-fluid mw-22 flex-shrink-0 align-self-center mr-10"
+        />
+        <div class="js-coupon-error-msg">
+          You may have entered the wrong phone number.
+        </div>
+      </div>
+
       <div class="form-floating">
         <input
           type="email"
-          class="form-control"
+          class="form-control js-coupon-input"
           id="floatingInput"
           placeholder="placeholder"
         />
         <label for="floatingInput">Αριθμός κουπονιού</label>
       </div>
-
-      <div class="form-floating">
-        <textarea
-          class="form-control"
-          placeholder="Leave a comment here"
-          id="floatingTextarea"
-        ></textarea>
-        <label for="floatingTextarea">Comments</label>
-      </div>
-
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-        blanditiis, dolores alias incidunt modi mollitia itaque molestias!
-        Quibusdam, aperiam, ducimus dolorem animi qui unde sunt ad minima
-        reprehenderit fugiat pariatur?
-      </p>
-      <p>
-        Esse off iciis eos iusto vitae ad. Earum, nisi ipsum. Unde, veritatis
-        consectetur totam magni nihil a quos explicabo. Mollitia repellat
-        consequatur ullam eius consectetur voluptates magni minus maiores atque?
-        Accusantium!
-      </p>
-      <p>
-        Tenetur sunt eligendi facere similique delectus assumenda consectetur
-        voluptatem voluptate molestias provident sapiente temporibus quisquam
-        repellat dolor ducimus impedit, eveniet sed ipsa animi repudiandae eum
-        aliquam. Harum ad repellendus fugit.
-      </p>
-      <p>
-        Explicabo quis impedit perspiciatis doloribus quisquam ad vitae aperiam
-        magnam molestiae recusandae nemo, optio ipsam praesentium, distinctio
-        labore, quidem dicta? Harum repellat optio in ipsum magnam! Saepe illum
-        earum consequuntur.
-      </p>
-      <p>
-        Sequi in, accusamus quis nulla autem officiis mollitia ratione inventore
-        perspiciatis id, itaque adipisci? Autem fugit asperiores, omnis labore
-        est earum aliquid odio quos quaerat magni incidunt vitae temporibus ad!
-      </p>
-      <p>
-        Laudantium dolore, aliquam commodi cumque ea, iusto fuga, aperiam est
-        velit nostrum minus magni! Accusamus aliquid odit magnam, repudiandae,
-        voluptatum fugiat quae aspernatur sit laboriosam explicabo commodi dicta
-        dolorum cupiditate.
-      </p>
-      <p>
-        Qui illo incidunt suscipit repellat nesciunt, commodi optio a magni
-        quisquam consequuntur? Harum, suscipit velit minus voluptatem quos
-        aspernatur ullam tenetur voluptates quam facilis quo accusantium officia
-        magnam eius commodi.
-      </p>
-      <p>
-        Doloribus ut ratione aut ex cum commodi voluptas laudantium quia vero
-        rerum, doloremque minima. Accusantium voluptatum quidem laudantium id
-        omnis temporibus eligendi hic. Provident consequatur ipsum,
-        necessitatibus iure nemo ipsa!
-      </p>
-      <p>
-        Sequi a repellendus molestiae vel, quam possimus aspernatur, nemo
-        officiis ipsam eligendi esse pariatur laborum facere, ratione officia
-        harum temporibus aliquid blanditiis? Voluptates vitae esse incidunt?
-        Adipisci a magnam est!
-      </p>
-      <p>
-        Minima at et aliquid suscipit. Architecto iure cumque expedita nemo
-        eaque repellat dignissimos maxime est veniam asperiores itaque debitis
-        tenetur nobis tempore nesciunt, molestiae ex placeat quam in blanditiis
-        voluptates.
-      </p>
-      <p>
-        Et explicabo omnis distinctio, rem consequatur doloribus officia sunt
-        labore molestias tempora eligendi quidem fugiat cupiditate. Recusandae
-        placeat quidem, exercitationem sunt, id qui fugiat atque temporibus
-        ullam eum, error sapiente!
-      </p>
-      <p>
-        Aperiam culpa optio delectus aspernatur at et molestiae aliquid sapiente
-        ab maiores, est asperiores possimus ipsum ipsa a nisi perspiciatis sed
-        ea praesentium. Magnam voluptas placeat ut exercitationem voluptatibus
-        sed!
-      </p>
-      <p>
-        Rem id provident odio libero architecto nemo placeat, eveniet sed quis
-        saepe consequatur impedit nulla similique cupiditate ut, ipsa reiciendis
-        fugiat ex iste veritatis harum! Ipsa quia corrupti minima culpa?
-      </p>
-      <p>
-        Reprehenderit voluptates enim et eum ipsa quisquam autem maxime animi
-        ullam, itaque dolorum. Assumenda, sapiente, repudiandae dolores eligendi
-        officia vitae rem molestias provident nam perferendis debitis? Cumque
-        tempore ut esse!
-      </p>
-      <p>
-        Voluptates id exercitationem ex dignissimos quisquam, perspiciatis iure
-        voluptatibus, molestiae quis, mollitia repellendus. Maxime nesciunt unde
-        doloribus excepturi, dignissimos sint provident non minima vitae
-        molestiae assumenda fuga voluptatibus eveniet porro?
-      </p>
-      <p>
-        Quibusdam explicabo voluptates mollitia suscipit dolorum fugiat harum
-        facilis exercitationem, dolorem earum eaque eligendi quam illo corrupti
-        dolore doloremque possimus tempore soluta cupiditate nam, minima
-        assumenda quia cum. Veniam, nesciunt!
-      </p>
-      <p>
-        Vero quaerat consequuntur placeat veniam ratione quas modi adipisci,
-        veritatis est eaque eligendi maiores molestiae, facere porro. Provident,
-        consectetur ipsa? Nesciunt corrupti eum minima, suscipit natus
-        doloremque distinctio corporis qui.
-      </p>
-      <p>
-        Praesentium voluptate maxime porro, dolores reiciendis nobis eligendi
-        soluta, quasi totam possimus, ipsam perspiciatis minus magni aliquam
-        dolorem modi placeat qui. Saepe, fugiat odit ipsum obcaecati debitis
-        excepturi rem ea.
-      </p>
-      <p>
-        Earum, quidem ducimus iure consequatur illo porro maiores tempora sunt
-        corporis facere, fugiat repellendus, asperiores atque iste nulla ad aut
-        reprehenderit assumenda? Sit architecto tenetur amet fugiat eum sapiente
-        sequi.
-      </p>
-      <p>
-        Voluptatibus necessitatibus quo assumenda, voluptas autem excepturi
-        voluptates impedit, ducimus commodi veniam aperiam error nobis
-        consequatur illum ipsa nemo quod unde cum officia obcaecati. Architecto
-        ducimus harum perferendis itaque at!
-      </p>
     </div>
     <!-- STICKY ACTION -->
-    <div class="modal__action">action</div>
+    <div class="modal__action">
+      <div class="py-20 px-16 w-100">
+        <div class="primary-btn js-action-btn">Apply Coupon</div>
+      </div>
+    </div>
   </div>
 </div>

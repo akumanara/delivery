@@ -18,6 +18,7 @@
   &__header {
     padding: 20px 16px;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     position: sticky;
     top: 0;
@@ -266,6 +267,7 @@
     user-select: none;
     transform: translate3d(0, 0, 0);
     position: sticky;
+    flex-shrink: 0;
     bottom: 0;
     left: 0;
     width: 100%;

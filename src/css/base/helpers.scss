@@ -23,9 +23,14 @@
   max-width: 38px;
 }
 
-.d-flex {
-  display: flex;
+.w-100 {
+  width: 100%;
 }
+
+.text-center {
+  text-align: center;
+}
+
 
 .ml-auto {
   margin-left: auto;
@@ -41,7 +46,7 @@
 }
 
 // For margin
-$spacings: 6, 16, 10, 20, 28, 30;
+$spacings: 6, 10, 16, 18, 20, 28, 30;
 @each $spacing in $spacings {
   .mr-#{$spacing} {
     margin-right: #{$spacing}px;
@@ -66,6 +71,10 @@ $spacings: 6, 16, 10, 20, 28, 30;
     margin-right: #{$spacing}px;
   }
 
+  .m-#{$spacing} {
+    margin: #{$spacing}px;
+  }
+
   .pr-#{$spacing} {
     padding-right: #{$spacing}px;
   }
@@ -87,5 +96,9 @@ $spacings: 6, 16, 10, 20, 28, 30;
   .px-#{$spacing} {
     padding-left: #{$spacing}px;
     padding-right: #{$spacing}px;
+  }
+
+  .p-#{$spacing} {
+    padding: #{$spacing}px;
   }
 }

@@ -273,13 +273,12 @@ an valoume ta filtra mesa sto idio container me sticky top.
 for meeting / dimitris
 ==============
 currency format is wrong.
-fixed cart body and changed layout a bit. gia na paei to koumpei epomeno vima katw katw
-fotografies (contain/cover) tha mpei class gia na exoume k ta 2
 opou exoume paths sta CSS na ginoun me inline style.
+pws pezoun ta illustrations sto modal coupon? responsive? megalonoun?
 
 
 where did i left off
 ==============
-sto checkout page menoun kapia improvements
+sto coupon modal
 
 

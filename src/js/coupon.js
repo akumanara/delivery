@@ -1,0 +1,79 @@
+import PubSub from 'pubsub-js';
+// import currency from 'currency.js';
+// import Accordion from 'accordion-js';
+// import Swiper from 'swiper/bundle';
+// import randomstring from 'randomstring';
+import autoBind from 'auto-bind';
+import API from './api';
+// // import Panzoom from 'panzoom';
+// import autosize from 'autosize';
+// import Variant from './variant';
+// import GroupOption from './groupOption';
+// import { animateCSS, currencyFormat, has, getFormData } from './utils';
+// import { HandlebarsTemplate } from './handlebarTemplate';
+// import { store } from './store';
+
+export default class {
+  constructor(couponModalElement) {
+    autoBind(this);
+    this.api = new API();
+    this.DOM = {};
+    this.DOM.modal = couponModalElement;
+    this.DOM = {
+      modal: this.DOM.modal,
+      closeBtn: this.DOM.modal.querySelector('.js-close-coupon-modal'),
+      input: this.DOM.modal.querySelector('.js-coupon-input'),
+      actionBtn: this.DOM.modal.querySelector('.js-action-btn'),
+      error: this.DOM.modal.querySelector('.js-coupon-error'),
+      errorMsg: this.DOM.modal.querySelector('.js-coupon-error-msg'),
+    };
+
+    // Setup event listeners
+    document.querySelectorAll('.js-open-coupon-modal').forEach((el) => {
+      el.addEventListener('click', this.showModal);
+    });
+    this.DOM.closeBtn.addEventListener('click', this.hideModal);
+    this.DOM.actionBtn.addEventListener('click', this.submitCoupon);
+    // console.log(this.DOM);
+  }
+
+  showModal() {
+    this.clearPreviousErrorState();
+    this.DOM.input.value = '';
+
+    this.DOM.modal.classList.toggle('active');
+    document.body.classList.toggle('hide-overflow');
+  }
+
+  hideModal() {
+    this.DOM.modal.classList.toggle('active');
+    document.body.classList.toggle('hide-overflow');
+  }
+
+  clearPreviousErrorState() {
+    // Remove if previous error msg
+    this.DOM.error.classList.remove('coupon__error--active');
+    this.DOM.input.classList.remove('form-control--has-error');
+  }
+
+  async submitCoupon() {
+    PubSub.publish('show_loader');
+    this.clearPreviousErrorState();
+
+    const voucherID = this.DOM.input.value;
+    await this.api.addVoucher(voucherID).then((result) => {
+      console.log(result);
+      if (result.status === 'error') {
+        // errror
+        // Show the error msg
+        this.DOM.errorMsg.innerText = result.message;
+        this.DOM.error.classList.add('coupon__error--active');
+        // Toggle the error input
+        this.DOM.input.classList.add('form-control--has-error');
+      } else if (result.status === 'ok') {
+        // ok TODO
+      }
+    });
+    PubSub.publish('hide_loader');
+  }
+}
