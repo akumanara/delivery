@@ -94,6 +94,7 @@ export default class {
         console.log('done token');
 
         this.saveCard(data);
+        this.hideModal();
         PubSub.publish('hide_loader');
       })
       .fail((responseData) => {

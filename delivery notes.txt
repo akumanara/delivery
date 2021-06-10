@@ -333,7 +333,21 @@ Request token from Viva with callback function
 
 
 change script inclusion to production / demo from Dimitris
-
-
-
 add please wait msg to 3ds.
+===============================================
+
+1. Create auth token (Server side)
+token = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+2. Checkout page (client side)
+Request Charge token from card with amount XX euro
+We dont know if charge token is valid
+Charge token = GFDDFGSDFG
+
+3. Make the charge (server side)
+Charge token + amount
++ order id
+
+
+
+
