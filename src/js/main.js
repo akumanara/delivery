@@ -13,6 +13,7 @@ import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
 import Cart from './cart';
 import Coupon from './coupon';
+import AddCard from './add-card';
 import DeliveryType from './deliveryType';
 import API from './api';
 import { store } from './store';
@@ -49,10 +50,16 @@ class App {
     // Autosize all textareas
     autosize(document.querySelectorAll('textarea'));
 
-    // Coupon
+    // Coupon Modal
     const couponModalElement = document.querySelector('.js-coupon-modal');
     if (couponModalElement) {
       this.coupon = new Coupon(couponModalElement);
+    }
+
+    // Add Card Modal
+    const addCardModalElement = document.querySelector('.js-add-card-modal');
+    if (addCardModalElement) {
+      this.addCard = new AddCard(addCardModalElement);
     }
 
     this.api = new API();

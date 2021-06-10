@@ -310,3 +310,30 @@ sto coupon modal
 1. Remove the coupon from the cart (api call)
 2. alert the user that the coupon applied has been removed because it is not longer eligible.
 
+
+date / year input type?
+
+class add card modal
+-> charge token from viva + 2 switches (save and use as default)
+
+hooks api to viva
+init 3ds
+
+-----------
+
+Month / year tha ginoun 2 inputs
+yparxei mia forma me data attributes gia na ta parei h viva data-vp*
+
+======================
+
+On click sto button apothikefsi karta.
+-
+Trigger Viva gia na parei ta stoixeia apo ti forma kai na kanei to call
+Request token from Viva with callback function
+
+
+change script inclusion to production / demo from Dimitris
+
+
+
+add please wait msg to 3ds.

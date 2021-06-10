@@ -1,17 +1,6 @@
 import PubSub from 'pubsub-js';
-// import currency from 'currency.js';
-// import Accordion from 'accordion-js';
-// import Swiper from 'swiper/bundle';
-// import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
 import API from './api';
-// // import Panzoom from 'panzoom';
-// import autosize from 'autosize';
-// import Variant from './variant';
-// import GroupOption from './groupOption';
-// import { animateCSS, currencyFormat, has, getFormData } from './utils';
-// import { HandlebarsTemplate } from './handlebarTemplate';
-// import { store } from './store';
 
 export default class {
   constructor(couponModalElement) {

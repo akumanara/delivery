@@ -13,19 +13,20 @@ Todo:
   ☐ [bug] an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment)
   ☐ [checkout] show more/show less on receipt
   ☐ [checkout/general] textarea focus /placeholder
-  ☐ [bug] @critical  add flex-shrin to modals full screen. see yday commit
+  ☐ sentry remove cc data before sending @critical
 
 
-Doing:
-  ☐ [checkout page] add coupon modal
-  ☐ [checkout page] add card modal
-  ☐ [checkout page] - layout - guest
-  ☐ [checkout page] verify phone number modal - guest
+  Doing:
+    ☐ [checkout page] add card modal
+    ☐ [checkout page] - layout - guest
+    ☐ [checkout page] verify phone number modal - guest
 
 
 
 
 Done:
+    ✔ [bug] @critical  add flex-shrin to modals full screen. see yday commit @done(21-06-10 11:00)
+    ✔ [checkout page] add coupon modal @done(21-06-10 10:59)
     ✔ [checkout page] - layout - logged in @done(21-06-09 15:04)
     ✔ [bug] - store catalog titles slider is offset @done(21-06-08 11:22)
     ✔ favorite api @done(21-06-07 11:04)
