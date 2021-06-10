@@ -44,9 +44,6 @@ export default class {
       });
     });
     document.addEventListener('DOMContentLoaded', this.DOMLoaded);
-
-    // remove this
-    this.showModal();
   }
 
   selectTag(selectedTag) {
