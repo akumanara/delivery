@@ -89,6 +89,7 @@ export default class {
   }
 
   submitCard() {
+    debugger;
     PubSub.publish('show_loader');
     this.hideError();
     // TODO get amount from cart
