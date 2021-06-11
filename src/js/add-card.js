@@ -89,7 +89,6 @@ export default class {
   }
 
   submitCard() {
-    debugger;
     PubSub.publish('show_loader');
     this.hideError();
     // TODO get amount from cart
@@ -126,7 +125,7 @@ export default class {
     const cardPaymentType = document.querySelector('.js-new-card');
 
     cardPaymentType.parentElement.classList.remove('d-none');
-    store.app.paymentType.setPaymentType(cardPaymentType);
+    store.app.paymentType.forceSetPaymentType(cardPaymentType);
     // Trigger observer update on swiper element
     store.app.paymentType.DOM.swiper.swiper.emit('observerUpdate');
 

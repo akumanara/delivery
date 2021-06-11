@@ -38,16 +38,16 @@ export default class {
     this.init();
   }
 
-  setPaymentType(btn) {
+  setPaymentType(clickedBtn) {
     if (this.activePaymentMethod === null) {
       // there isnt an active method
       // we set the active method to the one clicked
-      this.activePaymentMethod = btn;
+      this.activePaymentMethod = clickedBtn;
       this.activePaymentMethod.classList.add('payment-type__button--active');
       return;
     }
 
-    if (this.activePaymentMethod === btn) {
+    if (this.activePaymentMethod === clickedBtn) {
       // active method is the same as the one clicked
       // we remove active method
       this.activePaymentMethod.classList.remove('payment-type__button--active');
@@ -58,6 +58,15 @@ export default class {
     // active method is not the same as the one clicked
     // we change the active method to the one clicked
     this.activePaymentMethod.classList.remove('payment-type__button--active');
+    this.activePaymentMethod = clickedBtn;
+    this.activePaymentMethod.classList.add('payment-type__button--active');
+  }
+
+  // coming from add to card modal
+  forceSetPaymentType(btn) {
+    if (this.activePaymentMethod) {
+      this.activePaymentMethod.classList.remove('payment-type__button--active');
+    }
     this.activePaymentMethod = btn;
     this.activePaymentMethod.classList.add('payment-type__button--active');
   }
@@ -69,28 +78,7 @@ export default class {
       triggerClass: 'accordion__header',
       panelClass: 'accordion__panel',
       ariaEnabled: false,
-      // observer: true,
-      // observeSlideChildren: true,
     });
-
-    // this.swiper = new Swiper(this.DOM.swiper, {
-    //   slidesPerView: 'auto',
-    //   loop: false,
-    //   freeMode: true,
-    //   freeModeMomentumBounce: false,
-    //   resistanceRatio: 0,
-    //   spaceBetween: 16,
-    // });
-
-    // this.accordion.openAll();
-
-    // // event listeners
-    // if (this.DOM.deliveryButton) {
-    //   this.DOM.deliveryButton.addEventListener('click', this.setMethodDelivery);
-    // }
-    // if (this.DOM.takeawayButton) {
-    //   this.DOM.takeawayButton.addEventListener('click', this.setMethodTakeAway);
-    // }
   }
 
   setCopies() {
