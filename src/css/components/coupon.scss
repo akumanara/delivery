@@ -8,14 +8,14 @@
   background-repeat: no-repeat;
   position: relative;
   color: #5a88ff;
-  background-image: url('../images/icons/coupon-small-bg.svg');
+  // background-image: url('../images/icons/coupon-small-bg.svg');
   &--active {
     color: #fff;
-    background-image: url('../images/icons/coupon-small-bg-active.svg');
+    // background-image: url('../images/icons/coupon-small-bg-active.svg');
   }
   &--non-eligible {
     color: #c5c6c7;
-    background-image: url('../images/icons/coupon-small-bg-non-eligible.svg');
+    // background-image: url('../images/icons/coupon-small-bg-non-eligible.svg');
   }
   &__checkmark {
     display: none;
