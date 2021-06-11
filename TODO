@@ -11,20 +11,21 @@ Todo:
   ☐ [store] closes store with suggestions
   ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
   ☐ [bug] an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment)
+  ☐ [bug] autosize na ginei update an exei hdh content mesa
   ☐ [checkout] show more/show less on receipt
   ☐ [checkout/general] textarea focus /placeholder
   ☐ sentry remove cc data before sending @critical
 
 
   Doing:
-    ☐ [checkout page] add card modal
     ☐ [checkout page] - layout - guest
     ☐ [checkout page] verify phone number modal - guest
 
 
 
 
-Done:
+    Done:
+      ✔ [checkout page] add card modal @done(21-06-11 14:57)
     ✔ [bug] @critical  add flex-shrin to modals full screen. see yday commit @done(21-06-10 11:00)
     ✔ [checkout page] add coupon modal @done(21-06-10 10:59)
     ✔ [checkout page] - layout - logged in @done(21-06-09 15:04)

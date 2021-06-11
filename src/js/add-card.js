@@ -19,6 +19,7 @@ export default class {
       actionBtn: this.DOM.modal.querySelector('.js-action-btn'),
       tags: this.DOM.modal.querySelectorAll('.add-card__tag'),
       threeDSModal: document.querySelector('.js-threeds-modal'),
+      threeDSModalcloseBtn: document.querySelector('.js-close-threeds-modal'),
       formCardNumber: this.DOM.modal.querySelector('[data-vp="cardnumber"]'),
       formCardHolder: this.DOM.modal.querySelector('[data-vp="cardholder"]'),
       formCardMonth: this.DOM.modal.querySelector('[data-vp="month"]'),
@@ -32,11 +33,15 @@ export default class {
       '.add-card__tag--active',
     ).innerText;
 
-    // Setup event listeners
+    // Setup event listener
     document.querySelectorAll('.js-open-add-card-modal').forEach((el) => {
       el.addEventListener('click', this.showModal);
     });
     this.DOM.closeBtn.addEventListener('click', this.hideModal);
+    this.DOM.threeDSModalcloseBtn.addEventListener('click', () => {
+      this.hideThreeDS();
+      this.hideModal();
+    });
     this.DOM.actionBtn.addEventListener('click', this.submitCard);
     this.DOM.tags.forEach((tag) => {
       tag.addEventListener('click', () => {
@@ -56,8 +61,8 @@ export default class {
 
   showModal() {
     this.clearModal();
-    this.DOM.modal.classList.toggle('active');
-    document.body.classList.toggle('hide-overflow');
+    this.DOM.modal.classList.add('active');
+    document.body.classList.add('hide-overflow');
   }
 
   clearModal() {
@@ -73,8 +78,8 @@ export default class {
   }
 
   hideModal() {
-    this.DOM.modal.classList.toggle('active');
-    document.body.classList.toggle('hide-overflow');
+    this.DOM.modal.classList.remove('active');
+    document.body.classList.remove('hide-overflow');
   }
 
   clearPreviousErrorState() {
@@ -115,6 +120,16 @@ export default class {
       defaultCard: this.DOM.formDefault.checked,
     };
     console.log(this.card);
+
+    // Set the card visible with its charge token and set it as payment type
+    const cardPaymentType = document.querySelector('.js-new-card');
+
+    cardPaymentType.parentElement.classList.remove('d-none');
+    store.app.paymentType.setPaymentType(cardPaymentType);
+    // Trigger observer update on swiper element
+    store.app.paymentType.DOM.swiper.swiper.emit('observerUpdate');
+
+    // hide the modal
     this.hideModal();
   }
 
@@ -152,12 +167,12 @@ export default class {
   }
 
   showThreeDS() {
-    this.DOM.threeDSModal.classList.toggle('active');
-    document.body.classList.toggle('hide-overflow');
+    this.DOM.threeDSModal.classList.add('active');
+    document.body.classList.add('hide-overflow');
   }
 
   hideThreeDS() {
-    this.DOM.threeDSModal.classList.toggle('active');
-    document.body.classList.toggle('hide-overflow');
+    this.DOM.threeDSModal.classList.remove('active');
+    document.body.classList.remove('hide-overflow');
   }
 }

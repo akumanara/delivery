@@ -319,9 +319,7 @@
                         <!-- OPTION -->
                         <div
                           class="
-                            payment-type__button
-                            payment-type__button--active
-                            payment-type__button--expired
+                            payment-type__button payment-type__button--expired
                           "
                         >
                           <!-- checkmark -->
@@ -354,9 +352,11 @@
                       <div class="swiper-slide">
                         <!-- OPTION -->
                         <div
-                          class="
-                            payment-type__button payment-type__button--active
-                          "
+                          class="payment-type__button js-valid-payment-type"
+                          data-type="saved_card"
+                          data-token="xxxx"
+                          data-type="saved_card"
+                          data-token="xxxx"
                         >
                           <!-- checkmark -->
                           <div class="payment-type__button-checkmark">
@@ -404,16 +404,60 @@
                               class="img-fluid mw-38"
                             />
                           </div>
+                          <div class="payment-type__button-copy">Νέα Κάρτα</div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM -->
+                      <div class="swiper-slide d-none">
+                        <!-- OPTION -->
+                        <div
+                          class="
+                            payment-type__button
+                            js-valid-payment-type js-new-card
+                          "
+                          data-type="new_card"
+                        >
+                          <!-- checkmark -->
+                          <div class="payment-type__button-checkmark">
+                            <img
+                              src="./images/icons/coupon-checkmark.svg"
+                              alt=""
+                              class="img-fluid mw-26"
+                            />
+                          </div>
+                          <div class="payment-type__button-image">
+                            <img
+                              src="./images/icons/payment.svg"
+                              alt=""
+                              class="
+                                img-fluid
+                                mw-38
+                                payment-type__button-image-dark
+                              "
+                            />
+                            <img
+                              src="./images/icons/payment-light.svg"
+                              alt=""
+                              class="
+                                img-fluid
+                                mw-38
+                                payment-type__button-image-light
+                              "
+                            />
+                          </div>
+
                           <div class="payment-type__button-copy">Κάρτα</div>
                         </div>
                       </div>
+
                       <!-- ITEM -->
                       <div class="swiper-slide">
                         <!-- OPTION -->
                         <div
-                          class="
-                            payment-type__button payment-type__button--active
-                          "
+                          class="payment-type__button js-valid-payment-type"
+                          data-type="saved_card"
+                          data-token="xxxx"
                         >
                           <!-- checkmark -->
                           <div class="payment-type__button-checkmark">
@@ -450,9 +494,8 @@
                       <div class="swiper-slide">
                         <!-- OPTION -->
                         <div
-                          class="
-                            payment-type__button payment-type__button--active
-                          "
+                          class="payment-type__button js-valid-payment-type"
+                          data-type="pos"
                         >
                           <!-- checkmark -->
                           <div class="payment-type__button-checkmark">

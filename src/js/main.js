@@ -62,6 +62,12 @@ class App {
       this.addCard = new AddCard(addCardModalElement);
     }
 
+    // payment type
+    const paymentTypeElement = document.querySelector('.payment-type');
+    if (paymentTypeElement) {
+      this.paymentType = new PaymentType();
+    }
+
     this.api = new API();
 
     // Subscribe to topics
@@ -72,12 +78,12 @@ class App {
       loader: document.querySelector('.delivery-loader'),
     };
 
-    // dummy todo delete later
-    document.querySelectorAll('.payment-type__button').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('payment-type__button--active');
-      });
-    });
+    // // dummy todo delete later
+    // document.querySelectorAll('.payment-type__button').forEach((btn) => {
+    //   btn.addEventListener('click', () => {
+    //     btn.classList.toggle('payment-type__button--active');
+    //   });
+    // });
 
     // Product modal (add product to basket) (must be before cart)
     const storeMenuCatalog = document.querySelector('.store-menu__catalog');
@@ -98,12 +104,6 @@ class App {
 
     // Address Component
     this.addressComponent = new AddressComponent();
-
-    // Delivery type (must be before cart)
-    const paymentTypeElement = document.querySelector('.payment-type');
-    if (paymentTypeElement) {
-      this.paymentType = new PaymentType();
-    }
 
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');
@@ -229,6 +229,7 @@ class App {
           triggerClass: 'accordion__header',
           panelClass: 'accordion__panel',
           ariaEnabled: false,
+
           // when we open/close the accordion we change its height thus performing a DOM reflow.
           // Scrolltrigger need to be refreshed to re-calculate the scroll trigger positions.
           onOpen() {
