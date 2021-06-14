@@ -1,0 +1,8 @@
+.personal-details {
+  &__subtitle {
+    @include font-size-2;
+
+    font-weight: 500;
+    color: #676970;
+  }
+}

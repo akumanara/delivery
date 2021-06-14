@@ -351,3 +351,32 @@ Charge token + amount
 
 
 
+
+---------------
+An den exei karta kai den exei ksanakanei paragelia
+- tou leme na epileksei tropo plirwmis
+
+An den exei karta kai exei ksanakanei paragelia
+- tou vazoume to telefteo tropo plirwmis pou dialekse
+
+An exei karta kai exei ksanakanei paragelia kai h karta exei proepilogi
+- tou vazoume ti proepilegmeni karta
+
+An exei karta kai exei ksanakanei paragelia kai h karta den exei proepilogi
+- tou vazoume to telefteo tropo plirwmis pou dialekse
+
+
+
+An apo to parapanw epilegmeno tropo plirwmis vgei kapoiops pou den ipostirizetai apo to katastima tote tou leme na epileksei tropo plirwmis
+
+
+Seira payment methods
+===================================
+Active Saved Defult Card
+Active Saved Cards
+Add card modal
+Cash
+POS
+Expired cards
+
+

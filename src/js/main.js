@@ -12,6 +12,7 @@ import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
 import Cart from './cart';
+import CheckoutCart from './checkout-cart';
 import Coupon from './coupon';
 import AddCard from './add-card';
 import DeliveryType from './deliveryType';
@@ -96,10 +97,16 @@ class App {
       this.deliveryType = new DeliveryType();
     }
 
-    // Cart element
+    // [Store page] Cart
     const cartElement = document.querySelector('.cart');
     if (cartElement) {
       this.cart = new Cart();
+    }
+
+    // [Checkout page] Cart
+    const chechkoutCartElement = document.querySelector('.checkout-cart');
+    if (chechkoutCartElement) {
+      this.checkoutCart = new CheckoutCart();
     }
 
     // Address Component

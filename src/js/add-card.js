@@ -152,8 +152,6 @@ export default class {
         cardHolderAuthPlaceholderId: 'threed-pane',
         cardHolderAuthInitiated() {
           console.log('cardHolderAuthInitiated (3ds)');
-          // showThreeDSModal();
-          // n3.loader().hide();
           that.hideModal();
           that.showThreeDS();
           PubSub.publish('hide_loader');

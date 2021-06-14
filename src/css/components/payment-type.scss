@@ -41,6 +41,10 @@
   &__option-header-bottom-inner {
     display: flex;
     margin-top: 6px;
+    // so it doesnt stretch the img
+    img {
+      align-self: center;
+    }
   }
 
   &__option-header-opened-container {

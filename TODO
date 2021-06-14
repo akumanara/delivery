@@ -15,6 +15,7 @@ Todo:
   ☐ [checkout] show more/show less on receipt
   ☐ [checkout/general] textarea focus /placeholder
   ☐ sentry remove cc data before sending @critical
+  payment method cannot be unselected
 
 
   Doing:
