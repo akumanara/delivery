@@ -15,7 +15,7 @@ export default class {
     this.DOM.cart = document.querySelector('.cart');
     this.DOM.toggler = document.querySelector('.cart__toggler');
     this.DOM.togglerBtn = document.querySelector('.cart__toggler-btn');
-    this.DOM.togglerPrice = document.querySelector('.cart__checkout-btn-price');
+  this.DOM.togglerPrice = document.querySelector('.cart__checkout-btn-price');
     this.DOM.cartBody = document.querySelector('.cart__body');
 
     this.isOpen = false;
