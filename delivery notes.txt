@@ -397,3 +397,89 @@ google.maps.event.addListener(r, "dragend", function(e) {
 google.maps.Circle
 
 geolocate
+
+===========================
+MANDATORY DATA FOR USER
+- FIRST NAME
+- LAST NAME
+- PHONE
+- EMAIL
+
+
+
+
+
+Sign up with email (password optional)
+----------------------
+Step 1
+Email
+
+Step 2
+Fname
+Lname
+Phone
+Email (prefilled) (disabled)
+Password (optional)
+
+Step 3
+Accept TOS
+
+Step 4
+OTP
+
+
+Sign up with phone number
+----------------------
+Step 1
+PHone number
+
+Step 2
++fname, lname, email
+Accept TOS
+
+Step 3
+OTP
+
+
+Missing fname, lname, email
+
+
+Sign up with social media
+----------------------
+Step 1
+Social media
+
+Modal on first login we ask for phone
+
++Step 2
+
+
+Missing fname, lname, phone, accept tos
+
+
+
+
+Login
+With Social -> Authenicate with social media website -> succesfull login
+With phone/email -> OTP -> succesfull login
+
+
+OLD USERS
+=======================================
+
+
+Login with missing data. Prompt to enter data and update account data
+-----------
+With Social -> Step 2 -> update profile -> succesfull login
+With phone/email -> Step 2 -> update profile -> succesfull login
+
+
+
+Login with missing data. Prompt to enter data but phone or email already exists on other account
+-----------
+Assuming the email nevers changes.
+
+With Phone -> Step 2 -> Email is already in use. Sent verification email to Merge? -> Merge accounts and succesfull login
+
+With Email -> Step 2 -> Phone is already in use. Merge?
+With Social -> Step 2 -> Phone is already in use. Merge?
