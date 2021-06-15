@@ -15,7 +15,7 @@ Todo:
   ☐ [checkout] show more/show less on receipt
   ☐ [checkout/general] textarea focus /placeholder
   ☐ sentry remove cc data before sending @critical
-  payment method cannot be unselected
+  ☐ payment method cannot be unselected
 
 
   Doing:
@@ -25,34 +25,36 @@ Todo:
 
 
 
-    Done:
-      ✔ [checkout page] add card modal @done(21-06-11 14:57)
-    ✔ [bug] @critical  add flex-shrin to modals full screen. see yday commit @done(21-06-10 11:00)
-    ✔ [checkout page] add coupon modal @done(21-06-10 10:59)
-    ✔ [checkout page] - layout - logged in @done(21-06-09 15:04)
-    ✔ [bug] - store catalog titles slider is offset @done(21-06-08 11:22)
-    ✔ favorite api @done(21-06-07 11:04)
-    ✔ [store card] - an exeis mono to deksia prepei na erxete deksia kai na mi paei aristera @done(21-06-03 14:43)
-    ✔ [general] - se ola ta accordions na einai hidden mexri na ginei to page load @done(21-06-03 14:21)
-    ✔ [product_modal] - buttons den einai kato otan den exoume polla pragmata @done(21-06-03 12:57)
-    ✔ [product modal] on edit from cart. quantity field to be updated on show modal @done(21-05-25 18:51)
-    ✔ [product modal] on edit from cart. selected attribute on variants and ingredients as key selected: '1', @done(21-05-25 18:51)
-    ✔ [cart] kathe fora p erxete to cart na vazoume ta prointa pou yparxoun sto cart me status in-cart sto store menu list. @done(21-05-20 15:28)
-    ✔ [IMPROVMENT] na valoume 2 div sto product modal kai sto cart gia ta +/- wsta einai 50% kai na patiounte pio efkola @done(21-05-20 13:02)
-    ✔ [cart] open on init accordion. otan erxete pali to cart apo to server @done(21-05-20 12:52)
-    ✔ [BUG] position fixed / width 100% overlaps scrollbar @done(21-05-20 12:52) (position sticky to cart btn)
-    ✔ [store] delivery/takeaway accordion - priority @critical @done(21-05-19 13:07)
-    ✔ [general] sentry implementation
-    ✔ [store] cart button toggle + cart - big
-    ✔ [product_modal] comments and long description change
-    ✔ [product_modal] comments
-    ✔ [store] message "Store doesn't support online payment"
-    ✔ [store] hide nav when one slide
-    ✔ [bug] to handlebars mou kanei breakline sto auto formatter kai vazei ti teleia apo katw
-    ✔ [product_modal] fix layout on different product variations. - no photos, - no desc, etc @delivery dependency
-    ✔ favorite button
-    ✔ Currency sto product modal
-    ✔ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
+Done:
+  ✔ [bug] tab on input phone @done(21-06-15 15:06)
+  ✔ [add coupon modal] - disabled btn before you type @done(21-06-15 15:06)
+  ✔ [checkout page] add card modal @done(21-06-11 14:57)
+  ✔ [bug] @critical  add flex-shrin to modals full screen. see yday commit @done(21-06-10 11:00)
+  ✔ [checkout page] add coupon modal @done(21-06-10 10:59)
+  ✔ [checkout page] - layout - logged in @done(21-06-09 15:04)
+  ✔ [bug] - store catalog titles slider is offset @done(21-06-08 11:22)
+  ✔ favorite api @done(21-06-07 11:04)
+  ✔ [store card] - an exeis mono to deksia prepei na erxete deksia kai na mi paei aristera @done(21-06-03 14:43)
+  ✔ [general] - se ola ta accordions na einai hidden mexri na ginei to page load @done(21-06-03 14:21)
+  ✔ [product_modal] - buttons den einai kato otan den exoume polla pragmata @done(21-06-03 12:57)
+  ✔ [product modal] on edit from cart. quantity field to be updated on show modal @done(21-05-25 18:51)
+  ✔ [product modal] on edit from cart. selected attribute on variants and ingredients as key selected: '1', @done(21-05-25 18:51)
+  ✔ [cart] kathe fora p erxete to cart na vazoume ta prointa pou yparxoun sto cart me status in-cart sto store menu list. @done(21-05-20 15:28)
+  ✔ [IMPROVMENT] na valoume 2 div sto product modal kai sto cart gia ta +/- wsta einai 50% kai na patiounte pio efkola @done(21-05-20 13:02)
+  ✔ [cart] open on init accordion. otan erxete pali to cart apo to server @done(21-05-20 12:52)
+  ✔ [BUG] position fixed / width 100% overlaps scrollbar @done(21-05-20 12:52) (position sticky to cart btn)
+  ✔ [store] delivery/takeaway accordion - priority @critical @done(21-05-19 13:07)
+  ✔ [general] sentry implementation
+  ✔ [store] cart button toggle + cart - big
+  ✔ [product_modal] comments and long description change
+  ✔ [product_modal] comments
+  ✔ [store] message "Store doesn't support online payment"
+  ✔ [store] hide nav when one slide
+  ✔ [bug] to handlebars mou kanei breakline sto auto formatter kai vazei ti teleia apo katw
+  ✔ [product_modal] fix layout on different product variations. - no photos, - no desc, etc @delivery dependency
+  ✔ favorite button
+  ✔ Currency sto product modal
+  ✔ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
 
 
 

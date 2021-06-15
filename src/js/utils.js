@@ -116,8 +116,29 @@ const initSentry = () => {
   });
 };
 
+const validation = {
+  isEmailAddress(str) {
+    const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return pattern.test(str); // returns a boolean
+  },
+  isNotEmpty(str) {
+    const pattern = /\S+/;
+    return pattern.test(str); // returns a boolean
+  },
+  isNumber(str) {
+    const pattern = /^\d+$/;
+    return pattern.test(str); // returns a boolean
+  },
+  isSame(str1, str2) {
+    return str1 === str2;
+  },
+};
+
+const timeout = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 export {
   showFPS,
+  timeout,
   makeid,
   deliveryConsole,
   deliveryConsoleWithMessage,
@@ -127,4 +148,5 @@ export {
   has,
   getFormData,
   initSentry,
+  validation,
 };

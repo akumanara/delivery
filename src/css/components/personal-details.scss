@@ -16,4 +16,24 @@
     height: 100%;
     z-index: 10;
   }
+
+  &__phone-checkbox {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    z-index: 10;
+    transform: translateY(-13px);
+    opacity: 0;
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__verify-number-error {
+    // INSIDE THE COUPON MODAL
+    display: none;
+    &--active {
+      display: flex;
+    }
+  }
 }

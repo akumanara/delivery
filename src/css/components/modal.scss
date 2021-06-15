@@ -47,8 +47,12 @@
   }
 
   &__header-left {
+    display: flex;
+    align-items: center;
   }
   &__header-right {
+    display: flex;
+    align-items: center;
     padding-left: 10px;
     margin-left: auto;
   }

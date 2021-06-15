@@ -6,7 +6,7 @@
     <div class="modal__header">
       <div class="modal__header-left">Αριθμός Κινητού</div>
       <div class="modal__header-right">
-        <div class="js-close-coupon-modal">
+        <div class="js-close-verify-number-modal">
           <img src="./images/icons/modal-close.svg" alt="" class="" />
         </div>
       </div>
@@ -20,7 +20,13 @@
       </div>
 
       <!-- ERROR -->
-      <div class="p-16 js-verify-number-modal-error coupon__error">
+      <div
+        class="
+          p-16
+          js-verify-number-modal-error
+          personal-details__verify-number-error
+        "
+      >
         <img
           src="./images/icons/error.svg"
           alt=""
@@ -33,7 +39,8 @@
 
       <div class="form-floating">
         <input
-          type="email"
+          type="text"
+          pattern="^[0-9]*$"
           class="form-control js-verify-number-modal-input"
           id="floatingInput"
           placeholder="placeholder"
@@ -52,14 +59,21 @@
 </div>
 
 <!-- STEP 2 -->
-<div class="modal js-verify-number-modal-otp active">
+<div class="modal js-verify-number-modal-otp">
   <!-- THE ACTUAL WINDOW -->
   <div class="modal__window">
     <!-- HEADER -->
     <div class="modal__header">
-      <div class="modal__header-left">Επιβεβαίωση αριθμού</div>
+      <div class="modal__header-left">
+        <img
+          src="./images/icons/left-arrow.svg"
+          alt=""
+          class="mr-10 js-previous-step"
+        />
+        <div>Επιβεβαίωση αριθμού</div>
+      </div>
       <div class="modal__header-right">
-        <div class="js-close-coupon-modal">
+        <div class="js-close-verify-number-modal">
           <img src="./images/icons/modal-close.svg" alt="" class="" />
         </div>
       </div>
@@ -68,12 +82,23 @@
     <div class="modal__body">
       <img src="./images/illustrations/coupon.svg" alt="" class="img-fluid" />
 
+      <div class="container-a py-10 d-flex">
+        <div>Αριθμός Κινητού</div>
+        <div class="pl-10 ml-auto js-number">6943330960</div>
+      </div>
+
       <div class="container-a py-16">
-        Επιβεβαίωσε μια μόνο φορά το τηλέφωνο σου
+        Βάλε τον κωδικό επιβεβαίωσης που θα λάβεις στο κινητό σου τηλέφωνο.
       </div>
 
       <!-- ERROR -->
-      <div class="p-16 js-verify-number-modal-error coupon__error">
+      <div
+        class="
+          p-16
+          js-verify-number-modal-error
+          personal-details__verify-number-error
+        "
+      >
         <img
           src="./images/icons/error.svg"
           alt=""
@@ -86,19 +111,23 @@
 
       <div class="form-floating">
         <input
-          type="email"
+          type="text"
           class="form-control js-verify-number-modal-input"
           id="floatingInput"
           placeholder="placeholder"
           maxlength="10"
         />
-        <label for="floatingInput">Αριθμός Κινητού</label>
+        <label for="floatingInput">Κωδικός επιβεβαίωσης</label>
+      </div>
+      <div class="d-flex container-a py-10 mt-10">
+        <div class="color-dark-gray">Don't receive the SMS?</div>
+        <div class="ml-auto pl-10 font-weight-700 text-underline">Resend</div>
       </div>
     </div>
     <!-- STICKY ACTION -->
     <div class="modal__action">
       <div class="py-20 px-16 w-100">
-        <div class="primary-btn js-action-btn">Επιβεβαίωση</div>
+        <div class="primary-btn js-action-btn">Ολοκλήρωση</div>
       </div>
     </div>
   </div>

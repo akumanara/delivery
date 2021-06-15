@@ -23,12 +23,21 @@ export default class {
     });
     this.DOM.closeBtn.addEventListener('click', this.hideModal);
     this.DOM.actionBtn.addEventListener('click', this.submitCoupon);
-    // console.log(this.DOM);
+    this.DOM.input.addEventListener('input', this.updateValue);
+  }
+
+  updateValue(e) {
+    if (e && e.target.value.length > 0) {
+      this.DOM.actionBtn.classList.remove('primary-btn--disabled');
+    } else {
+      this.DOM.actionBtn.classList.add('primary-btn--disabled');
+    }
   }
 
   showModal() {
     this.clearPreviousErrorState();
     this.DOM.input.value = '';
+    this.DOM.actionBtn.classList.add('primary-btn--disabled');
 
     this.DOM.modal.classList.toggle('active');
     document.body.classList.toggle('hide-overflow');

@@ -359,7 +359,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(voucherSuccess);
+          resolve(voucherFail);
         }, 500),
       );
     }

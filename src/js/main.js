@@ -13,6 +13,7 @@ import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
 import Cart from './cart';
 import CheckoutCart from './checkout-cart';
+import VerifyNumber from './verify-number';
 import Coupon from './coupon';
 import AddCard from './add-card';
 import DeliveryType from './deliveryType';
@@ -107,6 +108,13 @@ class App {
     const chechkoutCartElement = document.querySelector('.checkout-cart');
     if (chechkoutCartElement) {
       this.checkoutCart = new CheckoutCart();
+    }
+
+    const verifyNumberModalElement = document.querySelector(
+      '.js-verify-number-modal',
+    );
+    if (verifyNumberModalElement) {
+      this.verifyNumber = new VerifyNumber();
     }
 
     // Address Component

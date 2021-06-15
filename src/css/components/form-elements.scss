@@ -2,7 +2,10 @@
 
 .form-floating {
   position: relative;
-  .form-control {
+  .form-control,
+  .form-control:disabled {
+    background-color: transparent;
+    color: #000;
     height: 70px;
     min-height: 70px;
     display: block;
