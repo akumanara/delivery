@@ -213,49 +213,6 @@ FOR ROUVALIS
 
 
 
-address managment / new address.
-------------
-fenete:
-- catalog / category
-- store
-- homepage? *critical* (cities / cuisines)
-
-notes:
-otan fenete sto catalog / category. den tha prepei na exei 20-25mins
-
-stous logged in xristes an den exei kamia diefthinsi ton pame kateftheian sto map
-
-dom trigger me lektika (fake accordion)
-on click
--LOGGED IN: modal me addresses
--GUEST: new address modal (map)
-
-
-on confirmed address
-- api call on google to get address data
-- an ta data einai full comple.
--- ginete ena put request se https://www.delivery.gr/delivery/find/shops-by-location me to location (form data)
--- referesh the current page
-
-AddressComponent
-================
-- DOM queries gia na vrei ta elements kai na kanei setup event listeners
-- Raise and Init Modal "Choose address"
-- Raise and Init Modal "Gimme your address"
-- Raise and Init 2-step Modal "New Address"
--- Autocomplete modal
--- Confirm Address modal
-- API: PUT method with address
-- Google Maps API load and calls + Geocoding
--- Places autocomplete
--- Get Place
--- Locate address
-
-
-Styling
-==================
-https://developers.google.com/maps/documentation/javascript/places-autocomplete#style-autocomplete
-
 
 
 
@@ -277,10 +234,6 @@ opou exoume paths sta CSS na ginoun me inline style.
 pws pezoun ta illustrations sto modal coupon? responsive? megalonoun?
 sto checkoout page na feroume to cart diaforetika apo to store page. tha checkaroume to body class gia to pws tha feroume to cart
 
-
-where did i left off
-==============
-sto coupon modal
 
 
 
@@ -380,3 +333,67 @@ POS
 Expired cards
 
 
+
+
+address managment / new address.
+------------
+fenete:
+- catalog / category
+- store
+- homepage? *critical* (cities / cuisines)
+
+notes:
+otan fenete sto catalog / category. den tha prepei na exei 20-25mins
+
+stous logged in xristes an den exei kamia diefthinsi ton pame kateftheian sto map
+
+dom trigger me lektika (fake accordion)
+on click
+-LOGGED IN: modal me addresses
+-GUEST: new address modal (map)
+
+
+on confirmed address
+- api call on google to get address data
+- an ta data einai full comple.
+-- ginete ena put request se https://www.delivery.gr/delivery/find/shops-by-location me to location (form data)
+-- referesh the current page
+
+AddressComponent
+================
+- DOM queries gia na vrei ta elements kai na kanei setup event listeners
+- Raise and Init Modal "Choose address"
+- Raise and Init Modal "Gimme your address"
+- Raise and Init 2-step Modal "New Address"
+-- Autocomplete modal
+-- Confirm Address modal
+- API: PUT method with address
+- Google Maps API load and calls + Geocoding
+-- Places autocomplete
+-- Get Place
+-- Locate address
+
+
+Styling
+==================
+https://developers.google.com/maps/documentation/javascript/places-autocomplete#style-autocomplete
+
+
+
+current api on delivery
+====
+new google.maps.places.Autocomplete(document.getElementById("autocomplete-address"),e);
+google.maps.event.addListener(autocomplete, "place_changed", function() {
+    fillInAddress()
+})
+new google.maps.Map(e.getElementById(n),i);
+new google.maps.Geocoder
+google.maps.Marker
+google.maps.LatLng
+google.maps.InfoWindow
+google.maps.event.addListener(r, "dragend", function(e) {
+    z(e.latLng.lat(), e.latLng.lng())
+})
+google.maps.Circle
+
+geolocate

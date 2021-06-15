@@ -21,6 +21,8 @@ export default class {
         this.hideChooseAddressModal,
       );
     }
+
+    window.googleMapsCallback = this.googleMapsCallback;
   }
 
   triggerClicked() {
@@ -42,5 +44,9 @@ export default class {
   hideChooseAddressModal() {
     document.body.classList.remove('hide-overflow');
     this.DOM.chooseAddress.classList.remove('choose-address--active');
+  }
+
+  googleMapsCallback() {
+    console.log('hi');
   }
 }
