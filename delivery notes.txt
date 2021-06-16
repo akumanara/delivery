@@ -379,6 +379,15 @@ Styling
 https://developers.google.com/maps/documentation/javascript/places-autocomplete#style-autocomplete
 
 
+Se ola ta results tha exoume to "den vlepeis..."
+An kaneis click sto "den vlepeis..." se paei sto next screen me adeia ta panta
+An kaneis click se result. to fernoume sto panw input kai kanoume enable to result.
+An ksana peirakseis to saved result. tha kanoume pali disable to koumpi
+Na valoume to logo katw apo ta results
+
+
+
+
 
 current api on delivery
 ====
@@ -480,6 +489,20 @@ Login with missing data. Prompt to enter data but phone or email already exists 
 Assuming the email nevers changes.
 
 With Phone -> Step 2 -> Email is already in use. Sent verification email to Merge? -> Merge accounts and succesfull login
-
 With Email -> Step 2 -> Phone is already in use. Merge?
 With Social -> Step 2 -> Phone is already in use. Merge?
+
+
+
+checkout process
+====================
+change address -> refresh page
+change cart type -> refresh page
+verification number -> apis todo
+apply coupon -> refresh page
+add coupon -> ???
+cart -> remove on load cart
+
+
+
+

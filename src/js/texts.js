@@ -13,6 +13,7 @@ export default {
   deliveryFee: (x) => `Κόστος παράδοσης - ${x}`,
   takeaway: 'Takeaway',
   takeawayLocation: (x) => `Κατάστημα - ${x}`,
+  // Checkout payment types
   paymentType: {
     notSelected: {
       top: `Choose payment method to proceed`,
@@ -63,4 +64,5 @@ export default {
       opened: (tag) => `${tag} - Card was chosen as payment method`,
     },
   },
+  autocompleteNoResults: `Δεν βρέθηκαν αποτελέσματα`,
 };
