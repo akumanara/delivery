@@ -32,6 +32,7 @@ export default class {
       this.suggestionClicked,
     );
 
+    this.autocompleteSaved = false;
     this.init();
   }
 
@@ -44,13 +45,8 @@ export default class {
       );
     }
 
+    this.DOM.autosuggestModal.autocompleteResults.innerHTML = '';
     window.googleMapsCallback = this.googleMapsCallback;
-    // TODO DEBOUNCE
-    // this.autocompleteInputChanged = debounce(
-    //   this.autocompleteInputChanged,
-    //   250,
-    // );
-
     this.DOM.autosuggestModal.input.addEventListener(
       'input',
       this.autocompleteInputChanged,
@@ -85,6 +81,8 @@ export default class {
   }
 
   autocompleteInputChanged(e) {
+    // input is locked
+    if (this.autocompleteSaved) return;
     this.input = e.target.value;
     // dont requst for no input
     if (this.input.length < 3) return;
@@ -183,8 +181,13 @@ export default class {
     console.log(predictionElement);
   }
 
-  geocoderFromGoogleCallback(GeocoderResult, GeocoderStatus) {
-    console.log(GeocoderResult);
+  geocoderFromGoogleCallback(GeocoderResults, GeocoderStatus) {
+    // this.autocompleteSaved = true;
+    [this.savedPlace] = GeocoderResults;
+    this.DOM.autosuggestModal.input.value =
+      GeocoderResults[0].formatted_address;
+
+    console.log(GeocoderResults);
     console.log(GeocoderStatus);
   }
 }
