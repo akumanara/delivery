@@ -84,7 +84,17 @@
     left: 8px;
     width: calc(100% - 16px);
     overflow: hidden;
-    // height: 100%;
+
+    // this should be inline
+    background-image: url('../images/powered_by_google_on_white_hdpi.png');
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    background-position: bottom 10px right 16px;
+
+    // if we have no results dont show the logo
+    &--no-results {
+      background-image: none;
+    }
   }
 
   &__autosuggest-result {
@@ -93,6 +103,12 @@
     display: flex;
     &:last-child {
       border-bottom: 0;
+      // padding bottom on the last child for the google logo
+      padding-bottom: 45px;
+
+      .add-address__autosuggest-results--no-results & {
+        padding-bottom: 0;
+      }
     }
     img {
       padding-top: 4px;

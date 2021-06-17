@@ -14,15 +14,22 @@ export default class {
     this.DOM.chooseAddress = document.querySelector('.choose-address');
     this.DOM.closeModal = document.querySelector('.choose-address__close-btn');
 
+    this.DOM.autosuggestModal = document.querySelector(
+      '.add-address__autosuggest-modal',
+    );
+
     this.DOM.autosuggestModal = {
-      modal: document.querySelector('.add-address__autosuggest-modal'),
-      input: document.querySelector('.add-address__autosuggest-input'),
-      inputLoading: document.querySelector(
+      modal: this.DOM.autosuggestModal,
+      input: this.DOM.autosuggestModal.querySelector(
+        '.add-address__autosuggest-input',
+      ),
+      inputLoading: this.DOM.autosuggestModal.querySelector(
         '.add-address__autosuggest-input-loader-icon',
       ),
-      autocompleteResults: document.querySelector(
+      autocompleteResults: this.DOM.autosuggestModal.querySelector(
         '.add-address__autosuggest-results',
       ),
+      actionBtn: this.DOM.autosuggestModal.querySelector('.js-action-btn'),
     };
 
     // Debounce requestPlace so we dont spam the api with multiple request per keystroke
@@ -33,6 +40,7 @@ export default class {
     );
 
     this.autocompleteSaved = false;
+    this.disableButton();
     this.init();
   }
 
@@ -81,8 +89,7 @@ export default class {
   }
 
   autocompleteInputChanged(e) {
-    // input is locked
-    if (this.autocompleteSaved) return;
+    this.disableButton();
     this.input = e.target.value;
     // dont requst for no input
     if (this.input.length < 3) return;
@@ -170,15 +177,15 @@ export default class {
     // get autocompletePrediction of element
     const autocompletePrediction = this.autocompletePredictions[index];
 
-    console.log(autocompletePrediction);
     const details = this.geocoderService.geocode(
       { placeId: autocompletePrediction.place_id },
       this.geocoderFromGoogleCallback,
     );
     console.log(details);
 
-    // google.maps.places.PlaceDetailsRequest
-    console.log(predictionElement);
+    // After we click the suggestion enable the button and hide the results
+    this.enableButton();
+    this.DOM.autosuggestModal.autocompleteResults.innerHTML = '';
   }
 
   geocoderFromGoogleCallback(GeocoderResults, GeocoderStatus) {
@@ -189,5 +196,15 @@ export default class {
 
     console.log(GeocoderResults);
     console.log(GeocoderStatus);
+  }
+
+  enableButton() {
+    this.DOM.autosuggestModal.actionBtn.classList.remove(
+      'primary-btn--disabled',
+    );
+  }
+
+  disableButton() {
+    this.DOM.autosuggestModal.actionBtn.classList.add('primary-btn--disabled');
   }
 }

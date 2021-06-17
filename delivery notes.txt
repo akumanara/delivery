@@ -494,6 +494,10 @@ With Social -> Step 2 -> Phone is already in use. Merge?
 
 
 
+otan pas na kaneis signup me social media kai vriskw idio email registered. kanoume loggin.
+
+
+
 checkout process
 ====================
 change address -> refresh page
@@ -505,4 +509,8 @@ cart -> remove on load cart
 
 
 
+
+
+kanena tilefono
+lista apo tilefona pou einai h oxi epiveveomena
 
