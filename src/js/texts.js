@@ -64,5 +64,7 @@ export default {
       opened: (tag) => `${tag} - Card was chosen as payment method`,
     },
   },
-  autocompleteNoResults: `Δεν βρέθηκαν αποτελέσματα`,
+  autocompleteNoResults: `Δεν βρήκες τη διεύθυνση σου; Πάτησε εδώ.`,
+  markerDragOK: `Move the pin to your exact location.`,
+  markerDragERROR: `This seems a bit far from the previous step address!`,
 };

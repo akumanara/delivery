@@ -4,6 +4,10 @@
       position: relative;
       z-index: 1;
     }
+
+    .modal__action {
+      // z-index: 0;
+    }
   }
   &__map-illustration {
     position: absolute;
@@ -11,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -2;
   }
   &__map-illustration-img {
     object-fit: cover;
@@ -114,6 +118,56 @@
       padding-top: 4px;
       align-self: flex-start;
       margin-right: 10px;
+    }
+  }
+
+  // TRACK ME
+  &__trackme {
+    width: 44px;
+    height: 44px;
+    background-color: #5a88ff;
+    box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  // Verify modal
+
+  /* Always set the map height explicitly to define the size of the div
+  /* element that contains the map. */
+  &__map-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__map {
+    height: 260px;
+  }
+  &__map-info {
+    padding: 10px 16px;
+    background: rgba(90, 136, 255, 0.8);
+    color: white;
+    font-weight: 500;
+    @include font-size-2;
+    &.error {
+      background-color: #eb6e8b;
+    }
+  }
+
+  &__verify-inputs {
+  }
+  &__verify-inputs-number-postal {
+    display: flex;
+    & > div {
+      width: 50%;
     }
   }
 }
