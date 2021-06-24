@@ -65,6 +65,4 @@ export default {
     },
   },
   autocompleteNoResults: `Δεν βρήκες τη διεύθυνση σου; Πάτησε εδώ.`,
-  markerDragOK: `Move the pin to your exact location.`,
-  markerDragERROR: `This seems a bit far from the previous step address!`,
 };

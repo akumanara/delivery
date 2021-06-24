@@ -398,4 +398,44 @@ export default class {
         console.log(error);
       });
   }
+
+  addAddress(data) {
+    // https://www.delivery.gr/delivery/find/shops-by-location
+
+    // PUT
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve({ shops: 167 });
+        }, 500),
+      );
+    }
+
+    return new Promise((resolve, reject) => {
+      const url = `delivery/find/shops-by-location`;
+      const dataToPost = getFormData({
+        // lat: 37.977649
+        // lng: 23.731324
+        // street_number: 12
+        // route: Κολοκοτρώνη
+        // postal_code: 10561
+        // city: Αθήνα
+        // state: Κεντρικός Τομέας Αθηνών
+        // country: Ελλάδα
+        // saved: false
+      });
+      this.instance
+        .put(url, dataToPost, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
 }

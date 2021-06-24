@@ -490,6 +490,7 @@ export default class {
         this.calculatePrice();
       })
       .catch((error) => {
+        // TODO change to our alert
         alert(error.message);
       });
 
@@ -586,6 +587,7 @@ export default class {
         this.calculatePrice();
       })
       .catch((error) => {
+        // TODO change to our alert
         alert(error.message);
       });
 

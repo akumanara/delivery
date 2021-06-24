@@ -508,3 +508,13 @@ add coupon -> ???
 cart -> remove on load cart
 
 
+-------
+ab simera
+---- simerina timeslots
+---- den yparxei simera allo diathesimo
+
+single
+simera / avrio / methavrio / time
+
+double
+simera / avrio / methavrio / time

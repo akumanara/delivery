@@ -128,7 +128,7 @@
 </div>
 
 <!-- ADD ADDRESS AUTOSUGGEST  -->
-<div class="modal active add-address__autosuggest-modal">
+<div class="modal add-address__autosuggest-modal">
   <!-- THE ACTUAL WINDOW -->
   <div class="modal__window">
     <!-- HEADER -->
@@ -222,6 +222,25 @@
               <div>
                 <span>Main</span> <span class="color-dark-gray">Secondary</span>
               </div>
+            </div>
+            <!-- RESULT ITEM -->
+            <div
+              class="
+                add-address__autosuggest-result
+                add-address__autosuggest-result--no-result
+                js-no-result
+                align-items-center
+              "
+            >
+              <img
+                class="img-fluid mw-18 align-self-center"
+                src="./images/icons/no-pin.svg"
+                alt=""
+              />
+              <span>Δεν βρήκες διεύθυνση;</span>
+              <span class="add-address__autosuggest-result-no-result-btn"
+                >Πάτησε εδώ</span
+              >
             </div>
           </div>
         </div>
@@ -319,11 +338,49 @@
         <div class="form-floating">
           <input
             type="text"
-            class="form-control"
+            class="form-control js-doorbell"
             id="floatingInput"
             placeholder="placeholder"
           />
           <label for="floatingInput">Κουδούνι</label>
+        </div>
+
+        <!-- FLOOR -->
+        <div class="form-floating">
+          <select name="" class="form-control js-floor">
+            <option value="1">Υπόγειο</option>
+            <option value="2">Ισόγειο</option>
+            <option value="3">Ημιόροφος</option>
+            <option value="4">1-ος</option>
+            <option value="5">2-ος</option>
+            <option value="6">3-ος</option>
+            <option value="7">4-ος</option>
+            <option value="8">5-ος</option>
+            <option value="9">6-ος</option>
+            <option value="10">7-ος</option>
+            <option value="11">8-ος</option>
+            <option value="12">9-ος</option>
+            <option value="13">10-ος</option>
+            <option value="14">11-ος</option>
+            <option value="15">12-ος</option>
+            <option value="16">13-ος</option>
+            <option value="17">14-ος</option>
+            <option value="18">15-ος</option>
+            <option value="19">16-ος</option>
+            <option value="20">17-ος</option>
+            <option value="21">18-ος</option>
+            <option value="22">19-ος</option>
+            <option value="23">20-ος</option>
+            <option value="24">21-ος</option>
+            <option value="25">22-ος</option>
+            <option value="26">23-ος</option>
+            <option value="27">24-ος</option>
+            <option value="28">25-ος</option>
+            <option value="29">26-ος</option>
+            <option value="30">27-ος</option>
+            <option value="31">28-ος</option>
+          </select>
+          <label for="floatingInput">Όροφος</label>
         </div>
       </div>
     </div>

@@ -88,7 +88,7 @@
     left: 8px;
     width: calc(100% - 16px);
     overflow: hidden;
-
+    @include font-size-2;
     // this should be inline
     background-image: url('../images/powered_by_google_on_white_hdpi.png');
     background-repeat: no-repeat;
@@ -119,6 +119,17 @@
       align-self: flex-start;
       margin-right: 10px;
     }
+  }
+
+  &__autosuggest-result-no-result-btn {
+    margin-left: auto;
+    padding: 8px;
+    background: #f6f7f9;
+    border-radius: 6px;
+  }
+
+  &__autosuggest-result--no-result img {
+    align-self: center;
   }
 
   // TRACK ME

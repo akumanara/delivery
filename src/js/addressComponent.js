@@ -1,29 +1,48 @@
+/* eslint-disable class-methods-use-this */
 /* global google */
 import autoBind from 'auto-bind';
 import { debounce } from 'lodash';
 import PubSub from 'pubsub-js';
 import { store } from './store';
-import texts from './texts';
 import mapStyle from './mapstyle';
-import { distanceBetweenLatLon } from './utils';
+import API from './api';
+// todo dp floor
+// todo check form completed
+// todo submit address and refresh page
+
 // This class uses places autocomplete service
 // developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service
 export default class {
   constructor() {
     autoBind(this);
+    this.api = new API();
+    this.queryTheDOM();
+    // todo refacto below line
+    this.verificationPlace = null;
+    this.init();
+  }
+
+  queryTheDOM() {
     // Query the DOM
     this.DOM = {};
 
     // Choose Address modal
-    this.DOM.trigger = document.querySelector('.address-trigger');
-    this.DOM.chooseAddress = document.querySelector('.choose-address');
-    this.DOM.closeModal = document.querySelector('.choose-address__close-btn');
+    this.DOM.chooseAddressModal = document.querySelector('.choose-address');
+    this.DOM.chooseAddressModal = {
+      modal: this.DOM.chooseAddressModal,
+      trigger: document.querySelector('.address-trigger'),
+      closeBtn: this.DOM.chooseAddressModal.querySelector(
+        '.choose-address__close-btn',
+      ),
+      addNew: this.DOM.chooseAddressModal.querySelector(
+        '.choose-address__add-new',
+      ),
+    };
 
     // Autosuggest modal
     this.DOM.autosuggestModal = document.querySelector(
       '.add-address__autosuggest-modal',
     );
-
     this.DOM.autosuggestModal = {
       modal: this.DOM.autosuggestModal,
       input: this.DOM.autosuggestModal.querySelector(
@@ -38,6 +57,9 @@ export default class {
       actionBtn: this.DOM.autosuggestModal.querySelector('.js-action-btn'),
       closeBtn: this.DOM.autosuggestModal.querySelector('.js-close-modal'),
       trackme: this.DOM.autosuggestModal.querySelector('.add-address__trackme'),
+      noResultTemplate: this.DOM.autosuggestModal.querySelector(
+        '.add-address__autosuggest-result--no-result',
+      ).outerHTML,
     };
 
     // Verify address modal
@@ -53,24 +75,39 @@ export default class {
       formStreetName: this.DOM.verifyModal.querySelector('.js-street-name'),
       formStreetCity: this.DOM.verifyModal.querySelector('.js-city'),
       formPostalCode: this.DOM.verifyModal.querySelector('.js-postal'),
+      formDoorbell: this.DOM.verifyModal.querySelector('.js-doorbell'),
+      formFloor: this.DOM.verifyModal.querySelector('.js-floor'),
     };
-
-    this.placeToSubmit = null;
-    this.disableButton();
-    this.init();
   }
 
   init() {
-    if (this.DOM.trigger) {
-      this.DOM.trigger.addEventListener('click', this.triggerClicked);
-      this.DOM.closeModal.addEventListener(
+    this.initChooseAddressModal();
+    this.initAutoSuggestModal();
+    this.initVerifyModal();
+
+    window.googleMapsCallback = this.googleMapsCallback;
+  }
+
+  initChooseAddressModal() {
+    // Choose address modal
+    if (this.DOM.chooseAddressModal.trigger) {
+      this.DOM.chooseAddressModal.trigger.addEventListener(
+        'click',
+        this.triggerClicked,
+      );
+      this.DOM.chooseAddressModal.closeBtn.addEventListener(
         'click',
         this.hideChooseAddressModal,
       );
+      this.DOM.chooseAddressModal.addNew.addEventListener(
+        'click',
+        this.goToAddNewAddress,
+      );
     }
+  }
 
+  initAutoSuggestModal() {
     this.DOM.autosuggestModal.autocompleteResults.innerHTML = '';
-    window.googleMapsCallback = this.googleMapsCallback;
     this.DOM.autosuggestModal.input.addEventListener(
       'input',
       this.autocompleteInputChanged,
@@ -92,17 +129,73 @@ export default class {
       this.geolocationTrack,
     );
 
-    this.DOM.verifyModal.backBtn.addEventListener(
-      'click',
-      this.goToAutoSuggestModal,
-    );
-
     // Debounce requestPlace so we dont spam the api with multiple request per keystroke
     this.requestPlacePrediction = debounce(this.requestPlacePrediction, 500);
     this.DOM.autosuggestModal.autocompleteResults.addEventListener(
       'click',
       this.suggestionClicked,
     );
+  }
+
+  initVerifyModal() {
+    this.DOM.verifyModal.backBtn.addEventListener(
+      'click',
+      this.goToAutoSuggestModal,
+    );
+
+    // focus out
+    this.DOM.verifyModal.formStreetCity.addEventListener(
+      'focusout',
+      this.focusOutInput,
+    );
+    this.DOM.verifyModal.formStreetNumber.addEventListener(
+      'focusout',
+      this.focusOutInput,
+    );
+    this.DOM.verifyModal.formStreetName.addEventListener(
+      'focusout',
+      this.focusOutInput,
+    );
+
+    this.DOM.verifyModal.formPostalCode.addEventListener(
+      'focusout',
+      this.focusOutInput,
+    );
+
+    this.DOM.verifyModal.actionBtn.addEventListener(
+      'click',
+      this.submitAddress,
+    );
+  }
+
+  async focusOutInput() {
+    // Κολοκοτρώνη 48, Βύρωνας 162 32, Ελλάδα
+    const street = this.DOM.verifyModal.formStreetName.value;
+    const number = this.DOM.verifyModal.formStreetNumber.value;
+    const city = this.DOM.verifyModal.formStreetCity.value;
+    const postal = this.DOM.verifyModal.formPostalCode.value;
+    const addressToSearch = `${street} ${number}, ${city} ${postal}, Ελλάδα`;
+
+    // If on focus out we have the same address dont do anything
+    if (addressToSearch === this.addressToSearch) {
+      return;
+    }
+    this.addressToSearch = addressToSearch;
+
+    PubSub.publish('show_loader');
+    try {
+      const details = await this.geocoderService.geocode({
+        address: addressToSearch,
+      });
+      console.log(details.results);
+      if (details.results.length > 0) {
+        [this.verificationPlace] = details.results;
+      }
+      this.updateMap(this.verificationPlace);
+    } catch (error) {
+      console.log('not found');
+    }
+    PubSub.publish('hide_loader');
   }
 
   triggerClicked() {
@@ -118,16 +211,17 @@ export default class {
 
   showChooseAddressModal() {
     document.body.classList.add('hide-overflow');
-    this.DOM.chooseAddress.classList.add('choose-address--active');
+    this.DOM.chooseAddressModal.modal.classList.add('choose-address--active');
   }
 
   hideChooseAddressModal() {
     document.body.classList.remove('hide-overflow');
-    this.DOM.chooseAddress.classList.remove('choose-address--active');
+    this.DOM.chooseAddressModal.modal.classList.remove(
+      'choose-address--active',
+    );
   }
 
   showAutosuggestModal() {
-    this.savedPlace = null;
     document.body.classList.add('hide-overflow');
     this.DOM.autosuggestModal.modal.classList.add('active');
   }
@@ -163,8 +257,10 @@ export default class {
       streetViewControl: false,
       fullscreenControl: false,
       keyboardShortcuts: false,
+      clickableIcons: false,
       styles: mapStyle,
     });
+    window.mapitem = this.map;
 
     const image = `${store.context.imagesURL}icons/mapMarker.svg`;
     this.mapMarker = new google.maps.Marker({
@@ -183,56 +279,12 @@ export default class {
   }
 
   markerDragEnd() {
-    // this.mapMarker.setAnimation(google.maps.Animation.DROP);
     this.mapMarker.setAnimation(null);
-    // recenter the map to the marker
     this.map.panTo(this.mapMarker.position);
-
-    this.updatePlaceToSubmitFromMarkerPosition();
-    if (!this.savedPlace) return;
-    // Check to see if it is to far
-    const distance = distanceBetweenLatLon(
-      this.mapMarker.position.lat(),
-      this.mapMarker.position.lng(),
-      this.savedPlace.geometry.location.lat(),
-      this.savedPlace.geometry.location.lng(),
-      'M',
-    );
-
-    if (distance > 0.25) {
-      // TOO FAR
-      this.DOM.verifyModal.mapInfo.classList.add('error');
-      this.DOM.verifyModal.mapInfo.innerText = texts.markerDragERROR;
-    } else {
-      // OK
-      this.DOM.verifyModal.mapInfo.classList.remove('error');
-      this.DOM.verifyModal.mapInfo.innerText = texts.markerDragOK;
-    }
-  }
-
-  updatePlaceToSubmitFromMarkerPosition() {
-    PubSub.publish('show_loader');
-    const latlng = {
-      lat: this.mapMarker.position.lat(),
-      lng: this.mapMarker.position.lng(),
-    };
-    this.geocoderService.geocode(
-      { location: latlng },
-      this.reverseGeocoderFromGoogleCallbackMarkerEnd,
-    );
-  }
-
-  reverseGeocoderFromGoogleCallbackMarkerEnd(GeocoderResults, GeocoderStatus) {
-    console.log(GeocoderResults);
-    if (GeocoderResults.length > 0) {
-      [this.placeToSubmit] = GeocoderResults;
-    }
-    console.log(this.placeToSubmit);
-    this.updateForm(this.placeToSubmit);
   }
 
   autocompleteInputChanged(e) {
-    this.disableButton();
+    this.autosuggestModalDisableButton();
     this.input = e.target.value;
     // dont requst for no input
     if (this.input.length < 3) return;
@@ -242,44 +294,36 @@ export default class {
     this.requestPlacePrediction();
   }
 
-  requestPlacePrediction() {
+  async requestPlacePrediction() {
     console.log('requesting');
 
     // extra check for input
     if (!this.input) return;
 
     // perform request. limit results to Greece
+    // https://developers.google.com/maps/documentation/places/web-service/supported_types#table3
     const request = {
       input: this.input,
+      // types: ['(regions)'],
       types: ['address'],
       componentRestrictions: {
         country: 'gr',
       },
     };
-    this.autocompleteService.getPlacePredictions(
-      request,
-      this.placesFromGoogleCallback,
-    );
-  }
 
-  placesFromGoogleCallback(AutocompletePredictions, PlacesServiceStatus) {
-    console.log(this.geocoderService);
-    console.table(AutocompletePredictions);
-    console.log(PlacesServiceStatus);
-    this.autocompletePredictions = AutocompletePredictions;
+    const response = await this.autocompleteService.getPlacePredictions(
+      request,
+    );
+
+    this.autocompletePredictions = response.predictions;
+    console.log(this.autocompletePredictions);
 
     this.DOM.autosuggestModal.inputLoading.classList.remove('active');
-    // if results
-    // clear box from prev results
-    // create list elements and append them to the results box
-    // show box
 
-    // else
-    // hide results
-    if (AutocompletePredictions) {
+    if (this.autocompletePredictions) {
       console.log('we have results');
       this.DOM.autosuggestModal.autocompleteResults.innerHTML = '';
-      AutocompletePredictions.forEach((prediction) => {
+      this.autocompletePredictions.forEach((prediction) => {
         /* html */
         const divHTML = `
         <div class="add-address__autosuggest-result js-prediction">
@@ -302,14 +346,14 @@ export default class {
       this.DOM.autosuggestModal.autocompleteResults.innerHTML = '';
       console.log('no results');
     }
-    const divHTML = `<div class="add-address__autosuggest-result js-no-result">${texts.autocompleteNoResults}</div>`;
+    const divHTML = this.DOM.autosuggestModal.noResultTemplate;
     this.DOM.autosuggestModal.autocompleteResults.insertAdjacentHTML(
       'beforeend',
       divHTML,
     );
   }
 
-  suggestionClicked(e) {
+  async suggestionClicked(e) {
     const predictionElement = e.target.closest('.js-prediction');
     // User clicked on prediction
     if (predictionElement) {
@@ -322,83 +366,72 @@ export default class {
       // get autocompletePrediction of element
       const autocompletePrediction = this.autocompletePredictions[index];
 
-      const details = this.geocoderService.geocode(
-        { placeId: autocompletePrediction.place_id },
-        this.geocoderFromGoogleCallback,
-      );
-      console.log(details);
-
+      // call the geocoderservice to get the place
+      const details = await this.geocoderService.geocode({
+        placeId: autocompletePrediction.place_id,
+      });
+      [this.autosuggestPlace] = details.results;
+      this.DOM.autosuggestModal.input.value =
+        this.autosuggestPlace.formatted_address;
+      // hide loader
+      PubSub.publish('hide_loader');
       // After we click the suggestion enable the button and hide the results
-      this.enableButton();
+      this.autosuggestModalEnableButton();
       this.DOM.autosuggestModal.autocompleteResults.innerHTML = '';
     } else {
       const noResultElement = e.target.closest('.js-no-result');
       if (noResultElement) {
         console.log('no result click. go to next page');
+        this.goToVerifyModal();
       }
     }
   }
 
-  geocoderFromGoogleCallback(GeocoderResults, GeocoderStatus) {
-    [this.savedPlace] = GeocoderResults;
-    this.DOM.autosuggestModal.input.value = this.savedPlace.formatted_address;
+  // Geolocation track
+  async geolocationTrack() {
+    PubSub.publish('show_loader');
+    await this.getPosition({
+      enableHighAccuracy: true,
+      maximumAge: 100,
+      timeout: 3000,
+    })
+      .then(async (position) => {
+        const latlng = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
 
-    console.log(GeocoderResults);
-    console.log(GeocoderStatus);
+        const details = await this.geocoderService.geocode({
+          location: latlng,
+        });
+
+        if (details.results.length > 0) {
+          // We have results
+          // Get the first result
+          [this.autosuggestPlace] = details.results;
+          this.DOM.autosuggestModal.input.value =
+            this.autosuggestPlace.formatted_address;
+          this.autosuggestModalEnableButton();
+        } else {
+          // no results found
+        }
+      })
+      .catch((err) => {
+        console.log('er');
+        console.error(err.message);
+      });
 
     PubSub.publish('hide_loader');
   }
 
-  enableButton() {
+  autosuggestModalEnableButton() {
     this.DOM.autosuggestModal.actionBtn.classList.remove(
       'primary-btn--disabled',
     );
   }
 
-  disableButton() {
+  autosuggestModalDisableButton() {
     this.DOM.autosuggestModal.actionBtn.classList.add('primary-btn--disabled');
-  }
-
-  // Geolocation track
-  geolocationTrack() {
-    PubSub.publish('show_loader');
-    navigator.geolocation.getCurrentPosition(
-      this.geolocationSuccess,
-      this.geolocationError,
-      { enableHighAccuracy: true, maximumAge: 100, timeout: 3000 },
-    );
-  }
-
-  geolocationSuccess(position) {
-    console.log(position);
-    const latlng = {
-      lat: position.coords.latitude,
-      lng: position.coords.longitude,
-    };
-
-    const details = this.geocoderService.geocode(
-      { location: latlng },
-      this.reverseGeocoderFromGoogleCallback,
-    );
-    console.log(details);
-  }
-
-  geolocationError(error) {
-    PubSub.publish('hide_loader');
-  }
-
-  reverseGeocoderFromGoogleCallback(GeocoderResults, GeocoderStatus) {
-    console.log(GeocoderResults);
-    if (GeocoderResults.length > 0) {
-      // We have results
-      // Get the first result
-      [this.savedPlace] = GeocoderResults;
-      this.DOM.autosuggestModal.input.value = this.savedPlace.formatted_address;
-      this.enableButton();
-    } else {
-      // no results found
-    }
-    PubSub.publish('hide_loader');
   }
 
   goToVerifyModal() {
@@ -409,38 +442,148 @@ export default class {
 
   goToAutoSuggestModal() {
     this.hideVerifyModal();
+    this.prepareAutosuggestModal();
     this.showAutosuggestModal();
+  }
+
+  goToAddNewAddress() {
+    this.hideChooseAddressModal();
+    this.prepareAutosuggestModal();
+    this.showAutosuggestModal();
+  }
+
+  prepareAutosuggestModal() {
+    this.DOM.autosuggestModal.autocompleteResults.innerHTML = '';
+    this.autosuggestPlace = null;
+    this.DOM.autosuggestModal.input.value = '';
+    this.autosuggestModalDisableButton();
   }
 
   prepareVerifyModal() {
     // Set the maps to saved place. if exists
-    if (this.savedPlace) {
-      this.updateForm(this.savedPlace);
+    if (this.autosuggestPlace) {
+      this.verificationPlace = this.autosuggestPlace;
+      this.updateFormAndMap(this.autosuggestPlace);
+    } else {
+      this.updateFormAndMap();
     }
+
+    const street = this.DOM.verifyModal.formStreetName.value;
+    const number = this.DOM.verifyModal.formStreetNumber.value;
+    const city = this.DOM.verifyModal.formStreetCity.value;
+    const postal = this.DOM.verifyModal.formPostalCode.value;
+    const addressToSearch = `${street} ${number}, ${city} ${postal}, Ελλάδα`;
+
+    this.addressToSearch = addressToSearch;
   }
 
-  updateForm(googlePlace) {
+  updateMap(googlePlace) {
     const pos = {
       lat: googlePlace.geometry.location.lat(),
       lng: googlePlace.geometry.location.lng(),
     };
     this.map.setCenter(pos);
     this.mapMarker.setPosition(pos);
+  }
 
-    // set the inputs to saved place. if exists
-    googlePlace.address_components.forEach((component) => {
-      // address_components types
-      // https://developers.google.com/maps/documentation/javascript/geocoding#GeocodingAddressTypes
-      if (component.types.includes('street_number')) {
-        this.DOM.verifyModal.formStreetNumber.value = component.long_name;
-      } else if (component.types.includes('route')) {
-        this.DOM.verifyModal.formStreetName.value = component.long_name;
-      } else if (component.types.includes('postal_code')) {
-        this.DOM.verifyModal.formPostalCode.value = component.long_name;
-      } else if (component.types.includes('locality')) {
-        this.DOM.verifyModal.formStreetCity.value = component.long_name;
-      }
-    });
+  updateFormAndMap(googlePlace, setMarker = true) {
+    this.clearForm();
+
+    let pos;
+
+    if (googlePlace) {
+      pos = {
+        lat: googlePlace.geometry.location.lat(),
+        lng: googlePlace.geometry.location.lng(),
+      };
+      // set the inputs to saved place. if exists
+      googlePlace.address_components.forEach((component) => {
+        // address_components types
+        // https://developers.google.com/maps/documentation/javascript/geocoding#GeocodingAddressTypes
+        if (component.types.includes('street_number')) {
+          this.DOM.verifyModal.formStreetNumber.value = component.long_name;
+        } else if (component.types.includes('route')) {
+          this.DOM.verifyModal.formStreetName.value = component.long_name;
+        } else if (component.types.includes('postal_code')) {
+          this.DOM.verifyModal.formPostalCode.value = component.long_name;
+        } else if (component.types.includes('locality')) {
+          this.DOM.verifyModal.formStreetCity.value = component.long_name;
+        }
+      });
+    } else {
+      pos = {
+        lat: 37.98381,
+        lng: 23.727539,
+      };
+    }
+    if (setMarker) {
+      this.map.setCenter(pos);
+      this.mapMarker.setPosition(pos);
+    } else {
+      const latlng = {
+        lat: this.mapMarker.position.lat(),
+        lng: this.mapMarker.position.lng(),
+      };
+      this.map.setCenter(latlng);
+    }
+  }
+
+  clearForm() {
+    this.DOM.verifyModal.formStreetNumber.value = '';
+    this.DOM.verifyModal.formStreetName.value = '';
+    this.DOM.verifyModal.formPostalCode.value = '';
+    this.DOM.verifyModal.formStreetCity.value = '';
+  }
+
+  getForm() {
+    const obj = {
+      street: this.DOM.verifyModal.formStreetName.value,
+      number: this.DOM.verifyModal.formStreetNumber.value,
+      postal: this.DOM.verifyModal.formPostalCode.value,
+      city: this.DOM.verifyModal.formStreetCity.value,
+      doorbell: this.DOM.verifyModal.formDoorbell.value,
+      floor: this.DOM.verifyModal.formFloor.value,
+    };
+    return obj;
+  }
+
+  getPosition(options) {
+    return new Promise((resolve, reject) =>
+      navigator.geolocation.getCurrentPosition(resolve, reject, options),
+    );
+  }
+
+  async submitAddress() {
+    PubSub.publish('show_loader');
+    const formValues = this.getForm();
+    const addressObject = {
+      lat: this.mapMarker.position.lat(),
+      lng: this.mapMarker.position.lng(),
+      street_number: formValues.number,
+      route: formValues.street,
+      postal_code: formValues.postal,
+      city: formValues.city,
+      // todo ask dimitris about those 3
+      // state: Κεντρικός Τομέας Αθηνών
+      // country: Ελλάδα
+      // saved: false,
+      // todo tell dimitris about new data
+      doorbell: formValues.doorbell,
+      floor: formValues.floor,
+    };
+    console.log(this.verificationPlace);
+    console.log(addressObject);
+    await this.api
+      .addAddress(addressObject)
+      .then((result) => {
+        console.log(result);
+        window.location.reload();
+      })
+      .catch((error) => {
+        // TODO change to our alert
+        alert(error.message);
+      });
+
     PubSub.publish('hide_loader');
   }
 }
