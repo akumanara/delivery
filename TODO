@@ -17,6 +17,8 @@ Todo:
   ☐ sentry remove cc data before sending @critical
   ☐ payment method cannot be unselected
   ☐ map autosuggest - bug me to button. paei panw apo ta search results
+  ☐ add address validation modal check if form is ok. completed
+  ☐ add address validation modal select styling
 
 
 

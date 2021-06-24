@@ -6,9 +6,6 @@ import PubSub from 'pubsub-js';
 import { store } from './store';
 import mapStyle from './mapstyle';
 import API from './api';
-// todo dp floor
-// todo check form completed
-// todo submit address and refresh page
 
 // This class uses places autocomplete service
 // developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service
@@ -545,6 +542,17 @@ export default class {
       floor: this.DOM.verifyModal.formFloor.value,
     };
     return obj;
+  }
+
+  checkForm() {
+    // tODO
+    // const formValues = this.getForm();
+    // let formIsValid = true;
+    // Object.keys(formValues).forEach((key) => {
+    //   console.log(key, obj[key]);
+    //   if (!obj[key]) {
+    //   }
+    // });
   }
 
   getPosition(options) {
