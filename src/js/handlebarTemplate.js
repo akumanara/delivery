@@ -5,6 +5,7 @@ import { currencyFormat } from './utils';
 // Handlebars.registerPartial('myPartial', '{{prefix}}');
 
 Handlebars.registerHelper('currency', (price) => currencyFormat(price));
+// product template
 const source = document.getElementById('entry-template');
 let HandlebarsTemplate;
 if (source) {

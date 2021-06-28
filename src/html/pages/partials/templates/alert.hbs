@@ -1,0 +1,18 @@
+{{! <div class="alert alert--red"> }}
+<div class="alert {{randomString}} {{typeClass}}">
+  <div class="alert__inner">
+    <div class="alert__left">
+      <img src="{{iconURL}}" alt="" class="alert__icon" />
+      <div class="alert__copy">{{text}}</div>
+    </div>
+    <div class="alert__right">
+      {{#if showTimer}}
+        <div class="alert__timer">01:39</div>
+      {{/if}}
+      <img src="./images/icons/close-light.svg" alt="" class="alert__close" />
+    </div>
+    {{! abs positioned elements for bg and progress }}
+    <div class="alert__progress"></div>
+    <div class="alert__bg"></div>
+  </div>
+</div>

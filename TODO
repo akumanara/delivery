@@ -15,22 +15,23 @@ Todo:
   ☐ [checkout] show more/show less on receipt
   ☐ [checkout/general] textarea focus /placeholder
   ☐ sentry remove cc data before sending @critical
-  ☐ payment method cannot be unselected
-  ☐ map autosuggest - bug me to button. paei panw apo ta search results
-  ☐ add address validation modal check if form is ok. completed
-  ☐ add address validation modal select styling
+  ☐ [checkout page]payment method cannot be unselected
+  ☐ [bug] map autosuggest -  me to button. paei panw apo ta search results
+  ☐ [general] select styling - (add address validation modal)
+  ☐ [address] stis apothikevmenes diefthinseis pos tha kanoume call? pia tha einai telika ta data
 
 
 
 
-  Doing:
-    ☐ [checkout page] - layout - guest
-    ☐ [checkout page] verify phone number modal - guest
+Doing:
 
 
 
 
 Done:
+  ✔ [checkout page] - layout - guest @done(21-06-25 16:04)
+  ✔ [checkout page] verify phone number modal - guest @done(21-06-25 16:04)
+  ✔ add address validation modal check if form is ok. completed @done(21-06-25 16:04)
   ✔ [bug] tab on input phone @done(21-06-15 15:06)
   ✔ [add coupon modal] - disabled btn before you type @done(21-06-15 15:06)
   ✔ [checkout page] add card modal @done(21-06-11 14:57)

@@ -14,8 +14,6 @@ export default class {
     autoBind(this);
     this.api = new API();
     this.queryTheDOM();
-    // todo refacto below line
-    this.verificationPlace = null;
     this.init();
   }
 
@@ -203,6 +201,7 @@ export default class {
       this.showChooseAddressModal();
     } else {
       console.log('user is guest');
+      this.goToAddNewAddress();
     }
   }
 
@@ -462,6 +461,7 @@ export default class {
       this.verificationPlace = this.autosuggestPlace;
       this.updateFormAndMap(this.autosuggestPlace);
     } else {
+      this.verificationPlace = null;
       this.updateFormAndMap();
     }
 
@@ -544,15 +544,44 @@ export default class {
     return obj;
   }
 
-  checkForm() {
-    // tODO
-    // const formValues = this.getForm();
-    // let formIsValid = true;
-    // Object.keys(formValues).forEach((key) => {
-    //   console.log(key, obj[key]);
-    //   if (!obj[key]) {
-    //   }
-    // });
+  isFormValid() {
+    const formValues = this.getForm();
+
+    return Object.keys(formValues).every((key) => {
+      if (formValues[key] === '') {
+        switch (key) {
+          case 'street':
+            this.DOM.verifyModal.formStreetName.classList.add(
+              'form-control--has-error',
+            );
+            break;
+          case 'number':
+            this.DOM.verifyModal.formStreetNumber.classList.add(
+              'form-control--has-error',
+            );
+            break;
+          case 'postal':
+            this.DOM.verifyModal.formPostalCode.classList.add(
+              'form-control--has-error',
+            );
+            break;
+          case 'city':
+            this.DOM.verifyModal.formStreetCity.classList.add(
+              'form-control--has-error',
+            );
+            break;
+          case 'doorbell':
+            this.DOM.verifyModal.formDoorbell.classList.add(
+              'form-control--has-error',
+            );
+            break;
+
+          default:
+            break;
+        }
+      }
+      return formValues[key] !== '';
+    });
   }
 
   getPosition(options) {
@@ -562,6 +591,8 @@ export default class {
   }
 
   async submitAddress() {
+    if (!this.isFormValid()) return;
+
     PubSub.publish('show_loader');
     const formValues = this.getForm();
     const addressObject = {

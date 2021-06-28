@@ -2,8 +2,7 @@
 
 .form-floating {
   position: relative;
-  .form-control,
-  .form-control:disabled {
+  .form-control {
     background-color: transparent;
     color: #000;
     height: 70px;
@@ -20,7 +19,24 @@
     border-bottom: 1px solid #eff0f1;
     transition: background-color $trans-time1 $trans-easing,
       border $trans-time1 $trans-easing;
+    &:disabled {
+      background-color: transparent;
+      color: #000;
+      height: 70px;
+      min-height: 70px;
+      display: block;
+      width: 100%;
+      border-width: 0;
+      padding: 24px 16px;
+      box-sizing: border-box;
+      @include font-size-4;
 
+      font-weight: 700;
+      border-bottom: 1px solid transparent;
+      border-bottom: 1px solid #eff0f1;
+      transition: background-color $trans-time1 $trans-easing,
+        border $trans-time1 $trans-easing;
+    }
     &::placeholder {
       color: transparent;
       opacity: 0;

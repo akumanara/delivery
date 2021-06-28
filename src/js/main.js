@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 /* global MODE */
 import autoBind from 'auto-bind';
 import Swiper from 'swiper/bundle';
@@ -8,6 +9,7 @@ import List from 'list.js';
 import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
 import autosize from 'autosize';
+import { gsap, ScrollToPlugin } from 'gsap/all';
 import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
@@ -21,17 +23,18 @@ import API from './api';
 import { store } from './store';
 import AddressComponent from './addressComponent';
 import PaymentType from './paymentType';
-
+import Alert from './alert';
 // import Layout from './layout';
 
 class App {
   constructor() {
+    initSentry();
+    deliveryConsole();
     window.addEventListener('load', this.windowLoaded);
     // save the main object for later use
     store.app = this;
 
-    initSentry();
-    deliveryConsole();
+    gsap.registerPlugin(ScrollToPlugin);
 
     // kill console logs in production
     if (MODE === 'production') {
@@ -328,11 +331,25 @@ class App {
     this.DOM.loader.classList.remove('active');
   }
 
+  // window load event.
+  // The load event is fired when the whole page has loaded,
+  // including all dependent resources such as stylesheets and images.
   windowLoaded() {
     document.body.classList.add('page-loaded');
+    window.AlertSystem = Alert;
+    const a = new Alert({
+      text: 'this is the text alert. Say hi. sup my text alert', // the text to show in the alert
+      timeToKill: 65, // time until it closes
+      type: 'info', // or 'error'
+      iconName: 'alert-phone', // as in our icons
+      showTimer: true, // show the timer or not
+    });
+    const el = document.querySelector('.js-scroll-on-page-load');
+    if (el) {
+      // el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      gsap.to(window, { duration: 0.3, scrollTo: el });
+    }
   }
 }
 
 window.globalApp = new App();
-
-// const a = new Layout();
