@@ -605,6 +605,7 @@ export default class {
   }
 
   isFormValid() {
+    const formValues = this.getForm();
     Object.keys(formValues).forEach((key) => {
       switch (key) {
         case 'street':
