@@ -10,135 +10,128 @@
 <div class="modal js-add-card-modal add-card">
   <!-- THE ACTUAL WINDOW -->
   <div class="modal__window">
+    <!-- HEADER -->
+    <div class="modal__header">
+      <div class="modal__header-left">Προσθήκη νέας κάρτας</div>
+      <div class="modal__header-right">
+        <div class="js-close-add-card-modal">
+          <img src="./images/icons/modal-close.svg" alt="" class="" />
+        </div>
+      </div>
+    </div>
     <!-- BODY -->
     <div class="modal__body">
-      <!-- HEADER -->
-      <div class="modal__header">
-        <div class="modal__header-left">Προσθήκη νέας κάρτας</div>
-        <div class="modal__header-right">
-          <div class="js-close-add-card-modal">
-            <img src="./images/icons/modal-close.svg" alt="" class="" />
-          </div>
+      <img src="./images/illustrations/coupon.svg" alt="" class="img-fluid" />
+
+      <!-- TAG -->
+      <div class="add-card__tags px-16 py-20">
+        <div class="add-card__tag add-card__tag--active">Own</div>
+        <div class="add-card__tag">Company</div>
+      </div>
+
+      <!-- ERROR -->
+      <div class="p-16 js-add-card-error add-card__error">
+        <img
+          src="./images/icons/error.svg"
+          alt=""
+          class="img-fluid mw-22 flex-shrink-0 align-self-center mr-10"
+        />
+        <div class="js-add-card-error-msg">
+          Τα στοιχεια της καρτας ειναι λαθος
         </div>
       </div>
 
-      <div class="modal__inner-body">
-        <img src="./images/illustrations/coupon.svg" alt="" class="img-fluid" />
-
-        <!-- TAG -->
-        <div class="add-card__tags px-16 py-20">
-          <div class="add-card__tag add-card__tag--active">Own</div>
-          <div class="add-card__tag">Company</div>
-        </div>
-
-        <!-- ERROR -->
-        <div class="p-16 js-add-card-error add-card__error">
-          <img
-            src="./images/icons/error.svg"
-            alt=""
-            class="img-fluid mw-22 flex-shrink-0 align-self-center mr-10"
+      <!-- VIRTUAL FORM -->
+      <form action="" method="POST" id="payment-form" class="add-card__form">
+        <!-- CARD NUMBER -->
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="card"
+            placeholder="placeholder"
+            inputmode="numeric"
+            maxlength="24"
+            autocomplete="off"
+            data-vp="cardnumber"
           />
-          <div class="js-add-card-error-msg">
-            Τα στοιχεια της καρτας ειναι λαθος
-          </div>
+          <label for="card">Αριθμός κάρτας</label>
         </div>
-
-        <!-- VIRTUAL FORM -->
-        <form action="" method="POST" id="payment-form" class="add-card__form">
-          <!-- CARD NUMBER -->
+        <!-- NAME -->
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="placeholder"
+            autocomplete="off"
+            data-vp="cardholder"
+          />
+          <label for="name">Όνοματεπώνυμο κατόχου</label>
+        </div>
+        <!-- EXPIRATION -->
+        <div class="add-card__expiration">
+          <!-- MONTH -->
           <div class="form-floating">
             <input
               type="text"
               class="form-control"
-              id="card"
+              id="month"
               placeholder="placeholder"
               inputmode="numeric"
-              maxlength="24"
+              maxlength="2"
               autocomplete="off"
-              data-vp="cardnumber"
+              data-vp="month"
             />
-            <label for="card">Αριθμός κάρτας</label>
+            <label for="month">Μήνας Λήξης</label>
           </div>
-          <!-- NAME -->
+          <!-- YEAR -->
           <div class="form-floating">
             <input
               type="text"
               class="form-control"
-              id="name"
+              id="year"
               placeholder="placeholder"
+              inputmode="numeric"
+              maxlength="2"
               autocomplete="off"
-              data-vp="cardholder"
+              data-vp="year"
             />
-            <label for="name">Όνοματεπώνυμο κατόχου</label>
+            <label for="year">Έτος Λήξης</label>
           </div>
-          <!-- EXPIRATION -->
-          <div class="add-card__expiration">
-            <!-- MONTH -->
-            <div class="form-floating">
-              <input
-                type="text"
-                class="form-control"
-                id="month"
-                placeholder="placeholder"
-                inputmode="numeric"
-                maxlength="2"
-                autocomplete="off"
-                data-vp="month"
-              />
-              <label for="month">Μήνας Λήξης</label>
-            </div>
-            <!-- YEAR -->
-            <div class="form-floating">
-              <input
-                type="text"
-                class="form-control"
-                id="year"
-                placeholder="placeholder"
-                inputmode="numeric"
-                maxlength="2"
-                autocomplete="off"
-                data-vp="year"
-              />
-              <label for="year">Έτος Λήξης</label>
-            </div>
-          </div>
-          <!-- CVV -->
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              id="cvv"
-              placeholder="placeholder"
-              maxlength="4"
-              autocomplete="off"
-              data-vp="cvv"
-            />
-            <label for="cvv">Εισάγετε CVV</label>
-          </div>
-          <!-- SAVE CARD? -->
-          <div class="form-checkbox">
-            <label class="form-check-label" for="save-card"
-              >Αποθήκευση κάρτας</label
-            >
-            <input
-              class="form-checkbox__input"
-              type="checkbox"
-              id="save-card"
-            />
-          </div>
-          <!-- USE DEFAULT? -->
-          <div class="form-checkbox">
-            <label class="form-check-label" for="default-card"
-              >Χρήση ως προεπιλογή</label
-            >
-            <input
-              class="form-checkbox__input"
-              type="checkbox"
-              id="default-card"
-            />
-          </div>
-        </form>
-      </div>
+        </div>
+        <!-- CVV -->
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="cvv"
+            placeholder="placeholder"
+            maxlength="4"
+            autocomplete="off"
+            data-vp="cvv"
+          />
+          <label for="cvv">Εισάγετε CVV</label>
+        </div>
+        <!-- SAVE CARD? -->
+        <div class="form-checkbox">
+          <label class="form-check-label" for="save-card"
+            >Αποθήκευση κάρτας</label
+          >
+          <input class="form-checkbox__input" type="checkbox" id="save-card" />
+        </div>
+        <!-- USE DEFAULT? -->
+        <div class="form-checkbox">
+          <label class="form-check-label" for="default-card"
+            >Χρήση ως προεπιλογή</label
+          >
+          <input
+            class="form-checkbox__input"
+            type="checkbox"
+            id="default-card"
+          />
+        </div>
+      </form>
     </div>
     <!-- STICKY ACTION -->
     <div class="modal__action">

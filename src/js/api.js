@@ -414,17 +414,7 @@ export default class {
 
     return new Promise((resolve, reject) => {
       const url = `delivery/find/shops-by-location`;
-      const dataToPost = getFormData({
-        // lat: 37.977649
-        // lng: 23.731324
-        // street_number: 12
-        // route: Κολοκοτρώνη
-        // postal_code: 10561
-        // city: Αθήνα
-        // state: Κεντρικός Τομέας Αθηνών
-        // country: Ελλάδα
-        // saved: false
-      });
+      const dataToPost = getFormData(data);
       this.instance
         .put(url, dataToPost, {
           headers: {
