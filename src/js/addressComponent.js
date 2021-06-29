@@ -32,6 +32,15 @@ export default class {
       addNew: this.DOM.chooseAddressModal.querySelector(
         '.choose-address__add-new',
       ),
+      savedAddresses: this.DOM.chooseAddressModal.querySelectorAll(
+        '.choose-address__options-button',
+      ),
+      tag: this.DOM.chooseAddressModal.querySelector(
+        '.choose-address__status-tag',
+      ),
+      accordionHeaderTop: document.querySelector(
+        '.delivery-type__option-header-top',
+      ),
     };
 
     // Autosuggest modal
@@ -85,21 +94,63 @@ export default class {
   }
 
   initChooseAddressModal() {
+    const that = this;
     // Choose address modal
-    if (this.DOM.chooseAddressModal.trigger) {
-      this.DOM.chooseAddressModal.trigger.addEventListener(
-        'click',
-        this.triggerClicked,
-      );
-      this.DOM.chooseAddressModal.closeBtn.addEventListener(
-        'click',
-        this.hideChooseAddressModal,
-      );
-      this.DOM.chooseAddressModal.addNew.addEventListener(
-        'click',
-        this.goToAddNewAddress,
-      );
-    }
+    this.DOM.chooseAddressModal.trigger.addEventListener(
+      'click',
+      this.triggerClicked,
+    );
+    this.DOM.chooseAddressModal.closeBtn.addEventListener(
+      'click',
+      this.hideChooseAddressModal,
+    );
+    this.DOM.chooseAddressModal.addNew.addEventListener(
+      'click',
+      this.goToAddNewAddress,
+    );
+    this.DOM.chooseAddressModal.savedAddresses.forEach((button) => {
+      if (button.classList.contains('active')) {
+        that.selectedAddress = button;
+      }
+
+      button.addEventListener('click', () => {
+        this.submitSavedAddress(button);
+      });
+    });
+
+    // Set tag and description
+    this.DOM.chooseAddressModal.tag.innerHTML =
+      that.selectedAddress.dataset.desc;
+    this.DOM.chooseAddressModal.accordionHeaderTop.innerHTML = `TODO ${this.DOM.chooseAddressModal.accordionHeaderTop.innerHTML}`;
+  }
+
+  async submitSavedAddress(button) {
+    PubSub.publish('show_loader');
+    const addressObject = {
+      lat: button.dataset.lat,
+      lng: button.dataset.lng,
+      street_number: button.dataset.number,
+      route: button.dataset.street,
+      postal_code: button.dataset.postal,
+      city: button.dataset.city,
+      state: 'state',
+      country: 'Ελλάδα',
+      saved: true,
+      doorbell: button.dataset.door,
+      floor: button.dataset.floor,
+    };
+    await this.api
+      .addAddress(addressObject)
+      .then((result) => {
+        console.log(result);
+        window.location.reload();
+      })
+      .catch((error) => {
+        // TODO change to our alert
+        alert(error.message);
+      });
+
+    PubSub.publish('hide_loader');
   }
 
   initAutoSuggestModal() {
@@ -554,7 +605,6 @@ export default class {
   }
 
   isFormValid() {
-    const formValues = this.getForm();
     Object.keys(formValues).forEach((key) => {
       switch (key) {
         case 'street':
@@ -659,7 +709,7 @@ export default class {
       city: formValues.city,
       state: 'state',
       country: 'Ελλάδα',
-      saved: false,
+      saved: true,
       doorbell: formValues.doorbell,
       floor: formValues.floor,
     };
