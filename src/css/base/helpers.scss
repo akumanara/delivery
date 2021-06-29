@@ -112,3 +112,7 @@ $spacings: 6, 10, 16, 18, 20, 28, 30;
     padding: #{$spacing}px;
   }
 }
+
+.scroll-padding-bottom {
+  scroll-padding-bottom: 100px;
+}

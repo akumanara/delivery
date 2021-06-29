@@ -22,7 +22,8 @@
     width: 100%;
     // background-clip: padding-box;
     overflow-y: auto;
-    // scroll-padding-bottom: 100px;
+    // scroll-padding-top: 70px;
+    scroll-padding-bottom: 100px;
   }
   &__header {
     display: flex;

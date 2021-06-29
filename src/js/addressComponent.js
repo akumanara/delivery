@@ -482,12 +482,12 @@ export default class {
       'primary-btn--disabled',
     );
 
-    // this.DOM.autosuggestModal.stickyAction.classList.remove('hidden');
+    this.DOM.autosuggestModal.stickyAction.classList.remove('hidden');
   }
 
   autosuggestModalDisableButton() {
     this.DOM.autosuggestModal.actionBtn.classList.add('primary-btn--disabled');
-    // this.DOM.autosuggestModal.stickyAction.classList.add('hidden');
+    this.DOM.autosuggestModal.stickyAction.classList.add('hidden');
   }
 
   goToVerifyModal() {

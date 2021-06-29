@@ -32,14 +32,14 @@ class App {
     deliveryConsole();
     autoBind(this);
 
-    document.querySelectorAll('input').forEach((element) => {
-      element.addEventListener('focus', (e) => {
-        console.log(e);
-        e.preventDefault();
-        e.stopPropagation();
-        e.target.scrollIntoView();
-      });
-    });
+    // document.querySelectorAll('input').forEach((element) => {
+    //   element.addEventListener('focus', (e) => {
+    //     console.log(e);
+    //     // e.preventDefault();
+    //     // e.stopPropagation();
+    //     e.target.scrollIntoView(true);
+    //   });
+    // });
 
     window.addEventListener('load', this.windowLoaded);
     // this.windowResize = debounce(this.windowResize, 100);
