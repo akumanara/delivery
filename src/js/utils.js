@@ -100,6 +100,12 @@ const getFormData = (object) => {
   return formData;
 };
 
+const getURLSearchData = (object) => {
+  const params = new URLSearchParams();
+  Object.keys(object).forEach((key) => params.append(key, object[key]));
+  return params;
+};
+
 const initSentry = () => {
   console.log(`MODE IS  ${MODE}`);
   console.log(`RELEASE IS  ${VERSION}`);
@@ -193,4 +199,5 @@ export {
   initSentry,
   validation,
   distanceBetweenLatLon,
+  getURLSearchData,
 };

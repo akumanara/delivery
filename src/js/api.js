@@ -5,7 +5,7 @@ import productFromCart from './serverResponses/productDataFromCart2';
 import voucherFail from './serverResponses/voucherFail';
 import voucherSuccess from './serverResponses/voucherSuccess';
 import { store } from './store';
-import { getFormData } from './utils';
+import { getFormData, getURLSearchData } from './utils';
 
 export default class {
   constructor() {
@@ -414,9 +414,9 @@ export default class {
 
     return new Promise((resolve, reject) => {
       const url = `delivery/find/shops-by-location`;
-      const dataToPost = getFormData(data);
+      const dataToPost = getURLSearchData(data);
       this.instance
-        .post(url, dataToPost, {
+        .put(url, dataToPost, {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
           },
