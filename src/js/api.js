@@ -416,7 +416,11 @@ export default class {
       const url = `delivery/find/shops-by-location`;
       const dataToPost = getFormData(data);
       this.instance
-        .put(url, dataToPost)
+        .post(url, dataToPost, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
         .then((response) => {
           resolve(response.data);
         })
