@@ -1,27 +1,36 @@
 Todo:
-  ☐ [product_modal] - offers - @critical
-  ☐ [store] new / change address accordion - @critical
-  ☐ [general] alerts (simple / timer / closable) @critical
-  ☐ [general] lazy load stis store cards - @delivery dependency
-  ☐ [general] svg icon css for dark/light - @misa dependency
-  ☐ [product_modal] hide/view large html description
-  ☐ [product_modal] zoom on photos
-  ☐ [store] favorite api bridge - @delivery dependency
-  ☐ [store] previous orders - add previous order to basket modal
-  ☐ [store] closes store with suggestions
-  ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
-  ☐ [bug] an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment)
-  ☐ [bug] autosize na ginei update an exei hdh content mesa
-  ☐ [checkout] show more/show less on receipt
-  ☐ [checkout/general] textarea focus /placeholder
-  ☐ sentry remove cc data before sending @critical
-  ☐ [checkout page]payment method cannot be unselected
-  ☐ [bug] map autosuggest -  me to button. paei panw apo ta search results
-  ☐ [general] select styling - (add address validation modal)
-  ☐ [address] stis apothikevmenes diefthinseis pos tha kanoume call? pia tha einai telika ta data
+  general:
+    ☐ [general] lazy load stis store cards - @delivery dependency
+    ☐ [general] svg icon css for dark/light - @misa dependency
+    ☐ [general] select styling - (add address validation modal)
+    ☐ [general] sentry remove cc data before sending @critical;
+    ☐ [general] header navigation
 
-
-
+  product modal:
+    ☐ [product_modal] - offers - @critical
+    ☐ [product_modal] hide/view large html description
+    ☐ [product_modal] zoom on photos
+  store:
+    ☐ [store] new / change address accordion - @critical
+    ☐ [store] previous orders - add previous order to basket modal
+    ☐ [store] closed store with suggestions
+  checkout:
+    ☐ [checkout] show more/show less on receipt
+    ☐ [checkout/general] textarea focus /placeholder
+    ☐ [checkout page]payment method cannot be unselected
+  address:
+    ☐ [address] stis apothikevmenes diefthinseis pos tha kanoume call? pia tha einai telika ta data
+    ☐ [address] notification popup
+    ☐ bug me to koympi apo pisw sti lista. na svinei to koumpi otan einai anoixta ta predictions
+    ☐ scroll sto anoixto viewport me scrollable ti lista
+    ☐ guest user
+  bugs:
+    ☐ [bug] map autosuggest -  me to button. paei panw apo ta search results
+    ☐ [bug] alert ios border radius
+  known deffered bugs:
+    ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
+    ☐ [bug] an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment)
+    ☐ [bug] autosize na ginei update an exei hdh content mesa
 
 Doing:
 
@@ -29,6 +38,8 @@ Doing:
 
 
 Done:
+  ✔ [store] favorite api bridge - @delivery dependency @done(21-06-28 13:20)
+  ✔ [general] alerts (simple / timer / closable) @critical @done(21-06-28 13:19)
   ✔ [checkout page] - layout - guest @done(21-06-25 16:04)
   ✔ [checkout page] verify phone number modal - guest @done(21-06-25 16:04)
   ✔ add address validation modal check if form is ok. completed @done(21-06-25 16:04)

@@ -1,6 +1,7 @@
 /* eslint-disable class-methods-use-this */
 /* global MODE */
 import autoBind from 'auto-bind';
+import { debounce } from 'lodash';
 import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
@@ -14,7 +15,6 @@ import { showFPS, makeid, deliveryConsole, initSentry } from './utils';
 import StoreCatalog from './storeCatalog';
 import ProductList from './productList';
 import Cart from './cart';
-import CheckoutCart from './checkout-cart';
 import VerifyNumber from './verify-number';
 import Coupon from './coupon';
 import AddCard from './add-card';
@@ -30,30 +30,37 @@ class App {
   constructor() {
     initSentry();
     deliveryConsole();
+    autoBind(this);
+
     window.addEventListener('load', this.windowLoaded);
+    // this.windowResize = debounce(this.windowResize, 100);
+    // this.initialWindowInnerHeight = window.innerHeight;
+    // this.isVirtualKeyboardActive = false;
+    // window.addEventListener('resize', this.windowResize);
+
+    autosize(document.querySelectorAll('textarea'));
+    gsap.registerPlugin(ScrollToPlugin);
+    this.api = new API();
+
     // save the main object for later use
     store.app = this;
-
-    gsap.registerPlugin(ScrollToPlugin);
 
     // kill console logs in production
     if (MODE === 'production') {
       // console.log = () => {};
-    }
-
-    const app = this;
-    autoBind(this);
-
-    // FPS
-    if (MODE === 'development') {
+    } else if (MODE === 'development') {
       // showFPS();
       // document.querySelector('.header').addEventListener('click', () => {
       //   document.querySelector('.stats').classList.toggle('display-none');
       // });
     }
 
-    // Autosize all textareas
-    autosize(document.querySelectorAll('textarea'));
+    this.DOM = {};
+    this.DOM.loader = document.querySelector('.delivery-loader');
+
+    // Subscribe to topics
+    PubSub.subscribe('hide_loader', this.hideLoader);
+    PubSub.subscribe('show_loader', this.showLoader);
 
     // Coupon Modal
     const couponModalElement = document.querySelector('.js-coupon-modal');
@@ -67,33 +74,16 @@ class App {
       this.addCard = new AddCard(addCardModalElement);
     }
 
-    // payment type
+    // Payment type
     const paymentTypeElement = document.querySelector('.payment-type');
     if (paymentTypeElement) {
       this.paymentType = new PaymentType();
     }
 
-    this.api = new API();
-
-    // Subscribe to topics
-    PubSub.subscribe('hide_loader', this.hideLoader);
-    PubSub.subscribe('show_loader', this.showLoader);
-
-    this.DOM = {
-      loader: document.querySelector('.delivery-loader'),
-    };
-
-    // // dummy todo delete later
-    // document.querySelectorAll('.payment-type__button').forEach((btn) => {
-    //   btn.addEventListener('click', () => {
-    //     btn.classList.toggle('payment-type__button--active');
-    //   });
-    // });
-
     // Product modal (add product to basket) (must be before cart)
     const storeMenuCatalog = document.querySelector('.store-menu__catalog');
     if (storeMenuCatalog) {
-      this.productList = new ProductList(app);
+      this.productList = new ProductList();
     }
     // Delivery type (must be before cart)
     const deliveryTypeElement = document.querySelector('.delivery-type');
@@ -101,18 +91,13 @@ class App {
       this.deliveryType = new DeliveryType();
     }
 
-    // [Store page] Cart
+    // Cart (store page)
     const cartElement = document.querySelector('.cart');
     if (cartElement) {
       this.cart = new Cart();
     }
 
-    // [Checkout page] Cart
-    const chechkoutCartElement = document.querySelector('.checkout-cart');
-    if (chechkoutCartElement) {
-      this.checkoutCart = new CheckoutCart();
-    }
-
+    // Verify number modal
     const verifyNumberModalElement = document.querySelector(
       '.js-verify-number-modal',
     );
@@ -254,13 +239,13 @@ class App {
             // dont reflow on the nested accordions because it already triggers once on the parent accordion.
             // onOpen and onClose is triggered via transitionend event which is fired when a CSS transition has completed.
             if (!el.classList.contains('accordion__container--nested')) {
-              app.reflow();
+              store.app.reflow();
             }
           },
           onClose() {
             // see above onOpen comment
             if (!el.classList.contains('accordion__container--nested')) {
-              app.reflow();
+              store.app.reflow();
             }
           },
         });
@@ -337,19 +322,43 @@ class App {
   windowLoaded() {
     document.body.classList.add('page-loaded');
     window.AlertSystem = Alert;
-    const a = new Alert({
-      text: 'this is the text alert. Say hi. sup my text alert', // the text to show in the alert
-      timeToKill: 65, // time until it closes
-      type: 'info', // or 'error'
-      iconName: 'alert-phone', // as in our icons
-      showTimer: true, // show the timer or not
-    });
-    const el = document.querySelector('.js-scroll-on-page-load');
-    if (el) {
-      // el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      gsap.to(window, { duration: 0.3, scrollTo: el });
-    }
+    /* eslint-disable no-new */
+    // new Alert({
+    //   text: 'This is an alert message', // the text to show in the alert
+    //   timeToKill: 5, // time until it closes
+    //   type: 'info', // or 'error'
+    //   iconName: 'alert-phone', // as in our icons
+    //   showTimer: true, // show the timer or not
+    // });
   }
+
+  // windowResize(e) {
+  //   console.log(this.initialWindowInnerHeight);
+  //   if (window.innerHeight < this.initialWindowInnerHeight) {
+  //     // viewport is smaller. maybe kb present?
+  //     this.isVirtualKeyboardActive = true;
+  //     new Alert({
+  //       text: 'opened kb', // the text to show in the alert
+  //       timeToKill: 2, // time until it closes
+  //       type: 'info', // or 'error'
+  //       iconName: 'alert-phone', // as in our icons
+  //       showTimer: false, // show the timer or not
+  //     });
+  //   } else if (
+  //     this.isVirtualKeyboardActive &&
+  //     this.initialWindowInnerHeight === window.innerHeight
+  //   ) {
+  //     // viewport is greater again. maybe kb hidden?
+  //     this.isVirtualKeyboardActive = false;
+  //     new Alert({
+  //       text: 'closed kb', // the text to show in the alert
+  //       timeToKill: 2, // time until it closes
+  //       type: 'info', // or 'error'
+  //       iconName: 'alert-phone', // as in our icons
+  //       showTimer: false, // show the timer or not
+  //     });
+  //   }
+  // }
 }
 
 window.globalApp = new App();

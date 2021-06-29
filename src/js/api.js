@@ -200,6 +200,7 @@ export default class {
     });
   }
 
+  // TODO remove this
   getCheckoutCart() {
     // https://www.delivery.gr/delivery/cart/11360/show-insert
     if (store.context.mode === 'development') {

@@ -5,8 +5,8 @@
       z-index: 1;
     }
 
-    .modal__action {
-      // z-index: 0;
+    .modal__action.hidden {
+      display: none;
     }
   }
   &__map-illustration {

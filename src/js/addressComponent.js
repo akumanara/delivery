@@ -52,6 +52,7 @@ export default class {
       actionBtn: this.DOM.autosuggestModal.querySelector('.js-action-btn'),
       closeBtn: this.DOM.autosuggestModal.querySelector('.js-close-modal'),
       trackme: this.DOM.autosuggestModal.querySelector('.add-address__trackme'),
+      stickyAction: this.DOM.autosuggestModal.querySelector('.modal__action'),
       noResultTemplate: this.DOM.autosuggestModal.querySelector(
         '.add-address__autosuggest-result--no-result',
       ).outerHTML,
@@ -136,6 +137,11 @@ export default class {
     this.DOM.verifyModal.backBtn.addEventListener(
       'click',
       this.goToAutoSuggestModal,
+    );
+
+    this.DOM.verifyModal.closeBtn.addEventListener(
+      'click',
+      this.hideVerifyModal,
     );
 
     // focus out
@@ -424,10 +430,13 @@ export default class {
     this.DOM.autosuggestModal.actionBtn.classList.remove(
       'primary-btn--disabled',
     );
+
+    // this.DOM.autosuggestModal.stickyAction.classList.remove('hidden');
   }
 
   autosuggestModalDisableButton() {
     this.DOM.autosuggestModal.actionBtn.classList.add('primary-btn--disabled');
+    // this.DOM.autosuggestModal.stickyAction.classList.add('hidden');
   }
 
   goToVerifyModal() {
@@ -546,40 +555,86 @@ export default class {
 
   isFormValid() {
     const formValues = this.getForm();
-
-    return Object.keys(formValues).every((key) => {
-      if (formValues[key] === '') {
-        switch (key) {
-          case 'street':
+    Object.keys(formValues).forEach((key) => {
+      switch (key) {
+        case 'street':
+          if (formValues[key] === '') {
             this.DOM.verifyModal.formStreetName.classList.add(
               'form-control--has-error',
             );
-            break;
-          case 'number':
+          } else {
+            this.DOM.verifyModal.formStreetName.classList.remove(
+              'form-control--has-error',
+            );
+          }
+          break;
+        case 'number':
+          if (formValues[key] === '') {
             this.DOM.verifyModal.formStreetNumber.classList.add(
               'form-control--has-error',
             );
-            break;
-          case 'postal':
+          } else {
+            this.DOM.verifyModal.formStreetNumber.classList.remove(
+              'form-control--has-error',
+            );
+          }
+          break;
+        case 'postal':
+          if (formValues[key] === '') {
             this.DOM.verifyModal.formPostalCode.classList.add(
               'form-control--has-error',
             );
-            break;
-          case 'city':
+          } else {
+            this.DOM.verifyModal.formPostalCode.classList.remove(
+              'form-control--has-error',
+            );
+          }
+
+          break;
+        case 'city':
+          if (formValues[key] === '') {
             this.DOM.verifyModal.formStreetCity.classList.add(
               'form-control--has-error',
             );
-            break;
-          case 'doorbell':
+          } else {
+            this.DOM.verifyModal.formStreetCity.classList.remove(
+              'form-control--has-error',
+            );
+          }
+
+          break;
+        case 'doorbell':
+          if (formValues[key] === '') {
             this.DOM.verifyModal.formDoorbell.classList.add(
               'form-control--has-error',
             );
-            break;
+          } else {
+            this.DOM.verifyModal.formDoorbell.classList.remove(
+              'form-control--has-error',
+            );
+          }
 
-          default:
-            break;
-        }
+          break;
+        case 'floor':
+          if (formValues[key] === '') {
+            this.DOM.verifyModal.formFloor.classList.add(
+              'form-control--has-error',
+            );
+          } else {
+            this.DOM.verifyModal.formFloor.classList.remove(
+              'form-control--has-error',
+            );
+          }
+
+          break;
+        default:
+          break;
       }
+    });
+
+    return Object.keys(formValues).every((key) => {
+      console.log(key);
+
       return formValues[key] !== '';
     });
   }
@@ -602,11 +657,9 @@ export default class {
       route: formValues.street,
       postal_code: formValues.postal,
       city: formValues.city,
-      // todo ask dimitris about those 3
-      // state: Κεντρικός Τομέας Αθηνών
-      // country: Ελλάδα
-      // saved: false,
-      // todo tell dimitris about new data
+      state: 'state',
+      country: 'Ελλάδα',
+      saved: false,
       doorbell: formValues.doorbell,
       floor: formValues.floor,
     };
