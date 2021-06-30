@@ -66,6 +66,9 @@ export default class {
     PubSub.publish('cart_update', cart);
 
     PubSub.publish('hide_loader');
+
+    // Close the accordion
+    this.accordion.close(0);
   }
 
   async setMethodTakeAway() {
@@ -80,6 +83,9 @@ export default class {
     PubSub.publish('cart_update', cart);
 
     PubSub.publish('hide_loader');
+
+    // Close the accordion
+    this.accordion.close(0);
   }
 
   setCopies() {

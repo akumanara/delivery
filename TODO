@@ -27,22 +27,21 @@ Todo:
     ☐ 20-25 mins apo pou kai pws kai an mporoume.
   bugs:
     ☐ [bug] map autosuggest -  me to button. paei panw apo ta search results
-    known deffered bugs:
-      ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
-      ☐ [bug]
-      ☐ [bug] autosize na ginei update an exei hdh content mesa
+  known deffered bugs:
+    ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
+    ☐ [bug] autosize na ginei update an exei hdh content mesa
 
-      Doing:
-        otan den yparxei active address na mi paei na parei to tag.
-        otan den yparxei active address kai einai logged in na ton pame sto add adress kai oxi choose adderss
-        otan yparxei active address na simplirwsw kai to accordeon
-        otan kanw click stin epilogi delivery type na kleinei meta tin epilogi
-        an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment) observer parents
+Doing:
 
 
-        Done:
-          ✔ [bug] alert ios border radius @done(21-06-30 11:46)
-          ✔ [store] favorite api bridge - @delivery dependency @done(21-06-28 13:20)
+Done:
+  ✔ an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment) observer parents @done(21-06-30 12:22)
+  ✔ otan kanw click stin epilogi delivery type na kleinei meta tin epilogi @done(21-06-30 12:19)
+  ✔ otan den yparxei active address na mi paei na parei to tag. @done(21-06-30 12:03)
+  ✔ otan den yparxei active address kai einai logged in na ton pame sto add adress kai oxi choose adderss @done(21-06-30 12:06)
+  ✔ otan yparxei active address na simplirwsw kai to accordeon @done(21-06-30 12:17)
+  ✔ [bug] alert ios border radius @done(21-06-30 11:46)
+  ✔ [store] favorite api bridge - @delivery dependency @done(21-06-28 13:20)
   ✔ [general] alerts (simple / timer / closable) @critical @done(21-06-28 13:19)
   ✔ [checkout page] - layout - guest @done(21-06-25 16:04)
   ✔ [checkout page] verify phone number modal - guest @done(21-06-25 16:04)

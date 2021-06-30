@@ -68,10 +68,10 @@
     // The following lines hide the accordion panels until the page is loaded.
     // when the page is loaded we add the class page-loaded to the body element.
 
-    // display: none;
-    // .page-loaded & {
-    //   display: block;
-    // }
+    display: none;
+    .page-loaded & {
+      display: block;
+    }
   }
   &__description {
     padding: 16px;

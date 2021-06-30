@@ -21,6 +21,21 @@ export default class {
     // Query the DOM
     this.DOM = {};
 
+    // Accordion
+    this.DOM.accordion = document.querySelector(
+      '.address-trigger .accordion__container',
+    );
+
+    this.DOM.accordion = {
+      accordion: this.DOM.accordion,
+      headerTop: this.DOM.accordion.querySelector(
+        '.delivery-type__option-header-top',
+      ),
+      headerBottom: this.DOM.accordion.querySelector(
+        '.delivery-type__option-header-bottom',
+      ),
+    };
+
     // Choose Address modal
     this.DOM.chooseAddressModal = document.querySelector('.choose-address');
     this.DOM.chooseAddressModal = {
@@ -37,9 +52,6 @@ export default class {
       ),
       tag: this.DOM.chooseAddressModal.querySelector(
         '.choose-address__status-tag',
-      ),
-      accordionHeaderTop: document.querySelector(
-        '.delivery-type__option-header-top',
       ),
     };
 
@@ -83,6 +95,7 @@ export default class {
       formDoorbell: this.DOM.verifyModal.querySelector('.js-doorbell'),
       formFloor: this.DOM.verifyModal.querySelector('.js-floor'),
     };
+    console.log(this.DOM);
   }
 
   init() {
@@ -94,7 +107,7 @@ export default class {
   }
 
   initChooseAddressModal() {
-    const that = this;
+    // const that = this;
     // Choose address modal
     this.DOM.chooseAddressModal.trigger.addEventListener(
       'click',
@@ -110,7 +123,7 @@ export default class {
     );
     this.DOM.chooseAddressModal.savedAddresses.forEach((button) => {
       if (button.classList.contains('active')) {
-        that.selectedAddress = button;
+        this.selectedAddress = button;
       }
 
       button.addEventListener('click', () => {
@@ -118,10 +131,21 @@ export default class {
       });
     });
 
+    // if we have a selected address set data
+    if (this.selectedAddress) {
+      this.setActiveAddressData();
+    }
+  }
+
+  setActiveAddressData() {
     // Set tag and description
     this.DOM.chooseAddressModal.tag.innerHTML =
-      that.selectedAddress.dataset.desc;
-    this.DOM.chooseAddressModal.accordionHeaderTop.innerHTML = `TODO ${this.DOM.chooseAddressModal.accordionHeaderTop.innerHTML}`;
+      this.selectedAddress.dataset.desc;
+    this.DOM.accordion.headerTop.innerHTML = `TODO ${this.DOM.accordion.headerTop.innerHTML}`;
+    this.DOM.accordion.headerBottom.innerHTML =
+      this.selectedAddress.querySelector(
+        '.choose-address__options-button-name',
+      ).innerHTML;
   }
 
   async submitSavedAddress(button) {
@@ -253,7 +277,10 @@ export default class {
   triggerClicked() {
     console.log('clicked');
     // TODO check if the user has at least one address
-    if (store.context.isUserLoggedIn) {
+    if (
+      store.context.isUserLoggedIn &&
+      this.DOM.chooseAddressModal.savedAddresses.length > 0
+    ) {
       console.log('user is logged in');
       this.showChooseAddressModal();
     } else {

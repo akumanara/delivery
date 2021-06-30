@@ -275,6 +275,8 @@ class App {
         spaceBetween: 16,
         // slidesOffsetAfter: 16,
         // slidesOffsetBefore: 16,
+        observer: true,
+        observeParents: true,
       });
       this.sliders.push(tmpSlider);
     });
