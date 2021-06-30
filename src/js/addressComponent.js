@@ -95,7 +95,6 @@ export default class {
       formDoorbell: this.DOM.verifyModal.querySelector('.js-doorbell'),
       formFloor: this.DOM.verifyModal.querySelector('.js-floor'),
     };
-    console.log(this.DOM);
   }
 
   init() {

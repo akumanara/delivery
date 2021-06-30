@@ -295,6 +295,10 @@
     box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
     border-radius: 10px;
     transition: $trans;
+    &--disabled {
+      background: #8eaeff;
+      pointer-events: none;
+    }
   }
   &__checkout-btn-left {
     display: flex;
