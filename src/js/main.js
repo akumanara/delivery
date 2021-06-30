@@ -32,6 +32,8 @@ class App {
     deliveryConsole();
     autoBind(this);
 
+    window.Alert = Alert;
+
     // document.querySelectorAll('input').forEach((element) => {
     //   element.addEventListener('focus', (e) => {
     //     console.log(e);
@@ -330,7 +332,7 @@ class App {
   // including all dependent resources such as stylesheets and images.
   windowLoaded() {
     document.body.classList.add('page-loaded');
-    window.Alert = Alert;
+
     /* eslint-disable no-new */
     // new Alert({
     //   text: 'This is an alert message', // the text to show in the alert
