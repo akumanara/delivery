@@ -330,7 +330,7 @@ class App {
   // including all dependent resources such as stylesheets and images.
   windowLoaded() {
     document.body.classList.add('page-loaded');
-    window.AlertSystem = Alert;
+    window.Alert = Alert;
     /* eslint-disable no-new */
     // new Alert({
     //   text: 'This is an alert message', // the text to show in the alert

@@ -19,7 +19,7 @@ Todo:
     ☐ [checkout/general] textarea focus /placeholder
     ☐ [checkout page]payment method cannot be unselected
   address:
-    ☐ [address] stis apothikevmenes diefthinseis pos tha kanoume call? pia tha einai telika ta data
+    ✔ [address] stis apothikevmenes diefthinseis pos tha kanoume call? pia tha einai telika ta data @done(21-06-30 11:46)
     ☐ [address] notification popup
     ☐ bug me to koympi apo pisw sti lista. na svinei to koumpi otan einai anoixta ta predictions
     ☐ scroll sto anoixto viewport me scrollable ti lista
@@ -27,19 +27,22 @@ Todo:
     ☐ 20-25 mins apo pou kai pws kai an mporoume.
   bugs:
     ☐ [bug] map autosuggest -  me to button. paei panw apo ta search results
-    ☐ [bug] alert ios border radius
-  known deffered bugs:
-    ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
-    ☐ [bug] an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment)
-    ☐ [bug] autosize na ginei update an exei hdh content mesa
+    known deffered bugs:
+      ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
+      ☐ [bug]
+      ☐ [bug] autosize na ginei update an exei hdh content mesa
 
-Doing:
+      Doing:
+        otan den yparxei active address na mi paei na parei to tag.
+        otan den yparxei active address kai einai logged in na ton pame sto add adress kai oxi choose adderss
+        otan yparxei active address na simplirwsw kai to accordeon
+        otan kanw click stin epilogi delivery type na kleinei meta tin epilogi
+        an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment) observer parents
 
 
-
-
-Done:
-  ✔ [store] favorite api bridge - @delivery dependency @done(21-06-28 13:20)
+        Done:
+          ✔ [bug] alert ios border radius @done(21-06-30 11:46)
+          ✔ [store] favorite api bridge - @delivery dependency @done(21-06-28 13:20)
   ✔ [general] alerts (simple / timer / closable) @critical @done(21-06-28 13:19)
   ✔ [checkout page] - layout - guest @done(21-06-25 16:04)
   ✔ [checkout page] verify phone number modal - guest @done(21-06-25 16:04)
