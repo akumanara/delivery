@@ -15,7 +15,7 @@ export default class {
     this.DOM.cart = document.querySelector('.cart');
     this.DOM.toggler = document.querySelector('.cart__toggler');
     this.DOM.togglerBtn = document.querySelector('.cart__toggler-btn');
-  this.DOM.togglerPrice = document.querySelector('.cart__checkout-btn-price');
+    this.DOM.togglerPrice = document.querySelector('.cart__checkout-btn-price');
     this.DOM.cartBody = document.querySelector('.cart__body');
 
     this.isOpen = false;
@@ -34,6 +34,23 @@ export default class {
     // this.init();
   }
 
+  runScripts() {
+    const scripts = this.DOM.cartBody.getElementsByTagName('script');
+    while (scripts.length) {
+      const script = scripts[0];
+      script.parentNode.removeChild(script);
+      const newScript = document.createElement('script');
+      if (script.src) {
+        newScript.src = script.src;
+      } else if (script.textContent) {
+        newScript.textContent = script.textContent;
+      } else if (script.innerText) {
+        newScript.innerText = script.innerText;
+      }
+      document.body.appendChild(newScript);
+    }
+  }
+
   // this function must run everytime the cart is being updated
   init() {
     console.log('init cart');
@@ -42,6 +59,9 @@ export default class {
     // Query the DOM elements
     this.DOM.cartBody = document.querySelector('.cart__body');
     this.DOM.closeBtn = document.querySelector('.cart__header-close');
+
+    // Run the scripts
+    this.runScripts();
 
     // Setup event listeners
     this.DOM.closeBtn.addEventListener('click', this.toggleCart);
