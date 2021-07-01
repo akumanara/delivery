@@ -6,7 +6,8 @@ Todo:
     ☐ [general] sentry remove cc data before sending @critical;
     ☐ [general] header navigation
     ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
-    ☐ duplicate icons?
+    ☐ duplicate svg icons?
+    ☐ empty state gia to choose address modal. tag is empty / no delivery time (catalog page). kai empty state gia accordeon
 
   product modal:
     ☐ [product_modal] - offers - @critical

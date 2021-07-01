@@ -24,6 +24,7 @@ import { store } from './utils/store';
 import Address from './components/address';
 import PaymentType from './components/paymentType';
 import Alert from './components/alert';
+import Navigation from './components/navigation';
 // import Layout from './layout';
 
 class App {
@@ -72,6 +73,9 @@ class App {
     // Subscribe to topics
     PubSub.subscribe('hide_loader', this.hideLoader);
     PubSub.subscribe('show_loader', this.showLoader);
+
+    // Main navigation
+    this.navigation = new Navigation();
 
     // Coupon Modal
     const couponModalElement = document.querySelector('.js-coupon-modal');

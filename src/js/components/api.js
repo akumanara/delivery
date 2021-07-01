@@ -200,35 +200,6 @@ export default class {
     });
   }
 
-  // TODO remove this
-  getCheckoutCart() {
-    // https://www.delivery.gr/delivery/cart/11360/show-insert
-    if (store.context.mode === 'development') {
-      return new Promise((resolve, reject) => {
-        const url = '/partials/checkout-cart.html';
-        axios
-          .get(url)
-          .then((response) => {
-            setTimeout(() => resolve(response.data), 500);
-          })
-          .catch((error) => {
-            reject(error);
-          });
-      });
-    }
-    return new Promise((resolve, reject) => {
-      const url = `delivery/cart/${store.context.storeID}/show-insert`;
-      this.instance
-        .get(url)
-        .then((response) => {
-          resolve(response.data);
-        })
-        .catch((error) => {
-          reject(error);
-        });
-    });
-  }
-
   plusOneProductFromCart(cartIndex) {
     // https://www.delivery.gr/delivery/cart/{store id}/add-one-item/{cart index}
     if (store.context.mode === 'development') {
@@ -353,10 +324,9 @@ export default class {
     });
   }
 
-  addVoucher(voucherID) {
-    // https://www.delivery.gr/user/voucher/add/json
+  addAndApplyVoucher(voucherID) {
+    // https://www.delivery.gr/api/addVoucher
     // voucher_id: sadfsadf
-    // __csrf_token__: 113577275560c0b70b0672c4.77156464
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
@@ -365,17 +335,12 @@ export default class {
       );
     }
     return new Promise((resolve, reject) => {
-      const url = `user/voucher/add/json`;
-      const data = getFormData({
-        csrfToken: store.context.csrfToken,
+      const url = `api/addVoucher`;
+      const data = {
         voucher_id: voucherID,
-      });
+      };
       this.instance
-        .post(url, data, {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-        })
+        .post(url, data)
         .then((response) => {
           resolve(response.data);
         })

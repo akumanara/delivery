@@ -10,7 +10,7 @@ export default {
   variantName: 'επιλογές',
   // Delivery type accordion
   delivery: 'Delivery',
-  deliveryFee: (x) => `Κόστος παράδοσης - ${x}`,
+  deliveryFee: (x) => `Ελάχιστη παραγγελία - ${x}`,
   takeaway: 'Takeaway',
   takeawayLocation: (x) => `Κατάστημα - ${x}`,
   // Checkout payment types

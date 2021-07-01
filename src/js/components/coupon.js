@@ -59,7 +59,7 @@ export default class {
     this.clearPreviousErrorState();
 
     const voucherID = this.DOM.input.value;
-    await this.api.addVoucher(voucherID).then((result) => {
+    await this.api.addAndApplyVoucher(voucherID).then((result) => {
       console.log(result);
       if (result.status === 'error') {
         // errror
@@ -69,7 +69,7 @@ export default class {
         // Toggle the error input
         this.DOM.input.classList.add('form-control--has-error');
       } else if (result.status === 'ok') {
-        // ok TODO
+        // ok
         window.location.reload();
       }
     });
