@@ -3,10 +3,8 @@ import autoBind from 'auto-bind';
 import randomstring from 'randomstring';
 import Handlebars from 'handlebars';
 import RAFManager from 'raf-manager';
-import { store } from './utils/store';
-
-const formatTimer = (seconds) =>
-  new Date(seconds * 1000).toISOString().substr(14, 5);
+import { store } from '../utils/store';
+import { formatTimer } from '../utils/helpers';
 
 // const options = {
 //   text: 'this is the text alert', // the text to show in the alert
@@ -23,6 +21,7 @@ export default class {
   constructor(options) {
     this.options = options;
     autoBind(this);
+
     this.isDone = false;
     this.randomString = randomstring.generate({
       length: 7,

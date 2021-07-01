@@ -4,10 +4,10 @@ import autoBind from 'auto-bind';
 import { debounce } from 'lodash';
 import PubSub from 'pubsub-js';
 import Alert from './alert';
-import { store } from './utils/store';
-import mapStyle from './utils/mapstyle';
+import { store } from '../utils/store';
+import mapStyle from '../utils/mapstyle';
 import API from './api';
-import texts from './utils/texts';
+import texts from '../utils/texts';
 // This class uses places autocomplete service
 // developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service
 export default class {

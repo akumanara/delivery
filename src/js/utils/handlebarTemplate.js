@@ -1,5 +1,5 @@
 import Handlebars from 'handlebars';
-import { currencyFormat } from './utils';
+import { currencyFormat } from './helpers';
 
 // Handlebars partials
 // Handlebars.registerPartial('myPartial', '{{prefix}}');

@@ -1,11 +1,11 @@
 /* eslint-disable class-methods-use-this */
 import axios from 'axios';
-import product from './serverResponses/productData';
-import productFromCart from './serverResponses/productDataFromCart2';
-import voucherFail from './serverResponses/voucherFail';
-import voucherSuccess from './serverResponses/voucherSuccess';
-import { store } from './utils/store';
-import { getFormData, getURLSearchData } from './utils/utils';
+import product from '../serverResponses/productData';
+import productFromCart from '../serverResponses/productDataFromCart2';
+import voucherFail from '../serverResponses/voucherFail';
+// import voucherSuccess from '../serverResponses/voucherSuccess';
+import { store } from '../utils/store';
+import { getFormData, getURLSearchData } from '../utils/helpers';
 
 export default class {
   constructor() {

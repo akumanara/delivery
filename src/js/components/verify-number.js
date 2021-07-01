@@ -1,7 +1,7 @@
 import PubSub from 'pubsub-js';
 import autoBind from 'auto-bind';
 import API from './api';
-import { validation, timeout } from './utils/utils';
+import { validation, timeout } from '../utils/helpers';
 
 export default class {
   constructor() {

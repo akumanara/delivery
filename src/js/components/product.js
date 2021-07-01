@@ -10,10 +10,10 @@ import Alert from './alert';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
-import { animateCSS, currencyFormat, has, getFormData } from './utils/utils';
-import { HandlebarsTemplate } from './utils/handlebarTemplate';
-import { store } from './utils/store';
-import texts from './utils/texts';
+import { animateCSS, currencyFormat, has, getFormData } from '../utils/helpers';
+import { HandlebarsTemplate } from '../utils/handlebarTemplate';
+import { store } from '../utils/store';
+import texts from '../utils/texts';
 
 // Rules and Notes
 // ===========================================

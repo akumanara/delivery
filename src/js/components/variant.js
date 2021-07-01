@@ -1,6 +1,6 @@
 import EventEmitter from 'events';
-import texts from './utils/texts';
-import { has } from './utils/utils';
+import texts from '../utils/texts';
+import { has } from '../utils/helpers';
 
 export default class extends EventEmitter {
   constructor(variants) {

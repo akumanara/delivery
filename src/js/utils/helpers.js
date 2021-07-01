@@ -185,7 +185,11 @@ const distanceBetweenLatLon = (lat1, lon1, lat2, lon2, unit) => {
   return dist;
 };
 
+const formatTimer = (seconds) =>
+  new Date(seconds * 1000).toISOString().substr(14, 5);
+
 export {
+  formatTimer,
   showFPS,
   timeout,
   makeid,

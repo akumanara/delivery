@@ -1,8 +1,8 @@
 import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
-import { store } from './utils/store';
-import texts from './utils/texts';
-import { paymentTypes } from './utils/enum';
+import { store } from '../utils/store';
+import texts from '../utils/texts';
+import { paymentTypes } from '../utils/enum';
 
 export default class {
   constructor() {
