@@ -21,7 +21,7 @@ import Coupon from './components/coupon';
 import DeliveryType from './components/deliveryType';
 import API from './components/api';
 import { store } from './utils/store';
-import AddressComponent from './components/addressComponent';
+import Address from './components/address';
 import PaymentType from './components/paymentType';
 import Alert from './components/alert';
 // import Layout from './layout';
@@ -117,7 +117,7 @@ class App {
     }
 
     // Address Component
-    this.addressComponent = new AddressComponent();
+    this.addressComponent = new Address();
 
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');
