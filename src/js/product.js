@@ -492,8 +492,13 @@ export default class {
         this.calculatePrice();
       })
       .catch((error) => {
-        // TODO change to our alert
-        alert(error.message);
+        console.log(error);
+        const a = new Alert({
+          text: texts.genericErrorMessage,
+          timeToKill: 5, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
       });
 
     PubSub.publish('hide_loader');
@@ -589,7 +594,6 @@ export default class {
         this.calculatePrice();
       })
       .catch((error) => {
-        // TODO change to our alert
         console.log(error);
         const a = new Alert({
           text: texts.genericErrorMessage,

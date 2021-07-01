@@ -3,10 +3,11 @@
 import autoBind from 'auto-bind';
 import { debounce } from 'lodash';
 import PubSub from 'pubsub-js';
+import Alert from './alert';
 import { store } from './utils/store';
 import mapStyle from './utils/mapstyle';
 import API from './api';
-
+import texts from './utils/texts';
 // This class uses places autocomplete service
 // developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service
 export default class {
@@ -169,8 +170,13 @@ export default class {
         window.location.reload();
       })
       .catch((error) => {
-        // TODO change to our alert
-        alert(error.message);
+        console.log(error);
+        const a = new Alert({
+          text: texts.genericErrorMessage,
+          timeToKill: 5, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
       });
 
     PubSub.publish('hide_loader');
@@ -749,8 +755,13 @@ export default class {
         window.location.reload();
       })
       .catch((error) => {
-        // TODO change to our alert
-        alert(error.message);
+        console.log(error);
+        const a = new Alert({
+          text: texts.genericErrorMessage,
+          timeToKill: 5, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
       });
 
     PubSub.publish('hide_loader');
