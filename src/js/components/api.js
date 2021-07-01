@@ -324,7 +324,7 @@ export default class {
     });
   }
 
-  addAndApplyVoucher(voucherID) {
+  addAndApplyVoucher(voucherID, shopID) {
     // https://www.delivery.gr/api/addVoucher
     // voucher_id: sadfsadf
     if (store.context.mode === 'development') {
@@ -338,6 +338,7 @@ export default class {
       const url = `api/addVoucher`;
       const data = {
         voucher_id: voucherID,
+        shop_id: shopID,
       };
       this.instance
         .post(url, data)

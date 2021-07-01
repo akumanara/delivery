@@ -1,6 +1,7 @@
 import PubSub from 'pubsub-js';
 import autoBind from 'auto-bind';
 import API from './api';
+import { store } from '../utils/store';
 
 export default class {
   constructor(couponModalElement) {
@@ -59,20 +60,22 @@ export default class {
     this.clearPreviousErrorState();
 
     const voucherID = this.DOM.input.value;
-    await this.api.addAndApplyVoucher(voucherID).then((result) => {
-      console.log(result);
-      if (result.status === 'error') {
-        // errror
-        // Show the error msg
-        this.DOM.errorMsg.innerText = result.message;
-        this.DOM.error.classList.add('coupon__error--active');
-        // Toggle the error input
-        this.DOM.input.classList.add('form-control--has-error');
-      } else if (result.status === 'ok') {
-        // ok
-        window.location.reload();
-      }
-    });
+    await this.api
+      .addAndApplyVoucher(voucherID, store.context.storeID)
+      .then((result) => {
+        console.log(result);
+        if (result.status === 'error') {
+          // errror
+          // Show the error msg
+          this.DOM.errorMsg.innerText = result.message;
+          this.DOM.error.classList.add('coupon__error--active');
+          // Toggle the error input
+          this.DOM.input.classList.add('form-control--has-error');
+        } else if (result.status === 'ok') {
+          // ok
+          window.location.reload();
+        }
+      });
     PubSub.publish('hide_loader');
   }
 }
