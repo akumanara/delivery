@@ -3,7 +3,7 @@ import autoBind from 'auto-bind';
 import randomstring from 'randomstring';
 import Handlebars from 'handlebars';
 import RAFManager from 'raf-manager';
-import { store } from './store';
+import { store } from './utils/store';
 
 const formatTimer = (seconds) =>
   new Date(seconds * 1000).toISOString().substr(14, 5);

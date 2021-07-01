@@ -2,7 +2,7 @@
 import PubSub from 'pubsub-js';
 import autoBind from 'auto-bind';
 import API from './api';
-import { store } from './store';
+import { store } from './utils/store';
 
 export default class {
   constructor(addCardModalElement) {

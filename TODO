@@ -5,6 +5,8 @@ Todo:
     ☐ [general] select styling - (add address validation modal)
     ☐ [general] sentry remove cc data before sending @critical;
     ☐ [general] header navigation
+    ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
+    ☐ duplicate icons?
 
   product modal:
     ☐ [product_modal] - offers - @critical

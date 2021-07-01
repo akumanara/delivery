@@ -4,8 +4,8 @@ import product from './serverResponses/productData';
 import productFromCart from './serverResponses/productDataFromCart2';
 import voucherFail from './serverResponses/voucherFail';
 import voucherSuccess from './serverResponses/voucherSuccess';
-import { store } from './store';
-import { getFormData, getURLSearchData } from './utils';
+import { store } from './utils/store';
+import { getFormData, getURLSearchData } from './utils/utils';
 
 export default class {
   constructor() {

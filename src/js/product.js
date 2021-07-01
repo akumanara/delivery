@@ -9,9 +9,9 @@ import autosize from 'autosize';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
-import { animateCSS, currencyFormat, has, getFormData } from './utils';
-import { HandlebarsTemplate } from './handlebarTemplate';
-import { store } from './store';
+import { animateCSS, currencyFormat, has, getFormData } from './utils/utils';
+import { HandlebarsTemplate } from './utils/handlebarTemplate';
+import { store } from './utils/store';
 
 // Rules and Notes
 // ===========================================

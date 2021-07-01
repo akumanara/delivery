@@ -3,8 +3,8 @@
 import autoBind from 'auto-bind';
 import { debounce } from 'lodash';
 import PubSub from 'pubsub-js';
-import { store } from './store';
-import mapStyle from './mapstyle';
+import { store } from './utils/store';
+import mapStyle from './utils/mapstyle';
 import API from './api';
 
 // This class uses places autocomplete service

@@ -3,8 +3,8 @@ import autoBind from 'auto-bind';
 import PubSub from 'pubsub-js';
 import Product from './product';
 import API from './api';
-import { store } from './store';
-import { deliveryTypes } from './enum';
+import { store } from './utils/store';
+import { deliveryTypes } from './utils/enum';
 
 export default class {
   constructor() {

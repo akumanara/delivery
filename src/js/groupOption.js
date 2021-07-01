@@ -1,7 +1,7 @@
 import EventEmitter from 'events';
 import currency from 'currency.js';
-import texts from './texts';
-import { currencyFormat, has } from './utils';
+import texts from './utils/texts';
+import { currencyFormat, has } from './utils/utils';
 
 export default class extends EventEmitter {
   constructor(groupOption) {
