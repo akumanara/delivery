@@ -8,6 +8,7 @@ Todo:
     ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
     ☐ duplicate svg icons?
     ☐ empty state gia to choose address modal. tag is empty / no delivery time (catalog page). kai empty state gia accordeon
+    ☐ na doume to scroll/ upsos tou modal pou vgainei otan kaneis click sto header profile (logged in user)
 
   product modal:
     ☐ [product_modal] - offers - @critical

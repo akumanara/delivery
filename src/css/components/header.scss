@@ -25,6 +25,7 @@
   &__user {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   &__user-photo {
@@ -48,7 +49,7 @@
     height: 30px;
   }
   &__login-btn {
-    @include font-size-2;
+    @include font-size-13;
 
     font-weight: 700;
     padding: 10px;
@@ -67,6 +68,7 @@
     justify-content: center;
     position: relative;
     margin-right: 10px;
+    margin-left: 30px;
   }
   &__notification-img {
     position: absolute;
@@ -161,8 +163,8 @@
       margin-top: auto;
     }
     &__secondary-menu {
-      margin-top: 60px;
-      margin-bottom: 30px;
+      margin-top: 40px;
+      margin-bottom: 40px;
       padding: 8px 16px;
       // outline: 1px solid red;
       display: flex;
@@ -176,5 +178,50 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  // USER MODAL
+  &__user-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px 16px;
+    box-sizing: border-box;
+  }
+
+  &__user-modal-window {
+    // outline: 1px solid red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  &__user-modal-item {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eaebec;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  &__user-modal-item-img {
+    margin-right: 10px;
+  }
+  &__user-modal-item-copy {
   }
 }

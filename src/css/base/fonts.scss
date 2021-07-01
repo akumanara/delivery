@@ -76,6 +76,12 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+@mixin font-size-13 {
+  font-size: 13px;
+  line-height: 20px;
+}
+
 @mixin font-size-2 {
   font-size: 14px;
   line-height: 21px;
