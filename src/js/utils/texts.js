@@ -65,4 +65,5 @@ export default {
     },
   },
   autocompleteNoResults: `Δεν βρήκες τη διεύθυνση σου; Πάτησε εδώ.`,
+  genericErrorMessage: `Κάτι πήγε στραβά`,
 };

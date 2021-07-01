@@ -2,7 +2,9 @@
 <div class="alert {{randomString}} {{typeClass}}">
   <div class="alert__inner">
     <div class="alert__left">
-      <img src="{{iconURL}}" alt="" class="alert__icon" />
+      {{#if iconURL}}
+        <img src="{{iconURL}}" alt="" class="alert__icon" />
+      {{/if}}
       <div class="alert__copy">{{text}}</div>
     </div>
     <div class="alert__right">

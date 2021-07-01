@@ -15,6 +15,10 @@ const formatTimer = (seconds) =>
 //   iconName: 'phone', // must exists in folder icons with svg extension.
 //   showTimer: false, // displays or not the countdown
 // };
+
+// it is possible to access alert instance on its HTMLElement. It is alert property of alerts HTML container element:
+// const alertInstance = document.querySelector('.alert').alert;
+
 export default class {
   constructor(options) {
     this.options = options;
@@ -95,6 +99,7 @@ export default class {
     const html = this.template();
     document.body.insertAdjacentHTML('beforeend', html);
     this.DOM = document.querySelector(`.${this.randomString}`);
+    this.DOM.alert = this;
     gsap.set(this.DOM, { autoAlpha: 0, y: -10 });
   }
 
@@ -117,9 +122,12 @@ export default class {
       randomString: this.randomString,
       text: this.options.text,
       typeClass: this.options.type === 'info' ? '' : 'alert--red',
-      iconURL: `${store.context.imagesURL}/icons/${this.options.iconName}.svg`,
       showTimer: this.options.showTimer,
     };
+
+    if (this.options.iconName) {
+      templateData.iconURL = `${store.context.imagesURL}/icons/${this.options.iconName}.svg`;
+    }
     // TODO dont compile the template every time
     const source = document.getElementById('alert');
     let HandlebarsTemplate;

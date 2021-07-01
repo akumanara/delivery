@@ -6,12 +6,14 @@ import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
 // import Panzoom from 'panzoom';
 import autosize from 'autosize';
+import Alert from './alert';
 import API from './api';
 import Variant from './variant';
 import GroupOption from './groupOption';
 import { animateCSS, currencyFormat, has, getFormData } from './utils/utils';
 import { HandlebarsTemplate } from './utils/handlebarTemplate';
 import { store } from './utils/store';
+import texts from './utils/texts';
 
 // Rules and Notes
 // ===========================================
@@ -429,12 +431,12 @@ export default class {
     }
   }
 
-  zoomMode(img) {
-    console.log(img);
-    // get
+  // zoomMode(img) {
+  //   console.log(img);
+  //   // get
 
-    Panzoom(img);
-  }
+  //   // Panzoom(img);
+  // }
 
   preselectDefaultIngredients() {
     // group options
@@ -545,19 +547,19 @@ export default class {
     PubSub.publish('hide_loader');
   }
 
-  async quickAdd() {
-    PubSub.publish('show_loader');
-    const data = {
-      itemGroupId: this.productID,
-      itemQuantity: 1,
-    };
+  // async quickAdd() {
+  //   PubSub.publish('show_loader');
+  //   const data = {
+  //     itemGroupId: this.productID,
+  //     itemQuantity: 1,
+  //   };
 
-    // after we call the api we get the updated cart
-    const cart = await this.api.quickAddProduct(this.data);
+  //   // after we call the api we get the updated cart
+  //   const cart = await this.api.quickAddProduct(this.data);
 
-    // TODO update the cart
-    PubSub.publish('hide_loader');
-  }
+  //   // TODO update the cart
+  //   PubSub.publish('hide_loader');
+  // }
 
   // CART API FUNCTIONS
   // ==============================================================================================
@@ -588,7 +590,13 @@ export default class {
       })
       .catch((error) => {
         // TODO change to our alert
-        alert(error.message);
+        console.log(error);
+        const a = new Alert({
+          text: texts.genericErrorMessage,
+          timeToKill: 5, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
       });
 
     PubSub.publish('hide_loader');

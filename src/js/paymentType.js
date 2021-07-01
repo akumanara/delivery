@@ -1,12 +1,8 @@
-import PubSub from 'pubsub-js';
 import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
-import Swiper from 'swiper/bundle';
 import { store } from './utils/store';
-import API from './api';
 import texts from './utils/texts';
-import { currencyFormat } from './utils/utils';
-import { deliveryTypes, paymentTypes } from './utils/enum';
+import { paymentTypes } from './utils/enum';
 
 export default class {
   constructor() {
