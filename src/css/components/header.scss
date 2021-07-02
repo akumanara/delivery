@@ -186,16 +186,29 @@
     top: 0;
     left: 0;
     z-index: 1060;
-    display: flex;
     align-items: flex-start;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     outline: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
     padding: 60px 16px;
     box-sizing: border-box;
+    display: none;
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__user-modal-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: red;
   }
 
   &__user-modal-window {

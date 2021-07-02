@@ -9,6 +9,7 @@ Todo:
     ☐ duplicate svg icons?
     ☐ empty state gia to choose address modal. tag is empty / no delivery time (catalog page). kai empty state gia accordeon
     ☐ na doume to scroll/ upsos tou modal pou vgainei otan kaneis click sto header profile (logged in user)
+    
 
   product modal:
     ☐ [product_modal] - offers - @critical
@@ -23,22 +24,21 @@ Todo:
     ☐ [checkout/general] textarea focus /placeholder
     ☐ [checkout page]payment method cannot be unselected
   address:
-    ✔ [address] stis apothikevmenes diefthinseis pos tha kanoume call? pia tha einai telika ta data @done(21-06-30 11:46)
     ☐ [address] notification popup
     ☐ bug me to koympi apo pisw sti lista. na svinei to koumpi otan einai anoixta ta predictions
     ☐ scroll sto anoixto viewport me scrollable ti lista
     ☐ guest user
     ☐ 20-25 mins apo pou kai pws kai an mporoume.
   bugs:
-    ☐ [bug] map autosuggest -  me to button. paei panw apo ta search results
-  known deffered bugs:
     ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
     ☐ [bug] autosize na ginei update an exei hdh content mesa
 
-Doing:
+  Doing:
 
 
 Done:
+  ✔ [bug] map autosuggest -  me to button. paei panw apo ta search results. kripsame to btn @done(21-07-01 19:12)
+  ✔ [address] stis apothikevmenes diefthinseis pos tha kanoume call? pia tha einai telika ta data @done(21-06-30 11:46)
   ✔ an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment) observer parents @done(21-06-30 12:22)
   ✔ otan kanw click stin epilogi delivery type na kleinei meta tin epilogi @done(21-06-30 12:19)
   ✔ otan den yparxei active address na mi paei na parei to tag. @done(21-06-30 12:03)
