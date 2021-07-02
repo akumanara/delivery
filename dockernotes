@@ -1,6 +1,0 @@
-build the docker image from the dockerfile
--------------------
-docker build -t thomasfoskolos/node-web-app .
-
-
-docker run -p 49160:8080 -d thomasfoskolos/node-web-app

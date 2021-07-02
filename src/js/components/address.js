@@ -51,9 +51,6 @@ export default class {
       savedAddresses: this.DOM.chooseAddressModal.querySelectorAll(
         '.choose-address__options-button',
       ),
-      tag: this.DOM.chooseAddressModal.querySelector(
-        '.choose-address__status-tag',
-      ),
     };
 
     // Autosuggest modal
@@ -138,9 +135,7 @@ export default class {
   }
 
   setActiveAddressData() {
-    // Set tag and description
-    this.DOM.chooseAddressModal.tag.innerHTML =
-      this.selectedAddress.dataset.desc;
+    // set description
     this.DOM.accordion.headerTop.innerHTML = `TODO ${this.DOM.accordion.headerTop.innerHTML}`;
     this.DOM.accordion.headerBottom.innerHTML =
       this.selectedAddress.querySelector(

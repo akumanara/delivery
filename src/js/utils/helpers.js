@@ -120,7 +120,7 @@ const initSentry = () => {
     // We recommend adjusting this value in production
     tracesSampleRate: 1.0,
     beforeSend(event) {
-      console.log(event);
+      // console.log(event);
       // Modify the event here
       // if (event.user) {
       //   // Don't send user's email address
