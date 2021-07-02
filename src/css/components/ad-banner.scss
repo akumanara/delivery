@@ -24,16 +24,18 @@
   }
 
   &__item {
-    margin-right: 15px;
-    border-radius: 6px;
     overflow-y: hidden;
     flex-shrink: 0;
-    &:last-child {
-      margin-right: 0;
-    }
+
     img {
+      margin-right: 15px;
       width: 300px;
       height: auto;
+      border-radius: 6px;
+    }
+
+    &:last-child img {
+      margin-right: 0;
     }
   }
 }

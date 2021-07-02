@@ -80,8 +80,24 @@ export default class {
     PubSub.publish('show_loader');
 
     this.phoneNumber = this.DOM.modalStep1.input.value;
-    await timeout(1000);
-    console.log('ok');
+    // await timeout(1000);
+
+    await this.api.submitPhoneGuest(this.phoneNumber).then((result) => {
+      console.log(result);
+      // if (result.status === 'error') {
+      //   // errror
+      //   // Show the error msg
+      //   this.DOM.errorMsg.innerText = result.message;
+      //   this.DOM.error.classList.add('coupon__error--active');
+      //   // Toggle the error input
+      //   this.DOM.input.classList.add('form-control--has-error');
+      // } else if (result.status === 'ok') {
+      //   // ok
+      //   window.location.reload();
+      // }
+    });
+
+    // console.log('ok');
     PubSub.publish('hide_loader');
     // if ok
     this.moveToVerificationStep();
@@ -136,8 +152,10 @@ export default class {
 
   async submitOtp() {
     PubSub.publish('show_loader');
-    await timeout(1000);
-    console.log('ok');
+    this.otp = this.DOM.modalStep2.input.value;
+    await this.api.submitOTPGuest(this.otp).then((result) => {
+      console.log(result);
+    });
 
     // if ok
     // Close modal

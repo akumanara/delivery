@@ -351,6 +351,60 @@ export default class {
     });
   }
 
+  submitPhoneGuest(phoneNumber) {
+    // https://www.delivery.gr/api/telephone-verification
+    // post
+    // order_phone: '6934782274'
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve({ ok: 'ok' });
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `api/telephone-verification`;
+      const data = {
+        shop_id: phoneNumber,
+      };
+      this.instance
+        .post(url, data)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  submitOTPGuest(otp) {
+    // https://www.delivery.gr/api/telephone-verification
+    // post
+    // user_verification:"5675"
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve({ ok: 'ok' });
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `api/telephone-verification`;
+      const data = {
+        user_verification: otp,
+      };
+      this.instance
+        .post(url, data)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
   // TODO
   // =====================
   quickAddProduct(data) {
