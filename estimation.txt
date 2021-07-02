@@ -1,0 +1,82 @@
+
+Homepage
+
+Main navigation
+
+Catalog / Category
+- Catalog / Category Page
+- Filter/Search Modal
+
+Store
+- Store page
+- Recent orders
+- Basket
+- Product modal
+- Offers modal
+- Closed store (with suggested stores)
+
+
+Thank you page (Tracking)
+
+
+Market
+- Market page
+- Market product + Categories
+- Noticeboard
+- Choose Timeslot
+- Search and Categories Modals
+
+Checkout
+- Checkout page
+- Verify Phone
+- Coupon Modal
+- Add Coupon Modal
+- Add Card Modal
+- Timeslots modal
+
+
+Login / signup
+- Connect with modal
+- Forgot password modal
+- Verify missing data
+- Verify phone modal with OTP
+- Notification permission modal
+- Link accounts modal
+- Check your inbox modal
+
+
+Address
+- Choose Address
+- Add Address (Autosuggest)
+- Add Address (Verify with map)
+- Reminder Modal
+
+
+User
+- Details
+-- phone verification
+- Old Orders
+-- Order
+- Favorites
+- Eat and win
+- Coupons
+-- Add coupon
+- Cards
+-- View Card
+-- Delete Card
+- Addresses
+-- View Address
+-- Delete Address
+- User communication settings
+
+
+Content pages
+- About
+- Contact
+- Restaurant
+- Download App
+- GlucoseML
+- 404
+- Privacy policy
+- T&C
+- Eat&Win
