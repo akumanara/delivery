@@ -2,4 +2,38 @@
   // height: 175px;
   // background-color: green;
   // opacity: 0.5;
+  padding: 16px 0;
+
+  &__inner {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-right: 15px;
+    border-radius: 6px;
+    overflow-y: hidden;
+    flex-shrink: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      width: 300px;
+      height: auto;
+    }
+  }
 }
