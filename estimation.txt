@@ -46,7 +46,7 @@ Login / signup - ??? Design, 3.5d FDev, 5d Bdev
 - Check your inbox modal
 
 
-Address -
+Address
 - Choose Address
 - Add Address (Autosuggest)
 - Add Address (Verify with map)

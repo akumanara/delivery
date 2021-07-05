@@ -4,33 +4,39 @@ Todo:
     ☐ [general] svg icon css for dark/light - @misa dependency
     ☐ [general] select styling - (add address validation modal)
     ☐ [general] sentry remove cc data before sending @critical;
-    ☐ [general] header navigation
+
     ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
     ☐ duplicate svg icons?
+    ☐ favorite mechanism not working
+    ☐ api phone verification testing
 
 store:
-      ☐ [store] previous orders - add previous order to basket modal
-      ☐ [store] closed store with suggestions
-  product modal:
-    ☐ [product_modal] - offers - @critical
-    ☐ [product_modal] hide/view large html description
-    ☐ [product_modal] zoom on photos
+  ☐ [store] previous orders - add previous order to basket modal
 
-  checkout:
-    ☐ [checkout] show more/show less on receipt
-    ☐ [checkout/general] textarea focus /placeholder
-    ☐ [checkout page]payment method cannot be unselected
-  address:
-    ☐ [address] notification popup
-    ☐ scroll sto anoixto viewport me scrollable ti lista
-    bugs:
-      ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
-      ☐ [bug] autosize na ginei update an exei hdh content mesa
+product modal:
+  ☐ [product_modal] - offers - @critical
+  ☐ [product_modal] hide/view large html description
+  ☐ [product_modal] zoom on photos
+
+checkout:
+  ☐ [checkout] show more/show less on receipt
+  ☐ [checkout/general] textarea focus /placeholder
+  ☐ [checkout page]payment method cannot be unselected
+
+address:
+  ☐ [address] notification popup
+  ☐ scroll sto anoixto viewport me scrollable ti lista
+
+bugs:
+  ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
+  ☐ [bug] autosize na ginei update an exei hdh content mesa
 
 Doing:
 
 
 Done:
+  ✔ [general] header navigation @done(21-07-05 14:46)
+  ✔ [store] closed store with suggestions @done(21-07-05 14:18)
   ✔ bug me to koympi apo pisw sti lista. na svinei to koumpi otan einai anoixta ta predictions @done(21-07-05 12:31)
   ✔ guest user @done(21-07-05 12:31)
   ✔ 20-25 mins apo pou kai pws kai an mporoume. @done(21-07-05 12:31)
