@@ -48,7 +48,7 @@ export default class {
         trigger: section,
         start: `${this.options.scrolltrigger.triggerStart} ${this.options.scrolltrigger.viewportStart}`, // when the top of the trigger hits the top of the viewport
         end: `${this.options.scrolltrigger.triggerEnd} ${this.options.scrolltrigger.viewportEnd}`, // when the top of the trigger hits the top of the viewport
-        markers: true,
+        markers: false,
         onEnter: () => {
           this.enterCategory(index);
         },
