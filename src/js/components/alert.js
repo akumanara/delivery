@@ -97,6 +97,7 @@ export default class {
   addDom() {
     const html = this.template();
     document.body.insertAdjacentHTML('beforeend', html);
+    // document.querySelector('.alerts').insertAdjacentHTML('beforeend', html);
     this.DOM = document.querySelector(`.${this.randomString}`);
     this.DOM.alert = this;
     gsap.set(this.DOM, { autoAlpha: 0, y: -10 });

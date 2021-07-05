@@ -32,6 +32,9 @@
     padding-bottom: 28px;
     padding-left: 16px;
     padding-right: 16px;
+    &--padding-small {
+      padding-bottom: 18px;
+    }
   }
   .swiper-slide {
     width: auto;

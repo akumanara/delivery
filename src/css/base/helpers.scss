@@ -19,19 +19,12 @@
   object-fit: contain;
 }
 
-.mw-18 {
-  max-width: 18px;
-}
-.mw-22 {
-  max-width: 22px;
-}
-
-.mw-26 {
-  max-width: 26px;
-}
-
-.mw-38 {
-  max-width: 38px;
+// For max widths
+$mWidths: 18, 20, 22, 26, 38;
+@each $mWidth in $mWidths {
+  .mw-#{$mWidth} {
+    max-width: #{$mWidth}px;
+  }
 }
 
 .w-100 {
@@ -56,7 +49,7 @@
 }
 
 // For margin
-$spacings: 6, 10, 16, 18, 20, 28, 30;
+$spacings: 6, 8, 10, 16, 18, 20, 28, 30;
 @each $spacing in $spacings {
   .mr-#{$spacing} {
     margin-right: #{$spacing}px;
@@ -115,4 +108,8 @@ $spacings: 6, 10, 16, 18, 20, 28, 30;
 
 .scroll-padding-bottom {
   scroll-padding-bottom: 100px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eaebec;
 }

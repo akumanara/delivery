@@ -7,35 +7,34 @@ Todo:
     ☐ [general] header navigation
     ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
     ☐ duplicate svg icons?
-    ☐
 
-
+store:
+      ☐ [store] previous orders - add previous order to basket modal
+      ☐ [store] closed store with suggestions
   product modal:
     ☐ [product_modal] - offers - @critical
     ☐ [product_modal] hide/view large html description
     ☐ [product_modal] zoom on photos
-  store:
-    ☐ [store] new / change address accordion - @critical
-    ☐ [store] previous orders - add previous order to basket modal
-    ☐ [store] closed store with suggestions
+
   checkout:
     ☐ [checkout] show more/show less on receipt
     ☐ [checkout/general] textarea focus /placeholder
     ☐ [checkout page]payment method cannot be unselected
   address:
     ☐ [address] notification popup
-    ☐ bug me to koympi apo pisw sti lista. na svinei to koumpi otan einai anoixta ta predictions
     ☐ scroll sto anoixto viewport me scrollable ti lista
-    ☐ guest user
-    ☐ 20-25 mins apo pou kai pws kai an mporoume.
-  bugs:
-    ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
-    ☐ [bug] autosize na ginei update an exei hdh content mesa
+    bugs:
+      ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
+      ☐ [bug] autosize na ginei update an exei hdh content mesa
 
-  Doing:
+Doing:
 
 
 Done:
+  ✔ bug me to koympi apo pisw sti lista. na svinei to koumpi otan einai anoixta ta predictions @done(21-07-05 12:31)
+  ✔ guest user @done(21-07-05 12:31)
+  ✔ 20-25 mins apo pou kai pws kai an mporoume. @done(21-07-05 12:31)
+  ✔ [store] new / change address accordion - @critical @done(21-07-05 10:46)
   ✔ [bug] map autosuggest -  me to button. paei panw apo ta search results. kripsame to btn @done(21-07-01 19:12)
   ✔ [address] stis apothikevmenes diefthinseis pos tha kanoume call? pia tha einai telika ta data @done(21-06-30 11:46)
   ✔ an ta accordeon content einai display none den mporei na ginei init to carousel mesa tous. (px. sto checkout page select payment) observer parents @done(21-06-30 12:22)

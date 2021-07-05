@@ -1,33 +1,34 @@
 
-Homepage
+Homepage - 1d Design, 2d FDev, 1d BDev
 
-Main navigation
+Main navigation - Done
 
 Catalog / Category
-- Catalog / Category Page
-- Filter/Search Modal
+- Catalog / Category Page - .5 BDev,
+- Filter/Search Modal - 1d Design, 1d FDev,
 
 Store
 - Store page
-- Recent orders
-- Basket
-- Product modal
-- Offers modal
-- Closed store (with suggested stores)
+- Recent orders - 1.5d FDev, 1d BDev
+- Basket - .5 BDev for Alerts
+- Product modal - 1d FDev,
+- Offers modal - 3d FDev, .5d BDev
+- Closed store (with suggested stores) - .5d FDev, .5d BDev,
 
 
-Thank you page (Tracking)
+Thank you page (Tracking) - .5d Design, 1.5d FDev, 1d Bdev
+
 
 
 Market
-- Market page
+- Market page - .5d Design, 4d FDev, 3d BDev
 - Market product + Categories
 - Noticeboard
 - Choose Timeslot
 - Search and Categories Modals
 
 Checkout
-- Checkout page
+- Checkout page - 3d FDev, 4d BDev
 - Verify Phone
 - Coupon Modal
 - Add Coupon Modal
@@ -35,7 +36,7 @@ Checkout
 - Timeslots modal
 
 
-Login / signup
+Login / signup - ??? Design, 3.5d FDev, 5d Bdev
 - Connect with modal
 - Forgot password modal
 - Verify missing data
@@ -45,14 +46,16 @@ Login / signup
 - Check your inbox modal
 
 
-Address
+Address -
 - Choose Address
 - Add Address (Autosuggest)
 - Add Address (Verify with map)
-- Reminder Modal
+- Reminder Modal - .5 Fdev,
 
 
-User
+Rating modal - 2d Design, ?1d FDev, 1 BDev
+
+User Pages - 1d Design, 3d FDev, 2d Bdev
 - Details
 -- phone verification
 - Old Orders
@@ -70,7 +73,7 @@ User
 - User communication settings
 
 
-Content pages
+*Content pages - ???d Design, 4d FDev, 2BDev
 - About
 - Contact
 - Restaurant
