@@ -25,8 +25,20 @@ export default class {
       // slidesOffsetAfter: 16,
       // slidesOffsetBefore: 16,
     });
-
+    this.calculateVars();
     this.init();
+  }
+
+  calculateVars() {
+    this.options = {};
+    this.options.offsetY = this.DOM.slider.offsetHeight;
+    const thresholdChangeSection = 10;
+    this.options.scrolltrigger = {
+      triggerStart: `top-=0`,
+      viewportStart: `top+=${this.options.offsetY + thresholdChangeSection}px`,
+      triggerEnd: `bottom-=${this.options.offsetY}px`,
+      viewportEnd: `top+=${this.options.offsetY + thresholdChangeSection}px`,
+    };
   }
 
   init() {
@@ -34,9 +46,9 @@ export default class {
     this.DOM.sections.forEach((section, index) => {
       ScrollTrigger.create({
         trigger: section,
-        start: 'top-=20px top+=108px', // when the top of the trigger hits the top of the viewport
-        end: 'bottom-=100px top+=108px', // when the bottom of the trigger hits the top of the viewport
-        markers: false,
+        start: `${this.options.scrolltrigger.triggerStart} ${this.options.scrolltrigger.viewportStart}`, // when the top of the trigger hits the top of the viewport
+        end: `${this.options.scrolltrigger.triggerEnd} ${this.options.scrolltrigger.viewportEnd}`, // when the top of the trigger hits the top of the viewport
+        markers: true,
         onEnter: () => {
           this.enterCategory(index);
         },
@@ -62,8 +74,11 @@ export default class {
           onComplete: () => {
             this.triggeringScrollEvents = true;
           },
-          duration: 0.6,
-          scrollTo: { y: this.DOM.sections[index], offsetY: 120 },
+          duration: 0.3,
+          scrollTo: {
+            y: this.DOM.sections[index],
+            offsetY: this.options.offsetY,
+          },
         });
       });
     });
