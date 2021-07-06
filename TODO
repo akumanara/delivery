@@ -7,7 +7,7 @@ Todo:
     ☐ Sign up / login
     ☐ Offers
     ☐ Reorder - Recent orders
-    ☐ Coupons on Checko
+    ☐ Coupons on Checkout
 
     ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
     ☐ duplicate svg icons?
@@ -16,6 +16,7 @@ Todo:
 
 store:
   ☐ [store] previous orders - add previous order to basket modal
+  ☐ noticeboard
 
 product modal:
   ☐ [product_modal] - offers - @critical

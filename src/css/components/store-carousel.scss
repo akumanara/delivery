@@ -24,7 +24,18 @@
   &__info-top {
     height: 50%;
     flex-shrink: 0;
+    position: relative;
   }
+
+  &__info-top-closed {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+  }
+
   &__badges {
     display: flex;
     flex-direction: row;

@@ -3,3 +3,4 @@ export default class {
     this.a = 'a';
   }
 }
+  
