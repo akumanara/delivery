@@ -4,6 +4,10 @@ Todo:
     ☐ [general] svg icon css for dark/light - @misa dependency
     ☐ [general] select styling - (add address validation modal)
     ☐ [general] sentry remove cc data before sending @critical;
+    ☐ Sign up / login
+    ☐ Offers
+    ☐ Reorder - Recent orders
+    ☐ Coupons on Checko
 
     ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
     ☐ duplicate svg icons?
@@ -21,7 +25,8 @@ product modal:
 checkout:
   ☐ [checkout] show more/show less on receipt
   ☐ [checkout/general] textarea focus /placeholder
-  ☐ [checkout page]payment method cannot be unselected
+  ☐ [checkout page] payment method cannot be unselected
+  ☐ [checkout] coupon view
 
 address:
   ☐ [address] notification popup

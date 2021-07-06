@@ -17,14 +17,16 @@ export default class {
     this.DOM.mainNavToggleButton.addEventListener('click', this.toggleMainNav);
 
     this.isUserProfileOpen = false;
-    this.DOM.userProfilePhoto.addEventListener(
-      'click',
-      this.toggleProfileModal,
-    );
-    this.DOM.userProfileBackground.addEventListener(
-      'click',
-      this.toggleProfileModal,
-    );
+    if (this.DOM.userProfilePhoto) {
+      this.DOM.userProfilePhoto.addEventListener(
+        'click',
+        this.toggleProfileModal,
+      );
+      this.DOM.userProfileBackground.addEventListener(
+        'click',
+        this.toggleProfileModal,
+      );
+    }
   }
 
   toggleMainNav() {
