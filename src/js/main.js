@@ -25,6 +25,7 @@ import Address from './components/address';
 import PaymentType from './components/paymentType';
 import Alert from './components/alert';
 import Navigation from './components/navigation';
+import Connect from './components/connect';
 // import Layout from './layout';
 
 class App {
@@ -73,6 +74,9 @@ class App {
     // Subscribe to topics
     PubSub.subscribe('hide_loader', this.hideLoader);
     PubSub.subscribe('show_loader', this.showLoader);
+
+    // Connect / Login
+    this.connect = new Connect();
 
     // Main navigation
     this.navigation = new Navigation();
