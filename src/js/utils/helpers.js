@@ -188,7 +188,24 @@ const distanceBetweenLatLon = (lat1, lon1, lat2, lon2, unit) => {
 const formatTimer = (seconds) =>
   new Date(seconds * 1000).toISOString().substr(14, 5);
 
+const validateEmail = (email) => {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+
+const validatePhone = (phone) => {
+  const reg = phone.match(/\d/g);
+  if (reg) {
+    return reg.length === 10;
+  }
+
+  return false;
+};
+
 export {
+  validatePhone,
+  validateEmail,
   formatTimer,
   showFPS,
   timeout,

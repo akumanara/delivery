@@ -18,4 +18,4 @@ const loginWithEmailResponses = {
   SHOW_NEW_USER: 'show_new_user',
 };
 
-export { deliveryTypes, paymentTypes };
+export { deliveryTypes, paymentTypes, loginWithEmailResponses };

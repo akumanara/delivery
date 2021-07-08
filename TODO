@@ -8,14 +8,19 @@ Todo:
     ☐ Offers
     ☐ Reorder - Recent orders
     ☐ Coupons on Checkout
-
     ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
     ☐ duplicate svg icons?
     ☐ favorite mechanism not working
     ☐ api phone verification testing
-    ☐ user enters mail - > user doesnt have password or phone -> login with mail mechanism
-    ☐ api for email login responses @Dimitris
-    ☐ api for login with email and otp @Dimitris
+
+
+connect/login:
+  ☐ user enters mail - > user doesnt have password or phone -> login with mail mechanism
+  ☐ api for email login responses @Dimitris
+  ☐ api for login with email and otp @Dimitris
+  ☐ alert gia to xristi pou vazei lathos data sto login modal (lathos til/email)
+  ☐ alert gia to xristi pou vazei lathos kodiko
+
 
 store:
   ☐ [store] previous orders - add previous order to basket modal
@@ -32,6 +37,7 @@ checkout:
   ☐ [checkout/general] textarea focus /placeholder
   ☐ [checkout page] payment method cannot be unselected
   ☐ [checkout] coupon view
+  ☐ na kanw update ti timi pou stelnw sti viva otan vazei karta. opos erxetai apo to kalathi
 
 address:
   ☐ [address] notification popup

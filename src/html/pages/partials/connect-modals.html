@@ -1,8 +1,11 @@
+<!-- LOGIN -->
 <div class="login">
   <div class="login__bg"></div>
   <div class="login__window">
     <img src="./images/icons/login-close.svg" alt="" class="login__close" />
     <div class="login__title">Είσοδος</div>
+
+    <!-- SOCIAL OPTIONS -->
     <div class="login__social-options">
       <!-- FACEBOOK LOGIN -->
       <a
@@ -28,6 +31,76 @@
         />
         <div class="login__social-btn-copy">Google</div>
       </a>
+    </div>
+    <!-- EMAIL / PHONE OPTION -->
+    <div class="login__email-phone">
+      <div class="login__email-phone-or">-ή-</div>
+      <!-- NAME -->
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control js-email-phone"
+          id="name"
+          placeholder="placeholder"
+          autocomplete="off"
+        />
+        <label for="name">Email/τηλέφωνο</label>
+      </div>
+    </div>
+
+    <div class="login__actions">
+      <div class="primary-btn js-action-btn">Σύνδεση</div>
+      <div class="login__actions-forgot js-forgot-password">
+        Ξέχασα τον κωδικό μου
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PASSWORD -->
+<div class="password-modal">
+  <div class="password-modal__bg"></div>
+  <div class="password-modal__window">
+    <img
+      src="./images/icons/login-close.svg"
+      alt=""
+      class="password-modal__close"
+    />
+    <div class="password-modal__title">Κωδικός πρόσβασης</div>
+    <div class="text-center px-16 mb-20">
+      Για να κάνετε είσοδο στο Delivery.gr, παρακαλούμε βάλτε τον κωδικό του
+      λογαριασμού σας
+    </div>
+
+    <div class="password-modal__password-container">
+      <!-- PASSWORD -->
+      <div class="form-floating">
+        <input
+          type="password"
+          class="form-control js-password"
+          id="pass"
+          placeholder="placeholder"
+          autocomplete="off"
+        />
+        <label for="pass">Κωδικός</label>
+      </div>
+    </div>
+
+    <div class="password-modal__actions">
+      <div class="primary-btn js-action-btn">Συνέχεια</div>
+      <div class="password-modal__actions-forgot js-forgot-password">
+        Ξέχασα τον κωδικό μου
+      </div>
+      <div
+        class="
+          p-10
+          font-size-2 font-weight-700
+          text-center
+          js-connect-with-phone
+        "
+      >
+        Σύνδεση με τηλέφωνο
+      </div>
     </div>
   </div>
 </div>

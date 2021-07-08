@@ -1,11 +1,17 @@
 /* eslint-disable class-methods-use-this */
 import axios from 'axios';
-import product from '../serverResponses/productData';
-import productFromCart from '../serverResponses/productDataFromCart2';
-import voucherFail from '../serverResponses/voucherFail';
-// import voucherSuccess from '../serverResponses/voucherSuccess';
 import { store } from '../utils/store';
 import { getFormData, getURLSearchData } from '../utils/helpers';
+import {
+  loginMailPasswordFail,
+  loginMailPasswordSuccess,
+  productData,
+  productData2,
+  productDataFromCart,
+  productDataFromCart2,
+  voucherFail,
+  voucherSuccess,
+} from '../serverResponses/serverResponses';
 
 export default class {
   constructor() {
@@ -437,6 +443,52 @@ export default class {
       const dataToPost = getURLSearchData(data);
       this.instance
         .put(url, dataToPost, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  emailLogin(email) {
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve({ response: 'show_password' });
+        }, 500),
+      );
+    }
+  }
+
+  emailLoginWithPassword(email, password) {
+    // https://www.delivery.gr/login/native
+    // username: fdsfdsa@dffd.ff
+    // password: sdfafdsa
+    // __csrf_token__: 157023240460e7065db4d0e7.47199735
+
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(loginMailPasswordSuccess);
+        }, 500),
+      );
+    }
+
+    return new Promise((resolve, reject) => {
+      const url = `login/native`;
+      const data = getFormData({
+        csrfToken: store.context.csrfToken,
+        username: email,
+        password,
+      });
+      this.instance
+        .post(url, data, {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
           },
