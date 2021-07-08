@@ -218,7 +218,7 @@ gulp.task('serve', () => {
 // WATCH TASKS
 //==================================
 gulp.task('watch', () => {
-  gulp.watch(
+  let a = gulp.watch(
     [src_folder + 'html/**/*.html', src_folder + 'html/**/*.hbs'],
     gulp.series('html'),
   );
