@@ -2570,3 +2570,5 @@ export {
   voucherFail,
   voucherSuccess,
 };
+
+// {"status":"ok","type":"show_password"}

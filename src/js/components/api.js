@@ -457,13 +457,26 @@ export default class {
   }
 
   emailLogin(email) {
+    // https://www.delivery.gr/check-login-type
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve({ response: 'show_password' });
+          resolve({ status: 'ok', type: 'show_password' });
         }, 500),
       );
     }
+
+    return new Promise((resolve, reject) => {
+      const url = `check-login-type`;
+      this.instance
+        .post(url, { email })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
   }
 
   emailLoginWithPassword(email, password) {

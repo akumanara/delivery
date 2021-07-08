@@ -15,7 +15,6 @@ export default class {
   clearConnectComponent() {
     this.email = '';
     this.phone = '';
-    // TODO clear the inputs
     this.DOM.loginModal.input.value = '';
     this.DOM.passwordModal.input.value = '';
   }
@@ -116,7 +115,7 @@ export default class {
       console.log('it is mail');
       this.email = value;
       const response = await this.api.emailLogin(this.email);
-      if (response.response === loginWithEmailResponses.SHOW_PASSWORD) {
+      if (response.type === loginWithEmailResponses.SHOW_PASSWORD) {
         this.toggleLoginModal();
         this.togglePasswordModal();
       }
