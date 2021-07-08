@@ -11,7 +11,7 @@ import {
   productDataFromCart2,
   voucherFail,
   voucherSuccess,
-} from '../serverResponses/serverResponses';
+} from '../utils/serverResponses';
 
 export default class {
   constructor() {
