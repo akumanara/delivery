@@ -13,10 +13,14 @@ Todo:
     ☐ duplicate svg icons?
     ☐ favorite mechanism not working
     ☐ api phone verification testing
+    ☐ user enters mail - > user doesnt have password or phone -> login with mail mechanism
+    ☐ api for email login responses @Dimitris
+    ☐ api for login with email and otp @Dimitris
 
 store:
   ☐ [store] previous orders - add previous order to basket modal
   ☐ noticeboard
+  ☐ update icons on card elaxisti / calendar
 
 product modal:
   ☐ [product_modal] - offers - @critical
@@ -38,6 +42,8 @@ bugs:
   ☐ [bug] autosize na ginei update an exei hdh content mesa
 
 Doing:
+
+
 
 
 Done:
