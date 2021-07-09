@@ -90,7 +90,7 @@ export default class {
 
   async loginWithMailAndPassword() {
     PubSub.publish('show_loader');
-    const { password } = this.DOM.passwordModal.input;
+    const password = this.DOM.passwordModal.input.value;
     const response = await this.api.emailLoginWithPassword(
       this.email,
       password,
@@ -100,7 +100,7 @@ export default class {
     if (response.status === 'error') {
       console.log('fail login');
     } else if (response.status === 'ok') {
-      window.location.reload();
+      // window.location.reload();
     }
 
     PubSub.publish('hide_loader');
