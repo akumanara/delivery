@@ -100,7 +100,7 @@ export default class {
     if (response.status === 'error') {
       console.log('fail login');
     } else if (response.status === 'ok') {
-      // window.location.reload();
+      window.location.reload();
     }
 
     PubSub.publish('hide_loader');
