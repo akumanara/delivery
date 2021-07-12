@@ -481,7 +481,7 @@ export default class {
     return new Promise((resolve, reject) => {
       const url = `check-login-type`;
       this.instance
-        .post(url, { email })
+        .post(url, { username: email })
         .then((response) => {
           resolve(response.data);
         })
@@ -529,14 +529,6 @@ export default class {
 
   emailLoginWithOTP(email, otp, callID, phone) {
     // https://www.delivery.gr/verify-otp-login
-
-    console.log({
-      csrfToken: store.context.csrfToken,
-      username: email,
-      sms_verification: otp,
-      call_id: callID,
-      telephone: phone,
-    });
 
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
