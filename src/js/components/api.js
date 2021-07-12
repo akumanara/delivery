@@ -456,15 +456,21 @@ export default class {
     });
   }
 
-  emailLogin(email) {
+  // Email or phone
+  login(emailOrPhone) {
     // https://www.delivery.gr/check-login-type
+    // { username: email/phone }
+
+    // case 1.
     // { status: 'ok', type: 'show_password' }
+    // case 2.
     // {
     //   status: 'ok',
     //   type: 'show_otp',
     //   call_id: 'asdads',
     //   phone: '6985555555',
     // }
+    // case 3.
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
@@ -481,7 +487,7 @@ export default class {
     return new Promise((resolve, reject) => {
       const url = `check-login-type`;
       this.instance
-        .post(url, { username: email })
+        .post(url, { username: emailOrPhone })
         .then((response) => {
           resolve(response.data);
         })

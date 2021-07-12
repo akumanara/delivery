@@ -151,12 +151,11 @@ export default class {
   async loginActionClicked() {
     PubSub.publish('show_loader');
     const { value } = this.DOM.loginModal.input;
-    // check to see if phone or mail.
     console.log(`mail: ${validateEmail(value)}`);
     if (validateEmail(value)) {
       console.log('it is mail');
       this.email = value;
-      const response = await this.api.emailLogin(this.email);
+      const response = await this.api.login(this.email);
       if (response.type === loginWithEmailResponses.SHOW_PASSWORD) {
         this.toggleLoginModal();
         this.togglePasswordModal();
@@ -165,10 +164,19 @@ export default class {
         this.phone = response.phone;
         this.toggleLoginModal();
         this.toggleOtpModal();
+      } else {
+        // new user?
       }
     } else if (validatePhone(value)) {
       console.log('it is phone');
       this.phone = value;
+      const response = await this.api.login(this.phone);
+      if (response.type === loginWithEmailResponses.SHOW_OTP) {
+        this.toggleLoginModal();
+        this.toggleOtpModal();
+      } else {
+        // new user?
+      }
     } else {
       // TODO alert
       console.log('not phone not email');
