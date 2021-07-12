@@ -58,21 +58,21 @@
 </div>
 
 <!-- PASSWORD -->
-<div class="password-modal">
-  <div class="password-modal__bg"></div>
-  <div class="password-modal__window">
+<div class="js-password-modal small-modal">
+  <div class="small-modal__bg"></div>
+  <div class="small-modal__window">
     <img
       src="./images/icons/login-close.svg"
       alt=""
-      class="password-modal__close"
+      class="small-modal__close"
     />
-    <div class="password-modal__title">Κωδικός πρόσβασης</div>
+    <div class="small-modal__title">Κωδικός πρόσβασης</div>
     <div class="text-center px-16 mb-20">
       Για να κάνετε είσοδο στο Delivery.gr, παρακαλούμε βάλτε τον κωδικό του
       λογαριασμού σας
     </div>
 
-    <div class="password-modal__password-container">
+    <div class="small-modal__password-container">
       <!-- PASSWORD -->
       <div class="form-floating">
         <input
@@ -86,9 +86,9 @@
       </div>
     </div>
 
-    <div class="password-modal__actions">
+    <div class="small-modal__actions">
       <div class="primary-btn js-action-btn">Συνέχεια</div>
-      <div class="password-modal__actions-forgot js-forgot-password">
+      <div class="small-modal__actions-forgot js-forgot-password">
         Ξέχασα τον κωδικό μου
       </div>
       <div
@@ -101,6 +101,82 @@
       >
         Σύνδεση με τηλέφωνο
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- OTP -->
+<div class="js-otp-modal modal">
+  <!-- THE ACTUAL WINDOW -->
+  <div class="modal__window">
+    <!-- HEADER -->
+    <div class="modal__header">
+      <div class="modal__header-left">Επιβεβαίωση Τηλεφώνου</div>
+      <div class="modal__header-right">
+        <div class="js-close">
+          <img src="./images/icons/modal-close.svg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="modal__body">
+      <img src="./images/illustrations/coupon.svg" alt="" class="img-fluid" />
+      <div class="container-a py-16">
+        Το Delivery.gr θα στείλει ένα μήνυμα στο κινητό σας με τον κωδικό
+        επιβεβαίωσης
+      </div>
+      <div class="form-floating">
+        <input
+          type="text"
+          pattern="^[0-9]*$"
+          class="form-control js-input"
+          id="floatingInput"
+          placeholder="placeholder"
+          autocomplete="off"
+        />
+        <label for="floatingInput">Κωδικός</label>
+      </div>
+    </div>
+    <!-- STICKY ACTION -->
+    <div class="modal__action">
+      <div class="py-20 px-16 w-100">
+        <div class="primary-btn js-action-btn">Επιβεβαίωση</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FORGOT PASSWORD -->
+<div class="small-modal">
+  <div class="small-modal__bg"></div>
+  <div class="small-modal__window">
+    <img
+      src="./images/icons/login-close.svg"
+      alt=""
+      class="small-modal__close"
+    />
+    <div class="small-modal__title">Επαναφορά κωδικού πρόσβασης</div>
+    <div class="text-center px-16 mb-20">
+      Εισάγετε το email σας και θα σας στείλουμε ένα σύνδεσμο για την επαναφορά
+      του κωδικού σας.
+    </div>
+
+    <div class="small-modal__password-container">
+      <!-- PASSWORD -->
+      <div class="form-floating">
+        <input
+          type="email"
+          class="form-control js-password"
+          id="email"
+          placeholder="placeholder"
+          autocomplete="off"
+        />
+        <label for="email">Email</label>
+      </div>
+    </div>
+
+    <div class="small-modal__actions">
+      <div class="primary-btn js-action-btn">Αποστολή</div>
     </div>
   </div>
 </div>

@@ -458,10 +458,22 @@ export default class {
 
   emailLogin(email) {
     // https://www.delivery.gr/check-login-type
+    // { status: 'ok', type: 'show_password' }
+    // {
+    //   status: 'ok',
+    //   type: 'show_otp',
+    //   call_id: 'asdads',
+    //   phone: '6985555555',
+    // }
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve({ status: 'ok', type: 'show_password' });
+          resolve({
+            status: 'ok',
+            type: 'show_otp',
+            call_id: 'asdads',
+            phone: '6985555555',
+          });
         }, 500),
       );
     }
@@ -499,6 +511,49 @@ export default class {
         csrfToken: store.context.csrfToken,
         username: email,
         password,
+      });
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  emailLoginWithOTP(email, otp, callID, phone) {
+    // https://www.delivery.gr/verify-otp-login
+
+    console.log({
+      csrfToken: store.context.csrfToken,
+      username: email,
+      sms_verification: otp,
+      call_id: callID,
+      telephone: phone,
+    });
+
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(loginMailPasswordSuccess);
+        }, 500),
+      );
+    }
+
+    return new Promise((resolve, reject) => {
+      const url = `verify-otp-login`;
+      const data = getFormData({
+        csrfToken: store.context.csrfToken,
+        username: email,
+        sms_verification: otp,
+        call_id: callID,
+        telephone: phone,
       });
       this.instance
         .post(url, data, {

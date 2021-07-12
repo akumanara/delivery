@@ -15,6 +15,7 @@ export default class {
   clearConnectComponent() {
     this.email = '';
     this.phone = '';
+    this.callID = '';
     this.DOM.loginModal.input.value = '';
     this.DOM.passwordModal.input.value = '';
   }
@@ -34,11 +35,11 @@ export default class {
     this.isLoginOpen = false;
 
     // password modal
-    this.DOM.passwordModal = document.querySelector('.password-modal');
+    this.DOM.passwordModal = document.querySelector('.js-password-modal');
     this.DOM.passwordModal = {
       modal: this.DOM.passwordModal,
-      closeBtn: this.DOM.passwordModal.querySelector('.password-modal__close'),
-      background: this.DOM.passwordModal.querySelector('.password-modal__bg'),
+      closeBtn: this.DOM.passwordModal.querySelector('.small-modal__close'),
+      background: this.DOM.passwordModal.querySelector('.small-modal__bg'),
       input: this.DOM.passwordModal.querySelector('.js-password'),
       phoneConnect: this.DOM.passwordModal.querySelector(
         '.js-connect-with-phone',
@@ -46,6 +47,17 @@ export default class {
       actionBtn: this.DOM.passwordModal.querySelector('.js-action-btn'),
     };
     this.isPasswordOpen = false;
+
+    // otp modal
+    this.DOM.otpModal = document.querySelector('.js-otp-modal');
+    this.DOM.otpModal = {
+      modal: this.DOM.otpModal,
+      closeBtn: this.DOM.otpModal.querySelector('.js-close'),
+      input: this.DOM.otpModal.querySelector('.js-input'),
+      actionBtn: this.DOM.otpModal.querySelector('.js-action-btn'),
+    };
+    this.isOtpOpen = false;
+    console.log(this.DOM);
   }
 
   setupEventListeners() {
@@ -86,6 +98,35 @@ export default class {
       'click',
       this.connectWithPhone,
     );
+
+    // password modal
+    this.DOM.otpModal.closeBtn.addEventListener('click', this.toggleOtpModal);
+    this.DOM.otpModal.actionBtn.addEventListener(
+      'click',
+      this.loginWithMailAndOtp,
+    );
+  }
+
+  async loginWithMailAndOtp() {
+    PubSub.publish('show_loader');
+    const { value } = this.DOM.otpModal.input;
+
+    const response = await this.api.emailLoginWithOTP(
+      this.email,
+      value,
+      this.callID,
+      this.phone,
+    );
+
+    console.log(response);
+    if (response.status === 'error') {
+      // TODO alert
+      console.log('fail login');
+    } else if (response.status === 'ok') {
+      window.location.reload();
+    }
+
+    PubSub.publish('hide_loader');
   }
 
   async loginWithMailAndPassword() {
@@ -98,6 +139,7 @@ export default class {
 
     console.log(response);
     if (response.status === 'error') {
+      // TODO alert
       console.log('fail login');
     } else if (response.status === 'ok') {
       window.location.reload();
@@ -118,10 +160,18 @@ export default class {
       if (response.type === loginWithEmailResponses.SHOW_PASSWORD) {
         this.toggleLoginModal();
         this.togglePasswordModal();
+      } else if (response.type === loginWithEmailResponses.SHOW_OTP) {
+        this.callID = response.call_id;
+        this.phone = response.phone;
+        this.toggleLoginModal();
+        this.toggleOtpModal();
       }
     } else if (validatePhone(value)) {
       console.log('it is phone');
       this.phone = value;
+    } else {
+      // TODO alert
+      console.log('not phone not email');
     }
 
     PubSub.publish('hide_loader');
@@ -131,6 +181,12 @@ export default class {
   triggerClicked() {
     // The first thing the user clicks
     this.clearConnectComponent();
+    this.toggleLoginModal();
+  }
+
+  connectWithPhone() {
+    this.clearConnectComponent();
+    this.togglePasswordModal();
     this.toggleLoginModal();
   }
 
@@ -172,9 +228,22 @@ export default class {
     this.DOM.passwordModal.modal.classList.add('active');
   }
 
-  connectWithPhone() {
-    this.clearConnectComponent();
-    this.togglePasswordModal();
-    this.toggleLoginModal();
+  toggleOtpModal() {
+    if (this.isOtpOpen) {
+      this.closeOtp();
+    } else {
+      this.openOtp();
+    }
+    this.isOtpOpen = !this.isOtpOpen;
+  }
+
+  closeOtp() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.otpModal.modal.classList.remove('active');
+  }
+
+  openOtp() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.otpModal.modal.classList.add('active');
   }
 }
