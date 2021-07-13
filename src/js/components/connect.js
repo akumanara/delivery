@@ -3,6 +3,8 @@ import PubSub from 'pubsub-js';
 import API from './api';
 import { validatePhone, validateEmail } from '../utils/helpers';
 import { loginWithEmailResponses } from '../utils/enum';
+import texts from '../utils/texts';
+import { store } from '../utils/store';
 
 export default class {
   constructor() {
@@ -18,6 +20,7 @@ export default class {
     this.callID = '';
     this.DOM.loginModal.input.value = '';
     this.DOM.passwordModal.input.value = '';
+    this.clearLoginModalError();
   }
 
   queryTheDOM() {
@@ -164,8 +167,12 @@ export default class {
         this.phone = response.phone;
         this.toggleLoginModal();
         this.toggleOtpModal();
+      } else if (response.type === loginWithEmailResponses.SHOW_INFOBOX) {
+        console.log('user is social media');
+        this.loginModalShowError(texts.login.userIsSocialLoginError);
       } else {
         // new user?
+        // todo
       }
     } else if (validatePhone(value)) {
       console.log('it is phone');
@@ -176,13 +183,48 @@ export default class {
         this.toggleOtpModal();
       } else {
         // new user?
+        // todo
       }
     } else {
-      // TODO alert
       console.log('not phone not email');
+      this.loginModalShowError(texts.login.invalidPhoneOrEmail);
     }
 
     PubSub.publish('hide_loader');
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  errorTemplate(error) {
+    return `
+    <div class="p-16 d-flex js-error">
+      <img
+        src="${store.context.imagesURL}icons/error.svg"
+        alt=""
+        class="img-fluid mw-22 flex-shrink-0 align-self-center mr-10"
+      />
+      <div class="message">
+        ${error}
+      </div>
+    </div>`;
+  }
+
+  clearLoginModalError() {
+    this.DOM.loginModal.input.classList.remove('form-control--has-error');
+    const error = this.DOM.loginModal.modal.querySelector('.js-error');
+    if (error) {
+      error.remove();
+    }
+  }
+
+  loginModalShowError(error) {
+    console.log(error);
+    this.clearLoginModalError();
+    this.DOM.loginModal.input.classList.add('form-control--has-error');
+    const htmlError = this.errorTemplate(error);
+    this.DOM.loginModal.input.parentNode.insertAdjacentHTML(
+      'beforebegin',
+      htmlError,
+    );
   }
 
   // MODALS TOGGLING

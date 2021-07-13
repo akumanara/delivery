@@ -66,4 +66,8 @@ export default {
   },
   autocompleteNoResults: `Δεν βρήκες τη διεύθυνση σου; Πάτησε εδώ.`,
   genericErrorMessage: `Κάτι πήγε στραβά`,
+  login: {
+    invalidPhoneOrEmail: 'Μη έγκυρο τηλέφωνο ή email',
+    userIsSocialLoginError: 'Σφάλμα σύνδεσης. Κάνε σύνδεση με social media.',
+  },
 };

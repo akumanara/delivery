@@ -471,15 +471,11 @@ export default class {
     //   phone: '6985555555',
     // }
     // case 3.
+    // { status: 'ok', type: 'show_infobox' }
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve({
-            status: 'ok',
-            type: 'show_otp',
-            call_id: 'asdads',
-            phone: '6985555555',
-          });
+          resolve({ status: 'ok', type: 'show_infobox' });
         }, 500),
       );
     }

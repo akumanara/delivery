@@ -1,4 +1,4 @@
-mobile application
+ application
 ------------
 den pame full native
 einai to site responsive kai epilektika allazoume features (px select2)
@@ -518,3 +518,9 @@ simera / avrio / methavrio / time
 
 double
 simera / avrio / methavrio / time
+
+
+
+========================
+before launch
+- buy averta font
