@@ -147,13 +147,13 @@
 </div>
 
 <!-- FORGOT PASSWORD -->
-<div class="small-modal">
+<div class="js-forgot-password-modal small-modal">
   <div class="small-modal__bg"></div>
   <div class="small-modal__window">
     <img
       src="./images/icons/login-close.svg"
       alt=""
-      class="small-modal__close"
+      class="small-modal__close js-close"
     />
     <div class="small-modal__title">Επαναφορά κωδικού πρόσβασης</div>
     <div class="text-center px-16 mb-20">
@@ -181,7 +181,7 @@
   </div>
 </div>
 
-<!-- OTP -->
+<!-- REGISTER -->
 <div class="js-register-modal modal">
   <!-- THE ACTUAL WINDOW -->
   <div class="modal__window">
@@ -236,9 +236,11 @@
         />
         <label for="floatingInput">Κωδικός (προεραιτικό)</label>
       </div>
-      <!-- PHONE TODO? -->
+      <!-- PHONE -->
       <div class="personal-details__phone">
-        <div class="personal-details__phone-trigger"></div>
+        <div
+          class="personal-details__phone-trigger js-verify-number-trigger"
+        ></div>
         <div class="personal-details__phone-checkbox">
           <img
             src="./images/icons/checkmark-phone.svg"
@@ -249,21 +251,29 @@
         <div class="form-floating">
           <input
             type="email"
-            class="form-control js-phone"
+            class="form-control js-verify-number-input"
             id="floatingInput"
             placeholder="placeholder"
             disabled
           />
-          <label for="floatingInput">Τηλέφωνο</label>
+          <label for="floatingInput">Phone</label>
         </div>
       </div>
       <!-- TOS -->
       <div class="form-checkbox">
-        <label class="form-check-label" for="save-card"
-          >Έχω διαβάσει και αποδέχομαι τους Όρους Χρήσης και Πολιτική
-          Απορρήτου</label
+        <label class="form-check-label" for="accept-tos"
+          >Έχω διαβάσει και αποδέχομαι τους
+          <a class="color-blue font-weight-700" href="#">Όρους Χρήσης</a>
+          και
+          <a class="color-blue font-weight-700" href="#"
+            >Πολιτική Απορρήτου</a
+          ></label
         >
-        <input class="form-checkbox__input" type="checkbox" id="save-card" />
+        <input
+          class="form-checkbox__input js-tos"
+          type="checkbox"
+          id="accept-tos"
+        />
       </div>
     </div>
     <!-- STICKY ACTION -->

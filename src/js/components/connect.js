@@ -12,6 +12,10 @@ export default class {
     this.api = new API();
     this.queryTheDOM();
     this.setupEventListeners();
+
+    // TODO Remove
+    // this.toggleForgotPasswordModal();
+    // this.toggleRegisterModal();
   }
 
   clearConnectComponent() {
@@ -25,6 +29,7 @@ export default class {
 
   queryTheDOM() {
     this.DOM = {};
+
     // login modal
     this.DOM.loginModal = document.querySelector('.login');
     this.DOM.loginModal = {
@@ -34,6 +39,9 @@ export default class {
       trigger: document.querySelector('.header__login-btn'),
       input: this.DOM.loginModal.querySelector('.js-email-phone'),
       actionBtn: this.DOM.loginModal.querySelector('.js-action-btn'),
+      forgotPasswordBtn: this.DOM.loginModal.querySelector(
+        '.js-forgot-password',
+      ),
     };
     this.isLoginOpen = false;
 
@@ -48,6 +56,9 @@ export default class {
         '.js-connect-with-phone',
       ),
       actionBtn: this.DOM.passwordModal.querySelector('.js-action-btn'),
+      forgotPasswordBtn: this.DOM.passwordModal.querySelector(
+        '.js-forgot-password',
+      ),
     };
     this.isPasswordOpen = false;
 
@@ -60,6 +71,34 @@ export default class {
       actionBtn: this.DOM.otpModal.querySelector('.js-action-btn'),
     };
     this.isOtpOpen = false;
+
+    // register modal
+    this.DOM.registerModal = document.querySelector('.js-register-modal');
+    this.DOM.registerModal = {
+      modal: this.DOM.registerModal,
+      closeBtn: this.DOM.registerModal.querySelector('.js-close'),
+      actionBtn: this.DOM.registerModal.querySelector('.js-action-btn'),
+      formName: this.DOM.registerModal.querySelector('.js-name'),
+      formSurname: this.DOM.registerModal.querySelector('.js-surname'),
+      formEmail: this.DOM.registerModal.querySelector('.js-email'),
+      formPassword: this.DOM.registerModal.querySelector('.js-password'),
+      formPhone: this.DOM.registerModal.querySelector(
+        '.js-verify-number-input',
+      ),
+      formTos: this.DOM.registerModal.querySelector('.js-tos'),
+    };
+    this.isRegisterOpen = false;
+
+    // forgot password modal
+    this.DOM.forgotPasswordModal = document.querySelector(
+      '.js-forgot-password-modal',
+    );
+    this.DOM.forgotPasswordModal = {
+      modal: this.DOM.forgotPasswordModal,
+      closeBtn: this.DOM.forgotPasswordModal.querySelector('.js-close'),
+      actionBtn: this.DOM.forgotPasswordModal.querySelector('.js-action-btn'),
+    };
+    this.isForgotPasswordOpen = false;
     console.log(this.DOM);
   }
 
@@ -82,6 +121,10 @@ export default class {
         'click',
         this.loginActionClicked,
       );
+      this.DOM.loginModal.forgotPasswordBtn.addEventListener(
+        'click',
+        this.forgotPasswordBtnClickedFromLogin,
+      );
     }
 
     // password modal
@@ -101,13 +144,88 @@ export default class {
       'click',
       this.connectWithPhone,
     );
+    this.DOM.passwordModal.forgotPasswordBtn.addEventListener(
+      'click',
+      this.forgotPasswordBtnClickedFromPassword,
+    );
 
-    // password modal
+    // otp modal
     this.DOM.otpModal.closeBtn.addEventListener('click', this.toggleOtpModal);
     this.DOM.otpModal.actionBtn.addEventListener(
       'click',
       this.loginWithMailAndOtp,
     );
+
+    // register modal
+    this.DOM.registerModal.formName.addEventListener(
+      'input',
+      this.checkRegisterForm,
+    );
+    this.DOM.registerModal.formSurname.addEventListener(
+      'input',
+      this.checkRegisterForm,
+    );
+    this.DOM.registerModal.formEmail.addEventListener(
+      'input',
+      this.checkRegisterForm,
+    );
+    this.DOM.registerModal.formPassword.addEventListener(
+      'input',
+      this.checkRegisterForm,
+    );
+    this.DOM.registerModal.formPhone.addEventListener(
+      'input',
+      this.checkRegisterForm,
+    );
+    this.DOM.registerModal.formTos.addEventListener(
+      'input',
+      this.checkRegisterForm,
+    );
+    this.DOM.registerModal.closeBtn.addEventListener(
+      'click',
+      this.toggleRegisterModal,
+    );
+    // TODO: add event listener for register button
+    // this.DOM.registerModal.actionBtn.addEventListener(
+    //   'click',
+    //   this.loginWithMailAndOtp,
+    // );
+
+    // forgot password modal
+    this.DOM.forgotPasswordModal.closeBtn.addEventListener(
+      'click',
+      this.toggleForgotPasswordModal,
+    );
+    // TODO: add event listener for forgot password button
+  }
+
+  // Clicked from login
+  forgotPasswordBtnClickedFromLogin() {
+    this.toggleLoginModal();
+    this.toggleForgotPasswordModal();
+  }
+
+  // Clicked from enter password
+  forgotPasswordBtnClickedFromPassword() {
+    this.togglePasswordModal();
+    this.toggleForgotPasswordModal();
+  }
+
+  checkRegisterForm() {
+    // check if all form inputs are filled
+    if (
+      this.DOM.registerModal.formName.value.length > 0 &&
+      this.DOM.registerModal.formSurname.value.length > 0 &&
+      this.DOM.registerModal.formEmail.value.length > 0 &&
+      this.DOM.registerModal.formPhone.value.length > 0 &&
+      this.DOM.registerModal.formTos.checked
+    ) {
+      this.DOM.registerModal.actionBtn.classList.remove(
+        'primary-btn--disabled',
+      );
+    } else {
+      this.DOM.registerModal.actionBtn.classList.add('primary-btn--disabled');
+    }
   }
 
   async loginWithMailAndOtp() {
@@ -154,39 +272,54 @@ export default class {
   async loginActionClicked() {
     PubSub.publish('show_loader');
     const { value } = this.DOM.loginModal.input;
-    console.log(`mail: ${validateEmail(value)}`);
+    // console.log(`mail: ${validateEmail(value)}`);
     if (validateEmail(value)) {
-      console.log('it is mail');
+      // USER ENTERED VALID EMAIL
+      // ==========================
       this.email = value;
       const response = await this.api.login(this.email);
       if (response.type === loginWithEmailResponses.SHOW_PASSWORD) {
+        // USER MUST LOGIN WITH PASSWORD
+        // ==========================
         this.toggleLoginModal();
         this.togglePasswordModal();
       } else if (response.type === loginWithEmailResponses.SHOW_OTP) {
+        // USER MUST LOGIN WITH OTP
+        // ==========================
         this.callID = response.call_id;
         this.phone = response.phone;
         this.toggleLoginModal();
         this.toggleOtpModal();
       } else if (response.type === loginWithEmailResponses.SHOW_INFOBOX) {
-        console.log('user is social media');
+        // USER MUST LOGIN WITH SOCIAL
+        // ==========================
         this.loginModalShowError(texts.login.userIsSocialLoginError);
-      } else {
-        // new user?
-        // todo
+      } else if (response.type === loginWithEmailResponses.SHOW_NEW_USER) {
+        // USER DOESNT EXIST. REGISTER
+        // ==========================
+        this.DOM.registerModal.formEmail.value = this.email;
+        this.checkRegisterForm();
+        this.toggleLoginModal();
+        this.toggleRegisterModal();
       }
     } else if (validatePhone(value)) {
-      console.log('it is phone');
+      // USER ENTERED VALID PHONE
+      // ==========================
       this.phone = value;
       const response = await this.api.login(this.phone);
       if (response.type === loginWithEmailResponses.SHOW_OTP) {
+        // USER MUST LOGIN WITH OTP
+        // ==========================
         this.toggleLoginModal();
         this.toggleOtpModal();
       } else {
-        // new user?
+        // USER DOESNT EXIST. REGISTER
+        // ==========================
         // todo
       }
     } else {
-      console.log('not phone not email');
+      // USER DIDNT ENTERED VALID EMAIL OR VALID PHONE
+      // ==========================
       this.loginModalShowError(texts.login.invalidPhoneOrEmail);
     }
 
@@ -295,5 +428,43 @@ export default class {
   openOtp() {
     document.body.classList.add('hide-overflow');
     this.DOM.otpModal.modal.classList.add('active');
+  }
+
+  toggleRegisterModal() {
+    if (this.isRegisterOpen) {
+      this.closeRegister();
+    } else {
+      this.openRegister();
+    }
+    this.isRegisterOpen = !this.isRegisterOpen;
+  }
+
+  closeRegister() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.registerModal.modal.classList.remove('active');
+  }
+
+  openRegister() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.registerModal.modal.classList.add('active');
+  }
+
+  toggleForgotPasswordModal() {
+    if (this.isForgotPasswordOpen) {
+      this.closeForgotPassword();
+    } else {
+      this.openForgotPassword();
+    }
+    this.isForgotPasswordOpen = !this.isForgotPasswordOpen;
+  }
+
+  closeForgotPassword() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.forgotPasswordModal.modal.classList.remove('active');
+  }
+
+  openForgotPassword() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.forgotPasswordModal.modal.classList.add('active');
   }
 }

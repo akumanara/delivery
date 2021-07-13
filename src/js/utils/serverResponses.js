@@ -2560,6 +2560,18 @@ const voucherSuccess = {
   status: 'ok',
 };
 
+const login = {
+  show_password: { status: 'ok', type: 'show_password' },
+  show_otp: {
+    status: 'ok',
+    type: 'show_otp',
+    call_id: 'asdads',
+    phone: '6985555555',
+  },
+  show_infobox: { status: 'ok', type: 'show_infobox' },
+  show_new_user: { status: 'ok', type: 'show_new_user' },
+};
+
 export {
   loginMailPasswordFail,
   loginMailPasswordSuccess,
@@ -2569,6 +2581,5 @@ export {
   productDataFromCart2,
   voucherFail,
   voucherSuccess,
+  login,
 };
-
-// {"status":"ok","type":"show_password"}

@@ -13,11 +13,9 @@ export default class {
     const modalStep1 = document.querySelector('.js-verify-number-modal');
     const modalStep2 = document.querySelector('.js-verify-number-modal-otp');
 
-    this.DOM.trigger = document.querySelector(
-      '.personal-details__phone-trigger',
-    );
+    this.DOM.trigger = document.querySelector('.js-verify-number-trigger');
     this.DOM.personalDetailsPhoneInput = document.querySelector(
-      '.js-personal-details__phone-input',
+      '.js-verify-number-input',
     );
     this.DOM.personalDetailsCheckbox = document.querySelector(
       '.personal-details__phone-checkbox',
@@ -82,7 +80,7 @@ export default class {
     this.phoneNumber = this.DOM.modalStep1.input.value;
     // await timeout(1000);
 
-    await this.api.submitPhoneGuest(this.phoneNumber).then((result) => {
+    await this.api.verifyPhone(this.phoneNumber).then((result) => {
       console.log(result);
       // if (result.status === 'error') {
       //   // errror

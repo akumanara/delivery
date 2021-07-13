@@ -12,7 +12,7 @@ Todo:
     ☐ duplicate svg icons?
     ☐ favorite mechanism not working
     ☐ api phone verification testing
-
+    ☐ register disable email on sign up
 
 connect/login:
   ☐ user enters mail - > user doesnt have password or phone -> login with mail mechanism
@@ -26,11 +26,15 @@ store:
   ☐ [store] previous orders - add previous order to basket modal
   ☐ noticeboard
   ☐ update icons on card elaxisti / calendar
+  ☐ [mobile] close cart if the cart is empty
 
 product modal:
   ☐ [product_modal] - offers - @critical
   ☐ [product_modal] hide/view large html description
   ☐ [product_modal] zoom on photos
+
+verify number:
+  ☐ [verify_number] - otp resend
 
 checkout:
   ☐ [checkout] show more/show less on receipt

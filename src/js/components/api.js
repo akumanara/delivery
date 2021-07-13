@@ -11,6 +11,7 @@ import {
   productDataFromCart2,
   voucherFail,
   voucherSuccess,
+  login,
 } from '../utils/serverResponses';
 
 export default class {
@@ -357,7 +358,7 @@ export default class {
     });
   }
 
-  submitPhoneGuest(phoneNumber) {
+  verifyPhone(phoneNumber) {
     // https://www.delivery.gr/api/telephone-verification
     // post
     // order_phone: '6934782274'
@@ -461,21 +462,10 @@ export default class {
     // https://www.delivery.gr/check-login-type
     // { username: email/phone }
 
-    // case 1.
-    // { status: 'ok', type: 'show_password' }
-    // case 2.
-    // {
-    //   status: 'ok',
-    //   type: 'show_otp',
-    //   call_id: 'asdads',
-    //   phone: '6985555555',
-    // }
-    // case 3.
-    // { status: 'ok', type: 'show_infobox' }
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve({ status: 'ok', type: 'show_infobox' });
+          resolve(login.show_new_user);
         }, 500),
       );
     }
