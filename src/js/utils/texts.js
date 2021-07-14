@@ -69,5 +69,6 @@ export default {
   login: {
     invalidPhoneOrEmail: 'Μη έγκυρο τηλέφωνο ή email',
     userIsSocialLoginError: 'Σφάλμα σύνδεσης. Κάνε σύνδεση με social media.',
+    wrongPassword: 'Λάθος κωδικός.',
   },
 };

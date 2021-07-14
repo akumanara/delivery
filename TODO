@@ -4,7 +4,6 @@ Todo:
     ☐ [general] svg icon css for dark/light - @misa dependency
     ☐ [general] select styling - (add address validation modal)
     ☐ [general] sentry remove cc data before sending @critical;
-    ☐ Sign up / login
     ☐ Offers
     ☐ Reorder - Recent orders
     ☐ Coupons on Checkout
@@ -12,51 +11,57 @@ Todo:
     ☐ duplicate svg icons?
     ☐ favorite mechanism not working
     ☐ api phone verification testing
-    ☐ register disable email on sign up
+    ☐ na ftiaksw to case an to tilefono den xreiazete verify
 
 connect/login:
   ☐ user enters mail - > user doesnt have password or phone -> login with mail mechanism
-  ☐ api for email login responses @Dimitris
-  ☐ api for login with email and otp @Dimitris
-  ☐ alert gia to xristi pou vazei lathos data sto login modal (lathos til/email)
-  ☐ alert gia to xristi pou vazei lathos kodiko
+  ✔ api for email login responses @Dimitris @done(21-07-14 14:57)
+  ✔ api for login with email and otp @Dimitris @done(21-07-14 14:57)
+  ✔ alert gia to xristi pou vazei lathos data sto login modal (lathos til/email) @done(21-07-14 12:27)
+  ✔ alert gia to xristi pou vazei lathos kodiko @done(21-07-14 14:08)
+  ☐ alert gia to xristi pou vazei lathos otp (login)
+  ☐ alert gia to xristi pou vazei lathos otp (verify)
+  ☐ rework otp screen(login) gia na einai idia me to otp screen sto verify number?
 
 
-store:
+
+      store:
   ☐ [store] previous orders - add previous order to basket modal
   ☐ noticeboard
-  ☐ update icons on card elaxisti / calendar
+  ✔ update icons on card elaxisti / calendar @done(21-07-14 18:00)
   ☐ [mobile] close cart if the cart is empty
 
-product modal:
-  ☐ [product_modal] - offers - @critical
-  ☐ [product_modal] hide/view large html description
-  ☐ [product_modal] zoom on photos
+  product modal:
+    ☐ [product_modal] - offers - @critical
+    ☐ [product_modal] hide/view large html description
+    ☐ [product_modal] zoom on photos
 
 verify number:
-  ☐ [verify_number] - otp resend
+  ☐ [verify_number] - mixanismos gia otp resend
 
-checkout:
+  checkout:
   ☐ [checkout] show more/show less on receipt
   ☐ [checkout/general] textarea focus /placeholder
   ☐ [checkout page] payment method cannot be unselected
   ☐ [checkout] coupon view
   ☐ na kanw update ti timi pou stelnw sti viva otan vazei karta. opos erxetai apo to kalathi
 
-address:
-  ☐ [address] notification popup
-  ☐ scroll sto anoixto viewport me scrollable ti lista
+  address:
+    ☐ [address] notification popup
+    ☐ scroll sto anoixto viewport me scrollable ti lista
 
-bugs:
-  ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
-  ☐ [bug] autosize na ginei update an exei hdh content mesa
+    bugs:
+      ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
+      ☐ [bug] autosize na ginei update an exei hdh content mesa
+      ☐ [bug] modal scroll - address bar
 
-Doing:
+      Doing:
 
 
 
 
-Done:
+        Done:
+          ✔ register disable email on sign up @done(21-07-14 12:26)
   ✔ [general] header navigation @done(21-07-05 14:46)
   ✔ [store] closed store with suggestions @done(21-07-05 14:18)
   ✔ bug me to koympi apo pisw sti lista. na svinei to koumpi otan einai anoixta ta predictions @done(21-07-05 12:31)

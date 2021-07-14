@@ -361,18 +361,18 @@ export default class {
   verifyPhone(phoneNumber) {
     // https://www.delivery.gr/api/telephone-verification
     // post
-    // order_phone: '6934782274'
+    // telephone: '6934782274'
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve({ ok: 'ok' });
+          resolve({ user_verification: '654654' });
         }, 500),
       );
     }
     return new Promise((resolve, reject) => {
       const url = `api/telephone-verification`;
       const data = {
-        shop_id: phoneNumber,
+        telephone: phoneNumber,
       };
       this.instance
         .post(url, data)
@@ -465,7 +465,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(login.show_new_user);
+          resolve(login.show_password);
         }, 500),
       );
     }
@@ -492,7 +492,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(loginMailPasswordSuccess);
+          resolve(loginMailPasswordFail);
         }, 500),
       );
     }

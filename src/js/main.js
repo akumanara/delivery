@@ -6,13 +6,14 @@ import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
 import Accordion from 'accordion-js';
-// import List from 'list.js';
+
 // import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
 import autosize from 'autosize';
 import { gsap, ScrollToPlugin } from 'gsap/all';
 import { showFPS, makeid, deliveryConsole, initSentry } from './utils/helpers';
 import StoreCatalog from './components/storeCatalog';
+import StoreList from './components/storeList';
 import ProductList from './components/productList';
 import AddCard from './components/add-card';
 import Cart from './components/cart';
@@ -186,59 +187,10 @@ class App {
       this.storeCatalog = new StoreCatalog();
     }
 
-    // List.js for sorting and searching on stores
-    // always visible items. https://github.com/javve/list.js/issues/421
-    // const storesListElement = document.querySelector('.stores');
-    // if (storesListElement) {
-    //   const options = {
-    //     listClass: 'stores__list',
-    //     valueNames: [
-    //       'card__title',
-    //       { data: ['native', 'name', 'distance', 'rating'] },
-    //     ],
-    //   };
-
-    //   const storeList = new List(storesListElement, options);
-    //   // TODO remove this
-    //   window.list = storeList;
-
-    //   // TODO remove this
-    //   // populate demo stores
-    //   for (let index = 0; index < 100; index += 1) {
-    //     const native = Math.floor(Math.random() * 100);
-    //     const name = makeid(5);
-    //     const rating = Math.floor(Math.random() * 10);
-    //     const distance = Math.floor(Math.random() * 1000);
-    //     storeList.add({
-    //       card__title: `${name}.${native}.${rating}.${distance}`,
-    //       native,
-    //       name,
-    //       rating,
-    //       distance,
-    //     });
-    //   }
-    //   // search and filter
-    //   document.querySelector('#search-field').addEventListener('keyup', (e) => {
-    //     const searchString = document.querySelector('#search-field').value;
-    //     storeList.search(searchString);
-    //   });
-
-    //   storeList.on('updated', (list) => {
-    //     console.log('updated');
-    //   });
-    //   storeList.on('searchStart', (list) => {
-    //     console.log('searchStart');
-    //   });
-    //   storeList.on('searchComplete', (list) => {
-    //     console.log('searchComplete');
-    //   });
-
-    //   // how to change order manually.
-    //   window.doThat = function () {
-    //     arrayMove.mutate(storeList.items, 0, 10);
-    //     storeList.update();
-    //   };
-    // }
+    // The store list with filter modal and search
+    if (document.body.classList.contains('catalog-page')) {
+      this.storeList = new StoreList();
+    }
 
     // Accordions for store info
     this.accordions = [];

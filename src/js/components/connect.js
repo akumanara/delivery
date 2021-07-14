@@ -25,6 +25,7 @@ export default class {
     this.DOM.loginModal.input.value = '';
     this.DOM.passwordModal.input.value = '';
     this.clearLoginModalError();
+    this.clearPasswordModalError();
   }
 
   queryTheDOM() {
@@ -262,6 +263,7 @@ export default class {
     if (response.status === 'error') {
       // TODO alert
       console.log('fail login');
+      this.passwordModalShowError(texts.login.wrongPassword);
     } else if (response.status === 'ok') {
       window.location.reload();
     }
@@ -269,11 +271,30 @@ export default class {
     PubSub.publish('hide_loader');
   }
 
+  clearPasswordModalError() {
+    this.DOM.passwordModal.input.classList.remove('form-control--has-error');
+    const error = this.DOM.passwordModal.modal.querySelector('.js-error');
+    if (error) {
+      error.remove();
+    }
+  }
+
+  passwordModalShowError(error) {
+    this.clearPasswordModalError();
+    this.DOM.passwordModal.input.classList.add('form-control--has-error');
+    const htmlError = this.errorTemplate(error);
+    this.DOM.passwordModal.input.parentNode.insertAdjacentHTML(
+      'beforebegin',
+      htmlError,
+    );
+  }
+
   async loginActionClicked() {
     PubSub.publish('show_loader');
     const { value } = this.DOM.loginModal.input;
     // console.log(`mail: ${validateEmail(value)}`);
     if (validateEmail(value)) {
+      console.log('Valid email');
       // USER ENTERED VALID EMAIL
       // ==========================
       this.email = value;
@@ -298,11 +319,13 @@ export default class {
         // USER DOESNT EXIST. REGISTER
         // ==========================
         this.DOM.registerModal.formEmail.value = this.email;
+        this.DOM.registerModal.formEmail.disabled = true;
         this.checkRegisterForm();
         this.toggleLoginModal();
         this.toggleRegisterModal();
       }
     } else if (validatePhone(value)) {
+      console.log('Valid phone');
       // USER ENTERED VALID PHONE
       // ==========================
       this.phone = value;
@@ -318,6 +341,7 @@ export default class {
         // todo
       }
     } else {
+      console.log('invalid email or invalid phone');
       // USER DIDNT ENTERED VALID EMAIL OR VALID PHONE
       // ==========================
       this.loginModalShowError(texts.login.invalidPhoneOrEmail);

@@ -1,5 +1,42 @@
 .search-and-filters {
-  // height: 112px;
-  // background-color: blue;
-  // opacity: 0.5;
+  padding: 10px 16px;
+  display: flex;
+  margin: 16px 0;
+
+  &__search {
+    // outline: 1px solid red;
+    flex-grow: 1;
+    margin-right: 10px;
+    background: #f6f7f9;
+    border-radius: 8px;
+  }
+  &__search-box {
+    display: flex;
+    padding: 13px 10px;
+  }
+  &__search-box-img {
+    width: 22px;
+    height: 22px;
+    align-self: center;
+    margin-right: 10px;
+  }
+  &__search-box-input {
+  }
+  &__filters {
+    background: #f6f7f9;
+    // width: 105px;
+    border-radius: 8px;
+    padding: 13px 10px;
+  }
+  &__filters-box {
+    display: flex;
+  }
+  &__filters-box-img {
+    width: 22px;
+    height: 22px;
+    align-self: center;
+    margin-right: 10px;
+  }
+  &__filters-box-copy {
+  }
 }

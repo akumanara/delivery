@@ -79,21 +79,20 @@ export default class {
 
     this.phoneNumber = this.DOM.modalStep1.input.value;
     // await timeout(1000);
-
-    await this.api.verifyPhone(this.phoneNumber).then((result) => {
-      console.log(result);
-      // if (result.status === 'error') {
-      //   // errror
-      //   // Show the error msg
-      //   this.DOM.errorMsg.innerText = result.message;
-      //   this.DOM.error.classList.add('coupon__error--active');
-      //   // Toggle the error input
-      //   this.DOM.input.classList.add('form-control--has-error');
-      // } else if (result.status === 'ok') {
-      //   // ok
-      //   window.location.reload();
-      // }
-    });
+    const response = await this.api.verifyPhone(this.phoneNumber);
+    console.log(response);
+    this.userVerification = response.user_verification;
+    // if (result.status === 'error') {
+    //   // errror
+    //   // Show the error msg
+    //   this.DOM.errorMsg.innerText = result.message;
+    //   this.DOM.error.classList.add('coupon__error--active');
+    //   // Toggle the error input
+    //   this.DOM.input.classList.add('form-control--has-error');
+    // } else if (result.status === 'ok') {
+    //   // ok
+    //   window.location.reload();
+    // }
 
     // console.log('ok');
     PubSub.publish('hide_loader');

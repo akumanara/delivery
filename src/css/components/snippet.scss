@@ -35,6 +35,11 @@
     &--padding-small {
       padding-bottom: 18px;
     }
+
+    &--in-store-list {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   .swiper-slide {
     width: auto;
