@@ -12,6 +12,7 @@ import {
   voucherFail,
   voucherSuccess,
   login,
+  verifyNumber,
 } from '../utils/serverResponses';
 
 export default class {
@@ -365,7 +366,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve({ user_verification: '654654' });
+          resolve(verifyNumber.step1PhoneNeedVerification);
         }, 500),
       );
     }
@@ -385,21 +386,25 @@ export default class {
     });
   }
 
-  submitOTPGuest(otp) {
+  submitOTP(phoneNumber, callId, otp) {
     // https://www.delivery.gr/api/telephone-verification
     // post
-    // user_verification:"5675"
+    // "telephone":"6934782274",
+    // "call_id":"32748",
+    // "sms_verification":"3308"
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve({ ok: 'ok' });
+          resolve(verifyNumber.step2phoneIsVerified);
         }, 500),
       );
     }
     return new Promise((resolve, reject) => {
       const url = `api/telephone-verification`;
       const data = {
-        user_verification: otp,
+        telephone: phoneNumber,
+        call_id: callId,
+        sms_verification: otp,
       };
       this.instance
         .post(url, data)
@@ -465,7 +470,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(login.show_password);
+          resolve(login.show_new_user);
         }, 500),
       );
     }

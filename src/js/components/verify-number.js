@@ -2,6 +2,8 @@ import PubSub from 'pubsub-js';
 import autoBind from 'auto-bind';
 import API from './api';
 import { validation, timeout } from '../utils/helpers';
+import { store } from '../utils/store';
+import texts from '../utils/texts';
 
 export default class {
   constructor() {
@@ -58,6 +60,7 @@ export default class {
 
   prepareModal() {
     this.phoneNumber = '';
+    this.callId = '';
     this.DOM.modalStep1.actionBtn.classList.add('primary-btn--disabled');
     this.DOM.modalStep1.input.value = '';
   }
@@ -80,24 +83,18 @@ export default class {
     this.phoneNumber = this.DOM.modalStep1.input.value;
     // await timeout(1000);
     const response = await this.api.verifyPhone(this.phoneNumber);
-    console.log(response);
-    this.userVerification = response.user_verification;
-    // if (result.status === 'error') {
-    //   // errror
-    //   // Show the error msg
-    //   this.DOM.errorMsg.innerText = result.message;
-    //   this.DOM.error.classList.add('coupon__error--active');
-    //   // Toggle the error input
-    //   this.DOM.input.classList.add('form-control--has-error');
-    // } else if (result.status === 'ok') {
-    //   // ok
-    //   window.location.reload();
-    // }
+    // console.log(response);
+    if ('verified' in response) {
+      // Phone is already verified
+      this.hideModal();
+      this.addPhoneToInputField();
+    } else {
+      // Phone needs verification
+      this.callId = response.call_id;
+      this.moveToVerificationStep();
+    }
 
-    // console.log('ok');
     PubSub.publish('hide_loader');
-    // if ok
-    this.moveToVerificationStep();
   }
 
   step1UpdateValue(e) {
@@ -150,19 +147,61 @@ export default class {
   async submitOtp() {
     PubSub.publish('show_loader');
     this.otp = this.DOM.modalStep2.input.value;
-    await this.api.submitOTPGuest(this.otp).then((result) => {
-      console.log(result);
-    });
 
-    // if ok
-    // Close modal
-    this.hideStep2Modal();
+    const response = await this.api.submitOTP(
+      this.phoneNumber,
+      this.callId,
+      this.otp,
+    );
+
+    if (response.status === 'success') {
+      this.hideStep2Modal();
+      this.addPhoneToInputField();
+    } else {
+      this.Step2ModalShowError(texts.verify.wrongOTP);
+    }
+
+    PubSub.publish('hide_loader');
+  }
+
+  addPhoneToInputField() {
     this.DOM.personalDetailsPhoneInput.value = this.phoneNumber;
     this.DOM.personalDetailsCheckbox.classList.add(
       'personal-details__phone-checkbox--active',
     );
-    PubSub.publish('hide_loader');
-    // Add verified number to guest personal details
-    // this.moveToVerificationStep();
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  errorTemplate(error) {
+    return `
+      <div class="p-16 d-flex js-error">
+        <img
+          src="${store.context.imagesURL}icons/error.svg"
+          alt=""
+          class="img-fluid mw-22 flex-shrink-0 align-self-center mr-10"
+        />
+        <div class="message">
+          ${error}
+        </div>
+      </div>`;
+  }
+
+  clearStep2ModalError() {
+    this.DOM.modalStep2.input.classList.remove('form-control--has-error');
+    const error = this.DOM.modalStep2.modal.querySelector('.js-error');
+    if (error) {
+      error.remove();
+    }
+  }
+
+  Step2ModalShowError(error) {
+    console.log(error);
+    this.clearStep2ModalError();
+    this.DOM.modalStep2.input.classList.add('form-control--has-error');
+    const htmlError = this.errorTemplate(error);
+    this.DOM.modalStep2.input.parentNode.insertAdjacentHTML(
+      'beforebegin',
+      htmlError,
+    );
   }
 }

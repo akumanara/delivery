@@ -2572,6 +2572,14 @@ const login = {
   show_new_user: { status: 'ok', type: 'show_new_user' },
 };
 
+// Verify number
+const verifyNumber = {
+  step1PhoneNeedVerification: { status: 'success', call_id: '654654' },
+  step1phoneDoesNotNeedVerification: { status: 'success', verified: true },
+  step2phoneIsVerified: { status: 'success', verified: true },
+  step2somethingWentWrong: { status: 'error', error_message: 'something' },
+};
+
 export {
   loginMailPasswordFail,
   loginMailPasswordSuccess,
@@ -2582,4 +2590,5 @@ export {
   voucherFail,
   voucherSuccess,
   login,
+  verifyNumber,
 };

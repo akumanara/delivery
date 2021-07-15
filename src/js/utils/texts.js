@@ -71,4 +71,7 @@ export default {
     userIsSocialLoginError: 'Σφάλμα σύνδεσης. Κάνε σύνδεση με social media.',
     wrongPassword: 'Λάθος κωδικός.',
   },
+  verify: {
+    wrongOTP: 'Λάθος κωδικός OTP',
+  },
 };
