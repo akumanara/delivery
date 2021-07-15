@@ -2586,7 +2586,7 @@ const register = {
   error: {
     status: 'error',
     error_messages: [
-      { name: '' },
+      { name: 'asd' },
       { pass: 'you dont meet the complexity requirments' },
       { generic: 'κάτι πήγε στραβά στην επεξεργασία' },
     ],

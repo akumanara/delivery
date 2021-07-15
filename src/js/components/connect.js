@@ -210,7 +210,6 @@ export default class {
       this.checkRegisterForm();
     });
 
-    // TODO: add event listener for register button
     this.DOM.registerModal.actionBtn.addEventListener(
       'click',
       this.registerUser,

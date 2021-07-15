@@ -12,6 +12,10 @@
     pointer-events: none;
   }
 
+  &--fake-disabled {
+    background: #8eaeff;
+  }
+
   &__icon {
   }
   &__copy {
