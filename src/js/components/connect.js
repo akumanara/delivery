@@ -19,13 +19,28 @@ export default class {
   }
 
   clearConnectComponent() {
+    // Class level stuff
     this.email = '';
     this.phone = '';
     this.callID = '';
+
+    // login modal
     this.DOM.loginModal.input.value = '';
-    this.DOM.passwordModal.input.value = '';
     this.clearLoginModalError();
+
+    // password modal
+    this.DOM.passwordModal.input.value = '';
     this.clearPasswordModalError();
+
+    // register modal
+    this.DOM.registerModal.formName.value = '';
+    this.DOM.registerModal.formSurname.value = '';
+    this.DOM.registerModal.formEmail.value = '';
+    this.DOM.registerModal.formPassword.value = '';
+    this.DOM.registerModal.formPhone.value = '';
+    this.DOM.registerModal.formTos.checked = false;
+    this.DOM.registerModal.formTosTrigger.classList.remove('checked');
+    // this.clearRegisterModalError();
   }
 
   queryTheDOM() {
@@ -87,6 +102,8 @@ export default class {
         '.js-verify-number-input',
       ),
       formTos: this.DOM.registerModal.querySelector('.js-tos'),
+      formTosTrigger:
+        this.DOM.registerModal.querySelector('.login__tos-accept'),
     };
     this.isRegisterOpen = false;
 
@@ -186,6 +203,12 @@ export default class {
       'click',
       this.toggleRegisterModal,
     );
+    this.DOM.registerModal.formTosTrigger.addEventListener('click', () => {
+      this.DOM.registerModal.formTos.checked =
+        !this.DOM.registerModal.formTos.checked;
+      this.DOM.registerModal.formTosTrigger.classList.toggle('checked');
+    });
+
     // TODO: add event listener for register button
     // this.DOM.registerModal.actionBtn.addEventListener(
     //   'click',

@@ -254,23 +254,45 @@
             class="form-control js-verify-number-input"
             id="floatingInput"
             placeholder="placeholder"
-
           />
           <label for="floatingInput">Phone</label>
         </div>
       </div>
+
       <!-- TOS -->
-      <div class="form-checkbox">
-        <label class="form-check-label" for="accept-tos"
-          >Έχω διαβάσει και αποδέχομαι τους
-          <a class="color-blue font-weight-700" href="#">Όρους Χρήσης</a>
-          και
-          <a class="color-blue font-weight-700" href="#"
-            >Πολιτική Απορρήτου</a
-          ></label
-        >
+      <div class="login__tos">
+        <div class="login__tos-accept-top-box">
+          <div class="font-weight-700 mb-10">Terms & Conditions</div>
+          <div class="font-size-2">
+            Έχω διαβάσει και αποδέχομαι τους
+            <a class="color-blue font-weight-700" target="_blank" href="#"
+              >Όρους Χρήσης</a
+            >
+            και
+            <a class="color-blue font-weight-700" target="_blank" href="#"
+              >Πολιτική Απορρήτου</a
+            >
+          </div>
+        </div>
+        <div class="login__tos-accept font-size-2 font-weight-700">
+          <div class="login__tos-accept-copy">Αποδέχομαι</div>
+          <div class="login__tos-accept-img">
+            <img
+              class="login__tos-accept-img-not-checked"
+              src="./images/icons/checkbox-not-checked.svg"
+              alt=""
+            />
+            <img
+              class="login__tos-accept-img-checkmark"
+              src="./images/icons/checkmark.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- HIDDEN -->
         <input
-          class="form-checkbox__input js-tos"
+          class="login__tos-accept-hidden-checkbox js-tos"
           type="checkbox"
           id="accept-tos"
         />

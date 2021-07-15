@@ -13,10 +13,11 @@ general:
   ☐ na ftiaksw to case an to tilefono den xreiazete verify
 
 connect/login:
-  ☐ user enters mail - > user doesnt have password or phone -> login with mail mechanism
-  ☐ alert gia to xristi pou vazei lathos otp (login)
-  ☐ alert gia to xristi pou vazei lathos otp (verify)
+  ☐ error gia to xristi pou vazei lathos otp (login)
   ☐ rework otp screen(login) gia na einai idia me to otp screen sto verify number?
+  ☐ error sto register page
+  ✔ user enters mail - > user doesnt have password or phone -> login with mail mechanism @done(21-07-15 12:16)
+  ✔ error gia to xristi pou vazei lathos otp (verify) @done(21-07-15 12:16)
 
 
 store:
