@@ -207,13 +207,14 @@ export default class {
       this.DOM.registerModal.formTos.checked =
         !this.DOM.registerModal.formTos.checked;
       this.DOM.registerModal.formTosTrigger.classList.toggle('checked');
+      this.checkRegisterForm();
     });
 
     // TODO: add event listener for register button
-    // this.DOM.registerModal.actionBtn.addEventListener(
-    //   'click',
-    //   this.loginWithMailAndOtp,
-    // );
+    this.DOM.registerModal.actionBtn.addEventListener(
+      'click',
+      this.registerUser,
+    );
 
     // forgot password modal
     this.DOM.forgotPasswordModal.closeBtn.addEventListener(
@@ -252,8 +253,56 @@ export default class {
     }
   }
 
+  getRegisterForm() {
+    return {
+      name: this.DOM.registerModal.formName,
+      lastname: this.DOM.registerModal.formSurname,
+      email: this.DOM.registerModal.formEmail,
+      pass: this.DOM.registerModal.formPassword,
+      telephone: this.DOM.registerModal.formPhone,
+      agreement: this.DOM.registerModal.formTos,
+    };
+  }
+
+  async registerUser() {
+    PubSub.publish('show_loader');
+    this.clearRegisterModalError();
+    // get the form data
+
+    const formData = {
+      name: this.DOM.registerModal.formName.value,
+      lastname: this.DOM.registerModal.formSurname.value,
+      email: this.DOM.registerModal.formEmail.value,
+      pass: this.DOM.registerModal.formPassword.value,
+      telephone: this.DOM.registerModal.formPhone.value,
+      agreement: this.DOM.registerModal.formTos.checked,
+    };
+
+    const response = await this.api.signupUser(formData);
+    if (response.status === 'success') {
+      window.location.reload();
+    } else {
+      // TODO: show error messages
+      // Todo check generic error
+      const form = this.getRegisterForm();
+      response.error_messages.forEach((element) => {
+        const fieldName = Object.keys(element)[0];
+        const formField = form[fieldName];
+        if (formField) {
+          this.registerModalShowError(element[fieldName], formField);
+        }
+        if (fieldName === 'generic') {
+          this.registerModalShowError(element[fieldName], form.name.parentNode);
+        }
+      });
+    }
+
+    PubSub.publish('hide_loader');
+  }
+
   async loginWithMailAndOtp() {
     PubSub.publish('show_loader');
+
     const { value } = this.DOM.otpModal.input;
 
     const response = await this.api.emailLoginWithOTP(
@@ -272,6 +321,39 @@ export default class {
     }
 
     PubSub.publish('hide_loader');
+  }
+
+  clearRegisterModalError() {
+    // Remove error messages
+    this.DOM.registerModal.formName.classList.remove('form-control--has-error');
+    this.DOM.registerModal.formSurname.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.registerModal.formEmail.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.registerModal.formPhone.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.registerModal.formPassword.classList.remove(
+      'form-control--has-error',
+    );
+
+    this.DOM.registerModal.modal
+      .querySelectorAll('.js-error')
+      .forEach((element) => {
+        element.remove();
+      });
+  }
+
+  registerModalShowError(error, input) {
+    console.log(error);
+    console.log(input);
+    input.classList.add('form-control--has-error');
+    if (error !== '') {
+      const htmlError = this.errorTemplate(error);
+      input.parentNode.insertAdjacentHTML('beforebegin', htmlError);
+    }
   }
 
   async loginWithMailAndPassword() {

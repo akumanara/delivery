@@ -12,6 +12,7 @@ import {
   voucherFail,
   voucherSuccess,
   login,
+  register,
   verifyNumber,
 } from '../utils/serverResponses';
 
@@ -348,6 +349,35 @@ export default class {
         voucher_id: voucherID,
         shop_id: shopID,
       };
+      this.instance
+        .post(url, data)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  signupUser(data) {
+    // https://www.delivery.gr/signup-user
+    // post
+    // email
+    // pass
+    // name
+    // lastname
+    // telephone
+    // agreement = true
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(register.error);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `signup-user`;
       this.instance
         .post(url, data)
         .then((response) => {

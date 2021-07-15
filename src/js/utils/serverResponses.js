@@ -2580,6 +2580,19 @@ const verifyNumber = {
   step2somethingWentWrong: { status: 'error', error_message: 'something' },
 };
 
+// register
+const register = {
+  success: { status: 'success', message: 'thanks for your registration' },
+  error: {
+    status: 'error',
+    error_messages: [
+      { name: '' },
+      { pass: 'you dont meet the complexity requirments' },
+      { generic: 'κάτι πήγε στραβά στην επεξεργασία' },
+    ],
+  },
+};
+
 export {
   loginMailPasswordFail,
   loginMailPasswordSuccess,
@@ -2590,5 +2603,6 @@ export {
   voucherFail,
   voucherSuccess,
   login,
+  register,
   verifyNumber,
 };

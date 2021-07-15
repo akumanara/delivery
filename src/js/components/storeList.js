@@ -11,64 +11,86 @@ export default class {
     this.DOM.searchInput = document.querySelector(
       '.search-and-filters__search-box-input',
     );
+    this.DOM.stores = document.querySelector('.stores');
+    this.DOM.storesList = document.querySelector('.stores__list');
+    this.DOM.searchClear = document.querySelector(
+      '.search-and-filters__search-box-close-img',
+    );
+
     // List.js for sorting and searching on stores
     // always visible items. https://github.com/javve/list.js/issues/421
-    const storesListElement = document.querySelector('.stores');
-    if (storesListElement) {
-      const options = {
-        listClass: 'stores__list',
-        valueNames: [
-          'card__title',
-          { data: ['native', 'name', 'distance', 'rating'] },
-        ],
-      };
 
-      this.storeList = new List(storesListElement, options);
-      //   // TODO remove this
-      window.list = this.storeList;
+    const options = {
+      listClass: 'stores__list',
+      valueNames: [
+        'card__title',
+        { data: ['native', 'name', 'distance', 'rating', 'promo1', 'promo2'] },
+      ],
+    };
 
-      //   // TODO remove this
-      //   // populate demo stores
-      for (let index = 0; index < 10; index += 1) {
-        const native = Math.floor(Math.random() * 100);
-        const name = makeid(5);
-        const rating = Math.floor(Math.random() * 10);
-        const distance = Math.floor(Math.random() * 1000);
-        this.storeList.add({
-          card__title: `${name}.${native}.${rating}.${distance}`,
-          native,
-          name,
-          rating,
-          distance,
-        });
-      }
-      //   // search and filter
-      this.setupEvents();
+    this.storeList = new List(this.DOM.stores, options);
+    //   // TODO remove this
+    window.list = this.storeList;
+    window.listObj = this;
 
-      // };
-
-      //   storeList.on('updated', (list) => {
-      //     console.log('updated');
-      //   });
-      //   storeList.on('searchStart', (list) => {
-      //     console.log('searchStart');
-      //   });
-      //   storeList.on('searchComplete', (list) => {
-      //     console.log('searchComplete');
-      //   });
-
-      //   // how to change order manually.
-      //   window.doThat = function () {
-      //     arrayMove.mutate(storeList.items, 0, 10);
-      //     storeList.update();
-      //   };
+    //   // TODO remove this
+    //   // populate demo stores
+    for (let index = 0; index < 10; index += 1) {
+      const native = Math.floor(Math.random() * 100);
+      const name = makeid(5);
+      const rating = Math.floor(Math.random() * 10);
+      const distance = Math.floor(Math.random() * 1000);
+      this.storeList.add({
+        card__title: `${name}.${native}.${rating}.${distance}`,
+        native,
+        name,
+        rating,
+        distance,
+        promo1: Math.random() > 0.5,
+        promo2: Math.random() > 0.5,
+      });
     }
+    //   // search and filter
+    this.setupEvents();
+
+    // };
+
+    //   storeList.on('updated', (list) => {
+    //     console.log('updated');
+    //   });
+    //   storeList.on('searchStart', (list) => {
+    //     console.log('searchStart');
+    //   });
+    //   storeList.on('searchComplete', (list) => {
+    //     console.log('searchComplete');
+    //   });
+
+    //   // how to change order manually.
+    //   window.doThat = function () {
+    //     arrayMove.mutate(storeList.items, 0, 10);
+    //     storeList.update();
+    //   };
+    // this.filterList('promo2');
+  }
+
+  filterList(promoName) {
+    this.storeList.filter((item) => {
+      if (item.values()[promoName]) {
+        return true;
+      }
+      return false;
+    }); // Only items with promoName === true are shown in list
   }
 
   setupEvents() {
     // this.storeList.on('searchStart', this.searchStart);
     this.storeList.on('searchComplete', this.searchComplete);
-    this.DOM.searchInput.addEventListener('keyup', this.searchInputChanged);
+    this.storeList.on('sortComplete', this.sortComplete);
+    this.DOM.searchInput.addEventListener('input', this.searchInputChanged);
+    this.DOM.searchClear.addEventListener('click', () => {
+      this.DOM.searchInput.value = '';
+      this.searchInputChanged();
+    });
   }
 
   searchInputChanged() {
@@ -76,7 +98,9 @@ export default class {
 
     if (this.DOM.searchInput.value.length === 0) {
       this.showAllSliders();
+      this.DOM.searchClear.classList.add('d-none');
     } else {
+      this.DOM.searchClear.classList.remove('d-none');
       this.hideAllSliders();
     }
 
@@ -94,6 +118,11 @@ export default class {
   searchComplete() {
     console.log('searchComplete');
     this.hideAllSliders();
+  }
+
+  sortComplete() {
+    // console.log('searchComplete');
+    // this.hideAllSliders();
   }
 
   hideAllSliders() {
