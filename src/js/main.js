@@ -296,12 +296,15 @@ class App {
     document.body.classList.add('page-loaded');
 
     /* eslint-disable no-new */
-    // new Alert({
+    // const a = new Alert({
     //   text: 'This is an alert message', // the text to show in the alert
     //   timeToKill: 5, // time until it closes
     //   type: 'info', // or 'error'
     //   iconName: 'alert-phone', // as in our icons
     //   showTimer: true, // show the timer or not
+    //   onClose: () => {
+    //     console.log('closed');
+    //   },
     // });
   }
 

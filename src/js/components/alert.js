@@ -12,6 +12,7 @@ import { formatTimer } from '../utils/helpers';
 //   type: 'info', // or 'error'
 //   iconName: 'phone', // must exists in folder icons with svg extension.
 //   showTimer: false, // displays or not the countdown
+//   onClose: function() { } // callback function when the alert is closed
 // };
 
 // it is possible to access alert instance on its HTMLElement. It is alert property of alerts HTML container element:
@@ -73,8 +74,14 @@ export default class {
   }
 
   hide() {
+    console.log('hide');
+    if (this.options.onClose) {
+      this.options.onClose();
+    }
+
     this.isAnimating = true;
-    gsap.killTweensOf(this.progress);
+    this.progressTimeline.kill();
+    // gsap.killTweensOf(this.progress);
 
     const tl = gsap.timeline({
       onComplete: () => {

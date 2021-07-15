@@ -38,9 +38,14 @@ export default class {
     this.DOM.registerModal.formEmail.value = '';
     this.DOM.registerModal.formPassword.value = '';
     this.DOM.registerModal.formPhone.value = '';
+    // remove the checkmark icon
+    this.DOM.registerModal.modal
+      .querySelector('.personal-details__phone-checkbox')
+      .classList.remove('personal-details__phone-checkbox--active');
+
     this.DOM.registerModal.formTos.checked = false;
     this.DOM.registerModal.formTosTrigger.classList.remove('checked');
-    // this.clearRegisterModalError();
+    this.clearRegisterModalError();
   }
 
   queryTheDOM() {

@@ -20,6 +20,9 @@ connect/login:
   ✔ error gia to xristi pou vazei lathos otp (verify) @done(21-07-15 12:16)
 
 
+  register:
+    error messages on input label
+
 store:
   ☐ [store] previous orders - add previous order to basket modal
   ☐ noticeboard

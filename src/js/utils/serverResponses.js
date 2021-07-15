@@ -2583,10 +2583,11 @@ const verifyNumber = {
 // register
 const register = {
   success: { status: 'success', message: 'thanks for your registration' },
+  successButMerge: { status: 'success', message: 'thanks for your registration' },
   error: {
     status: 'error',
     error_messages: [
-      { name: 'asd' },
+      { name: '' },
       { pass: 'you dont meet the complexity requirments' },
       { generic: 'κάτι πήγε στραβά στην επεξεργασία' },
     ],

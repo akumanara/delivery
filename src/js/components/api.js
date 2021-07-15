@@ -369,6 +369,7 @@ export default class {
     // lastname
     // telephone
     // agreement = true
+    // merge true
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
