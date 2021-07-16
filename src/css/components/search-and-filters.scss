@@ -56,4 +56,140 @@
   }
   &__filters-box-copy {
   }
+
+  &__modal {
+  }
+
+  // SORT
+  &__sort-section {
+  }
+  &__sort-section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    box-sizing: border-box;
+  }
+
+  &__sort-section-cards-col {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 50%;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  &__sort-section-cards-item {
+    // outline: 1px solid red;
+    margin-bottom: 24px;
+    height: 80px;
+    background: #f6f7f9;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__sort-section-cards-item-checkbox-container {
+    position: relative;
+  }
+  &__sort-section-cards-item-checkbox-container-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    display: none;
+  }
+  &__sort-section-cards-item--active
+    &__sort-section-cards-item-checkbox-container-active {
+    display: block;
+  }
+  &__sort-section-cards-item--active {
+    background-color: #5a88ff;
+    color: #fff;
+    box-shadow: 0 6px 14px rgba(90, 136, 255, 0.3);
+  }
+
+  &__sort-section-cards-item-copy {
+    margin-top: auto;
+    @include font-size-2;
+  }
+
+  // FILTER
+  &__filter-section {
+  }
+  &__filter-section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    box-sizing: border-box;
+  }
+
+  &__filter-section-cards-col {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 50%;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  &__filter-section-cards-item {
+    // outline: 1px solid red;
+    margin-bottom: 24px;
+    background: #f6f7f9;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__filter-section-cards-item-top-checkbox-container {
+    position: relative;
+  }
+  &__filter-section-cards-item-checkbox-container-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    display: none;
+  }
+  &__filter-section-cards-item--active
+    &__filter-section-cards-item-checkbox-container-active {
+    display: block;
+  }
+  &__filter-section-cards-item--active {
+    background-color: #5a88ff;
+    color: #fff;
+    box-shadow: 0 6px 14px rgba(90, 136, 255, 0.3);
+  }
+
+  &__filter-section-cards-item-top-count {
+    opacity: 0.3;
+  }
+  &__filter-section-cards-item--active &__filter-section-cards-item-top-count {
+    opacity: 1;
+  }
+  &__filter-section-cards-item-top {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__filter-section-cards-item-top-count {
+    margin-left: auto;
+  }
+
+  &__filter-section-cards-item-img {
+    max-width: 125px;
+    height: auto;
+    margin: auto;
+  }
+
+  &__filter-section-cards-item-description {
+    margin-top: 16px;
+    @include font-size-13;
+
+    line-height: 130%;
+    font-weight: 500;
+  }
 }

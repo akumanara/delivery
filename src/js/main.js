@@ -7,7 +7,6 @@ import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
 import Accordion from 'accordion-js';
 
-// import arrayMove from 'array-move';
 import PubSub from 'pubsub-js';
 import autosize from 'autosize';
 import { gsap, ScrollToPlugin } from 'gsap/all';

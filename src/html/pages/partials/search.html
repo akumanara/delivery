@@ -31,3 +31,335 @@
     </div>
   </div>
 </section>
+
+<!-- FILTERS / SORTING MODAL -->
+<div class="search-and-filters__modal modal">
+  <!-- THE ACTUAL WINDOW -->
+  <div class="modal__window">
+    <!-- HEADER -->
+    <div class="modal__header">
+      <div class="modal__header-left">
+        <img
+          src="./images/icons/filters.svg"
+          alt=""
+          class="search-and-filters__filters-box-img"
+        />
+        <div class="">Filters</div>
+      </div>
+      <div class="modal__header-right">
+        <div class="js-close">
+          <img src="./images/icons/modal-close.svg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="modal__body">
+      <!-- SORT -->
+      <div class="search-and-filters__sort-section">
+        <div class="px-16 py-10 font-size-5 font-weight-700 font-averta">
+          Sort by
+        </div>
+        <div class="p-16">
+          <div class="search-and-filters__sort-section-cards">
+            <div class="search-and-filters__sort-section-cards-col">
+              <!-- SORT ITEM -->
+              <div
+                class="
+                  search-and-filters__sort-section-cards-item
+                  search-and-filters__sort-section-cards-item--active
+                "
+                data-sort="native"
+                data-order="asc"
+              >
+                <div
+                  class="
+                    search-and-filters__sort-section-cards-item-checkbox-container
+                  "
+                >
+                  <img src="./images/icons/sort-inactive.svg" alt="" />
+                  <img
+                    class="
+                      search-and-filters__sort-section-cards-item-checkbox-container-active
+                    "
+                    src="./images/icons/sort-active.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="search-and-filters__sort-section-cards-item-copy">
+                  Delivery.gr
+                </div>
+              </div>
+            </div>
+            <div class="search-and-filters__sort-section-cards-col">
+              <!-- SORT ITEM -->
+              <div
+                class="search-and-filters__sort-section-cards-item"
+                data-sort="name"
+                data-order="asc"
+              >
+                <div
+                  class="
+                    search-and-filters__sort-section-cards-item-checkbox-container
+                  "
+                >
+                  <img src="./images/icons/sort-inactive.svg" alt="" />
+                  <img
+                    class="
+                      search-and-filters__sort-section-cards-item-checkbox-container-active
+                    "
+                    src="./images/icons/sort-active.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="search-and-filters__sort-section-cards-item-copy">
+                  Name
+                </div>
+              </div>
+            </div>
+            <div class="search-and-filters__sort-section-cards-col">
+              <!-- SORT ITEM -->
+              <div
+                class="search-and-filters__sort-section-cards-item"
+                data-sort="distance"
+                data-order="asc"
+              >
+                <div
+                  class="
+                    search-and-filters__sort-section-cards-item-checkbox-container
+                  "
+                >
+                  <img src="./images/icons/sort-inactive.svg" alt="" />
+                  <img
+                    class="
+                      search-and-filters__sort-section-cards-item-checkbox-container-active
+                    "
+                    src="./images/icons/sort-active.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="search-and-filters__sort-section-cards-item-copy">
+                  Distance
+                </div>
+              </div>
+            </div>
+            <div class="search-and-filters__sort-section-cards-col">
+              <!-- SORT ITEM -->
+              <div
+                class="search-and-filters__sort-section-cards-item"
+                data-sort="rating"
+                data-order="desc"
+              >
+                <div
+                  class="
+                    search-and-filters__sort-section-cards-item-checkbox-container
+                  "
+                >
+                  <img src="./images/icons/sort-inactive.svg" alt="" />
+                  <img
+                    class="
+                      search-and-filters__sort-section-cards-item-checkbox-container-active
+                    "
+                    src="./images/icons/sort-active.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="search-and-filters__sort-section-cards-item-copy">
+                  Rating
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILTER -->
+      <div class="search-and-filters__filter-section">
+        <div class="px-16 py-10 font-size-5 font-weight-700 font-averta">
+          Filter
+        </div>
+        <div class="p-16">
+          <div class="search-and-filters__filter-section-cards">
+            <div class="search-and-filters__filter-section-cards-col">
+              <!-- SORT ITEM -->
+              <div
+                class="search-and-filters__filter-section-cards-item"
+                data-filter="promo1"
+              >
+                <div class="search-and-filters__filter-section-cards-item-top">
+                  <div
+                    class="
+                      search-and-filters__filter-section-cards-item-top-checkbox-container
+                    "
+                  >
+                    <img src="./images/icons/sort-inactive.svg" alt="" />
+                    <img
+                      class="
+                        search-and-filters__filter-section-cards-item-checkbox-container-active
+                      "
+                      src="./images/icons/sort-active.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="
+                      search-and-filters__filter-section-cards-item-top-count
+                    "
+                  >
+                    900
+                  </div>
+                </div>
+                <img
+                  src="./images/promos/promo1.svg"
+                  alt=""
+                  class="search-and-filters__filter-section-cards-item-img"
+                />
+                <div
+                  class="
+                    search-and-filters__filter-section-cards-item-description
+                  "
+                >
+                  Description can be used over 3 lines
+                </div>
+              </div>
+            </div>
+            <div class="search-and-filters__filter-section-cards-col">
+              <!-- SORT ITEM -->
+              <div
+                class="search-and-filters__filter-section-cards-item"
+                data-filter="promo2"
+              >
+                <div class="search-and-filters__filter-section-cards-item-top">
+                  <div
+                    class="
+                      search-and-filters__filter-section-cards-item-top-checkbox-container
+                    "
+                  >
+                    <img src="./images/icons/sort-inactive.svg" alt="" />
+                    <img
+                      class="
+                        search-and-filters__filter-section-cards-item-checkbox-container-active
+                      "
+                      src="./images/icons/sort-active.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="
+                      search-and-filters__filter-section-cards-item-top-count
+                    "
+                  >
+                    900
+                  </div>
+                </div>
+                <img
+                  src="./images/promos/promo2.svg"
+                  alt=""
+                  class="search-and-filters__filter-section-cards-item-img"
+                />
+                <div
+                  class="
+                    search-and-filters__filter-section-cards-item-description
+                  "
+                >
+                  Description can be used over 3 lines
+                </div>
+              </div>
+            </div>
+            <div class="search-and-filters__filter-section-cards-col">
+              <!-- SORT ITEM -->
+              <div
+                class="search-and-filters__filter-section-cards-item"
+                data-filter="promo1"
+              >
+                <div class="search-and-filters__filter-section-cards-item-top">
+                  <div
+                    class="
+                      search-and-filters__filter-section-cards-item-top-checkbox-container
+                    "
+                  >
+                    <img src="./images/icons/sort-inactive.svg" alt="" />
+                    <img
+                      class="
+                        search-and-filters__filter-section-cards-item-checkbox-container-active
+                      "
+                      src="./images/icons/sort-active.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="
+                      search-and-filters__filter-section-cards-item-top-count
+                    "
+                  >
+                    900
+                  </div>
+                </div>
+                <img
+                  src="./images/promos/promo1.svg"
+                  alt=""
+                  class="search-and-filters__filter-section-cards-item-img"
+                />
+                <div
+                  class="
+                    search-and-filters__filter-section-cards-item-description
+                  "
+                >
+                  Description can be used over 3 lines
+                </div>
+              </div>
+            </div>
+            <div class="search-and-filters__filter-section-cards-col">
+              <!-- SORT ITEM -->
+              <div
+                class="search-and-filters__filter-section-cards-item"
+                data-filter="promo2"
+              >
+                <div class="search-and-filters__filter-section-cards-item-top">
+                  <div
+                    class="
+                      search-and-filters__filter-section-cards-item-top-checkbox-container
+                    "
+                  >
+                    <img src="./images/icons/sort-inactive.svg" alt="" />
+                    <img
+                      class="
+                        search-and-filters__filter-section-cards-item-checkbox-container-active
+                      "
+                      src="./images/icons/sort-active.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="
+                      search-and-filters__filter-section-cards-item-top-count
+                    "
+                  >
+                    900
+                  </div>
+                </div>
+                <img
+                  src="./images/promos/promo2.svg"
+                  alt=""
+                  class="search-and-filters__filter-section-cards-item-img"
+                />
+                <div
+                  class="
+                    search-and-filters__filter-section-cards-item-description
+                  "
+                >
+                  Description can be used over 3 lines
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- STICKY ACTION -->
+    <div class="modal__action">
+      <div class="py-20 px-16 w-100">
+        <div class="primary-btn js-action-btn">Πίσω στη λίστα</div>
+      </div>
+    </div>
+  </div>
+</div>
