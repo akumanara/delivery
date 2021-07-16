@@ -182,9 +182,8 @@ export default class {
   }
 
   setupEvents() {
-    // this.storeList.on('searchStart', this.searchStart);
+    this.storeList.on('searchStart', this.searchStart);
     this.storeList.on('searchComplete', this.searchComplete);
-    this.storeList.on('sortComplete', this.sortComplete);
     this.DOM.searchInput.addEventListener('input', this.searchInputChanged);
     this.DOM.searchClear.addEventListener('click', () => {
       this.DOM.searchInput.value = '';
@@ -214,6 +213,7 @@ export default class {
       this.DOM.searchClear.classList.remove('d-none');
     }
 
+    // empty list icon
     if (this.storeList.matchingItems.length === 0) {
       this.DOM.emptyList.classList.remove('d-none');
     } else {
@@ -221,27 +221,30 @@ export default class {
     }
   }
 
-  // searchStart() {
-  //   console.log('searchStart');
-  // }
-
-  searchComplete() {
-    // console.log('searchComplete');
-    // this.hideAllSliders();
+  searchStart() {
+    console.log('search start');
+    this.hideAllSliders();
   }
 
-  sortComplete() {
-    // console.log('searchComplete');
-    // this.hideAllSliders();
+  searchComplete() {
+    // if the sorting is natural AND user has typed something show the sliders
+    if (
+      this.activeSortElement.dataset.sort === 'native' &&
+      this.DOM.searchInput.value.length === 0
+    ) {
+      this.showAllSliders();
+    }
   }
 
   hideAllSliders() {
+    console.log('hideAllSliders');
     this.DOM.sliders.forEach((slider) => {
       slider.classList.add('d-none');
     });
   }
 
   showAllSliders() {
+    console.log('showAllSliders');
     this.DOM.sliders.forEach((slider) => {
       slider.classList.remove('d-none');
     });
