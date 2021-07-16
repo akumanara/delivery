@@ -370,6 +370,7 @@ export default class {
     // telephone
     // agreement = true
     // merge true
+    data.csrfToken = store.context.csrfToken;
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {

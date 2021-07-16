@@ -59,7 +59,7 @@ export default class {
       const name = makeid(5).toUpperCase();
       const rating = Math.floor(Math.random() * 10);
       const distance = Math.floor(Math.random() * 1000);
-      const promo1 = Math.random() > 0.5;
+      const promo1 = false;
       const promo2 = Math.random() > 0.5;
       this.storeList.add({
         card__title: `${name}`,
@@ -92,6 +92,7 @@ export default class {
     this.setFilterCount();
   }
 
+  // TODO if no card have filter promos remove the area
   setFilterCount() {
     this.DOM.modal.filterItems.forEach((item) => {
       const { filter } = item.dataset;
@@ -101,6 +102,9 @@ export default class {
       item.querySelector(
         '.search-and-filters__filter-section-cards-item-top-count',
       ).innerHTML = count;
+      // if (count === 0) {
+      //   item.parentNode.classList.add('d-none');
+      // }
     });
   }
 
@@ -132,8 +136,8 @@ export default class {
 
     // show the slider only in the native sort
     if (sortBy === 'native') {
-      this.showAllSliders();
       this.restoreSliders();
+      this.showAllSliders();
     } else {
       this.hideAllSliders();
     }
@@ -202,14 +206,12 @@ export default class {
   }
 
   searchInputChanged() {
-    this.storeList.search(this.DOM.searchInput.value);
-
     if (this.DOM.searchInput.value.length === 0) {
-      this.showAllSliders();
+      this.storeList.search();
       this.DOM.searchClear.classList.add('d-none');
     } else {
+      this.storeList.search(this.DOM.searchInput.value);
       this.DOM.searchClear.classList.remove('d-none');
-      this.hideAllSliders();
     }
 
     if (this.storeList.matchingItems.length === 0) {
@@ -225,7 +227,7 @@ export default class {
 
   searchComplete() {
     // console.log('searchComplete');
-    this.hideAllSliders();
+    // this.hideAllSliders();
   }
 
   sortComplete() {
