@@ -134,6 +134,19 @@ export default class {
     };
     this.isMergeAccountOpen = false;
 
+    // merge account with code modal
+    this.DOM.mergeAccountWithCodeModal = document.querySelector(
+      '.js-merge-with-code-modal',
+    );
+    this.DOM.mergeAccountWithCodeModal = {
+      modal: this.DOM.mergeAccountWithCodeModal,
+      closeBtn: this.DOM.mergeAccountWithCodeModal.querySelector('.js-close'),
+      actionBtn:
+        this.DOM.mergeAccountWithCodeModal.querySelector('.js-action-btn'),
+      input: this.DOM.mergeAccountWithCodeModal.querySelector('.js-input'),
+    };
+    this.isMergeAccountWithCodeOpen = false;
+
     console.log(this.DOM);
   }
 
@@ -248,6 +261,36 @@ export default class {
       'click',
       this.registerWithMergeConsent,
     );
+
+    // merge account with code modal
+    this.DOM.mergeAccountWithCodeModal.closeBtn.addEventListener(
+      'click',
+      this.toggleMergeAccountWithCodeModal,
+    );
+    this.DOM.mergeAccountWithCodeModal.actionBtn.addEventListener(
+      'click',
+      this.registerWithMergeConsentAndCode,
+    );
+  }
+
+  async registerWithMergeConsentAndCode() {
+    PubSub.publish('show_loader');
+    this.formData.merge_accounts = true;
+    const verificationCode = this.DOM.mergeAccountWithCodeModal.input.value;
+    this.formData.verification_code = verificationCode;
+    const response = await this.api.signupUser(this.formData);
+
+    if (response.status === 'success') {
+      window.location.reload();
+    } else if (response.status === 'error') {
+      const alert = new Alert({
+        text: response.message,
+        timeToKill: 5,
+        type: 'error',
+        showTimer: false,
+      });
+    }
+    PubSub.publish('hide_loader');
   }
 
   async registerWithMergeConsent() {
@@ -343,9 +386,20 @@ export default class {
       response.status === 'merge' &&
       response.type === 'no_verification'
     ) {
+      // MERGE WITHOUT VERIFICATION CODE
+      // ==========================
       this.formData = formData;
       this.toggleRegisterModal();
       this.toggleMergeModal();
+    } else if (
+      response.status === 'merge' &&
+      response.type === 'mail_verification'
+    ) {
+      // MERGE WITH VERIFICATION CODE
+      // ==========================
+      this.formData = formData;
+      this.toggleRegisterModal();
+      this.toggleMergeAccountWithCodeModal();
     }
 
     PubSub.publish('hide_loader');
@@ -666,5 +720,25 @@ export default class {
   openMerge() {
     document.body.classList.add('hide-overflow');
     this.DOM.mergeAccountModal.modal.classList.add('active');
+  }
+
+  // toogle merge account with code modal
+  toggleMergeAccountWithCodeModal() {
+    if (this.isMergeAccountWithCodeOpen) {
+      this.closeMergeAccountWithCode();
+    } else {
+      this.openMergeAccountWithCode();
+    }
+    this.isMergeAccountWithCodeOpen = !this.isMergeAccountWithCodeOpen;
+  }
+
+  closeMergeAccountWithCode() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.mergeAccountWithCodeModal.modal.classList.remove('active');
+  }
+
+  openMergeAccountWithCode() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.mergeAccountWithCodeModal.modal.classList.add('active');
   }
 }

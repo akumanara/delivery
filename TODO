@@ -10,8 +10,8 @@ general:
   ☐ duplicate svg icons?
   ☐ favorite mechanism not working
   ☐ api phone verification testing
-  ☐ na ftiaksw to case an to tilefono den xreiazete verify
-  ☐ na kripsw ta filtra otan den uparxoun k an den yparxei kanena na kripso olo to section
+
+  ✔ na kripsw ta filtra otan den uparxoun k an den yparxei kanena na kripso olo to section @done(21-07-19 16:59)
 
 connect/login:
   ☐ error gia to xristi pou vazei lathos otp (login)
@@ -20,9 +20,8 @@ connect/login:
   ✔ user enters mail - > user doesnt have password or phone -> login with mail mechanism @done(21-07-15 12:16)
   ✔ error gia to xristi pou vazei lathos otp (verify) @done(21-07-15 12:16)
 
-
-  register:
-    error messages on input label
+register:
+  ☐ error messages on input label
 
 store:
   ☐ [store] previous orders - add previous order to basket modal
@@ -36,6 +35,7 @@ product modal:
 
 verify number:
   ☐ [verify_number] - mixanismos gia otp resend
+  ☐ na ftiaksw to case an to tilefono den xreiazete verify
 
 checkout:
   ☐ [checkout] show more/show less on receipt
@@ -52,6 +52,7 @@ bugs:
   ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
   ☐ [bug] autosize na ginei update an exei hdh content mesa
   ☐ [bug] modal scroll - address bar
+  ☐ [bug] me tab mporeis na pas sto disbaled phone number sto register h sto personal details guest
 
 
 

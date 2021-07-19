@@ -2600,6 +2600,11 @@ const register = {
     message: 'Βρέθηκε ήδη εγγεγραμένος χρήστης με αυτό το τηλέφωνο!',
     type: 'no_verification',
   },
+  mergeConsentWithCode: {
+    status: 'merge',
+    message: 'LOREM',
+    type: 'mail_verification',
+  },
 };
 
 export {
