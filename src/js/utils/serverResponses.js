@@ -2583,7 +2583,10 @@ const verifyNumber = {
 // register
 const register = {
   success: { status: 'success', message: 'thanks for your registration' },
-  successButMerge: { status: 'success', message: 'thanks for your registration' },
+  successButMerge: {
+    status: 'success',
+    message: 'thanks for your registration',
+  },
   error: {
     status: 'error',
     error_messages: [
@@ -2591,6 +2594,11 @@ const register = {
       { pass: 'you dont meet the complexity requirments' },
       { generic: 'κάτι πήγε στραβά στην επεξεργασία' },
     ],
+  },
+  mergeConsent: {
+    status: 'merge',
+    message: 'Βρέθηκε ήδη εγγεγραμένος χρήστης με αυτό το τηλέφωνο!',
+    type: 'no_verification',
   },
 };
 

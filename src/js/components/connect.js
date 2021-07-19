@@ -5,6 +5,7 @@ import { validatePhone, validateEmail } from '../utils/helpers';
 import { loginWithEmailResponses } from '../utils/enum';
 import texts from '../utils/texts';
 import { store } from '../utils/store';
+import Alert from './alert';
 
 export default class {
   constructor() {
@@ -46,6 +47,7 @@ export default class {
     this.DOM.registerModal.formTos.checked = false;
     this.DOM.registerModal.formTosTrigger.classList.remove('checked');
     this.clearRegisterModalError();
+    this.formData = null;
   }
 
   queryTheDOM() {
@@ -122,6 +124,16 @@ export default class {
       actionBtn: this.DOM.forgotPasswordModal.querySelector('.js-action-btn'),
     };
     this.isForgotPasswordOpen = false;
+
+    // merge acount modal
+    this.DOM.mergeAccountModal = document.querySelector('.js-merge-modal');
+    this.DOM.mergeAccountModal = {
+      modal: this.DOM.mergeAccountModal,
+      closeBtn: this.DOM.mergeAccountModal.querySelector('.js-close'),
+      actionBtn: this.DOM.mergeAccountModal.querySelector('.js-action-btn'),
+    };
+    this.isMergeAccountOpen = false;
+
     console.log(this.DOM);
   }
 
@@ -226,6 +238,34 @@ export default class {
       this.toggleForgotPasswordModal,
     );
     // TODO: add event listener for forgot password button
+
+    // merge account modal
+    this.DOM.mergeAccountModal.closeBtn.addEventListener(
+      'click',
+      this.toggleMergeModal,
+    );
+    this.DOM.mergeAccountModal.actionBtn.addEventListener(
+      'click',
+      this.registerWithMergeConsent,
+    );
+  }
+
+  async registerWithMergeConsent() {
+    PubSub.publish('show_loader');
+    this.formData.merge_accounts = true;
+    const response = await this.api.signupUser(this.formData);
+
+    if (response.status === 'success') {
+      window.location.reload();
+    } else if (response.status === 'error') {
+      const alert = new Alert({
+        text: response.message,
+        timeToKill: 5,
+        type: 'error',
+        showTimer: false,
+      });
+    }
+    PubSub.publish('hide_loader');
   }
 
   // Clicked from login
@@ -285,7 +325,7 @@ export default class {
     const response = await this.api.signupUser(formData);
     if (response.status === 'success') {
       window.location.reload();
-    } else {
+    } else if (response.status === 'error') {
       // TODO: show error messages
       // Todo check generic error
       const form = this.getRegisterForm();
@@ -299,6 +339,13 @@ export default class {
           this.registerModalShowError(element[fieldName], form.name.parentNode);
         }
       });
+    } else if (
+      response.status === 'merge' &&
+      response.type === 'no_verification'
+    ) {
+      this.formData = formData;
+      this.toggleRegisterModal();
+      this.toggleMergeModal();
     }
 
     PubSub.publish('hide_loader');
@@ -599,5 +646,25 @@ export default class {
   openForgotPassword() {
     document.body.classList.add('hide-overflow');
     this.DOM.forgotPasswordModal.modal.classList.add('active');
+  }
+
+  // toogle merge modal
+  toggleMergeModal() {
+    if (this.isMergeAccountOpen) {
+      this.closeMerge();
+    } else {
+      this.openMerge();
+    }
+    this.isMergeAccountOpen = !this.isMergeAccountOpen;
+  }
+
+  closeMerge() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.mergeAccountModal.modal.classList.remove('active');
+  }
+
+  openMerge() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.mergeAccountModal.modal.classList.add('active');
   }
 }

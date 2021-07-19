@@ -2,10 +2,12 @@ import List from 'list.js';
 import autoBind from 'auto-bind';
 import arrayMove from 'array-move';
 import { makeid } from '../utils/helpers';
+import { store } from '../utils/store';
 
 export default class {
   constructor() {
     autoBind(this);
+
     this.DOM = {};
     this.DOM.sliders = document.querySelectorAll('.js-slider');
     this.DOM.emptyList = document.querySelector('.stores__empty');
@@ -32,6 +34,9 @@ export default class {
       filterItems: this.DOM.modal.querySelectorAll(
         '.search-and-filters__filter-section-cards-item',
       ),
+      filterSection: this.DOM.modal.querySelector(
+        '.search-and-filters__filter-section',
+      ),
       actionBtn: this.DOM.modal.querySelector('.js-action-btn'),
     };
     this.isModalOpen = false;
@@ -43,9 +48,13 @@ export default class {
       valueNames: [
         'card__title',
         'card__description',
-        { data: ['native', 'name', 'distance', 'rating', 'promo1', 'promo2'] },
+        { data: ['native', 'name', 'distance', 'rating'] },
       ],
     };
+    // Add the promos from context
+    options.valueNames[2].data = options.valueNames[2].data.concat(
+      store.context.promos,
+    );
     this.storeList = new List(this.DOM.stores, options);
 
     // TODO remove this
@@ -54,24 +63,8 @@ export default class {
     window.listObj = this;
 
     // populate demo stores
-    for (let index = 0; index < 10; index += 1) {
-      const native = Math.floor(Math.random() * 100);
-      const name = makeid(5).toUpperCase();
-      const rating = Math.floor(Math.random() * 10);
-      const distance = Math.floor(Math.random() * 1000);
-      const promo1 = false;
-      const promo2 = Math.random() > 0.5;
-      this.storeList.add({
-        card__title: `${name}`,
-        card__description: `Native: ${native}, Rate: ${rating}, Distance: ${distance}, promo1: ${promo1}, promo2: ${promo2}`,
-        native,
-        name,
-        rating,
-        distance,
-        promo1,
-        promo2,
-      });
-    }
+    // in a sepearate function
+    this.populateDemoStores();
 
     // Find active sort item and remove its active class. Add active class to clicked sort item.
     this.activeSortElement = [...this.DOM.modal.sortItems].find((element) =>
@@ -79,7 +72,6 @@ export default class {
         'search-and-filters__sort-section-cards-item--active',
       ),
     );
-    //   // search and filter
 
     // SLIDER BETWEEN ITEMS
     // used to subtract them when calculating matched / filtered results
@@ -88,12 +80,39 @@ export default class {
     this.saveSliderPositions();
 
     this.setupEvents();
-
     this.setFilterCount();
   }
 
-  // TODO if no card have filter promos remove the area
+  populateDemoStores() {
+    for (let index = 0; index < 10; index += 1) {
+      const native = Math.floor(Math.random() * 100);
+      const name = makeid(5).toUpperCase();
+      const rating = Math.floor(Math.random() * 10);
+      const distance = Math.floor(Math.random() * 1000);
+      const promo1 = Math.random() > 0.5;
+      const promo2 = Math.random() > 0.5;
+      const promo3 = Math.random() > 0.5;
+      const promo4 = Math.random() > 0.5;
+      const promo5 = Math.random() > 0.5;
+
+      this.storeList.add({
+        card__title: `${name}`,
+        card__description: `Native: ${native}, Rate: ${rating}, Distance: ${distance}, promo1: ${promo1}, promo2: ${promo2}, promo3: ${promo3}, promo4: ${promo4}, promo5: ${promo5}`,
+        native,
+        name,
+        rating,
+        distance,
+        promo1,
+        promo2,
+        promo3,
+        promo4,
+        promo5,
+      });
+    }
+  }
+
   setFilterCount() {
+    this.filters = [];
     this.DOM.modal.filterItems.forEach((item) => {
       const { filter } = item.dataset;
       const count = this.DOM.stores.querySelectorAll(
@@ -102,10 +121,28 @@ export default class {
       item.querySelector(
         '.search-and-filters__filter-section-cards-item-top-count',
       ).innerHTML = count;
-      // if (count === 0) {
-      //   item.parentNode.classList.add('d-none');
-      // }
+
+      const tmpObj = {
+        element: item,
+        count,
+      };
+      this.filters.push(tmpObj);
     });
+
+    // hide filters if count is 0
+    // hide the whole section if all filters count is 0
+    this.filters.forEach((filter) => {
+      if (filter.count === 0) {
+        filter.element.parentNode.classList.add('d-none');
+      }
+    });
+    const allCount = this.filters.reduce((acc, filter) => {
+      acc += filter.count;
+      return acc;
+    }, 0);
+    if (allCount === 0) {
+      this.DOM.modal.filterSection.classList.add('d-none');
+    }
   }
 
   restoreSliders() {

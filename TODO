@@ -11,22 +11,7 @@ general:
   ☐ favorite mechanism not working
   ☐ api phone verification testing
   ☐ na ftiaksw to case an to tilefono den xreiazete verify
-  filters
-  - delivery.gr deal
-  - 1+1
-  - 50% combo
-  - ekptosi katastimatos (store discount/offer)
-  - super deals
-
-
-  sort by
-  - Προεπιλεγμένη
-  - Απόσταση
-  - Χρόνος Παράδοσης
-  - Ελάχιστη
-  - Βαθμολογία
-
-☐ calcualate when to show slider or not
+  ☐ na kripsw ta filtra otan den uparxoun k an den yparxei kanena na kripso olo to section
 
 connect/login:
   ☐ error gia to xristi pou vazei lathos otp (login)
@@ -125,10 +110,6 @@ Done:
   ✔ favorite button
   ✔ Currency sto product modal
   ✔ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
-
-
-
-
 
 
 

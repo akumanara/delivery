@@ -18,4 +18,9 @@ const loginWithEmailResponses = {
   SHOW_NEW_USER: 'show_new_user',
 };
 
+const mergeResponsesTypes = {
+  SHOW_VERIFICATION_INPUT: 'mail_verification',
+  SHOW_CONSENT: 'no_verification',
+};
+
 export { deliveryTypes, paymentTypes, loginWithEmailResponses };

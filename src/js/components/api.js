@@ -374,7 +374,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(register.error);
+          resolve(register.mergeConsent);
         }, 500),
       );
     }
