@@ -12,14 +12,10 @@ general:
   ✔ na kripsw ta filtra otan den uparxoun k an den yparxei kanena na kripso olo to section @done(21-07-19 16:59)
 
 connect/login:
-  ✔ error gia to xristi pou vazei lathos otp (login) @done(21-07-20 10:05)
-  ☐ rework otp screen(login) gia na einai idia me to otp screen sto verify number?
-  ✔ error sto register page @done(21-07-20 10:05)
-  ✔ user enters mail - > user doesnt have password or phone -> login with mail mechanism @done(21-07-15 12:16)
-  ✔ error gia to xristi pou vazei lathos otp (verify) @done(21-07-15 12:16)
+  ☐ missing data modal
+  ☐ forgot password modal
+  ☐ notification modal
 
-register:
-  ✔ error messages on input label @done(21-07-20 10:05)
 
 store:
   ☐ [store] previous orders - add previous order to basket modal
@@ -50,20 +46,18 @@ bugs:
   ☐ [bug] sta filtra to active icon (svg) exei opacity kai epeidi einai external den doulevei sosta
 
 
-verify number:
+Done:
+  ✔ [filters] - blue on active filter and blue on active search @done(21-07-20 13:46)
+  ✔ [filters] - final icons @done(21-07-20 13:46)
+  ✔ [filters] - split button with clear @done(21-07-20 13:46)
+  ✔ [filters] - empty state
   ✔ [verify_number] - mixanismos gia otp resend @done(21-07-20 12:41)
 
-filters:
-  ☐ [filters] - final icons
-  ☐ [filters] - blue on active filter and blue on active search
-  ☐ [filters] - split button with clear
-
-connect:
-  ☐ missing data
-  ☐ notification
-
-
-Done:
+  ✔ error messages on input label @done(21-07-20 10:05)
+  ✔ error gia to xristi pou vazei lathos otp (login) @done(21-07-20 10:05)
+  ✔ error sto register page @done(21-07-20 10:05)
+  ✔ user enters mail - > user doesnt have password or phone -> login with mail mechanism @done(21-07-15 12:16)
+  ✔ error gia to xristi pou vazei lathos otp (verify) @done(21-07-15 12:16)
   ✔ na ftiaksw to case an to tilefono den xreiazete verify @done(21-07-20 10:26)
   ✔ update icons on card elaxisti / calendar @done(21-07-14 18:00)
   ✔ api for email login responses @Dimitris @done(21-07-14 14:57)
