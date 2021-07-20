@@ -11,7 +11,38 @@
   }
 
   &__empty {
-    padding: 10px;
-    background-color: red;
+    margin-top: -18px;
+    padding: 20px;
+  }
+  &__empty-image-container {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    // background-color: red;
+    background: linear-gradient(
+      180deg,
+      rgba(239, 242, 249, 0) 6.05%,
+      #d8dce3 384.03%
+    );
+  }
+
+  &__empty-copy {
+    padding: 10px 14px;
+    text-align: center;
+    color: #cbced1;
+    font-weight: 500;
+    @include font-size-2;
+
+    margin-bottom: 10px;
+  }
+
+  &__empty-image {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-end;
   }
 }

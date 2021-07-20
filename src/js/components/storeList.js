@@ -11,6 +11,9 @@ export default class {
     this.DOM = {};
     this.DOM.sliders = document.querySelectorAll('.js-slider');
     this.DOM.emptyList = document.querySelector('.stores__empty');
+    this.DOM.searchBox = document.querySelector(
+      '.search-and-filters__search-box',
+    );
     this.DOM.searchInput = document.querySelector(
       '.search-and-filters__search-box-input',
     );
@@ -38,6 +41,7 @@ export default class {
         '.search-and-filters__filter-section',
       ),
       actionBtn: this.DOM.modal.querySelector('.js-action-btn'),
+      clearBtn: this.DOM.modal.querySelector('.js-clear'),
     };
     this.isModalOpen = false;
 
@@ -66,12 +70,13 @@ export default class {
     // in a sepearate function
     this.populateDemoStores();
 
-    // Find active sort item and remove its active class. Add active class to clicked sort item.
+    // Find active sort item
     this.activeSortElement = [...this.DOM.modal.sortItems].find((element) =>
       element.classList.contains(
         'search-and-filters__sort-section-cards-item--active',
       ),
     );
+    this.defaultSortElement = this.activeSortElement;
 
     // SLIDER BETWEEN ITEMS
     // used to subtract them when calculating matched / filtered results
@@ -178,6 +183,9 @@ export default class {
     } else {
       this.hideAllSliders();
     }
+
+    // Check the clear filter btn state
+    this.checkClearBtnState();
   }
 
   filterItemClicked(item) {
@@ -192,6 +200,8 @@ export default class {
     if (this.activeFilterElement === item) {
       this.activeFilterElement = null;
       this.storeList.filter();
+      // Check the clear filter btn state
+      this.checkClearBtnState();
       return;
     }
 
@@ -203,6 +213,9 @@ export default class {
     // Find filter by name
     const { filter } = item.dataset;
     this.filterList(filter);
+
+    // Check the clear filter btn state
+    this.checkClearBtnState();
   }
 
   filterList(promoName) {
@@ -239,15 +252,43 @@ export default class {
         this.filterItemClicked(item);
       });
     });
+    this.DOM.modal.clearBtn.addEventListener('click', this.clearFilters);
+  }
+
+  clearFilters() {
+    // clear filter
+    if (this.activeFilterElement)
+      this.filterItemClicked(this.activeFilterElement);
+    // clear sort
+    this.sortItemClicked(this.defaultSortElement);
+  }
+
+  checkClearBtnState() {
+    if (this.activeFilterElement) {
+      this.DOM.modal.clearBtn.classList.remove('primary-btn--disabled');
+      this.DOM.filtersBox.classList.add('active');
+      return;
+    }
+
+    if (this.activeSortElement !== this.defaultSortElement) {
+      this.DOM.modal.clearBtn.classList.remove('primary-btn--disabled');
+      this.DOM.filtersBox.classList.add('active');
+      return;
+    }
+
+    this.DOM.modal.clearBtn.classList.add('primary-btn--disabled');
+    this.DOM.filtersBox.classList.remove('active');
   }
 
   searchInputChanged() {
     if (this.DOM.searchInput.value.length === 0) {
       this.storeList.search();
       this.DOM.searchClear.classList.add('d-none');
+      this.DOM.searchBox.classList.remove('active');
     } else {
       this.storeList.search(this.DOM.searchInput.value);
       this.DOM.searchClear.classList.remove('d-none');
+      this.DOM.searchBox.classList.add('active');
     }
 
     // empty list icon

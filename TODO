@@ -47,20 +47,20 @@ bugs:
   ☐ [bug] autosize na ginei update an exei hdh content mesa
   ☐ [bug] modal scroll - address bar
   ☐ [bug] me tab mporeis na pas sto disbaled phone number sto register h sto personal details guest
+  ☐ [bug] sta filtra to active icon (svg) exei opacity kai epeidi einai external den doulevei sosta
 
 
-  today:
-    verify number:
-      ☐ [verify_number] - mixanismos gia otp resend
+verify number:
+  ✔ [verify_number] - mixanismos gia otp resend @done(21-07-20 12:41)
 
-    filters:
-      ☐ [filters] - final icons
-      ☐ [filters] - blue on active filter and blue on active search
-      ☐ [filters] - split button with clear
+filters:
+  ☐ [filters] - final icons
+  ☐ [filters] - blue on active filter and blue on active search
+  ☐ [filters] - split button with clear
 
-    connect:
-      ☐ missing data
-      ☐ notification
+connect:
+  ☐ missing data
+  ☐ notification
 
 
 Done:

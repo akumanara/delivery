@@ -61,8 +61,6 @@ export default class {
       this.moveToPreviousStep,
     );
     this.DOM.modalStep2.resentBtn.addEventListener('click', this.resendSMS);
-
-    this.showModal();
   }
 
   prepareModal() {
