@@ -10,6 +10,7 @@ general:
   ☐ duplicate svg icons?
   ☐ favorite mechanism not working
   ✔ na kripsw ta filtra otan den uparxoun k an den yparxei kanena na kripso olo to section @done(21-07-19 16:59)
+  ☐ landing page mechanism for address and vertical selection
 
 connect/login:
   ☐ missing data modal
@@ -113,8 +114,6 @@ Done:
   ✔ favorite button
   ✔ Currency sto product modal
   ✔ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
-
-
 
 
 

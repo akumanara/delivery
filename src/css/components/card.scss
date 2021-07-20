@@ -168,7 +168,15 @@
 
     & > div:nth-child(2) {
       margin-left: auto;
+      align-self: flex-start;
     }
+  }
+
+  &__promo-badge {
+  }
+  &__promo-badge-img {
+    max-width: 60px;
+    max-height: 34px;
   }
 
   &__badge {

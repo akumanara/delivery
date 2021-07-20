@@ -9,7 +9,7 @@ Catalog / Category
 
 Store
 - Store page
-- Recent orders - 1.5d FDev, 1d BDev
+- Recent orders - 1.5d FDev, 1d BDev -----------
 - Basket - .5 BDev for Alerts
 - Product modal - 1d FDev,
 - Offers modal - 3d FDev, .5d BDev
@@ -53,17 +53,17 @@ Address
 - Reminder Modal - .5 Fdev,
 
 
-Rating modal - 2d Design, ?1d FDev, 1 BDev
+Rating modal - 2d Design, ?1d FDev, 1 BDev  -----------
 
 User Pages - 1d Design, 3d FDev, 2d Bdev
 - Details
 -- phone verification
 - Old Orders
 -- Order
-- Favorites
+- Favorites -----------
 - Eat and win
-- Coupons
--- Add coupon
+- Coupons -----------
+-- Add coupon -----------
 - Cards
 -- View Card
 -- Delete Card

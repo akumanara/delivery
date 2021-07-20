@@ -11,7 +11,7 @@ export default class {
     this.api = new API();
     this.DOM = {};
     this.phoneNumber = '';
-    this.secondsToResendSMS = 5;
+    this.secondsToResendSMS = 30;
     this.canResendSMS = false;
 
     const modalStep1 = document.querySelector('.js-verify-number-modal');
