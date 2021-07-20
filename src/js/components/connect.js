@@ -282,9 +282,9 @@ export default class {
 
     if (response.status === 'success') {
       window.location.reload();
-    } else if (response.status === 'error') {
+    } else {
       const alert = new Alert({
-        text: response.message,
+        text: texts.genericErrorMessage,
         timeToKill: 5,
         type: 'error',
         showTimer: false,
@@ -300,9 +300,9 @@ export default class {
 
     if (response.status === 'success') {
       window.location.reload();
-    } else if (response.status === 'error') {
+    } else {
       const alert = new Alert({
-        text: response.message,
+        text: texts.genericErrorMessage,
         timeToKill: 5,
         type: 'error',
         showTimer: false,

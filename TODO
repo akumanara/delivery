@@ -9,19 +9,17 @@ general:
   ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
   ☐ duplicate svg icons?
   ☐ favorite mechanism not working
-  ☐ api phone verification testing
-
   ✔ na kripsw ta filtra otan den uparxoun k an den yparxei kanena na kripso olo to section @done(21-07-19 16:59)
 
 connect/login:
-  ☐ error gia to xristi pou vazei lathos otp (login)
+  ✔ error gia to xristi pou vazei lathos otp (login) @done(21-07-20 10:05)
   ☐ rework otp screen(login) gia na einai idia me to otp screen sto verify number?
-  ☐ error sto register page
+  ✔ error sto register page @done(21-07-20 10:05)
   ✔ user enters mail - > user doesnt have password or phone -> login with mail mechanism @done(21-07-15 12:16)
   ✔ error gia to xristi pou vazei lathos otp (verify) @done(21-07-15 12:16)
 
 register:
-  ☐ error messages on input label
+  ✔ error messages on input label @done(21-07-20 10:05)
 
 store:
   ☐ [store] previous orders - add previous order to basket modal
@@ -32,10 +30,6 @@ product modal:
   ☐ [product_modal] - offers - @critical
   ☐ [product_modal] hide/view large html description
   ☐ [product_modal] zoom on photos
-
-verify number:
-  ☐ [verify_number] - mixanismos gia otp resend
-  ☐ na ftiaksw to case an to tilefono den xreiazete verify
 
 checkout:
   ☐ [checkout] show more/show less on receipt
@@ -55,8 +49,22 @@ bugs:
   ☐ [bug] me tab mporeis na pas sto disbaled phone number sto register h sto personal details guest
 
 
+  today:
+    verify number:
+      ☐ [verify_number] - mixanismos gia otp resend
+
+    filters:
+      ☐ [filters] - final icons
+      ☐ [filters] - blue on active filter and blue on active search
+      ☐ [filters] - split button with clear
+
+    connect:
+      ☐ missing data
+      ☐ notification
+
 
 Done:
+  ✔ na ftiaksw to case an to tilefono den xreiazete verify @done(21-07-20 10:26)
   ✔ update icons on card elaxisti / calendar @done(21-07-14 18:00)
   ✔ api for email login responses @Dimitris @done(21-07-14 14:57)
   ✔ api for login with email and otp @Dimitris @done(21-07-14 14:57)

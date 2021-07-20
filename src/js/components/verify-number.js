@@ -1,7 +1,7 @@
 import PubSub from 'pubsub-js';
 import autoBind from 'auto-bind';
 import API from './api';
-import { validation, timeout } from '../utils/helpers';
+import { validation, timeout, formatTimer } from '../utils/helpers';
 import { store } from '../utils/store';
 import texts from '../utils/texts';
 
@@ -11,6 +11,8 @@ export default class {
     this.api = new API();
     this.DOM = {};
     this.phoneNumber = '';
+    this.secondsToResendSMS = 5;
+    this.canResendSMS = false;
 
     const modalStep1 = document.querySelector('.js-verify-number-modal');
     const modalStep2 = document.querySelector('.js-verify-number-modal-otp');
@@ -39,6 +41,8 @@ export default class {
       actionBtn: modalStep2.querySelector('.js-action-btn'),
       previousStep: modalStep2.querySelector('.js-previous-step'),
       number: modalStep2.querySelector('.js-number'),
+      countdown: modalStep2.querySelector('.js-countdown'),
+      resentBtn: modalStep2.querySelector('.js-resend'),
       // error: this.DOM.modal.querySelector('.js-coupon-error'),
       // errorMsg: this.DOM.modal.querySelector('.js-coupon-error-msg'),
     };
@@ -56,6 +60,9 @@ export default class {
       'click',
       this.moveToPreviousStep,
     );
+    this.DOM.modalStep2.resentBtn.addEventListener('click', this.resendSMS);
+
+    this.showModal();
   }
 
   prepareModal() {
@@ -120,7 +127,66 @@ export default class {
   moveToVerificationStep() {
     this.hideModal();
     this.DOM.modalStep2.number.innerText = this.phoneNumber;
+
     this.showStep2Modal();
+    // start timer
+    this.startTimer();
+  }
+
+  startTimer() {
+    this.DOM.modalStep2.countdown.innerText = formatTimer(
+      this.secondsToResendSMS,
+    );
+    this.remainingSeconds = this.secondsToResendSMS;
+    this.stopTimer();
+    this.timeoutId = window.setInterval(this.tick, 1000);
+  }
+
+  tick() {
+    this.remainingSeconds -= 1;
+    this.DOM.modalStep2.countdown.innerText = formatTimer(
+      this.remainingSeconds,
+    );
+    if (this.remainingSeconds === 0) {
+      this.stopTimer();
+      this.enableResendSMS();
+    }
+  }
+
+  stopTimer() {
+    if (this.timeoutId) {
+      window.clearInterval(this.timeoutId);
+    }
+  }
+
+  enableResendSMS() {
+    this.DOM.modalStep2.countdown.classList.add('d-none');
+    this.DOM.modalStep2.resentBtn.classList.remove('opacity-20');
+    this.canResendSMS = true;
+  }
+
+  disableResendSMS() {
+    this.DOM.modalStep2.countdown.classList.remove('d-none');
+    this.DOM.modalStep2.resentBtn.classList.add('opacity-20');
+    this.canResendSMS = false;
+  }
+
+  async resendSMS() {
+    if (!this.canResendSMS) return;
+    PubSub.publish('show_loader');
+
+    const response = await this.api.verifyPhone(this.phoneNumber);
+    if ('verified' in response) {
+      // Phone is already verified
+      this.hideModal();
+      this.addPhoneToInputField();
+    } else {
+      // Phone needs verification
+      this.callId = response.call_id;
+    }
+    this.disableResendSMS();
+    this.startTimer();
+    PubSub.publish('hide_loader');
   }
 
   moveToPreviousStep() {
@@ -184,24 +250,5 @@ export default class {
           ${error}
         </div>
       </div>`;
-  }
-
-  clearStep2ModalError() {
-    this.DOM.modalStep2.input.classList.remove('form-control--has-error');
-    const error = this.DOM.modalStep2.modal.querySelector('.js-error');
-    if (error) {
-      error.remove();
-    }
-  }
-
-  Step2ModalShowError(error) {
-    console.log(error);
-    this.clearStep2ModalError();
-    this.DOM.modalStep2.input.classList.add('form-control--has-error');
-    const htmlError = this.errorTemplate(error);
-    this.DOM.modalStep2.input.parentNode.insertAdjacentHTML(
-      'beforebegin',
-      htmlError,
-    );
   }
 }
