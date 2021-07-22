@@ -13,6 +13,8 @@ import texts from '../utils/texts';
 export default class {
   constructor() {
     autoBind(this);
+    // TODO take that info from backend
+    this.isSelectedAddressSupported = store.context.isSelectedAddressSupported;
     this.api = new API();
     this.queryTheDOM();
     this.init();
@@ -93,14 +95,38 @@ export default class {
       formDoorbell: this.DOM.verifyModal.querySelector('.js-doorbell'),
       formFloor: this.DOM.verifyModal.querySelector('.js-floor'),
     };
+
+    // Notify modal
+    this.DOM.notifyModal = document.querySelector('.add-address__notify-modal');
+    this.DOM.notifyModal = {
+      modal: this.DOM.notifyModal,
+      closeBtn: this.DOM.notifyModal.querySelector('.small-modal__close'),
+      actionBtn: this.DOM.notifyModal.querySelector('.js-action-btn'),
+    };
   }
 
   init() {
     this.initChooseAddressModal();
     this.initAutoSuggestModal();
     this.initVerifyModal();
+    this.initNotifyModal();
 
     window.googleMapsCallback = this.googleMapsCallback;
+
+    if (this.selectedAddress) {
+      this.setActiveAddressData();
+    }
+  }
+
+  initNotifyModal() {
+    this.DOM.notifyModal.closeBtn.addEventListener(
+      'click',
+      this.hideNotifyModal,
+    );
+    this.DOM.notifyModal.actionBtn.addEventListener(
+      'click',
+      this.goToAddNewAddressFromNotify,
+    );
   }
 
   initChooseAddressModal() {
@@ -128,19 +154,48 @@ export default class {
       });
     });
 
-    // if we have a selected address set data
+    // if we have a selected address set data to the accordeon
     if (this.selectedAddress) {
       this.setActiveAddressData();
     }
+
+    // if we have a selected address and it is not supported by the store
+    // If the user has already selected an address and the address is not supported
+    // 1. Show a B level alert
+    // 2. Make the address btn red
+    // 3. Add a copy
+    if (this.selectedAddress && !this.isSelectedAddressSupported) {
+      // 1. Show a B level alert
+      this.showUnsupportedAddressAlert();
+
+      // 2. Make the address btn red
+      this.selectedAddress.classList.add('unsupported-address');
+
+      // 3. Add a copy
+      const copy = `<p class="px-16">${texts.unsupportedAddressInChooseAddressModal}</p>`;
+      this.DOM.chooseAddressModal.modal
+        .querySelector('.choose-address__header')
+        .insertAdjacentHTML('afterEnd', copy);
+    }
+  }
+
+  showUnsupportedAddressAlert() {
+    const alert = new Alert({
+      text: texts.unsupportedAddress(this.selectedAddressName), // the text to show in the alert
+      timeToKill: 5, // time until it closes
+      type: 'error', // or 'error'
+      iconName: 'unsupported-address', // as in our icons
+      showTimer: false, // show the timer or not
+    });
   }
 
   setActiveAddressData() {
     // set description
+    this.selectedAddressName = this.selectedAddress.querySelector(
+      '.choose-address__options-button-name',
+    ).innerHTML;
     this.DOM.accordion.headerTop.innerHTML = `TODO ${this.DOM.accordion.headerTop.innerHTML}`;
-    this.DOM.accordion.headerBottom.innerHTML =
-      this.selectedAddress.querySelector(
-        '.choose-address__options-button-name',
-      ).innerHTML;
+    this.DOM.accordion.headerBottom.innerHTML = this.selectedAddressName;
   }
 
   async submitSavedAddress(button) {
@@ -309,6 +364,16 @@ export default class {
   hideAutosuggestModal() {
     document.body.classList.remove('hide-overflow');
     this.DOM.autosuggestModal.modal.classList.remove('active');
+  }
+
+  showNotifyModal() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.notifyModal.modal.classList.add('active');
+  }
+
+  hideNotifyModal() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.notifyModal.modal.classList.remove('active');
   }
 
   showVerifyModal() {
@@ -531,6 +596,12 @@ export default class {
 
   goToAddNewAddress() {
     this.hideChooseAddressModal();
+    this.prepareAutosuggestModal();
+    this.showAutosuggestModal();
+  }
+
+  goToAddNewAddressFromNotify() {
+    this.hideNotifyModal();
     this.prepareAutosuggestModal();
     this.showAutosuggestModal();
   }

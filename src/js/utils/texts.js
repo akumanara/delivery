@@ -11,6 +11,8 @@ export default {
   // Delivery type accordion
   delivery: 'Delivery',
   deliveryFee: (x) => `Ελάχιστη παραγγελία - ${x}`,
+  unsupportedAddress: (x) => `No delivery to ${x}`,
+  unsupportedAddressInChooseAddressModal: `No delivery to this address!`,
   takeaway: 'Takeaway',
   takeawayLocation: (x) => `Κατάστημα - ${x}`,
   // Checkout payment types

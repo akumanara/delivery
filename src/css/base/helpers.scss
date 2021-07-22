@@ -20,7 +20,7 @@
 }
 
 // For max widths
-$mWidths: 18, 20, 22, 26, 38;
+$mWidths: 18, 20, 22, 26, 38, 120;
 @each $mWidth in $mWidths {
   .mw-#{$mWidth} {
     max-width: #{$mWidth}px;

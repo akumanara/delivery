@@ -109,6 +109,12 @@
       background: #5a88ff;
       box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
     }
+
+    &.unsupported-address {
+      color: white;
+      background: rgba(236, 81, 118, 0.8);
+      box-shadow: 0 10px 20px rgba(236, 81, 118, 0.3);
+    }
   }
 
   &__options-button-icon {

@@ -30,9 +30,11 @@ import Connect from './components/connect';
 
 class App {
   constructor() {
+    autoBind(this);
+    // window.console.lognew = console.log;
+    // console.log = this.consoleLog;
     initSentry();
     deliveryConsole();
-    autoBind(this);
 
     window.Alert = Alert;
 
@@ -60,7 +62,7 @@ class App {
 
     // kill console logs in production
     if (MODE === 'production') {
-      // console.log = () => {};
+      // console.log = this.consoleLog;
     } else if (MODE === 'development') {
       // showFPS();
       // document.querySelector('.header').addEventListener('click', () => {
@@ -287,6 +289,12 @@ class App {
     console.log('hideLoader');
     this.DOM.loader.classList.remove('active');
   }
+
+  // consoleLog(e) {
+  //   if (window.debug) {
+  //     console.lognew(e);
+  //   }
+  // }
 
   // window load event.
   // The load event is fired when the whole page has loaded,

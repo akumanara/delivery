@@ -418,11 +418,13 @@ export default class {
     // Before we initalize the modal we dont need those checks.
     if (!this.modalInitialized) return;
     console.log('checking add to cart feasibility');
-    const feasibility = !this.groupOptions.some((el) => !el.cartFeasibility);
+    let feasibility = !this.groupOptions.some((el) => !el.cartFeasibility);
 
-    // this.groupOptions.forEach((el) => {
-    //   console.log(el.cartFeasibility);
-    // });
+    // An to address einai unsupported. to koupmi add to basket prepei na einai fake disabled kai onclick na sou vgazei B level alert.
+    if (!store.app.addressComponent.isSelectedAddressSupported) {
+      console.log('unsupported address');
+      feasibility = false;
+    }
 
     if (feasibility) {
       this.enableAddToCart();
@@ -469,6 +471,12 @@ export default class {
 
   // Executes when we click on an product from the product list
   async raiseModal() {
+    // An den yparxei selected address. na deiksoume to notify modal kai oxi to product modal.
+    if (!store.app.addressComponent.selectedAddress) {
+      store.app.addressComponent.showNotifyModal();
+      return;
+    }
+
     PubSub.publish('show_loader');
     this.modalInitialized = false;
     // fetch the html for the modal
@@ -506,6 +514,10 @@ export default class {
 
   // Executes when we click add to cart button
   async addToCart() {
+    // If we have unsupported address, show error alert
+    if (!store.app.addressComponent.isSelectedAddressSupported) {
+      store.app.addressComponent.showUnsupportedAddressAlert();
+    }
     if (!this.isAddToCartEnabled) return;
     console.log('adding to cart');
     PubSub.publish('show_loader');
