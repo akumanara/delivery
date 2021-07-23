@@ -8,12 +8,13 @@ import { store } from '../utils/store';
 import mapStyle from '../utils/mapstyle';
 import API from './api';
 import texts from '../utils/texts';
+import { chooseSavedAddressEndpoints } from '../utils/enum';
 // This class uses places autocomplete service
 // developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service
 export default class {
   constructor() {
     autoBind(this);
-    // TODO take that info from backend
+    // we take that info from backend
     this.isSelectedAddressSupported = store.context.isSelectedAddressSupported;
     this.api = new API();
     this.queryTheDOM();
@@ -150,6 +151,8 @@ export default class {
       }
 
       button.addEventListener('click', () => {
+        // check which url to submit
+        // this.checkEndpointToCall();
         this.submitSavedAddress(button);
       });
     });
@@ -213,21 +216,32 @@ export default class {
       doorbell: button.dataset.door,
       floor: button.dataset.floor,
     };
-    await this.api
-      .addAddress(addressObject)
-      .then((result) => {
-        console.log(result);
-        window.location.reload();
-      })
-      .catch((error) => {
-        console.log(error);
-        const a = new Alert({
-          text: texts.genericErrorMessage,
-          timeToKill: 5, // time until it closes
-          type: 'error', // or 'error'
-          showTimer: false, // show the timer or not
-        });
+    try {
+      // we have 3 diferent endpoints
+      // 1.
+      // 2.
+      // 3.
+      // TODO
+      let result;
+      const { endpoint } = this.DOM.chooseAddressModal.modal.dataset;
+      if (endpoint === chooseSavedAddressEndpoints.B) {
+        result = await this.api.addAddress(addressObject);
+      } else if (endpoint === chooseSavedAddressEndpoints.C) {
+        result = await this.api.updateAddress(addressObject);
+      } else if (endpoint === chooseSavedAddressEndpoints.D) {
+        result = await this.api.addAddressToAddress(addressObject);
+      }
+      console.log(result);
+      window.location.reload();
+    } catch (error) {
+      console.log(error);
+      const a = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
       });
+    }
 
     PubSub.publish('hide_loader');
   }
