@@ -26,6 +26,7 @@ import PaymentType from './components/paymentType';
 import Alert from './components/alert';
 import Navigation from './components/navigation';
 import Connect from './components/connect';
+import Noticeboard from './components/noticeboard';
 // import Layout from './layout';
 
 class App {
@@ -83,6 +84,11 @@ class App {
     // Main navigation
     this.navigation = new Navigation();
 
+    // Noticeboard
+    const noticeboardElement = document.querySelector('.noticeboard');
+    if (noticeboardElement) {
+      this.coupon = new Noticeboard(noticeboardElement);
+    }
     // Coupon Modal
     const couponModalElement = document.querySelector('.js-coupon-modal');
     if (couponModalElement) {

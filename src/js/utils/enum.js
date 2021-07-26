@@ -22,14 +22,5 @@ const mergeResponsesTypes = {
   SHOW_VERIFICATION_INPUT: 'mail_verification',
   SHOW_CONSENT: 'no_verification',
 };
-const chooseSavedAddressEndpoints = {
-  X: 'mail_verification',
-  B: 'no_verification',
-};
 
-export {
-  deliveryTypes,
-  paymentTypes,
-  loginWithEmailResponses,
-  chooseSavedAddressEndpoints,
-};
+export { deliveryTypes, paymentTypes, loginWithEmailResponses };

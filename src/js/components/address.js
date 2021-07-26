@@ -8,7 +8,7 @@ import { store } from '../utils/store';
 import mapStyle from '../utils/mapstyle';
 import API from './api';
 import texts from '../utils/texts';
-import { chooseSavedAddressEndpoints } from '../utils/enum';
+
 // This class uses places autocomplete service
 // developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service
 export default class {
@@ -25,11 +25,13 @@ export default class {
     // Query the DOM
     this.DOM = {};
 
+    // Menu links that need to raise address
+    this.DOM.raiseAddressLinks = document.querySelectorAll('.js-needs-address');
+
     // Accordion
     this.DOM.accordion = document.querySelector(
       '.address-trigger .accordion__container',
     );
-
     this.DOM.accordion = {
       accordion: this.DOM.accordion,
       headerTop: this.DOM.accordion.querySelector(
@@ -117,6 +119,23 @@ export default class {
     if (this.selectedAddress) {
       this.setActiveAddressData();
     }
+
+    this.DOM.raiseAddressLinks.forEach((link) => {
+      link.addEventListener('click', this.raiseAddress);
+    });
+    console.log(this.DOM);
+  }
+
+  raiseAddress(e) {
+    // prevent the  default (because it is a link)
+    e.preventDefault();
+    // close the open burger menu if it is open
+    if (store.app.navigation.isNavOpen) {
+      store.app.navigation.toggleMainNav();
+    }
+    // trigger the address modal
+    this.prepareAutosuggestModal();
+    this.showAutosuggestModal();
   }
 
   initNotifyModal() {
@@ -216,32 +235,24 @@ export default class {
       doorbell: button.dataset.door,
       floor: button.dataset.floor,
     };
-    try {
-      // we have 3 diferent endpoints
-      // 1.
-      // 2.
-      // 3.
-      // TODO
-      let result;
-      const { endpoint } = this.DOM.chooseAddressModal.modal.dataset;
-      if (endpoint === chooseSavedAddressEndpoints.B) {
-        result = await this.api.addAddress(addressObject);
-      } else if (endpoint === chooseSavedAddressEndpoints.C) {
-        result = await this.api.updateAddress(addressObject);
-      } else if (endpoint === chooseSavedAddressEndpoints.D) {
-        result = await this.api.addAddressToAddress(addressObject);
-      }
-      console.log(result);
-      window.location.reload();
-    } catch (error) {
-      console.log(error);
-      const a = new Alert({
-        text: texts.genericErrorMessage,
-        timeToKill: 5, // time until it closes
-        type: 'error', // or 'error'
-        showTimer: false, // show the timer or not
+
+    const result = await this.api
+      .addAddress(addressObject)
+      .then((result) => {
+        console.log(result);
+        // window.location.reload();
+        window.location.href = store.context.redirectURLfromAddress;
+      })
+      .catch((error) => {
+        console.log(error);
+        const a = new Alert({
+          text: texts.genericErrorMessage,
+          timeToKill: 5, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
       });
-    }
+    console.log(result);
 
     PubSub.publish('hide_loader');
   }
@@ -828,7 +839,7 @@ export default class {
     };
     console.log(this.verificationPlace);
     console.log(addressObject);
-    await this.api
+    const result = await this.api
       .addAddress(addressObject)
       .then((result) => {
         console.log(result);
@@ -843,6 +854,7 @@ export default class {
           showTimer: false, // show the timer or not
         });
       });
+    console.log(result);
 
     PubSub.publish('hide_loader');
   }

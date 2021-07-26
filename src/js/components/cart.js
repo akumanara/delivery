@@ -59,8 +59,16 @@ export default class {
     // Query the DOM elements
     this.DOM.cartBody = document.querySelector('.cart__body');
     this.DOM.closeBtn = document.querySelector('.cart__header-close');
+    // products
+    this.DOM.cartProducts =
+      this.DOM.cartBody.querySelectorAll('.cart__product');
 
-    // Run the scripts
+    // if we have no products. close the basket
+    if (this.DOM.cartProducts.length === 0 && this.isOpen) {
+      this.toggleCart();
+    }
+
+    // Run the scripts from the backend
     this.runScripts();
 
     // Setup event listeners
@@ -94,16 +102,14 @@ export default class {
     store.app.productList.removeInCartStatusFromAllProducts();
 
     // Create products
-    this.DOM.cart
-      .querySelectorAll('.cart__product')
-      .forEach((productElement) => {
-        // Create the product object
-        const tmpProduct = new Product(productElement);
-        this.products.push(tmpProduct);
+    this.DOM.cartProducts.forEach((productElement) => {
+      // Create the product object
+      const tmpProduct = new Product(productElement);
+      this.products.push(tmpProduct);
 
-        // Tag the product in the store menu with (in cart class)
-        store.app.productList.addInCartStatusToProduct(tmpProduct.productID);
-      });
+      // Tag the product in the store menu with (in cart class)
+      store.app.productList.addInCartStatusToProduct(tmpProduct.productID);
+    });
 
     // Update the show cart button with the summary
     const sumPriceElement = this.DOM.cartBody.querySelector(

@@ -471,8 +471,8 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve, reject) =>
         setTimeout(() => {
-          reject(new Error('Error'));
-          // resolve({ shops: 167 });
+          resolve({ shops: 167 });
+          // reject(new Error('Error'));
         }, 500),
       );
     }

@@ -350,7 +350,7 @@
   </div>
 </div>
 
-<!-- MERGE -->
+<!-- MERGE WITH CODE-->
 <div class="modal js-merge-with-code-modal">
   <!-- THE ACTUAL WINDOW -->
   <div class="modal__window">
@@ -388,6 +388,55 @@
     <div class="modal__action">
       <div class="py-20 px-16 w-100">
         <div class="primary-btn js-action-btn">Merge</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESET PASSWORD -->
+<div class="modal js-reset-password-modal">
+  <!-- THE ACTUAL WINDOW -->
+  <div class="modal__window">
+    <!-- HEADER -->
+    <div class="modal__header">
+      <div class="modal__header-left">Επαναφορά Κωδικού</div>
+      <div class="modal__header-right">
+        <div class="js-close">
+          <img src="./images/icons/modal-close.svg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="modal__body">
+      <img src="./images/illustrations/coupon.svg" alt="" class="img-fluid" />
+      <p class="p-16">Instructions on what the user should do</p>
+      <div class="form-floating">
+        <input
+          type="password"
+          pattern="^[0-9]*$"
+          class="form-control js-password"
+          id="floatingInput"
+          placeholder="placeholder"
+          autocomplete="off"
+        />
+        <label for="floatingInput">Κωδικός</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="password"
+          pattern="^[0-9]*$"
+          class="form-control js-confirm-password"
+          id="floatingInput"
+          placeholder="placeholder"
+          autocomplete="off"
+        />
+        <label for="floatingInput">Επιβεβαίωση Κωδικού</label>
+      </div>
+    </div>
+    <!-- STICKY ACTION -->
+    <div class="modal__action">
+      <div class="py-20 px-16 w-100">
+        <div class="primary-btn js-action-btn">Αλλαγή</div>
       </div>
     </div>
   </div>

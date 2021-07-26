@@ -14,6 +14,14 @@ export default class {
     this.queryTheDOM();
     this.setupEventListeners();
 
+    // do we need to show the forgot password modal?
+    const url = new URL(window.location.href);
+    const resetHash = url.searchParams.get('reset_hash');
+    console.log(resetHash);
+    if (resetHash) {
+      this.toggleResetPasswordModal();
+    }
+
     // TODO Remove
     // this.toggleForgotPasswordModal();
     // this.toggleRegisterModal();
@@ -147,6 +155,21 @@ export default class {
     };
     this.isMergeAccountWithCodeOpen = false;
 
+    // merge account with code modal
+    this.DOM.resetPasswordModal = document.querySelector(
+      '.js-reset-password-modal',
+    );
+    this.DOM.resetPasswordModal = {
+      modal: this.DOM.resetPasswordModal,
+      closeBtn: this.DOM.resetPasswordModal.querySelector('.js-close'),
+      actionBtn: this.DOM.resetPasswordModal.querySelector('.js-action-btn'),
+      inputPassword: this.DOM.resetPasswordModal.querySelector('.js-password'),
+      inputConfirmPassword: this.DOM.resetPasswordModal.querySelector(
+        '.js-confirm-password',
+      ),
+    };
+    this.isResetPasswordOpen = false;
+
     console.log(this.DOM);
   }
 
@@ -271,6 +294,22 @@ export default class {
       'click',
       this.registerWithMergeConsentAndCode,
     );
+
+    // reset password modal
+    this.DOM.resetPasswordModal.closeBtn.addEventListener(
+      'click',
+      this.toggleResetPasswordModal,
+    );
+    this.DOM.resetPasswordModal.actionBtn.addEventListener(
+      'click',
+      this.resetPassword,
+    );
+  }
+
+  async resetPassword() {
+    PubSub.publish('show_loader');
+
+    PubSub.publish('hide_loader');
   }
 
   async registerWithMergeConsentAndCode() {
@@ -740,5 +779,25 @@ export default class {
   openMergeAccountWithCode() {
     document.body.classList.add('hide-overflow');
     this.DOM.mergeAccountWithCodeModal.modal.classList.add('active');
+  }
+
+  // toogle reset passwrod modal
+  toggleResetPasswordModal() {
+    if (this.isResetPasswordOpen) {
+      this.closeResetPassword();
+    } else {
+      this.openResetPassword();
+    }
+    this.isResetPasswordOpen = !this.isResetPasswordOpen;
+  }
+
+  closeResetPassword() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.resetPasswordModal.modal.classList.remove('active');
+  }
+
+  openResetPassword() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.resetPasswordModal.modal.classList.add('active');
   }
 }

@@ -2,24 +2,23 @@ general:
   ☐ [general] svg icon css for dark/light - @misa dependency (duplicate svg icons?)
   ☐ [general] select styling - (add address validation modal)
   ☐ [general] sentry remove cc data before sending @critical;
-  ☐ mixanismos gia multiple alerts. (stacked / fixed /etc)
-  ☐ landing page mechanism for address and vertical selection
-  ☐ catalog without address? state? empty list?
-  ☐ header / without burger menu
-  ☐ [store] an patisw se kapio vertical apo burger menu, an exei link se paei ekei p eisai. an oxi me JS to kanoume handle kai vgazoume add address modal.
-  
+  ☐ [general] mixanismos gia multiple alerts. (stacked / fixed /etc)
+  ☐ [general] landing page mechanism for address and vertical selection
+
 connect/login:
   ☐ missing data modal
-  ☐ forgot password modal
   ☐ notification modal
 
 store:
   ☐ [store] Offers
-  ☐ [store] previous orders - add previous order to basket modal
-  ☐ [store] noticeboard
-  ☐ [mobile] close cart if the cart is empty. epeidh evgales k to telefteo proion apo to kalathi
-  ☐ [store] sakoules sto kato simeio
-  ☐ [store] promo product
+  ☐ [store] previous orders - add previous order to basket modal @post-launch
+
+
+for delivery:
+  ☐ [store] sakoules sto kato simeio (na dei o kostas an gintete server side i na to kanw egw.) @delivery
+  ☐ na ftiaxtei api gia to forgot password
+  ☐ na mpei class sto burger an den exei address gia na siksei to add address
+
 
 
 
@@ -47,6 +46,17 @@ bugs:
   ☐ [bug] me tab mporeis na pas sto disbaled phone number sto register h sto personal details guest
   ☐ [bug] sta filtra to active icon (svg) exei opacity kai epeidi einai external den doulevei sosta
   ☐ [bug] favorite mechanism not working
+
+
+doing:
+  ✔ forgot password modal @done(21-07-26 16:01)
+  ✔ [general] otan allazeis diefthinsi pou pas me redirect @done(21-07-26 11:51)
+  ✔ [general] an patisw se kapio vertical apo burger menu, an exei link se paei ekei p eisai. an oxi me JS to kanoume handle kai vgazoume add address modal. + na ta kanw a tags @done(21-07-26 12:01) .js-needs-address
+  ✔ [store] noticeboard @done(21-07-26 15:04)
+  ✔ [mobile] close cart if the cart is empty. epeidh evgales k to telefteo proion apo to kalathi @done(21-07-26 12:21)
+  ✔ [store] promo product @done(21-07-26 12:54)
+  ☐ [meeting] sto product cart panta exei noima to accordeon epeidh exei to action panel. sto promo to accordion isws den exei noima an den exei options.
+  ☐ [meeting] noticeboard alert/info
 
 
 Done:
@@ -118,7 +128,6 @@ Done:
   ✔ favorite button
   ✔ Currency sto product modal
   ✔ store scrolltrigger otan vgaineis apo to panw panw pros ta panw na sto kanei deselect
-
 
 
 

@@ -1,0 +1,43 @@
+.noticeboard {
+  & {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .swiper-slide {
+    width: auto;
+  }
+  &__item {
+    background: #f6f7f9;
+    border-radius: 8px;
+    // height: 200px;
+    width: 190px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    &--info {
+      background: linear-gradient(160.65deg, #f8faff -7.3%, #d5e1ef 103.87%);
+    }
+    &--alert {
+      background: linear-gradient(160.65deg, #ffecd2 -7.3%, #fcb69f 103.87%);
+    }
+  }
+  &__item-img-container {
+    height: 100px;
+  }
+  &__item-img {
+    object-fit: contain;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  &__bottom-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 63px;
+  }
+}

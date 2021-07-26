@@ -1,0 +1,33 @@
+<div class="modal active {{className}}">
+  <!-- THE ACTUAL WINDOW -->
+  <div class="modal__window">
+    <!-- HEADER -->
+    <div class="modal__header">
+      <div class="modal__header-left">{{title}}</div>
+      <div class="modal__header-right">
+        <div class="js-close">
+          <img src="./images/icons/modal-close.svg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="modal__body">
+      <div class="noticeboard__modal-body">
+        {{! IMAGE }}
+        <div class="noticeboard__modal-img-container">
+          <img src="{{image}}" alt="" class="noticeboard__modal-img w-100" />
+        </div>
+      </div>
+      {{! COPY }}
+      <div class="noticeboard__modal-description p-16">
+        {{description}}
+      </div>
+    </div>
+    <!-- STICKY ACTION -->
+    <div class="modal__action">
+      <div class="py-20 px-16 w-100">
+        <div class="primary-btn js-action-btn">Back to Store</div>
+      </div>
+    </div>
+  </div>
+</div>
