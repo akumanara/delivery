@@ -2607,6 +2607,14 @@ const register = {
   },
 };
 
+const passwordResetSuccess = {
+  status: 'success',
+};
+const passwordResetError = {
+  status: 'error',
+  message: 'something something',
+};
+
 export {
   loginMailPasswordFail,
   loginMailPasswordSuccess,
@@ -2619,4 +2627,6 @@ export {
   login,
   register,
   verifyNumber,
+  passwordResetSuccess,
+  passwordResetError,
 };

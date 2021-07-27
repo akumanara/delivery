@@ -8,10 +8,19 @@ general:
 connect/login:
   ☐ missing data modal
   ☐ notification modal
+  ☐ forgot password action
+  ☐ meta tin allagi password na to pame sto login
 
 store:
   ☐ [store] Offers
   ☐ [store] previous orders - add previous order to basket modal @post-launch
+  ☐ [store] select timeslot
+  ☐ [store] modal tobacco
+  ☐ [store] modal alcohol
+
+product modal:
+  ☐ [product_modal] hide/view large html description
+  ☐ [product_modal] zoom on photos
 
 
 for delivery:
@@ -20,12 +29,6 @@ for delivery:
   ☐ na mpei class sto burger an den exei address gia na siksei to add address
 
 
-
-
-product modal:
-  ☐ [product_modal] - offers - @critical
-  ☐ [product_modal] hide/view large html description
-  ☐ [product_modal] zoom on photos
 
 checkout:
   ☐ [checkout] Coupons on Checkout
@@ -49,17 +52,20 @@ bugs:
 
 
 doing:
-  ✔ forgot password modal @done(21-07-26 16:01)
+  ✔ forgot password modal connect with api @done(21-07-27 14:42)
+  ✔ noticeboard fix@done(21-07-27 14:42)
+
+
+meeting:
+  ☐  gia to class sto burger otan den exeis address na se paei sti poli
+  ☐  promo box gia kathe accordeon kai xwris accordeon
+
+Done:
   ✔ [general] otan allazeis diefthinsi pou pas me redirect @done(21-07-26 11:51)
   ✔ [general] an patisw se kapio vertical apo burger menu, an exei link se paei ekei p eisai. an oxi me JS to kanoume handle kai vgazoume add address modal. + na ta kanw a tags @done(21-07-26 12:01) .js-needs-address
   ✔ [store] noticeboard @done(21-07-26 15:04)
   ✔ [mobile] close cart if the cart is empty. epeidh evgales k to telefteo proion apo to kalathi @done(21-07-26 12:21)
   ✔ [store] promo product @done(21-07-26 12:54)
-  ☐ [meeting] sto product cart panta exei noima to accordeon epeidh exei to action panel. sto promo to accordion isws den exei noima an den exei options.
-  ☐ [meeting] noticeboard alert/info
-
-
-Done:
   ✔ [address] notification popup @done(21-07-23 18:15)
   ✔ na kripsw ta filtra otan den uparxoun k an den yparxei kanena na kripso olo to section @done(21-07-19 16:59)
   ✔ [general] lazy load stis store cards - @delivery dependency @done(21-07-23 18:14)

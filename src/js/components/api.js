@@ -14,6 +14,8 @@ import {
   login,
   register,
   verifyNumber,
+  passwordResetSuccess,
+  passwordResetError,
 } from '../utils/serverResponses';
 
 export default class {
@@ -576,6 +578,38 @@ export default class {
         sms_verification: otp,
         call_id: callID,
         telephone: phone,
+      });
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  changePassword(nonce, password) {
+    // https://www.delivery.gr/process-reset-password
+
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(passwordResetSuccess);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `process-reset-password`;
+      const data = getFormData({
+        csrfToken: store.context.csrfToken,
+        nonce,
+        password,
       });
       this.instance
         .post(url, data, {

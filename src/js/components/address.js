@@ -134,8 +134,9 @@ export default class {
       store.app.navigation.toggleMainNav();
     }
     // trigger the address modal
-    this.prepareAutosuggestModal();
-    this.showAutosuggestModal();
+    this.showNotifyModal();
+    // this.prepareAutosuggestModal();
+    // this.showAutosuggestModal();
   }
 
   initNotifyModal() {

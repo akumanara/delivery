@@ -19,6 +19,7 @@ export default class {
     const resetHash = url.searchParams.get('reset_hash');
     console.log(resetHash);
     if (resetHash) {
+      this.resetHash = resetHash;
       this.toggleResetPasswordModal();
     }
 
@@ -307,9 +308,61 @@ export default class {
   }
 
   async resetPassword() {
-    PubSub.publish('show_loader');
+    // See if passwords match.
+    const password = this.DOM.resetPasswordModal.inputPassword.value;
+    const confirmPassword =
+      this.DOM.resetPasswordModal.inputConfirmPassword.value;
+    if (password !== confirmPassword) {
+      this.resetPasswordModalShowError(
+        texts.resetPasswordDifferentPasswords,
+        this.DOM.resetPasswordModal.inputConfirmPassword,
+      );
+      return;
+    }
 
+    PubSub.publish('show_loader');
+    const response = await this.api.changePassword(this.resetHash, password);
+
+    if (response.status === 'success') {
+      this.toggleResetPasswordModal();
+      const alert = new Alert({
+        text: texts.resetPasswordSuccess,
+        timeToKill: 5,
+        type: 'info',
+        showTimer: false,
+      });
+    } else {
+      const alert = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5,
+        type: 'error',
+        showTimer: false,
+      });
+    }
     PubSub.publish('hide_loader');
+  }
+
+  clearResetPasswordModalErrors() {
+    this.DOM.resetPasswordModal.inputPassword.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.resetPasswordModal.inputConfirmPassword.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.resetPasswordModal.modal
+      .querySelectorAll('.js-error')
+      .forEach((error) => {
+        error.remove();
+      });
+  }
+
+  resetPasswordModalShowError(error, input) {
+    this.clearResetPasswordModalErrors();
+    input.classList.add('form-control--has-error');
+    if (error !== '') {
+      const htmlError = this.errorTemplate(error);
+      input.parentNode.insertAdjacentHTML('beforebegin', htmlError);
+    }
   }
 
   async registerWithMergeConsentAndCode() {

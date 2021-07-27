@@ -76,4 +76,6 @@ export default {
   verify: {
     wrongOTP: 'Λάθος κωδικός OTP',
   },
+  resetPasswordDifferentPasswords: 'Οι κωδικοι δεν ειναι ιδιοι',
+  resetPasswordSuccess: 'Ο κωδικος προσβασης άλλαξε',
 };
