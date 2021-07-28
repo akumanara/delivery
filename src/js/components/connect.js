@@ -17,7 +17,6 @@ export default class {
     // do we need to show the forgot password modal?
     const url = new URL(window.location.href);
     const resetHash = url.searchParams.get('reset_hash');
-    console.log(resetHash);
     if (resetHash) {
       this.resetHash = resetHash;
       this.toggleResetPasswordModal();
@@ -131,6 +130,7 @@ export default class {
       modal: this.DOM.forgotPasswordModal,
       closeBtn: this.DOM.forgotPasswordModal.querySelector('.js-close'),
       actionBtn: this.DOM.forgotPasswordModal.querySelector('.js-action-btn'),
+      input: this.DOM.forgotPasswordModal.querySelector('.js-input'),
     };
     this.isForgotPasswordOpen = false;
 
@@ -171,7 +171,7 @@ export default class {
     };
     this.isResetPasswordOpen = false;
 
-    console.log(this.DOM);
+    // console.log(this.DOM);
   }
 
   setupEventListeners() {
@@ -274,7 +274,10 @@ export default class {
       'click',
       this.toggleForgotPasswordModal,
     );
-    // TODO: add event listener for forgot password button
+    this.DOM.forgotPasswordModal.actionBtn.addEventListener(
+      'click',
+      this.forgotPassword,
+    );
 
     // merge account modal
     this.DOM.mergeAccountModal.closeBtn.addEventListener(
@@ -305,6 +308,30 @@ export default class {
       'click',
       this.resetPassword,
     );
+  }
+
+  async forgotPassword() {
+    PubSub.publish('show_loader');
+    const email = this.DOM.forgotPasswordModal.input.value;
+    const response = await this.api.resetPassword(email);
+
+    if (response.status === 'success') {
+      this.toggleForgotPasswordModal();
+      const alert = new Alert({
+        text: texts.resetPasswordRequestSuccess,
+        timeToKill: 10,
+        type: 'info',
+        showTimer: false,
+      });
+    } else {
+      const alert = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5,
+        type: 'error',
+        showTimer: false,
+      });
+    }
+    PubSub.publish('hide_loader');
   }
 
   async resetPassword() {

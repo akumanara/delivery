@@ -23,4 +23,8 @@ const mergeResponsesTypes = {
   SHOW_CONSENT: 'no_verification',
 };
 
-export { deliveryTypes, paymentTypes, loginWithEmailResponses };
+const timeslotTypes = {
+  deliveryOnly: 'delivery_only',
+  deliveryAndPickup: 'delivery_and_pickup',
+};
+export { deliveryTypes, paymentTypes, loginWithEmailResponses, timeslotTypes };

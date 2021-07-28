@@ -62,11 +62,11 @@ export default class {
     // Setup based on store menu or cart product
     if (this.element.classList.contains('cart__product')) {
       // CART PRODUCT
-      console.log('product is cart product');
+      // console.log('product is cart product');
       this.setupCartProduct();
     } else {
       // STORE MENU PRODUCT
-      console.log('product is store menu product');
+      // console.log('product is store menu product');
       this.setupStoreMenuProduct();
     }
   }

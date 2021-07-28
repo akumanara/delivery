@@ -1,11 +1,11 @@
-<div class="js-timeslot modal active">
+<div class="js-timeslot modal">
   <!-- THE ACTUAL WINDOW -->
   <div class="modal__window">
     <!-- HEADER -->
     <div class="modal__header">
       <div class="modal__header-left">Παράδοση & Παραλαβή</div>
       <div class="modal__header-right">
-        <div class="js-close-coupon-modal">
+        <div class="js-close">
           <img src="./images/icons/modal-close.svg" alt="" class="" />
         </div>
       </div>
@@ -13,7 +13,7 @@
     <!-- BODY -->
     <div class="modal__body">
       <!-- SECTION -->
-      <div class="timeslot__section">
+      <div class="timeslot__section" data-type="delivery">
         <!-- TITLE -->
         <div class="timeslot__section-title">Παράδοση</div>
         <!-- DESCRIPTION -->
@@ -21,66 +21,370 @@
           Ημέρα παράδοσης από το χώρο
         </div>
         <!-- DAYS -->
-        <div class="timeslot__section-items mb-30">
-          <div class="timeslot__section-item">
+        <div class="timeslot__section-items js-days mb-30">
+          <div class="timeslot__section-item" data-date="2021-07-31">
             <div class="timeslot__section-item-inner">Δευτέρα</div>
           </div>
           <div
             class="timeslot__section-item timeslot__section-item--unavailable"
+            data-date="2021-07-32"
           >
             <div class="timeslot__section-item-inner">Τρίτη</div>
           </div>
           <div
             class="timeslot__section-item timeslot__section-item--unavailable"
+            data-date="2021-07-33"
           >
             <div class="timeslot__section-item-inner">Τετάρτη</div>
           </div>
-          <div class="timeslot__section-item">
+          <div class="timeslot__section-item" data-date="2021-07-34">
             <div class="timeslot__section-item-inner">Πέμπτη</div>
           </div>
-          <div class="timeslot__section-item timeslot__section-item--selected">
+          <div class="timeslot__section-item" data-date="2021-07-35">
             <div class="timeslot__section-item-inner">Παρασκευή</div>
           </div>
-          <div class="timeslot__section-item">
+          <div class="timeslot__section-item" data-date="2021-07-36">
             <div class="timeslot__section-item-inner">Σάββατο</div>
           </div>
         </div>
-        <!-- HOURS -->
-        <div class="timeslot__section-items mb-10">
-          <div class="timeslot__section-item">
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
-          </div>
+        <!-- ALL HOURS CONTAINER -->
+        <div class="timeslot__section-items-hours-container">
+          <!-- HOURS 2021-07-31 -->
           <div
-            class="timeslot__section-item timeslot__section-item--unavailable"
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-31"
           >
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
-          </div>
-          <div
-            class="
-              timeslot__section-item timeslot__section-item--unavailable-red
-            "
-          >
-            <div class="timeslot__section-item-inner">
-              <img
-                src="./images/icons/timeslot-alert.svg"
-                alt=""
-                class="timeslot__section-item-alert"
-              />08:00 - 09:00
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-06"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="1"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-07"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="2"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-08"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="3"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-09"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="4"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-10"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="5"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
             </div>
           </div>
-          <div class="timeslot__section-item">
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+          <!-- HOURS 2021-07-32 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-32"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-11"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="6"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-12"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="7"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-13"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="8"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-14"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="9"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-15"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="10"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
           </div>
-          <div class="timeslot__section-item timeslot__section-item--selected">
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+          <!-- HOURS 2021-07-33 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-33"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-16"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="11"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-17"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="12"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-18"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="13"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-19"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="14"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-20"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="15"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
           </div>
-          <div class="timeslot__section-item">
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+          <!-- HOURS 2021-07-34 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-34"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-21"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="16"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-22"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="17"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-23"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="18"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-24"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="19"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-25"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="20"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+          </div>
+          <!-- HOURS 2021-07-35 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-35"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-26"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="21"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-27"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="22"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-28"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="23"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-29"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="24"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-30"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="25"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+          </div>
+          <!-- HOURS 2021-07-36 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-36"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-01"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="26"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-02"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="27"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-03"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="28"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-04"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="29"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-05"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="30"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
           </div>
         </div>
       </div>
       <!-- SECTION -->
-      <div class="timeslot__section">
+      <div class="timeslot__section" data-type="pickup">
         <!-- TITLE -->
         <div class="timeslot__section-title">Παραλαβή</div>
         <!-- DESCRIPTION -->
@@ -88,53 +392,365 @@
           Ημέρα παραλαβής από το χώρο
         </div>
         <!-- DAYS -->
-        <div class="timeslot__section-items mb-30">
-          <div class="timeslot__section-item">
+        <div class="timeslot__section-items js-days mb-30">
+          <div class="timeslot__section-item" data-date="2021-07-31">
             <div class="timeslot__section-item-inner">Δευτέρα</div>
           </div>
           <div
             class="timeslot__section-item timeslot__section-item--unavailable"
+            data-date="2021-07-32"
           >
             <div class="timeslot__section-item-inner">Τρίτη</div>
           </div>
           <div
             class="timeslot__section-item timeslot__section-item--unavailable"
+            data-date="2021-07-33"
           >
             <div class="timeslot__section-item-inner">Τετάρτη</div>
           </div>
-          <div class="timeslot__section-item">
+          <div class="timeslot__section-item" data-date="2021-07-34">
             <div class="timeslot__section-item-inner">Πέμπτη</div>
           </div>
-          <div class="timeslot__section-item timeslot__section-item--selected">
+          <div class="timeslot__section-item" data-date="2021-07-35">
             <div class="timeslot__section-item-inner">Παρασκευή</div>
           </div>
-          <div class="timeslot__section-item">
+          <div class="timeslot__section-item" data-date="2021-07-36">
             <div class="timeslot__section-item-inner">Σάββατο</div>
           </div>
         </div>
-        <!-- HOURS -->
-        <div class="timeslot__section-items mb-10">
-          <div class="timeslot__section-item">
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
-          </div>
+        <!-- ALL HOURS CONTAINER -->
+        <div class="timeslot__section-items-hours-container">
+          <!-- HOURS 2021-07-31 -->
           <div
-            class="timeslot__section-item timeslot__section-item--unavailable"
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-31"
           >
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-06"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="1"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-07"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="2"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-08"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="3"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-09"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="4"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-10"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="5"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
           </div>
+          <!-- HOURS 2021-07-32 -->
           <div
-            class="timeslot__section-item timeslot__section-item--unavailable"
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-32"
           >
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-11"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="6"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-12"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="7"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-13"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="8"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-14"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="9"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-15"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="10"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
           </div>
-          <div class="timeslot__section-item">
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+          <!-- HOURS 2021-07-33 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-33"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-16"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="11"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-17"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="12"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-18"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="13"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-19"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="14"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-20"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="15"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
           </div>
-          <div class="timeslot__section-item timeslot__section-item--selected">
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+          <!-- HOURS 2021-07-34 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-34"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-21"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="16"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-22"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="17"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-23"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="18"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-24"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="19"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-25"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="20"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
           </div>
-          <div class="timeslot__section-item">
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+          <!-- HOURS 2021-07-35 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-35"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-26"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="21"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-27"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="22"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-28"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="23"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-29"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="24"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-30"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="25"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+          </div>
+          <!-- HOURS 2021-07-36 -->
+          <div
+            class="timeslot__section-items d-none mb-10"
+            data-date="2021-07-36"
+          >
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-01"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="26"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item timeslot__section-item--unavailable"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-02"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="27"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-03"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="28"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-04"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="29"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
+            <div
+              class="timeslot__section-item"
+              data-date="2021-07-05"
+              data-from="08:00"
+              data-to="09:00"
+              data-slot-id="30"
+            >
+              <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            </div>
           </div>
         </div>
       </div>
@@ -147,3 +763,9 @@
     </div>
   </div>
 </div>
+
+<!-- <div class="timeslot__section-item">
+  <div class="timeslot__section-item-inner">
+    08:00 - 09:00
+  </div>
+</div> -->

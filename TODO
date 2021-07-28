@@ -52,15 +52,16 @@ bugs:
 
 
 doing:
-  ✔ forgot password modal connect with api @done(21-07-27 14:42)
-  ✔ noticeboard fix@done(21-07-27 14:42)
+
 
 
 meeting:
-  ☐  gia to class sto burger otan den exeis address na se paei sti poli
-  ☐  promo box gia kathe accordeon kai xwris accordeon
+  ✔  gia to class sto burger otan den exeis address na se paei sti poli @done(21-07-28 17:57)
+  ✔  promo box gia kathe accordeon kai xwris accordeon @done(21-07-28 17:57)
 
 Done:
+  ✔ forgot password modal connect with api @done(21-07-27 14:42)
+  ✔ noticeboard fix@done(21-07-27 14:42)
   ✔ [general] otan allazeis diefthinsi pou pas me redirect @done(21-07-26 11:51)
   ✔ [general] an patisw se kapio vertical apo burger menu, an exei link se paei ekei p eisai. an oxi me JS to kanoume handle kai vgazoume add address modal. + na ta kanw a tags @done(21-07-26 12:01) .js-needs-address
   ✔ [store] noticeboard @done(21-07-26 15:04)

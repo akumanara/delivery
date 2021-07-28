@@ -78,4 +78,6 @@ export default {
   },
   resetPasswordDifferentPasswords: 'Οι κωδικοι δεν ειναι ιδιοι',
   resetPasswordSuccess: 'Ο κωδικος προσβασης άλλαξε',
+  resetPasswordRequestSuccess:
+    'Αν ο χρήστης υπάρχει, θα σας αποσταλλεί email για την αλλαγή του κωδικού σας! Εάν δεν το βλέπετε ελέγξτε την ανεπιθύμητη αλληλογραφία σας.',
 };

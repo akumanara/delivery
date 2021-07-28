@@ -27,38 +27,22 @@ import Alert from './components/alert';
 import Navigation from './components/navigation';
 import Connect from './components/connect';
 import Noticeboard from './components/noticeboard';
+import Timeslot from './components/timeslot';
 // import Layout from './layout';
 
 class App {
   constructor() {
     autoBind(this);
-    // window.console.lognew = console.log;
-    // console.log = this.consoleLog;
     initSentry();
     deliveryConsole();
 
     window.Alert = Alert;
-
-    // document.querySelectorAll('input').forEach((element) => {
-    //   element.addEventListener('focus', (e) => {
-    //     console.log(e);
-    //     // e.preventDefault();
-    //     // e.stopPropagation();
-    //     e.target.scrollIntoView(true);
-    //   });
-    // });
-
     window.addEventListener('load', this.windowLoaded);
-    // this.windowResize = debounce(this.windowResize, 100);
-    // this.initialWindowInnerHeight = window.innerHeight;
-    // this.isVirtualKeyboardActive = false;
-    // window.addEventListener('resize', this.windowResize);
-
     autosize(document.querySelectorAll('textarea'));
     gsap.registerPlugin(ScrollToPlugin);
     this.api = new API();
 
-    // save the main object for later use
+    // save the main app object for later use
     store.app = this;
 
     // kill console logs in production
@@ -84,10 +68,15 @@ class App {
     // Main navigation
     this.navigation = new Navigation();
 
+    // Timeslots
+    const timeslotElement = document.querySelector('.timeslot__trigger');
+    if (timeslotElement) {
+      this.timeslot = new Timeslot(timeslotElement);
+    }
     // Noticeboard
     const noticeboardElement = document.querySelector('.noticeboard');
     if (noticeboardElement) {
-      this.coupon = new Noticeboard(noticeboardElement);
+      this.noticeboard = new Noticeboard(noticeboardElement);
     }
     // Coupon Modal
     const couponModalElement = document.querySelector('.js-coupon-modal');

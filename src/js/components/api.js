@@ -625,4 +625,35 @@ export default class {
         });
     });
   }
+
+  resetPassword(email) {
+    // https://www.delivery.gr/forgot-password
+
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(passwordResetSuccess);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `reset-password`;
+      const data = getFormData({
+        csrfToken: store.context.csrfToken,
+        email,
+      });
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
 }

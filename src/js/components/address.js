@@ -123,7 +123,6 @@ export default class {
     this.DOM.raiseAddressLinks.forEach((link) => {
       link.addEventListener('click', this.raiseAddress);
     });
-    console.log(this.DOM);
   }
 
   raiseAddress(e) {

@@ -121,3 +121,10 @@ $spacings: 6, 8, 10, 16, 18, 20, 28, 30;
 .opacity-40 {
   opacity: 0.4;
 }
+
+.flip-horizontally {
+  transform: scaleX(-1);
+}
+.flip-vertically {
+  transform: scaleY(-1);
+}

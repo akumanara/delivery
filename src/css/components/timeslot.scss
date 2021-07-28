@@ -16,6 +16,30 @@
     font-weight: 500;
     flex-shrink: 0;
   }
+
+  &__item-selected {
+    @include font-size-13;
+
+    display: flex;
+    background-color: #e7edfa;
+    color: #5a88ff;
+    border-radius: 6px;
+    padding: 6px;
+    margin-right: 10px;
+
+    &--error {
+      background-color: #f6e7ed;
+      color: #ec5176;
+    }
+  }
+  &__item-selected-icon {
+    align-self: center;
+    width: 16px;
+    height: 16px;
+  }
+  &__item-selected-copy {
+    white-space: nowrap;
+  }
   &__section {
     padding-left: 16px;
     padding-right: 16px;
