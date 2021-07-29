@@ -3,6 +3,8 @@ import axios from 'axios';
 import { store } from '../utils/store';
 import { getFormData, getURLSearchData } from '../utils/helpers';
 import {
+  genericSuccess,
+  genericError,
   loginMailPasswordFail,
   loginMailPasswordSuccess,
   productData,
@@ -16,6 +18,7 @@ import {
   verifyNumber,
   passwordResetSuccess,
   passwordResetError,
+  pickupDates,
 } from '../utils/serverResponses';
 
 export default class {
@@ -641,6 +644,47 @@ export default class {
       const data = getFormData({
         csrfToken: store.context.csrfToken,
         email,
+      });
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  submitTimeslots(data) {
+    // TODO
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(genericSuccess);
+        }, 500),
+      );
+    }
+  }
+
+  getPickupDates(storeID, date) {
+    // https://www.delivery.gr/TODO
+
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(pickupDates);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `TODO`;
+      const data = getFormData({
+        csrfToken: store.context.csrfToken,
       });
       this.instance
         .post(url, data, {

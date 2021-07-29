@@ -2615,7 +2615,64 @@ const passwordResetError = {
   message: 'something something',
 };
 
+const genericSuccess = {
+  status: 'success',
+};
+
+const genericError = {
+  status: 'error',
+  message: 'something something',
+};
+
+const pickupDates = {
+  pickupDates: [
+    {
+      date: '2018-01-01',
+      dateSmall: '01/01',
+      day: 'Δευτέρα',
+      isUnavaible: false,
+      timeslots: [
+        {
+          id: '1',
+          from: '09:00',
+          to: '12:00',
+          isUnavaible: true,
+        },
+        {
+          id: '1',
+          from: '09:00',
+          to: '12:00',
+          isUnavaible: false,
+        },
+      ],
+    },
+    {
+      date: '2018-01-02',
+      dateSmall: '01/02',
+      day: 'Τρίτη',
+      isUnavaible: false,
+      timeslots: [
+        {
+          id: '1',
+          from: '09:00',
+          to: '12:00',
+          isUnavaible: false,
+        },
+        {
+          id: '1',
+          from: '09:00',
+          to: '12:00',
+          isUnavaible: false,
+        },
+      ],
+    },
+  ],
+};
+
 export {
+  genericError,
+  genericSuccess,
+  pickupDates,
   loginMailPasswordFail,
   loginMailPasswordSuccess,
   productData,

@@ -26,6 +26,7 @@
     border-radius: 6px;
     padding: 6px;
     margin-right: 10px;
+    font-weight: 500;
 
     &--error {
       background-color: #f6e7ed;
@@ -73,13 +74,15 @@
     border: 1px solid #eaebec;
     box-sizing: border-box;
     border-radius: 8px;
-    padding: 10px 8px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     @include font-size-13;
 
     position: relative;
+    flex-direction: column;
+    line-height: 1.4;
   }
 
   &__section-item--unavailable &__section-item-inner {

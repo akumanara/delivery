@@ -80,4 +80,8 @@ export default {
   resetPasswordSuccess: 'Ο κωδικος προσβασης άλλαξε',
   resetPasswordRequestSuccess:
     'Αν ο χρήστης υπάρχει, θα σας αποσταλλεί email για την αλλαγή του κωδικού σας! Εάν δεν το βλέπετε ελέγξτε την ανεπιθύμητη αλληλογραφία σας.',
+  timeslotDefault: 'Διαθέσιμες ώρες παράδοσης - Σημερά',
+  timeslotSelected: 'Επιλεγμένη ημερομηνία',
+  timeslotPickupTitle: 'Παραλαβή',
+  timeslotPickupDescription: 'Ημέρα παράδοσης στο χώρο σου',
 };

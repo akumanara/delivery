@@ -4,8 +4,8 @@ import API from './api';
 import { validatePhone, validateEmail } from '../utils/helpers';
 import { loginWithEmailResponses } from '../utils/enum';
 import texts from '../utils/texts';
-import { store } from '../utils/store';
 import Alert from './alert';
+import { store } from '../utils/store';
 
 export default class {
   constructor() {
@@ -21,10 +21,6 @@ export default class {
       this.resetHash = resetHash;
       this.toggleResetPasswordModal();
     }
-
-    // TODO Remove
-    // this.toggleForgotPasswordModal();
-    // this.toggleRegisterModal();
   }
 
   clearConnectComponent() {
@@ -358,6 +354,8 @@ export default class {
         type: 'info',
         showTimer: false,
       });
+      // show the modal login
+      this.toggleLoginModal();
     } else {
       const alert = new Alert({
         text: texts.genericErrorMessage,
