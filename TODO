@@ -42,10 +42,10 @@ address:
   ☐ scroll sto anoixto viewport me scrollable ti lista
 
   timeslot:
-    preselect default values otan exeis delivery k pickup
-    an ginei expire to preselecte tote na ginei kokino
-    to select date se unavailable
-    to a modal otan den exei kanena available
+    ☐ preselect default values otan exeis delivery k pickup
+    ☐ an ginei expire to preselecte tote na ginei kokino
+    ☐ an den yparxei availabiility gia kanena
+    ☐ to a modal otan den exei kanena available
 
 bugs:
   ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
