@@ -22,8 +22,12 @@ export default class {
     this.DOM.modalClose = this.DOM.timeslotModal.querySelector('.js-close');
     this.DOM.actionBtn = this.DOM.timeslotModal.querySelector('.js-action-btn');
     this.DOM.accordionBottomContainer = document.querySelector(
-      '.timeslot__accordion-container',
+      '.timeslot__trigger .timeslot__accordion-container',
     );
+    this.DOM.accordionTopContainer = document.querySelector(
+      '.timeslot__trigger .delivery-type__option-header-top',
+    );
+    this.DOM.accordionTrigger = document.querySelector('.timeslot__trigger');
 
     // event listeners
     this.DOM.timeslotTrigger.addEventListener('click', this.toogleModal);
@@ -43,24 +47,21 @@ export default class {
     this.initDeliverySection();
 
     // save default accordion value to restore it later
-    this.defaultAccordionValue = this.DOM.accordionBottomContainer.innerHTML;
+    this.defaultBottomAccordionValue =
+      this.DOM.accordionBottomContainer.innerHTML;
+    this.defaultTopAccordionValue = this.DOM.accordionBottomContainer.innerHTML;
 
     // select value if it is already set in the context
     this.preselectValues();
   }
 
   initModal() {
-    if (
-      this.type === timeslotTypes.deliveryOnly &&
-      !this.tempDeliveryTimeslot
-    ) {
-      this.cleaModalFromSelections();
-    } else if (
-      this.type === timeslotTypes.deliveryAndPickup &&
-      !this.tempDeliveryTimeslot &&
-      !this.tempPickupTimeslot
-    ) {
-      this.cleaModalFromSelections();
+    if (this.type === timeslotTypes.deliveryOnly) {
+      if (this.deliveryTimeslot) {
+        this.preselectDeliveryTimeslot();
+      } else {
+        this.cleaModalFromSelections();
+      }
     }
   }
 
@@ -74,6 +75,8 @@ export default class {
         console.log('preselecing');
         this.deliveryTimeslot = store.context.selectedTimeslots.delivery;
         this.preselectDeliveryTimeslot();
+
+        // todo expired
       }
     }
   }
@@ -125,6 +128,8 @@ export default class {
         this.pickupTimeslot = this.tempPickupTimeslot;
       }
       this.updateAccordionValues();
+      // clear previously expired timeslots
+      this.clearExpiredTimeslots();
       this.toogleModal();
     } else {
       const alert = new Alert({
@@ -135,6 +140,20 @@ export default class {
       });
     }
     PubSub.publish('hide_loader');
+  }
+
+  clearExpiredTimeslots() {
+    // remove all icons
+    this.DOM.timeslotModal
+      .querySelectorAll('.timeslot__section-item-alert')
+      .forEach((element) => {
+        element.remove();
+      });
+    this.DOM.timeslotModal
+      .querySelectorAll('.timeslot__section-item--unavailable-red')
+      .forEach((element) => {
+        element.classList.remove('timeslot__section-item--unavailable-red');
+      });
   }
 
   initDeliverySection() {
@@ -390,23 +409,61 @@ export default class {
     this.DOM.accordionBottomContainer.innerHTML = '';
 
     if (this.type === timeslotTypes.deliveryOnly) {
-      if (!this.tempDeliveryTimeslot) {
+      if (!this.deliveryTimeslot) {
+        // setting default values
         this.DOM.accordionBottomContainer.innerHTML =
-          this.defaultAccordionValue;
+          this.defaultBottomAccordionValue;
+        this.DOM.accordionTopContainer.innerHTML =
+          this.defaultTopAccordionValue;
       } else {
-        const html = this.selectedDateAccordionTemplate(
-          this.tempDeliveryTimeslot,
-        );
+        let html;
+        console.log(this.deliveryTimeslot.expired);
+        if (this.deliveryTimeslot.expired) {
+          html = this.selectedDateAccordionTemplate(
+            this.deliveryTimeslot,
+            true,
+          );
+          // add an error class to selected hour timeslot inside the modal
+          // find hour element
+          const hourElement = [...this.DOM.deliveryHours].find(
+            (element) =>
+              element.dataset.slotId === this.deliveryTimeslot.slotId,
+          );
+          hourElement.classList.add('timeslot__section-item--unavailable-red');
+          // get error icons template
+          const errorIconHTML = this.errorImageTemplate();
+          hourElement
+            .querySelector('.timeslot__section-item-inner')
+            .insertAdjacentHTML('afterbegin', errorIconHTML);
+        } else {
+          html = this.selectedDateAccordionTemplate(
+            this.deliveryTimeslot,
+            false,
+          );
+        }
         this.DOM.accordionBottomContainer.insertAdjacentHTML('beforeend', html);
+        this.DOM.accordionTopContainer.innerHTML = texts.timeslotSelected;
       }
     }
   }
 
-  selectedDateAccordionTemplate(timeslot, isDelivery) {
+  errorImageTemplate() {
+    return `<img
+    src="./images/icons/timeslot-alert.svg"
+    alt=""
+    class="timeslot__section-item-alert"
+  />`;
+  }
+
+  selectedDateAccordionTemplate(timeslot, isExpired) {
     console.log(timeslot);
-    return `<div class="timeslot__item-selected">
+    return `<div class="timeslot__item-selected ${
+      isExpired ? 'timeslot__item-selected--error' : ''
+    } js-delivery-timeslot">
     <img
-      src="${store.context.imagesURL}/icons/timeslot-delivery.svg"
+      src="${store.context.imagesURL}/icons/timeslot-delivery${
+      isExpired ? '-error' : ''
+    }.svg"
       alt=""
       class="timeslot__item-selected-icon"
     />
