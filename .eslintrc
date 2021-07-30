@@ -10,6 +10,5 @@
     "rules": {
       "comma-dangle": 2,
       "no-param-reassign": 0
-    },
-    "parser": "@babel/eslint-parser"
+    }
 }

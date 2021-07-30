@@ -7,6 +7,8 @@ import { store } from '../utils/store';
 import texts from '../utils/texts';
 import Alert from './alert';
 
+// init the timeslot component on page load
+
 export default class {
   constructor(timeslotElement) {
     autoBind(this);
@@ -29,8 +31,13 @@ export default class {
     this.isModalOpen = false;
     this.DOM.actionBtn.addEventListener('click', this.submitTimeslots);
 
-    // set type
+    // set type and initial values
     this.type = store.context.timeslotType;
+    // temp are use for current selection and the other 2 when we have submited them
+    this.tempDeliveryTimeslot = null;
+    this.tempPickupTimeslot = null;
+    this.deliveryTimeslot = null;
+    this.pickupTimeslot = null;
 
     // if we have this class we already have a delivery section rendered
     this.initDeliverySection();
@@ -42,6 +49,21 @@ export default class {
     this.preselectValues();
   }
 
+  initModal() {
+    if (
+      this.type === timeslotTypes.deliveryOnly &&
+      !this.tempDeliveryTimeslot
+    ) {
+      this.cleaModalFromSelections();
+    } else if (
+      this.type === timeslotTypes.deliveryAndPickup &&
+      !this.tempDeliveryTimeslot &&
+      !this.tempPickupTimeslot
+    ) {
+      this.cleaModalFromSelections();
+    }
+  }
+
   preselectValues() {
     if (this.type === timeslotTypes.deliveryOnly) {
       // todo we can use es11 and use optional chaining but jshint is not happy
@@ -50,27 +72,28 @@ export default class {
         store.context.selectedTimeslots.delivery
       ) {
         console.log('preselecing');
-        // find and select day
-        let dayElement = [...this.DOM.deliverySectionDays].find(
-          (element) =>
-            element.dataset.date ===
-            store.context.selectedTimeslots.delivery.date,
-        );
-
-        // find and select hour
-        let hourElement = [...this.DOM.deliveryHours].find(
-          (element) =>
-            element.dataset.slotId ===
-            store.context.selectedTimeslots.delivery.slotId,
-        );
-
-        // select only if we have both
-        if (dayElement && hourElement) {
-          this.selectDeliveryDay(dayElement);
-          this.selectDeliveryHour(hourElement);
-          this.updateAccordionValues();
-        }
+        this.deliveryTimeslot = store.context.selectedTimeslots.delivery;
+        this.preselectDeliveryTimeslot();
       }
+    }
+  }
+
+  preselectDeliveryTimeslot() {
+    // find and select day
+    const dayElement = [...this.DOM.deliverySectionDays].find(
+      (element) => element.dataset.date === this.deliveryTimeslot.date,
+    );
+    console.log(dayElement);
+    // find and select hour
+    const hourElement = [...this.DOM.deliveryHours].find(
+      (element) => element.dataset.slotId === this.deliveryTimeslot.slotId,
+    );
+
+    // select only if we have both
+    if (dayElement && hourElement) {
+      this.selectDeliveryDay(dayElement);
+      this.selectDeliveryHour(hourElement);
+      this.updateAccordionValues();
     }
   }
 
@@ -97,6 +120,10 @@ export default class {
     }
     const result = await this.api.submitTimeslots(data);
     if (result.status === 'success') {
+      this.deliveryTimeslot = this.tempDeliveryTimeslot;
+      if (this.type === timeslotTypes.pickupAndDelivery) {
+        this.pickupTimeslot = this.tempPickupTimeslot;
+      }
       this.updateAccordionValues();
       this.toogleModal();
     } else {
@@ -229,6 +256,9 @@ export default class {
       slotId: hour.dataset.slotId,
     };
     console.log(this.tempPickupTimeslot);
+
+    // check the state of the apply button
+    this.checkApplyFeasility();
   }
 
   selectDeliveryHour(hour) {
@@ -254,6 +284,12 @@ export default class {
       slotId: hour.dataset.slotId,
     };
     console.log(this.tempDeliveryTimeslot);
+
+    // if we the type is also pickup we need to make a call and get the pickup timeslots
+    if (this.type === timeslotTypes.deliveryAndPickup) {
+      this.createPickupTimeslotDOM();
+    }
+
     // check the state of the apply button
     this.checkApplyFeasility();
   }
@@ -303,9 +339,50 @@ export default class {
     this.DOM.timeslotModal.classList.add('active');
   }
 
-  initModal() {
+  cleaModalFromSelections() {
+    // DELIVERY
     this.tempDeliveryTimeslot = null;
-    // todo set the selected delivery timeslot
+    // hide all hours sections
+    this.DOM.deliveryHoursSections.forEach((section) => {
+      section.classList.add('d-none');
+    });
+    // remove selected class from days
+    this.DOM.deliverySectionDays.forEach((dayItem) => {
+      dayItem.classList.remove('timeslot__section-item--selected');
+    });
+    // unselect all hours
+    this.DOM.deliveryHours.forEach((hourItem) => {
+      hourItem.classList.remove('timeslot__section-item--selected');
+    });
+
+    // PICKUP
+    this.tempPickupTimeslot = null;
+    // hide all hours sections
+    if (this.DOM.pickupHoursSections) {
+      this.DOM.pickupHoursSections.forEach((section) => {
+        section.classList.add('d-none');
+      });
+    }
+    // remove selected class from days
+    if (this.DOM.pickupSectionDays) {
+      this.DOM.pickupSectionDays.forEach((dayItem) => {
+        dayItem.classList.remove('timeslot__section-item--selected');
+      });
+    }
+
+    // unselect all hours
+    if (this.DOM.pickupHours) {
+      this.DOM.pickupHours.forEach((hourItem) => {
+        hourItem.classList.remove('timeslot__section-item--selected');
+      });
+    }
+
+    // remove the pickup section if exists
+    if (this.DOM.pickupSection) {
+      this.DOM.pickupSection.remove();
+    }
+
+    this.checkApplyFeasility();
   }
 
   updateAccordionValues() {
@@ -347,18 +424,36 @@ export default class {
       } else {
         this.DOM.actionBtn.classList.add('primary-btn--disabled');
       }
+    } else if (this.type === timeslotTypes.deliveryAndPickup) {
+      if (this.tempDeliveryTimeslot && this.tempPickupTimeslot) {
+        this.DOM.actionBtn.classList.remove('primary-btn--disabled');
+      } else {
+        this.DOM.actionBtn.classList.add('primary-btn--disabled');
+      }
     }
   }
 
   async createPickupTimeslotDOM() {
-    const html = await this.template();
+    PubSub.publish('show_loader');
+    // remove the previous pickup section
+    if (this.DOM.pickupSection) {
+      this.DOM.pickupSection.remove();
+    }
+    // remove the previous pickup hours in case he selected
+    this.tempPickupTimeslot = null;
+
+    const dates = await this.api.getPickupDates(
+      store.context.storeID,
+      this.tempDeliveryTimeslot,
+    );
+    const html = await this.template(dates);
     this.DOM.deliverySection.insertAdjacentHTML('afterend', html);
     this.initPickupSection();
+    PubSub.publish('hide_loader');
   }
 
   // eslint-disable-next-line class-methods-use-this
-  async template() {
-    const dates = await this.api.getPickupDates('2134', '323');
+  async template(dates) {
     const templateData = {
       type: 'pickup',
       title: 'Παραλαβή',

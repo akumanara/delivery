@@ -96,10 +96,24 @@
       #fff 15px
     );
   }
+
   &__section-item--selected &__section-item-inner {
     color: #5a88ff;
     border: 1px solid #e7edfa;
     background: #e7edfa;
+  }
+
+  &__section-item--unavailable.timeslot__section-item--selected
+    &__section-item-inner {
+    color: #5a88ff;
+    border: 1px solid #e7edfa;
+    background: repeating-linear-gradient(
+      -65deg,
+      #e7edfa,
+      #e7edfa 10px,
+      #fff 10px,
+      #fff 15px
+    );
   }
 
   &__section-item-alert {
