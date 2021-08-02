@@ -34,7 +34,9 @@ import AdultConsentModals from './components/adultConsentModals';
 class App {
   constructor() {
     autoBind(this);
-    // initSentry();
+    if (MODE !== 'development') {
+      initSentry();
+    }
     deliveryConsole();
 
     window.Alert = Alert;
