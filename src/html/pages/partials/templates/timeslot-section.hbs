@@ -19,7 +19,7 @@
   <!-- ALL HOURS CONTAINER -->
   <div class="timeslot__section-items-hours-container">
     {{#each days}}
-      <!-- HOURS 2021-07-31 -->
+      <!-- HOURS {{this.date}} -->
       <div
         class="timeslot__section-items d-none mb-10"
         data-date="{{this.date}}"
@@ -28,11 +28,13 @@
           <div
             class="timeslot__section-item{{#if this.isUnavaible}} timeslot__section-item--unavailable{{/if}}"
             data-date="{{../date}}"
+            data-date-small="{{../dateSmall}}"
+            data-day="{{../day}}"
             data-from="{{this.from}}"
             data-to="{{this.to}}"
             data-slot-id="{{this.id}}"
           >
-            <div class="timeslot__section-item-inner">08:00 - 09:00</div>
+            <div class="timeslot__section-item-inner">{{this.from}} - {{this.to}}</div>
           </div>
         {{/each}}
       </div>

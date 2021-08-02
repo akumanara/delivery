@@ -525,11 +525,8 @@ simera / avrio / methavrio / time
 before launch
 - buy averta font
 
-timeslots
-na valoume ena akoma box gia ti kiriaki
-tha fenonte mono oi meres pou kanei deliver to katastima alla tha fenonte unavailable mono oses den exoun available timeslot
-na diksoume oles tis ores me unavailable aftes pou exoune kleisi se capacity h exei perasei h trexwn wra
-otan einai paradosi k paralavi na kanoume call sto api gia na paroume tis imerominies / timeslots paradosis
-to call na ginei sto apply button
+
+
+
 
 

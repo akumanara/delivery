@@ -33,7 +33,7 @@ import Timeslot from './components/timeslot';
 class App {
   constructor() {
     autoBind(this);
-    initSentry();
+    // initSentry();
     deliveryConsole();
 
     window.Alert = Alert;

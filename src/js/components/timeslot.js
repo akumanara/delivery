@@ -28,6 +28,23 @@ export default class {
       '.timeslot__trigger .delivery-type__option-header-top',
     );
     this.DOM.accordionTrigger = document.querySelector('.timeslot__trigger');
+    // Modal for no available timeslots
+    this.DOM.noAvailableTimeslotsModal = document.querySelector(
+      '.js-no-timeslot-modal',
+    );
+    this.DOM.noAvailableTimeslotsModalClose =
+      this.DOM.noAvailableTimeslotsModal.querySelector('.js-close');
+    this.DOM.noAvailableTimeslotsModalBtn =
+      this.DOM.noAvailableTimeslotsModal.querySelector('.js-action-btn');
+    this.isNoSlotsModalOpen = false;
+    this.DOM.noAvailableTimeslotsModalClose.addEventListener(
+      'click',
+      this.toggleNoSlotsModal,
+    );
+    this.DOM.noAvailableTimeslotsModalBtn.addEventListener(
+      'click',
+      this.toggleNoSlotsModal,
+    );
 
     // event listeners
     this.DOM.timeslotTrigger.addEventListener('click', this.toogleModal);
@@ -53,12 +70,48 @@ export default class {
 
     // select value if it is already set in the context
     this.preselectValues();
+
+    // Check for no available timeslots
+    this.checkForNoTimeslots();
+  }
+
+  checkForNoTimeslots() {
+    if (store.context.noAvailableTimeslots) {
+      this.toggleNoSlotsModal();
+    }
+  }
+
+  toggleNoSlotsModal() {
+    if (this.isNoSlotsModalOpen) {
+      this.closeNoSlotsModal();
+    } else {
+      this.openNoSlotsModal();
+    }
+    this.isNoSlotsModalOpen = !this.isNoSlotsModalOpen;
+  }
+
+  closeNoSlotsModal() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.noAvailableTimeslotsModal.classList.remove('active');
+  }
+
+  openNoSlotsModal() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.noAvailableTimeslotsModal.classList.add('active');
   }
 
   initModal() {
     if (this.type === timeslotTypes.deliveryOnly) {
       if (this.deliveryTimeslot) {
         this.preselectDeliveryTimeslot();
+      } else {
+        this.cleaModalFromSelections();
+      }
+    } else if (this.type === timeslotTypes.deliveryAndPickup) {
+      console.log('this.type === timeslotTypes.deliveryAndPickup');
+      if (this.deliveryTimeslot && this.pickupTimeslot) {
+        console.log('preselecting');
+        this.preselectDeliveryAndPickupTimeslots();
       } else {
         this.cleaModalFromSelections();
       }
@@ -75,13 +128,21 @@ export default class {
         console.log('preselecing');
         this.deliveryTimeslot = store.context.selectedTimeslots.delivery;
         this.preselectDeliveryTimeslot();
-
-        // todo expired
+      }
+    } else if (this.type === timeslotTypes.deliveryAndPickup) {
+      if (
+        store.context.selectedTimeslots &&
+        store.context.selectedTimeslots.delivery &&
+        store.context.selectedTimeslots.pickup
+      ) {
+        this.deliveryTimeslot = store.context.selectedTimeslots.delivery;
+        this.pickupTimeslot = store.context.selectedTimeslots.pickup;
+        this.preselectDeliveryAndPickupTimeslots();
       }
     }
   }
 
-  preselectDeliveryTimeslot() {
+  async preselectDeliveryTimeslot() {
     // find and select day
     const dayElement = [...this.DOM.deliverySectionDays].find(
       (element) => element.dataset.date === this.deliveryTimeslot.date,
@@ -95,9 +156,33 @@ export default class {
     // select only if we have both
     if (dayElement && hourElement) {
       this.selectDeliveryDay(dayElement);
-      this.selectDeliveryHour(hourElement);
+      await this.selectDeliveryHour(hourElement);
       this.updateAccordionValues();
     }
+  }
+
+  async preselectPickupTimeslot() {
+    // find and select day
+    const dayElement = [...this.DOM.pickupSectionDays].find(
+      (element) => element.dataset.date === this.pickupTimeslot.date,
+    );
+    console.log(dayElement);
+    // find and select hour
+    const hourElement = [...this.DOM.pickupHours].find(
+      (element) => element.dataset.slotId === this.pickupTimeslot.slotId,
+    );
+
+    // select only if we have both
+    if (dayElement && hourElement) {
+      this.selectPickupDay(dayElement);
+      this.selectPickupHour(hourElement);
+      this.updateAccordionValues();
+    }
+  }
+
+  async preselectDeliveryAndPickupTimeslots() {
+    await this.preselectDeliveryTimeslot();
+    await this.preselectPickupTimeslot();
   }
 
   async submitTimeslots() {
@@ -113,7 +198,7 @@ export default class {
     };
 
     // if we also have pickup add it to the data
-    if (this.type === timeslotTypes.pickupAndDelivery) {
+    if (this.type === timeslotTypes.deliveryAndPickup) {
       data.pickup = {
         date: '2020-03-05',
         from: '12:00',
@@ -124,7 +209,7 @@ export default class {
     const result = await this.api.submitTimeslots(data);
     if (result.status === 'success') {
       this.deliveryTimeslot = this.tempDeliveryTimeslot;
-      if (this.type === timeslotTypes.pickupAndDelivery) {
+      if (this.type === timeslotTypes.deliveryAndPickup) {
         this.pickupTimeslot = this.tempPickupTimeslot;
       }
       this.updateAccordionValues();
@@ -269,7 +354,9 @@ export default class {
     // set temp delivery timeslot
     // only if the user clicks apply we set it permenantly
     this.tempPickupTimeslot = {
+      day: hour.dataset.day,
       date: hour.dataset.date,
+      dateSmall: hour.dataset.dateSmall,
       from: hour.dataset.from,
       to: hour.dataset.to,
       slotId: hour.dataset.slotId,
@@ -280,7 +367,7 @@ export default class {
     this.checkApplyFeasility();
   }
 
-  selectDeliveryHour(hour) {
+  async selectDeliveryHour(hour) {
     // hour is not available
     if (hour.classList.contains('timeslot__section-item--unavailable')) return;
 
@@ -306,7 +393,7 @@ export default class {
 
     // if we the type is also pickup we need to make a call and get the pickup timeslots
     if (this.type === timeslotTypes.deliveryAndPickup) {
-      this.createPickupTimeslotDOM();
+      await this.createPickupTimeslotDOM();
     }
 
     // check the state of the apply button
@@ -444,6 +531,67 @@ export default class {
         this.DOM.accordionBottomContainer.insertAdjacentHTML('beforeend', html);
         this.DOM.accordionTopContainer.innerHTML = texts.timeslotSelected;
       }
+    } else if (this.type === timeslotTypes.deliveryAndPickup) {
+      if (!this.deliveryTimeslot && !this.pickupTimeslot) {
+        // setting default values
+        this.DOM.accordionBottomContainer.innerHTML =
+          this.defaultBottomAccordionValue;
+        this.DOM.accordionTopContainer.innerHTML =
+          this.defaultTopAccordionValue;
+      } else {
+        let html;
+        console.log(this.deliveryTimeslot.expired);
+        if (this.deliveryTimeslot.expired) {
+          html = this.selectedDateAccordionTemplate(
+            this.deliveryTimeslot,
+            true,
+          );
+          // add an error class to selected hour timeslot inside the modal
+          // find hour element
+          const hourElement = [...this.DOM.deliveryHours].find(
+            (element) =>
+              element.dataset.slotId === this.deliveryTimeslot.slotId,
+          );
+          hourElement.classList.add('timeslot__section-item--unavailable-red');
+          // get error icons template
+          const errorIconHTML = this.errorImageTemplate();
+          hourElement
+            .querySelector('.timeslot__section-item-inner')
+            .insertAdjacentHTML('afterbegin', errorIconHTML);
+        } else {
+          html = this.selectedDateAccordionTemplate(
+            this.deliveryTimeslot,
+            false,
+          );
+        }
+
+        if (this.pickupTimeslot.expired) {
+          html += this.selectedDateAccordionTemplate(
+            this.pickupTimeslot,
+            true,
+            true,
+          );
+          // add an error class to selected hour timeslot inside the modal
+          // find hour element
+          const hourElement = [...this.DOM.pickupHours].find(
+            (element) => element.dataset.slotId === this.pickupTimeslot.slotId,
+          );
+          hourElement.classList.add('timeslot__section-item--unavailable-red');
+          // get error icons template
+          const errorIconHTML = this.errorImageTemplate();
+          hourElement
+            .querySelector('.timeslot__section-item-inner')
+            .insertAdjacentHTML('afterbegin', errorIconHTML);
+        } else {
+          html += this.selectedDateAccordionTemplate(
+            this.pickupTimeslot,
+            false,
+            true,
+          );
+        }
+        this.DOM.accordionBottomContainer.insertAdjacentHTML('beforeend', html);
+        this.DOM.accordionTopContainer.innerHTML = texts.timeslotSelected;
+      }
     }
   }
 
@@ -455,7 +603,7 @@ export default class {
   />`;
   }
 
-  selectedDateAccordionTemplate(timeslot, isExpired) {
+  selectedDateAccordionTemplate(timeslot, isExpired, flipArrow = false) {
     console.log(timeslot);
     return `<div class="timeslot__item-selected ${
       isExpired ? 'timeslot__item-selected--error' : ''
@@ -465,7 +613,7 @@ export default class {
       isExpired ? '-error' : ''
     }.svg"
       alt=""
-      class="timeslot__item-selected-icon"
+      class="timeslot__item-selected-icon ${flipArrow ? 'flip-vertically' : ''}"
     />
     <div class="timeslot__item-selected-copy">
       ${timeslot.day} ${timeslot.from} - ${timeslot.to}

@@ -2627,41 +2627,41 @@ const genericError = {
 const pickupDates = {
   pickupDates: [
     {
-      date: '2018-01-01',
+      date: '2022-01-01',
       dateSmall: '01/01',
       day: 'Δευτέρα',
       isUnavaible: false,
       timeslots: [
         {
           id: '1',
-          from: '09:00',
-          to: '12:00',
+          from: '08:00',
+          to: '09:00',
           isUnavaible: true,
         },
         {
-          id: '1',
+          id: '2',
           from: '09:00',
-          to: '12:00',
+          to: '10:00',
           isUnavaible: false,
         },
       ],
     },
     {
-      date: '2018-01-02',
+      date: '2022-01-02',
       dateSmall: '01/02',
       day: 'Τρίτη',
       isUnavaible: false,
       timeslots: [
         {
-          id: '1',
-          from: '09:00',
-          to: '12:00',
+          id: '3',
+          from: '08:00',
+          to: '09:00',
           isUnavaible: false,
         },
         {
-          id: '1',
+          id: '4',
           from: '09:00',
-          to: '12:00',
+          to: '10:00',
           isUnavaible: false,
         },
       ],
