@@ -61,8 +61,9 @@ export default class {
       }
     }
 
-    const tobaccoConsent = store.context.needsAlcoholConsent;
+    const tobaccoConsent = store.context.needsTobaccoConsent;
     if (tobaccoConsent) {
+      console.log('needs tobacco consent');
       const tobaccoConsentCookie = Cookies.get('tobacco_consent');
       if (!tobaccoConsentCookie) {
         this.toggleTobaccoModal();

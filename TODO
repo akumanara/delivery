@@ -13,8 +13,7 @@ connect/login:
 
 store:
   ☐ [store] Offers
-  ☐ [store] modal tobacco
-  ☐ [store] modal alcohol
+
 
 markets:
   ☐ product layout (quick add / edit / delete)
@@ -60,7 +59,9 @@ doing:
 
 meeting:
 
-Done:
+☐ Done:
+✔ [store] modal tobacco @done(21-08-02 16:33)
+  ✔ [store] modal alcohol @done(21-08-02 16:33)
   ✔ [store] timeslots @done(21-08-02 14:14)
   ✔ [timeslots] [delivery] preselect default values @done(21-08-02 11:59)
   ✔ [timeslots] [delivery] an ginei expire to preselecte tote na ginei kokino @done(21-08-02 11:59)
