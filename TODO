@@ -13,23 +13,24 @@ connect/login:
 
 store:
   ☐ [store] Offers
-  ☐ [store] previous orders - add previous order to basket modal @post-launch
-  ☐ [store] select timeslot
   ☐ [store] modal tobacco
   ☐ [store] modal alcohol
+
+markets:
+  ☐ product layout (quick add / edit / delete)
+  ☐ Search modal
+  ☐ Categories modal
+  ☐ prosfores page - load more - status ton products opos erxonte
 
 product modal:
   ☐ [product_modal] hide/view large html description
   ☐ [product_modal] zoom on photos
-
 
 for delivery:
   ☐ [store] sakoules sto kato simeio (na dei o kostas an gintete server side i na to kanw egw.) @delivery
   ☐ na ftiaxtei api gia to forgot password
   ☐ na mpei class sto burger an den exei address gia na siksei to add address
   ☐ timeslots. otan den yparxoun diathesima timeslots, na mpei sto contest h variable true kai na ginei to status tou accordeon opos sto figma.
-
-
 
 checkout:
   ☐ [checkout] Coupons on Checkout
@@ -42,18 +43,6 @@ checkout:
 address:
   ☐ scroll sto anoixto viewport me scrollable ti lista
 
-timeslot:
-  ✔ [delivery] preselect default values @done(21-08-02 11:59)
-  ✔ [delivery] an ginei expire to preselecte tote na ginei kokino @done(21-08-02 11:59)
-  ✔ [delivery] den yparxei availabiility, accordeon kai A level modal @done(21-08-02 12:19)
-  ✔ [delivery and pickup] preselect default values @done(21-08-02 13:33)
-  ✔ [delivery and pickup] an ginei expire to preselecte tote na ginei kokino @done(21-08-02 13:33)
-  ✔ [delivery and pickup] den yparxei availabiility, accordeon kai A level modal @done(21-08-02 13:33)
-  ✔ [timeslots] na valoume ena akoma box gia ti kiriaki @done(21-08-02 11:58)
-  ✔ [timeslots] tha fenonte mono oi meres pou kanei deliver to katastima alla tha fenonte unavailable mono oses den exoun available timeslot @done(21-08-02 11:58)
-  ✔ [timeslots] na diksoume oles tis ores me unavailable aftes pou exoune kleisi se capacity h exei perasei h trexwn wra @done(21-08-02 11:58)
-  ✔ [timeslots] otan einai paradosi k paralavi na kanoume call sto api gia na paroume tis imerominies / timeslots paradosis @done(21-08-02 11:58)
-  ✔ [timeslots] to call na ginei sto apply button @done(21-08-02 11:58)
 
 bugs:
   ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
@@ -63,6 +52,8 @@ bugs:
   ☐ [bug] sta filtra to active icon (svg) exei opacity kai epeidi einai external den doulevei sosta
   ☐ [bug] favorite mechanism not working
 
+post launch:
+  ☐ [store] previous orders - add previous order to basket modal @post-launch
 
 doing:
 
@@ -70,6 +61,18 @@ doing:
 meeting:
 
 Done:
+  ✔ [store] timeslots @done(21-08-02 14:14)
+  ✔ [timeslots] [delivery] preselect default values @done(21-08-02 11:59)
+  ✔ [timeslots] [delivery] an ginei expire to preselecte tote na ginei kokino @done(21-08-02 11:59)
+  ✔ [timeslots] [delivery] den yparxei availabiility, accordeon kai A level modal @done(21-08-02 12:19)
+  ✔ [timeslots] [delivery and pickup] preselect default values @done(21-08-02 13:33)
+  ✔ [timeslots] [delivery and pickup] an ginei expire to preselecte tote na ginei kokino @done(21-08-02 13:33)
+  ✔ [timeslots] [delivery and pickup] den yparxei availabiility, accordeon kai A level modal @done(21-08-02 13:33)
+  ✔ [timeslots] na valoume ena akoma box gia ti kiriaki @done(21-08-02 11:58)
+  ✔ [timeslots] tha fenonte mono oi meres pou kanei deliver to katastima alla tha fenonte unavailable mono oses den exoun available timeslot @done(21-08-02 11:58)
+  ✔ [timeslots] na diksoume oles tis ores me unavailable aftes pou exoune kleisi se capacity h exei perasei h trexwn wra @done(21-08-02 11:58)
+  ✔ [timeslots] otan einai paradosi k paralavi na kanoume call sto api gia na paroume tis imerominies / timeslots paradosis @done(21-08-02 11:58)
+  ✔ [timeslots] to call na ginei sto apply button @done(21-08-02 11:58)
   ✔ forgot password modal connect with api @done(21-07-27 14:42)
   ✔ noticeboard fix@done(21-07-27 14:42)
   ✔ [general] otan allazeis diefthinsi pou pas me redirect @done(21-07-26 11:51)

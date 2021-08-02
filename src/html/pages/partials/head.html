@@ -30,30 +30,33 @@
       promos: ['promo1', 'promo2', 'promo3', 'promo4', 'promo5'],
       redirectURLfromAddress: 'http://localhost:3000/catalog.html',
       noAvailableTimeslots: false,
-      // timeslotType: 'delivery_only',
-      timeslotType: 'delivery_and_pickup',
-      selectedTimeslots: {
-        delivery: {
-          date: '2021-08-07',
-          from: '08:00',
-          to: '09:00',
-          slotId: '31',
-          day: 'Δευτέρα',
-          dateSmall: '08/07',
-          expired: true,
-        },
-        pickup: {
-          date: '2022-01-02',
-          from: '09:00',
-          to: '10:00',
-          slotId: '4',
-          day: 'Τρίτη',
-          dateSmall: '01/02',
-          expired: true,
-        },
-      },
+      needsTobaccoConsent: true,
+      redirectOnNegativeTobaccoConsent: 'https://google.com/',
+      needsAlcoholConsent: true,
+      timeslotType: 'delivery_only',
+      // timeslotType: 'delivery_and_pickup',
+      // selectedTimeslots: {
+      //   delivery: {
+      //     date: '2021-08-07',
+      //     from: '08:00',
+      //     to: '09:00',
+      //     slotId: '31',
+      //     day: 'Δευτέρα',
+      //     dateSmall: '08/07',
+      //     expired: true,
+      //   },
+      //   pickup: {
+      //     date: '2022-01-02',
+      //     from: '09:00',
+      //     to: '10:00',
+      //     slotId: '4',
+      //     day: 'Τρίτη',
+      //     dateSmall: '01/02',
+      //     expired: true,
+      //   },
+      // },
     };
   </script>
-  <!-- PRELOAD IMAGES WE SHOW IN ALERTS  -->
+  <!-- TODO PRELOAD IMAGES WE SHOW IN ALERTS  -->
   <link rel="preload" as="image" href="./images/icons/error.svg" />
 </head>

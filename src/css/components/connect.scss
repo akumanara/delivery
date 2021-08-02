@@ -214,10 +214,13 @@
   }
 
   &__actions {
-    // margin: 20px 16px;
+    margin: 20px 16px;
+    &--no-margin-x {
+      margin: 20px 0;
+    }
   }
   .primary-btn {
-    margin: 20px 16px;
+    // margin: 20px 16px;
   }
   &__actions-forgot {
     text-align: center;

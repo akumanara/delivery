@@ -27,10 +27,6 @@ $mWidths: 18, 20, 22, 26, 38, 50, 120;
   }
 }
 
-.w-100 {
-  width: 100%;
-}
-
 .text-center {
   text-align: center;
 }
@@ -49,7 +45,7 @@ $mWidths: 18, 20, 22, 26, 38, 50, 120;
 }
 
 // For margin
-$spacings: 6, 8, 10, 16, 18, 20, 28, 30;
+$spacings: 0, 6, 8, 10, 16, 18, 20, 28, 30;
 @each $spacing in $spacings {
   .mr-#{$spacing} {
     margin-right: #{$spacing}px;
@@ -127,4 +123,17 @@ $spacings: 6, 8, 10, 16, 18, 20, 28, 30;
 }
 .flip-vertically {
   transform: scaleY(-1);
+}
+
+.w-100 {
+  width: 100%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-25 {
+  width: 25%;
 }

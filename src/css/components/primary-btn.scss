@@ -17,6 +17,16 @@
     background: #8eaeff;
   }
 
+  &--secondary {
+    background-color: #fff;
+    border: 2px solid #e7edfa;
+    color: black;
+  }
+
+  &--fixed-w-150 {
+    width: 150px;
+  }
+
   &__icon {
   }
   &__copy {

@@ -84,4 +84,6 @@ export default {
   timeslotSelected: 'Επιλεγμένη ημερομηνία',
   timeslotPickupTitle: 'Παραλαβή',
   timeslotPickupDescription: 'Ημέρα παράδοσης στο χώρο σου',
+  timeslotExpiredSelected:
+    'Οι προγραμματισμένες ώρες που διάλεξες δεν είναι πλέον διαθέσιμες',
 };

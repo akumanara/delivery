@@ -28,6 +28,7 @@ import Navigation from './components/navigation';
 import Connect from './components/connect';
 import Noticeboard from './components/noticeboard';
 import Timeslot from './components/timeslot';
+import AdultConsentModals from './components/adultConsentModals';
 // import Layout from './layout';
 
 class App {
@@ -67,6 +68,9 @@ class App {
 
     // Main navigation
     this.navigation = new Navigation();
+
+    // Tobacco and Alcohol modals
+    this.adultConsentModals = new AdultConsentModals();
 
     // Timeslots
     const timeslotElement = document.querySelector('.timeslot__trigger');

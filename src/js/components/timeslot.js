@@ -73,6 +73,18 @@ export default class {
 
     // Check for no available timeslots
     this.checkForNoTimeslots();
+
+    if (
+      (this.deliveryTimeslot && this.deliveryTimeslot.expired) ||
+      (this.pickupTimeslot && this.pickupTimeslot.expired)
+    ) {
+      const alert = new Alert({
+        text: texts.timeslotExpiredSelected,
+        timeToKill: 5,
+        type: 'error',
+        showTimer: false,
+      });
+    }
   }
 
   checkForNoTimeslots() {
@@ -492,6 +504,7 @@ export default class {
   }
 
   updateAccordionValues() {
+    console.log('updateAccordionValues');
     // Clear inner html
     this.DOM.accordionBottomContainer.innerHTML = '';
 
@@ -506,6 +519,7 @@ export default class {
         let html;
         console.log(this.deliveryTimeslot.expired);
         if (this.deliveryTimeslot.expired) {
+          this.alertExpiredSelectedDates = true;
           html = this.selectedDateAccordionTemplate(
             this.deliveryTimeslot,
             true,
@@ -542,6 +556,7 @@ export default class {
         let html;
         console.log(this.deliveryTimeslot.expired);
         if (this.deliveryTimeslot.expired) {
+          this.alertExpiredSelectedDates = true;
           html = this.selectedDateAccordionTemplate(
             this.deliveryTimeslot,
             true,
@@ -566,6 +581,7 @@ export default class {
         }
 
         if (this.pickupTimeslot.expired) {
+          this.alertExpiredSelectedDates = true;
           html += this.selectedDateAccordionTemplate(
             this.pickupTimeslot,
             true,
@@ -622,7 +638,6 @@ export default class {
   }
 
   checkApplyFeasility() {
-    // todo
     if (this.type === timeslotTypes.deliveryOnly) {
       if (this.tempDeliveryTimeslot) {
         this.DOM.actionBtn.classList.remove('primary-btn--disabled');
