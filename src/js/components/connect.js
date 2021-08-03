@@ -152,7 +152,7 @@ export default class {
     };
     this.isMergeAccountWithCodeOpen = false;
 
-    // merge account with code modal
+    // reset password modal
     this.DOM.resetPasswordModal = document.querySelector(
       '.js-reset-password-modal',
     );

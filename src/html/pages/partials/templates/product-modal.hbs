@@ -29,12 +29,7 @@
               <!-- SLIDE ITEM -->
               <div class="swiper-slide">
                 <div class="product-modal__slide">
-                  <img
-                    src="{{this}}"
-                    data-zoom="{{this}}"
-                    alt=""
-                    class="product-modal__slide-img"
-                  />
+                  <img src="{{this}}" alt="" class="product-modal__slide-img" />
                 </div>
               </div>
             {{/each}}
@@ -252,42 +247,58 @@
     <!-- ADD TO CART - ABSOLUTE POSITIONED -->
     <div class="product-modal__add-to-cart">
       <div class="product-modal__add-to-cart-inner">
-        <div class="product-modal__add-to-cart-qty">
-          <div class="product-modal__add-to-cart-qty-minus-trigger"></div>
-          <div class="product-modal__add-to-cart-qty-plus-trigger"></div>
-          <div class="product-modal__add-to-cart-qty-minus">
-            <img
-              src="./images/icons/minus.svg"
-              alt=""
-              class="product-modal__add-to-cart-qty-minus-img"
-            />
-          </div>
-          <div class="product-modal__add-to-cart-qty-value">
-            <div class="js-product-modal-qty">
-              1
+
+        {{! QUANTITY IS NOT AVAILABLE FOR PRODUCT INSIDE OFFER }}
+        {{#unless isInsideOffer}}
+          <div class="product-modal__add-to-cart-qty">
+            <div class="product-modal__add-to-cart-qty-minus-trigger"></div>
+            <div class="product-modal__add-to-cart-qty-plus-trigger"></div>
+            <div class="product-modal__add-to-cart-qty-minus">
+              <img
+                src="./images/icons/minus.svg"
+                alt=""
+                class="product-modal__add-to-cart-qty-minus-img"
+              />
+            </div>
+            <div class="product-modal__add-to-cart-qty-value">
+              <div class="js-product-modal-qty">
+                1
+              </div>
+            </div>
+            <div class="product-modal__add-to-cart-qty-plus">
+              <img
+                src="./images/icons/plus.svg"
+                alt=""
+                class="product-modal__add-to-cart-qty-plus-img"
+              />
             </div>
           </div>
-          <div class="product-modal__add-to-cart-qty-plus">
-            <img
-              src="./images/icons/plus.svg"
-              alt=""
-              class="product-modal__add-to-cart-qty-plus-img"
-            />
-          </div>
-        </div>
+        {{/unless}}
+
         <div class="product-modal__add-to-cart-btn">
-          <div class="product-modal__add-to-cart-btn-icon">
-            <img
-              src="./images/icons/add-to-cart.svg"
-              alt=""
-              class="product-modal__add-to-cart-btn-icon-img"
-            />
+          <div class="d-flex mr-auto">
+            <div class="product-modal__add-to-cart-btn-icon">
+              <img
+                src="./images/icons/add-to-cart.svg"
+                alt=""
+                class="product-modal__add-to-cart-btn-icon-img"
+              />
+            </div>
+
+            {{! BECAUSE WE DONT HAVE QTY INSIDE THE OFFER WE ADD A COPY }}
+            {{#if isInsideOffer}}
+              <div class="ml-10">Προσθήκη</div>
+            {{/if}}
+
           </div>
-          <div class="product-modal__add-to-cart-btn-price">
-            <div class="js-product-modal-final-price">
-              {{currency basePrice}}
+          <div class="d-flex ml-auto">
+            <div class="product-modal__add-to-cart-btn-price">
+              <div class="js-product-modal-final-price">
+                {{currency basePrice}}
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

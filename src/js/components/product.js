@@ -1,3 +1,4 @@
+import EventEmitter from 'events';
 import PubSub from 'pubsub-js';
 import currency from 'currency.js';
 import Accordion from 'accordion-js';
@@ -46,11 +47,13 @@ import texts from '../utils/texts';
 // * UI does not communicate when there is more than 1 min.
 // ** UI does not communicate how this works.
 
-export default class {
-  constructor(productElement) {
+export default class extends EventEmitter {
+  constructor(productElement, isInsideOffer = false) {
+    super();
     autoBind(this);
     this.template = HandlebarsTemplate;
     this.element = productElement;
+    this.isInsideOffer = isInsideOffer;
     this.api = new API();
     this.init();
   }
@@ -167,6 +170,8 @@ export default class {
       storeName: store.context.storeName,
       showOptionsDiv,
     };
+
+    if (this.isInsideOffer) this.templateData.isInsideOffer = true;
   }
 
   // Creates the modal from the template object
@@ -205,8 +210,10 @@ export default class {
     };
 
     // Add event listeners
-    this.DOM.plusBtn.addEventListener('click', this.addOneQty);
-    this.DOM.minusBtn.addEventListener('click', this.removeOneQty);
+    if (!this.isInsideOffer) {
+      this.DOM.plusBtn.addEventListener('click', this.addOneQty);
+      this.DOM.minusBtn.addEventListener('click', this.removeOneQty);
+    }
     this.DOM.addToCartBtn.addEventListener('click', this.addToCart);
 
     // Photos gallery
@@ -318,6 +325,10 @@ export default class {
     this.modalElement.remove();
     // show overflow
     document.body.classList.remove('hide-overflow');
+    // if inside an offer, emit an event
+    if (this.isInsideOffer) {
+      this.emit('closed');
+    }
   }
 
   // Closes all the accordions except the one to be opened
@@ -554,12 +565,15 @@ export default class {
       });
     });
 
-    // Submit product and get the new cart
-    const cart = await this.api.addProductToCart(bodyFormData);
+    if (this.isInsideOffer) {
+      this.emit('added', this);
+    } else {
+      // Submit product and get the new cart
+      const cart = await this.api.addProductToCart(bodyFormData);
 
-    // Publish the event to the cart with the data
-    PubSub.publish('cart_update', cart);
-
+      // Publish the event to the cart with the data
+      PubSub.publish('cart_update', cart);
+    }
     this.closeModal();
     PubSub.publish('hide_loader');
   }

@@ -1326,6 +1326,26 @@ const productData2 = {
   ],
 };
 
+const productData3 = {
+  id: '1184142',
+  name: 'Coca-Cola (500ml)',
+  price: 1.2,
+  comments: '',
+  large_description:
+    '<p>Οι συστάσεις είναι περιττές! Κλασική κι αγαπημένη Coca-Cola σε μπουκάλι 500 ml.</p><p>ΣΥΣΤΑΤΙΚΑ: Νερό, Ζάχαρη, Διοξείδιο Άνθρακα, Χρωστική: Ε 150d, Μέσο οξίνισης: Φωσφορικό Οξύ, Φυσικές Αρωματικές Ύλες (περιέχουν καφεΐνη)</p><h3>Διατροφικά Στοιχεία</h3><table class="table table-striped"><tr><td></td><td>Ανά 100 ml</td><td>Ανά 250 ml</td></tr><tr><td>Ενέργεια (kcal/kJ)</td><td>42/180</td><td>105/450</td></tr><tr><td>Λιπαρά (g)</td><td>0</td></tr><tr><td>εκ των οποίων κορεσμένα (g)</td><td>0</td></tr><tr><td>Υδατάνθρακες (g)</td><td>10,6</td><td>27</td></tr><tr><td>εκ των οποίων σάκχαρα (g)</td><td>10,6</td><td>27</td></tr><tr><td>Πρωτεϊνες (g)</td><td>0</td></tr><tr><td>Αλάτι (g)</td><td>0</td></tr></table>',
+  start_price: 0,
+  isOutOfStock: false,
+  images: ['./images/bb.jpg'],
+  minQuantity: 0,
+  maxQuantity: 0,
+  category: {
+    id: '122032',
+    name: 'Αναψυκτικά',
+  },
+  variants: [],
+  ingredient_categories: [],
+};
+
 const productDataFromCart = {
   id: '1154224',
   name: 'Φιλέτο κοτόπουλο στήθος',
@@ -2669,7 +2689,42 @@ const pickupDates = {
   ],
 };
 
+const offer = {
+  name: 'Μπίρα Kaiser κουτί 500ml 2+1 ΔΩΡΟ!',
+  comments:
+    'Με κάθε αγορά 2 τεμαχίων Μπίρα Kaiser κουτί 500ml κερδίζεις άλλο ένα δώρο',
+  offerType: 0,
+  allowChargeIngredients: false,
+  excludeChargeIngredientsfromOffer: false,
+  images: ['./images/o1.jpg'],
+  categories: [
+    {
+      id: '111',
+      title: 'Επίλεξε Αναψυκτικά',
+      products: [
+        { id: '222', name: 'Coca-Cola (500ml)' },
+        { id: '333', name: 'Coca-Cola Zero (500ml)' },
+      ],
+    },
+    {
+      id: '112',
+      title: 'Επίλεξε Αναψυκτικά',
+      products: [
+        { id: '222', name: 'Coca-Cola (500ml)' },
+        { id: '223', name: 'Coca-Cola Zero (500ml)' },
+        { id: '224', name: 'Coca-Cola (500ml)' },
+        { id: '225', name: 'Coca-Cola Zero (500ml)' },
+        { id: '226', name: 'Coca-Cola (500ml)' },
+        { id: '227', name: 'Coca-Cola Zero (500ml)' },
+        { id: '228', name: 'Coca-Cola (500ml)' },
+        { id: '229', name: 'Coca-Cola Zero (500ml)' },
+      ],
+    },
+  ],
+};
+
 export {
+  offer,
   genericError,
   genericSuccess,
   pickupDates,
@@ -2677,6 +2732,7 @@ export {
   loginMailPasswordSuccess,
   productData,
   productData2,
+  productData3,
   productDataFromCart,
   productDataFromCart2,
   voucherFail,

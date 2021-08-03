@@ -9,6 +9,7 @@ import {
   loginMailPasswordSuccess,
   productData,
   productData2,
+  productData3,
   productDataFromCart,
   productDataFromCart2,
   voucherFail,
@@ -19,6 +20,7 @@ import {
   passwordResetSuccess,
   passwordResetError,
   pickupDates,
+  offer,
 } from '../utils/serverResponses';
 
 export default class {
@@ -31,7 +33,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(productData);
+          resolve(productData3);
         }, 200),
       );
     }
@@ -46,6 +48,17 @@ export default class {
           reject(error);
         });
     });
+  }
+
+  getOffer(offerID) {
+    // TODO
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(offer);
+        }, 200),
+      );
+    }
   }
 
   getProductFromCart(productID, cartIndex) {

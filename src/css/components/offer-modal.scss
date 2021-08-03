@@ -1,0 +1,16 @@
+.offer-modal {
+  &__product {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+  }
+  &__product-name {
+    @include font-size-4;
+  }
+  &__product-icon {
+    padding-left: 8px;
+    margin-left: auto;
+  }
+  &__product-icon-img {
+  }
+}

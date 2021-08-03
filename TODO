@@ -14,6 +14,13 @@ connect/login:
 store:
   ☐ [store] Offers
 
+offers:
+  ☐ [offers] na ftiaksw to class kai to modal tis prosforas se layout
+  ☐ [offers] na ftiaksw to modal apo to api response kai na kanw hook events (raise, close, init)
+  ☐ [offers] na ftiaksw to modal pou erxete apo to proion. me tis prosarmoges pou prepei na ginoun sto product class
+  ☐ [offers] na kanw ypologismo timis prosforas
+  ☐ [offers] na kanw prosthiki prosforas sto kalathi (api call)
+
 
 markets:
   ☐ product layout (quick add / edit / delete)

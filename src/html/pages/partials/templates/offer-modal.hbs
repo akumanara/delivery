@@ -1,0 +1,121 @@
+<div class="modal {{modalClass}}">
+  <!-- THE ACTUAL WINDOW -->
+  <div class="modal__window">
+    <!-- HEADER -->
+    <div class="product-modal__header">
+      <div class="product-modal__header-left">
+        <div class="product-modal__title">
+          {{name}}
+        </div>
+      </div>
+      <div class="product-modal__header-right">
+        <div class="product-modal__close-btn js-close">
+          <img
+            src="./images/icons/modal-close.svg"
+            alt=""
+            class="product-modal__close-btn-img"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="modal__body product-modal__body">
+      {{#if images}}
+        <!-- PHOTOS SLIDER -->
+        <div class="product-modal__slider swiper-container">
+          <div class="swiper-wrapper">
+            <!-- SLIDES -->
+            {{#each images}}
+              <!-- SLIDE ITEM -->
+              <div class="swiper-slide">
+                <div class="product-modal__slide">
+                  <img src="{{this}}" alt="" class="product-modal__slide-img" />
+                </div>
+              </div>
+            {{/each}}
+          </div>
+          <!-- PAGINATION -->
+          <div class="swiper-pagination"></div>
+        </div>
+      {{/if}}
+      {{#if comments}}
+        <!-- DESCRIPTION -->
+        <div class="product-modal__description">
+          {{comments}}
+        </div>
+      {{/if}}
+      {{#each categories}}
+        <!-- OFFER CATEGORY -->
+        <div class="product-modal__option" data-offer-category-id="{{this.id}}">
+          <!-- ACCORDION ITEM -->
+          <div class="accordion__container accordion__container--smaller">
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <div class="product-modal__option-header">
+                  <!-- TOP AND BOTTOM COPY -->
+                  <div class="product-modal__option-header-top">
+                    {{this.title}}
+                  </div>
+                  <div class="product-modal__option-header-bottom">Προϊόν
+                    {{inc @index}}</div>
+                  <div class="product-modal__option-header-opened-container">
+                    <div class="product-modal__option-header-opened-copy">
+                      {{this.title}}
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__right-side">
+                  <div class="accordion__header-arrow">
+                    <img src="./images/icons/accordion-arrow.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__content">
+                  {{#each this.products}}
+                    <!-- PRODUCT INSIDE OFFER CATEGORY -->
+                    <div
+                      class="offer-modal__product"
+                      data-product-id="{{this.id}}"
+                    >
+                      <div class="offer-modal__product-name">{{this.name}}</div>
+                      <div class="offer-modal__product-icon">
+                        <img
+                          src="./images/icons/offer-product-arrow.svg"
+                          alt=""
+                          class="offer-modal__product-icon-img"
+                        />
+                      </div>
+                    </div>
+                  {{/each}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <!-- ADD TO CART - ABSOLUTE POSITIONED -->
+    <div class="product-modal__add-to-cart">
+      <div class="product-modal__add-to-cart-inner">
+        <div class="product-modal__add-to-cart-btn">
+          <div class="mr-auto d-flex">
+            <div class="product-modal__add-to-cart-btn-icon">
+              <img
+                src="./images/icons/add-to-cart.svg"
+                alt=""
+                class="product-modal__add-to-cart-btn-icon-img"
+              />
+            </div>
+            <div class="ml-10">Προσθήκη</div>
+          </div>
+          <div class="ml-auto d-flex">
+            <div class="product-modal__add-to-cart-btn-price">
+              <div class="js-offer-final-price"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
