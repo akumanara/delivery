@@ -120,9 +120,7 @@ export default class {
         this.cleaModalFromSelections();
       }
     } else if (this.type === timeslotTypes.deliveryAndPickup) {
-      console.log('this.type === timeslotTypes.deliveryAndPickup');
       if (this.deliveryTimeslot && this.pickupTimeslot) {
-        console.log('preselecting');
         this.preselectDeliveryAndPickupTimeslots();
       } else {
         this.cleaModalFromSelections();
@@ -137,7 +135,6 @@ export default class {
         store.context.selectedTimeslots &&
         store.context.selectedTimeslots.delivery
       ) {
-        console.log('preselecing');
         this.deliveryTimeslot = store.context.selectedTimeslots.delivery;
         this.preselectDeliveryTimeslot();
       }
@@ -159,7 +156,7 @@ export default class {
     const dayElement = [...this.DOM.deliverySectionDays].find(
       (element) => element.dataset.date === this.deliveryTimeslot.date,
     );
-    console.log(dayElement);
+
     // find and select hour
     const hourElement = [...this.DOM.deliveryHours].find(
       (element) => element.dataset.slotId === this.deliveryTimeslot.slotId,
@@ -178,7 +175,6 @@ export default class {
     const dayElement = [...this.DOM.pickupSectionDays].find(
       (element) => element.dataset.date === this.pickupTimeslot.date,
     );
-    console.log(dayElement);
     // find and select hour
     const hourElement = [...this.DOM.pickupHours].find(
       (element) => element.dataset.slotId === this.pickupTimeslot.slotId,
@@ -401,7 +397,6 @@ export default class {
       to: hour.dataset.to,
       slotId: hour.dataset.slotId,
     };
-    console.log(this.tempDeliveryTimeslot);
 
     // if we the type is also pickup we need to make a call and get the pickup timeslots
     if (this.type === timeslotTypes.deliveryAndPickup) {
@@ -504,7 +499,6 @@ export default class {
   }
 
   updateAccordionValues() {
-    console.log('updateAccordionValues');
     // Clear inner html
     this.DOM.accordionBottomContainer.innerHTML = '';
 
@@ -517,7 +511,6 @@ export default class {
           this.defaultTopAccordionValue;
       } else {
         let html;
-        console.log(this.deliveryTimeslot.expired);
         if (this.deliveryTimeslot.expired) {
           this.alertExpiredSelectedDates = true;
           html = this.selectedDateAccordionTemplate(
@@ -620,7 +613,6 @@ export default class {
   }
 
   selectedDateAccordionTemplate(timeslot, isExpired, flipArrow = false) {
-    console.log(timeslot);
     return `<div class="timeslot__item-selected ${
       isExpired ? 'timeslot__item-selected--error' : ''
     } js-delivery-timeslot">

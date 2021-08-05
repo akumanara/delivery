@@ -1,0 +1,512 @@
+{
+  "products": {
+    "23153": {
+      "serialize": [
+        {
+          "name": "itemGroupId",
+          "value": "104522"
+        },
+        {
+          "name": "itemName",
+          "value": "Gustosa"
+        },
+        {
+          "name": "offerCategoryId",
+          "value": "23153"
+        },
+        {
+          "name": "offerProductName",
+          "value": "Gustosa"
+        },
+        {
+          "name": "offerCategoryName",
+          "value": "Pizza (8 κομμάτια)"
+        },
+        {
+          "name": "offerDiscountedProduct",
+          "value": "0"
+        },
+        {
+          "name": "offerChargeIngredients",
+          "value": "1"
+        },
+        {
+          "name": "offerProductIngredientPrice",
+          "value": "0.00"
+        },
+        {
+          "name": "offerProductTotalPrice",
+          "value": "7.30"
+        },
+        {
+          "name": "itemInstructions",
+          "value": ""
+        },
+        {
+          "name": "itemId",
+          "value": "12168"
+        },
+        {
+          "name": "ingredient[936078]",
+          "value": "1"
+        },
+        {
+          "name": "ingredient[936079]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936080]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936081]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936082]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936083]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905598]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905599]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905600]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[990998]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707257]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707258]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707259]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707260]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707261]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707262]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707263]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707264]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707265]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795218]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795219]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795220]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795221]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795222]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795223]",
+          "value": "0"
+        },
+        {
+          "name": "uomstep",
+          "value": "1.000"
+        },
+        {
+          "name": "uom",
+          "value": "TMX"
+        },
+        {
+          "name": "itemQuantity",
+          "value": "1"
+        }
+      ],
+      "price": "7.30",
+      "priceIngredients": "0.00",
+      "category_name": "Pizza (8 κομμάτια)",
+      "name": "Gustosa",
+      "discounted_product": "0",
+      "charge_extra_imngredients": "1",
+      "variant_name": "Ζύμη: Λευκή - Κλασική",
+      "ingredients_text": "σάλτσα ντομάτας "
+    },
+    "23154": {
+      "serialize": [
+        {
+          "name": "itemGroupId",
+          "value": "104523"
+        },
+        {
+          "name": "itemName",
+          "value": "Family"
+        },
+        {
+          "name": "offerCategoryId",
+          "value": "23154"
+        },
+        {
+          "name": "offerProductName",
+          "value": "Family"
+        },
+        {
+          "name": "offerCategoryName",
+          "value": "Pizza (8 κομμάτια)"
+        },
+        {
+          "name": "offerDiscountedProduct",
+          "value": "0"
+        },
+        {
+          "name": "offerChargeIngredients",
+          "value": "1"
+        },
+        {
+          "name": "offerProductIngredientPrice",
+          "value": "0.00"
+        },
+        {
+          "name": "offerProductTotalPrice",
+          "value": "7.50"
+        },
+        {
+          "name": "itemInstructions",
+          "value": ""
+        },
+        {
+          "name": "itemId",
+          "value": "12168"
+        },
+        {
+          "name": "ingredient[936078]",
+          "value": "1"
+        },
+        {
+          "name": "ingredient[936079]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936080]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936081]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936082]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936083]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905598]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905599]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905600]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[990998]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707257]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707258]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707259]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707260]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707261]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707262]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707263]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707264]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707265]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795218]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795219]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795220]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795221]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795222]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795223]",
+          "value": "0"
+        },
+        {
+          "name": "uomstep",
+          "value": "1.000"
+        },
+        {
+          "name": "uom",
+          "value": "TMX"
+        },
+        {
+          "name": "itemQuantity",
+          "value": "1"
+        }
+      ],
+      "price": "7.50",
+      "priceIngredients": "0.00",
+      "category_name": "Pizza (8 κομμάτια)",
+      "name": "Family",
+      "discounted_product": "0",
+      "charge_extra_imngredients": "1",
+      "variant_name": "Ζύμη: Λευκή - Κλασική",
+      "ingredients_text": "σάλτσα ντομάτας "
+    },
+    "23155": {
+      "serialize": [
+        {
+          "name": "itemGroupId",
+          "value": "104522"
+        },
+        {
+          "name": "itemName",
+          "value": "Gustosa"
+        },
+        {
+          "name": "offerCategoryId",
+          "value": "23155"
+        },
+        {
+          "name": "offerProductName",
+          "value": "Gustosa"
+        },
+        {
+          "name": "offerCategoryName",
+          "value": "Pizza (8 κομμάτια)"
+        },
+        {
+          "name": "offerDiscountedProduct",
+          "value": "0"
+        },
+        {
+          "name": "offerChargeIngredients",
+          "value": "1"
+        },
+        {
+          "name": "offerProductIngredientPrice",
+          "value": "0.00"
+        },
+        {
+          "name": "offerProductTotalPrice",
+          "value": "7.30"
+        },
+        {
+          "name": "itemInstructions",
+          "value": ""
+        },
+        {
+          "name": "itemId",
+          "value": "12168"
+        },
+        {
+          "name": "ingredient[936078]",
+          "value": "1"
+        },
+        {
+          "name": "ingredient[936079]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936080]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936081]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936082]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[936083]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905598]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905599]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[905600]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[990998]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707257]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707258]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707259]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707260]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707261]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707262]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707263]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707264]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1707265]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795218]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795219]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795220]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795221]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795222]",
+          "value": "0"
+        },
+        {
+          "name": "ingredient[1795223]",
+          "value": "0"
+        },
+        {
+          "name": "uomstep",
+          "value": "1.000"
+        },
+        {
+          "name": "uom",
+          "value": "TMX"
+        },
+        {
+          "name": "itemQuantity",
+          "value": "1"
+        }
+      ],
+      "price": "7.30",
+      "priceIngredients": "0.00",
+      "category_name": "Pizza (8 κομμάτια)",
+      "name": "Gustosa",
+      "discounted_product": "0",
+      "charge_extra_imngredients": "1",
+      "variant_name": "Ζύμη: Λευκή - Κλασική",
+      "ingredients_text": "σάλτσα ντομάτας "
+    }
+  },
+  "offer_id": "8000",
+  "offer_type": "3",
+  "offer_amount": "18",
+  "offer_discount": "0"
+}

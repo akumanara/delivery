@@ -7,6 +7,7 @@ import API from './api';
 import { OfferHandlebarsTemplate } from '../utils/handlebarTemplate';
 import Product from './product';
 import { offerTypes } from '../utils/enum';
+import { currencyFormat } from '../utils/helpers';
 // 1. Click sto offer
 // 2. API call on response
 // 3. kanw prepare data gia to handlebars template, ftiaxnw to modal kai to kanw append sto DOM
@@ -61,6 +62,7 @@ export default class {
     this.DOM.addToCartBtn = this.DOM.modal.querySelector(
       '.product-modal__add-to-cart-btn',
     );
+    this.DOM.price = this.DOM.modal.querySelector('.js-offer-final-price');
     this.DOM.modal
       .querySelector('.js-close')
       .addEventListener('click', this.removeModal);
@@ -232,6 +234,7 @@ export default class {
     }
 
     console.log(`final offer price ${this.price}`);
+    this.DOM.price.innerHTML = currencyFormat(this.price);
   }
 
   calculateSumOfProductsPrice() {

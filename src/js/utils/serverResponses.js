@@ -2693,7 +2693,7 @@ const offer = {
   name: 'Μπίρα Kaiser κουτί 500ml 2+1 ΔΩΡΟ!',
   comments:
     'Με κάθε αγορά 2 τεμαχίων Μπίρα Kaiser κουτί 500ml κερδίζεις άλλο ένα δώρο',
-  offerType: 5,
+  offerType: 3,
   discountAmount: 4.2,
   discountPercentage: 10,
   fixedPrice: 14.21,

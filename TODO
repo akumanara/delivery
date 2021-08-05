@@ -13,13 +13,20 @@ connect/login:
 
 store:
   ☐ [store] Offers
+  ☐ [store] countdown gia kleisimo katastimatos
+
+
 
 offers:
-  ☐ [offers] na ftiaksw to class kai to modal tis prosforas se layout
-  ☐ [offers] na ftiaksw to modal apo to api response kai na kanw hook events (raise, close, init)
+  ✔ [offers] na ftiaksw to class kai to modal tis prosforas se layout @done(21-08-05 16:13)
+  ✔ [offers] na ftiaksw to modal apo to api response kai na kanw hook events (raise, close, init) @done(21-08-05 16:13)
+  ☐ otan epilekseis ena proion kai meta to valeis sti prosfora. meta prepei na mporeis na to kaneis k edit apo ti prosfora. @nice to have
   ☐ [offers] na ftiaksw to modal pou erxete apo to proion. me tis prosarmoges pou prepei na ginoun sto product class
   ☐ [offers] na kanw ypologismo timis prosforas
   ☐ [offers] na kanw prosthiki prosforas sto kalathi (api call)
+  ☐ [offers] h prosfora isxyei apo - ews
+
+
 
 
 markets:
