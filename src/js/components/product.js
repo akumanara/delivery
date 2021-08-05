@@ -207,13 +207,21 @@ export default class extends EventEmitter {
       comments: this.modalElement.querySelector(
         '.product-modal__comments-textarea',
       ),
+      backToOffer: this.modalElement.querySelector(
+        '.product-modal__back-to-offer',
+      ),
+      closeBtn: this.modalElement.querySelector('.product-modal__close-btn'),
     };
 
     // Add event listeners
     if (!this.isInsideOffer) {
       this.DOM.plusBtn.addEventListener('click', this.addOneQty);
       this.DOM.minusBtn.addEventListener('click', this.removeOneQty);
+    } else {
+      this.DOM.backToOffer.addEventListener('click', this.closeModal);
     }
+
+    this.DOM.closeBtn.addEventListener('click', this.closeModal);
     this.DOM.addToCartBtn.addEventListener('click', this.addToCart);
 
     // Photos gallery
@@ -245,9 +253,6 @@ export default class extends EventEmitter {
     //   });
 
     // Bind close btn
-    this.modalElement
-      .querySelector('.product-modal__close-btn')
-      .addEventListener('click', this.closeModal);
 
     // setup Variant
     if (this.variant) {

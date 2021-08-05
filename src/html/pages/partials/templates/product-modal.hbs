@@ -4,6 +4,14 @@
     <!-- HEADER -->
     <div class="product-modal__header">
       <div class="product-modal__header-left">
+        {{#if isInsideOffer}}
+          <img
+            src="./images/icons/back-to-offer.svg"
+            alt=""
+            class="product-modal__back-to-offer"
+          />
+        {{/if}}
+
         <div class="product-modal__title">
           {{name}}
         </div>

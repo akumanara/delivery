@@ -1,8 +1,10 @@
-import { gsap, ScrollToPlugin, ScrollTrigger } from 'gsap/all';
+import { gsap, ScrollTrigger, ScrollToPlugin } from 'gsap/all';
 import Swiper from 'swiper';
+import autoBind from 'auto-bind';
 
 export default class {
   constructor() {
+    autoBind(this);
     // Scroll with categories swiper
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     this.DOM = {
@@ -48,7 +50,7 @@ export default class {
         trigger: section,
         start: `${this.options.scrolltrigger.triggerStart} ${this.options.scrolltrigger.viewportStart}`, // when the top of the trigger hits the top of the viewport
         end: `${this.options.scrolltrigger.triggerEnd} ${this.options.scrolltrigger.viewportEnd}`, // when the top of the trigger hits the top of the viewport
-        markers: false,
+        markers: true,
         onEnter: () => {
           this.enterCategory(index);
         },
@@ -67,14 +69,19 @@ export default class {
     // set click events for swiper items
     this.DOM.swiperItems.forEach((item, index) => {
       item.addEventListener('click', () => {
+        console.log('clicked');
         this.triggeringScrollEvents = false;
+
+        // window.scrollTo(this.DOM.sections[index].scrollTop, 0);
+
         this.setItem(index);
 
         gsap.to(window, {
           onComplete: () => {
+            console.log('onComplete');
             this.triggeringScrollEvents = true;
           },
-          duration: 0.3,
+          duration: 1,
           scrollTo: {
             y: this.DOM.sections[index],
             offsetY: this.options.offsetY,
@@ -86,13 +93,11 @@ export default class {
 
   enterCategory(index) {
     if (!this.triggeringScrollEvents) return;
-    // console.log(`entered ${index}`);
     this.setItem(index);
   }
 
   enterBackCategory(index) {
     if (!this.triggeringScrollEvents) return;
-    // console.log(`entered back ${index}`);
     this.setItem(index);
   }
 

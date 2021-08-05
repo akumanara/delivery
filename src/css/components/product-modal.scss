@@ -36,6 +36,7 @@ body {
     flex-shrink: 0;
   }
   &__header-left {
+    display: flex;
   }
   &__header-right {
     padding-left: 10px;
@@ -410,5 +411,9 @@ body {
       color: black;
       font-weight: 500;
     }
+  }
+  &__back-to-offer {
+    align-self: flex-start;
+    margin-right: 10px;
   }
 }

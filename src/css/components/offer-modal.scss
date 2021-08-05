@@ -3,14 +3,30 @@
     display: flex;
     align-items: center;
     padding: 14px 16px;
+    &--selected {
+      color: #5a88ff;
+    }
   }
   &__product-name {
     @include font-size-4;
   }
   &__product-icon {
-    padding-left: 8px;
     margin-left: auto;
+    position: relative;
   }
   &__product-icon-img {
+    padding-left: 8px;
+  }
+
+  &__product-icon-img-check {
+    padding-left: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  &__product--selected &__product-icon-img-check {
+    display: block;
   }
 }

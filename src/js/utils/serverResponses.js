@@ -1328,7 +1328,7 @@ const productData2 = {
 
 const productData3 = {
   id: '1184142',
-  name: 'Coca-Cola (500ml)',
+  name: 'Coca-Cola (500ml) Coca-Cola (500ml)',
   price: 1.2,
   comments: '',
   large_description:
@@ -2702,7 +2702,10 @@ const offer = {
       id: '111',
       title: 'Επίλεξε Αναψυκτικά',
       products: [
-        { id: '222', name: 'Coca-Cola (500ml)' },
+        {
+          id: '222',
+          name: 'Coca-Cola (500ml)',
+        },
         { id: '333', name: 'Coca-Cola Zero (500ml)' },
       ],
     },

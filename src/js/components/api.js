@@ -33,7 +33,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(productData3);
+          resolve(productData);
         }, 200),
       );
     }

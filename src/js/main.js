@@ -9,7 +9,7 @@ import Accordion from 'accordion-js';
 
 import PubSub from 'pubsub-js';
 import autosize from 'autosize';
-import { gsap, ScrollToPlugin } from 'gsap/all';
+import { gsap, ScrollToPlugin, ScrollTrigger } from 'gsap/all';
 import { showFPS, makeid, deliveryConsole, initSentry } from './utils/helpers';
 import StoreCatalog from './components/storeCatalog';
 import StoreList from './components/storeList';
@@ -42,7 +42,8 @@ class App {
     window.Alert = Alert;
     window.addEventListener('load', this.windowLoaded);
     autosize(document.querySelectorAll('textarea'));
-    gsap.registerPlugin(ScrollToPlugin);
+    // Scroll with categories swiper
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
     this.api = new API();
 
     // save the main app object for later use

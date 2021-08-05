@@ -102,6 +102,30 @@ export default class {
   }
 
   addedProduct(category, addedProductData) {
+    // Remove selected class from all products in the offer category
+    [...category.element.querySelectorAll('.offer-modal__product')].forEach(
+      (el) => {
+        el.classList.remove('offer-modal__product--selected');
+      },
+    );
+
+    // Find the added product element inside the offer category
+    const element = category.element.querySelector(
+      `.offer-modal__product[data-product-id="${addedProductData.productID}"]`,
+    );
+    // Add a selected class
+    element.classList.add('offer-modal__product--selected');
+
+    // Add selected product name to the accordion top and opened copy
+    category.element.querySelector(
+      '.product-modal__option-header-top',
+    ).innerHTML = addedProductData.productJSON.name;
+    category.element.querySelector(
+      '.product-modal__option-header-opened-copy',
+    ).innerHTML = addedProductData.productJSON.name;
+
+    this.closeGroupOptions(null);
+    console.log(element);
     console.log(category);
     console.log(addedProductData);
   }
