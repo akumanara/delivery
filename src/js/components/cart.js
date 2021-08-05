@@ -104,7 +104,9 @@ export default class {
     // Create products
     this.DOM.cartProducts.forEach((productElement) => {
       // Create the product object
-      const tmpProduct = new Product(productElement);
+      const tmpProduct = new Product({
+        productElement,
+      });
       this.products.push(tmpProduct);
 
       // Tag the product in the store menu with (in cart class)

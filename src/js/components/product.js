@@ -46,14 +46,24 @@ import texts from '../utils/texts';
 
 // * UI does not communicate when there is more than 1 min.
 // ** UI does not communicate how this works.
-
+// constructor options
+// product element
+// isInsideOffer
+// show price
 export default class extends EventEmitter {
-  constructor(productElement, isInsideOffer = false) {
+  constructor(
+    constructorData = {
+      productElement: null,
+      isInsideOffer: false,
+      hideCostIngredients: false,
+    },
+  ) {
     super();
     autoBind(this);
-    this.template = HandlebarsTemplate;
-    this.element = productElement;
-    this.isInsideOffer = isInsideOffer;
+
+    this.element = constructorData.productElement;
+    this.isInsideOffer = constructorData.isInsideOffer;
+
     this.api = new API();
     this.init();
   }
@@ -177,7 +187,7 @@ export default class extends EventEmitter {
   // Creates the modal from the template object
   createModal() {
     // create the template
-    const html = this.template(this.templateData);
+    const html = HandlebarsTemplate(this.templateData);
     document.body.insertAdjacentHTML('beforeend', html);
     this.modalElement = document.querySelector(
       `.${this.templateData.randomString}`,

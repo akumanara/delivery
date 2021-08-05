@@ -34,7 +34,10 @@ export default class {
 
   createProductsFromStoreCatalog() {
     this.DOM.products.forEach((productElement) => {
-      const tmpProduct = new Product(productElement);
+      const tmpProduct = new Product({
+        productElement,
+      });
+
       this.products.push(tmpProduct);
     });
   }

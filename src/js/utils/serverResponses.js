@@ -1327,7 +1327,7 @@ const productData2 = {
 };
 
 const productData3 = {
-  id: '1184142',
+  id: '223',
   name: 'Coca-Cola (500ml) Coca-Cola (500ml)',
   price: 1.2,
   comments: '',
@@ -2693,7 +2693,10 @@ const offer = {
   name: 'Μπίρα Kaiser κουτί 500ml 2+1 ΔΩΡΟ!',
   comments:
     'Με κάθε αγορά 2 τεμαχίων Μπίρα Kaiser κουτί 500ml κερδίζεις άλλο ένα δώρο',
-  offerType: 0,
+  offerType: 5,
+  discountAmount: 4.2,
+  discountPercentage: 10,
+  fixedPrice: 14.21,
   allowChargeIngredients: false,
   excludeChargeIngredientsfromOffer: false,
   images: ['./images/o1.jpg'],

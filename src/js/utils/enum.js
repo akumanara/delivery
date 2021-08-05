@@ -27,4 +27,40 @@ const timeslotTypes = {
   deliveryOnly: 'delivery_only',
   deliveryAndPickup: 'delivery_and_pickup',
 };
-export { deliveryTypes, paymentTypes, loginWithEmailResponses, timeslotTypes };
+
+// typoi prosforon
+// -----------------------------
+// -----------------------------
+// Έκπτωση με ποσοστό στο Φθηνότερο προϊόν
+// - to fthinotero proion tis prosforas exei ektposi me pososto
+
+// Έκπτωση με ποσοστό σε συγκεκριμένο προϊόν
+// - to ena apo ta proionta (sigekrimeno) tis prosforas exei ektposi me pososto
+
+// Σταθερή τιμή σε συγκεκριμένο προϊόν
+// - to ena apo ta proionta (sigekrimeno) tis prosforas exei fixed timi (h posostiaia h xrimatiki ekptosi)
+
+// Σταθέρη χρέωση προσφοράς
+// - oti proion kai na valeis i prosfora exei fixed timi
+
+// Έκπτωση χρηματική στο σύνολο της προσφοράς
+// - sto sinoliko kostos ton proionton ginete apply ena meion X euro
+
+// Έκπτωση με ποσοστό στο σύνολο της προσφοράς
+// - sto sinoliko kostos ton proionton ginete apply ena meion X pososto
+
+const offerTypes = {
+  discountOnCheapestProduct: 0,
+  discountOnSpecificProduct: 1,
+  fixedPriceOnSpecificProduct: 2,
+  fixedPriceOnOffer: 3,
+  discountAmountOnOffer: 4,
+  discountPercentageOnOffer: 5,
+};
+export {
+  offerTypes,
+  deliveryTypes,
+  paymentTypes,
+  loginWithEmailResponses,
+  timeslotTypes,
+};

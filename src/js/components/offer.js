@@ -1,11 +1,12 @@
 import PubSub from 'pubsub-js';
 import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
+import currency from 'currency.js';
 import { store } from '../utils/store';
 import API from './api';
 import { OfferHandlebarsTemplate } from '../utils/handlebarTemplate';
 import Product from './product';
-
+import { offerTypes } from '../utils/enum';
 // 1. Click sto offer
 // 2. API call on response
 // 3. kanw prepare data gia to handlebars template, ftiaxnw to modal kai to kanw append sto DOM
@@ -56,7 +57,10 @@ export default class {
   initModal() {
     const self = this;
 
-    // Setup event listeners
+    // Setup DOM and event listeners
+    this.DOM.addToCartBtn = this.DOM.modal.querySelector(
+      '.product-modal__add-to-cart-btn',
+    );
     this.DOM.modal
       .querySelector('.js-close')
       .addEventListener('click', this.removeModal);
@@ -68,11 +72,16 @@ export default class {
       category.element = this.DOM.modal.querySelector(
         `.product-modal__option[data-offer-category-id="${category.id}"]`,
       );
+      category.hasSelectedProduct = false;
+
       category.products.forEach((product) => {
         product.element = category.element.querySelector(
           `.offer-modal__product[data-product-id="${product.id}"]`,
         );
-        product.productObject = new Product(product.element, true);
+        product.productObject = new Product({
+          productElement: product.element,
+          isInsideOffer: true,
+        });
         product.productObject.on('added', (addedProductData) => {
           this.addedProduct(category, addedProductData);
         });
@@ -125,9 +134,12 @@ export default class {
     ).innerHTML = addedProductData.productJSON.name;
 
     this.closeGroupOptions(null);
-    console.log(element);
-    console.log(category);
-    console.log(addedProductData);
+
+    category.hasSelectedProduct = true;
+    category.selectedProductID = addedProductData.productID;
+
+    this.calculatePrice();
+    this.checkAddToCartFeasibility();
   }
 
   openModal() {
@@ -153,5 +165,91 @@ export default class {
         accordion.close(0);
       }
     });
+  }
+
+  disableAddToCart() {
+    this.isAddToCartEnabled = false;
+    this.DOM.addToCartBtn.classList.add(
+      'product-modal__add-to-cart-btn--disabled',
+    );
+  }
+
+  enableAddToCart() {
+    this.isAddToCartEnabled = true;
+    this.DOM.addToCartBtn.classList.remove(
+      'product-modal__add-to-cart-btn--disabled',
+    );
+  }
+
+  areAllProductsSelected() {
+    return this.categories.every((category) => category.hasSelectedProduct);
+  }
+
+  checkAddToCartFeasibility() {
+    let feasibility = this.areAllProductsSelected();
+
+    // An to address einai unsupported. to koupmi add to basket prepei na einai fake disabled kai onclick na sou vgazei B level alert.
+    if (!store.app.addressComponent.isSelectedAddressSupported) {
+      console.log('unsupported address');
+      feasibility = false;
+    }
+
+    if (feasibility) {
+      this.enableAddToCart();
+    } else {
+      this.disableAddToCart();
+    }
+  }
+
+  /* eslint-disable no-case-declarations */
+  calculatePrice() {
+    if (!this.areAllProductsSelected()) return;
+
+    switch (this.offerJSON.offerType) {
+      case offerTypes.discountAmountOnOffer:
+        console.log('discountAmountOnOffer Type');
+        this.price = this.calculateSumOfProductsPrice().calculatedPrice;
+        this.price = this.price.subtract(this.offerJSON.discountAmount);
+        break;
+
+      case offerTypes.discountPercentageOnOffer:
+        console.log('discountPercentageOnOffer Type');
+        this.price = this.calculateSumOfProductsPrice().calculatedPrice;
+        const percentageMultiplier = currency(100)
+          .subtract(this.offerJSON.discountPercentage)
+          .divide(100);
+        this.price = this.price.multiply(percentageMultiplier);
+        break;
+
+      case offerTypes.fixedPriceOnOffer:
+        console.log('fixedPriceOnOffer Type');
+        this.price = currency(this.offerJSON.fixedPrice);
+        break;
+
+      default:
+        console.log('default Type');
+        this.price = this.calculateSumOfProductsPrice().calculatedPrice;
+    }
+
+    console.log(`final offer price ${this.price}`);
+  }
+
+  calculateSumOfProductsPrice() {
+    const data = {};
+    data.selectedProducts = [];
+    let calculatedPrice = currency(0);
+    this.categories.forEach((category) => {
+      if (category.hasSelectedProduct && category.selectedProductID) {
+        const selectedProduct = category.products.find(
+          (product) => product.id === category.selectedProductID,
+        );
+        data.selectedProducts.push(selectedProduct);
+        calculatedPrice = calculatedPrice.add(
+          selectedProduct.productObject.price,
+        );
+      }
+    });
+    data.calculatedPrice = calculatedPrice;
+    return data;
   }
 }
