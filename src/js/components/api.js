@@ -50,6 +50,28 @@ export default class {
     });
   }
 
+  getProductInOffer(productID, offerID, offerCategoryID) {
+    // https://www.delivery.gr/api/menu/11360/product/881614?offerId=41&offerCategoryId=75
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(productData);
+        }, 200),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `api/menu/${store.context.storeID}/product/${productID}?offerId=${offerID}&offerCategoryId=${offerCategoryID}`;
+      this.instance
+        .get(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
   getOffer(offerID) {
     // TODO
     if (store.context.mode === 'development') {

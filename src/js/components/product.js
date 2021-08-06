@@ -55,7 +55,8 @@ export default class extends EventEmitter {
     constructorData = {
       productElement: null,
       isInsideOffer: false,
-      hideCostIngredients: false,
+      offerID: null,
+      offerCategoryID: null,
     },
   ) {
     super();
@@ -63,6 +64,8 @@ export default class extends EventEmitter {
 
     this.element = constructorData.productElement;
     this.isInsideOffer = constructorData.isInsideOffer;
+    this.offerID = constructorData.offerID;
+    this.offerCategoryID = constructorData.offerCategoryID;
 
     this.api = new API();
     this.init();
@@ -390,10 +393,13 @@ export default class extends EventEmitter {
 
     // For every group option we get its calculated price.
     // ===========================================================
+    let ingredientsPrice = currency(0);
     this.groupOptions.forEach((element) => {
       console.log(`Group option: ${element.name} Price: ${element.price}`);
-      calculatedPrice = calculatedPrice.add(element.price);
+      ingredientsPrice = ingredientsPrice.add(element.price);
     });
+    calculatedPrice = calculatedPrice.add(ingredientsPrice);
+    this.ingredientsPrice = ingredientsPrice;
     console.log(`Price per item: ${calculatedPrice}`);
 
     // Multiply per quantity
@@ -413,6 +419,7 @@ export default class extends EventEmitter {
       this.animatePrice();
     }
     this.price = calculatedPrice;
+    this.priceWithoutIngredients = this.price.subtract(this.ingredientsPrice);
   }
 
   animatePrice() {
@@ -505,35 +512,43 @@ export default class extends EventEmitter {
 
     PubSub.publish('show_loader');
     this.modalInitialized = false;
-    // fetch the html for the modal
-    await this.api
-      .getProduct(this.productID)
-      .then((result) => {
-        this.productJSON = result;
-        // Create all the objects belonging to the product
-        this.createProduct();
-        // Create the modal (template) from the data and init it
-        this.createModal();
-        // Init the modal
-        this.initModal();
-        // Preselect default ingredients
-        this.preselectDefaultIngredients();
-        // Set the modal initialized to true
-        this.modalInitialized = true;
-        // Check group options to see if we are ok with add to cart btn
-        this.checkAddToCartFeasibility();
-        // Calculate the final price
-        this.calculatePrice();
-      })
-      .catch((error) => {
-        console.log(error);
-        const a = new Alert({
-          text: texts.genericErrorMessage,
-          timeToKill: 5, // time until it closes
-          type: 'error', // or 'error'
-          showTimer: false, // show the timer or not
-        });
+
+    try {
+      let result;
+      if (!this.isInsideOffer) {
+        result = await this.api.getProduct(this.productID);
+      } else {
+        result = await this.api.getProductInOffer(
+          this.productID,
+          this.offerID,
+          this.offerCategoryID,
+        );
+      }
+
+      this.productJSON = result;
+      // Create all the objects belonging to the product
+      this.createProduct();
+      // Create the modal (template) from the data and init it
+      this.createModal();
+      // Init the modal
+      this.initModal();
+      // Preselect default ingredients
+      this.preselectDefaultIngredients();
+      // Set the modal initialized to true
+      this.modalInitialized = true;
+      // Check group options to see if we are ok with add to cart btn
+      this.checkAddToCartFeasibility();
+      // Calculate the final price
+      this.calculatePrice();
+    } catch (error) {
+      console.log(error);
+      const a = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
       });
+    }
 
     PubSub.publish('hide_loader');
   }

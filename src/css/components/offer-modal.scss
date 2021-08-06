@@ -29,4 +29,9 @@
   &__product--selected &__product-icon-img-check {
     display: block;
   }
+
+  &__starting-price {
+    display: flex;
+    padding: 10px 16px;
+  }
 }

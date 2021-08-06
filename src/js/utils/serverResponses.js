@@ -2690,15 +2690,19 @@ const pickupDates = {
 };
 
 const offer = {
+  id: '1598213',
   name: 'Μπίρα Kaiser κουτί 500ml 2+1 ΔΩΡΟ!',
   comments:
     'Με κάθε αγορά 2 τεμαχίων Μπίρα Kaiser κουτί 500ml κερδίζεις άλλο ένα δώρο',
+  // Offer discounts types info
   offerType: 3,
-  discountAmount: 4.2,
+  discountAmount: 2,
   discountPercentage: 10,
   fixedPrice: 14.21,
-  allowChargeIngredients: false,
-  excludeChargeIngredientsfromOffer: false,
+  fixedPriceForDiscountCategory: 30.0,
+  discountCategoryID: '112',
+  chargeIngredients: true,
+  hideChargeIngredients: false,
   images: ['./images/o1.jpg'],
   categories: [
     {
@@ -2709,7 +2713,6 @@ const offer = {
           id: '222',
           name: 'Coca-Cola (500ml)',
         },
-        { id: '333', name: 'Coca-Cola Zero (500ml)' },
       ],
     },
     {
