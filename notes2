@@ -1,0 +1,363 @@
+futurerestore -t ./blob.shsh2 -s ./extracted/Firmware/all_flash/sep-firmware.j317.RELEASE.im4p --no-baseband -p ./extracted/BuildManifest.plist -m ./extracted/BuildManifest.plist ./os.ipsw
+
+
+
+nonce generator
+0x582e2a87f158d746
+
+
+
+futurerestore -t ./blob.shsh2 --no-baseband -p ./extracted/BuildManifest.plist -m ./extracted/BuildManifest.plist -i ./os.ipsw
+
+
+
+
+
+
+overview of current stack and architecture
+pou tha einai to kanali epikoinwnias gia to dev team?
+pou tha einai to doc?
+
+slack - communication or calls
+walkthrough intro
+
+
+-bootstrap 3
+-libraries extra
+-scripts + minifications
+
+
+aura cms - php
+
+
+
+1. design
+2. front end
+3. server side
+
+oxi single page application
+define pio content tha ginei update se calls
+
+
+
+===================================================================================
+
+mobile application
+------------
+den pame full native
+einai to site responsive kai epilektika allazoume features (px select2)
+
+
+web
+----------------
+den einai spa
+tha exei stoixeia pwa kai tha ginei server side mazi me kapia calls
+
+
+==========
+
+
+lazy load stis eikones sto stores page / catalog page
+
+workflow
+---
+1. design
+2. me to kleisimo ton eikastikon kai prin ta piasw tha ta sizitame me tin omada tou delivery
+3. define api per page
+3. dummy front end (layout)
+4.
+
+======================
+DESIGN
+======================
+mobile first
+
+mobile 360xX
+tablet 768xX
+laptop/desktop 1366xX
+
+
+wolt - container 1200 + 30px padding left n right
+define some space utilities
+
+
+
+----------------
+normalize.css
+axios for http api calls
+sass for styles
+pure html (no template engine)
+select2
+
+list.js (asana)
+https://www.highcharts.com/
+
+----------
+agenda
+- browser support
+- suggested libraries and git repo for front end
+- starter
+- sentry (error tracking)
+- tech tour
+- api list
+- flag for app native (user agent go native)
+- bootstrap ()
+- starter show off
+================================
+
+address scripts (autocomplete)
+add to basket / plus minus basket
+
+================================
+9/3 calendar 16:00
+================================
+
+swiper - main idea for swipe elements
+categories on click and on scroll move like wolt / e-food native apps. (maybe try scrolltrigger from gsap)
+o xartis tha einai fixed othoni kai thelei na einai fixed stuff
+click sto xarti kai sta product tha einai modal (lightbox) (apo katw)
+
+-------------
+prototypes swiper
+-------------
+
+================================================================
+Gia Niko / Aggelo:
+- Elaxisti paragelia icon
+- Calendar icon
+- user profile edit address na figei?
+
+
+-----
+email login
+-
+1. login me email ginete api call sto mobile url me email kai password
+2. redirect to the page the popup was opened with session / cookie
+
+
+phone login
+-
+1. login me tilefono ginete api call sto mobile url me ton arithmo tilefonou
+2. vgenei to popup gia to otp kai ginete call sto url me to otp
+3. redirect to the page the popup was opened with session / cookie
+
+social login
+-
+1. login me social
+2. meta to succesfull login kanei redirect sto page me ta data apo fb/google
+- https://www.delivery.gr/login/process/facebook
+- https://www.delivery.gr/login/process/google
+3. redirect to the page the popup was opened with session / cookie
+
+
+Tha yparxei mia selida eite server side eite me js modal gia to verify ton stoixeion.
+tha valouyme log-out se afti ti selida?
+To pou htan o xristis prin kanei login tha apothikevete sto session (server side)
+
+
+nice to have: a level alert otan pas na kleisis to modal verify details gia na sou pei oti tha kaneis logout
+aposindesi sto verify details.
+
+===============================================================
+register otan vazei o user email pou den yparxei
+1. o xristis vazei email kai kanoume call me emaillogin
+2. to API apantaei user not exists. show new user
+3. deixnw to modal me to new user details
+4. o xristis pataei panw sto input phone
+5. grafei to noumero k pataei to btn
+6. ginete ena call sto api me to VERIFYNUMBER me to tilefono tou xristi pros eggrafi
+7. deixnoume to modal me to otp
+8. o xristis vazei to otp kai ginete ena call sto VERIFYNUMBER me to otp
+9. o xristis pataei sto koumpi dimiourgia logariasmou afou ola eiani ok
+10. ginete call sto register api REGISTER
+
+
+
+
+  filters
+  - delivery.gr deal
+  - 1+1
+  - 50% combo
+  - ekptosi katastimatos (store discount/offer)
+  - super deals
+
+
+  sort by
+  - Προεπιλεγμένη
+  - Απόσταση
+  - Χρόνος Παράδοσης
+  - Ελάχιστη
+  - Βαθμολογία
+
+
+
+DISABLE CORS
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
+
+
+otan exeis kanei epilogi region ti ginete otan pas se katastima?
+
+
+------------------
+
+otan den exeis diefthinsi kai eisai se delivery method kai pas na valeis proion:
+- sikosoume to add address notify modal.
+
+TIMESLOTS
+---------------
+otan i diefthinsi p exeis den eksipiretite apo to katastima kai eisai se delivery method:
+- on page load: na kokinisoume to selected address kai na valoume to keimeno.
+- on page load na vgaloume b level alert: den upostirizete to address.
+- on click se product modal add to cart btn:
+ na vgaloume b level alert: den upostirizete to address. to koumpi na einai fake disabled kai na patiete.
+
+
+
+Delivery only
+-----
+Sto apply na ginei call sto endpoint
+{
+storeID: storeid
+type delivery
+date 2020-03-01
+from: 10:00
+to: 12:00
+id: 1
+}
+ta data mesa sto modal tha ginoun render server side.
+on page load tha epilego to selected apo to context head
+
+
+Delivery and pickup
+-----
+Sto apply na ginei call sto endpoint
+
+{
+storeID: storeid
+type delivery
+date 2020-03-01
+from: 10:00
+to: 12:00
+id: 1
+type pickup
+date 2020-03-01
+from: 10:00
+to: 12:00
+id: 1
+}
+
+on page load
+ta data mesa sto modal tha ginoun render server side.
+on page load tha epilego to selected apo to context head
+me kathe epilogi delivery timeslot, ginete call sto api gia na parw ta pickup dates/timeslots
+
+api gia na parw ta pickup dates/timeslots
+---
+/delivery-slots
+{
+storeID: storeid
+date 2020-03-01
+from: 10:00
+to: 12:00
+id: 1
+}
+
+h front end / h back end.
+ama einai mono mia hmera na kanoume select gia na deiksoume tis imerominies ekarxis
+
+meeting: an einai mono mia mera kai einai unavailable ti kanoume?
+meeting: mporei to selected date na min yparxei pia gia na to deiksis katholou h na einai pisw apo unavailable day
+otan feroume to pickup na kanei scroll to container
+
+
+[bug] an dialekseis mera k wra k meta patiseis X kai meta to ksananoiksis.
+sto default timeslot tha prepei na deixni ti prwti diathesimi mera (pou exei toulaxiston ena timeslot) me ta timeslots tis.
+
+otan den exoume kanena available slot
+1. deixnoume a level alert ela pali avrio TBD
+2. accordion status - no available slots
+
+epitrepoume click se unavailable day
+
+
+
+----
+modal tobacco
+hasTobacco class on link
+an patisei NAI kanw set cookie kai paw sto href
+an patisei OXI apla kleinw to modal
+
+
+on page load
+an den yparxei cookie kai einai kapnika
+an patisei NAI kanw set cookie kai refresh to page
+an patisei OXI refresh to page
+
+
+modal alcohol
+hasAlcohol class on link
+an patisei btn kanw set cookie kai paw sto href
+
+on page load
+an den yparxei cookie kai einai alcohol
+an patisei btn kanw set cookie
+
+offers
+----------
+oi prosfores exoun mesa katigories proionton kai mesa oi kathe katigoria mporei na exei apo 1 ews X proionta na dialekseis.
+an einai mono product sti offer category ena to kanoume preselect.
+
+oi prosfores exoun onoma k description
+prepei na epilextoun ola ta proionta tis prosforas gia na mpei sto kalathi
+h prosfora mporei exei mono ena quantity
+
+emfanisi ilikon me timi. dinei ti dinatotita se ola ta proionta tis prosforas na prosthaeferesei o xristis ilika pou exoun timi.
+xrewsh ilikon me timi stin original timi tous xwris ekptosi.
+
+oi prosfores mporei na exoun 2 screens
+to proion mesa se prosfora den mporei na allaksei quantity
+
+
+
+typoi prosforon
+-----------------------------
+-----------------------------
+Έκπτωση με ποσοστό στο Φθηνότερο προϊόν
+- to fthinotero proion tis prosforas exei ektposi me pososto
+
+Έκπτωση με ποσοστό σε συγκεκριμένο προϊόν
+- h katigoria ton proionton (sigekrimeno) tis prosforas exei ektposi me pososto
+
+Σταθερή τιμή σε συγκεκριμένο προϊόν
+- h katigoria ton proionton (sigekrimeno) tis prosforas exei fixed timi (h posostiaia h xrimatiki ekptosi)
+
+Σταθέρη χρέωση προσφοράς
+- oti proion kai na valeis i prosfora exei fixed timi
+
+Έκπτωση χρηματική στο σύνολο της προσφοράς
+- sto sinoliko kostos ton proionton ginete apply ena meion X euro
+
+Έκπτωση με ποσοστό στο σύνολο της προσφοράς
+- sto sinoliko kostos ton proionton ginete apply ena meion X pososto
+
+API
+------------------
+xaraktiristika offer
+ta proionta tha ta xtipame me allo url (afto p exoume hdh twra)
+
+
+for meeting:
+
+
+
+-------------
+- yparxoun prosfores me timi dioti den epireazete i timi apo tis epiloges ton proionton.
+- tha deixoume timi mono afou valei ola ta products
+- ta tags tis prosforas tha fenonte sto blue lektiko
+
+
+tha exoume allo api gia offer products h to idio api me parameteres gia na afereseis tis paralages pou den upostirizoun sto proion tis prosforas
+den asxoloume se front end na kripso ta variants kai ta ingredients pou einai chargable mou to dinei etoimo o kostas.
+api gia ta offers products
+https://www.delivery.gr/api/menu/11360/product/881614?offerId=41&offerCategoryId=75
+

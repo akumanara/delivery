@@ -165,6 +165,38 @@ export default class {
     });
   }
 
+  addOfferToCart(data) {
+    // https://www.delivery.gr/delivery/cart/140/insert-offer
+    if (store.context.mode === 'development') {
+      return new Promise((resolve, reject) => {
+        const url = '/partials/cart-body.html';
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      });
+    }
+    return new Promise((resolve, reject) => {
+      const url = `delivery/cart/${store.context.storeID}/insert-offer`;
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
   changeCartTypeToPickup() {
     // https://www.delivery.gr/delivery/cart/3783/pickup
     if (store.context.mode === 'development') {

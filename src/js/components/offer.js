@@ -7,7 +7,7 @@ import API from './api';
 import { OfferHandlebarsTemplate } from '../utils/handlebarTemplate';
 import Product from './product';
 import { offerTypes } from '../utils/enum';
-import { currencyFormat } from '../utils/helpers';
+import { currencyFormat, getFormData } from '../utils/helpers';
 // 1. Click sto offer
 // 2. API call on response
 // 3. kanw prepare data gia to handlebars template, ftiaxnw to modal kai to kanw append sto DOM
@@ -48,9 +48,13 @@ export default class {
       images: this.offerJSON.images,
       comments: this.offerJSON.comments,
       categories: this.offerJSON.categories,
-      offerValidFrom: this.offerJSON.offerValidFrom,
-      offerValidTo: this.offerJSON.offerValidTo,
     };
+
+    if (this.offerJSON.offerValidFrom) {
+      this.templateData.offerValidFrom = this.offerJSON.offerValidFrom;
+      this.templateData.offerValidTo = this.offerJSON.offerValidTo;
+    }
+
     // create the template
     const html = OfferHandlebarsTemplate(this.templateData);
     document.body.insertAdjacentHTML('beforeend', html);
@@ -69,9 +73,14 @@ export default class {
     this.DOM.startingPriceContainer = this.DOM.modal.querySelector(
       '.offer-modal__starting-price',
     );
-    this.DOM.modal
-      .querySelector('.js-close')
-      .addEventListener('click', this.removeModal);
+    this.DOM.modal.close = this.DOM.modal.querySelector('.js-close');
+    this.DOM.modal.addToCart = this.DOM.modal.querySelector(
+      '.product-modal__add-to-cart-btn',
+    );
+
+    // Event listeners
+    this.DOM.modal.close.addEventListener('click', this.removeModal);
+    this.DOM.modal.addToCart.addEventListener('click', this.addToCart);
 
     // setup data and objects
     this.categories = this.offerJSON.categories;
@@ -300,6 +309,8 @@ export default class {
         const selectedProduct = category.products.find(
           (product) => product.id === category.selectedProductID,
         );
+        selectedProduct.offerCategoryID = category.id;
+
         data.selectedProducts.push(selectedProduct);
         calculatedPrice = calculatedPrice.add(
           selectedProduct.productObject.price,
@@ -460,5 +471,51 @@ export default class {
     }
 
     return this.price;
+  }
+
+  // Executes when we click add to cart button
+  async addToCart() {
+    // If we have unsupported address, show error alert
+    if (!store.app.addressComponent.isSelectedAddressSupported) {
+      store.app.addressComponent.showUnsupportedAddressAlert();
+    }
+    if (!this.isAddToCartEnabled) return;
+    console.log('adding to cart');
+    PubSub.publish('show_loader');
+
+    // Prepare data for API
+    const data = {
+      offer_id: this.offerJSON.id,
+      offer_type: this.offerJSON.offerType,
+      // offer_amount: '18',
+      // offer_discount: '0',
+    };
+
+    data.products = {};
+
+    // Add products to data
+    const startingPriceObject = this.calculateSumOfProductsPrice();
+    startingPriceObject.selectedProducts.forEach((product) => {
+      data.products[product.offerCategoryID] = {
+        serialize: JSON.stringify(
+          Object.fromEntries(product.productObject.getProductFormData()),
+        ),
+      };
+    });
+
+    console.log(data);
+
+    // Create form data from json
+    // const bodyFormData = getFormData(data);
+
+    // Submit product and get the new cart
+    const cart = await this.api.addOfferToCart(data);
+
+    // Publish the event to the cart with the data
+    PubSub.publish('cart_update', cart);
+
+    this.removeModal();
+
+    PubSub.publish('hide_loader');
   }
 }

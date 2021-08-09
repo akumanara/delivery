@@ -553,16 +553,7 @@ export default class extends EventEmitter {
     PubSub.publish('hide_loader');
   }
 
-  // Executes when we click add to cart button
-  async addToCart() {
-    // If we have unsupported address, show error alert
-    if (!store.app.addressComponent.isSelectedAddressSupported) {
-      store.app.addressComponent.showUnsupportedAddressAlert();
-    }
-    if (!this.isAddToCartEnabled) return;
-    console.log('adding to cart');
-    PubSub.publish('show_loader');
-
+  getProductFormData() {
     // Prepare data for API
     const data = {
       itemGroupId: this.productID,
@@ -594,6 +585,21 @@ export default class extends EventEmitter {
         bodyFormData.append(`ingredient[${key}]`, value);
       });
     });
+    return bodyFormData;
+  }
+
+  // Executes when we click add to cart button
+  async addToCart() {
+    // If we have unsupported address, show error alert
+    if (!store.app.addressComponent.isSelectedAddressSupported) {
+      store.app.addressComponent.showUnsupportedAddressAlert();
+    }
+    if (!this.isAddToCartEnabled) return;
+    console.log('adding to cart');
+    PubSub.publish('show_loader');
+
+    // Get the form data for this product
+    const bodyFormData = this.getProductFormData();
 
     if (this.isInsideOffer) {
       this.emit('added', this);
