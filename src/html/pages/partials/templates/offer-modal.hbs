@@ -48,6 +48,16 @@
           {{comments}}
         </div>
       {{/if}}
+      {{#if offerValidFrom}}
+        {{! VALID THROUGH }}
+        <div class="px-16 py-16 font-size-2 color-dark-gray">
+          Η προσφορά ισχύει απο
+          {{offerValidFrom}}
+          έως
+          {{offerValidTo}}
+        </div>
+
+      {{/if}}
       {{#each categories}}
         <!-- OFFER CATEGORY -->
         <div class="product-modal__option" data-offer-category-id="{{this.id}}">

@@ -2,7 +2,6 @@ import PubSub from 'pubsub-js';
 import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
 import currency from 'currency.js';
-import _ from 'lodash';
 import { store } from '../utils/store';
 import API from './api';
 import { OfferHandlebarsTemplate } from '../utils/handlebarTemplate';
@@ -49,6 +48,8 @@ export default class {
       images: this.offerJSON.images,
       comments: this.offerJSON.comments,
       categories: this.offerJSON.categories,
+      offerValidFrom: this.offerJSON.offerValidFrom,
+      offerValidTo: this.offerJSON.offerValidTo,
     };
     // create the template
     const html = OfferHandlebarsTemplate(this.templateData);

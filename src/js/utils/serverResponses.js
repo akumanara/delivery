@@ -2696,6 +2696,8 @@ const offer = {
     'Με κάθε αγορά 2 τεμαχίων Μπίρα Kaiser κουτί 500ml κερδίζεις άλλο ένα δώρο',
   // Offer discounts types info
   offerType: 3,
+  // offerValidFrom: '05-08-2021',
+  offerValidTo: '18-08-2021',
   discountAmount: 2,
   discountPercentage: 10,
   fixedPrice: 14.21,

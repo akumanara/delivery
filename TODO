@@ -20,11 +20,11 @@ store:
 offers:
   ✔ [offers] na ftiaksw to class kai to modal tis prosforas se layout @done(21-08-05 16:13)
   ✔ [offers] na ftiaksw to modal apo to api response kai na kanw hook events (raise, close, init) @done(21-08-05 16:13)
-  ☐ [offers] na ftiaksw to modal pou erxete apo to proion. me tis prosarmoges pou prepei na ginoun sto product class
-  ☐ [offers] na kanw ypologismo timis prosforas
+  ✔ [offers] na ftiaksw to modal pou erxete apo to proion. me tis prosarmoges pou prepei na ginoun sto product class @done(21-08-09 12:39)
+  ✔ [offers] na kanw ypologismo timis prosforas @done(21-08-09 12:39)
   ☐ [offers] na kanw prosthiki prosforas sto kalathi (api call)
-  ☐ [offers] h prosfora isxyei apo - ews
-  ☐ otan epilekseis ena proion kai meta to valeis sti prosfora. meta prepei na mporeis na to kaneis k edit apo ti prosfora. @nice to have
+  ✔ [offers] h prosfora isxyei apo - ews @done(21-08-09 12:39)
+  ☐ otan epilekseis ena proion kai meta to valeis sti prosfora. meta prepei na mporeis na to kaneis k edit apo ti prosfora. @postlaunch
 
 
 
