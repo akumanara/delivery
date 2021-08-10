@@ -6,6 +6,8 @@ import Swiper from 'swiper/bundle';
 import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
 // import Panzoom from 'panzoom';
+import Panzoom from '@panzoom/panzoom';
+
 import autosize from 'autosize';
 import Alert from './alert';
 import API from './api';
@@ -257,13 +259,43 @@ export default class extends EventEmitter {
     }
 
     // Zoom
-    // this.modalElement
-    //   .querySelectorAll('.product-modal__slide-img')
-    //   .forEach((img) => {
-    //     img.addEventListener('click', () => {
-    //       this.zoomMode(img);
-    //     });
-    //   });
+    this.modalElement
+      .querySelectorAll('.product-modal__slide-img')
+      .forEach((img) => {
+        img.deliveryIsZoomMode = false;
+        const panzoom = Panzoom(img, {
+          disablePan: true,
+        });
+        img.addEventListener('panzoomstart', (event) => {
+          console.log(event.detail); // => { x: 0, y: 0, scale: 1 }
+          if (event.detail.scale === 1) {
+            img.deliveryIsZoomMode = true;
+            img.classList.add('zoom-mode');
+          }
+        });
+
+        img.addEventListener('panzoomend', (event) => {
+          console.log(event.detail); // => { x: 0, y: 0, scale: 1 }
+          // if (event.detail.scale > 0.8 && event.detail.scal < 1.2) {
+          img.deliveryIsZoomMode = false;
+          img.classList.remove('zoom-mode');
+          panzoom.reset();
+
+          // }
+        });
+
+        // panzoom.pan(10, 10);
+        // panzoom.zoom(2, { animate: true });
+
+        // Panning and pinch zooming are bound automatically (unless disablePan is true).
+        // There are several available methods for zooming
+        // that can be bound on button clicks or mousewheel.
+        // button.addEventListener('click', panzoom.zoomIn);
+        // elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
+        // img.addEventListener('click', () => {
+        //   this.zoomMode(img);
+        // });
+      });
 
     // Bind close btn
 
