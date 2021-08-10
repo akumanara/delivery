@@ -7,7 +7,7 @@ import randomstring from 'randomstring';
 import autoBind from 'auto-bind';
 // import Panzoom from 'panzoom';
 import Panzoom from '@panzoom/panzoom';
-
+import Hammer from 'hammerjs';
 import autosize from 'autosize';
 import Alert from './alert';
 import API from './api';
@@ -263,6 +263,7 @@ export default class extends EventEmitter {
     }
 
     // Zoom
+
     this.modalElement
       .querySelectorAll('.product-modal__slide-img')
       .forEach((img) => {
@@ -320,15 +321,14 @@ export default class extends EventEmitter {
   }
 
   zoomImage(imgContainer) {
-    const self = this;
-
-    // 1. setup event listener on tap.
+    // 1. setup event listener on tap and on pinch (with hammerjs).
     // 2. on tap, create a clone image but with fixed viewport and on same position
     // 3. setup Panzoom on cloned image and zoom a bit for effect
     // 4. setup an event listener for zoom end or click and if the scale is smaller than 1, remove the cloned image and kill panzoom?
 
     // 1. setup event listener on tap.
-    imgContainer.addEventListener('click', () => {
+
+    const init = () => {
       // 2. on tap, create a clone image but with fixed viewport and on same position
       const clone = imgContainer.cloneNode(true);
       clone.classList.add('product-modal__zoom-image');
@@ -349,7 +349,7 @@ export default class extends EventEmitter {
         overflow: 'visible',
       });
       setTimeout(() => {
-        panzoom.zoom(1.25, { animate: true });
+        panzoom.zoom(1.5, { animate: true });
       }, 100);
 
       // 4. setup event listeners for destroy
@@ -383,7 +383,11 @@ export default class extends EventEmitter {
           destroy();
         }
       });
-    });
+    };
+    imgContainer.addEventListener('click', init);
+    const hammertime = new Hammer(imgContainer);
+    hammertime.get('pinch').set({ enable: true });
+    hammertime.on('pinchend', init);
   }
 
   // Executes when we click the plus button
