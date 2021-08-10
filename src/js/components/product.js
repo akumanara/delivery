@@ -226,6 +226,10 @@ export default class extends EventEmitter {
         '.product-modal__back-to-offer',
       ),
       closeBtn: this.modalElement.querySelector('.product-modal__close-btn'),
+      zoomImagesContainer: document.querySelector(
+        '.product-modal__zoom-images',
+      ),
+      mask: this.modalElement.querySelector('.product-modal__window-mask'),
     };
 
     // Add event listeners
@@ -262,39 +266,7 @@ export default class extends EventEmitter {
     this.modalElement
       .querySelectorAll('.product-modal__slide-img')
       .forEach((img) => {
-        img.deliveryIsZoomMode = false;
-        const panzoom = Panzoom(img, {
-          disablePan: true,
-        });
-        img.addEventListener('panzoomstart', (event) => {
-          console.log(event.detail); // => { x: 0, y: 0, scale: 1 }
-          if (event.detail.scale === 1) {
-            img.deliveryIsZoomMode = true;
-            img.classList.add('zoom-mode');
-          }
-        });
-
-        img.addEventListener('panzoomend', (event) => {
-          console.log(event.detail); // => { x: 0, y: 0, scale: 1 }
-          // if (event.detail.scale > 0.8 && event.detail.scal < 1.2) {
-          img.deliveryIsZoomMode = false;
-          img.classList.remove('zoom-mode');
-          panzoom.reset();
-
-          // }
-        });
-
-        // panzoom.pan(10, 10);
-        // panzoom.zoom(2, { animate: true });
-
-        // Panning and pinch zooming are bound automatically (unless disablePan is true).
-        // There are several available methods for zooming
-        // that can be bound on button clicks or mousewheel.
-        // button.addEventListener('click', panzoom.zoomIn);
-        // elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
-        // img.addEventListener('click', () => {
-        //   this.zoomMode(img);
-        // });
+        this.zoomImage(img.parentElement);
       });
 
     // Bind close btn
@@ -347,6 +319,73 @@ export default class extends EventEmitter {
     document.body.classList.add('hide-overflow');
   }
 
+  zoomImage(imgContainer) {
+    const self = this;
+
+    // 1. setup event listener on tap.
+    // 2. on tap, create a clone image but with fixed viewport and on same position
+    // 3. setup Panzoom on cloned image and zoom a bit for effect
+    // 4. setup an event listener for zoom end or click and if the scale is smaller than 1, remove the cloned image and kill panzoom?
+
+    // 1. setup event listener on tap.
+    imgContainer.addEventListener('click', () => {
+      // 2. on tap, create a clone image but with fixed viewport and on same position
+      const clone = imgContainer.cloneNode(true);
+      clone.classList.add('product-modal__zoom-image');
+      const viewportOffset = imgContainer.getBoundingClientRect();
+      const { top } = viewportOffset;
+      const { left } = viewportOffset;
+      clone.style.top = `${top}px`;
+      clone.style.left = `${left}px`;
+      this.DOM.zoomImagesContainer.appendChild(clone);
+      this.DOM.mask.classList.add('active');
+
+      // 3. setup Panzoom on cloned image and zoom a bit for effect
+      const cloneImg = clone.querySelector('img');
+      const panzoom = Panzoom(cloneImg, {
+        animate: true,
+        maxScale: 3,
+        step: 0.6,
+        overflow: 'visible',
+      });
+      setTimeout(() => {
+        panzoom.zoom(1.25, { animate: true });
+      }, 300);
+
+      // 4. setup event listeners for destroy
+      //  a. zoom end < 1
+      //  b. click on img
+      //  c. pan more than 200 on any direction
+      //  d. click on mask
+      const destroy = () => {
+        panzoom.reset({ animate: true });
+        this.DOM.mask.classList.remove('active');
+        panzoom.destroy();
+        clone.remove();
+        this.DOM.mask.removeEventListener('click', destroy);
+      };
+
+      this.DOM.mask.addEventListener('click', destroy);
+      cloneImg.addEventListener('click', destroy);
+      cloneImg.addEventListener('panzoomend', (event) => {
+        if (event.detail.scale < 1) {
+          destroy();
+        }
+      });
+
+      cloneImg.addEventListener('panzoompan', (event) => {
+        if (
+          event.detail.x < -200 ||
+          event.detail.x > 200 ||
+          event.detail.y < -200 ||
+          event.detail.y > 200
+        ) {
+          destroy();
+        }
+      });
+    });
+  }
+
   // Executes when we click the plus button
   addOneQty() {
     // User cant go to more than maxQty
@@ -355,10 +394,6 @@ export default class extends EventEmitter {
       this.productJSON.maxQuantity !== 0
     )
       return;
-    // TODO min qty
-    this.quantity += 1;
-    this.DOM.qty.innerText = this.quantity;
-    this.calculatePrice();
   }
 
   // Executes when we click the minus button
@@ -373,6 +408,7 @@ export default class extends EventEmitter {
   // Closed the modal and removes it from the body
   closeModal() {
     this.modalElement.remove();
+    this.DOM.zoomImagesContainer.remove();
     // show overflow
     document.body.classList.remove('hide-overflow');
     // if inside an offer, emit an event
