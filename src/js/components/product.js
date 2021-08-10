@@ -394,6 +394,9 @@ export default class extends EventEmitter {
       this.productJSON.maxQuantity !== 0
     )
       return;
+    this.quantity += 1;
+    this.DOM.qty.innerText = this.quantity;
+    this.calculatePrice();
   }
 
   // Executes when we click the minus button
