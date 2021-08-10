@@ -350,7 +350,7 @@ export default class extends EventEmitter {
       });
       setTimeout(() => {
         panzoom.zoom(1.25, { animate: true });
-      }, 300);
+      }, 100);
 
       // 4. setup event listeners for destroy
       //  a. zoom end < 1
