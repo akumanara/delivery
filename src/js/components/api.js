@@ -521,20 +521,22 @@ export default class {
     });
   }
 
-  // TODO
-  // =====================
-  // quickAddProduct(data) {
-  //   // https://www.delivery.gr/delivery/cart/3153/insert
-  //   const url = `${this.rootURL}/delivery/cart/${store.context.storeID}/insert`;
-  //   axios
-  //     .post(url, data, {})
-  //     .then((response) => {
-  //       console.log(response);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
+  quickAddProduct(data) {
+    // https://www.delivery.gr/delivery/cart/3153/insert
+    // if (store.context.mode === 'development') {
+    return new Promise((resolve, reject) => {
+      const url = '/partials/cart-body.html';
+      axios
+        .get(url)
+        .then((response) => {
+          setTimeout(() => resolve(response.data), 500);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+    // }
+  }
 
   addAddress(data) {
     // https://www.delivery.gr/delivery/find/shops-by-location

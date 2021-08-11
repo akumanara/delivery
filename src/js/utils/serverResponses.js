@@ -14,11 +14,15 @@ const productData = {
   isOutOfStock: false,
   images: ['./images/b1.jpg', './images/b2.jpg', './images/b3.jpg'],
   minQuantity: 0,
-  maxQuantity: 3,
+  maxQuantity: 23,
   // old
   id: '1411211',
   name: 'Margherita',
   price: 5.95,
+  uomstep: 0.115,
+  // uom: 'KG',
+  // uom: 'TMX',
+  uom: 'LT',
   comments: 'σάλτσα ντομάτας & mix τυριών (γκούντα & μοτσαρέλα)',
   category: { id: '142437', name: 'Pizza ' },
   variants: [

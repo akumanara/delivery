@@ -13,7 +13,13 @@ import Alert from './alert';
 import API from './api';
 import Variant from './productVariant';
 import GroupOption from './productGroupOption';
-import { animateCSS, currencyFormat, has, getFormData } from '../utils/helpers';
+import {
+  getUOMText,
+  animateCSS,
+  currencyFormat,
+  has,
+  getFormData,
+} from '../utils/helpers';
 import { HandlebarsTemplate } from '../utils/handlebarTemplate';
 import { store } from '../utils/store';
 import texts from '../utils/texts';
@@ -91,6 +97,13 @@ export default class extends EventEmitter {
 
   setupStoreMenuProduct() {
     this.element.addEventListener('click', this.raiseModal);
+    // check if it is a market product and has quick actions
+    const quickAddElement = this.element.querySelector(
+      '.market-menu__product-quick-add-btn',
+    );
+    if (quickAddElement) {
+      quickAddElement.addEventListener('click', this.quickAdd);
+    }
   }
 
   setupCartProduct() {
@@ -263,7 +276,6 @@ export default class extends EventEmitter {
     }
 
     // Zoom
-
     this.modalElement
       .querySelectorAll('.product-modal__slide-img')
       .forEach((img) => {
@@ -315,6 +327,9 @@ export default class extends EventEmitter {
     if (this.variant) {
       this.variant.preselectDefaultVariant();
     }
+
+    // show quantity with regards to uom and uom step
+    this.displayQuantity();
 
     // hide overflow
     document.body.classList.add('hide-overflow');
@@ -399,7 +414,7 @@ export default class extends EventEmitter {
     )
       return;
     this.quantity += 1;
-    this.DOM.qty.innerText = this.quantity;
+    this.displayQuantity();
     this.calculatePrice();
   }
 
@@ -408,7 +423,7 @@ export default class extends EventEmitter {
     // User cant go to 0 qty
     if (this.quantity === 1) return;
     this.quantity -= 1;
-    this.DOM.qty.innerText = this.quantity;
+    this.displayQuantity();
     this.calculatePrice();
   }
 
@@ -495,6 +510,11 @@ export default class extends EventEmitter {
     }
     this.price = calculatedPrice;
     this.priceWithoutIngredients = this.price.subtract(this.ingredientsPrice);
+
+    // tODO remove
+    // console.log(
+    //   getUOMText(this.quantity, this.productJSON.uom, this.productJSON.uomstep),
+    // );
   }
 
   animatePrice() {
@@ -560,7 +580,7 @@ export default class extends EventEmitter {
     console.log('preselecting values');
     // Qty
     this.quantity = this.productJSON.quantity;
-    this.DOM.qty.innerText = this.quantity;
+    this.displayQuantity();
     // variant if exists
     if (this.variant) {
       this.variant.preselectCartValue();
@@ -571,6 +591,16 @@ export default class extends EventEmitter {
     });
 
     // this.calculatePrice();
+  }
+
+  displayQuantity() {
+    if (this.DOM.qty) {
+      this.DOM.qty.innerHTML = getUOMText(
+        this.quantity,
+        this.productJSON.uom,
+        this.productJSON.uomstep,
+      );
+    }
   }
 
   // STORE MENU API FUNCTIONS
@@ -689,19 +719,22 @@ export default class extends EventEmitter {
     PubSub.publish('hide_loader');
   }
 
-  // async quickAdd() {
-  //   PubSub.publish('show_loader');
-  //   const data = {
-  //     itemGroupId: this.productID,
-  //     itemQuantity: 1,
-  //   };
+  async quickAdd(event) {
+    event.stopPropagation();
 
-  //   // after we call the api we get the updated cart
-  //   const cart = await this.api.quickAddProduct(this.data);
+    PubSub.publish('show_loader');
+    const data = {
+      itemGroupId: this.productID,
+      itemQuantity: 1,
+    };
 
-  //   // TODO update the cart
-  //   PubSub.publish('hide_loader');
-  // }
+    // after we call the api we get the updated cart
+    const cart = await this.api.quickAddProduct(data);
+
+    // Publish the event to the cart with the data
+    PubSub.publish('cart_update', cart);
+    PubSub.publish('hide_loader');
+  }
 
   // CART API FUNCTIONS
   // ==============================================================================================

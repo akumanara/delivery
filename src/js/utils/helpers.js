@@ -106,6 +106,31 @@ const getURLSearchData = (object) => {
   return params;
 };
 
+const getUOMText = (value, uom, uomStep) => {
+  if (uom === 'TMX') {
+    return `${value}`;
+  }
+  // If KG or LT we need...
+  let calculatedValue = currency(value, { precision: 4 }).multiply(uomStep);
+  if (uom === 'KG') {
+    // multiply value with uom step
+    if (calculatedValue >= 1)
+      return `${calculatedValue.value.toString().replace('.', ',')}kg`;
+
+    calculatedValue = calculatedValue.multiply(1000);
+    return `${calculatedValue.value.toString().replace('.', ',')}g`;
+  }
+  if (uom === 'LT') {
+    if (calculatedValue >= 1)
+      return `${calculatedValue.value.toString().replace('.', ',')}l`;
+
+    calculatedValue = calculatedValue.multiply(1000);
+    return `${calculatedValue.value.toString().replace('.', ',')}ml`;
+  }
+
+  return `${value}`;
+};
+
 const initSentry = () => {
   console.log(`MODE IS  ${MODE}`);
   console.log(`RELEASE IS  ${VERSION}`);
@@ -204,6 +229,7 @@ const validatePhone = (phone) => {
 };
 
 export {
+  getUOMText,
   validatePhone,
   validateEmail,
   formatTimer,
