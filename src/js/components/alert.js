@@ -90,7 +90,11 @@ export default class {
       },
     });
     // added a small delay for aesthetics
-    tl.to(this.DOM, { autoAlpha: 0, y: -10, duration: 0.3 }, '+=.1');
+    tl.to(
+      this.DOM,
+      { autoAlpha: 0, y: -10, height: 0, paddingBottom: 0, duration: 0.3 },
+      '+=.1',
+    );
   }
 
   removeDom() {
@@ -103,7 +107,14 @@ export default class {
 
   addDom() {
     const html = this.template();
-    document.body.insertAdjacentHTML('beforeend', html);
+    let container = document.querySelector('.alert__container');
+    if (!container) {
+      container = document.createElement('div');
+      container.className = 'alert__container';
+      document.body.appendChild(container);
+    }
+
+    container.insertAdjacentHTML('beforeend', html);
     // document.querySelector('.alerts').insertAdjacentHTML('beforeend', html);
     this.DOM = document.querySelector(`.${this.randomString}`);
     this.DOM.alert = this;
