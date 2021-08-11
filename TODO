@@ -1,30 +1,16 @@
 general:
   ☐ [general] svg icon css for dark/light - @misa dependency (duplicate svg icons?)
-  ☐ [general] select styling - (add address validation modal)
   ☐ [general] sentry remove cc data before sending @critical;
-  ☐ [general] mixanismos gia multiple alerts. (stacked / fixed /etc)
   ☐ [general] landing page mechanism for address and vertical selection
 
 connect/login:
   ☐ missing data modal
   ☐ notification modal
   ☐ forgot password action
-  ☐ meta tin allagi password na to pame sto login
 
 store:
-  ☐ [store] Offers
-  ☐ [store] countdown gia kleisimo katastimatos
-
-
-
-offers:
-  ✔ [offers] na ftiaksw to class kai to modal tis prosforas se layout @done(21-08-05 16:13)
-  ✔ [offers] na ftiaksw to modal apo to api response kai na kanw hook events (raise, close, init) @done(21-08-05 16:13)
-  ✔ [offers] na ftiaksw to modal pou erxete apo to proion. me tis prosarmoges pou prepei na ginoun sto product class @done(21-08-09 12:39)
-  ✔ [offers] na kanw ypologismo timis prosforas @done(21-08-09 12:39)
-  ☐ [offers] na kanw prosthiki prosforas sto kalathi (api call)
-  ✔ [offers] h prosfora isxyei apo - ews @done(21-08-09 12:39)
-  ☐ otan epilekseis ena proion kai meta to valeis sti prosfora. meta prepei na mporeis na to kaneis k edit apo ti prosfora. @postlaunch
+  ✔ [store] Offers @done(21-08-11 13:53)
+  ☐ [store] countdown gia kleisimo katastimatos @low
 
 
 
@@ -36,8 +22,7 @@ markets:
   ☐ prosfores page - load more - status ton products opos erxonte
 
 product modal:
-  ☐ [product_modal] hide/view large html description
-  ☐ [product_modal] zoom on photos
+  ☐ [product_modal] hide/view large html description @low
 
 for delivery:
   ☐ [store] sakoules sto kato simeio (na dei o kostas an gintete server side i na to kanw egw.) @delivery
@@ -69,14 +54,25 @@ bugs:
 
 post launch:
   ☐ [store] previous orders - add previous order to basket modal @post-launch
+  ☐ otan epilekseis ena proion kai meta to valeis sti prosfora. meta prepei na mporeis na to kaneis k edit apo ti prosfora. @postlaunch
 
 doing:
 
 
 meeting:
 
-☐ Done:
-✔ [store] modal tobacco @done(21-08-02 16:33)
+Done:
+  ✔ [product_modal] zoom on photos @done(21-08-11 13:57)
+  ✔ meta tin allagi password na to pame sto login @done(21-08-11 14:00)
+  ✔ [offers] na ftiaksw to class kai to modal tis prosforas se layout @done(21-08-05 16:13)
+  ✔ [offers] na ftiaksw to modal apo to api response kai na kanw hook events (raise, close, init) @done(21-08-05 16:13)
+  ✔ [offers] na ftiaksw to modal pou erxete apo to proion. me tis prosarmoges pou prepei na ginoun sto product class @done(21-08-09 12:39)
+  ✔ [offers] na kanw ypologismo timis prosforas @done(21-08-09 12:39)
+  ✔ [offers] na kanw prosthiki prosforas sto kalathi (api call) @done(21-08-11 13:53)
+  ✔ [offers] h prosfora isxyei apo - ews @done(21-08-09 12:39)
+  ✔ [general] select styling - (add address validation modal) @done(21-08-11 13:54)
+  ✔ [general] mixanismos gia multiple alerts. (stacked / fixed /etc) @done(21-08-11 13:54)
+  ✔ [store] modal tobacco @done(21-08-02 16:33)
   ✔ [store] modal alcohol @done(21-08-02 16:33)
   ✔ [store] timeslots @done(21-08-02 14:14)
   ✔ [timeslots] [delivery] preselect default values @done(21-08-02 11:59)

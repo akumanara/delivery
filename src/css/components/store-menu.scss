@@ -35,6 +35,7 @@
   &__slider-item-copy {
     @include font-size-4;
 
+    user-select: none;
     font-weight: 700;
   }
 
