@@ -110,8 +110,8 @@ const getUOMText = (value, uom, uomStep) => {
   if (uom === 'TMX') {
     return `${value}`;
   }
-  // If KG or LT we need...
-  let calculatedValue = currency(value, { precision: 4 }).multiply(uomStep);
+  // If KG or LT we need to calculate more
+  let calculatedValue = currency(value, { precision: 3 }).multiply(uomStep);
   if (uom === 'KG') {
     // multiply value with uom step
     if (calculatedValue >= 1)
