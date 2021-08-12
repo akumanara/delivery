@@ -117,12 +117,6 @@
     margin-top: auto;
     padding: 8px;
     padding-top: 0;
-    // margin-top: 14px;
-    // align-self: flex-end;
-    // outline: 1px solid red;
-    // background-color: #f6f7f9;
-    // padding: 14px 16px;
-    // border-radius: 8px;
   }
 
   &__product-quick-add-btn {
@@ -132,6 +126,9 @@
     display: flex;
     align-items: center;
     font-weight: 700;
+    .in-cart & {
+      display: none;
+    }
   }
 
   &__product-change-qty-btn {
@@ -139,11 +136,13 @@
     background-color: #f6f7f9;
     padding: 14px 16px;
     border-radius: 8px;
-    display: flex;
     font-weight: 700;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    .in-cart & {
+      display: flex;
+    }
   }
 
   &__product-plus-trigger {

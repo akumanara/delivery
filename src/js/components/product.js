@@ -75,6 +75,9 @@ export default class extends EventEmitter {
     this.offerID = constructorData.offerID;
     this.offerCategoryID = constructorData.offerCategoryID;
 
+    // Keep a reference to this object inside the product element
+    this.element.deliveryProduct = this;
+
     this.api = new API();
     this.init();
   }
@@ -97,12 +100,25 @@ export default class extends EventEmitter {
 
   setupStoreMenuProduct() {
     this.element.addEventListener('click', this.raiseModal);
+
     // check if it is a market product and has quick actions
+    // ==============
     const quickAddElement = this.element.querySelector(
-      '.market-menu__product-quick-add-btn',
+      '.market-menu__product-plus-trigger',
     );
     if (quickAddElement) {
+      this.isMarketProduct = true;
+    } else {
+      this.isMarketProduct = false;
+    }
+
+    if (this.isMarketProduct) {
+      const quickRemoveElement = this.element.querySelector(
+        '.market-menu__product-minus-trigger',
+      );
       quickAddElement.addEventListener('click', this.quickAdd);
+      quickRemoveElement.addEventListener('click', this.quickRemove);
+      this.marketQuantity = this.element.querySelector('.js-qty');
     }
   }
 
@@ -138,8 +154,15 @@ export default class extends EventEmitter {
       this.quantity = this.productJSON.minQuantity;
     }
 
+    if (this.cartQuantity) {
+      this.quantity = this.cartQuantity;
+    }
+
     this.basePrice = this.productJSON.price;
     this.isAddToCartEnabled = true;
+
+    this.uom = this.productJSON.uom;
+    this.uomstep = this.productJSON.uomstep;
 
     // Create the variant if exists
     // ===========================================================
@@ -427,6 +450,29 @@ export default class extends EventEmitter {
     this.calculatePrice();
   }
 
+  setInCart(cartData) {
+    this.element.classList.add('in-cart');
+    this.cartQuantity = Number.parseInt(cartData.quantity);
+    this.uom = cartData.uom;
+    this.uomstep = Number.parseFloat(cartData.uomstep);
+
+    this.displayMarketQuantity();
+  }
+
+  removeInCart() {
+    this.element.classList.remove('in-cart');
+    this.cartQuantity = null;
+    this.uom = null;
+    this.uomstep = null;
+  }
+
+  displayMarketQuantity() {
+    const uomText = getUOMText(this.cartQuantity, this.uom, this.uomstep);
+    if (this.marketQuantity) {
+      this.marketQuantity.innerHTML = uomText;
+    }
+  }
+
   // Closed the modal and removes it from the body
   closeModal() {
     this.modalElement.remove();
@@ -510,11 +556,6 @@ export default class extends EventEmitter {
     }
     this.price = calculatedPrice;
     this.priceWithoutIngredients = this.price.subtract(this.ingredientsPrice);
-
-    // tODO remove
-    // console.log(
-    //   getUOMText(this.quantity, this.productJSON.uom, this.productJSON.uomstep),
-    // );
   }
 
   animatePrice() {
@@ -594,12 +635,9 @@ export default class extends EventEmitter {
   }
 
   displayQuantity() {
+    const uomText = getUOMText(this.quantity, this.uom, this.uomstep);
     if (this.DOM.qty) {
-      this.DOM.qty.innerHTML = getUOMText(
-        this.quantity,
-        this.productJSON.uom,
-        this.productJSON.uomstep,
-      );
+      this.DOM.qty.innerHTML = uomText;
     }
   }
 
@@ -730,6 +768,23 @@ export default class extends EventEmitter {
 
     // after we call the api we get the updated cart
     const cart = await this.api.quickAddProduct(data);
+
+    // Publish the event to the cart with the data
+    PubSub.publish('cart_update', cart);
+    PubSub.publish('hide_loader');
+  }
+
+  async quickRemove(event) {
+    event.stopPropagation();
+
+    PubSub.publish('show_loader');
+    const data = {
+      itemGroupId: this.productID,
+      itemQuantity: 1,
+    };
+
+    // after we call the api we get the updated cart
+    const cart = await this.api.quickRemoveProduct(data);
 
     // Publish the event to the cart with the data
     PubSub.publish('cart_update', cart);

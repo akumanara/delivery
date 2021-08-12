@@ -9,10 +9,10 @@ connect/login:
   ☐ forgot password action
 
 store:
-  ✔ [store] Offers @done(21-08-11 13:53)
   ☐ [store] countdown gia kleisimo katastimatos @low
 
 
+Thank you page:
 
 
 markets:
@@ -21,8 +21,7 @@ markets:
   ☐ Categories modal
   ☐ prosfores page - load more - status ton products opos erxonte
 
-product modal:
-  ☐ [product_modal] hide/view large html description @low
+
 
 for delivery:
   ☐ [store] sakoules sto kato simeio (na dei o kostas an gintete server side i na to kanw egw.) @delivery
@@ -42,6 +41,7 @@ address:
   ☐ scroll sto anoixto viewport me scrollable ti lista
 
 
+
 bugs:
   ☐ [bug] an kaneis click add to cart prin erthei ti prwti fora to cart. skaei.
   ☐ [bug] autosize na ginei update an exei hdh content mesa
@@ -56,12 +56,16 @@ post launch:
   ☐ [store] previous orders - add previous order to basket modal @post-launch
   ☐ otan epilekseis ena proion kai meta to valeis sti prosfora. meta prepei na mporeis na to kaneis k edit apo ti prosfora. @postlaunch
 
+  product modal:
+    ☐ [product_modal] hide/view large html description @low
+
 doing:
 
 
 meeting:
 
 Done:
+  ✔ [store] Offers @done(21-08-11 13:53)
   ✔ [product_modal] zoom on photos @done(21-08-11 13:57)
   ✔ meta tin allagi password na to pame sto login @done(21-08-11 14:00)
   ✔ [offers] na ftiaksw to class kai to modal tis prosforas se layout @done(21-08-05 16:13)

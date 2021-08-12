@@ -109,8 +109,13 @@ export default class {
       });
       this.products.push(tmpProduct);
 
-      // Tag the product in the store menu with (in cart class)
-      store.app.productList.addInCartStatusToProduct(tmpProduct.productID);
+      // Tag the product in the store menu with (in cart class) and set its cart qty
+      store.app.productList.addCartDataToProduct(
+        tmpProduct.productID,
+        productElement.dataset.productQty,
+        productElement.dataset.productUom,
+        productElement.dataset.productUomstep,
+      );
     });
 
     // Update the show cart button with the summary

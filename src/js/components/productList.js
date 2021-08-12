@@ -42,18 +42,20 @@ export default class {
     });
   }
 
+  // todo rework
   removeInCartStatusFromAllProducts() {
     this.DOM.products.forEach((productElement) => {
-      productElement.classList.remove('store-menu__product--in-cart');
+      productElement.deliveryProduct.removeInCart();
     });
   }
 
-  addInCartStatusToProduct(productID) {
+  addCartDataToProduct(productID, quantity, uom, uomstep) {
     const element = document.querySelector(
-      `.store-menu__product[data-product-id='${productID}']`,
+      `.js-product[data-product-id='${productID}']`,
     );
     if (element) {
-      element.classList.add('store-menu__product--in-cart');
+      const data = { quantity, uom, uomstep };
+      element.deliveryProduct.setInCart(data);
     }
   }
 }
