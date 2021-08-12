@@ -595,7 +595,10 @@ export default class extends EventEmitter {
     let feasibility = !this.groupOptions.some((el) => !el.cartFeasibility);
 
     // An to address einai unsupported. to koupmi add to basket prepei na einai fake disabled kai onclick na sou vgazei B level alert.
-    if (!store.app.addressComponent.isSelectedAddressSupported) {
+    if (
+      !store.app.addressComponent.isSelectedAddressSupported &&
+      store.app.deliveryType.deliveryMethod === deliveryTypes.DELIVERY
+    ) {
       console.log('unsupported address');
       feasibility = false;
     }
@@ -741,7 +744,7 @@ export default class extends EventEmitter {
     // If we have unsupported address, show error alert
     if (
       !store.app.addressComponent.isSelectedAddressSupported &&
-      store.app.deliveryType === deliveryTypes.DELIVERY
+      store.app.deliveryType.deliveryMethod === deliveryTypes.DELIVERY
     ) {
       store.app.addressComponent.showUnsupportedAddressAlert();
     }
