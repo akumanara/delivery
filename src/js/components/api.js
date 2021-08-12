@@ -729,10 +729,10 @@ export default class {
     }
     return new Promise((resolve, reject) => {
       const url = `reset-password`;
-      const data = getFormData({
+      const data = {
         csrfToken: store.context.csrfToken,
         email,
-      });
+      };
       this.instance
         .post(url, data, {
           headers: {
