@@ -353,7 +353,7 @@ export default class {
       const url = `user/favorite-shop`;
       const data = getFormData({
         csrfToken: store.context.csrfToken,
-        action: true,
+        action: 0,
         shop_id: store.context.storeID,
       });
       this.instance
@@ -387,7 +387,7 @@ export default class {
       const url = `user/favorite-shop`;
       const data = getFormData({
         csrfToken: store.context.csrfToken,
-        action: false,
+        action: true,
         shop_id: store.context.storeID,
       });
       this.instance
