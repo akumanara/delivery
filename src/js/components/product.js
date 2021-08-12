@@ -23,6 +23,7 @@ import {
 import { HandlebarsTemplate } from '../utils/handlebarTemplate';
 import { store } from '../utils/store';
 import texts from '../utils/texts';
+import { deliveryTypes } from '../utils/enum';
 
 // Rules and Notes
 // ===========================================
@@ -738,7 +739,10 @@ export default class extends EventEmitter {
   // Executes when we click add to cart button
   async addToCart() {
     // If we have unsupported address, show error alert
-    if (!store.app.addressComponent.isSelectedAddressSupported) {
+    if (
+      !store.app.addressComponent.isSelectedAddressSupported &&
+      store.app.deliveryType === deliveryTypes.DELIVERY
+    ) {
       store.app.addressComponent.showUnsupportedAddressAlert();
     }
     if (!this.isAddToCartEnabled) return;

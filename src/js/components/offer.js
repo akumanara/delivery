@@ -6,8 +6,9 @@ import { store } from '../utils/store';
 import API from './api';
 import { OfferHandlebarsTemplate } from '../utils/handlebarTemplate';
 import Product from './product';
-import { offerTypes } from '../utils/enum';
+import { offerTypes, deliveryTypes } from '../utils/enum';
 import { currencyFormat, getFormData } from '../utils/helpers';
+
 // 1. Click sto offer
 // 2. API call on response
 // 3. kanw prepare data gia to handlebars template, ftiaxnw to modal kai to kanw append sto DOM
@@ -476,7 +477,10 @@ export default class {
   // Executes when we click add to cart button
   async addToCart() {
     // If we have unsupported address, show error alert
-    if (!store.app.addressComponent.isSelectedAddressSupported) {
+    if (
+      !store.app.addressComponent.isSelectedAddressSupported &&
+      store.app.deliveryType === deliveryTypes.DELIVERY
+    ) {
       store.app.addressComponent.showUnsupportedAddressAlert();
     }
     if (!this.isAddToCartEnabled) return;
