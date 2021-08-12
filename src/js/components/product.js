@@ -154,7 +154,7 @@ export default class extends EventEmitter {
       this.quantity = this.productJSON.minQuantity;
     }
 
-    if (this.cartQuantity) {
+    if (this.cartQuantity && this.isMarketProduct) {
       this.quantity = this.cartQuantity;
     }
 
@@ -220,6 +220,7 @@ export default class extends EventEmitter {
       basePrice: this.basePrice,
       storeName: store.context.storeName,
       showOptionsDiv,
+      isMarketProduct: this.isMarketProduct,
     };
 
     if (this.isInsideOffer) this.templateData.isInsideOffer = true;
@@ -452,12 +453,14 @@ export default class extends EventEmitter {
 
   setInCart(cartData) {
     this.element.classList.add('in-cart');
-    this.cartQuantity = Number.parseInt(cartData.quantity);
-    this.uom = cartData.uom;
-    this.uomstep = Number.parseFloat(cartData.uomstep);
-    this.cartIndex = Number.parseInt(cartData.cartIndex);
 
-    this.displayMarketQuantity();
+    if (this.isMarketProduct) {
+      this.cartQuantity = Number.parseInt(cartData.quantity);
+      this.uom = cartData.uom;
+      this.uomstep = Number.parseFloat(cartData.uomstep);
+      this.cartIndex = Number.parseInt(cartData.cartIndex);
+      this.displayMarketQuantity();
+    }
   }
 
   removeInCart() {

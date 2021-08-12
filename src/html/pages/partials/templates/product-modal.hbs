@@ -203,8 +203,8 @@
           {{/each}}
         </div>
       {{/if}}
-      <!-- LONG DESCRIPTION -->
       {{#if large_description}}
+        <!-- LONG DESCRIPTION -->
         <div class="product-modal__long-description">
           <!-- TITLE -->
           <div class="product-modal__long-description-title-container">
@@ -228,30 +228,32 @@
           </div>
         </div>
       {{/if}}
-      <!-- USER COMMENTS -->
-      <div class="product-modal__comments">
-        <!-- TITLE -->
-        <div class="product-modal__comments-title-container">
-          <img
-            src="./images/icons/comment.svg"
-            alt=""
-            class="product-modal__comments-icon"
-          />
-          <div class="product-modal__comments-title">
-            Σχόλια
+      {{#unless isMarketProduct}}
+        <!-- USER COMMENTS -->
+        <div class="product-modal__comments">
+          <!-- TITLE -->
+          <div class="product-modal__comments-title-container">
+            <img
+              src="./images/icons/comment.svg"
+              alt=""
+              class="product-modal__comments-icon"
+            />
+            <div class="product-modal__comments-title">
+              Σχόλια
+            </div>
           </div>
-        </div>
-        <!-- TEXTAREA -->
-        <div class="form-floating">
-          <textarea
-            class="form-control product-modal__comments-textarea"
-            placeholder="Αφήστε το σχόλιό σας εδώ..."
-            id="floatingTextarea"
-          ></textarea>
-          <label for="floatingTextarea">Αφήστε το σχόλιό σας εδώ...</label>
-        </div>
+          <!-- TEXTAREA -->
+          <div class="form-floating">
+            <textarea
+              class="form-control product-modal__comments-textarea"
+              placeholder="Αφήστε το σχόλιό σας εδώ..."
+              id="floatingTextarea"
+            ></textarea>
+            <label for="floatingTextarea">Αφήστε το σχόλιό σας εδώ...</label>
+          </div>
 
-      </div>
+        </div>
+      {{/unless}}
     </div>
     <!-- ADD TO CART - ABSOLUTE POSITIONED -->
     <div class="product-modal__add-to-cart">
