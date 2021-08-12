@@ -186,7 +186,11 @@ export default class {
     // 1. Show a B level alert
     // 2. Make the address btn red
     // 3. Add a copy
-    if (this.selectedAddress && !this.isSelectedAddressSupported) {
+    if (
+      this.selectedAddress &&
+      this.isSelectedAddressSupported !== undefined &&
+      this.isSelectedAddressSupported === false
+    ) {
       // 1. Show a B level alert
       this.showUnsupportedAddressAlert();
 
