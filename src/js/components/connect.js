@@ -17,8 +17,10 @@ export default class {
     // do we need to show the forgot password modal?
     const url = new URL(window.location.href);
     const resetHash = url.searchParams.get('reset_hash');
-    if (resetHash) {
+    const resetEmail = url.searchParams.get('reset_email');
+    if (resetHash && resetEmail) {
       this.resetHash = resetHash;
+      this.resetEmail = resetEmail;
       this.toggleResetPasswordModal();
     }
   }
@@ -344,7 +346,7 @@ export default class {
     }
 
     PubSub.publish('show_loader');
-    const response = await this.api.changePassword(this.resetHash, password);
+    const response = await this.api.changePassword(this.resetEmail, this.resetHash, password);
 
     if (response.status === 'success') {
       this.toggleResetPasswordModal();

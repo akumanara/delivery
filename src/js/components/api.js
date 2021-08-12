@@ -685,7 +685,7 @@ export default class {
     });
   }
 
-  changePassword(nonce, password) {
+  changePassword(email, nonce, password) {
     // https://www.delivery.gr/process-reset-password
 
     if (store.context.mode === 'development') {
