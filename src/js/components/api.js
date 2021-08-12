@@ -701,6 +701,7 @@ export default class {
         csrfToken: store.context.csrfToken,
         nonce,
         password,
+        email,
       });
       this.instance
         .post(url, data, {
