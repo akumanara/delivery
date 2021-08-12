@@ -455,6 +455,7 @@ export default class extends EventEmitter {
     this.cartQuantity = Number.parseInt(cartData.quantity);
     this.uom = cartData.uom;
     this.uomstep = Number.parseFloat(cartData.uomstep);
+    this.cartIndex = Number.parseInt(cartData.cartIndex);
 
     this.displayMarketQuantity();
   }

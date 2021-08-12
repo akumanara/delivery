@@ -112,6 +112,7 @@ export default class {
       // Tag the product in the store menu with (in cart class) and set its cart qty
       store.app.productList.addCartDataToProduct(
         tmpProduct.productID,
+        productElement.dataset.cartIndex,
         productElement.dataset.productQty,
         productElement.dataset.productUom,
         productElement.dataset.productUomstep,

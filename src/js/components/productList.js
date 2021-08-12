@@ -49,12 +49,12 @@ export default class {
     });
   }
 
-  addCartDataToProduct(productID, quantity, uom, uomstep) {
+  addCartDataToProduct(productID, cartIndex, quantity, uom, uomstep) {
     const element = document.querySelector(
       `.js-product[data-product-id='${productID}']`,
     );
     if (element) {
-      const data = { quantity, uom, uomstep };
+      const data = { quantity, cartIndex, uom, uomstep };
       element.deliveryProduct.setInCart(data);
     }
   }
