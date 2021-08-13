@@ -6,7 +6,6 @@ import Swiper from 'swiper/bundle';
 import lozad from 'lozad';
 import FastAverageColor from 'fast-average-color';
 import Accordion from 'accordion-js';
-
 import PubSub from 'pubsub-js';
 import autosize from 'autosize';
 import { gsap, ScrollToPlugin, ScrollTrigger } from 'gsap/all';
@@ -29,6 +28,8 @@ import Connect from './components/connect';
 import Noticeboard from './components/noticeboard';
 import Timeslot from './components/timeslot';
 import AdultConsentModals from './components/adultConsentModals';
+import SearchAndCategories from './components/searchAndCategories';
+
 // import Layout from './layout';
 
 class App {
@@ -75,6 +76,16 @@ class App {
     // Tobacco and Alcohol modals
     this.adultConsentModals = new AdultConsentModals();
 
+    // Search and Categories (MARKETS)
+    const searchAndCategoriesElement = document.querySelector(
+      '.search-and-filters--markets',
+    );
+    if (searchAndCategoriesElement) {
+      this.searchAndCategories = new SearchAndCategories(
+        searchAndCategoriesElement,
+      );
+    }
+
     // Timeslots
     const timeslotElement = document.querySelector('.timeslot__trigger');
     if (timeslotElement) {
@@ -90,7 +101,6 @@ class App {
     if (couponModalElement) {
       this.coupon = new Coupon(couponModalElement);
     }
-
     // Add Card Modal
     const addCardModalElement = document.querySelector('.js-add-card-modal');
     if (addCardModalElement) {

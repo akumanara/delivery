@@ -69,16 +69,11 @@ export default class {
     // set click events for swiper items
     this.DOM.swiperItems.forEach((item, index) => {
       item.addEventListener('click', () => {
-        console.log('clicked');
         this.triggeringScrollEvents = false;
-
-        // window.scrollTo(this.DOM.sections[index].scrollTop, 0);
-
         this.setItem(index);
 
         gsap.to(window, {
           onComplete: () => {
-            console.log('onComplete');
             this.triggeringScrollEvents = true;
           },
           duration: 0.3,

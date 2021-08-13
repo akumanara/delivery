@@ -1,7 +1,12 @@
 .search-and-filters {
   padding: 10px 16px;
   margin: 16px 0;
+  background: #fff;
 
+  &--markets {
+    margin: 0;
+    padding-bottom: 0;
+  }
   &__container {
     display: flex;
   }
