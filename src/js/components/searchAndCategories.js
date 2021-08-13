@@ -11,6 +11,8 @@ export default class {
     this.DOM.categoriesButton = this.DOM.element.querySelector(
       '.search-and-filters__filters',
     );
+
+    // CATEGORIES MODAL
     this.DOM.categoriesModal = document.querySelector('.js-market-categories');
     this.DOM.categoriesModal = {
       modal: this.DOM.categoriesModal,
@@ -26,6 +28,23 @@ export default class {
       'click',
       this.toggleCategoriesModal,
     );
+
+    // SEARCH MODAL
+    this.DOM.serachButton = this.DOM.element.querySelector(
+      '.search-and-filters__search',
+    );
+    this.DOM.searchModal = document.querySelector('.js-autocomplete-search');
+    this.DOM.searchModal = {
+      modal: this.DOM.searchModal,
+      closeButton: this.DOM.searchModal.querySelector('.js-close'),
+    };
+    this.isSearchModalOpen = false;
+
+    this.DOM.searchModal.closeButton.addEventListener(
+      'click',
+      this.toggleSearchModal,
+    );
+    this.DOM.serachButton.addEventListener('click', this.toggleSearchModal);
 
     // Accordions for store info
     this.accordions = [];
@@ -61,7 +80,7 @@ export default class {
     });
   }
 
-  // toogle reset passwrod modal
+  // toogle modal
   toggleCategoriesModal() {
     if (this.isCategoriesModalOpen) {
       this.closeCategoriesModal();
@@ -79,5 +98,25 @@ export default class {
   openCategoriesModal() {
     document.body.classList.add('hide-overflow');
     this.DOM.categoriesModal.modal.classList.add('active');
+  }
+
+  // toogle modal
+  toggleSearchModal() {
+    if (this.isSearchModalOpen) {
+      this.closeSearchModal();
+    } else {
+      this.openSearchModal();
+    }
+    this.isSearchModalOpen = !this.isSearchModalOpen;
+  }
+
+  closeSearchModal() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.searchModal.modal.classList.remove('active');
+  }
+
+  openSearchModal() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.searchModal.modal.classList.add('active');
   }
 }

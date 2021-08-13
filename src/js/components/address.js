@@ -245,7 +245,7 @@ export default class {
       .then((result) => {
         console.log(result);
         // window.location.reload();
-        window.location.href = store.context.redirectURLfromAddress;
+        window.location.href = `${store.context.redirectURLfromAddress}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
       })
       .catch((error) => {
         console.log(error);
