@@ -129,6 +129,11 @@
     .in-cart & {
       display: none;
     }
+
+    // Some market products dont have a quick add. we always raise the modal
+    .in-cart[data-disable-quickadd] & {
+      display: flex;
+    }
   }
 
   &__product-change-qty-btn {
@@ -142,6 +147,10 @@
     position: relative;
     .in-cart & {
       display: flex;
+    }
+    // Some market products dont have a quick add. we always raise the modal
+    .in-cart[data-disable-quickadd] & {
+      display: none;
     }
   }
 

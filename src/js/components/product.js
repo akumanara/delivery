@@ -104,8 +104,9 @@ export default class extends EventEmitter {
 
     // check if it is a market product and has quick actions
     // ==============
+
     const quickAddElement = this.element.querySelector(
-      '.market-menu__product-plus-trigger',
+      '.market-menu__product-quick-add-btn',
     );
     if (quickAddElement) {
       this.isMarketProduct = true;
@@ -114,10 +115,24 @@ export default class extends EventEmitter {
     }
 
     if (this.isMarketProduct) {
+      if (this.element.hasAttribute('data-disable-quickadd')) {
+        this.disableQuickAdd = true;
+      } else {
+        this.disableQuickAdd = false;
+      }
+
+      const quickPlusElement = this.element.querySelector(
+        '.market-menu__product-plus-trigger',
+      );
       const quickRemoveElement = this.element.querySelector(
         '.market-menu__product-minus-trigger',
       );
-      quickAddElement.addEventListener('click', this.quickAdd);
+
+      if (!this.disableQuickAdd) {
+        console.log('quick add is enabled');
+        quickAddElement.addEventListener('click', this.quickAdd);
+      }
+      quickPlusElement.addEventListener('click', this.quickAdd);
       quickRemoveElement.addEventListener('click', this.quickRemove);
       this.marketQuantity = this.element.querySelector('.js-qty');
     }
@@ -770,6 +785,7 @@ export default class extends EventEmitter {
 
   async quickAdd(event) {
     event.stopPropagation();
+    console.log('quick adding one');
 
     PubSub.publish('show_loader');
     const data = {
@@ -787,6 +803,7 @@ export default class extends EventEmitter {
 
   async quickRemove(event) {
     event.stopPropagation();
+    console.log('quick removing one');
 
     PubSub.publish('show_loader');
     const data = {
