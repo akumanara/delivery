@@ -2763,7 +2763,12 @@ const loadMoreProducts = {
   ],
 };
 
+const loadMoreProductsEmpty = {
+  products: [],
+};
+
 export {
+  loadMoreProductsEmpty,
   loadMoreProducts,
   offer,
   genericError,
