@@ -30,8 +30,15 @@ if (AutocompleteItemSource) {
     AutocompleteItemSource.innerHTML,
   );
 }
+// market product
+const MarketProductSource = document.getElementById('market-product-template');
+let MarketProductTemplate;
+if (MarketProductSource) {
+  MarketProductTemplate = Handlebars.compile(MarketProductSource.innerHTML);
+}
 
 export {
+  MarketProductTemplate,
   HandlebarsTemplate,
   OfferHandlebarsTemplate,
   AutocompleteItemTemplate,

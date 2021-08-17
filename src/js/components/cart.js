@@ -131,6 +131,20 @@ export default class {
     this.showCartButtonLogic();
   }
 
+  updateStoreListProductsFromCartProducts() {
+    // Create products
+    this.DOM.cartProducts.forEach((productElement) => {
+      // Tag the product in the store menu with (in cart class) and set its cart qty
+      store.app.productList.addCartDataToProduct(
+        productElement.dataset.productId,
+        productElement.dataset.cartIndex,
+        productElement.dataset.productQty,
+        productElement.dataset.productUom,
+        productElement.dataset.productUomstep,
+      );
+    });
+  }
+
   showCartButtonLogic() {
     // Show the toggle-cart button if we have at least one product
     if (this.products.length > 0) {

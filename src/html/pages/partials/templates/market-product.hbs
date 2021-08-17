@@ -1,0 +1,71 @@
+<!-- PRODUCT COLUMN -->
+<div class="market-menu__product-col">
+  <!-- PRODUCT -->
+  <div
+    class="market-menu__product js-product"
+    data-product-id="{{id}}" {{#if isQuickAddDisabled}}data-disable-quickadd{{/if}}
+  >
+    <div class="market-menu__product-image-container">
+      <div class="market-menu__product-badge">
+        <img
+          src="./images/icons/bomb.svg"
+          alt=""
+          class="market-menu__product-badge-image mr-6"
+        />
+        {{#if badgeCopy}}
+        <div>{{badgeCopy}}</div>
+        {{/if}}
+      </div>
+      <img
+        src="{{image}}"
+        alt=""
+        class="market-menu__product-image"
+      />
+    </div>
+    <div class="market-menu__product-info">
+      <div class="market-menu__product-title">
+        {{name}}
+      </div>
+      {{#if smallText}}
+      <div class="market-menu__product-small-text">{{smallText}}</div>
+      {{/if}}
+      <div class="market-menu__product-price-container">
+        <div class="market-menu__product-price">{{currency price}}</div>
+        {{#if startingPrice}}
+        <div class="market-menu__product-price-old">{{currency startingPrice}}</div>
+        {{/if}}
+      </div>
+    </div>
+    <!-- ACTION BAR -->
+    <div class="market-menu__product-action-bar">
+      <!-- ADD TO BASKET -->
+      <div class="market-menu__product-quick-add-btn">
+        <img class="mr-8" src="./images/icons/quick-add-cart.svg" alt="" />
+        <div>Προσθήκη</div>
+      </div>
+
+      <!-- CHANGE QTY -->
+      <div class="market-menu__product-change-qty-btn">
+        <div class="market-menu__product-plus-trigger"></div>
+        <div class="market-menu__product-minus-trigger"></div>
+        <div class="market-menu__product-change-qty-btn-minus">
+          <img
+            src="./images/icons/market-minus.svg"
+            alt=""
+            class="product-modal__add-to-cart-qty-minus-img"
+          />
+        </div>
+        <div class="market-menu__product-change-qty-btn-value">
+          <div class="js-qty">1</div>
+        </div>
+        <div class="market-menu__product-change-qty-btn-plus">
+          <img
+            src="./images/icons/market-plus.svg"
+            alt=""
+            class="product-modal__add-to-cart-qty-plus-img"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

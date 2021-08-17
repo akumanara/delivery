@@ -2738,7 +2738,33 @@ const offer = {
   ],
 };
 
+const loadMoreProducts = {
+  products: [
+    {
+      id: '185',
+      name: 'ΑΙΑ Cordon Bleu Σνίτσελ Κοτόπουλο Γαλοπούλα 490 GR',
+      price: 1.0,
+      startingPrice: 0.9,
+      badgeCopy: 'Κέρδος 40%',
+      image: './images/o1.jpg',
+      smallText: '15,18€ / κιλό',
+      isQuickAddDisabled: false,
+    },
+    {
+      id: '222',
+      name: 'ΑΙΑ Cordon Bleu Σνίτσελ Κοτόπουλο Γαλοπούλα 490 GR',
+      price: 1.0,
+      startingPrice: 0.9,
+      badgeCopy: 'Κέρδος 40%',
+      smallText: '15,18€ / κιλό',
+      image: './images/o1.jpg',
+      isQuickAddDisabled: false,
+    },
+  ],
+};
+
 export {
+  loadMoreProducts,
   offer,
   genericError,
   genericSuccess,
