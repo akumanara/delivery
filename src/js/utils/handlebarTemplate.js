@@ -20,4 +20,19 @@ if (OfferSource) {
   OfferHandlebarsTemplate = Handlebars.compile(OfferSource.innerHTML);
 }
 
-export { HandlebarsTemplate, OfferHandlebarsTemplate };
+// autocomplete result item
+const AutocompleteItemSource = document.getElementById(
+  'autocomplete-result-item-template',
+);
+let AutocompleteItemTemplate;
+if (AutocompleteItemSource) {
+  AutocompleteItemTemplate = Handlebars.compile(
+    AutocompleteItemSource.innerHTML,
+  );
+}
+
+export {
+  HandlebarsTemplate,
+  OfferHandlebarsTemplate,
+  AutocompleteItemTemplate,
+};

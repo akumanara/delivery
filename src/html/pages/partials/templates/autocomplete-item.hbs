@@ -1,0 +1,35 @@
+<!-- ITEM -->
+<div
+  class="autocomplete-search__results-item js-product"
+  data-product-id="{{productID}}"
+  data-disable-quickadd
+>
+  <!-- IMAGE -->
+  <img
+    src="{{imgSource}}"
+    alt=""
+    class="autocomplete-search__results-item-image"
+  />
+  <div class="autocomplete-search__results-item-info">
+    <div class="autocomplete-search__results-item-title">
+      {{title}}
+    </div>
+    <div class="autocomplete-search__results-item-price">
+      {{#if startingPrice}}
+        <div class="autocomplete-search__results-item-price-old">
+          {{currency startingPrice}}
+        </div>
+      {{/if}}
+      <div class="autocomplete-search__results-item-price-main">
+        {{currency price}}
+        /
+        {{friendlyUOM}}
+      </div>
+      {{#if percentageDiscount}}
+        <div class="autocomplete-search__results-item-price-discount">
+          {{percentageDiscount}}%
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</div>

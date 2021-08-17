@@ -789,4 +789,56 @@ export default class {
         });
     });
   }
+
+  // markets autocomplete (AB only)
+  getMarketsAutocompleteResults(storeID, query) {
+    // https://api.ibutler.gr/search/market/${storeID}/${query}
+    //   {
+    //     "image": "https://static.delivery.gr//shops/13070/products/7090673_1_product.jpg",
+    //     "img": "https://static.delivery.gr//shops/13070/products/7090673_1_product.jpg",
+    //     "max_quantity": 0,
+    //     "shop": 13138,
+    //     "comments": 13138,
+    //     "local_id": 7090673,
+    //     "normalized_name": "7days στρουντελ μηλο κανελα 85g",
+    //     "start_price": 0,
+    //     "uom": "TMX",
+    //     "min_quantity": 0,
+    //     "uom_step": 1,
+    //     "price": 0.73,
+    //     "percentage_discount": 0,
+    //     "name": "7DAYS  Στρούντελ Μήλο Κανέλα 85g",
+    //     "id": 1298238
+    // }
+    return new Promise((resolve, reject) => {
+      const url = `https://api.ibutler.gr/search/market/${storeID}/${query}`;
+      axios
+        .get(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+  //   fetch("https://api.ibutler.gr/search/market/13138/a", {
+  //   "headers": {
+  //     "accept": "application/json, text/javascript, */*; q=0.01",
+  //     "accept-language": "en-US,en;q=0.9,el;q=0.8",
+  //     "cache-control": "no-cache",
+  //     "pragma": "no-cache",
+  //     "sec-ch-ua": "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"",
+  //     "sec-ch-ua-mobile": "?0",
+  //     "sec-fetch-dest": "empty",
+  //     "sec-fetch-mode": "cors",
+  //     "sec-fetch-site": "cross-site"
+  //   },
+  //   "referrer": "https://www.delivery.gr/",
+  //   "referrerPolicy": "strict-origin-when-cross-origin",
+  //   "body": null,
+  //   "method": "GET",
+  //   "mode": "cors",
+  //   "credentials": "omit"
+  // });
 }

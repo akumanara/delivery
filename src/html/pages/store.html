@@ -1056,7 +1056,7 @@
       </div>
     </div>
 
-    <!-- MODAL MARKET CATEGORIES -->
+    <!-- MODAL MARKET SEARCH -->
     <div class="js-autocomplete-search modal">
       <!-- THE ACTUAL WINDOW -->
       <div class="modal__window">
@@ -1071,11 +1071,13 @@
               />
             </div>
             <div class="autocomplete-search__input-container">
-              <img
-                src="./images/icons/mic.svg"
-                alt=""
-                class="autocomplete-search__mic-img"
-              />
+              <div class="autocomplete-search__mic-img-container">
+                <img
+                  src="./images/icons/mic.svg"
+                  alt=""
+                  class="autocomplete-search__mic-img"
+                />
+              </div>
               <input
                 class="autocomplete-search__input"
                 type="text"
@@ -1084,13 +1086,51 @@
               <img
                 src="./images/icons/close-search.svg"
                 alt=""
-                class="autocomplete-search__clear-img mw-22"
+                class="autocomplete-search__clear-img mw-22 d-none"
               />
+              <!-- LOADER ICON -->
+              <div class="autocomplete-search__loader-icon">
+                <svg
+                  version="1.1"
+                  id="loader-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 50 50"
+                  style="enable-background: new 0 0 50 50"
+                  xml:space="preserve"
+                >
+                  <path
+                    fill="#000"
+                    d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"
+                  >
+                    <animateTransform
+                      attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 25 25"
+                      to="360 25 25"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </path>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
         <!-- BODY -->
-        <div class="modal__body">THIS IS THE BODY</div>
+        <div class="modal__body">
+          <div class="autocomplete-search__results">
+            <!-- THIS WILL BE POPULATED WITH RESULTS FROM API -->
+          </div>
+          <div class="autocomplete-search__results-empty d-none">
+            NADA RESULTS
+          </div>
+        </div>
       </div>
     </div>
 

@@ -2,6 +2,8 @@ general:
   ☐ [general] svg icon css for dark/light - @misa dependency (duplicate svg icons?)
   ☐ [general] sentry remove cc data before sending @critical;
   ☐ [general] landing page mechanism for address and vertical selection
+  ☐ Thank you page
+  ☐ Landing page
 
 connect/login:
   ☐ missing data modal
@@ -12,13 +14,10 @@ store:
   ☐ [store] countdown gia kleisimo katastimatos @low
 
 
-Thank you page:
-
-
 markets:
-  ☐ product layout (quick add / edit / delete)
+  ✔ product layout (quick add / edit / delete) @done(21-08-17 10:28)
   ☐ Search modal
-  ☐ Categories modal
+  ✔ Categories modal @done(21-08-17 10:28)
   ☐ prosfores page - load more - status ton products opos erxonte
 
 
@@ -36,10 +35,6 @@ checkout:
   ☐ [checkout page] payment method cannot be unselected
   ☐ [checkout] coupon view
   ☐ na kanw update ti timi pou stelnw sti viva otan vazei karta. opos erxetai apo to kalathi
-
-address:
-  ☐ scroll sto anoixto viewport me scrollable ti lista
-
 
 
 bugs:

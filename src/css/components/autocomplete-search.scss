@@ -13,8 +13,41 @@
     height: 50px;
     flex-grow: 1;
     align-self: stretch;
+    position: relative;
+  }
+  &__loader-icon {
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-20px) scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+    &.active {
+      opacity: 1;
+    }
   }
 
+  &__mic-img-container {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 22px;
+      height: 22px;
+      background-color: #5a88ff;
+      opacity: 0;
+      border-radius: 50%;
+      z-index: 0;
+      display: block;
+      animation: pulse-dot 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+    }
+    &.is-active::after {
+      opacity: 0.2;
+    }
+  }
   &__input {
     flex: 1;
     margin-left: 10px;
@@ -26,5 +59,66 @@
     @include font-size-4;
 
     font-weight: 500;
+  }
+
+  &__results {
+    display: flex;
+    flex-direction: column;
+  }
+  &__results-item {
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f6f7f9;
+  }
+  &__results-item-image {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  &__results-item-info {
+    display: flex;
+    flex-direction: column;
+    @include font-size-2;
+  }
+  &__results-item-title {
+    margin-bottom: 6px;
+  }
+  &__results-item-price {
+    display: flex;
+  }
+  &__results-item-price-old {
+    color: #676970;
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+  &__results-item-price-main {
+  }
+  &__results-item-price-discount {
+    margin-left: 20px;
+    padding: 4px;
+    color: #ec5176;
+    background: #f6e7ed;
+    border-radius: 6px;
+    @include font-size-0;
+
+    font-weight: 700;
+  }
+  &__results-empty {
+    padding: 10px;
+    background-color: red;
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.4);
   }
 }

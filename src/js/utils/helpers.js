@@ -131,6 +131,13 @@ const getUOMText = (value, uom, uomStep) => {
   return `${value}`;
 };
 
+const getFriendlyUOM = (uom) => {
+  if (uom === 'KG') return 'κιλό';
+  if (uom === 'LT') return 'λίτρο';
+  if (uom === 'TMX') return 'τεμάχιο';
+  return uom;
+};
+
 const initSentry = () => {
   console.log(`MODE IS  ${MODE}`);
   console.log(`RELEASE IS  ${VERSION}`);
@@ -229,6 +236,7 @@ const validatePhone = (phone) => {
 };
 
 export {
+  getFriendlyUOM,
   getUOMText,
   validatePhone,
   validateEmail,
