@@ -2,33 +2,24 @@ general:
   ☐ [general] svg icon css for dark/light - @misa dependency (duplicate svg icons?)
   ☐ [general] sentry remove cc data before sending @critical;
   ☐ [general] landing page mechanism for address and vertical selection
+
+pending pages:
   ☐ Thank you page
   ☐ Landing page
+  ☐ content pages
+  ☐ user profile pages
 
 connect/login:
   ☐ missing data modal
   ☐ notification modal
   ☐ forgot password action
 
-store:
-  ☐ [store] countdown gia kleisimo katastimatos @low
-
-
-markets:
-  ✔ product layout (quick add / edit / delete) @done(21-08-17 10:28)
-  ✔ Search modal @done(21-08-17 15:31)
-  ✔ Categories modal @done(21-08-17 10:28)
-  ☐ prosfores page - load more - status ton products opos erxonte
-
-
 
 for delivery:
-  ☐ [store] sakoules sto kato simeio (na dei o kostas an gintete server side i na to kanw egw.) @delivery
-  ☐ na ftiaxtei api gia to forgot password
   ☐ na mpei class sto burger an den exei address gia na siksei to add address
   ☐ timeslots. otan den yparxoun diathesima timeslots, na mpei sto contest h variable true kai na ginei to status tou accordeon opos sto figma.
 
-  
+
 checkout:
   ☐ [checkout] Coupons on Checkout
   ☐ [checkout] show more/show less on receipt
@@ -54,6 +45,7 @@ post launch:
 
   product modal:
     ☐ [product_modal] hide/view large html description @low
+    ☐ [store] countdown gia kleisimo katastimatos @low
 
 doing:
 
@@ -61,6 +53,10 @@ doing:
 meeting:
 
 Done:
+  ✔ product layout (quick add / edit / delete) @done(21-08-17 10:28)
+  ✔ Search modal @done(21-08-17 15:31)
+  ✔ Categories modal @done(21-08-17 10:28)
+  ✔ prosfores page - load more - status ton products opos erxonte @done(21-08-17 17:59)
   ✔ [store] Offers @done(21-08-11 13:53)
   ✔ [product_modal] zoom on photos @done(21-08-11 13:57)
   ✔ meta tin allagi password na to pame sto login @done(21-08-11 14:00)
