@@ -6,6 +6,8 @@ import API from './api';
 import { AutocompleteItemTemplate } from '../utils/handlebarTemplate';
 import { getFriendlyUOM } from '../utils/helpers';
 import Product from './product';
+import Alert from './alert';
+import texts from '../utils/texts';
 
 export default class {
   constructor(element) {
@@ -123,8 +125,22 @@ export default class {
     this.recognition.addEventListener('end', () => {
       this.stopVoiceRecognition();
     });
-    this.recognition.addEventListener('error', () => {
-      console.log('error');
+    this.recognition.addEventListener('error', (event) => {
+      if (event.error === 'not-allowed') {
+        const a = new Alert({
+          text: texts.micNotAllowed,
+          timeToKill: 2, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
+        return;
+      }
+      const a = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 2, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
+      });
     });
     this.recognition.addEventListener('result', this.voiceResult);
     this.DOM.searchModal.micContainer.addEventListener(
