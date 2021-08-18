@@ -346,7 +346,11 @@ export default class {
     }
 
     PubSub.publish('show_loader');
-    const response = await this.api.changePassword(this.resetEmail, this.resetHash, password);
+    const response = await this.api.changePassword(
+      this.resetEmail,
+      this.resetHash,
+      password,
+    );
 
     if (response.status === 'success') {
       this.toggleResetPasswordModal();
@@ -667,7 +671,11 @@ export default class {
       } else {
         // USER DOESNT EXIST. REGISTER
         // ==========================
-        // todo
+        this.DOM.registerModal.formPhone.value = this.phone;
+        this.DOM.registerModal.formPhone.disabled = true;
+        this.checkRegisterForm();
+        this.toggleLoginModal();
+        this.toggleRegisterModal();
       }
     } else {
       console.log('invalid email or invalid phone');

@@ -1,0 +1,18 @@
+.thankyou {
+  &__points {
+    background-color: #5a88ff;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include font-averta;
+
+    font-size: 43px;
+    line-height: 0.9;
+    font-weight: 700;
+    padding: 10px;
+    box-shadow: 0 0 15.9059px rgba(90, 136, 255, 0.3);
+    border-radius: 10px;
+    transform: rotate(-3.37deg);
+  }
+}

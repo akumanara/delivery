@@ -28,6 +28,7 @@ import {
 export default class {
   constructor() {
     this.instance = axios.create({ baseURL: store.context.rootURL });
+    this.devThankyouIndex = 0;
   }
 
   getProduct(productID) {
@@ -847,4 +848,35 @@ export default class {
         });
     });
   }
+
+  getThankYou() {
+    if (store.context.mode === 'development') {
+      return new Promise((resolve, reject) => {
+        const urls = ['/thankyou-sent.html', '/thankyou-success.html'];
+        const url = urls[this.devThankyouIndex];
+        this.devThankyouIndex += 1;
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      });
+    }
+    return new Promise((resolve, reject) => {
+      const url = window.location.href;
+      axios
+        .get(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  
 }

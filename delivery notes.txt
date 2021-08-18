@@ -530,3 +530,27 @@ before launch
 
 
 
+
+-----------------------
+
+polling rwtaei kathe X seconds
+
+Statuses
+- Received (step 1)
+xwris api call. einai on load.
+
+- Sent (step 2)
+to api girizei mono to status = sent.
+
+- Accepted (step 3 Success)
+to api girizei to status kai to xrono ektimisis + pontous.
+
+- Rejected (step 3 Fail)
+to api girizei to status kai logo akiroseis pargelias
+to kouponi einai fixed 2e kai apla to emfanizoume otan exei status rejected
+
+
+api url
+current location.href
+
+click and call post telephone 10 digits 6945544555

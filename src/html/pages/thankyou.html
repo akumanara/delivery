@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <!-- partial:partials/head.html -->
+  <!-- partial -->
+
+  <body class="thankyou-page">
+    <main>
+      <!-- HEADER -->
+      <!-- partial:partials/header.html -->
+      <!-- partial -->
+
+      <!-- STORE NAME -->
+      <div class="py-20 px-16 font-averta font-weight-700 font-size-8">
+        Nakama
+      </div>
+
+      <!-- REPLACEABLE DIV FROM POLLING -->
+      <div class="js-thankyou" data-status="received">
+        <!-- STEP RECEIVED ONLY -->
+        <div class="step-received text-center">
+          <div class="py-16 px-16">Το Delivery έλαβε την παραγγελία σου</div>
+          <div
+            class="py-25 px-16 d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/thankyou-step1.svg" alt="" />
+          </div>
+          <div class="py-14 px-16 font-size-2 color-dark-gray">
+            You can close this window, we will inform you about order status
+          </div>
+        </div>
+        <!-- STEP SENT ONLY -->
+        <div class="step-sent text-center">
+          <div class="py-16 px-16">
+            Το μαγαζί ενημερώθηκε για την παραγγελία σου
+          </div>
+          <div
+            class="py-25 px-16 d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/thankyou-step2.svg" alt="" />
+          </div>
+          <div class="py-14 px-16 font-size-2 color-dark-gray">
+            You can close this window, we will inform you about order status
+          </div>
+        </div>
+        <!-- STEP ACCEPTED ONLY -->
+        <div class="step-accepted text-center">
+          <div
+            class="py-20 px-16 d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/thankyou-success.svg" alt="" />
+          </div>
+          <div class="py-10 px-16 font-size-8 color-blue font-weight-700">
+            Σε 32 λεπτά!
+          </div>
+          <div class="py-10 px-16">
+            Η παραγγελία σου έγινε αποδεκτή και ετοιμάζεται
+          </div>
+        </div>
+        <!-- STEP ACCEPTED ONLY STORE AND POINTS-->
+        <div class="bg-cultured px-16 py-25 text-center mt-30">
+          <div class="d-flex align-items-center justify-content-center mb-20">
+            <div class="thankyou__points">310</div>
+          </div>
+          <div class="py-10 px-16 font-weight-700">Μόλις κέρδισες πόντους</div>
+        </div>
+
+        <!-- STEP REJECTED ONLY -->
+        <div class="step-rejected text-center">
+          <div
+            class="py-20 px-16 d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/thankyou-rejected.svg" alt="" />
+          </div>
+          <div class="py-10 px-16 font-size-8 font-weight-700">Λυπούμαστε!</div>
+          <div class="py-10 px-16">
+            Το μαγαζι δεν δεχτηκε την παραγγελια σου λογω ελλειψης προιοντος
+          </div>
+        </div>
+        <!-- STEP REJECTED ONLY COUPON-->
+        <div class="bg-cultured px-16 py-25 text-center mt-30">
+          <div class="d-flex align-items-center justify-content-center mb-20">
+            <img src="./images/rejected-coupon.svg" alt="" />
+          </div>
+          <div class="py-10 px-16 font-weight-700">
+            Μόλις κέρδισες κουπόνι TODO Replace img
+          </div>
+        </div>
+      </div>
+
+      <!-- DETAILS -->
+      <div class="table mt-30">
+        <!-- TABLE ITEM -->
+        <div class="table__item font-weight-700 font-size-2">
+          <div class="table__col">Κωδικός παραγγελίας</div>
+          <div class="table__col">711</div>
+        </div>
+        <!-- TABLE ITEM -->
+        <div class="table__item font-weight-700 font-size-2">
+          <div class="table__col">Ώρα καταχώρησης</div>
+          <div class="table__col">11:19</div>
+        </div>
+        <!-- TABLE ITEM -->
+        <div class="table__item font-weight-700 font-size-2">
+          <div class="table__col">Τρόπος πληρωμής</div>
+          <div class="table__col">Μετρητά</div>
+        </div>
+        <!-- TABLE ITEM -->
+        <div class="table__item font-weight-700 font-size-2">
+          <div class="table__col">Επιλογή παράδοσης</div>
+          <div class="table__col">
+            <div class="d-flex">
+              <div class="mr-10">04.06</div>
+              <div class="">14:00-15:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-cart__body mt-30" data-delivery-type="takeaway">
+        <section class="snippet">
+          <!-- title and btn -->
+          <div class="container-a">
+            <div class="snippet__header">
+              <div class="snippet__title">
+                <img
+                  class="img-fluid mw-22 mr-10"
+                  src="./images/icons/receipt.svg"
+                  alt=""
+                />
+                <div>Order</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT OPTIONS -->
+          <div class="table table--small">
+            <!-- TABLE ITEM -->
+            <div class="table__item">
+              <div class="table__col">Naming</div>
+              <div class="table__col">49,40€</div>
+            </div>
+            <!-- TABLE ITEM -->
+            <div class="table__item">
+              <div class="table__col">Naming</div>
+              <div class="table__col">49,40€</div>
+            </div>
+            <!-- TABLE ITEM -->
+            <div class="table__item">
+              <div class="table__col">Naming</div>
+              <div class="table__col">49,40€</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RECEIPT -->
+        <section class="snippet mt-30">
+          <div class="cart__pricing">
+            <!-- VAT -->
+            <div class="cart__pricing-disclaimer">
+              Οι τιμές περιλαμβάνουν ΦΠΑ
+            </div>
+            <!-- EXTRA BREKDOWN TABLE -->
+            <div class="table table--small">
+              <!-- TABLE ITEM -->
+              <div class="table__item">
+                <div class="table__col">Προϊόντα</div>
+                <div class="table__col">46,90€</div>
+              </div>
+              <!-- TABLE ITEM -->
+              <div class="table__item">
+                <div class="table__col">Delivery fee</div>
+                <div class="table__col">2,00€</div>
+              </div>
+              <!-- TABLE ITEM -->
+              <div class="table__item">
+                <div class="table__col">
+                  Περιβαλλοντικό τέλος πλαστικής σακούλας
+                </div>
+                <div class="table__col">0,50€</div>
+              </div>
+            </div>
+            <!-- SUM -->
+            <div class="cart__pricing-summary">
+              <div class="cart__pricing-summary-title">Σύνολο</div>
+              <div class="cart__pricing-summary-price">49,40€</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- FOOTER -->
+      <!-- partial:partials/footer.html -->
+      <!-- partial -->
+    </main>
+
+    <!-- UNIVERSAL PARTIALS (LOADER/ADDRESS/LOGIN/HANDLEBAR/ETC) -->
+    <!-- partial:partials/01-universal-partials.html -->
+    <!-- partial -->
+
+    <!-- SCRIPTS -->
+    <!-- partial:partials/scripts.html -->
+    <!-- partial -->
+  </body>
+</html>

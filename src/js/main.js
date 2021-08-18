@@ -29,6 +29,7 @@ import Noticeboard from './components/noticeboard';
 import Timeslot from './components/timeslot';
 import AdultConsentModals from './components/adultConsentModals';
 import SearchAndCategories from './components/searchAndCategories';
+import ThankYou from './components/thankYou';
 
 // import Layout from './layout';
 
@@ -139,7 +140,19 @@ class App {
     }
 
     // Address Component
-    this.addressComponent = new Address();
+    const addressTriggerElement = document.querySelector('.address-trigger');
+    if (addressTriggerElement) {
+      this.addressComponent = new Address();
+    } else {
+      // have an empty callback function in case we have the maps api
+      window.googleMapsCallback = () => {};
+    }
+
+    // Thank you page
+    const thankYouElement = document.querySelector('.js-thankyou');
+    if (thankYouElement) {
+      this.thankYou = new ThankYou(thankYouElement);
+    }
 
     // Store carousel
     const storeCarouselElement = document.querySelector('.store-carousel');
