@@ -878,5 +878,31 @@ export default class {
     });
   }
 
-  
+  clickToCall() {
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(genericSuccess);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = store.context.clickandcallURL;
+      const data = {
+        telephone: store.context.userPhone,
+      };
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
 }

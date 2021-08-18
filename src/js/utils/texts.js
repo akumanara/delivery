@@ -69,6 +69,7 @@ export default {
   autocompleteNoResults: `Δεν βρήκες τη διεύθυνση σου; Πάτησε εδώ.`,
   genericErrorMessage: `Κάτι πήγε στραβά`,
   micNotAllowed: `Δεν έγινε αποδοχή χρήσης μικροφώνου`,
+  clickToCallSuccess: `Thank you for feedback, we will contact you shortly`,
   login: {
     invalidPhoneOrEmail: 'Μη έγκυρο τηλέφωνο ή email',
     userIsSocialLoginError: 'Σφάλμα σύνδεσης. Κάνε σύνδεση με social media.',

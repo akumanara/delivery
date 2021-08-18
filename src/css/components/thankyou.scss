@@ -15,4 +15,15 @@
     border-radius: 10px;
     transform: rotate(-3.37deg);
   }
+
+  &__clicktocall-img {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
 }
