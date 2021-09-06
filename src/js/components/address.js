@@ -21,6 +21,10 @@ export default class {
     this.init();
   }
 
+  updateSelectedAddressIsSupported() {
+    this.isSelectedAddressSupported = store.context.isSelectedAddressSupported;
+  }
+
   queryTheDOM() {
     // Query the DOM
     this.DOM = {};

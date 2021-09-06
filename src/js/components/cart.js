@@ -71,6 +71,9 @@ export default class {
     // Run the scripts from the backend
     this.runScripts();
 
+    // The cart doesnt come on page load. So it we need to re-set the isSelectedAddressSupported flag
+    store.app.addressComponent.updateSelectedAddressIsSupported();
+
     // Setup event listeners
     this.DOM.closeBtn.addEventListener('click', this.toggleCart);
 
