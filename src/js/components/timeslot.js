@@ -196,22 +196,21 @@ export default class {
   async submitTimeslots() {
     PubSub.publish('show_loader');
     const data = {
-      storeID: store.context.storeID,
       delivery: {
-        date: '2020-03-01',
-        from: '10:00',
-        to: '12:00',
-        id: 1,
+        date: this.tempDeliveryTimeslot.date,
+        from: this.tempDeliveryTimeslot.from,
+        to: this.tempDeliveryTimeslot.to,
+        id: this.tempDeliveryTimeslot.slotId,
       },
     };
 
     // if we also have pickup add it to the data
     if (this.type === timeslotTypes.deliveryAndPickup) {
       data.pickup = {
-        date: '2020-03-05',
-        from: '12:00',
-        to: '14:00',
-        id: 12,
+        date: this.tempPickupTimeslot.date,
+        from: this.tempPickupTimeslot.from,
+        to: this.tempPickupTimeslot.to,
+        id: this.tempPickupTimeslot.slotId,
       };
     }
     const result = await this.api.submitTimeslots(data);

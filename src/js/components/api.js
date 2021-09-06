@@ -764,7 +764,7 @@ export default class {
   }
 
   submitTimeslots(data) {
-    // TODO
+    // https://www.delivery.gr/delivery/cart/{:shop}/delivery-slot
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
@@ -772,10 +772,26 @@ export default class {
         }, 500),
       );
     }
+
+    return new Promise((resolve, reject) => {
+      const url = `delivery/cart/${store.context.storeID}/delivery-slot`;
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
   }
 
   getPickupDates(storeID, date) {
-    // https://www.delivery.gr/TODO
+    // https://www.delivery.gr/api/delivery-slots
 
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
@@ -785,10 +801,11 @@ export default class {
       );
     }
     return new Promise((resolve, reject) => {
-      const url = `TODO`;
-      const data = getFormData({
-        csrfToken: store.context.csrfToken,
-      });
+      const data = {
+        storeID,
+        date,
+      };
+      const url = `api/delivery-slots`;
       this.instance
         .post(url, data, {
           headers: {

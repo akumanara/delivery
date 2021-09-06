@@ -4,7 +4,6 @@ general:
   ☐ [general] landing page mechanism for address and vertical selection
 
 pending pages:
-  ☐ Thank you page
   ☐ Landing page
   ☐ content pages
   ☐ user profile pages
@@ -43,9 +42,9 @@ post launch:
   ☐ [store] previous orders - add previous order to basket modal @post-launch
   ☐ otan epilekseis ena proion kai meta to valeis sti prosfora. meta prepei na mporeis na to kaneis k edit apo ti prosfora. @postlaunch
 
-  product modal:
-    ☐ [product_modal] hide/view large html description @low
-    ☐ [store] countdown gia kleisimo katastimatos @low
+product modal:
+  ☐ [product_modal] hide/view large html description @low
+  ☐ [store] countdown gia kleisimo katastimatos @low
 
 doing:
 
@@ -53,6 +52,7 @@ doing:
 meeting:
 
 Done:
+  ✔ Thank you page @done(21-09-06 16:17)
   ✔ product layout (quick add / edit / delete) @done(21-08-17 10:28)
   ✔ Search modal @done(21-08-17 15:31)
   ✔ Categories modal @done(21-08-17 10:28)
