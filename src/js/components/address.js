@@ -244,8 +244,11 @@ export default class {
       .addAddress(addressObject)
       .then((result) => {
         console.log(result);
-        // window.location.reload();
-        window.location.href = `${store.context.redirectURLfromAddress}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
+        if (!store.context.storeID) {
+          window.location.href = `${store.context.redirectURLfromAddress}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
+        } else {
+          window.location.reload();
+        }
       })
       .catch((error) => {
         console.log(error);
@@ -847,8 +850,11 @@ export default class {
       .addAddress(addressObject)
       .then((result) => {
         console.log(result);
-        // window.location.reload();
-        window.location.href = `${store.context.redirectURLfromAddress}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
+        if (!store.context.storeID) {
+          window.location.href = `${store.context.redirectURLfromAddress}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
+        } else {
+          window.location.reload();
+        }
       })
       .catch((error) => {
         console.log(error);
