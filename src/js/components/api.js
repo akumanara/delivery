@@ -76,7 +76,7 @@ export default class {
   }
 
   getOffer(offerID) {
-    // TODO
+    // https://www.delivery.gr/api/offer/{:shop_id}/{:offer_id}
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
@@ -84,6 +84,18 @@ export default class {
         }, 200),
       );
     }
+
+    return new Promise((resolve, reject) => {
+      const url = `api/offer/${store.context.storeID}/${offerID}`;
+      this.instance
+        .get(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
   }
 
   getProductFromCart(productID, cartIndex) {
