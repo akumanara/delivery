@@ -822,7 +822,7 @@ export default class {
   }
 
   // markets autocomplete (AB only)
-  getMarketsAutocompleteResults(storeID, query) {
+  getMarketsAutocompleteResults(storeID, query, baseURL) {
     // https://api.ibutler.gr/search/market/${storeID}/${query}
     //   {
     //     "image": "https://static.delivery.gr//shops/13070/products/7090673_1_product.jpg",
@@ -842,7 +842,7 @@ export default class {
     //     "id": 1298238
     // }
     return new Promise((resolve, reject) => {
-      const url = `https://api.ibutler.gr/search/market/${storeID}/${query}`;
+      const url = `${store.context.productsSearchUrl}${query}`;
       axios
         .get(url)
         .then((response) => {
