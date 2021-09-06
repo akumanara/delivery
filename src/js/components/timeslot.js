@@ -13,14 +13,17 @@ export default class {
   constructor(timeslotElement) {
     autoBind(this);
     this.api = new API();
+    // on Delivery only there a delivery section
+    // on Delivery and Pickup there are two sections. The prerender serction is pickup
+    this.queryTheDOM(timeslotElement);
+    this.setupEventListeners();
+    this.init();
+  }
 
-    // query DOM
-    // we know there is already a delivery at least section rendered
+  queryTheDOM(timeslotElement) {
     this.DOM = {};
+    // Trigger and accordion
     this.DOM.timeslotTrigger = timeslotElement;
-    this.DOM.timeslotModal = document.querySelector('.js-timeslot');
-    this.DOM.modalClose = this.DOM.timeslotModal.querySelector('.js-close');
-    this.DOM.actionBtn = this.DOM.timeslotModal.querySelector('.js-action-btn');
     this.DOM.accordionBottomContainer = document.querySelector(
       '.timeslot__trigger .timeslot__accordion-container',
     );
@@ -28,7 +31,13 @@ export default class {
       '.timeslot__trigger .delivery-type__option-header-top',
     );
     this.DOM.accordionTrigger = document.querySelector('.timeslot__trigger');
-    // Modal for no available timeslots
+
+    // Main Modal
+    this.DOM.timeslotModal = document.querySelector('.js-timeslot');
+    this.DOM.modalClose = this.DOM.timeslotModal.querySelector('.js-close');
+    this.DOM.actionBtn = this.DOM.timeslotModal.querySelector('.js-action-btn');
+
+    // Modal (A LVL ALERT) for no available timeslots
     this.DOM.noAvailableTimeslotsModal = document.querySelector(
       '.js-no-timeslot-modal',
     );
@@ -45,23 +54,33 @@ export default class {
       'click',
       this.toggleNoSlotsModal,
     );
+  }
 
+  setupEventListeners() {
     // event listeners
     this.DOM.timeslotTrigger.addEventListener('click', this.toogleModal);
     this.DOM.modalClose.addEventListener('click', this.toogleModal);
     this.isModalOpen = false;
     this.DOM.actionBtn.addEventListener('click', this.submitTimeslots);
+  }
 
+  init() {
     // set type and initial values
-    this.type = store.context.timeslotType;
-    // temp are use for current selection and the other 2 when we have submited them
+    this.type = store.context.timeslotType; // delivery_and_pickup || delivery_only
+    // temp are use for current user selection and the other 2 when we have also submited them
     this.tempDeliveryTimeslot = null;
     this.tempPickupTimeslot = null;
     this.deliveryTimeslot = null;
     this.pickupTimeslot = null;
 
-    // if we have this class we already have a delivery section rendered
-    this.initDeliverySection();
+    // if type is delivery_only we already have only a delivery section rendered
+    // if type is delivery_and_pickup we have only a pickup section rendered
+    if (this.type === timeslotTypes.deliveryOnly) {
+      this.initDeliverySection();
+    }
+    // else if (this.type === timeslotTypes.deliveryAndPickup) {
+    //   this.initPickupSection();
+    // }
 
     // save default accordion value to restore it later
     this.defaultBottomAccordionValue =
@@ -74,6 +93,7 @@ export default class {
     // Check for no available timeslots
     this.checkForNoTimeslots();
 
+    // Check for expired submitted timeslots in order to show alert
     if (
       (this.deliveryTimeslot && this.deliveryTimeslot.expired) ||
       (this.pickupTimeslot && this.pickupTimeslot.expired)
