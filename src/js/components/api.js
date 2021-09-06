@@ -181,7 +181,7 @@ export default class {
   }
 
   addOfferToCart(data) {
-    // https://www.delivery.gr/delivery/cart/140/insert-offer
+    // https://www.delivery.gr/delivery/cart/140/insert-offer-json
     if (store.context.mode === 'development') {
       return new Promise((resolve, reject) => {
         const url = '/partials/cart-body.html';
@@ -196,7 +196,7 @@ export default class {
       });
     }
     return new Promise((resolve, reject) => {
-      const url = `delivery/cart/${store.context.storeID}/insert-offer`;
+      const url = `delivery/cart/${store.context.storeID}/insert-offer-json`;
       this.instance
         .post(url, data, {
           headers: {
