@@ -223,7 +223,7 @@ export default class {
     this.DOM.otpModal.closeBtn.addEventListener('click', this.toggleOtpModal);
     this.DOM.otpModal.actionBtn.addEventListener(
       'click',
-      this.loginWithMailAndOtp,
+      this.loginWithPhoneAndOtp,
     );
 
     // register modal
@@ -528,13 +528,12 @@ export default class {
     PubSub.publish('hide_loader');
   }
 
-  async loginWithMailAndOtp() {
+  async loginWithPhoneAndOtp() {
     PubSub.publish('show_loader');
 
     const { value } = this.DOM.otpModal.input;
 
-    const response = await this.api.emailLoginWithOTP(
-      this.email,
+    const response = await this.api.phoneLoginWithOTP(
       value,
       this.callID,
       this.phone,
@@ -662,10 +661,12 @@ export default class {
       // USER ENTERED VALID PHONE
       // ==========================
       this.phone = value;
+
       const response = await this.api.login(this.phone);
       if (response.type === loginWithEmailResponses.SHOW_OTP) {
         // USER MUST LOGIN WITH OTP
         // ==========================
+        this.callID = response.call_id;
         this.toggleLoginModal();
         this.toggleOtpModal();
       } else {

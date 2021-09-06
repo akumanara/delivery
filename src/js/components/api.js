@@ -599,7 +599,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(login.show_new_user);
+          resolve(login.show_otp);
         }, 500),
       );
     }
@@ -653,7 +653,7 @@ export default class {
     });
   }
 
-  emailLoginWithOTP(email, otp, callID, phone) {
+  phoneLoginWithOTP(otp, callID, phone) {
     // https://www.delivery.gr/verify-otp-login
 
     if (store.context.mode === 'development') {
@@ -668,7 +668,6 @@ export default class {
       const url = `verify-otp-login`;
       const data = getFormData({
         csrfToken: store.context.csrfToken,
-        username: email,
         sms_verification: otp,
         call_id: callID,
         telephone: phone,
