@@ -151,7 +151,8 @@ export default class extends EventEmitter {
       '.cart__product-actions-edit',
     );
     if (editElement) {
-      editElement.addEventListener('click', this.cartEditProduct);
+      console.log('edit element found');
+      editElement.addEventListener('click', this.cartRaiseModal);
     }
     // Plus one
     const plusOneElement = this.element.querySelector(
