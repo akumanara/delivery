@@ -5,7 +5,7 @@
     }
     .snippet__swiper {
       padding: 0 16px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
   }
   &__promotions-item {
@@ -62,7 +62,6 @@
     max-width: 100%;
   }
   &__grid-item {
-    outline: 1px solid red;
     height: 164px;
     box-sizing: border-box;
     padding: 14px;
@@ -71,5 +70,17 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 14px;
+  }
+
+  &__grid-item-icon {
+    width: 36px;
+    height: 36px;
+  }
+  &__grid-item-title {
+    @include font-averta;
+
+    font-weight: 700;
+    margin-top: auto;
   }
 }

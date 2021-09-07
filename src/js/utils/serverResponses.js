@@ -2719,6 +2719,10 @@ const offer = {
           id: '222',
           name: 'Coca-Cola (500ml)',
         },
+        {
+          id: '223',
+          name: 'Coca-ColaX (500ml)',
+        },
       ],
     },
     {
