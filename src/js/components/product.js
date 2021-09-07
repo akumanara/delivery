@@ -142,22 +142,31 @@ export default class extends EventEmitter {
     // Get the cart index
     this.cartIndex = this.element.dataset.cartIndex;
 
-    // Edit
-    this.element
-      .querySelector('.cart__product-actions-edit')
-      .addEventListener('click', this.cartRaiseModal);
     // Delete
     this.element
       .querySelector('.cart__product-actions-delete')
       .addEventListener('click', this.cartDeleteProduct);
+    // Edit
+    const editElement = this.element.querySelector(
+      '.cart__product-actions-edit',
+    );
+    if (editElement) {
+      editElement.addEventListener('click', this.cartEditProduct);
+    }
     // Plus one
-    this.element
-      .querySelector('.cart__product-actions-quantity-plus-trigger')
-      .addEventListener('click', this.cartPlusOneProduct);
+    const plusOneElement = this.element.querySelector(
+      '.cart__product-actions-quantity-plus-trigger',
+    );
+    if (plusOneElement) {
+      plusOneElement.addEventListener('click', this.cartPlusOneProduct);
+    }
     // Minus one
-    this.element
-      .querySelector('.cart__product-actions-quantity-minus-trigger')
-      .addEventListener('click', this.cartMinusOneProduct);
+    const minusOneElement = this.element.querySelector(
+      '.cart__product-actions-quantity-minus-trigger',
+    );
+    if (minusOneElement) {
+      minusOneElement.addEventListener('click', this.cartPlusOneProduct);
+    }
   }
 
   // Creates the product after we get the JSON from the API
