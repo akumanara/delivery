@@ -671,7 +671,10 @@ export default class extends EventEmitter {
   // Executes when we click on an product from the product list
   async raiseModal() {
     // An den yparxei selected address. na deiksoume to notify modal kai oxi to product modal.
-    if (!store.app.addressComponent.selectedAddress) {
+    if (
+      !store.app.addressComponent.selectedAddress &&
+      store.app.deliveryType.deliveryMethod === deliveryTypes.DELIVERY
+    ) {
       store.app.addressComponent.showNotifyModal();
       return;
     }
