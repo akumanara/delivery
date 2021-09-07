@@ -147,7 +147,7 @@ export default class {
     }
   }
 
-  preselectValues() {
+  async preselectValues() {
     if (this.type === timeslotTypes.deliveryOnly) {
       // todo we can use es11 and use optional chaining but jshint is not happy
       if (
@@ -163,9 +163,10 @@ export default class {
         store.context.selectedTimeslots.delivery &&
         store.context.selectedTimeslots.pickup
       ) {
-        this.deliveryTimeslot = store.context.selectedTimeslots.delivery;
+        console.log('preselecting delivery and pickup timeslots');
         this.pickupTimeslot = store.context.selectedTimeslots.pickup;
-        this.preselectDeliveryAndPickupTimeslots();
+        this.deliveryTimeslot = store.context.selectedTimeslots.delivery;
+        await this.preselectDeliveryAndPickupTimeslots();
       }
     }
   }
@@ -201,15 +202,18 @@ export default class {
 
     // select only if we have both
     if (dayElement && hourElement) {
+      console.log('dayElement && hourElement');
       this.selectPickupDay(dayElement);
-      this.selectPickupHour(hourElement);
+      await this.selectPickupHour(hourElement);
       this.updateAccordionValues();
     }
   }
 
   async preselectDeliveryAndPickupTimeslots() {
-    await this.preselectDeliveryTimeslot();
+    console.log('preselectPickupTimeslot');
     await this.preselectPickupTimeslot();
+    console.log('preselectDeliveryTimeslot');
+    await this.preselectDeliveryTimeslot();
   }
 
   async submitTimeslots() {
@@ -575,7 +579,6 @@ export default class {
           this.defaultTopAccordionValue;
       } else {
         let html;
-        console.log(this.deliveryTimeslot.expired);
         if (this.deliveryTimeslot.expired) {
           this.alertExpiredSelectedDates = true;
           html = this.selectedDateAccordionTemplate(
@@ -682,19 +685,20 @@ export default class {
     // remove the previous delivery hours in case he selected
     this.tempDeliveryTimeslot = null;
 
+    // get the delivery timeslots from the api for the selected pickup timeslot
     const dates = await this.api.getDeliveryDates(
       store.context.storeID,
       this.tempPickupTimeslot,
     );
 
-    const html = await this.template(dates);
+    const html = this.template(dates);
     this.DOM.pickupSection.insertAdjacentHTML('afterend', html);
     this.initDeliverySection();
     PubSub.publish('hide_loader');
   }
 
   // eslint-disable-next-line class-methods-use-this
-  async template(dates) {
+  template(dates) {
     const templateData = {
       type: 'delivery',
       title: 'Παραλαβή',
