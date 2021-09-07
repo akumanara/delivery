@@ -796,8 +796,10 @@ export default class extends EventEmitter {
       itemQuantity: 1,
     };
 
+    const bodyformData = getFormData(data);
+
     // after we call the api we get the updated cart
-    const cart = await this.api.quickAddProduct(data);
+    const cart = await this.api.quickAddProduct(bodyformData);
 
     // Publish the event to the cart with the data
     PubSub.publish('cart_update', cart);
