@@ -568,22 +568,36 @@ export default class {
     });
   }
 
-  // TODO
-  quickRemoveProduct(data) {
-    // https://www.delivery.gr/delivery/cart/3153/insert
-    // if (store.context.mode === 'development') {
+  quickRemoveProduct(data, productID) {
+    // https://www.delivery.gr/delivery/cart/{store id}/remove-one-product/{product id}
+    if (store.context.mode === 'development') {
+      return new Promise((resolve, reject) => {
+        const url = '/partials/cart-body.html';
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      });
+    }
     return new Promise((resolve, reject) => {
-      const url = '/partials/cart-body.html';
-      axios
-        .get(url)
+      const url = `delivery/cart/${store.context.storeID}/remove-one-product/${productID}`;
+      this.instance
+        .post(url, data, {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+        })
         .then((response) => {
-          setTimeout(() => resolve(response.data), 500);
+          resolve(response.data);
         })
         .catch((error) => {
           reject(error);
         });
     });
-    // }
   }
 
   addAddress(data) {
