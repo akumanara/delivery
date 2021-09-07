@@ -6,27 +6,11 @@ html {
 }
 
 body {
-  background: #f6f7f9;
+  background: #fff;
   color: #000;
   margin: 0;
   padding: 0;
   position: relative;
-}
-
-.store-page {
-  background: #fff;
-}
-
-.checkout-page {
-  background: #fff;
-}
-
-.catalog-page {
-  background: #fff;
-}
-
-.thankyou-page {
-  background: #fff;
 }
 
 $trans-easing: cubic-bezier(0.65, 0, 0.35, 1);

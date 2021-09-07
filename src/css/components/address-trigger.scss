@@ -1,3 +1,6 @@
 .address-trigger {
   border-bottom: 1px solid #eaebec;
+  .landing-page & {
+    border-bottom: none;
+  }
 }

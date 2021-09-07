@@ -1,0 +1,22 @@
+.landing-hero {
+  min-height: 160px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  &__welcome-copy {
+    @include font-size-9;
+    @include font-averta;
+
+    font-weight: 700;
+    margin-top: auto;
+  }
+  &__dots {
+    position: absolute;
+    top: 16px;
+    right: -16px;
+    width: 144px;
+    height: auto;
+  }
+}

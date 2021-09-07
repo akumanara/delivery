@@ -89,18 +89,11 @@ class App {
     }
 
     // Timeslots
-    // timeslots are complicated. better wrap this on a try catch
+    // timeslots are complicated. better wrap this on a try catch?
     const timeslotElement = document.querySelector('.timeslot__trigger');
     if (timeslotElement) {
       this.timeslot = new Timeslot(timeslotElement);
     }
-    // try {
-
-    // } catch (error) {
-    //   console.log('timeslots didnt initialized properly');
-    //   Sentry.captureException(error);
-    //   console.log(error);
-    // }
 
     // Noticeboard
     const noticeboardElement = document.querySelector('.noticeboard');
@@ -262,18 +255,20 @@ class App {
     // Featured slider
     this.sliders = [];
     document.querySelectorAll('.snippet__swiper').forEach((el) => {
-      const tmpSlider = new Swiper(el, {
+      const options = {
         slidesPerView: 'auto',
         loop: false,
         freeMode: true,
         freeModeMomentumBounce: false,
         resistanceRatio: 0,
-        spaceBetween: 16,
+        spaceBetween: el.classList.contains('small-gap') ? 10 : 16,
         // slidesOffsetAfter: 16,
         // slidesOffsetBefore: 16,
         observer: true,
         observeParents: true,
-      });
+      };
+
+      const tmpSlider = new Swiper(el, options);
       this.sliders.push(tmpSlider);
     });
 
