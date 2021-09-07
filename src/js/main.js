@@ -9,6 +9,7 @@ import Accordion from 'accordion-js';
 import PubSub from 'pubsub-js';
 import autosize from 'autosize';
 import { gsap, ScrollToPlugin, ScrollTrigger } from 'gsap/all';
+import * as Sentry from '@sentry/browser';
 import { showFPS, makeid, deliveryConsole, initSentry } from './utils/helpers';
 import StoreCatalog from './components/storeCatalog';
 import StoreList from './components/storeList';
@@ -36,9 +37,9 @@ import ThankYou from './components/thankYou';
 class App {
   constructor() {
     autoBind(this);
-    if (MODE !== 'development') {
-      initSentry();
-    }
+    // if (MODE !== 'development') {
+    initSentry();
+    // }
     deliveryConsole();
 
     window.Alert = Alert;
@@ -88,10 +89,18 @@ class App {
     }
 
     // Timeslots
-    const timeslotElement = document.querySelector('.timeslot__trigger');
-    if (timeslotElement) {
-      this.timeslot = new Timeslot(timeslotElement);
+    // timeslots are complicated. better wrap this on a try catch
+    try {
+      const timeslotElement = document.querySelector('.timeslot__trigger');
+      if (timeslotElement) {
+        this.timeslot = new Timeslot(timeslotElement);
+      }
+    } catch (error) {
+      console.log('timeslots didnt initialized properly');
+      Sentry.captureException(error);
+      console.log(error);
     }
+
     // Noticeboard
     const noticeboardElement = document.querySelector('.noticeboard');
     if (noticeboardElement) {
