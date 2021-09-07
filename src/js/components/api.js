@@ -790,7 +790,7 @@ export default class {
     });
   }
 
-  getPickupDates(storeID, date) {
+  getDeliveryDates(storeID, date) {
     // https://www.delivery.gr/api/delivery-slots
 
     if (store.context.mode === 'development') {

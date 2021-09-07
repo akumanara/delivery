@@ -77,10 +77,9 @@ export default class {
     // if type is delivery_and_pickup we have only a pickup section rendered
     if (this.type === timeslotTypes.deliveryOnly) {
       this.initDeliverySection();
+    } else if (this.type === timeslotTypes.deliveryAndPickup) {
+      this.initPickupSection();
     }
-    // else if (this.type === timeslotTypes.deliveryAndPickup) {
-    //   this.initPickupSection();
-    // }
 
     // save default accordion value to restore it later
     this.defaultBottomAccordionValue =
@@ -137,13 +136,13 @@ export default class {
       if (this.deliveryTimeslot) {
         this.preselectDeliveryTimeslot();
       } else {
-        this.cleaModalFromSelections();
+        // this.cleaModalFromSelections();
       }
     } else if (this.type === timeslotTypes.deliveryAndPickup) {
       if (this.deliveryTimeslot && this.pickupTimeslot) {
         this.preselectDeliveryAndPickupTimeslots();
       } else {
-        this.cleaModalFromSelections();
+        // this.cleaModalFromSelections();
       }
     }
   }
@@ -269,11 +268,12 @@ export default class {
   }
 
   initDeliverySection() {
+    // setup delivery section
+    // ==============================================================
+    // 1. Query DOM
     this.DOM.deliverySection = this.DOM.timeslotModal.querySelector(
       '.timeslot__section[data-type="delivery"]',
     );
-    // setup delivery section
-    // ==============================================================
     this.DOM.deliverySectionDays = this.DOM.deliverySection.querySelectorAll(
       '.js-days .timeslot__section-item',
     );
@@ -290,7 +290,7 @@ export default class {
         '.timeslot__section-item',
       );
 
-    // events for delivery section
+    // 2. Events for delivery section
     this.DOM.deliverySectionDays.forEach((day) => {
       day.addEventListener('click', () => {
         this.selectDeliveryDay(day);
@@ -343,7 +343,7 @@ export default class {
 
   selectPickupDay(day) {
     // day is not available
-    if (day.classList.contains('timeslot__section-item--unavailable')) return;
+    // if (day.classList.contains('timeslot__section-item--unavailable')) return;
 
     // hide all hours sections
     this.DOM.pickupHoursSections.forEach((section) => {
@@ -366,7 +366,7 @@ export default class {
     day.classList.add('timeslot__section-item--selected');
   }
 
-  selectPickupHour(hour) {
+  async selectPickupHour(hour) {
     // hour is not available
     if (hour.classList.contains('timeslot__section-item--unavailable')) return;
 
@@ -389,6 +389,9 @@ export default class {
       slotId: hour.dataset.slotId,
     };
     console.log(this.tempPickupTimeslot);
+
+    // When the user selects an hour we create the delivery timeslots section from the API
+    await this.createDeliveryTimeslotDOM();
 
     // check the state of the apply button
     this.checkApplyFeasility();
@@ -417,10 +420,10 @@ export default class {
       slotId: hour.dataset.slotId,
     };
 
-    // if we the type is also pickup we need to make a call and get the pickup timeslots
-    if (this.type === timeslotTypes.deliveryAndPickup) {
-      await this.createPickupTimeslotDOM();
-    }
+    // // if we the type is also pickup we need to make a call and get the pickup timeslots
+    // if (this.type === timeslotTypes.deliveryAndPickup) {
+    //   await this.createPickupTimeslotDOM();
+    // }
 
     // check the state of the apply button
     this.checkApplyFeasility();
@@ -475,17 +478,23 @@ export default class {
     // DELIVERY
     this.tempDeliveryTimeslot = null;
     // hide all hours sections
-    this.DOM.deliveryHoursSections.forEach((section) => {
-      section.classList.add('d-none');
-    });
+    if (this.DOM.deliveryHoursSections) {
+      this.DOM.deliveryHoursSections.forEach((section) => {
+        section.classList.add('d-none');
+      });
+    }
     // remove selected class from days
-    this.DOM.deliverySectionDays.forEach((dayItem) => {
-      dayItem.classList.remove('timeslot__section-item--selected');
-    });
+    if (this.DOM.deliverySectionDays) {
+      this.DOM.deliverySectionDays.forEach((dayItem) => {
+        dayItem.classList.remove('timeslot__section-item--selected');
+      });
+    }
     // unselect all hours
-    this.DOM.deliveryHours.forEach((hourItem) => {
-      hourItem.classList.remove('timeslot__section-item--selected');
-    });
+    if (this.DOM.deliveryHours) {
+      this.DOM.deliveryHours.forEach((hourItem) => {
+        hourItem.classList.remove('timeslot__section-item--selected');
+      });
+    }
 
     // PICKUP
     this.tempPickupTimeslot = null;
@@ -664,29 +673,30 @@ export default class {
     }
   }
 
-  async createPickupTimeslotDOM() {
+  async createDeliveryTimeslotDOM() {
     PubSub.publish('show_loader');
-    // remove the previous pickup section
-    if (this.DOM.pickupSection) {
-      this.DOM.pickupSection.remove();
+    // remove the previous delivery section
+    if (this.DOM.deliverySection) {
+      this.DOM.deliverySection.remove();
     }
-    // remove the previous pickup hours in case he selected
-    this.tempPickupTimeslot = null;
+    // remove the previous delivery hours in case he selected
+    this.tempDeliveryTimeslot = null;
 
-    const dates = await this.api.getPickupDates(
+    const dates = await this.api.getDeliveryDates(
       store.context.storeID,
-      this.tempDeliveryTimeslot,
+      this.tempPickupTimeslot,
     );
+
     const html = await this.template(dates);
-    this.DOM.deliverySection.insertAdjacentHTML('afterend', html);
-    this.initPickupSection();
+    this.DOM.pickupSection.insertAdjacentHTML('afterend', html);
+    this.initDeliverySection();
     PubSub.publish('hide_loader');
   }
 
   // eslint-disable-next-line class-methods-use-this
   async template(dates) {
     const templateData = {
-      type: 'pickup',
+      type: 'delivery',
       title: 'Παραλαβή',
       description: 'Ημέρα παραλαβής από το χώρο',
       days: dates.pickupDates,
