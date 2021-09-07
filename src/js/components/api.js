@@ -20,7 +20,7 @@ import {
   verifyNumber,
   passwordResetSuccess,
   passwordResetError,
-  pickupDates,
+  deliveryDates,
   offer,
   loadMoreProducts,
 } from '../utils/serverResponses';
@@ -796,7 +796,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(pickupDates);
+          resolve(deliveryDates);
         }, 500),
       );
     }

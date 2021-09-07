@@ -2648,8 +2648,8 @@ const genericError = {
   message: 'something something',
 };
 
-const pickupDates = {
-  pickupDates: [
+const deliveryDates = {
+  deliveryDates: [
     {
       date: '2022-01-01',
       dateSmall: '01/01',
@@ -2773,7 +2773,7 @@ export {
   offer,
   genericError,
   genericSuccess,
-  pickupDates,
+  deliveryDates,
   loginMailPasswordFail,
   loginMailPasswordSuccess,
   productData,

@@ -90,16 +90,17 @@ class App {
 
     // Timeslots
     // timeslots are complicated. better wrap this on a try catch
-    try {
-      const timeslotElement = document.querySelector('.timeslot__trigger');
-      if (timeslotElement) {
-        this.timeslot = new Timeslot(timeslotElement);
-      }
-    } catch (error) {
-      console.log('timeslots didnt initialized properly');
-      Sentry.captureException(error);
-      console.log(error);
+    const timeslotElement = document.querySelector('.timeslot__trigger');
+    if (timeslotElement) {
+      this.timeslot = new Timeslot(timeslotElement);
     }
+    // try {
+
+    // } catch (error) {
+    //   console.log('timeslots didnt initialized properly');
+    //   Sentry.captureException(error);
+    //   console.log(error);
+    // }
 
     // Noticeboard
     const noticeboardElement = document.querySelector('.noticeboard');

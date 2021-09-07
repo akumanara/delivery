@@ -703,7 +703,7 @@ export default class {
       type: 'delivery',
       title: 'Παραλαβή',
       description: 'Ημέρα παραλαβής από το χώρο',
-      days: dates.pickupDates,
+      days: dates.deliveryDates,
     };
 
     // TODO dont compile the template every time
