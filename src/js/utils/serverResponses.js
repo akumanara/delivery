@@ -2742,6 +2742,45 @@ const offer = {
   ],
 };
 
+const offer2 = {
+  id: '2124',
+  name: '1+1 ΑΒ  Γαρύφαλλο Ολόκληρο 25 gr',
+  comments: '',
+  offerType: '1',
+  offerValidFrom: false,
+  offerValidTo: false,
+  discountAmount: 0,
+  discountPercentage: 100,
+  fixedPrice: 0,
+  fixedPriceForDiscountCategory: 0,
+  discountCategoryID: '4379',
+  chargeIngredients: false,
+  hideChargeIngredients: true,
+  images: ['./images/o1.jpg'],
+  categories: [
+    {
+      id: '4379',
+      title: 'Γλυκά',
+      products: [
+        {
+          id: '397739',
+          name: 'Προφιτερόλ "Γλυκάκι"',
+        },
+      ],
+    },
+    {
+      id: '4380',
+      title: 'Γλυκά',
+      products: [
+        {
+          id: '397739',
+          name: 'Προφιτερόλ "Γλυκάκι"',
+        },
+      ],
+    },
+  ],
+};
+
 const loadMoreProducts = {
   products: [
     {
@@ -2775,6 +2814,7 @@ export {
   loadMoreProductsEmpty,
   loadMoreProducts,
   offer,
+  offer2,
   genericError,
   genericSuccess,
   deliveryDates,

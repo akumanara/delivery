@@ -22,6 +22,7 @@ import {
   passwordResetError,
   deliveryDates,
   offer,
+  offer2,
   loadMoreProducts,
 } from '../utils/serverResponses';
 
@@ -80,7 +81,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(offer);
+          resolve(offer2);
         }, 200),
       );
     }
