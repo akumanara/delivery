@@ -807,11 +807,7 @@ export default class {
       };
       const url = `api/delivery-slots`;
       this.instance
-        .post(url, data, {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-        })
+        .post(url, data)
         .then((response) => {
           resolve(response.data);
         })
