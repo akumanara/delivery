@@ -46,14 +46,17 @@ export default class {
     this.DOM.noAvailableTimeslotsModalBtn =
       this.DOM.noAvailableTimeslotsModal.querySelector('.js-action-btn');
     this.isNoSlotsModalOpen = false;
-    this.DOM.noAvailableTimeslotsModalClose.addEventListener(
-      'click',
-      this.toggleNoSlotsModal,
-    );
-    this.DOM.noAvailableTimeslotsModalBtn.addEventListener(
-      'click',
-      this.toggleNoSlotsModal,
-    );
+
+    if (this.DOM.noAvailableTimeslotsModal) {
+      this.DOM.noAvailableTimeslotsModalClose.addEventListener(
+        'click',
+        this.toggleNoSlotsModal,
+      );
+      this.DOM.noAvailableTimeslotsModalBtn.addEventListener(
+        'click',
+        this.toggleNoSlotsModal,
+      );
+    }
   }
 
   setupEventListeners() {

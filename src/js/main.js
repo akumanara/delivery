@@ -143,13 +143,7 @@ class App {
     }
 
     // Address Component
-    const addressTriggerElement = document.querySelector('.address-trigger');
-    if (addressTriggerElement) {
-      this.addressComponent = new Address();
-    } else {
-      // have an empty callback function in case we have the maps api
-      window.googleMapsCallback = () => {};
-    }
+    this.addressComponent = new Address();
 
     // Thank you page
     const thankYouElement = document.querySelector('.js-thankyou');

@@ -14,6 +14,8 @@ import texts from '../utils/texts';
 export default class {
   constructor() {
     autoBind(this);
+    // have an empty callback function in case we have the maps api
+    window.googleMapsCallback = () => {};
     // we take that info from backend
     this.isSelectedAddressSupported = store.context.isSelectedAddressSupported;
     this.api = new API();
@@ -36,21 +38,24 @@ export default class {
     this.DOM.accordion = document.querySelector(
       '.address-trigger .accordion__container',
     );
-    this.DOM.accordion = {
-      accordion: this.DOM.accordion,
-      headerTop: this.DOM.accordion.querySelector(
-        '.delivery-type__option-header-top',
-      ),
-      headerBottom: this.DOM.accordion.querySelector(
-        '.delivery-type__option-header-bottom',
-      ),
-    };
+    if (this.DOM.accordion) {
+      this.DOM.accordion = {
+        accordion: this.DOM.accordion,
+        headerTop: this.DOM.accordion.querySelector(
+          '.delivery-type__option-header-top',
+        ),
+        headerBottom: this.DOM.accordion.querySelector(
+          '.delivery-type__option-header-bottom',
+        ),
+        trigger: document.querySelector('.address-trigger'),
+      };
+    }
 
     // Choose Address modal
     this.DOM.chooseAddressModal = document.querySelector('.choose-address');
     this.DOM.chooseAddressModal = {
       modal: this.DOM.chooseAddressModal,
-      trigger: document.querySelector('.address-trigger'),
+      // trigger: document.querySelector('.address-trigger'),
       closeBtn: this.DOM.chooseAddressModal.querySelector(
         '.choose-address__close-btn',
       ),
@@ -113,6 +118,17 @@ export default class {
   }
 
   init() {
+    // landing page trigger
+    this.DOM.landingTrigger = document.querySelector('.js-address-trigger');
+    if (this.DOM.landingTrigger) {
+      this.DOM.landingTrigger.addEventListener('click', this.triggerClicked);
+    }
+
+    // Fake accordion trigger
+    if (this.DOM.accordion) {
+      this.DOM.accordion.trigger.addEventListener('click', this.triggerClicked);
+    }
+
     this.initChooseAddressModal();
     this.initAutoSuggestModal();
     this.initVerifyModal();
@@ -156,10 +172,7 @@ export default class {
   initChooseAddressModal() {
     // const that = this;
     // Choose address modal
-    this.DOM.chooseAddressModal.trigger.addEventListener(
-      'click',
-      this.triggerClicked,
-    );
+
     this.DOM.chooseAddressModal.closeBtn.addEventListener(
       'click',
       this.hideChooseAddressModal,
@@ -224,8 +237,11 @@ export default class {
     this.selectedAddressName = this.selectedAddress.querySelector(
       '.choose-address__options-button-name',
     ).innerHTML;
-    this.DOM.accordion.headerTop.innerHTML = `TODO ${this.DOM.accordion.headerTop.innerHTML}`;
-    this.DOM.accordion.headerBottom.innerHTML = this.selectedAddressName;
+
+    if (this.DOM.accordion) {
+      this.DOM.accordion.headerTop.innerHTML = `TODO ${this.DOM.accordion.headerTop.innerHTML}`;
+      this.DOM.accordion.headerBottom.innerHTML = this.selectedAddressName;
+    }
   }
 
   async submitSavedAddress(button) {
