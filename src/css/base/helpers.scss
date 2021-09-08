@@ -145,3 +145,8 @@ $spacings: 0, 6, 8, 10, 14, 16, 18, 20, 25, 28, 30;
 .line-through {
   text-decoration: line-through;
 }
+
+.parent-no-overflow {
+  width: 100%;
+  overflow: hidden;
+}

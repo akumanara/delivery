@@ -126,11 +126,16 @@ export default class {
     // landing page trigger
     this.DOM.landingTrigger = document.querySelector('.js-address-trigger');
     if (this.DOM.landingTrigger) {
-      this.DOM.landingTrigger.addEventListener('click', this.triggerClicked);
+      this.DOM.landingTrigger.addEventListener('click', () => {
+        this.clickedVerticalPrefix = null;
+        this.triggerClicked();
+      });
     }
 
     // Verticals
-    this.DOM.verticals.forEach((vertical) => {});
+    this.DOM.verticals.forEach((vertical) => {
+      vertical.addEventListener('click', this.verticalClicked);
+    });
 
     // Fake accordion trigger
     if (this.DOM.accordion) {
@@ -151,6 +156,19 @@ export default class {
     this.DOM.raiseAddressLinks.forEach((link) => {
       link.addEventListener('click', this.raiseAddress);
     });
+  }
+
+  verticalClicked(e) {
+    console.log(e.target.getAttribute('href'));
+    if (e.target.getAttribute('href') === '') {
+      // the vertical link has no href. we need to save the vertical prefix and raise the address modal
+      e.preventDefault();
+      this.clickedVerticalPrefix = e.target.dataset.prefix;
+      this.triggerClicked();
+      console.log(e.target);
+      return false;
+    }
+    return true;
   }
 
   raiseAddress(e) {
@@ -391,15 +409,11 @@ export default class {
 
   triggerClicked() {
     console.log('clicked');
-    // TODO check if the user has at least one address
-    if (
-      store.context.isUserLoggedIn &&
-      this.DOM.chooseAddressModal.savedAddresses.length > 0
-    ) {
-      console.log('user is logged in');
+    if (this.DOM.chooseAddressModal.savedAddresses.length > 0) {
+      console.log('user has at least one address');
       this.showChooseAddressModal();
     } else {
-      console.log('user is guest');
+      console.log('user without an address');
       this.goToAddNewAddress();
     }
   }
@@ -880,6 +894,8 @@ export default class {
         console.log(result);
         if (!store.context.storeID) {
           window.location.href = `${store.context.redirectURLfromAddress}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
+        } else if (this.clickedVerticalPrefix) {
+          window.location.href = `${this.clickedVerticalPrefix}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
         } else {
           window.location.reload();
         }
