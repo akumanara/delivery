@@ -41,13 +41,13 @@ export default class {
     this.DOM.noAvailableTimeslotsModal = document.querySelector(
       '.js-no-timeslot-modal',
     );
-    this.DOM.noAvailableTimeslotsModalClose =
-      this.DOM.noAvailableTimeslotsModal.querySelector('.js-close');
-    this.DOM.noAvailableTimeslotsModalBtn =
-      this.DOM.noAvailableTimeslotsModal.querySelector('.js-action-btn');
-    this.isNoSlotsModalOpen = false;
-
     if (this.DOM.noAvailableTimeslotsModal) {
+      this.DOM.noAvailableTimeslotsModalClose =
+        this.DOM.noAvailableTimeslotsModal.querySelector('.js-close');
+      this.DOM.noAvailableTimeslotsModalBtn =
+        this.DOM.noAvailableTimeslotsModal.querySelector('.js-action-btn');
+      this.isNoSlotsModalOpen = false;
+
       this.DOM.noAvailableTimeslotsModalClose.addEventListener(
         'click',
         this.toggleNoSlotsModal,

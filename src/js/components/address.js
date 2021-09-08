@@ -34,6 +34,11 @@ export default class {
     // Menu links that need to raise address
     this.DOM.raiseAddressLinks = document.querySelectorAll('.js-needs-address');
 
+    // Verticals on landing page
+    this.DOM.verticals = document.querySelectorAll(
+      '.landing-categories__grid-item',
+    );
+
     // Accordion
     this.DOM.accordion = document.querySelector(
       '.address-trigger .accordion__container',
@@ -123,6 +128,9 @@ export default class {
     if (this.DOM.landingTrigger) {
       this.DOM.landingTrigger.addEventListener('click', this.triggerClicked);
     }
+
+    // Verticals
+    this.DOM.verticals.forEach((vertical) => {});
 
     // Fake accordion trigger
     if (this.DOM.accordion) {
