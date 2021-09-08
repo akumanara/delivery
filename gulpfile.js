@@ -14,6 +14,8 @@ const gulp = require('gulp'),
   sass = require('gulp-sass'),
   rename = require('gulp-rename');
 var compress = require('compression');
+const webp = require('gulp-webp');
+
 // https://www.npmjs.com/package/gulp-css-replace-url
 
 const src_folder = './src/';
@@ -161,6 +163,7 @@ gulp.task('imagesRaster', () => {
   return (
     gulp
       .src([src_folder + 'images/**/*.+(png|jpg|jpeg|gif|ico)'])
+      .pipe(webp())
       .pipe(gulp.dest(dist_folder + 'images'))
       // .pipe(gulp.dest(aura_folder_imgs))
       .pipe(browserSync.stream())

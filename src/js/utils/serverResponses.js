@@ -12,7 +12,7 @@ const productData = {
   large_description: '<p>description</p>',
   start_price: 5.55,
   isOutOfStock: false,
-  images: ['./images/b1.jpg', './images/b2.jpg', './images/b3.jpg'],
+  images: ['./images/b1.webp', './images/b2.webp', './images/b3.webp'],
   minQuantity: 0,
   maxQuantity: 23,
   // old
@@ -1339,7 +1339,7 @@ const productData3 = {
     '<p>Οι συστάσεις είναι περιττές! Κλασική κι αγαπημένη Coca-Cola σε μπουκάλι 500 ml.</p><p>ΣΥΣΤΑΤΙΚΑ: Νερό, Ζάχαρη, Διοξείδιο Άνθρακα, Χρωστική: Ε 150d, Μέσο οξίνισης: Φωσφορικό Οξύ, Φυσικές Αρωματικές Ύλες (περιέχουν καφεΐνη)</p><h3>Διατροφικά Στοιχεία</h3><table class="table table-striped"><tr><td></td><td>Ανά 100 ml</td><td>Ανά 250 ml</td></tr><tr><td>Ενέργεια (kcal/kJ)</td><td>42/180</td><td>105/450</td></tr><tr><td>Λιπαρά (g)</td><td>0</td></tr><tr><td>εκ των οποίων κορεσμένα (g)</td><td>0</td></tr><tr><td>Υδατάνθρακες (g)</td><td>10,6</td><td>27</td></tr><tr><td>εκ των οποίων σάκχαρα (g)</td><td>10,6</td><td>27</td></tr><tr><td>Πρωτεϊνες (g)</td><td>0</td></tr><tr><td>Αλάτι (g)</td><td>0</td></tr></table>',
   start_price: 0,
   isOutOfStock: false,
-  images: ['./images/bb.jpg'],
+  images: ['./images/bb.webp'],
   minQuantity: 0,
   maxQuantity: 0,
   category: {
@@ -2709,7 +2709,7 @@ const offer = {
   discountCategoryID: '112',
   chargeIngredients: true,
   hideChargeIngredients: false,
-  images: ['./images/o1.jpg'],
+  images: ['./images/o1.webp'],
   categories: [
     {
       id: '111',
@@ -2756,7 +2756,7 @@ const offer2 = {
   discountCategoryID: '4379',
   chargeIngredients: false,
   hideChargeIngredients: true,
-  images: ['./images/o1.jpg'],
+  images: ['./images/o1.webp'],
   categories: [
     {
       id: '4379',
@@ -2789,7 +2789,7 @@ const loadMoreProducts = {
       price: 1.0,
       startingPrice: 0.9,
       badgeCopy: 'Κέρδος 40%',
-      image: './images/o1.jpg',
+      image: './images/o1.webp',
       smallText: '15,18€ / κιλό',
       isQuickAddDisabled: false,
     },
@@ -2800,7 +2800,7 @@ const loadMoreProducts = {
       startingPrice: 0.9,
       badgeCopy: 'Κέρδος 40%',
       smallText: '15,18€ / κιλό',
-      image: './images/o1.jpg',
+      image: './images/o1.webp',
       isQuickAddDisabled: false,
     },
   ],

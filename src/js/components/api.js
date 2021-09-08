@@ -878,8 +878,8 @@ export default class {
   getMarketsAutocompleteResults(storeID, query, baseURL) {
     // https://api.ibutler.gr/search/market/${storeID}/${query}
     //   {
-    //     "image": "https://static.delivery.gr//shops/13070/products/7090673_1_product.jpg",
-    //     "img": "https://static.delivery.gr//shops/13070/products/7090673_1_product.jpg",
+    //     "image": "https://static.delivery.gr//shops/13070/products/7090673_1_product.webp",
+    //     "img": "https://static.delivery.gr//shops/13070/products/7090673_1_product.webp",
     //     "max_quantity": 0,
     //     "shop": 13138,
     //     "comments": 13138,
