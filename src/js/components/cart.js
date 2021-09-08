@@ -2,6 +2,7 @@ import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
 import PubSub from 'pubsub-js';
 import Product from './product';
+import Offer from './offer';
 import API from './api';
 import { store } from '../utils/store';
 import { deliveryTypes } from '../utils/enum';
@@ -19,8 +20,9 @@ export default class {
     this.DOM.cartBody = document.querySelector('.cart__body');
 
     this.isOpen = false;
-    // The products from cart
+    // The products and offers arrays from cart
     this.products = [];
+    this.offers = [];
 
     this.DOM.togglerBtn.addEventListener('click', this.toggleCart);
 
@@ -63,15 +65,22 @@ export default class {
     this.DOM.cartProducts =
       this.DOM.cartBody.querySelectorAll('.cart__product');
 
-    // if we have no products. close the basket
-    if (this.DOM.cartProducts.length === 0 && this.isOpen) {
+    // offers
+    this.DOM.cartOffers = this.DOM.cartBody.querySelectorAll('.cart__offer');
+
+    // if we have no products or no offers. close the basket
+    if (
+      this.DOM.cartProducts.length === 0 &&
+      this.DOM.cartOffers.length === 0 &&
+      this.isOpen
+    ) {
       this.toggleCart();
     }
 
     // Run the scripts from the backend
     this.runScripts();
 
-    // The cart doesnt come on page load. So it we need to re-set the isSelectedAddressSupported flag
+    // The cart doesnt come on page load which sets this context variable. So it we need to re-set the isSelectedAddressSupported flag
     store.app.addressComponent.updateSelectedAddressIsSupported();
 
     // Setup event listeners
@@ -101,8 +110,8 @@ export default class {
         this.accordions.push(tmpAccordionContainer);
       });
 
-    // Remove the in cart class for all the products
-    store.app.productList.removeInCartStatusFromAllProducts();
+    // Remove the in cart class for all the products. We dont do that for offers.
+    store.app.productsAndOffersList.removeInCartStatusFromAllProducts();
 
     // Create products
     this.DOM.cartProducts.forEach((productElement) => {
@@ -113,13 +122,20 @@ export default class {
       this.products.push(tmpProduct);
 
       // Tag the product in the store menu with (in cart class) and set its cart qty
-      store.app.productList.addCartDataToProduct(
+      store.app.productsAndOffersList.addCartDataToProduct(
         tmpProduct.productID,
         productElement.dataset.cartIndex,
         productElement.dataset.productQty,
         productElement.dataset.productUom,
         productElement.dataset.productUomstep,
       );
+    });
+
+    // Create offers
+    this.DOM.cartOffers.forEach((offerElement) => {
+      // Create the offer object
+      const tmpOffer = new Offer(offerElement);
+      this.offers.push(tmpOffer);
     });
 
     // Update the show cart button with the summary
@@ -138,7 +154,7 @@ export default class {
     // Create products
     this.DOM.cartProducts.forEach((productElement) => {
       // Tag the product in the store menu with (in cart class) and set its cart qty
-      store.app.productList.addCartDataToProduct(
+      store.app.productsAndOffersList.addCartDataToProduct(
         productElement.dataset.productId,
         productElement.dataset.cartIndex,
         productElement.dataset.productQty,
@@ -150,7 +166,7 @@ export default class {
 
   showCartButtonLogic() {
     // Show the toggle-cart button if we have at least one product
-    if (this.products.length > 0) {
+    if (this.products.length > 0 || this.offers.length > 0) {
       this.DOM.toggler.classList.add('cart__toggler--active');
     } else {
       this.DOM.toggler.classList.remove('cart__toggler--active');
@@ -172,6 +188,7 @@ export default class {
     });
     this.accordions = [];
     this.products = [];
+    this.offers = [];
   }
 
   showCart() {

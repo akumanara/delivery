@@ -20,10 +20,38 @@ export default class {
     this.DOM = {};
     this.api = new API();
     this.DOM.triggerElement = offerElement;
+
+    this.init();
+  }
+
+  init() {
     this.offerID = this.DOM.triggerElement.dataset.offerId;
-    // this.DOM.modal = document.querySelector('.tmp');
-    this.DOM.triggerElement.addEventListener('click', this.raiseModal);
-    // this.isModalOpen = false;
+
+    // Setup based on store menu or cart offer
+
+    if (this.DOM.triggerElement.classList.contains('cart__offer')) {
+      // CART OFFER
+      // Get the cart index
+      this.cartIndex = this.DOM.triggerElement.dataset.cartIndex;
+      // Delete
+      this.DOM.triggerElement
+        .querySelector('.cart__product-actions-delete')
+        .addEventListener('click', this.cartDeleteOffer);
+    } else {
+      // STORE MENU OFFER
+      this.DOM.triggerElement.addEventListener('click', this.raiseModal);
+    }
+  }
+
+  async cartDeleteOffer() {
+    PubSub.publish('show_loader');
+    // fetch the html for the modal
+    const cart = await this.api.deleteOfferFromCart(this.cartIndex);
+
+    // Publish the event to the cart with the data
+    PubSub.publish('cart_update', cart);
+
+    PubSub.publish('hide_loader');
   }
 
   async raiseModal() {

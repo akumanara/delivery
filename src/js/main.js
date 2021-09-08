@@ -13,7 +13,7 @@ import * as Sentry from '@sentry/browser';
 import { showFPS, makeid, deliveryConsole, initSentry } from './utils/helpers';
 import StoreCatalog from './components/storeCatalog';
 import StoreList from './components/storeList';
-import ProductList from './components/productList';
+import ProductsAndOffersList from './components/productsAndOffersList';
 import AddCard from './components/add-card';
 import Cart from './components/cart';
 import VerifyNumber from './components/verify-number';
@@ -120,7 +120,7 @@ class App {
     // Product modal (add product to basket) (must be before cart)
     const storeMenuCatalog = document.querySelector('.store-menu__catalog');
     if (storeMenuCatalog) {
-      this.productList = new ProductList();
+      this.productsAndOffersList = new ProductsAndOffersList();
     }
     // Delivery type (must be before cart)
     const deliveryTypeElement = document.querySelector('.delivery-type');

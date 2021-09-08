@@ -149,6 +149,34 @@ export default class {
     });
   }
 
+  deleteOfferFromCart(cartIndex) {
+    // https://www.delivery.gr/delivery/cart/{store id}/remove-offer/{cart index}
+    if (store.context.mode === 'development') {
+      return new Promise((resolve, reject) => {
+        const url = '/partials/cart-body.html';
+        axios
+          .get(url)
+          .then((response) => {
+            setTimeout(() => resolve(response.data), 500);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      });
+    }
+    return new Promise((resolve, reject) => {
+      const url = `delivery/cart/${store.context.storeID}/remove-offer/${cartIndex}`;
+      this.instance
+        .get(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
   addProductToCart(data) {
     // https://www.delivery.gr/delivery/cart/3153/insert
     if (store.context.mode === 'development') {
