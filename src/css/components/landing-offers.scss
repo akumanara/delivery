@@ -1,0 +1,42 @@
+.landing-offers {
+  margin-top: 60px;
+  position: relative;
+  min-height: 600px;
+  padding: 0 16px;
+  &__bg-copy {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 540px;
+    // height: 100%;
+    z-index: -1;
+  }
+  &__bg-copy-img {
+    // width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  &__copy {
+    padding-top: 100px;
+    @include font-averta;
+
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 700;
+    max-width: 240px;
+  }
+
+  &__badge {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__bg-guy {
+    padding-top: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+}

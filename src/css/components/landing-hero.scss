@@ -41,12 +41,19 @@
   }
 
   &__badge {
-    display: inline-block;
-    vertical-align: middle;
-    // background: #ffc700;
-    // border-radius: 8px;
-    // transform: rotate(-4deg);
-    // padding: 10px;
+    background-color: #ffc700;
+    color: #000;
+    font-size: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include font-averta;
+
+    line-height: 0.9;
+    font-weight: 900;
+    padding: 8px;
+    border-radius: 8px;
+    transform: rotate(-3.37deg);
   }
   &__guy {
     position: absolute;

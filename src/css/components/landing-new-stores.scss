@@ -1,0 +1,93 @@
+.landing-new-stores {
+  position: relative;
+  .swiper-slide {
+    width: auto;
+  }
+  .snippet__swiper {
+    padding: 0 16px;
+    margin-bottom: 30px;
+  }
+  &__bg-copy {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 540px;
+    // height: 100%;
+    z-index: -4;
+  }
+  &__bg-copy-img {
+    // width: 100%;
+    width: auto;
+    height: auto;
+  }
+  &__copy {
+    padding: 20px 16px;
+    padding-top: 80px; // @include font-size-9;
+    padding-bottom: 40px; // @include font-size-9;
+    @include font-averta;
+
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 700;
+    max-width: 240px;
+  }
+
+  &__badge {
+    background-color: #ffc700;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include font-averta;
+
+    font-size: 26px;
+    line-height: 0.9;
+    font-weight: 900;
+    padding: 8px;
+    border-radius: 8px;
+    transform: rotate(-3.37deg);
+  }
+
+  &__store {
+    display: flex;
+    flex-direction: column;
+    background-color: #ecedef;
+    border-radius: 10px;
+    width: 260px;
+    height: 200px;
+    box-sizing: border-box;
+  }
+  &__store-name {
+    padding: 10px;
+    @include font-averta;
+
+    font-weight: 700;
+    @include font-size-9;
+    div {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+  &__store-bottom {
+    display: flex;
+    margin-top: auto;
+  }
+  &__store-description {
+    padding: 16px;
+    @include font-size-2;
+
+    color: #77777c;
+    div {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+  &__store-arrow {
+    align-self: flex-end;
+    padding: 6px;
+  }
+}

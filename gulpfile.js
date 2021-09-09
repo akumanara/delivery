@@ -163,7 +163,11 @@ gulp.task('imagesRaster', () => {
   return (
     gulp
       .src([src_folder + 'images/**/*.+(png|jpg|jpeg|gif|ico)'])
-      .pipe(webp())
+      .pipe(
+        webp({
+          quality: 80,
+        }),
+      )
       .pipe(gulp.dest(dist_folder + 'images'))
       // .pipe(gulp.dest(aura_folder_imgs))
       .pipe(browserSync.stream())
