@@ -89,5 +89,5 @@ export default {
   timeslotExpiredSelected:
     'Οι προγραμματισμένες ώρες που διάλεξες δεν είναι πλέον διαθέσιμες',
   timeslotDeliveryTitle: 'Παράδοση',
-  timeslotDeliveryDescription: 'Ημέρα παράδοσης από το χώρο',
+  timeslotDeliveryDescription: 'Ημέρα παράδοσης στο χώρο',
 };

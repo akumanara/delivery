@@ -3,9 +3,8 @@ general:
   ☐ [general] sentry remove cc data before sending @critical;
   ☐ [general] landing page mechanism for address and vertical selection
   ☐ nada results sto search tou market
-  ☐ landing page png transparency - optimize for size
   ☐ checkout apodeiksi grafiko na mpein inline k oxi sto css
-  ☐ landing resize png transparent imgs
+
 
 pending pages:
   ☐ Landing page
@@ -59,6 +58,8 @@ quick remove se product market view na checkare afto me to den exeis diefthinsi
 meeting:
 
 Done:
+  ✔ landing page png transparency - optimize for size @done(21-09-09 16:35)
+  ✔ landing resize png transparent imgs @done(21-09-09 16:35)
   ✔ Thank you page @done(21-09-06 16:17)
   ✔ product layout (quick add / edit / delete) @done(21-08-17 10:28)
   ✔ Search modal @done(21-08-17 15:31)
