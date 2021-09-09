@@ -13,6 +13,10 @@ export default class {
       swiperItems: document.querySelectorAll('.store-menu__slider-item'),
     };
 
+    if (!this.DOM.slider) {
+      return;
+    }
+
     this.triggeringScrollEvents = true;
     this.swiper = new Swiper(this.DOM.slider, {
       slidesPerView: 'auto',
