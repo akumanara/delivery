@@ -165,7 +165,7 @@ export default class extends EventEmitter {
       '.cart__product-actions-quantity-minus-trigger',
     );
     if (minusOneElement) {
-      minusOneElement.addEventListener('click', this.cartPlusOneProduct);
+      minusOneElement.addEventListener('click', this.cartMinusOneProduct);
     }
   }
 
