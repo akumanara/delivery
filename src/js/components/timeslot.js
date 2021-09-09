@@ -704,8 +704,8 @@ export default class {
   template(dates) {
     const templateData = {
       type: 'delivery',
-      title: 'Παραλαβή',
-      description: 'Ημέρα παραλαβής από το χώρο',
+      title: texts.timeslotDeliveryTitle,
+      description: texts.timeslotDeliveryDescription,
       days: dates.deliveryDates,
     };
 
