@@ -3,6 +3,7 @@
 import autoBind from 'auto-bind';
 import { debounce } from 'lodash';
 import PubSub from 'pubsub-js';
+import { Loader } from '@googlemaps/js-api-loader';
 import Alert from './alert';
 import { store } from '../utils/store';
 import mapStyle from '../utils/mapstyle';
@@ -14,8 +15,17 @@ import texts from '../utils/texts';
 export default class {
   constructor() {
     autoBind(this);
+    this.loader = new Loader({
+      apiKey: store.context.googleMapsApiKey,
+      version: 'weekly',
+      libraries: ['places'],
+      language: 'el',
+    });
+    this.loader.loadCallback(this.googleMapsCallback);
+
+    // https://www.npmjs.com/package/@googlemaps/js-api-loader maybe try this? todo
     // have an empty callback function in case we have the maps api
-    window.googleMapsCallback = () => {};
+    // window.googleMapsCallback = () => {};
     // we take that info from backend
     this.isSelectedAddressSupported = store.context.isSelectedAddressSupported;
     this.api = new API();

@@ -49,6 +49,7 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.2",
     "@panzoom/panzoom": "^4.4.1",
     "@sentry/browser": "^6.4.0",
     "@sentry/tracing": "^6.4.0",
