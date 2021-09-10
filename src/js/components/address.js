@@ -417,12 +417,17 @@ export default class {
   }
 
   triggerClicked() {
-    console.log('clicked');
-    if (this.DOM.chooseAddressModal.savedAddresses.length > 0) {
-      console.log('user has at least one address');
-      this.showChooseAddressModal();
+    if (store.context.isUserLoggedIn) {
+      // Logged in
+      if (this.DOM.chooseAddressModal.savedAddresses.length > 0) {
+        // User has at least one address
+        this.showChooseAddressModal();
+      } else {
+        // User has no address
+        this.goToAddNewAddress();
+      }
     } else {
-      console.log('user without an address');
+      // Guest
       this.goToAddNewAddress();
     }
   }
