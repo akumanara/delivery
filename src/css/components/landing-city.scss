@@ -1,0 +1,29 @@
+.landing-city {
+  padding: 0 16px;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+  }
+  &__name {
+    @include font-averta;
+    @include font-size-8;
+
+    font-weight: 700;
+  }
+  &__areas {
+    color: #676970;
+    @include font-size-2;
+  }
+
+  &__copy {
+    padding: 10px 16px;
+    color: #676970;
+    @include font-size-2;
+  }
+  .landing-hero__trigger {
+    margin-top: 80px;
+  }
+}

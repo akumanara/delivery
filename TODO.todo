@@ -4,12 +4,14 @@ general:
   ☐ [general] landing page mechanism for address and vertical selection
   ☐ nada results sto search tou market
   ☐ checkout apodeiksi grafiko na mpein inline k oxi sto css
+  ☐ na ginei allagi licenses
 
 
 pending pages:
   ☐ Landing page
   ☐ content pages
   ☐ user profile pages
+
 
 connect/login:
   ☐ missing data modal
@@ -58,6 +60,7 @@ quick remove se product market view na checkare afto me to den exeis diefthinsi
 meeting:
 
 Done:
+  ✔ city page @done(21-09-10 13:00)
   ✔ landing page png transparency - optimize for size @done(21-09-09 16:35)
   ✔ landing resize png transparent imgs @done(21-09-09 16:35)
   ✔ Thank you page @done(21-09-06 16:17)
