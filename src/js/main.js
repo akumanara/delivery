@@ -368,4 +368,6 @@ class App {
   // }
 }
 
-window.globalApp = new App();
+window.addEventListener('DOMContentLoaded', () => {
+  window.globalApp = new App();
+});
