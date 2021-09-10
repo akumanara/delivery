@@ -668,7 +668,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(login.show_otp);
+          resolve(login.show_new_user);
         }, 500),
       );
     }
@@ -677,6 +677,30 @@ export default class {
       const url = `check-login-type`;
       this.instance
         .post(url, { username: emailOrPhone })
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  logout() {
+    // https://www.delivery.gr/logout
+    // Method get
+
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(genericSuccess);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `logout`;
+      this.instance
+        .get(url)
         .then((response) => {
           resolve(response.data);
         })

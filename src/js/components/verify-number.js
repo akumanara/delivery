@@ -17,11 +17,11 @@ export default class {
     const modalStep1 = document.querySelector('.js-verify-number-modal');
     const modalStep2 = document.querySelector('.js-verify-number-modal-otp');
 
-    this.DOM.trigger = document.querySelector('.js-verify-number-trigger');
-    this.DOM.personalDetailsPhoneInput = document.querySelector(
+    this.DOM.triggers = document.querySelectorAll('.js-verify-number-trigger');
+    this.DOM.personalDetailsPhoneInputs = document.querySelectorAll(
       '.js-verify-number-input',
     );
-    this.DOM.personalDetailsCheckbox = document.querySelector(
+    this.DOM.personalDetailsCheckboxes = document.querySelectorAll(
       '.personal-details__phone-checkbox',
     );
 
@@ -47,7 +47,9 @@ export default class {
       // errorMsg: this.DOM.modal.querySelector('.js-coupon-error-msg'),
     };
 
-    this.DOM.trigger.addEventListener('click', this.showModal);
+    this.DOM.triggers.forEach((trigger) => {
+      trigger.addEventListener('click', this.showModal);
+    });
     // MODAL 1
     this.DOM.modalStep1.closeBtn.addEventListener('click', this.hideModal);
     this.DOM.modalStep1.input.addEventListener('input', this.step1UpdateValue);
@@ -229,10 +231,12 @@ export default class {
   }
 
   addPhoneToInputField() {
-    this.DOM.personalDetailsPhoneInput.value = this.phoneNumber;
-    this.DOM.personalDetailsCheckbox.classList.add(
-      'personal-details__phone-checkbox--active',
-    );
+    this.DOM.personalDetailsPhoneInputs.forEach((input) => {
+      input.value = this.phoneNumber;
+    });
+    this.DOM.personalDetailsCheckboxes.forEach((checkbox) => {
+      checkbox.classList.add('personal-details__phone-checkbox--active');
+    });
   }
 
   // eslint-disable-next-line class-methods-use-this

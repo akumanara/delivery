@@ -23,6 +23,11 @@ export default class {
       this.resetEmail = resetEmail;
       this.toggleResetPasswordModal();
     }
+
+    if (store.context.showMissingData) {
+      this.checkMissingDataForm();
+      this.toggleMissingDataModal();
+    }
   }
 
   clearConnectComponent() {
@@ -169,7 +174,23 @@ export default class {
     };
     this.isResetPasswordOpen = false;
 
-    // console.log(this.DOM);
+    // missing modal
+    this.DOM.missingDataModal = document.querySelector(
+      '.js-missing-data-modal',
+    );
+    this.DOM.missingDataModal = {
+      modal: this.DOM.missingDataModal,
+      closeBtn: this.DOM.missingDataModal.querySelector('.js-close'),
+      actionBtn: this.DOM.missingDataModal.querySelector('.js-action-btn'),
+      formName: this.DOM.missingDataModal.querySelector('.js-name'),
+      formSurname: this.DOM.missingDataModal.querySelector('.js-surname'),
+      formEmail: this.DOM.missingDataModal.querySelector('.js-email'),
+      formPassword: this.DOM.missingDataModal.querySelector('.js-password'),
+      formPhone: this.DOM.missingDataModal.querySelector(
+        '.js-verify-number-input',
+      ),
+    };
+    this.isMissingDataOpen = false;
   }
 
   setupEventListeners() {
@@ -306,6 +327,43 @@ export default class {
       'click',
       this.resetPassword,
     );
+
+    // Missing data
+    if (this.DOM.missingDataModal) {
+      console.log('missing data modal');
+      // Missing data modal
+
+      this.DOM.missingDataModal.closeBtn.addEventListener(
+        'click',
+        this.logoutUser,
+      );
+
+      this.DOM.missingDataModal.formName.addEventListener(
+        'input',
+        this.checkMissingDataForm,
+      );
+      this.DOM.missingDataModal.formSurname.addEventListener(
+        'input',
+        this.checkMissingDataForm,
+      );
+      this.DOM.missingDataModal.formEmail.addEventListener(
+        'input',
+        this.checkMissingDataForm,
+      );
+      this.DOM.missingDataModal.formPassword.addEventListener(
+        'input',
+        this.checkMissingDataForm,
+      );
+      this.DOM.missingDataModal.formPhone.addEventListener(
+        'input',
+        this.checkMissingDataForm,
+      );
+
+      // this.DOM.missingDataModal.actionBtn.addEventListener(
+      //   'click',
+      //   this.registerUser,
+      // );
+    }
   }
 
   async forgotPassword() {
@@ -888,5 +946,132 @@ export default class {
   openResetPassword() {
     document.body.classList.add('hide-overflow');
     this.DOM.resetPasswordModal.modal.classList.add('active');
+  }
+
+  // toogle reset passwrod modal
+  toggleMissingDataModal() {
+    console.log('toggleMissingDataModal');
+    if (this.isMissingDataOpen) {
+      this.closeMissingDataModal();
+    } else {
+      this.openMissingDataModal();
+    }
+    this.isMissingDataOpen = !this.isMissingDataOpen;
+  }
+
+  closeMissingDataModal() {
+    document.body.classList.remove('hide-overflow');
+    this.DOM.missingDataModal.modal.classList.remove('active');
+  }
+
+  openMissingDataModal() {
+    document.body.classList.add('hide-overflow');
+    this.DOM.missingDataModal.modal.classList.add('active');
+  }
+
+  async logoutUser() {
+    PubSub.publish('show_loader');
+    await this.api.logout();
+    window.location.reload();
+    PubSub.publish('hide_loader');
+  }
+
+  checkMissingDataForm() {
+    console.log('checkMissingDataForm');
+    // check if all form inputs are filled
+    if (
+      this.DOM.missingDataModal.formName.value.length > 0 &&
+      this.DOM.missingDataModal.formSurname.value.length > 0 &&
+      this.DOM.missingDataModal.formEmail.value.length > 0 &&
+      this.DOM.missingDataModal.formPhone.value.length > 0
+    ) {
+      this.DOM.missingDataModal.actionBtn.classList.remove(
+        'primary-btn--disabled',
+      );
+    } else {
+      this.DOM.missingDataModal.actionBtn.classList.add(
+        'primary-btn--disabled',
+      );
+    }
+  }
+
+  async updateUserWithMissingData() {
+    PubSub.publish('show_loader');
+    this.clearMissingDataModalError();
+
+    // below needs refactoring
+    // get the form data
+
+    // const formData = {
+    //   name: this.DOM.missingDataModal.formName.value,
+    //   lastname: this.DOM.missingDataModal.formSurname.value,
+    //   email: this.DOM.missingDataModal.formEmail.value,
+    //   pass: this.DOM.missingDataModal.formPassword.value,
+    //   telephone: this.DOM.missingDataModal.formPhone.value,
+    // };
+
+    // const response = await this.api.signupUser(formData);
+    // if (response.status === 'success') {
+    //   window.location.reload();
+    // } else if (response.status === 'error') {
+    //   // TODO: show error messages
+    //   // Todo check generic error
+    //   const form = this.getRegisterForm();
+    //   response.error_messages.forEach((element) => {
+    //     const fieldName = Object.keys(element)[0];
+    //     const formField = form[fieldName];
+    //     if (formField) {
+    //       this.registerModalShowError(element[fieldName], formField);
+    //     }
+    //     if (fieldName === 'generic') {
+    //       this.registerModalShowError(element[fieldName], form.name.parentNode);
+    //     }
+    //   });
+    // } else if (
+    //   response.status === 'merge' &&
+    //   response.type === 'no_verification'
+    // ) {
+    //   // MERGE WITHOUT VERIFICATION CODE
+    //   // ==========================
+    //   this.formData = formData;
+    //   this.toggleRegisterModal();
+    //   this.toggleMergeModal();
+    // } else if (
+    //   response.status === 'merge' &&
+    //   response.type === 'mail_verification'
+    // ) {
+    //   // MERGE WITH VERIFICATION CODE
+    //   // ==========================
+    //   this.formData = formData;
+    //   this.toggleRegisterModal();
+    //   this.toggleMergeAccountWithCodeModal();
+    // }
+
+    PubSub.publish('hide_loader');
+  }
+
+  clearMissingDataModalError() {
+    // Remove error messages
+    this.DOM.missingDataModal.formName.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.missingDataModal.formSurname.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.missingDataModal.formEmail.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.missingDataModal.formPhone.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.missingDataModal.formPassword.classList.remove(
+      'form-control--has-error',
+    );
+
+    this.DOM.missingDataModal.modal
+      .querySelectorAll('.js-error')
+      .forEach((element) => {
+        element.remove();
+      });
   }
 }

@@ -441,3 +441,90 @@
     </div>
   </div>
 </div>
+
+<!-- MISSING DATA -->
+<div class="js-missing-data-modal modal">
+  <!-- THE ACTUAL WINDOW -->
+  <div class="modal__window">
+    <!-- HEADER -->
+    <div class="modal__header">
+      <div class="modal__header-left">MISSING DATA</div>
+      <div class="modal__header-right">
+        <div class="js-close">
+          <img src="./images/icons/modal-close.svg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="modal__body">
+      <!-- NAME -->
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control js-name"
+          id="floatingInput"
+          placeholder="placeholder"
+        />
+        <label for="floatingInput">Όνομα</label>
+      </div>
+      <!-- SURNAME -->
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control js-surname"
+          id="floatingInput"
+          placeholder="placeholder"
+        />
+        <label for="floatingInput">Επίθετο</label>
+      </div>
+      <!-- EMAIL -->
+      <div class="form-floating">
+        <input
+          type="email"
+          class="form-control js-email"
+          id="floatingInput"
+          placeholder="placeholder"
+        />
+        <label for="floatingInput">Email</label>
+      </div>
+      <!-- PASSWORD -->
+      <div class="form-floating">
+        <input
+          type="password"
+          class="form-control js-password"
+          id="floatingInput"
+          placeholder="placeholder"
+        />
+        <label for="floatingInput">Κωδικός (προεραιτικό)</label>
+      </div>
+      <!-- PHONE -->
+      <div class="personal-details__phone">
+        <div
+          class="personal-details__phone-trigger js-verify-number-trigger"
+        ></div>
+        <div class="personal-details__phone-checkbox">
+          <img
+            src="./images/icons/checkmark-phone.svg"
+            alt=""
+            class="img-fluid mx-26"
+          />
+        </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control js-verify-number-input"
+            id="floatingInput"
+            placeholder="placeholder"
+          />
+          <label for="floatingInput">Phone</label>
+        </div>
+      </div>
+    </div>
+    <!-- STICKY ACTION -->
+    <div class="modal__action">
+      <div class="py-20 px-16 w-100">
+        <div class="primary-btn js-action-btn">Συνέχεια</div>
+      </div>
+    </div>
+  </div>
+</div>
