@@ -11,10 +11,11 @@ export default class {
   constructor() {
     autoBind(this);
     this.api = new API();
-    this.queryTheDOM();
-    this.setupEventListeners();
 
-    // do we need to show the forgot password modal?
+    // Init the modals. We only init them if they exist in the DOM
+    this.initModals();
+
+    // Do we need to show the Reset password modal?
     const url = new URL(window.location.href);
     const resetHash = url.searchParams.get('reset_hash');
     const resetEmail = url.searchParams.get('reset_email');
@@ -24,6 +25,7 @@ export default class {
       this.toggleResetPasswordModal();
     }
 
+    // Do we need to show the Missing data modal?
     if (store.context.showMissingData) {
       this.checkMissingDataForm();
       this.toggleMissingDataModal();
@@ -61,11 +63,27 @@ export default class {
     this.formData = null;
   }
 
-  queryTheDOM() {
+  initModals() {
     this.DOM = {};
 
+    this.initLoginModal();
+    this.initPasswordModal();
+    this.initOtpModal();
+    this.initRegisterModal();
+    this.initForgotPasswordModal();
+    this.initMergeAccountModal();
+    this.initMergeAccountWithCodeModal();
+    this.initResetPasswordModal();
+    this.initMissingDataModal();
+  }
+
+  initLoginModal() {
     // login modal
     this.DOM.loginModal = document.querySelector('.login');
+    // modal is non existant in DOM. return
+    if (!this.DOM.loginModal) return;
+
+    // QUERY DOM
     this.DOM.loginModal = {
       modal: this.DOM.loginModal,
       closeBtn: this.DOM.loginModal.querySelector('.login__close'),
@@ -79,8 +97,32 @@ export default class {
     };
     this.isLoginOpen = false;
 
+    // EVENT LISTENERS
+    this.DOM.loginModal.trigger.addEventListener('click', this.triggerClicked);
+    this.DOM.loginModal.background.addEventListener(
+      'click',
+      this.toggleLoginModal,
+    );
+    this.DOM.loginModal.closeBtn.addEventListener(
+      'click',
+      this.toggleLoginModal,
+    );
+    this.DOM.loginModal.actionBtn.addEventListener(
+      'click',
+      this.loginActionClicked,
+    );
+    this.DOM.loginModal.forgotPasswordBtn.addEventListener(
+      'click',
+      this.forgotPasswordBtnClickedFromLogin,
+    );
+  }
+
+  initPasswordModal() {
     // password modal
     this.DOM.passwordModal = document.querySelector('.js-password-modal');
+    // modal is non existant in DOM. return
+    if (!this.DOM.passwordModal) return;
+
     this.DOM.passwordModal = {
       modal: this.DOM.passwordModal,
       closeBtn: this.DOM.passwordModal.querySelector('.small-modal__close'),
@@ -96,129 +138,7 @@ export default class {
     };
     this.isPasswordOpen = false;
 
-    // otp modal
-    this.DOM.otpModal = document.querySelector('.js-otp-modal');
-    this.DOM.otpModal = {
-      modal: this.DOM.otpModal,
-      closeBtn: this.DOM.otpModal.querySelector('.js-close'),
-      input: this.DOM.otpModal.querySelector('.js-input'),
-      actionBtn: this.DOM.otpModal.querySelector('.js-action-btn'),
-    };
-    this.isOtpOpen = false;
-
-    // register modal
-    this.DOM.registerModal = document.querySelector('.js-register-modal');
-    this.DOM.registerModal = {
-      modal: this.DOM.registerModal,
-      closeBtn: this.DOM.registerModal.querySelector('.js-close'),
-      actionBtn: this.DOM.registerModal.querySelector('.js-action-btn'),
-      formName: this.DOM.registerModal.querySelector('.js-name'),
-      formSurname: this.DOM.registerModal.querySelector('.js-surname'),
-      formEmail: this.DOM.registerModal.querySelector('.js-email'),
-      formPassword: this.DOM.registerModal.querySelector('.js-password'),
-      formPhone: this.DOM.registerModal.querySelector(
-        '.js-verify-number-input',
-      ),
-      formTos: this.DOM.registerModal.querySelector('.js-tos'),
-      formTosTrigger:
-        this.DOM.registerModal.querySelector('.login__tos-accept'),
-    };
-    this.isRegisterOpen = false;
-
-    // forgot password modal
-    this.DOM.forgotPasswordModal = document.querySelector(
-      '.js-forgot-password-modal',
-    );
-    this.DOM.forgotPasswordModal = {
-      modal: this.DOM.forgotPasswordModal,
-      closeBtn: this.DOM.forgotPasswordModal.querySelector('.js-close'),
-      actionBtn: this.DOM.forgotPasswordModal.querySelector('.js-action-btn'),
-      input: this.DOM.forgotPasswordModal.querySelector('.js-input'),
-    };
-    this.isForgotPasswordOpen = false;
-
-    // merge acount modal
-    this.DOM.mergeAccountModal = document.querySelector('.js-merge-modal');
-    this.DOM.mergeAccountModal = {
-      modal: this.DOM.mergeAccountModal,
-      closeBtn: this.DOM.mergeAccountModal.querySelector('.js-close'),
-      actionBtn: this.DOM.mergeAccountModal.querySelector('.js-action-btn'),
-    };
-    this.isMergeAccountOpen = false;
-
-    // merge account with code modal
-    this.DOM.mergeAccountWithCodeModal = document.querySelector(
-      '.js-merge-with-code-modal',
-    );
-    this.DOM.mergeAccountWithCodeModal = {
-      modal: this.DOM.mergeAccountWithCodeModal,
-      closeBtn: this.DOM.mergeAccountWithCodeModal.querySelector('.js-close'),
-      actionBtn:
-        this.DOM.mergeAccountWithCodeModal.querySelector('.js-action-btn'),
-      input: this.DOM.mergeAccountWithCodeModal.querySelector('.js-input'),
-    };
-    this.isMergeAccountWithCodeOpen = false;
-
-    // reset password modal
-    this.DOM.resetPasswordModal = document.querySelector(
-      '.js-reset-password-modal',
-    );
-    this.DOM.resetPasswordModal = {
-      modal: this.DOM.resetPasswordModal,
-      closeBtn: this.DOM.resetPasswordModal.querySelector('.js-close'),
-      actionBtn: this.DOM.resetPasswordModal.querySelector('.js-action-btn'),
-      inputPassword: this.DOM.resetPasswordModal.querySelector('.js-password'),
-      inputConfirmPassword: this.DOM.resetPasswordModal.querySelector(
-        '.js-confirm-password',
-      ),
-    };
-    this.isResetPasswordOpen = false;
-
-    // missing modal
-    this.DOM.missingDataModal = document.querySelector(
-      '.js-missing-data-modal',
-    );
-    this.DOM.missingDataModal = {
-      modal: this.DOM.missingDataModal,
-      closeBtn: this.DOM.missingDataModal.querySelector('.js-close'),
-      actionBtn: this.DOM.missingDataModal.querySelector('.js-action-btn'),
-      formName: this.DOM.missingDataModal.querySelector('.js-name'),
-      formSurname: this.DOM.missingDataModal.querySelector('.js-surname'),
-      formEmail: this.DOM.missingDataModal.querySelector('.js-email'),
-      formPassword: this.DOM.missingDataModal.querySelector('.js-password'),
-      formPhone: this.DOM.missingDataModal.querySelector(
-        '.js-verify-number-input',
-      ),
-    };
-    this.isMissingDataOpen = false;
-  }
-
-  setupEventListeners() {
-    // login modal
-    if (this.DOM.loginModal.trigger) {
-      this.DOM.loginModal.trigger.addEventListener(
-        'click',
-        this.triggerClicked,
-      );
-      this.DOM.loginModal.background.addEventListener(
-        'click',
-        this.toggleLoginModal,
-      );
-      this.DOM.loginModal.closeBtn.addEventListener(
-        'click',
-        this.toggleLoginModal,
-      );
-      this.DOM.loginModal.actionBtn.addEventListener(
-        'click',
-        this.loginActionClicked,
-      );
-      this.DOM.loginModal.forgotPasswordBtn.addEventListener(
-        'click',
-        this.forgotPasswordBtnClickedFromLogin,
-      );
-    }
-
-    // password modal
+    // EVENT LISTENERS
     this.DOM.passwordModal.background.addEventListener(
       'click',
       this.togglePasswordModal,
@@ -239,15 +159,52 @@ export default class {
       'click',
       this.forgotPasswordBtnClickedFromPassword,
     );
+  }
 
+  initOtpModal() {
     // otp modal
+    this.DOM.otpModal = document.querySelector('.js-otp-modal');
+    // modal is non existant in DOM. return
+    if (!this.DOM.otpModal) return;
+    this.DOM.otpModal = {
+      modal: this.DOM.otpModal,
+      closeBtn: this.DOM.otpModal.querySelector('.js-close'),
+      input: this.DOM.otpModal.querySelector('.js-input'),
+      actionBtn: this.DOM.otpModal.querySelector('.js-action-btn'),
+    };
+    this.isOtpOpen = false;
+
+    // EVENT LISTENERS
     this.DOM.otpModal.closeBtn.addEventListener('click', this.toggleOtpModal);
     this.DOM.otpModal.actionBtn.addEventListener(
       'click',
       this.loginWithPhoneAndOtp,
     );
+  }
 
+  initRegisterModal() {
     // register modal
+    this.DOM.registerModal = document.querySelector('.js-register-modal');
+    // modal is non existant in DOM. return
+    if (!this.DOM.registerModal) return;
+    this.DOM.registerModal = {
+      modal: this.DOM.registerModal,
+      closeBtn: this.DOM.registerModal.querySelector('.js-close'),
+      actionBtn: this.DOM.registerModal.querySelector('.js-action-btn'),
+      formName: this.DOM.registerModal.querySelector('.js-name'),
+      formSurname: this.DOM.registerModal.querySelector('.js-surname'),
+      formEmail: this.DOM.registerModal.querySelector('.js-email'),
+      formPassword: this.DOM.registerModal.querySelector('.js-password'),
+      formPhone: this.DOM.registerModal.querySelector(
+        '.js-verify-number-input',
+      ),
+      formTos: this.DOM.registerModal.querySelector('.js-tos'),
+      formTosTrigger:
+        this.DOM.registerModal.querySelector('.login__tos-accept'),
+    };
+    this.isRegisterOpen = false;
+
+    // EVENT LISTENERS
     this.DOM.registerModal.formName.addEventListener(
       'input',
       this.checkRegisterForm,
@@ -287,8 +244,24 @@ export default class {
       'click',
       this.registerUser,
     );
+  }
 
+  initForgotPasswordModal() {
     // forgot password modal
+    this.DOM.forgotPasswordModal = document.querySelector(
+      '.js-forgot-password-modal',
+    );
+    // modal is non existant in DOM. return
+    if (!this.DOM.forgotPasswordModal) return;
+    this.DOM.forgotPasswordModal = {
+      modal: this.DOM.forgotPasswordModal,
+      closeBtn: this.DOM.forgotPasswordModal.querySelector('.js-close'),
+      actionBtn: this.DOM.forgotPasswordModal.querySelector('.js-action-btn'),
+      input: this.DOM.forgotPasswordModal.querySelector('.js-input'),
+    };
+    this.isForgotPasswordOpen = false;
+
+    // EVENT LISTENERS
     this.DOM.forgotPasswordModal.closeBtn.addEventListener(
       'click',
       this.toggleForgotPasswordModal,
@@ -297,8 +270,21 @@ export default class {
       'click',
       this.forgotPassword,
     );
+  }
 
-    // merge account modal
+  initMergeAccountModal() {
+    // merge acount modal
+    this.DOM.mergeAccountModal = document.querySelector('.js-merge-modal');
+    // modal is non existant in DOM. return
+    if (!this.DOM.mergeAccountModal) return;
+    this.DOM.mergeAccountModal = {
+      modal: this.DOM.mergeAccountModal,
+      closeBtn: this.DOM.mergeAccountModal.querySelector('.js-close'),
+      actionBtn: this.DOM.mergeAccountModal.querySelector('.js-action-btn'),
+    };
+    this.isMergeAccountOpen = false;
+
+    // EVENT LISTENERS
     this.DOM.mergeAccountModal.closeBtn.addEventListener(
       'click',
       this.toggleMergeModal,
@@ -307,8 +293,25 @@ export default class {
       'click',
       this.registerWithMergeConsent,
     );
+  }
 
+  initMergeAccountWithCodeModal() {
     // merge account with code modal
+    this.DOM.mergeAccountWithCodeModal = document.querySelector(
+      '.js-merge-with-code-modal',
+    );
+    // modal is non existant in DOM. return
+    if (!this.DOM.mergeAccountWithCodeModal) return;
+    this.DOM.mergeAccountWithCodeModal = {
+      modal: this.DOM.mergeAccountWithCodeModal,
+      closeBtn: this.DOM.mergeAccountWithCodeModal.querySelector('.js-close'),
+      actionBtn:
+        this.DOM.mergeAccountWithCodeModal.querySelector('.js-action-btn'),
+      input: this.DOM.mergeAccountWithCodeModal.querySelector('.js-input'),
+    };
+    this.isMergeAccountWithCodeOpen = false;
+
+    // EVENT LISTENERS
     this.DOM.mergeAccountWithCodeModal.closeBtn.addEventListener(
       'click',
       this.toggleMergeAccountWithCodeModal,
@@ -317,8 +320,27 @@ export default class {
       'click',
       this.registerWithMergeConsentAndCode,
     );
+  }
 
+  initResetPasswordModal() {
     // reset password modal
+    this.DOM.resetPasswordModal = document.querySelector(
+      '.js-reset-password-modal',
+    );
+    // modal is non existant in DOM. return
+    if (!this.DOM.resetPasswordModal) return;
+    this.DOM.resetPasswordModal = {
+      modal: this.DOM.resetPasswordModal,
+      closeBtn: this.DOM.resetPasswordModal.querySelector('.js-close'),
+      actionBtn: this.DOM.resetPasswordModal.querySelector('.js-action-btn'),
+      inputPassword: this.DOM.resetPasswordModal.querySelector('.js-password'),
+      inputConfirmPassword: this.DOM.resetPasswordModal.querySelector(
+        '.js-confirm-password',
+      ),
+    };
+    this.isResetPasswordOpen = false;
+
+    // EVENT LISTENERS
     this.DOM.resetPasswordModal.closeBtn.addEventListener(
       'click',
       this.toggleResetPasswordModal,
@@ -327,43 +349,55 @@ export default class {
       'click',
       this.resetPassword,
     );
+  }
 
-    // Missing data
-    if (this.DOM.missingDataModal) {
-      console.log('missing data modal');
-      // Missing data modal
+  initMissingDataModal() {
+    // missing modal
+    this.DOM.missingDataModal = document.querySelector(
+      '.js-missing-data-modal',
+    );
+    // modal is non existant in DOM. return
+    if (!this.DOM.missingDataModal) return;
+    this.DOM.missingDataModal = {
+      modal: this.DOM.missingDataModal,
+      closeBtn: this.DOM.missingDataModal.querySelector('.js-close'),
+      actionBtn: this.DOM.missingDataModal.querySelector('.js-action-btn'),
+      formName: this.DOM.missingDataModal.querySelector('.js-name'),
+      formSurname: this.DOM.missingDataModal.querySelector('.js-surname'),
+      formEmail: this.DOM.missingDataModal.querySelector('.js-email'),
+      formPassword: this.DOM.missingDataModal.querySelector('.js-password'),
+      formPhone: this.DOM.missingDataModal.querySelector(
+        '.js-verify-number-input',
+      ),
+    };
+    this.isMissingDataOpen = false;
 
-      this.DOM.missingDataModal.closeBtn.addEventListener(
-        'click',
-        this.logoutUser,
-      );
+    // EVENT LISTENERS
+    this.DOM.missingDataModal.closeBtn.addEventListener(
+      'click',
+      this.logoutUser,
+    );
 
-      this.DOM.missingDataModal.formName.addEventListener(
-        'input',
-        this.checkMissingDataForm,
-      );
-      this.DOM.missingDataModal.formSurname.addEventListener(
-        'input',
-        this.checkMissingDataForm,
-      );
-      this.DOM.missingDataModal.formEmail.addEventListener(
-        'input',
-        this.checkMissingDataForm,
-      );
-      this.DOM.missingDataModal.formPassword.addEventListener(
-        'input',
-        this.checkMissingDataForm,
-      );
-      this.DOM.missingDataModal.formPhone.addEventListener(
-        'input',
-        this.checkMissingDataForm,
-      );
-
-      // this.DOM.missingDataModal.actionBtn.addEventListener(
-      //   'click',
-      //   this.registerUser,
-      // );
-    }
+    this.DOM.missingDataModal.formName.addEventListener(
+      'input',
+      this.checkMissingDataForm,
+    );
+    this.DOM.missingDataModal.formSurname.addEventListener(
+      'input',
+      this.checkMissingDataForm,
+    );
+    this.DOM.missingDataModal.formEmail.addEventListener(
+      'input',
+      this.checkMissingDataForm,
+    );
+    this.DOM.missingDataModal.formPassword.addEventListener(
+      'input',
+      this.checkMissingDataForm,
+    );
+    this.DOM.missingDataModal.formPhone.addEventListener(
+      'input',
+      this.checkMissingDataForm,
+    );
   }
 
   async forgotPassword() {

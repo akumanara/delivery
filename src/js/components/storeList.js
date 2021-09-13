@@ -302,7 +302,7 @@ export default class {
   }
 
   searchStart() {
-    console.log('search start');
+    // console.log('search start');
     this.hideAllSliders();
   }
 
@@ -317,7 +317,7 @@ export default class {
   }
 
   hideAllSliders() {
-    console.log('hideAllSliders');
+    // console.log('hideAllSliders');
     this.DOM.sliders.forEach((slider) => {
       slider.classList.add('d-none');
     });

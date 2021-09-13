@@ -9,7 +9,7 @@ import { formatTimer } from '../utils/helpers';
 // const options = {
 //   text: 'this is the text alert', // the text to show in the alert
 //   timeToKill: 4, // time until it closes in seconds
-//   type: 'info', // or 'error'
+//   type: 'info', // or 'error' OR 'success'
 //   iconName: 'phone', // must exists in folder icons with svg extension.
 //   showTimer: false, // displays or not the countdown
 //   onClose: function() { } // callback function when the alert is closed
@@ -139,9 +139,16 @@ export default class {
     const templateData = {
       randomString: this.randomString,
       text: this.options.text,
-      typeClass: this.options.type === 'info' ? '' : 'alert--red',
       showTimer: this.options.showTimer,
     };
+
+    if (this.options.type === 'info') {
+      templateData.typeClass = '';
+    } else if (this.options.type === 'error') {
+      templateData.typeClass = 'alert--red';
+    } else if (this.options.type === 'success') {
+      templateData.typeClass = 'alert--green';
+    }
 
     if (this.options.iconName) {
       templateData.iconURL = `${store.context.imagesURL}/icons/${this.options.iconName}.svg`;

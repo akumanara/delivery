@@ -1,0 +1,26 @@
+.user-orders {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    padding: 14px 16px;
+    border-bottom: 1px solid #eaebec;
+  }
+  &__item-left {
+    padding-right: 10px;
+  }
+  &__item-store {
+    font-weight: 700;
+  }
+  &__item-date {
+    @include font-size-2;
+  }
+  &__item-right {
+    margin-left: auto;
+  }
+  &__item-price {
+    font-weight: 700;
+  }
+}
