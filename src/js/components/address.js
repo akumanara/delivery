@@ -279,6 +279,21 @@ export default class {
     }
   }
 
+  encodedDataToString(addressObject) {
+    // ?street=Atho%20&number=28&city=Patra&postal=263%2035&lat=38.2288888&lng=21.7466415&doorbell=&floor=0
+    const data = {
+      street: addressObject.route,
+      number: addressObject.street_number,
+      city: addressObject.city,
+      postal: addressObject.postal_code,
+      lat: addressObject.lat,
+      lng: addressObject.lng,
+      doorbell: addressObject.doorbell,
+      floor: addressObject.floor,
+    };
+    return encodeQueryData(data);
+  }
+
   async submitSavedAddress(button) {
     PubSub.publish('show_loader');
     const addressObject = {
@@ -300,21 +315,9 @@ export default class {
       .then((result) => {
         console.log(result);
         if (!store.context.storeID) {
-          // we need the url in that form with get params
-          // ?street=Atho%20&number=28&city=Patra&postal=263%2035&lat=38.2288888&lng=21.7466415
-
-          const data = {
-            street: addressObject.route,
-            number: addressObject.street_number,
-            city: addressObject.city,
-            postal: addressObject.postal_code,
-            lat: addressObject.lat,
-            lng: addressObject.lng,
-          };
-
           window.location.href = `${
             store.context.redirectURLfromAddress
-          }?${encodeQueryData(data)}`;
+          }?${this.encodedDataToString(addressObject)}`;
         } else {
           window.location.reload();
         }
@@ -921,31 +924,14 @@ export default class {
       .then((result) => {
         console.log(result);
         if (!store.context.storeID) {
-          const data = {
-            street: addressObject.route,
-            number: addressObject.street_number,
-            city: addressObject.city,
-            postal: addressObject.postal_code,
-            lat: addressObject.lat,
-            lng: addressObject.lng,
-          };
 
           window.location.href = `${
             store.context.redirectURLfromAddress
-          }?${encodeQueryData(data)}`;
+          }?${this.encodedDataToString(addressObject)}`;
         } else if (this.clickedVerticalPrefix) {
-          const data = {
-            street: addressObject.route,
-            number: addressObject.street_number,
-            city: addressObject.city,
-            postal: addressObject.postal_code,
-            lat: addressObject.lat,
-            lng: addressObject.lng,
-          };
-
           window.location.href = `${
             this.clickedVerticalPrefix
-          }?${encodeQueryData(data)}`;
+          }?${this.encodedDataToString(addressObject)}`;
         } else {
           window.location.reload();
         }
