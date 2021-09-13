@@ -63,12 +63,14 @@ export default class {
 
     // TODO remove this
     // reference on window object
-    window.list = this.storeList;
-    window.listObj = this;
+    // window.list = this.storeList;
+    // window.listObj = this;
 
-    // populate demo stores
-    // in a sepearate function
-    this.populateDemoStores();
+    if (store.context.mode === 'development') {
+      // populate demo storeswindow.list
+      // in a sepearate function
+      this.populateDemoStores();
+    }
 
     // Find active sort item
     this.activeSortElement = [...this.DOM.modal.sortItems].find((element) =>
