@@ -9,7 +9,7 @@ import { store } from '../utils/store';
 import mapStyle from '../utils/mapstyle';
 import API from './api';
 import texts from '../utils/texts';
-
+import { encodeQueryData } from '../utils/helpers';
 // This class uses places autocomplete service
 // developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service
 export default class {
@@ -300,7 +300,21 @@ export default class {
       .then((result) => {
         console.log(result);
         if (!store.context.storeID) {
-          window.location.href = `${store.context.redirectURLfromAddress}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
+          // we need the url in that form with get params
+          // ?street=Atho%20&number=28&city=Patra&postal=263%2035&lat=38.2288888&lng=21.7466415
+
+          const data = {
+            street: addressObject.route,
+            number: addressObject.street_number,
+            city: addressObject.city,
+            postal: addressObject.postal_code,
+            lat: addressObject.lat,
+            lng: addressObject.lng,
+          };
+
+          window.location.href = `${
+            store.context.redirectURLfromAddress
+          }?${encodeQueryData(data)}`;
         } else {
           window.location.reload();
         }
@@ -907,9 +921,31 @@ export default class {
       .then((result) => {
         console.log(result);
         if (!store.context.storeID) {
-          window.location.href = `${store.context.redirectURLfromAddress}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
+          const data = {
+            street: addressObject.route,
+            number: addressObject.street_number,
+            city: addressObject.city,
+            postal: addressObject.postal_code,
+            lat: addressObject.lat,
+            lng: addressObject.lng,
+          };
+
+          window.location.href = `${
+            store.context.redirectURLfromAddress
+          }?${encodeQueryData(data)}`;
         } else if (this.clickedVerticalPrefix) {
-          window.location.href = `${this.clickedVerticalPrefix}${addressObject.route} ${addressObject.street_number},${addressObject.city},${addressObject.postal_code}?lat=${addressObject.lat}&lng=${addressObject.lng}`;
+          const data = {
+            street: addressObject.route,
+            number: addressObject.street_number,
+            city: addressObject.city,
+            postal: addressObject.postal_code,
+            lat: addressObject.lat,
+            lng: addressObject.lng,
+          };
+
+          window.location.href = `${
+            this.clickedVerticalPrefix
+          }?${encodeQueryData(data)}`;
         } else {
           window.location.reload();
         }

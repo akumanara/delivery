@@ -137,6 +137,12 @@ const getFriendlyUOM = (uom) => {
   if (uom === 'TMX') return 'τεμάχιο';
   return uom;
 };
+const encodeQueryData = (data) => {
+  const ret = [];
+  for (const d in data)
+    ret.push(`${encodeURIComponent(d)}=${encodeURIComponent(data[d])}`);
+  return ret.join('&');
+};
 
 const initSentry = () => {
   console.log(`MODE IS  ${MODE}`);
@@ -255,4 +261,5 @@ export {
   validation,
   distanceBetweenLatLon,
   getURLSearchData,
+  encodeQueryData,
 };

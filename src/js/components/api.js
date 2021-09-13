@@ -668,7 +668,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(login.show_new_user);
+          resolve(login.show_infobox);
         }, 500),
       );
     }
