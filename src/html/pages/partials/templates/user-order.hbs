@@ -1,0 +1,240 @@
+<!-- PREVIOUS ORDER -->
+<div class="previous-order modal user-order-{{id}}">
+  <!-- THE ACTUAL WINDOW -->
+  <div class="modal__window">
+    <!-- HEADER -->
+    <div class="modal__header">
+      <div class="modal__header-left">{{storeName}}</div>
+      <div class="modal__header-right">
+        <div class="js-close">
+          <img src="./images/icons/modal-close.svg" alt="" class="" />
+        </div>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="modal__body">
+      {{#if showCompleted}}
+        <!-- STATUS -->
+        <div class="previous-order__status previous-order__status--completed">
+          <div class="">Κατάσταση παραγγελίας</div>
+          <div class="ml-auto pl-10">{{statusCopy}}</div>
+        </div>
+        <!-- RATE-->
+        <div class="previous-order__rate">
+          <div class="secondary-btn font-weight-700 justify-content-center">
+            Βαθμολόγησε την παραγγελία σου
+          </div>
+        </div>
+      {{/if}}
+      {{#if showCancelled}}
+        <!-- STATUS -->
+        <div class="previous-order__status previous-order__status--cancelled">
+          <div class="">Κατάσταση παραγγελίας</div>
+          <div class="ml-auto pl-10">{{statusCopy}}</div>
+        </div>
+      {{/if}}
+
+      <!-- ORDER DETAILS -->
+      <div class="table">
+        <!-- TABLE ITEM -->
+        <div class="table__item">
+          <div class="table__col">Αριθμός παραγγελίας</div>
+          <div class="table__col">{{id}}</div>
+        </div>
+        <!-- TABLE ITEM -->
+        <div class="table__item">
+          <div class="table__col">Τρόπος πληρωμής</div>
+          <div class="table__col">{{paymentType}}</div>
+        </div>
+        <!-- TABLE ITEM -->
+        <div class="table__item">
+          <div class="table__col">Τρόπος παράδοσης</div>
+          <div class="table__col">{{deliveryType}}</div>
+        </div>
+        <!-- TABLE ITEM -->
+        <div class="table__item">
+          <div class="table__col">Ημερομηνία & ώρα</div>
+          <div class="table__col d-flex">
+            <div class="mr-10">{{time}}</div>
+            <div>{{date}}</div>
+          </div>
+        </div>
+        <!-- TABLE ITEM -->
+        <div class="table__item table__item--no-padding">
+          <!-- INNER ACCORDION ITEM SMALL -->
+          <div class="accordion__container accordion__container--nested">
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <div class="">Κωδικός συναλλαγής</div>
+                <div class="accordion__right-side">
+                  <div class="accordion__header-arrow">
+                    <img src="./images/icons/accordion-arrow.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__panel">
+                <div class="accordion__content">
+                  <div class="px-16 py-8">
+                    {{transactionCode}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STUFF -->
+      <div class="checkout-cart mt-30">
+        <div class="checkout-cart__body" data-delivery-type="takeaway">
+          <section class="snippet">
+            <!-- title and btn -->
+            <div class="container-a">
+              <div class="snippet__header">
+                <div class="snippet__title">
+                  <img
+                    class="img-fluid mw-22 mr-10"
+                    src="./images/icons/cart.svg"
+                    alt=""
+                  />
+                  <div>Καλάθι</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRODUCT OPTIONS -->
+            <div class="table table--small">
+              {{#each cartItems}}
+                <!-- TABLE ITEM -->
+                <div class="table__item">
+                  <div class="table__col">{{this.name}}</div>
+                  <div class="table__col">{{this.price}}</div>
+                </div>
+              {{/each}}
+            </div>
+          </section>
+
+          <!-- ORDER DETAILS -->
+          <section class="snippet mt-30">
+            <!-- title and btn -->
+            <div class="container-a">
+              <div class="snippet__header">
+                <div class="snippet__title">
+                  <img
+                    class="img-fluid mw-22 mr-10"
+                    src="./images/icons/cart.svg"
+                    alt=""
+                  />
+                  <div>Στοιχεία παραγγελίας</div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="placeholder"
+                  autocomplete="off"
+                  value="{{name}}"
+                  disabled
+                />
+                <label for="floatingInput">Όνομα</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="placeholder"
+                  autocomplete="off"
+                  value="{{address}}"
+                  disabled
+                />
+                <label for="floatingInput">Διεύθυνση</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="placeholder"
+                  autocomplete="off"
+                  value="{{floor}}"
+                  disabled
+                />
+                <label for="floatingInput">Όροφος</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="placeholder"
+                  autocomplete="off"
+                  value="{{doorbell}}"
+                  disabled
+                />
+                <label for="floatingInput">Κουδούνι</label>
+              </div>
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Αφήστε το σχόλιό σας εδώ..."
+                  id="floatingTextarea"
+                  disabled
+                >{{comment}}</textarea>
+                <label for="floatingTextarea">Σχόλια παραγγελίας</label>
+              </div>
+            </div>
+          </section>
+
+          <!-- title and btn -->
+          <div class="container-a mt-30">
+            <div class="snippet__header">
+              <div class="snippet__title">
+                <img
+                  class="img-fluid mw-22 mr-10"
+                  src="./images/icons/receipt.svg"
+                  alt=""
+                />
+                <div>Receipt</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RECEIPT -->
+          <section class="snippet">
+            <div class="cart__pricing">
+              <!-- EXTRA BREKDOWN TABLE -->
+              <div class="table table--small">
+
+                {{#each breakDownTable}}
+                  <!-- TABLE ITEM -->
+                  <div class="table__item">
+                    <div class="table__col">{{this.name}}</div>
+                    <div class="table__col">{{this.price}}</div>
+                  </div>
+                {{/each}}
+
+              </div>
+              <!-- SUM -->
+              <div class="cart__pricing-summary">
+                <div class="cart__pricing-summary-title">Σύνολο</div>
+                <div class="cart__pricing-summary-price">{{total}}</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- STICKY ACTION -->
+    <div class="modal__action">
+      <div class="py-20 px-16 w-100">
+        <div class="primary-btn js-action-btn">Παράγγειλε ξανά</div>
+      </div>
+    </div>
+  </div>
+</div>

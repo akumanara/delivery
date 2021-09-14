@@ -36,8 +36,15 @@ let MarketProductTemplate;
 if (MarketProductSource) {
   MarketProductTemplate = Handlebars.compile(MarketProductSource.innerHTML);
 }
+// user order
+const UserOrderSource = document.getElementById('user-order-template');
+let UserOrderTemplate;
+if (MarketProductSource) {
+  UserOrderTemplate = Handlebars.compile(UserOrderSource.innerHTML);
+}
 
 export {
+  UserOrderTemplate,
   MarketProductTemplate,
   HandlebarsTemplate,
   OfferHandlebarsTemplate,

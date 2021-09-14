@@ -309,21 +309,7 @@ class App {
     });
     observer.observe();
 
-    // user order - todo refactor
-    // Accordions for store info
-    this.accordions = [];
-    document
-      .querySelectorAll('.previous-order .accordion__container')
-      .forEach((el) => {
-        const tmpAccordionContainer = new Accordion(el, {
-          duration: 600,
-          elementClass: 'accordion__item',
-          triggerClass: 'accordion__header',
-          panelClass: 'accordion__panel',
-          ariaEnabled: false,
-        });
-        this.accordions.push(tmpAccordionContainer);
-      });
+    
   }
 
   // must be called when a reflow occurs
@@ -344,58 +330,12 @@ class App {
     this.DOM.loader.classList.remove('active');
   }
 
-  // consoleLog(e) {
-  //   if (window.debug) {
-  //     console.lognew(e);
-  //   }
-  // }
-
   // window load event.
   // The load event is fired when the whole page has loaded,
   // including all dependent resources such as stylesheets and images.
   windowLoaded() {
     document.body.classList.add('page-loaded');
-
-    /* eslint-disable no-new */
-    // const a = new Alert({
-    //   text: 'This is an alert message', // the text to show in the alert
-    //   timeToKill: 5, // time until it closes
-    //   type: 'info', // or 'error'
-    //   iconName: 'alert-phone', // as in our icons
-    //   showTimer: true, // show the timer or not
-    //   onClose: () => {
-    //     console.log('closed');
-    //   },
-    // });
   }
-
-  // windowResize(e) {
-  //   console.log(this.initialWindowInnerHeight);
-  //   if (window.innerHeight < this.initialWindowInnerHeight) {
-  //     // viewport is smaller. maybe kb present?
-  //     this.isVirtualKeyboardActive = true;
-  //     new Alert({
-  //       text: 'opened kb', // the text to show in the alert
-  //       timeToKill: 2, // time until it closes
-  //       type: 'info', // or 'error'
-  //       iconName: 'alert-phone', // as in our icons
-  //       showTimer: false, // show the timer or not
-  //     });
-  //   } else if (
-  //     this.isVirtualKeyboardActive &&
-  //     this.initialWindowInnerHeight === window.innerHeight
-  //   ) {
-  //     // viewport is greater again. maybe kb hidden?
-  //     this.isVirtualKeyboardActive = false;
-  //     new Alert({
-  //       text: 'closed kb', // the text to show in the alert
-  //       timeToKill: 2, // time until it closes
-  //       type: 'info', // or 'error'
-  //       iconName: 'alert-phone', // as in our icons
-  //       showTimer: false, // show the timer or not
-  //     });
-  //   }
-  // }
 }
 
 window.addEventListener('DOMContentLoaded', () => {

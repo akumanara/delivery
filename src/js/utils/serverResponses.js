@@ -2821,17 +2821,44 @@ const insertOrderError = {
 };
 
 const userOrder = {
-  id: '1',
-  storeName: 'Nakama',
-  status: 'completed', // or canceled
+  id: '123',
+  storeName: 'Naasdkama',
+  status: 'compleated', // or canceled
   paymentType: 'POS', // or cash or card?
-  deliveryType: 'Delivery', // or Pickup?
+  deliveryType: 'Delivery', // or Pickup
   date: '22.08.2021',
   time: '21:27',
   transactionCode: 'c387f6b1-b0077-42f4-834a-5142de26c7bb',
   cartItems: [
-    
-  ]
+    {
+      name: 'item X',
+      price: '0,90€',
+    },
+    {
+      name: 'item Y',
+      price: '2,90€',
+    },
+  ],
+  breakDownTable: [
+    {
+      name: 'Προϊόντα',
+      price: '0,90€',
+    },
+    {
+      name: 'Delivery fee',
+      price: '0,90€',
+    },
+    {
+      name: 'Περιβαλλοντικό τέλος πλαστικής σακούλας',
+      price: '0,90€',
+    },
+  ],
+  total: '3,80€',
+  name: 'George Misa',
+  address: 'Michail Christou 12',
+  floor: '3',
+  doorbell: 'mis',
+  comment: 'RESTA APO 50',
 };
 
 export {

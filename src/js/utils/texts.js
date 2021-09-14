@@ -91,4 +91,8 @@ export default {
     'Οι προγραμματισμένες ώρες που διάλεξες δεν είναι πλέον διαθέσιμες',
   timeslotDeliveryTitle: 'Παράδοση',
   timeslotDeliveryDescription: 'Ημέρα παράδοσης στο χώρο',
+  order: {
+    statusCompleted: 'Ολοκληρώθηκε',
+    statusCancelled: 'Ακυρώθηκε',
+  },
 };

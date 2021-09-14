@@ -8,15 +8,14 @@
     background-color: #e9fffc;
     color: #2b8e81;
   }
-  &__status--canceled {
-    background-color: #e9fffc;
-    color: #2b8e81;
+  &__status--cancelled {
+    background-color: #f6e7ed;
+    color: #ec5176;
   }
 
   &__rate {
     padding: 20px 16px;
   }
   &__rate-btn {
-    
   }
 }

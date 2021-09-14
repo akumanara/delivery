@@ -3,6 +3,7 @@ import axios from 'axios';
 import { store } from '../utils/store';
 import { getFormData, getURLSearchData } from '../utils/helpers';
 import {
+  userOrder,
   insertOrderSuccess,
   loadMoreProductsEmpty,
   genericSuccess,
@@ -98,6 +99,29 @@ export default class {
           reject(error);
         });
     });
+  }
+
+  getOrder(orderID) {
+    // https://www.delivery.gr/api/offer/{:shop_id}/{:offer_id}
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(userOrder);
+        }, 200),
+      );
+    }
+
+    // return new Promise((resolve, reject) => {
+    //   const url = `api/offer/${store.context.storeID}/${offerID}`;
+    //   this.instance
+    //     .get(url)
+    //     .then((response) => {
+    //       resolve(response.data);
+    //     })
+    //     .catch((error) => {
+    //       reject(error);
+    //     });
+    // });
   }
 
   getProductFromCart(productID, cartIndex) {
