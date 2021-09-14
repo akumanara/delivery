@@ -32,37 +32,6 @@ export default class {
     }
   }
 
-  clearConnectComponent() {
-    // Class level stuff
-    this.email = '';
-    this.phone = '';
-    this.callID = '';
-
-    // login modal
-    this.DOM.loginModal.input.value = '';
-    this.clearLoginModalError();
-
-    // password modal
-    this.DOM.passwordModal.input.value = '';
-    this.clearPasswordModalError();
-
-    // register modal
-    this.DOM.registerModal.formName.value = '';
-    this.DOM.registerModal.formSurname.value = '';
-    this.DOM.registerModal.formEmail.value = '';
-    this.DOM.registerModal.formPassword.value = '';
-    this.DOM.registerModal.formPhone.value = '';
-    // remove the checkmark icon
-    this.DOM.registerModal.modal
-      .querySelector('.personal-details__phone-checkbox')
-      .classList.remove('personal-details__phone-checkbox--active');
-
-    this.DOM.registerModal.formTos.checked = false;
-    this.DOM.registerModal.formTosTrigger.classList.remove('checked');
-    this.clearRegisterModalError();
-    this.formData = null;
-  }
-
   initModals() {
     this.DOM = {};
 
@@ -77,6 +46,7 @@ export default class {
     this.initMissingDataModal();
   }
 
+  // #region Init Modals
   initLoginModal() {
     // login modal
     this.DOM.loginModal = document.querySelector('.login');
@@ -369,6 +339,9 @@ export default class {
       formPhone: this.DOM.missingDataModal.querySelector(
         '.js-verify-number-input',
       ),
+      formTos: this.DOM.missingDataModal.querySelector('.js-tos'),
+      formTosTrigger:
+        this.DOM.missingDataModal.querySelector('.login__tos-accept'),
     };
     this.isMissingDataOpen = false;
 
@@ -398,6 +371,89 @@ export default class {
       'input',
       this.checkMissingDataForm,
     );
+
+    this.DOM.missingDataModal.formTosTrigger.addEventListener('click', () => {
+      this.DOM.missingDataModal.formTos.checked =
+        !this.DOM.missingDataModal.formTos.checked;
+      this.DOM.missingDataModal.formTosTrigger.classList.toggle('checked');
+      this.checkMissingDataForm();
+    });
+
+    this.DOM.missingDataModal.actionBtn.addEventListener(
+      'click',
+      this.submitMissingDataUser,
+    );
+  }
+
+  // #endregion
+
+  // #region Async (API Calls)
+
+  async loginActionClicked() {
+    PubSub.publish('show_loader');
+    const { value } = this.DOM.loginModal.input;
+    // console.log(`mail: ${validateEmail(value)}`);
+    if (validateEmail(value)) {
+      console.log('Valid email');
+      // USER ENTERED VALID EMAIL
+      // ==========================
+      this.email = value;
+      const response = await this.api.login(this.email);
+      if (response.type === loginWithEmailResponses.SHOW_PASSWORD) {
+        // USER MUST LOGIN WITH PASSWORD
+        // ==========================
+        this.toggleLoginModal();
+        this.togglePasswordModal();
+      } else if (response.type === loginWithEmailResponses.SHOW_OTP) {
+        // USER MUST LOGIN WITH OTP
+        // ==========================
+        this.callID = response.call_id;
+        this.phone = response.phone;
+        this.toggleLoginModal();
+        this.toggleOtpModal();
+      } else if (response.type === loginWithEmailResponses.SHOW_INFOBOX) {
+        // USER MUST LOGIN WITH SOCIAL
+        // ==========================
+        this.loginModalShowError(texts.login.userIsSocialLoginError);
+      } else if (response.type === loginWithEmailResponses.SHOW_NEW_USER) {
+        // USER DOESNT EXIST. REGISTER
+        // ==========================
+        this.DOM.registerModal.formEmail.value = this.email;
+        this.DOM.registerModal.formEmail.disabled = true;
+        this.checkRegisterForm();
+        this.toggleLoginModal();
+        this.toggleRegisterModal();
+      }
+    } else if (validatePhone(value)) {
+      console.log('Valid phone');
+      // USER ENTERED VALID PHONE
+      // ==========================
+      this.phone = value;
+
+      const response = await this.api.login(this.phone);
+      if (response.type === loginWithEmailResponses.SHOW_OTP) {
+        // USER MUST LOGIN WITH OTP
+        // ==========================
+        this.callID = response.call_id;
+        this.toggleLoginModal();
+        this.toggleOtpModal();
+      } else {
+        // USER DOESNT EXIST. REGISTER
+        // ==========================
+        this.DOM.registerModal.formPhone.value = this.phone;
+        this.DOM.registerModal.formPhone.disabled = true;
+        this.checkRegisterForm();
+        this.toggleLoginModal();
+        this.toggleRegisterModal();
+      }
+    } else {
+      console.log('invalid email or invalid phone');
+      // USER DIDNT ENTERED VALID EMAIL OR VALID PHONE
+      // ==========================
+      this.loginModalShowError(texts.login.invalidPhoneOrEmail);
+    }
+
+    PubSub.publish('hide_loader');
   }
 
   async forgotPassword() {
@@ -465,29 +521,6 @@ export default class {
     PubSub.publish('hide_loader');
   }
 
-  clearResetPasswordModalErrors() {
-    this.DOM.resetPasswordModal.inputPassword.classList.remove(
-      'form-control--has-error',
-    );
-    this.DOM.resetPasswordModal.inputConfirmPassword.classList.remove(
-      'form-control--has-error',
-    );
-    this.DOM.resetPasswordModal.modal
-      .querySelectorAll('.js-error')
-      .forEach((error) => {
-        error.remove();
-      });
-  }
-
-  resetPasswordModalShowError(error, input) {
-    this.clearResetPasswordModalErrors();
-    input.classList.add('form-control--has-error');
-    if (error !== '') {
-      const htmlError = this.errorTemplate(error);
-      input.parentNode.insertAdjacentHTML('beforebegin', htmlError);
-    }
-  }
-
   async registerWithMergeConsentAndCode() {
     PubSub.publish('show_loader');
     this.formData.merge_accounts = true;
@@ -526,44 +559,10 @@ export default class {
     PubSub.publish('hide_loader');
   }
 
-  // Clicked from login
-  forgotPasswordBtnClickedFromLogin() {
-    this.toggleLoginModal();
-    this.toggleForgotPasswordModal();
-  }
-
-  // Clicked from enter password
-  forgotPasswordBtnClickedFromPassword() {
-    this.togglePasswordModal();
-    this.toggleForgotPasswordModal();
-  }
-
-  checkRegisterForm() {
-    // check if all form inputs are filled
-    if (
-      this.DOM.registerModal.formName.value.length > 0 &&
-      this.DOM.registerModal.formSurname.value.length > 0 &&
-      this.DOM.registerModal.formEmail.value.length > 0 &&
-      this.DOM.registerModal.formPhone.value.length > 0 &&
-      this.DOM.registerModal.formTos.checked
-    ) {
-      this.DOM.registerModal.actionBtn.classList.remove(
-        'primary-btn--disabled',
-      );
-    } else {
-      this.DOM.registerModal.actionBtn.classList.add('primary-btn--disabled');
-    }
-  }
-
-  getRegisterForm() {
-    return {
-      name: this.DOM.registerModal.formName,
-      lastname: this.DOM.registerModal.formSurname,
-      email: this.DOM.registerModal.formEmail,
-      pass: this.DOM.registerModal.formPassword,
-      telephone: this.DOM.registerModal.formPhone,
-      agreement: this.DOM.registerModal.formTos,
-    };
+  async submitMissingDataUser() {
+    PubSub.publish('show_loader');
+    this.clearRegisterModalError();
+    // get the form data
   }
 
   async registerUser() {
@@ -642,6 +641,129 @@ export default class {
     PubSub.publish('hide_loader');
   }
 
+  async loginWithMailAndPassword() {
+    PubSub.publish('show_loader');
+    const password = this.DOM.passwordModal.input.value;
+    const response = await this.api.emailLoginWithPassword(
+      this.email,
+      password,
+    );
+
+    console.log(response);
+    if (response.status === 'error') {
+      // TODO alert
+      console.log('fail login');
+      this.passwordModalShowError(texts.login.wrongPassword);
+    } else if (response.status === 'ok') {
+      window.location.reload();
+    }
+
+    PubSub.publish('hide_loader');
+  }
+
+  async logoutUser() {
+    PubSub.publish('show_loader');
+    await this.api.logout();
+    window.location.reload();
+    PubSub.publish('hide_loader');
+  }
+
+  // #endregion
+
+  clearConnectComponent() {
+    // Class level stuff
+    this.email = '';
+    this.phone = '';
+    this.callID = '';
+
+    // login modal
+    this.DOM.loginModal.input.value = '';
+    this.clearLoginModalError();
+
+    // password modal
+    this.DOM.passwordModal.input.value = '';
+    this.clearPasswordModalError();
+
+    // register modal
+    this.DOM.registerModal.formName.value = '';
+    this.DOM.registerModal.formSurname.value = '';
+    this.DOM.registerModal.formEmail.value = '';
+    this.DOM.registerModal.formPassword.value = '';
+    this.DOM.registerModal.formPhone.value = '';
+    // remove the checkmark icon
+    this.DOM.registerModal.modal
+      .querySelector('.personal-details__phone-checkbox')
+      .classList.remove('personal-details__phone-checkbox--active');
+
+    this.DOM.registerModal.formTos.checked = false;
+    this.DOM.registerModal.formTosTrigger.classList.remove('checked');
+    this.clearRegisterModalError();
+    this.formData = null;
+  }
+
+  clearResetPasswordModalErrors() {
+    this.DOM.resetPasswordModal.inputPassword.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.resetPasswordModal.inputConfirmPassword.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.resetPasswordModal.modal
+      .querySelectorAll('.js-error')
+      .forEach((error) => {
+        error.remove();
+      });
+  }
+
+  resetPasswordModalShowError(error, input) {
+    this.clearResetPasswordModalErrors();
+    input.classList.add('form-control--has-error');
+    if (error !== '') {
+      const htmlError = this.errorTemplate(error);
+      input.parentNode.insertAdjacentHTML('beforebegin', htmlError);
+    }
+  }
+
+  // Clicked from login
+  forgotPasswordBtnClickedFromLogin() {
+    this.toggleLoginModal();
+    this.toggleForgotPasswordModal();
+  }
+
+  // Clicked from enter password
+  forgotPasswordBtnClickedFromPassword() {
+    this.togglePasswordModal();
+    this.toggleForgotPasswordModal();
+  }
+
+  checkRegisterForm() {
+    // check if all form inputs are filled
+    if (
+      this.DOM.registerModal.formName.value.length > 0 &&
+      this.DOM.registerModal.formSurname.value.length > 0 &&
+      this.DOM.registerModal.formEmail.value.length > 0 &&
+      this.DOM.registerModal.formPhone.value.length > 0 &&
+      this.DOM.registerModal.formTos.checked
+    ) {
+      this.DOM.registerModal.actionBtn.classList.remove(
+        'primary-btn--disabled',
+      );
+    } else {
+      this.DOM.registerModal.actionBtn.classList.add('primary-btn--disabled');
+    }
+  }
+
+  getRegisterForm() {
+    return {
+      name: this.DOM.registerModal.formName,
+      lastname: this.DOM.registerModal.formSurname,
+      email: this.DOM.registerModal.formEmail,
+      pass: this.DOM.registerModal.formPassword,
+      telephone: this.DOM.registerModal.formPhone,
+      agreement: this.DOM.registerModal.formTos,
+    };
+  }
+
   clearRegisterModalError() {
     // Remove error messages
     this.DOM.registerModal.formName.classList.remove('form-control--has-error');
@@ -675,26 +797,6 @@ export default class {
     }
   }
 
-  async loginWithMailAndPassword() {
-    PubSub.publish('show_loader');
-    const password = this.DOM.passwordModal.input.value;
-    const response = await this.api.emailLoginWithPassword(
-      this.email,
-      password,
-    );
-
-    console.log(response);
-    if (response.status === 'error') {
-      // TODO alert
-      console.log('fail login');
-      this.passwordModalShowError(texts.login.wrongPassword);
-    } else if (response.status === 'ok') {
-      window.location.reload();
-    }
-
-    PubSub.publish('hide_loader');
-  }
-
   clearPasswordModalError() {
     this.DOM.passwordModal.input.classList.remove('form-control--has-error');
     const error = this.DOM.passwordModal.modal.querySelector('.js-error');
@@ -711,88 +813,6 @@ export default class {
       'beforebegin',
       htmlError,
     );
-  }
-
-  async loginActionClicked() {
-    PubSub.publish('show_loader');
-    const { value } = this.DOM.loginModal.input;
-    // console.log(`mail: ${validateEmail(value)}`);
-    if (validateEmail(value)) {
-      console.log('Valid email');
-      // USER ENTERED VALID EMAIL
-      // ==========================
-      this.email = value;
-      const response = await this.api.login(this.email);
-      if (response.type === loginWithEmailResponses.SHOW_PASSWORD) {
-        // USER MUST LOGIN WITH PASSWORD
-        // ==========================
-        this.toggleLoginModal();
-        this.togglePasswordModal();
-      } else if (response.type === loginWithEmailResponses.SHOW_OTP) {
-        // USER MUST LOGIN WITH OTP
-        // ==========================
-        this.callID = response.call_id;
-        this.phone = response.phone;
-        this.toggleLoginModal();
-        this.toggleOtpModal();
-      } else if (response.type === loginWithEmailResponses.SHOW_INFOBOX) {
-        // USER MUST LOGIN WITH SOCIAL
-        // ==========================
-        this.loginModalShowError(texts.login.userIsSocialLoginError);
-      } else if (response.type === loginWithEmailResponses.SHOW_NEW_USER) {
-        // USER DOESNT EXIST. REGISTER
-        // ==========================
-        this.DOM.registerModal.formEmail.value = this.email;
-        this.DOM.registerModal.formEmail.disabled = true;
-        this.checkRegisterForm();
-        this.toggleLoginModal();
-        this.toggleRegisterModal();
-      }
-    } else if (validatePhone(value)) {
-      console.log('Valid phone');
-      // USER ENTERED VALID PHONE
-      // ==========================
-      this.phone = value;
-
-      const response = await this.api.login(this.phone);
-      if (response.type === loginWithEmailResponses.SHOW_OTP) {
-        // USER MUST LOGIN WITH OTP
-        // ==========================
-        this.callID = response.call_id;
-        this.toggleLoginModal();
-        this.toggleOtpModal();
-      } else {
-        // USER DOESNT EXIST. REGISTER
-        // ==========================
-        this.DOM.registerModal.formPhone.value = this.phone;
-        this.DOM.registerModal.formPhone.disabled = true;
-        this.checkRegisterForm();
-        this.toggleLoginModal();
-        this.toggleRegisterModal();
-      }
-    } else {
-      console.log('invalid email or invalid phone');
-      // USER DIDNT ENTERED VALID EMAIL OR VALID PHONE
-      // ==========================
-      this.loginModalShowError(texts.login.invalidPhoneOrEmail);
-    }
-
-    PubSub.publish('hide_loader');
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  errorTemplate(error) {
-    return `
-    <div class="p-16 d-flex js-error">
-      <img
-        src="${store.context.imagesURL}icons/error.svg"
-        alt=""
-        class="img-fluid mw-22 flex-shrink-0 align-self-center mr-10"
-      />
-      <div class="message">
-        ${error}
-      </div>
-    </div>`;
   }
 
   clearLoginModalError() {
@@ -814,7 +834,50 @@ export default class {
     );
   }
 
-  // MODALS TOGGLING
+  checkMissingDataForm() {
+    console.log('checkMissingDataForm');
+    // check if all form inputs are filled
+    if (
+      this.DOM.missingDataModal.formName.value.length > 0 &&
+      this.DOM.missingDataModal.formSurname.value.length > 0 &&
+      this.DOM.missingDataModal.formEmail.value.length > 0 &&
+      this.DOM.missingDataModal.formPhone.value.length > 0
+    ) {
+      this.DOM.missingDataModal.actionBtn.classList.remove(
+        'primary-btn--disabled',
+      );
+    } else {
+      this.DOM.missingDataModal.actionBtn.classList.add(
+        'primary-btn--disabled',
+      );
+    }
+  }
+
+  clearMissingDataModalError() {
+    // Remove error messages
+    this.DOM.missingDataModal.formName.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.missingDataModal.formSurname.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.missingDataModal.formEmail.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.missingDataModal.formPhone.classList.remove(
+      'form-control--has-error',
+    );
+    this.DOM.missingDataModal.formPassword.classList.remove(
+      'form-control--has-error',
+    );
+
+    this.DOM.missingDataModal.modal
+      .querySelectorAll('.js-error')
+      .forEach((element) => {
+        element.remove();
+      });
+  }
+
   triggerClicked() {
     // The first thing the user clicks
     this.clearConnectComponent();
@@ -827,6 +890,22 @@ export default class {
     this.toggleLoginModal();
   }
 
+  // eslint-disable-next-line class-methods-use-this
+  errorTemplate(error) {
+    return `
+    <div class="p-16 d-flex js-error">
+      <img
+        src="${store.context.imagesURL}icons/error.svg"
+        alt=""
+        class="img-fluid mw-22 flex-shrink-0 align-self-center mr-10"
+      />
+      <div class="message">
+        ${error}
+      </div>
+    </div>`;
+  }
+
+  // #region Toggling, Closing and Opening Modals
   toggleLoginModal() {
     if (this.isLoginOpen) {
       this.closeLogin();
@@ -922,7 +1001,6 @@ export default class {
     this.DOM.forgotPasswordModal.modal.classList.add('active');
   }
 
-  // toogle merge modal
   toggleMergeModal() {
     if (this.isMergeAccountOpen) {
       this.closeMerge();
@@ -942,7 +1020,6 @@ export default class {
     this.DOM.mergeAccountModal.modal.classList.add('active');
   }
 
-  // toogle merge account with code modal
   toggleMergeAccountWithCodeModal() {
     if (this.isMergeAccountWithCodeOpen) {
       this.closeMergeAccountWithCode();
@@ -962,7 +1039,6 @@ export default class {
     this.DOM.mergeAccountWithCodeModal.modal.classList.add('active');
   }
 
-  // toogle reset passwrod modal
   toggleResetPasswordModal() {
     if (this.isResetPasswordOpen) {
       this.closeResetPassword();
@@ -982,7 +1058,6 @@ export default class {
     this.DOM.resetPasswordModal.modal.classList.add('active');
   }
 
-  // toogle reset passwrod modal
   toggleMissingDataModal() {
     console.log('toggleMissingDataModal');
     if (this.isMissingDataOpen) {
@@ -1003,109 +1078,5 @@ export default class {
     this.DOM.missingDataModal.modal.classList.add('active');
   }
 
-  async logoutUser() {
-    PubSub.publish('show_loader');
-    await this.api.logout();
-    window.location.reload();
-    PubSub.publish('hide_loader');
-  }
-
-  checkMissingDataForm() {
-    console.log('checkMissingDataForm');
-    // check if all form inputs are filled
-    if (
-      this.DOM.missingDataModal.formName.value.length > 0 &&
-      this.DOM.missingDataModal.formSurname.value.length > 0 &&
-      this.DOM.missingDataModal.formEmail.value.length > 0 &&
-      this.DOM.missingDataModal.formPhone.value.length > 0
-    ) {
-      this.DOM.missingDataModal.actionBtn.classList.remove(
-        'primary-btn--disabled',
-      );
-    } else {
-      this.DOM.missingDataModal.actionBtn.classList.add(
-        'primary-btn--disabled',
-      );
-    }
-  }
-
-  async updateUserWithMissingData() {
-    PubSub.publish('show_loader');
-    this.clearMissingDataModalError();
-
-    // below needs refactoring
-    // get the form data
-
-    // const formData = {
-    //   name: this.DOM.missingDataModal.formName.value,
-    //   lastname: this.DOM.missingDataModal.formSurname.value,
-    //   email: this.DOM.missingDataModal.formEmail.value,
-    //   pass: this.DOM.missingDataModal.formPassword.value,
-    //   telephone: this.DOM.missingDataModal.formPhone.value,
-    // };
-
-    // const response = await this.api.signupUser(formData);
-    // if (response.status === 'success') {
-    //   window.location.reload();
-    // } else if (response.status === 'error') {
-    //   // TODO: show error messages
-    //   // Todo check generic error
-    //   const form = this.getRegisterForm();
-    //   response.error_messages.forEach((element) => {
-    //     const fieldName = Object.keys(element)[0];
-    //     const formField = form[fieldName];
-    //     if (formField) {
-    //       this.registerModalShowError(element[fieldName], formField);
-    //     }
-    //     if (fieldName === 'generic') {
-    //       this.registerModalShowError(element[fieldName], form.name.parentNode);
-    //     }
-    //   });
-    // } else if (
-    //   response.status === 'merge' &&
-    //   response.type === 'no_verification'
-    // ) {
-    //   // MERGE WITHOUT VERIFICATION CODE
-    //   // ==========================
-    //   this.formData = formData;
-    //   this.toggleRegisterModal();
-    //   this.toggleMergeModal();
-    // } else if (
-    //   response.status === 'merge' &&
-    //   response.type === 'mail_verification'
-    // ) {
-    //   // MERGE WITH VERIFICATION CODE
-    //   // ==========================
-    //   this.formData = formData;
-    //   this.toggleRegisterModal();
-    //   this.toggleMergeAccountWithCodeModal();
-    // }
-
-    PubSub.publish('hide_loader');
-  }
-
-  clearMissingDataModalError() {
-    // Remove error messages
-    this.DOM.missingDataModal.formName.classList.remove(
-      'form-control--has-error',
-    );
-    this.DOM.missingDataModal.formSurname.classList.remove(
-      'form-control--has-error',
-    );
-    this.DOM.missingDataModal.formEmail.classList.remove(
-      'form-control--has-error',
-    );
-    this.DOM.missingDataModal.formPhone.classList.remove(
-      'form-control--has-error',
-    );
-    this.DOM.missingDataModal.formPassword.classList.remove(
-      'form-control--has-error',
-    );
-
-    this.DOM.missingDataModal.modal
-      .querySelectorAll('.js-error')
-      .forEach((element) => {
-        element.remove();
-      });
-  }
+  // #endregion
 }

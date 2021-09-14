@@ -129,7 +129,7 @@ export default class extends EventEmitter {
       );
 
       if (!this.disableQuickAdd) {
-        console.log('quick add is enabled');
+        // console.log('quick add is enabled');
         quickAddElement.addEventListener('click', this.quickAdd);
       }
       quickPlusElement.addEventListener('click', this.quickAdd);

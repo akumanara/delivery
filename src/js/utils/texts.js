@@ -72,7 +72,8 @@ export default {
   clickToCallSuccess: `Thank you for feedback, we will contact you shortly`,
   login: {
     invalidPhoneOrEmail: 'Μη έγκυρο τηλέφωνο ή email',
-    userIsSocialLoginError: 'Σφάλμα σύνδεσης. Κάνε σύνδεση με social media.',
+    userIsSocialLoginError:
+      'Δεν εντοπίσαμε το προφίλ. Δοκίμασε να συνδεθείς μέσω social media.',
     wrongPassword: 'Λάθος κωδικός.',
   },
   verify: {

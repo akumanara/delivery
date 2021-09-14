@@ -1,0 +1,22 @@
+.previous-order {
+  // MODAL
+  &__status {
+    display: flex;
+    padding: 10px 16px;
+  }
+  &__status--completed {
+    background-color: #e9fffc;
+    color: #2b8e81;
+  }
+  &__status--canceled {
+    background-color: #e9fffc;
+    color: #2b8e81;
+  }
+
+  &__rate {
+    padding: 20px 16px;
+  }
+  &__rate-btn {
+    
+  }
+}

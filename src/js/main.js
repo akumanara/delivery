@@ -31,6 +31,7 @@ import Timeslot from './components/timeslot';
 import AdultConsentModals from './components/adultConsentModals';
 import SearchAndCategories from './components/searchAndCategories';
 import ThankYou from './components/thankYou';
+import UserOrders from './components/userOrders';
 
 // import Layout from './layout';
 
@@ -86,6 +87,11 @@ class App {
       this.searchAndCategories = new SearchAndCategories(
         searchAndCategoriesElement,
       );
+    }
+
+    const userOrdersElement = document.querySelector('.user-orders');
+    if (userOrdersElement) {
+      this.userOrders = new UserOrders(userOrdersElement);
     }
 
     // Timeslots
@@ -294,6 +300,22 @@ class App {
       },
     });
     observer.observe();
+
+    // user order - todo refactor
+    // Accordions for store info
+    this.accordions = [];
+    document
+      .querySelectorAll('.previous-order .accordion__container')
+      .forEach((el) => {
+        const tmpAccordionContainer = new Accordion(el, {
+          duration: 600,
+          elementClass: 'accordion__item',
+          triggerClass: 'accordion__header',
+          panelClass: 'accordion__panel',
+          ariaEnabled: false,
+        });
+        this.accordions.push(tmpAccordionContainer);
+      });
   }
 
   // must be called when a reflow occurs

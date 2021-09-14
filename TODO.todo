@@ -13,11 +13,20 @@ general:
 
 
 
-pending pages:
-  ☐ Landing page
-  ☐ content pages
-  ☐ user profile pages
+content pages:
 
+
+user profile pages:
+  ☐ user details
+  ☐ user orders
+  ☐ user order
+  ☐ rate order
+  ☐ fav stores
+  ☐ eat and win
+  ☐ coupons
+  ☐ cards
+  ☐ addresses
+  ☐ settings
 
 connect/login:
   ☐ missing data modal
