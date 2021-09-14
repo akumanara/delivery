@@ -2823,7 +2823,7 @@ const insertOrderError = {
 const userOrder = {
   id: '123',
   storeName: 'Naasdkama',
-  status: 'compleated', // or canceled
+  status: 'completed', // or canceled
   paymentType: 'POS', // or cash or card?
   deliveryType: 'Delivery', // or Pickup
   date: '22.08.2021',

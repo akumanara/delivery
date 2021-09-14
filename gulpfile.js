@@ -165,7 +165,7 @@ gulp.task('imagesRaster', () => {
       .src([src_folder + 'images/**/*.+(png|jpg|jpeg|gif|ico)'])
       .pipe(
         webp({
-          quality: 80,
+          quality: 95,
         }),
       )
       .pipe(gulp.dest(dist_folder + 'images'))

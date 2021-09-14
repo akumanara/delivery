@@ -42,8 +42,15 @@ let UserOrderTemplate;
 if (MarketProductSource) {
   UserOrderTemplate = Handlebars.compile(UserOrderSource.innerHTML);
 }
+// rate order
+const RateOrderSource = document.getElementById('rate-order-template');
+let RateOrderTemplate;
+if (MarketProductSource) {
+  RateOrderTemplate = Handlebars.compile(RateOrderSource.innerHTML);
+}
 
 export {
+  RateOrderTemplate,
   UserOrderTemplate,
   MarketProductTemplate,
   HandlebarsTemplate,
