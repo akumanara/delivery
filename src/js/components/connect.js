@@ -322,7 +322,6 @@ export default class {
   }
 
   initMissingDataModal() {
-    debugger;
     // missing modal
     this.DOM.missingDataModal = document.querySelector(
       '.js-missing-data-modal',
