@@ -26,8 +26,14 @@ export default class {
 
   async insertOrder() {
     // todo check if user is logged in and can submit order (filled in details, etc, etc)
-    await this.insertOrderGuest();
+    if (store.context.isUserLoggedIn) {
+      await this.insertOrderLoggedIn();
+    } else {
+      await this.insertOrderGuest();
+    }
   }
+
+  async insertOrderLoggedIn() {}
 
   async insertOrderGuest() {
     PubSub.publish('show_loader');

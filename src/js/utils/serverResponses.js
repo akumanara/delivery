@@ -2820,7 +2820,22 @@ const insertOrderError = {
   message: 'message with order insertion',
 };
 
+const userOrder = {
+  id: '1',
+  storeName: 'Nakama',
+  status: 'completed', // or canceled
+  paymentType: 'POS', // or cash or card?
+  deliveryType: 'Delivery', // or Pickup?
+  date: '22.08.2021',
+  time: '21:27',
+  transactionCode: 'c387f6b1-b0077-42f4-834a-5142de26c7bb',
+  cartItems: [
+    
+  ]
+};
+
 export {
+  userOrder,
   insertOrderSuccess,
   insertOrderError,
   loadMoreProductsEmpty,
