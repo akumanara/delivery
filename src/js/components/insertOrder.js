@@ -1,0 +1,59 @@
+import autoBind from 'auto-bind';
+import PubSub from 'pubsub-js';
+import { store } from '../utils/store';
+import texts from '../utils/texts';
+import API from './api';
+
+export default class {
+  constructor() {
+    autoBind(this);
+    this.api = new API();
+    this.DOM = {
+      payNowButton: document.querySelector('.pay-now__btn'),
+      guestName: document.querySelector('.js-guest-order_recipient'),
+      guestLastName: document.querySelector(
+        '.js-guest-order_recipient_lastname',
+      ),
+      guestEmail: document.querySelector('.js-guest-email'),
+      guestPhone: document.querySelector('.js-verify-number-input'),
+    };
+    this.init();
+  }
+
+  init() {
+    this.DOM.payNowButton.addEventListener('click', this.insertOrder);
+  }
+
+  async insertOrder() {
+    // todo check if user is logged in and can submit order (filled in details, etc, etc)
+    await this.insertOrderGuest();
+  }
+
+  async insertOrderGuest() {
+    PubSub.publish('show_loader');
+    const data = {
+      shop_id: store.context.storeID,
+      order_delivery_slot: '', // TODO as to afisoume gia tora
+      order_recipient: this.DOM.guestName.value,
+      order_recipient_lastname: this.DOM.guestLastName.value,
+      email: this.DOM.guestEmail.value,
+      order_phone: this.DOM.guestPhone.value,
+      payment_type: store.app.paymentType.activePaymentMethod, // 'cash' or 'pos' apo to payment type component
+    };
+
+    if (store.app.paymentType.activePaymentMethod) {
+      data.payment_type =
+        store.app.paymentType.activePaymentMethod.dataset.type;
+    } else {
+      data.payment_type = null;
+    }
+
+    const response = await this.api.insertOrder(data);
+    if (response.status === 'success') {
+      window.location.href = response.redirect;
+    }
+
+    console.log(data);
+    PubSub.publish('hide_loader');
+  }
+}

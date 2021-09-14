@@ -83,7 +83,10 @@ export default class {
       ariaEnabled: false,
     });
     this.accordion.openAll();
+
+
   }
+
 
   setCopies() {
     if (this.activePaymentMethod === null) {

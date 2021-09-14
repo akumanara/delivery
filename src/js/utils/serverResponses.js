@@ -2810,7 +2810,19 @@ const loadMoreProductsEmpty = {
   products: [],
 };
 
+const insertOrderSuccess = {
+  status: 'success',
+  redirect: 'http://localhost:3000/thankyou.html',
+};
+
+const insertOrderError = {
+  status: 'error',
+  message: 'message with order insertion',
+};
+
 export {
+  insertOrderSuccess,
+  insertOrderError,
   loadMoreProductsEmpty,
   loadMoreProducts,
   offer,

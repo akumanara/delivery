@@ -117,8 +117,8 @@
         <!-- NAME -->
         <div class="form-floating">
           <input
-            type="email"
-            class="form-control"
+            type="text"
+            class="form-control js-guest-order_recipient"
             id="floatingInput"
             placeholder="placeholder"
             autocomplete="off"
@@ -128,8 +128,8 @@
         <!-- SURNAME -->
         <div class="form-floating">
           <input
-            type="email"
-            class="form-control"
+            type="text"
+            class="form-control js-guest-order_recipient_lastname"
             id="floatingInput"
             placeholder="placeholder"
             autocomplete="off"
@@ -140,7 +140,7 @@
         <div class="form-floating">
           <input
             type="email"
-            class="form-control"
+            class="form-control js-guest-email"
             id="floatingInput"
             placeholder="placeholder"
             autocomplete="off"
@@ -150,7 +150,9 @@
 
         <!-- PHONE -->
         <div class="personal-details__phone">
-          <div class="js-verify-number-trigger"></div>
+          <div
+            class="personal-details__phone-trigger js-verify-number-trigger"
+          ></div>
           <div class="personal-details__phone-checkbox">
             <img
               src="./images/icons/checkmark-phone.svg"
@@ -698,10 +700,10 @@
 
       <div class="pay-now">
         <div class="pay-now__inner">
-          <a href="" class="pay-now__btn">
+          <div class="pay-now__btn">
             <div class="pay-now__btn-left">Επιβεβαίωση παραγγελίας</div>
             <div class="pay-now__btn-right">49,40€</div>
-          </a>
+          </div>
         </div>
       </div>
 

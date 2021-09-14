@@ -3,6 +3,7 @@ import axios from 'axios';
 import { store } from '../utils/store';
 import { getFormData, getURLSearchData } from '../utils/helpers';
 import {
+  insertOrderSuccess,
   loadMoreProductsEmpty,
   genericSuccess,
   genericError,
@@ -974,6 +975,32 @@ export default class {
       const url = window.location.href;
       axios
         .get(url)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  insertOrder(data) {
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(insertOrderSuccess);
+        }, 500),
+      );
+    }
+    return new Promise((resolve, reject) => {
+      const url = `api/order/insert`;
+      const formData = getFormData(data);
+      this.instance
+        .post(url, formData, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        })
         .then((response) => {
           resolve(response.data);
         })

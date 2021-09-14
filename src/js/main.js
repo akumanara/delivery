@@ -32,6 +32,7 @@ import AdultConsentModals from './components/adultConsentModals';
 import SearchAndCategories from './components/searchAndCategories';
 import ThankYou from './components/thankYou';
 import UserOrders from './components/userOrders';
+import InsertOrder from './components/insertOrder';
 
 // import Layout from './layout';
 
@@ -89,9 +90,16 @@ class App {
       );
     }
 
+    // User orders page
     const userOrdersElement = document.querySelector('.user-orders');
     if (userOrdersElement) {
       this.userOrders = new UserOrders(userOrdersElement);
+    }
+
+    // checkout page - insert order
+    const insertOrderElement = document.querySelector('.pay-now');
+    if (insertOrderElement) {
+      this.insertOrder = new InsertOrder();
     }
 
     // Timeslots
