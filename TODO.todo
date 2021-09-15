@@ -2,12 +2,10 @@ general:
   ☐ [general] svg icon css for dark/light - @misa dependency (duplicate svg icons?)
   ☐ [general] sentry remove cc data before sending @critical;
   ☐ [general] landing page mechanism for address and vertical selection
-  ✔ nada results sto search tou market @done(21-09-10 17:40)
   ☐ checkout apodeiksi grafiko na mpein inline k oxi sto css
-
   ☐ landing different header
   ☐ missing data - otan kaneis click sto X prin se kanei logout na sou vgalei ena A level alert gia confirmation.
-  ☐ to password na ginei required
+  ☐ to password na ginei required sto registration / missing data
   ☐ na ksanakopoun illustations kai eikonidia. dependent apo reborrn
   ☐ na ginei allagi - licenses gia ta fonts
 
@@ -18,10 +16,10 @@ content pages:
 
 user profile pages:
   ✔ user details @done(21-09-14 16:53)
-  ☐ user orders
+  ✔ user orders @done(21-09-15 14:20)
   ☐ user order
   ☐ rate order
-  ☐ fav stores
+  ✔ fav stores @done(21-09-15 14:20)
   ☐ eat and win
   ☐ coupons
   ☐ cards
@@ -95,6 +93,7 @@ meeting:
 
 
 Done:
+  ✔ nada results sto search tou market @done(21-09-10 17:40)
   ✔ quick add se prosfora ti kanei? @done(21-09-10 17:41)
 ✔ quick add se product market view na checkare afto me to den exeis diefthinsi @done(21-09-10 17:41)
 ✔ quick remove se product market view na checkare afto me to den exeis diefthinsi @done(21-09-10 17:41)

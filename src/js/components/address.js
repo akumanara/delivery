@@ -34,6 +34,7 @@ export default class {
 
   updateSelectedAddressIsSupported() {
     this.isSelectedAddressSupported = store.context.isSelectedAddressSupported;
+    this.checkForUnsupportedAddress();
   }
 
   queryTheDOM() {
@@ -233,6 +234,10 @@ export default class {
       this.setActiveAddressData();
     }
 
+    this.checkForUnsupportedAddress();
+  }
+
+  checkForUnsupportedAddress() {
     // if we have a selected address and it is not supported by the store
     // If the user has already selected an address and the address is not supported
     // 1. Show a B level alert
@@ -924,7 +929,6 @@ export default class {
       .then((result) => {
         console.log(result);
         if (!store.context.storeID) {
-
           window.location.href = `${
             store.context.redirectURLfromAddress
           }?${this.encodedDataToString(addressObject)}`;
