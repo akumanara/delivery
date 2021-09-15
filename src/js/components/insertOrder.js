@@ -39,6 +39,7 @@ export default class {
     PubSub.publish('show_loader');
     const data = {
       shop_id: store.context.storeID,
+      order_origin_code: store.context.orderOrigin,
       order_delivery_slot: '', // TODO as to afisoume gia tora
       order_recipient: this.DOM.guestName.value,
       order_recipient_lastname: this.DOM.guestLastName.value,

@@ -11,86 +11,91 @@ export default {
   // Delivery type accordion
   delivery: 'Delivery',
   deliveryFee: (x) => `Ελάχιστη παραγγελία - ${x}`,
-  unsupportedAddress: (x) => `No delivery to ${x}`,
-  unsupportedAddressInChooseAddressModal: `No delivery to this address!`,
+  unsupportedAddress: (x) => `Δεν παραδίδουμε σε ${x}`,
+  unsupportedAddressInChooseAddressModal: `Εκτός ορίων παράδοσης`,
   takeaway: 'Takeaway',
   takeawayLocation: (x) => `Κατάστημα - ${x}`,
   // Checkout payment types
   paymentType: {
     notSelected: {
-      top: `Choose payment method to proceed`,
-      bottom: `<img src="${store.context.imagesURL}icons/add-card.svg" alt="" class="img-fluid mw-22 mr-10"><div>Add a Card</div>`,
-      opened: `Choose payment method to proceed`,
+      top: `Διάλεξε τρόπο πληρωμής`,
+      bottom: `<img src="${store.context.imagesURL}icons/add-card.svg" alt="" class="img-fluid mw-22 mr-10"><div>Προσθήκη νέας κάρτας</div>`,
+      opened: `Διάλεξε τρόπο πληρωμής`,
     },
     cash: {
-      top: `You can pay with cash`,
+      top: `Πληρωμή με μετρητά`,
       bottom: `<img src="${store.context.imagesURL}icons/cash.svg" alt="" class="img-fluid mw-22 mr-10"><div>Μετρητά</div>`,
-      opened: `You can pay with cash`,
+      opened: `Πληρωμή με μετρητά`,
     },
     pos: {
-      top: `Pay by credit or debit card`,
+      top: `Πληρωμή με χρεωστική ή πιστωτική κάρτα`,
       /* html */
       bottom: `
         <img src="${store.context.imagesURL}icons/pos.svg" alt="" class="img-fluid mw-22 mr-10">
         <div>POS</div>
       `,
-      opened: `Pay by credit or debit card`,
+      opened: `Πληρωμή με χρεωστική ή πιστωτική κάρτα`,
     },
     saved: {
-      top: (tag) => `${tag} ― Payment method`,
+      top: (tag) => `Τρόπος πληρωμής ― ${tag}`,
       /* html */
       bottom: (lastDigits) =>
         `
           <img src="${store.context.imagesURL}icons/visa.svg" alt="" class="img-fluid mw-22 mr-10">
           <div>•••• ${lastDigits}</div>
         `,
-      opened: (tag) => `${tag} ― Payment method`,
+      opened: (tag) => `Τρόπος πληρωμής ― ${tag}`,
     },
     expired: {
-      top: `This card has expired!`,
+      top: `Αυτή η κάρτα έχει λήξει!`,
       /* html */
       bottom: (lastDigits) =>
         `
           <img src="${store.context.imagesURL}icons/no-card-red.svg" alt="" class="img-fluid mw-22 mr-10">
           <div>•••• ${lastDigits}</div>
         `,
-      opened: `This card has expired!`,
+      opened: `Αυτή η κάρτα έχει λήξει!`,
     },
     new: {
-      top: (tag) => `${tag} - Card was chosen as payment method`,
+      top: (tag) => `Επιλεγμένος τρόπος πληρωμής ― ${tag}`,
       /* html */
       bottom: `
         <img src="${store.context.imagesURL}icons/card.svg" alt="" class="img-fluid mw-22 mr-10">
-        <div>Card</div>
+        <div>Πιστωτική κάρτα</div>
       `,
-      opened: (tag) => `${tag} - Card was chosen as payment method`,
+      opened: (tag) => `Επιλεγμένος τρόπος πληρωμής ― ${tag}`,
     },
   },
   autocompleteNoResults: `Δεν βρήκες τη διεύθυνση σου; Πάτησε εδώ.`,
   genericErrorMessage: `Κάτι πήγε στραβά`,
   micNotAllowed: `Δεν έγινε αποδοχή χρήσης μικροφώνου`,
-  clickToCallSuccess: `Thank you for feedback, we will contact you shortly`,
+  clickToCallSuccess: `Τέλεια! Θα σε καλέσουμε σύντομα εδώ.`,
   login: {
     invalidPhoneOrEmail: 'Μη έγκυρο τηλέφωνο ή email',
     userIsSocialLoginError:
       'Δεν εντοπίσαμε το προφίλ. Δοκίμασε να συνδεθείς μέσω social media.',
-    wrongPassword: 'Λάθος κωδικός.',
+    wrongPassword: 'Δε βρίσκουμε τον κωδικό σου. Δοκίμασε ξανά!',
   },
   verify: {
-    wrongOTP: 'Λάθος κωδικός OTP',
+    wrongOTP:
+      'Φαίνεται ότι ο κωδικός επιβεβαίωσης δεν είναι σωστός. Μπορείς να ξαναδοκιμάσεις;',
   },
-  resetPasswordDifferentPasswords: 'Οι κωδικοι δεν ειναι ιδιοι',
-  resetPasswordSuccess: 'Ο κωδικος προσβασης άλλαξε',
+  resetPasswordDifferentPasswords:
+    'Μμμ, οι δύο κωδικοί δεν είναι ίδιοι. Δοκίμασε ξανά!',
+  resetPasswordSuccess:
+    'Έχεις πια νέο κωδικό! Κάνε τη σύνδεσή σου χρησιμοποιώντας αυτόν.',
   resetPasswordRequestSuccess:
-    'Αν ο χρήστης υπάρχει, θα σας αποσταλλεί email για την αλλαγή του κωδικού σας! Εάν δεν το βλέπετε ελέγξτε την ανεπιθύμητη αλληλογραφία σας.',
+    'Σου στέλνουμε email για την αλλαγή! Δες και στα ανεπιθύμητα.',
   timeslotDefault: 'Διαθέσιμες ώρες παράδοσης - Σημερά',
   timeslotSelected: 'Επιλεγμένη ημερομηνία',
   timeslotPickupTitle: 'Παραλαβή',
-  timeslotPickupDescription: 'Ημέρα παράδοσης στο χώρο σου',
+  timeslotPickupDescription:
+    'Πότε προτιμάς να γίνει η παραλαβή από την επιλεγμένη διεύθυνση;',
   timeslotExpiredSelected:
-    'Οι προγραμματισμένες ώρες που διάλεξες δεν είναι πλέον διαθέσιμες',
+    'Αυτή η επιλογή δεν είναι πλέον διαθέσιμη. Δοκίμασε μια άλλη!',
   timeslotDeliveryTitle: 'Παράδοση',
-  timeslotDeliveryDescription: 'Ημέρα παράδοσης στο χώρο',
+  timeslotDeliveryDescription:
+    'Πότε προτιμάς να γίνει η παράδοση στην επιλεγμένη διεύθυνση;',
   order: {
     statusCompleted: 'Ολοκληρώθηκε',
     statusCancelled: 'Ακυρώθηκε',
