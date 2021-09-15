@@ -1,0 +1,109 @@
+.eatnwin {
+  &__list {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 16px;
+  }
+  &__list-item {
+    // background-color: blue;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-item-header {
+    display: flex;
+    padding: 16px;
+  }
+
+  &__list-item-title {
+    font-weight: 700;
+  }
+  &__list-item-header-icon {
+    width: 26px;
+    height: 26px;
+    margin-left: auto;
+  }
+  &__list-item-body-top {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+  }
+  &__list-item-image {
+    padding: 16px;
+    box-sizing: border-box;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__seperator {
+    width: 100%;
+    display: flex;
+    // border: 1px solid red;
+  }
+  &__seperator-left {
+    width: 7px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+  &__seperator-mid {
+    width: 100%;
+  }
+  &__seperator-right {
+    width: 7px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+  &__list-item-body-bot {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__list-item-header-icon-progress {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__list-item-header-icon-progress-svg {
+    display: block;
+    // transform: rotate(180deg);
+  }
+
+  &__list-item-header-icon-progress-svg-path-bg {
+    stroke: #f4f4ff;
+    fill: none;
+    stroke-width: 4.5;
+    stroke-linecap: round;
+  }
+
+  &__list-item-header-icon-progress-svg-path {
+    stroke: #8e8cff;
+    fill: none;
+    stroke-width: 4.5;
+    // 0% progress
+    // stroke-dasharray: 0 100;
+    // 50% progress
+    // stroke-dasharray: 50 100;
+    // 100% progress
+    // stroke-dasharray: 100 100;
+    stroke-linecap: round;
+  }
+}
