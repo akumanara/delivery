@@ -48,7 +48,8 @@ export default class {
         this.selectTag(tag);
       });
     });
-    document.addEventListener('DOMContentLoaded', this.DOMLoaded);
+    // document.addEventListener('DOMContentLoaded', this.DOMLoaded);
+    this.initVivaCard();
   }
 
   selectTag(selectedTag) {
@@ -92,6 +93,8 @@ export default class {
     PubSub.publish('show_loader');
     this.hideError();
     // TODO get amount from cart
+    console.log('here');
+    // debugger;
     // eslint-disable-next-line no-undef
     VivaPayments.cards
       .requestToken({ amount: 5510 })
@@ -141,9 +144,9 @@ export default class {
     this.DOM.error.classList.remove('add-card__error--active');
   }
 
-  DOMLoaded() {
+  initVivaCard() {
     const that = this;
-    console.log('loaded');
+    console.log('card loaded');
     // eslint-disable-next-line no-undef
     VivaPayments.cards.setup({
       baseURL: store.context.vivaBaseURL,
