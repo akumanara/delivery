@@ -39,7 +39,7 @@ export default class {
     const data = {
       shop_id: store.context.storeID,
       order_origin_code: store.context.orderOrigin,
-      order_delivery_slot: '', // TODO as to afisoume gia tora
+      // order_delivery_slot: '', // TODO as to afisoume gia tora
       // payment_type: store.app.paymentType.activePaymentMethod, // 'cash' or 'pos' apo to payment type component
     };
 
@@ -72,7 +72,7 @@ export default class {
     const data = {
       shop_id: store.context.storeID,
       order_origin_code: store.context.orderOrigin,
-      order_delivery_slot: '', // TODO as to afisoume gia tora
+      // order_delivery_slot: '',
       order_recipient: this.DOM.guestName.value,
       order_recipient_lastname: this.DOM.guestLastName.value,
       email: this.DOM.guestEmail.value,
@@ -80,12 +80,15 @@ export default class {
       // payment_type: store.app.paymentType.activePaymentMethod, // 'cash' or 'pos' apo to payment type component
     };
 
+    // Payment type
     if (store.app.paymentType.activePaymentMethod) {
       data.payment_type =
         store.app.paymentType.activePaymentMethod.dataset.type;
     } else {
       data.payment_type = null;
     }
+
+    // Timeslot
 
     const response = await this.api.insertOrder(data);
     if (response.status === 'success') {
