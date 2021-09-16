@@ -212,8 +212,6 @@ export default class {
       this.DOM.searchModal.emptyResults.classList.add('d-none');
       return;
     }
-    // todo? change input lengh in order to avoid api calls for less than X chars
-    // if (this.input.length < 3) return;
 
     if (this.input.length > 0) {
       this.DOM.searchModal.clearInput.classList.remove('d-none');

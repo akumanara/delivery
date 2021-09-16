@@ -3,6 +3,8 @@ import axios from 'axios';
 import { store } from '../utils/store';
 import { getFormData, getURLSearchData } from '../utils/helpers';
 import {
+  deleteCardSuccess,
+  rateSuccess,
   userOrder,
   insertOrderSuccess,
   loadMoreProductsEmpty,
@@ -25,6 +27,7 @@ import {
   deliveryDates,
   offer,
   offer2,
+  reorderSuccess,
   loadMoreProducts,
 } from '../utils/serverResponses';
 
@@ -102,7 +105,7 @@ export default class {
   }
 
   getOrder(orderID) {
-    // https://www.delivery.gr/api/offer/{:shop_id}/{:offer_id}
+    // https://www.delivery.gr/api/online-order-details-json
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
@@ -111,17 +114,104 @@ export default class {
       );
     }
 
-    // return new Promise((resolve, reject) => {
-    //   const url = `api/offer/${store.context.storeID}/${offerID}`;
-    //   this.instance
-    //     .get(url)
-    //     .then((response) => {
-    //       resolve(response.data);
-    //     })
-    //     .catch((error) => {
-    //       reject(error);
-    //     });
-    // });
+    return new Promise((resolve, reject) => {
+      const url = `api/online-order-details-json`;
+      const data = {
+        order_id: orderID,
+      };
+      this.instance
+        .post(url, data)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  reOrder(orderID) {
+    // https://www.delivery.gr/user/reorder
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(reorderSuccess);
+        }, 200),
+      );
+    }
+
+    return new Promise((resolve, reject) => {
+      const url = `user/reorder`;
+      const data = {
+        order_id: orderID,
+        checkout: false,
+      };
+      const formData = getFormData(data);
+      this.instance
+        .post(url, formData)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  rateOrder(orderID, rate1, rate2, rate3) {
+    // https://www.delivery.gr/user/order/{:order_id}/rate/submit
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(rateSuccess);
+        }, 200),
+      );
+    }
+
+    return new Promise((resolve, reject) => {
+      const url = `https://www.delivery.gr/user/order/${orderID}/rate/submit`;
+      const data = {
+        rate1,
+        rate2,
+        rate3,
+      };
+      const formData = getFormData(data);
+      this.instance
+        .post(url, formData)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  }
+
+  deleteCard(cardId) {
+    // https://www.delivery.gr/user/cards/delete-card
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(deleteCardSuccess);
+        }, 200),
+      );
+    }
+
+    return new Promise((resolve, reject) => {
+      const url = `/user/cards/delete-card`;
+      const data = {
+        id: cardId,
+      };
+      const formData = getFormData(data);
+      this.instance
+        .post(url, formData)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
   }
 
   getProductFromCart(productID, cartIndex) {

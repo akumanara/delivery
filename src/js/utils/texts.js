@@ -100,4 +100,6 @@ export default {
     statusCompleted: 'Ολοκληρώθηκε',
     statusCancelled: 'Ακυρώθηκε',
   },
+  ratingSuccess: 'h vathmologia sou apothikeftike. TODO',
+  deleteCardSuccess: 'h karta sas diagrafike. TODO',
 };

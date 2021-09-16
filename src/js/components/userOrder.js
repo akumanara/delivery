@@ -3,6 +3,7 @@ import PubSub from 'pubsub-js';
 import Accordion from 'accordion-js';
 import autosize from 'autosize';
 import texts from '../utils/texts';
+import Alert from './alert';
 import API from './api';
 import {
   UserOrderTemplate,
@@ -55,7 +56,9 @@ export default class {
 
     this.DOM.closeBtn.addEventListener('click', this.closeModal);
     this.DOM.actionBtn.addEventListener('click', this.reoder);
-    this.DOM.rateBtn.addEventListener('click', this.rateModal);
+    if (this.DOM.rateBtn) {
+      this.DOM.rateBtn.addEventListener('click', this.rateModal);
+    }
 
     const tmpAccordionContainer = new Accordion(this.DOM.accordion, {
       duration: 600,
@@ -78,7 +81,10 @@ export default class {
   }
 
   async reoder() {
-    // TODO
+    PubSub.publish('show_loader');
+    const response = await this.api.reOrder(this.orderId);
+    window.location.href = response.redirect;
+    PubSub.publish('hide_loader');
   }
 
   rateModal() {
@@ -160,6 +166,59 @@ export default class {
   }
 
   async submitRate() {
-    // todo
+    PubSub.publish('show_loader');
+    // rate1, rate2, rate3
+    // rate1 = poiotita
+    // rate2 = eksipiretisi
+    // rate3 = xronos paradosis
+    let rate1;
+    let rate2;
+    let rate3;
+    const quality = this.DOM.rateModal.ratingItems.forEach((item) => {
+      if (item.dataset.name === 'quality') {
+        console.log('quality');
+        rate1 = item.querySelector(
+          '.previous-order__rate-options-item-emoji-parent--selected',
+        ).dataset.rate;
+      } else if (item.dataset.name === 'delivery') {
+        console.log('delivery');
+        rate2 = item.querySelector(
+          '.previous-order__rate-options-item-emoji-parent--selected',
+        ).dataset.rate;
+      } else if (item.dataset.name === 'speed') {
+        console.log('speed');
+        rate3 = item.querySelector(
+          '.previous-order__rate-options-item-emoji-parent--selected',
+        ).dataset.rate;
+      }
+    });
+
+    const response = await this.api.rateOrder(
+      this.orderId,
+      rate1,
+      rate2,
+      rate3,
+    );
+
+    if (response.status === 'ok') {
+      const alert = new Alert({
+        text: texts.ratingSuccess, // the text to show in the alert
+        timeToKill: 5, // time until it closes
+        type: 'success', // or 'error'
+        showTimer: false, // show the timer or not
+      });
+    } else {
+      const alert = new Alert({
+        text: texts.genericErrorMessage, // the text to show in the alert
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
+      });
+    }
+
+    this.closeRateModal();
+    this.closeModal();
+
+    PubSub.publish('hide_loader');
   }
 }

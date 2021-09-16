@@ -2828,6 +2828,7 @@ const userOrder = {
   deliveryType: 'Delivery', // or Pickup
   date: '22.08.2021',
   time: '21:27',
+  canUserRate: true,
   transactionCode: 'c387f6b1-b0077-42f4-834a-5142de26c7bb',
   cartItems: [
     {
@@ -2861,7 +2862,30 @@ const userOrder = {
   comment: 'RESTA APO 50',
 };
 
+const reorderSuccess = {
+  status: 'success',
+  redirect: 'http://localhost:3000/store.html',
+};
+const rateSuccess = {
+  status: 'ok',
+  rate: '2.3',
+  order: '1231',
+};
+
+// const redemptionSuccess = {
+//   status: 'ok',
+//   rate: '2.3',
+//   order: '1231',
+// };
+const deleteCardSuccess = {
+  status: 'ok',
+};
+
+
 export {
+  rateSuccess,
+  deleteCardSuccess,
+  reorderSuccess,
   userOrder,
   insertOrderSuccess,
   insertOrderError,

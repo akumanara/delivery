@@ -61,11 +61,6 @@ export default class {
     );
     this.storeList = new List(this.DOM.stores, options);
 
-    // TODO remove this
-    // reference on window object
-    // window.list = this.storeList;
-    // window.listObj = this;
-
     if (store.context.mode === 'development') {
       // populate demo storeswindow.list
       // in a sepearate function

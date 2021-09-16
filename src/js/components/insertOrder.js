@@ -26,6 +26,7 @@ export default class {
   }
 
   async insertOrder() {
+    // todo isws na exoume mia function kai gia tous 2?
     // todo check if user is logged in and can submit order (filled in details, etc, etc)
     if (store.context.isUserLoggedIn) {
       await this.insertOrderLoggedIn();

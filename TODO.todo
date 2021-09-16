@@ -8,6 +8,9 @@ general:
   ☐ to password na ginei required sto registration / missing data
   ☐ na ksanakopoun illustations kai eikonidia. dependent apo reborrn
   ☐ na ginei allagi - licenses gia ta fonts
+  ☐ replace ola ta images me ta kainourgia
+  ☐ ti ginete otan enas xristis vazei tilefono/email sto user profile kai uparxei conflict
+  ☐ eat and win: na ginei to call sto  get url sto /user/points/redemption/13. to response einai pending
 
 
 
@@ -17,14 +20,14 @@ content pages:
 user profile pages:
   ✔ user details @done(21-09-14 16:53)
   ✔ user orders @done(21-09-15 14:20)
-  ☐ user order
-  ☐ rate order
+  ✔ user order @done(21-09-16 19:00)
+  ✔ rate order @done(21-09-16 19:00)
   ✔ fav stores @done(21-09-15 14:20)
-  ☐ eat and win
+  ✔ eat and win @done(21-09-16 19:00)
+  ✔ cards @done(21-09-16 19:00)
+  ✔ settings @done(21-09-16 19:00)
   ☐ coupons
-  ☐ cards
   ☐ addresses
-  ☐ settings
 
 connect/login:
   ☐ missing data modal

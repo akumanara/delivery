@@ -583,8 +583,6 @@ export default class {
     if (response.status === 'success') {
       window.location.reload();
     } else if (response.status === 'error') {
-      // TODO: show error messages
-      // Todo check generic error
       const form = this.getRegisterForm();
       response.error_messages.forEach((element) => {
         const fieldName = Object.keys(element)[0];
@@ -632,8 +630,9 @@ export default class {
 
     console.log(response);
     if (response.status === 'error') {
-      // TODO alert
+      // TODO otp login fail error
       console.log('fail login');
+      // this.passwordModalShowError(texts.login.wrongPassword);
     } else if (response.status === 'ok') {
       window.location.reload();
     }
@@ -651,8 +650,6 @@ export default class {
 
     console.log(response);
     if (response.status === 'error') {
-      // TODO alert
-      console.log('fail login');
       this.passwordModalShowError(texts.login.wrongPassword);
     } else if (response.status === 'ok') {
       window.location.reload();

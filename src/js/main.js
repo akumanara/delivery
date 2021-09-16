@@ -287,7 +287,7 @@ class App {
     });
 
     // Lazy load card images with average color afterwards
-    // TODO module
+    // TODO avg color on images in order to change theme of parent card
     const fac = new FastAverageColor();
     const elements = document.querySelectorAll('.lozad');
     const observer = lozad(elements, {

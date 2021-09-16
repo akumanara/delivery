@@ -5,6 +5,7 @@ import autosize from 'autosize';
 import texts from '../utils/texts';
 import API from './api';
 import { UserCardTemplate } from '../utils/handlebarTemplate';
+import Alert from './alert';
 
 export default class {
   constructor(element) {
@@ -68,6 +69,26 @@ export default class {
   }
 
   async deleteCard() {
-    // TODO
+    PubSub.publish('show_loader');
+    const response = await this.api.deleteCard(this.cardId);
+
+    if (response.status === 'ok') {
+      this.closeModal();
+      this.DOM.element.remove();
+      const alert = new Alert({
+        text: texts.deleteCardSuccess, // the text to show in the alert
+        timeToKill: 5, // time until it closes
+        type: 'success', // or 'error'
+        showTimer: false, // show the timer or not
+      });
+    } else {
+      const alert = new Alert({
+        text: texts.genericErrorMessage, // the text to show in the alert
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
+      });
+    }
+    PubSub.publish('hide_loader');
   }
 }

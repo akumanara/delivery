@@ -22,9 +22,6 @@ export default class {
     });
     this.loader.loadCallback(this.googleMapsCallback);
 
-    // https://www.npmjs.com/package/@googlemaps/js-api-loader maybe try this? todo
-    // have an empty callback function in case we have the maps api
-    // window.googleMapsCallback = () => {};
     // we take that info from backend
     this.isSelectedAddressSupported = store.context.isSelectedAddressSupported;
     this.api = new API();
@@ -279,7 +276,7 @@ export default class {
     ).innerHTML;
 
     if (this.DOM.accordion) {
-      this.DOM.accordion.headerTop.innerHTML = `TODO ${this.DOM.accordion.headerTop.innerHTML}`;
+      this.DOM.accordion.headerTop.innerHTML = `${this.DOM.accordion.headerTop.innerHTML}`;
       this.DOM.accordion.headerBottom.innerHTML = this.selectedAddressName;
     }
   }
