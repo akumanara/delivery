@@ -3,6 +3,7 @@ import PubSub from 'pubsub-js';
 import { store } from '../utils/store';
 import texts from '../utils/texts';
 import API from './api';
+import Alert from './alert';
 
 export default class {
   constructor() {
@@ -33,19 +34,13 @@ export default class {
     }
   }
 
-  async insertOrderLoggedIn() {}
-
-  async insertOrderGuest() {
+  async insertOrderLoggedIn() {
     PubSub.publish('show_loader');
     const data = {
       shop_id: store.context.storeID,
       order_origin_code: store.context.orderOrigin,
       order_delivery_slot: '', // TODO as to afisoume gia tora
-      order_recipient: this.DOM.guestName.value,
-      order_recipient_lastname: this.DOM.guestLastName.value,
-      email: this.DOM.guestEmail.value,
-      order_phone: this.DOM.guestPhone.value,
-      payment_type: store.app.paymentType.activePaymentMethod, // 'cash' or 'pos' apo to payment type component
+      // payment_type: store.app.paymentType.activePaymentMethod, // 'cash' or 'pos' apo to payment type component
     };
 
     if (store.app.paymentType.activePaymentMethod) {
@@ -58,6 +53,51 @@ export default class {
     const response = await this.api.insertOrder(data);
     if (response.status === 'success') {
       window.location.href = response.redirect;
+    } else {
+      console.log(response);
+      const a = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
+      });
+    }
+
+    console.log(data);
+    PubSub.publish('hide_loader');
+  }
+
+  async insertOrderGuest() {
+    PubSub.publish('show_loader');
+    const data = {
+      shop_id: store.context.storeID,
+      order_origin_code: store.context.orderOrigin,
+      order_delivery_slot: '', // TODO as to afisoume gia tora
+      order_recipient: this.DOM.guestName.value,
+      order_recipient_lastname: this.DOM.guestLastName.value,
+      email: this.DOM.guestEmail.value,
+      order_phone: this.DOM.guestPhone.value,
+      // payment_type: store.app.paymentType.activePaymentMethod, // 'cash' or 'pos' apo to payment type component
+    };
+
+    if (store.app.paymentType.activePaymentMethod) {
+      data.payment_type =
+        store.app.paymentType.activePaymentMethod.dataset.type;
+    } else {
+      data.payment_type = null;
+    }
+
+    const response = await this.api.insertOrder(data);
+    if (response.status === 'success') {
+      window.location.href = response.redirect;
+    } else {
+      console.log(response);
+      const a = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
+      });
     }
 
     console.log(data);
