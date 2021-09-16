@@ -39,13 +39,34 @@ export default class {
     const data = {
       shop_id: store.context.storeID,
       order_origin_code: store.context.orderOrigin,
-      // order_delivery_slot: '', // TODO as to afisoume gia tora
-      // payment_type: store.app.paymentType.activePaymentMethod, // 'cash' or 'pos' apo to payment type component
     };
 
     if (store.app.paymentType.activePaymentMethod) {
-      data.payment_type =
-        store.app.paymentType.activePaymentMethod.dataset.type;
+      if (
+        store.app.paymentType.activePaymentMethod.dataset.type === 'cash' ||
+        store.app.paymentType.activePaymentMethod.dataset.type === 'pos'
+      ) {
+        // CASH OR POS
+        data.payment_type =
+          store.app.paymentType.activePaymentMethod.dataset.type;
+      } else if (
+        store.app.paymentType.activePaymentMethod.dataset.type === 'new_card'
+      ) {
+        // NEW CARD
+        data.payment_type = 'card';
+        data.token = store.app.addCard.card.chargeToken;
+        data.tag = store.app.addCard.card.tag;
+        data.save = store.app.addCard.card.saveCard;
+        data.default = store.app.addCard.card.defaultCard;
+      } else if (
+        store.app.paymentType.activePaymentMethod.dataset.type === 'saved_card'
+      ) {
+        // SAVED CARD
+        data.payment_type = 'card';
+        data.creditCardId =
+          store.app.paymentType.activePaymentMethod.dataset.id;
+        // TODO it might want 3ds
+      }
     } else {
       data.payment_type = null;
     }
@@ -116,7 +137,6 @@ export default class {
       data.payment_type = null;
     }
 
-    // Timeslot
     const response = await this.api.insertOrder(data);
     if (response.status === 'success') {
       window.location.href = response.redirect;
