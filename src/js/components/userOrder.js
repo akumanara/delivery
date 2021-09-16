@@ -3,9 +3,7 @@ import PubSub from 'pubsub-js';
 import Accordion from 'accordion-js';
 import autosize from 'autosize';
 import texts from '../utils/texts';
-import Alert from './alert';
 import API from './api';
-import { store } from '../utils/store';
 import {
   UserOrderTemplate,
   RateOrderTemplate,

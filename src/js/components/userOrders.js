@@ -1,10 +1,5 @@
 import autoBind from 'auto-bind';
-import PubSub from 'pubsub-js';
-import texts from '../utils/texts';
-import Alert from './alert';
 import API from './api';
-import { store } from '../utils/store';
-import { UserOrderTemplate } from '../utils/handlebarTemplate';
 import UserOrder from './userOrder';
 
 // This class manages all the user orders. maybe we can have an instance for each order?

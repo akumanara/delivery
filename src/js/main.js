@@ -32,6 +32,7 @@ import AdultConsentModals from './components/adultConsentModals';
 import SearchAndCategories from './components/searchAndCategories';
 import ThankYou from './components/thankYou';
 import UserOrders from './components/userOrders';
+import UserCards from './components/userCards';
 import InsertOrder from './components/insertOrder';
 
 // import Layout from './layout';
@@ -94,6 +95,11 @@ class App {
     const userOrdersElement = document.querySelector('.user-orders');
     if (userOrdersElement) {
       this.userOrders = new UserOrders(userOrdersElement);
+    }
+    // User cards page
+    const userCardsElement = document.querySelector('.user-cards');
+    if (userCardsElement) {
+      this.userCards = new UserCards(userCardsElement);
     }
 
     // checkout page - insert order
@@ -308,8 +314,6 @@ class App {
       },
     });
     observer.observe();
-
-    
   }
 
   // must be called when a reflow occurs
