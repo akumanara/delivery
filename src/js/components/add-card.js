@@ -94,7 +94,6 @@ export default class {
     this.hideError();
     // TODO get amount from cart
     console.log('here');
-    // debugger;
     // eslint-disable-next-line no-undef
     VivaPayments.cards
       .requestToken({ amount: 5510 })
