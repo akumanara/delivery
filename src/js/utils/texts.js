@@ -4,8 +4,8 @@ import { store } from './store';
 
 export default {
   // Product (group options and variants)
-  mandatory: 'Yποχρεωτικό',
-  optional: 'Προαιρετικό',
+  mandatory: 'Υποχρεωτική επιλογή',
+  optional: 'Πρόσθεσε προαιρετικά',
   maxLimit: (x) => `Μέγιστος αριθμός επιλογών: ${x}`,
   variantName: 'επιλογές',
   // Delivery type accordion
