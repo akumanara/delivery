@@ -92,11 +92,9 @@ export default class {
   submitCard() {
     PubSub.publish('show_loader');
     this.hideError();
-    // TODO get amount from cart
-    console.log('here');
     // eslint-disable-next-line no-undef
     VivaPayments.cards
-      .requestToken({ amount: 5510 })
+      .requestToken({ amount: store.context.chargeAmount })
       .done((data) => {
         console.log('done token');
 

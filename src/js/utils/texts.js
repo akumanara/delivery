@@ -7,7 +7,7 @@ export default {
   mandatory: 'Υποχρεωτική επιλογή',
   optional: 'Πρόσθεσε προαιρετικά',
   maxLimit: (x) => `Μέγιστος αριθμός επιλογών: ${x}`,
-  variantName: 'επιλογές',
+  variantName: 'Eπιλογές',
   // Delivery type accordion
   delivery: 'Delivery',
   deliveryFee: (x) => `Ελάχιστη παραγγελία - ${x}`,
