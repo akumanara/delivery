@@ -48,8 +48,15 @@ let RateOrderTemplate;
 if (MarketProductSource) {
   RateOrderTemplate = Handlebars.compile(RateOrderSource.innerHTML);
 }
+// user card
+const UserCardSource = document.getElementById('user-card-template');
+let UserCardTemplate;
+if (UserCardSource) {
+  UserCardTemplate = Handlebars.compile(UserCardSource.innerHTML);
+}
 
 export {
+  UserCardTemplate,
   RateOrderTemplate,
   UserOrderTemplate,
   MarketProductTemplate,

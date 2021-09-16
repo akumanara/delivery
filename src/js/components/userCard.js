@@ -4,10 +4,7 @@ import Accordion from 'accordion-js';
 import autosize from 'autosize';
 import texts from '../utils/texts';
 import API from './api';
-import {
-  UserOrderTemplate,
-  RateOrderTemplate,
-} from '../utils/handlebarTemplate';
+import { UserCardTemplate } from '../utils/handlebarTemplate';
 
 export default class {
   constructor(element) {
@@ -36,6 +33,7 @@ export default class {
     PubSub.publish('show_loader');
     console.log('clicked');
     const templateData = {
+      id: this.cardId,
       cardNumber: this.cardNumber,
       cardHolder: this.cardHolder,
       cardExpiration: this.cardExpiration,
@@ -43,45 +41,33 @@ export default class {
         'user-cards__item--expired',
       ),
     };
-    const html = UserOrderTemplate(templateData);
+    const html = UserCardTemplate(templateData);
     document.body.insertAdjacentHTML('beforeend', html);
     this.initModal();
     PubSub.publish('hide_loader');
   }
 
   initModal() {
-    // this.DOM.modal = document.querySelector(`.user-order-${this.orderId}`);
-    // this.DOM = {
-    //   modal: this.DOM.modal,
-    //   closeBtn: this.DOM.modal.querySelector('.js-close'),
-    //   accordion: this.DOM.modal.querySelector('.accordion__container'),
-    //   textarea: this.DOM.modal.querySelector('textarea'),
-    //   actionBtn: this.DOM.modal.querySelector('.js-action-btn'),
-    //   rateBtn: this.DOM.modal.querySelector('.previous-order__rate'),
-    // };
-    // this.DOM.closeBtn.addEventListener('click', this.closeModal);
-    // this.DOM.actionBtn.addEventListener('click', this.reoder);
-    // this.DOM.rateBtn.addEventListener('click', this.rateModal);
-    // const tmpAccordionContainer = new Accordion(this.DOM.accordion, {
-    //   duration: 600,
-    //   elementClass: 'accordion__item',
-    //   triggerClass: 'accordion__header',
-    //   panelClass: 'accordion__panel',
-    //   ariaEnabled: false,
-    // });
-    // document.body.classList.add('hide-overflow');
-    // this.DOM.modal.classList.add('active');
-    // // must be after the active class
-    // autosize(this.DOM.textarea);
+    this.DOM.modal = document.querySelector(`.user-card-${this.cardId}`);
+    this.DOM = {
+      element: this.DOM.element,
+      modal: this.DOM.modal,
+      closeBtn: this.DOM.modal.querySelector('.js-close'),
+      actionBtn: this.DOM.modal.querySelector('.js-action-btn'),
+    };
+    this.DOM.closeBtn.addEventListener('click', this.closeModal);
+    this.DOM.actionBtn.addEventListener('click', this.deleteCard);
+    document.body.classList.add('hide-overflow');
+    this.DOM.modal.classList.add('active');
   }
 
   // Closed the modal and removes it from the body
   closeModal() {
-    // this.DOM.modal.remove();
-    // document.body.classList.remove('hide-overflow');
+    this.DOM.modal.remove();
+    document.body.classList.remove('hide-overflow');
   }
 
-  async delete() {
+  async deleteCard() {
     // TODO
   }
 }
