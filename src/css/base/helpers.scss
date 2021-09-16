@@ -49,7 +49,7 @@ $mWidths: 18, 20, 22, 26, 38, 50, 120;
 }
 
 // For margin
-$spacings: 0, 6, 8, 10, 14, 16, 18, 20, 25, 28, 30;
+$spacings: 0, 6, 8, 10, 14, 16, 18, 20, 25, 28, 30, 40;
 @each $spacing in $spacings {
   .mr-#{$spacing} {
     margin-right: #{$spacing}px;
