@@ -526,8 +526,20 @@ export default class {
     this.formData.merge_accounts = true;
     const verificationCode = this.DOM.mergeAccountWithCodeModal.input.value;
     this.formData.verification_code = verificationCode;
-    const response = await this.api.signupUser(this.formData);
 
+    let response;
+    try {
+      response = await this.api.signupUser(this.formData);
+    } catch (error) {
+      const alert = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5,
+        type: 'error',
+        showTimer: false,
+      });
+      PubSub.publish('hide_loader');
+      return;
+    }
     if (response.status === 'success') {
       window.location.reload();
     } else {
@@ -538,13 +550,27 @@ export default class {
         showTimer: false,
       });
     }
+
     PubSub.publish('hide_loader');
   }
 
   async registerWithMergeConsent() {
     PubSub.publish('show_loader');
     this.formData.merge_accounts = true;
-    const response = await this.api.signupUser(this.formData);
+
+    let response;
+    try {
+      response = await this.api.signupUser(this.formData);
+    } catch (error) {
+      const alert = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5,
+        type: 'error',
+        showTimer: false,
+      });
+      PubSub.publish('hide_loader');
+      return;
+    }
 
     if (response.status === 'success') {
       window.location.reload();
@@ -556,6 +582,7 @@ export default class {
         showTimer: false,
       });
     }
+
     PubSub.publish('hide_loader');
   }
 
@@ -578,8 +605,20 @@ export default class {
       telephone: this.DOM.registerModal.formPhone.value,
       agreement: this.DOM.registerModal.formTos.checked,
     };
+    let response;
+    try {
+      response = await this.api.signupUser(formData);
+    } catch (error) {
+      const alert = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5,
+        type: 'error',
+        showTimer: false,
+      });
+      PubSub.publish('hide_loader');
+      return;
+    }
 
-    const response = await this.api.signupUser(formData);
     if (response.status === 'success') {
       window.location.reload();
     } else if (response.status === 'error') {

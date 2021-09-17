@@ -253,4 +253,23 @@ export default class {
         </div>
       </div>`;
   }
+
+  clearStep2ModalError() {
+    this.DOM.modalStep2.input.classList.remove('form-control--has-error');
+    const error = this.DOM.modalStep2.modal.querySelector('.js-error');
+    if (error) {
+      error.remove();
+    }
+  }
+
+  Step2ModalShowError(error) {
+    console.log(error);
+    this.clearStep2ModalError();
+    this.DOM.modalStep2.input.classList.add('form-control--has-error');
+    const htmlError = this.errorTemplate(error);
+    this.DOM.modalStep2.input.parentNode.insertAdjacentHTML(
+      'beforebegin',
+      htmlError,
+    );
+  }
 }

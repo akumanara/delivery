@@ -4,6 +4,7 @@ import Stats from 'stats.js';
 import currency from 'currency.js';
 import * as Sentry from '@sentry/browser';
 import { Integrations } from '@sentry/tracing';
+import PubSub from 'pubsub-js';
 
 // Show the FPS counter
 const showFPS = () => {
