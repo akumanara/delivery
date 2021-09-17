@@ -2817,7 +2817,11 @@ const insertOrderSuccess = {
 
 const insertOrderError = {
   status: 'error',
-  message: 'message with order insertion',
+  error_messages: [
+    { order_recipient: 'order_recipient error' },
+    { order_phone: 'order_phone error' },
+    { generic: 'generic err' },
+  ],
 };
 
 const userOrder = {
@@ -2880,7 +2884,6 @@ const rateSuccess = {
 const deleteCardSuccess = {
   status: 'ok',
 };
-
 
 export {
   rateSuccess,

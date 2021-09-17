@@ -6,6 +6,7 @@ import {
   deleteCardSuccess,
   rateSuccess,
   userOrder,
+  insertOrderError,
   insertOrderSuccess,
   loadMoreProductsEmpty,
   genericSuccess,
@@ -1102,7 +1103,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(insertOrderSuccess);
+          resolve(insertOrderError);
         }, 500),
       );
     }

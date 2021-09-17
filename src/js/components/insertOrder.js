@@ -22,21 +22,146 @@ export default class {
   }
 
   init() {
-    this.DOM.payNowButton.addEventListener('click', this.insertOrder);
+    this.DOM.payNowButton.addEventListener('click', this.insertOrderClicked);
+  }
+
+  async insertOrderClicked() {
+    // if (store.context.isUserLoggedIn) {
+    //   await this.insertOrderLoggedIn();
+    // } else {
+    //   await this.insertOrderGuest();
+    // }
+
+    this.insertOrder();
   }
 
   async insertOrder() {
-    // todo isws na exoume mia function kai gia tous 2?
-    // todo check if user is logged in and can submit order (filled in details, etc, etc)
-    if (store.context.isUserLoggedIn) {
-      await this.insertOrderLoggedIn();
+    PubSub.publish('show_loader');
+    const data = {
+      shop_id: store.context.storeID,
+      order_origin_code: store.context.orderOrigin,
+    };
+
+    // PAYMENT TYPE AND DETAILS
+    if (store.app.paymentType.activePaymentMethod) {
+      if (
+        store.app.paymentType.activePaymentMethod.dataset.type === 'cash' ||
+        store.app.paymentType.activePaymentMethod.dataset.type === 'pos'
+      ) {
+        // CASH OR POS
+        data.payment_type =
+          store.app.paymentType.activePaymentMethod.dataset.type;
+      } else if (
+        store.app.paymentType.activePaymentMethod.dataset.type === 'new_card'
+      ) {
+        // NEW CARD
+        data.payment_type = 'card';
+        data.token = store.app.addCard.card.chargeToken;
+        data.tag = store.app.addCard.card.tag;
+        data.save = store.app.addCard.card.saveCard;
+        data.default = store.app.addCard.card.defaultCard;
+      } else if (
+        store.app.paymentType.activePaymentMethod.dataset.type === 'saved_card'
+      ) {
+        // SAVED CARD
+        data.payment_type = 'card';
+        data.creditCardId =
+          store.app.paymentType.activePaymentMethod.dataset.id;
+        // TODO it might want 3ds
+      }
     } else {
-      await this.insertOrderGuest();
+      data.payment_type = null;
     }
 
+    if (!store.context.isUserLoggedIn) {
+      // GUEST EXTRA DATA
+      data.order_recipient = this.DOM.guestName.value;
+      data.order_recipient_lastname = this.DOM.guestLastName.value;
+      data.email = this.DOM.guestEmail.value;
+      data.order_phone = this.DOM.guestPhone.value;
+    }
 
+    let response;
+    try {
+      response = await this.api.insertOrder(data);
+    } catch (error) {
+      // ERROR FROM SERVER (ex. status code 500)
+      const a = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
+      });
+      PubSub.publish('hide_loader');
+      return;
+    }
+    if (response.status === 'success') {
+      window.location.href = response.redirect;
+    } else {
+      // handle guest error messages
+      const form = this.getGuestForm();
+      response.error_messages.forEach((element) => {
+        const fieldName = Object.keys(element)[0];
+        const formField = form[fieldName];
+        if (formField) {
+          this.guestFormShowError(element[fieldName], formField);
+        }
+        if (fieldName === 'generic') {
+          this.guestFormShowError(
+            element[fieldName],
+            form.order_recipient.parentNode,
+          );
+        }
+      });
+
+      console.log(response);
+      const a = new Alert({
+        text: texts.genericErrorMessage,
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
+      });
+    }
+
+    console.log(`insert order: ${data}`);
+    PubSub.publish('hide_loader');
   }
 
+  getGuestForm() {
+    return {
+      order_recipient: this.DOM.guestName,
+      order_recipient_lastname: this.DOM.guestLastName,
+      email: this.DOM.guestEmail,
+      order_phone: this.DOM.guestPhone,
+    };
+  }
+
+  guestFormShowError(error, input) {
+    console.log(error);
+    console.log(input);
+    input.classList.add('form-control--has-error');
+    if (error !== '') {
+      const htmlError = this.errorTemplate(error);
+      input.parentNode.insertAdjacentHTML('beforebegin', htmlError);
+    }
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  errorTemplate(error) {
+    return `
+      <div class="p-16 d-flex js-error">
+        <img
+          src="${store.context.imagesURL}icons/error.svg"
+          alt=""
+          class="img-fluid mw-22 flex-shrink-0 align-self-center mr-10"
+        />
+        <div class="message">
+          ${error}
+        </div>
+      </div>`;
+  }
+
+  // TODO Flag for delete
   async insertOrderLoggedIn() {
     PubSub.publish('show_loader');
     const data = {
@@ -91,6 +216,7 @@ export default class {
     PubSub.publish('hide_loader');
   }
 
+  // TODO Flag for delete
   async insertOrderGuest() {
     PubSub.publish('show_loader');
     const data = {
