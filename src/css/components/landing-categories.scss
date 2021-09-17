@@ -19,8 +19,8 @@
     flex-direction: column;
   }
   &__promotions-item-logo {
-    width: 36px;
-    height: 36px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #dfe2e8;
     display: flex;
@@ -28,10 +28,8 @@
     justify-content: center;
 
     img {
-      max-width: 22px;
-      max-height: 22px;
-      width: auto;
-      height: auto;
+      width: 40px;
+      height: 40px;
     }
   }
   &__promotions-item-title {

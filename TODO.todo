@@ -11,7 +11,7 @@ general:
   ☐ replace ola ta images me ta kainourgia
   ☐ ti ginete otan enas xristis vazei tilefono/email sto user profile kai uparxei conflict
   ☐ eat and win: na ginei to call sto  get url sto /user/points/redemption/13. to response einai pending
-
+  ☐ na mpoun ola ta eikonidia gia tis katigories ton verticals. mazi me to "ola"
 
 
 content pages:
@@ -104,8 +104,8 @@ meeting:
 
 Testing: 17.9:
   ☐ otan o kodikos otp exei 0 mprosta den mporeis na kaneis verify
-  ☐ sto error apo panw eipe oti to Step2ModalShowError is not a function
-  ☐ otan yparxei error sto signup na ginete catch me try/catch
+  ✔ sto error apo panw eipe oti to Step2ModalShowError is not a function @done(21-09-17 15:38)
+  ✔ otan yparxei error sto signup na ginete catch me try/catch @done(21-09-17 15:38)
 
 
 
