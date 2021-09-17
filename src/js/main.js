@@ -195,18 +195,22 @@ class App {
       );
       let favoriteWaitingResponse = false;
       favoriteButton.addEventListener('click', async () => {
-        if (favoriteWaitingResponse) return;
-        PubSub.publish('show_loader');
-        favoriteWaitingResponse = true;
-        if (!favoriteButton.classList.contains('active')) {
-          await this.api.addStoreToFavorites();
-          favoriteButton.classList.add('active');
+        if (store.context.isUserLoggedIn) {
+          if (favoriteWaitingResponse) return;
+          PubSub.publish('show_loader');
+          favoriteWaitingResponse = true;
+          if (!favoriteButton.classList.contains('active')) {
+            await this.api.addStoreToFavorites();
+            favoriteButton.classList.add('active');
+          } else {
+            await this.api.removeStoreToFavorites();
+            favoriteButton.classList.remove('active');
+          }
+          favoriteWaitingResponse = false;
+          PubSub.publish('hide_loader');
         } else {
-          await this.api.removeStoreToFavorites();
-          favoriteButton.classList.remove('active');
+          this.connect.triggerClicked();
         }
-        favoriteWaitingResponse = false;
-        PubSub.publish('hide_loader');
       });
     }
 

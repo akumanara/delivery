@@ -69,7 +69,7 @@ product modal:
   ☐ [store] countdown gia kleisimo katastimatos @low
 
 doing:
-✔
+
 
 meeting:
   ☐ missing data modal @critical
@@ -103,10 +103,17 @@ meeting:
 
 
 Testing: 17.9:
-  ☐ otan o kodikos otp exei 0 mprosta den mporeis na kaneis verify
+  ☐ otan o kodikos otp exei 0 mprosta den mporeis na kaneis verify @deferred
+  ☐ lozad eikones na einai randomize apo tis eikones @low
+  ☐ catalog - filtra - eikonidio sto checkmark na mpei to sosto @otan allaksoun ta xrmmata
+  ☐ catalog - filtra - eikonidia gia ta offers leipoun @staging-sync
+  ☐ store - san guest me afinei na kanw "agapimeno" 
+  ☐ store (https://staging.delivery.gr/athina/ampelokipoi/china-wok-time-11360/online) - sti prosfora an den exei timi na einai keno gia na mi kanei to margin - right
+  ☐ store (https://staging.delivery.gr/athina/ampelokipoi/china-wok-time-11360/online) - sti prosfora an den exei images na mi mou steileis kan. pernw ena null
+  ☐ store (https://staging.delivery.gr/athina/ampelokipoi/china-wok-time-11360/online) - sti prosfora "Τηγανητό ρύζι με αυγό" den upologizei sosta ti timi tis prosforas. leei 12.20
   ✔ sto error apo panw eipe oti to Step2ModalShowError is not a function @done(21-09-17 15:38)
+  ✔ catalog - lozad eikones na exoune bg image prin fortosei to kanoniko @done(21-09-17 17:26)
   ✔ otan yparxei error sto signup na ginete catch me try/catch @done(21-09-17 15:38)
-
 
 
 
