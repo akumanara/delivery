@@ -23,11 +23,29 @@ export default class {
       ),
       deliveryButton: this.element.querySelector('.js-delivery-type__delivery'),
       takeawayButton: this.element.querySelector('.js-delivery-type__takeaway'),
+      checkoutCart: document.querySelector('.js-checkout-cart'),
     };
-    this.deliveryMethod = deliveryTypes.DELIVERY;
 
     this.setCopies();
     this.init();
+    this.preselectDeliveryType();
+  }
+
+  preselectDeliveryType() {
+    if (this.DOM.checkoutCart) {
+      // Set delivery type
+      if (
+        this.DOM.checkoutCart.dataset.deliveryType === deliveryTypes.DELIVERY
+      ) {
+        this.updateMethodToDelivery();
+      } else if (
+        this.DOM.checkoutCart.dataset.deliveryType === deliveryTypes.TAKEAWAY
+      ) {
+        this.updateMethodToTakeAway();
+      }
+    } else {
+      this.deliveryMethod = deliveryTypes.DELIVERY;
+    }
   }
 
   init() {
@@ -69,6 +87,11 @@ export default class {
 
     // Close the accordion
     this.accordion.close(0);
+
+    // If we are on the checkout page, we need to refresh
+    if (this.DOM.checkoutCart) {
+      window.location.reload();
+    }
   }
 
   async setMethodTakeAway() {
@@ -86,6 +109,11 @@ export default class {
 
     // Close the accordion
     this.accordion.close(0);
+
+    // If we are on the checkout page, we need to refresh
+    if (this.DOM.checkoutCart) {
+      window.location.reload();
+    }
   }
 
   setCopies() {
