@@ -38,13 +38,8 @@ export default class {
     // Query the DOM
     this.DOM = {};
 
-    // Menu links that need to raise address
-    this.DOM.raiseAddressLinks = document.querySelectorAll('.js-needs-address');
-
     // Verticals on landing page
-    this.DOM.verticals = document.querySelectorAll(
-      '.landing-categories__grid-item',
-    );
+    this.DOM.verticals = document.querySelectorAll('.js-vertical-link');
 
     // Accordion
     this.DOM.accordion = document.querySelector(
@@ -141,12 +136,17 @@ export default class {
 
     // Verticals
     this.DOM.verticals.forEach((vertical) => {
-      vertical.addEventListener('click', this.verticalClicked);
+      vertical.addEventListener('click', (e) => {
+        this.verticalClicked(vertical, e);
+      });
     });
 
     // Fake accordion trigger
     if (this.DOM.accordion) {
-      this.DOM.accordion.trigger.addEventListener('click', this.triggerClicked);
+      this.DOM.accordion.trigger.addEventListener('click', ()=> {
+        this.clickedVerticalPrefix = null;
+        this.triggerClicked();
+      });
     }
 
     this.initChooseAddressModal();
@@ -159,36 +159,20 @@ export default class {
     if (this.selectedAddress) {
       this.setActiveAddressData();
     }
-
-    this.DOM.raiseAddressLinks.forEach((link) => {
-      link.addEventListener('click', this.raiseAddress);
-    });
   }
 
-  verticalClicked(e) {
-    console.log(e.target.getAttribute('href'));
-    if (e.target.getAttribute('href') === '') {
+  verticalClicked(verticalClicked, e) {
+    if (verticalClicked.getAttribute('href') === '') {
       // the vertical link has no href. we need to save the vertical prefix and raise the address modal
       e.preventDefault();
-      this.clickedVerticalPrefix = e.target.dataset.prefix;
+      if (store.app.navigation.isNavOpen) {
+        store.app.navigation.toggleMainNav();
+      }
+      this.clickedVerticalPrefix = verticalClicked.dataset.prefix;
       this.triggerClicked();
-      console.log(e.target);
       return false;
     }
     return true;
-  }
-
-  raiseAddress(e) {
-    // prevent the  default (because it is a link)
-    e.preventDefault();
-    // close the open burger menu if it is open
-    if (store.app.navigation.isNavOpen) {
-      store.app.navigation.toggleMainNav();
-    }
-    // trigger the address modal
-    this.showNotifyModal();
-    // this.prepareAutosuggestModal();
-    // this.showAutosuggestModal();
   }
 
   initNotifyModal() {
@@ -296,6 +280,7 @@ export default class {
     return encodeQueryData(data);
   }
 
+  // TODO refactor this in order to be more dry
   async submitSavedAddress(button) {
     PubSub.publish('show_loader');
     const addressObject = {
@@ -319,6 +304,10 @@ export default class {
         if (!store.context.storeID) {
           window.location.href = `${
             store.context.redirectURLfromAddress
+          }?${this.encodedDataToString(addressObject)}`;
+        } else if (this.clickedVerticalPrefix) {
+          window.location.href = `${
+            this.clickedVerticalPrefix
           }?${this.encodedDataToString(addressObject)}`;
         } else {
           window.location.reload();
