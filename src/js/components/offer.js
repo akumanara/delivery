@@ -273,7 +273,11 @@ export default class {
 
   /* eslint-disable no-case-declarations */
   calculatePrice() {
+    // console.log('======================');
+    // console.log('CALCULATING');
+    // console.log('======================');
     if (!this.areAllProductsSelected()) return;
+    // console.log('ALL PRODUCTS ARE SELECTED.');
 
     // Get the starting price object with the selected products
     const startingPriceObject = this.calculateSumOfProductsPrice();

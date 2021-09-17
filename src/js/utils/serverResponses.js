@@ -1350,6 +1350,23 @@ const productData3 = {
   ingredient_categories: [],
 };
 
+const productData4 = {
+  id: '881614',
+  name: '\u03a4\u03b7\u03b3\u03b1\u03bd\u03b7\u03c4\u03cc \u03bc\u03b5 \u03b1\u03c5\u03b3\u03cc',
+  price: 6.1,
+  comments:
+    'fried rice withe egg, 570cal, \u03c1\u03cd\u03b6\u03b9 \u03bc\u03c0\u03bf\u03bd\u03ad\u03c4 \u03bc\u03b5 \u03b1\u03c5\u03b3\u03cc, \u03b1\u03c1\u03b1\u03ba\u03ac, \u03ba\u03b1\u03c1\u03cc\u03c4\u03bf & \u03ba\u03b1\u03bb\u03b1\u03bc\u03c0\u03cc\u03ba\u03b9',
+  large_description: null,
+  start_price: 0,
+  isOutOfStock: false,
+  images: ['shops/11360/products/881614.jpg'],
+  minQuantity: 1,
+  maxQuantity: 99,
+  category: { id: '92340', name: '\u03a1\u03cd\u03b6\u03b9' },
+  variants: [],
+  ingredient_categories: [],
+};
+
 const productDataFromCart = {
   id: '1154224',
   name: 'Φιλέτο κοτόπουλο στήθος',
@@ -2699,7 +2716,7 @@ const offer = {
   comments:
     'Με κάθε αγορά 2 τεμαχίων Μπίρα Kaiser κουτί 500ml κερδίζεις άλλο ένα δώρο',
   // Offer discounts types info
-  offerType: 3,
+  offerType: '3',
   // offerValidFrom: '05-08-2021',
   offerValidTo: '18-08-2021',
   discountAmount: 2,
@@ -2775,6 +2792,46 @@ const offer2 = {
         {
           id: '397739',
           name: 'Προφιτερόλ "Γλυκάκι"',
+        },
+      ],
+    },
+  ],
+};
+
+const offer3 = {
+  id: '41',
+  name: '\u03a4\u03b7\u03b3\u03b1\u03bd\u03b7\u03c4\u03cc \u03c1\u03cd\u03b6\u03b9 \u03bc\u03b5 \u03b1\u03c5\u03b3\u03cc',
+  comments:
+    '\u03bc\u03b5 1 \u03c4\u03b7\u03b3\u03b1\u03bd\u03b7\u03c4\u03cc \u03c1\u03cd\u03b6\u03b9 \u03bc\u03b5 \u03b1\u03c5\u03b3\u03cc \u03b4\u03ce\u03c1\u03bf \u03b1\u03ba\u03cc\u03bc\u03b7 1',
+  offerType: '0',
+  offerValidFrom: false,
+  offerValidTo: false,
+  discountAmount: 0,
+  discountPercentage: 100,
+  fixedPrice: 0,
+  fixedPriceForDiscountCategory: 0,
+  discountCategoryID: '',
+  chargeIngredients: '1',
+  hideChargeIngredients: '1',
+  images: [null],
+  categories: [
+    {
+      id: '75',
+      title: '\u03a1\u03cd\u03b6\u03b9',
+      products: [
+        {
+          id: '881614',
+          name: '\u03a4\u03b7\u03b3\u03b1\u03bd\u03b7\u03c4\u03cc \u03bc\u03b5 \u03b1\u03c5\u03b3\u03cc',
+        },
+      ],
+    },
+    {
+      id: '76',
+      title: '\u03a1\u03cd\u03b6\u03b9',
+      products: [
+        {
+          id: '881614',
+          name: '\u03a4\u03b7\u03b3\u03b1\u03bd\u03b7\u03c4\u03cc \u03bc\u03b5 \u03b1\u03c5\u03b3\u03cc',
         },
       ],
     },
@@ -2896,7 +2953,9 @@ export {
   loadMoreProducts,
   offer,
   offer2,
+  offer3,
   genericError,
+  productData4,
   genericSuccess,
   deliveryDates,
   loginMailPasswordFail,

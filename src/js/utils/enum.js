@@ -50,12 +50,12 @@ const timeslotTypes = {
 // - sto sinoliko kostos ton proionton ginete apply ena meion X pososto
 
 const offerTypes = {
-  discountPercentageOnCheapestProduct: 0,
-  discountPercentageOnSpecificOfferCategory: 1,
-  fixedPriceOnSpecificOfferCategory: 2,
-  fixedPriceOnOffer: 3,
-  discountAmountOnOffer: 4,
-  discountPercentageOnOffer: 5,
+  discountPercentageOnCheapestProduct: '0',
+  discountPercentageOnSpecificOfferCategory: '1',
+  fixedPriceOnSpecificOfferCategory: '2',
+  fixedPriceOnOffer: '3',
+  discountAmountOnOffer: '4',
+  discountPercentageOnOffer: '5',
 };
 export {
   offerTypes,

@@ -13,6 +13,8 @@ import {
   genericError,
   loginMailPasswordFail,
   loginMailPasswordSuccess,
+  offer3,
+  productData4,
   productData,
   productData2,
   productData3,
@@ -65,7 +67,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(productData);
+          resolve(productData4);
         }, 200),
       );
     }
@@ -87,7 +89,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(offer2);
+          resolve(offer3);
         }, 200),
       );
     }
