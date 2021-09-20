@@ -1,12 +1,12 @@
 import autoBind from 'auto-bind';
 import Handlebars from 'handlebars';
 import PubSub from 'pubsub-js';
+import { gsap } from 'gsap/all';
 import API from './api';
 import { timeslotTypes } from '../utils/enum';
 import { store } from '../utils/store';
 import texts from '../utils/texts';
 import Alert from './alert';
-
 // init the timeslot component on page load
 
 export default class {
@@ -34,6 +34,8 @@ export default class {
 
     // Main Modal
     this.DOM.timeslotModal = document.querySelector('.js-timeslot');
+    this.DOM.timeslotModalWindow =
+      this.DOM.timeslotModal.querySelector('.modal__window');
     this.DOM.modalClose = this.DOM.timeslotModal.querySelector('.js-close');
     this.DOM.actionBtn = this.DOM.timeslotModal.querySelector('.js-action-btn');
 
@@ -399,6 +401,12 @@ export default class {
 
     // When the user selects an hour we create the delivery timeslots section from the API
     await this.createDeliveryTimeslotDOM();
+
+    // Scroll to the delivery timeslot DOM
+    gsap.to(this.DOM.timeslotModalWindow, {
+      duration: 0.3,
+      scrollTo: this.DOM.deliverySection,
+    });
 
     // check the state of the apply button
     this.checkApplyFeasility();
