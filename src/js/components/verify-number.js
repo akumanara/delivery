@@ -233,6 +233,12 @@ export default class {
   addPhoneToInputField() {
     this.DOM.personalDetailsPhoneInputs.forEach((input) => {
       input.value = this.phoneNumber;
+
+      const event = new Event('input', {
+        bubbles: true,
+        cancelable: true,
+      });
+      input.dispatchEvent(event);
     });
     this.DOM.personalDetailsCheckboxes.forEach((checkbox) => {
       checkbox.classList.add('personal-details__phone-checkbox--active');
