@@ -811,6 +811,14 @@ export default class extends EventEmitter {
   }
 
   async quickAdd(event) {
+    if (
+      !store.app.addressComponent.selectedAddress &&
+      store.app.deliveryType.deliveryMethod === deliveryTypes.DELIVERY
+    ) {
+      store.app.addressComponent.showNotifyModal();
+      return;
+    }
+
     event.stopPropagation();
     console.log('quick adding one');
 

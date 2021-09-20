@@ -215,7 +215,7 @@ export default class {
       this.setActiveAddressData();
     }
 
-    this.checkForUnsupportedAddress();
+    // this.checkForUnsupportedAddress();
   }
 
   checkForUnsupportedAddress() {
