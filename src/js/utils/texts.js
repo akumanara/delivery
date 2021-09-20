@@ -102,4 +102,5 @@ export default {
   },
   ratingSuccess: 'h vathmologia sou apothikeftike. TODO',
   deleteCardSuccess: 'h karta sas diagrafike. TODO',
+  productMaxQuantity: 'exeis ftasei ti megisti posotita proionton TODO',
 };

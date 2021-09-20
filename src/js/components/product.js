@@ -460,8 +460,15 @@ export default class extends EventEmitter {
     if (
       this.quantity >= this.productJSON.maxQuantity &&
       this.productJSON.maxQuantity !== 0
-    )
+    ) {
+      const a = new Alert({
+        text: texts.productMaxQuantity,
+        timeToKill: 5, // time until it closes
+        type: 'error', // or 'error'
+        showTimer: false, // show the timer or not
+      });
       return;
+    }
     this.quantity += 1;
     this.displayQuantity();
     this.calculatePrice();
@@ -735,9 +742,13 @@ export default class extends EventEmitter {
     // Prepare data for API
     const data = {
       itemGroupId: this.productID,
-      order_product_comments: this.DOM.comments.value,
       itemQuantity: this.quantity,
     };
+
+    // If it has comments
+    if (this.DOM.comments) {
+      data.order_product_comments = this.DOM.comments.value;
+    }
 
     // If it has variant
     if (this.variant) {

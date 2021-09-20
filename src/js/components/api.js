@@ -8,6 +8,7 @@ import {
   userOrder,
   insertOrderError,
   insertOrderSuccess,
+  productData5,
   loadMoreProductsEmpty,
   genericSuccess,
   genericError,
@@ -45,7 +46,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(productData);
+          resolve(productData5);
         }, 200),
       );
     }

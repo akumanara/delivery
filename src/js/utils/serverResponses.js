@@ -1367,6 +1367,28 @@ const productData4 = {
   ingredient_categories: [],
 };
 
+const productData5 = {
+  id: '1298295',
+  name: 'ΑΒ ΒΙΟ Καρότα Ελληνικά',
+  price: 1.59,
+  comments: 'Καρότα Ελληνικά',
+  large_description: null,
+  start_price: 1.75,
+  isOutOfStock: false,
+  images: [
+    '/shops/13070/products/7063933_1_product.jpg',
+    '/shops/13070/products/7063933_1_highres.jpg',
+  ],
+  minQuantity: 1,
+  maxQuantity: 99,
+  category: {
+    id: '131757',
+    name: 'Καρότα-Ρέβες-Ραπανάκια',
+  },
+  // variants: {},
+  // ingredient_categories: {},
+};
+
 const productDataFromCart = {
   id: '1154224',
   name: 'Φιλέτο κοτόπουλο στήθος',
@@ -2963,6 +2985,7 @@ export {
   productData,
   productData2,
   productData3,
+  productData5,
   productDataFromCart,
   productDataFromCart2,
   voucherFail,
