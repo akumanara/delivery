@@ -71,54 +71,6 @@ product modal:
 doing:
 
 
-meeting:
-  ☐ missing data modal @critical
-  ☐ stoixeia: tha einai simple form k isws to koumpin na mi mporei na einai sticky.
-  - an dn ginei stick tha einai static kato kato
-  ☐ parageleis: otan kaneis click se ena order tha ginete api call gia na sou emfanistei to modal
-  ☐ parageleis: sto modal to checkout btn. api call kai meta redirect. btn me timi h xoris?
-  - parageleia ksana xwris timi kai quantity proionton. kai ta vazei sto kalathi kai se paei sto katastima.
-  ☐ parageleis: rating modal - piso sti paragelia? submission ena ena h ola mazi?
-  - submit ola mazi. to back btn kai to X btn? waiting @misa
-  ☐ otan pataw fav kai eimai guest ti kanei? me kanei prompt gia login h na min uparxei katholou to bnt
-  - promt gia login an einai guest k patisei to fav
-  ☐ eat and win: pare to dwraki einai me api call kai redirect.
-  - to sproxnoume pisw mazi me ta coupons
-  ☐ coupons: defteri fasi - full expansion?
-  - to sproxnoume pisw
-  ☐ cards: api call me delete card kai modal.
-  ☐ addresses: api call gia to delete.
-  ☐ addresses: leipi to tag tis diefthinsis. @critical
-  - to sproxnoume pisw kai sproxnoume piso kai to modal tis diefthinsis pou mporeis na kaneis moono edit to koudouni
-  ☐ rithmiseis enimerwseon: na valoume btn kai na ginei opos ta alla.
-  - vazoume save btn kai sproxnoume piso to instant change me api call
-  - b level alert gia success (prasino)
-
-
-
-
-
-
-
-
-
-Testing: 17.9:
-  ☐ otan o kodikos otp exei 0 mprosta den mporeis na kaneis verify @deferred
-  ☐ lozad eikones na einai randomize apo tis eikones @low
-  ☐ catalog - filtra - eikonidio sto checkmark na mpei to sosto @otan allaksoun ta xrmmata
-  ☐ catalog - filtra - eikonidia gia ta offers leipoun @staging-sync
-  ✔ store (https://staging.delivery.gr/athina/ampelokipoi/china-wok-time-11360/online) - sti prosfora an den exei images na mi mou steileis kan. pernw ena null @done(21-09-17 18:08)
-  ✔ store (https://staging.delivery.gr/athina/ampelokipoi/china-wok-time-11360/online) - sti prosfora "Τηγανητό ρύζι με αυγό" den upologizei sosta ti timi tis prosforas. leei 12.20 @done(21-09-17 18:26)
-  ✔ store (https://staging.delivery.gr/athina/ampelokipoi/china-wok-time-11360/online) - sti prosfora an den exei timi na einai keno gia na mi kanei to margin - right @done(21-09-17 17:53)
-  ✔ store - san guest me afinei na kanw "agapimeno" @done(21-09-17 17:34)
-  ✔ sto error apo panw eipe oti to Step2ModalShowError is not a function @done(21-09-17 15:38)
-  ✔ catalog - lozad eikones na exoune bg image prin fortosei to kanoniko @done(21-09-17 17:26)
-  ✔ otan yparxei error sto signup na ginete catch me try/catch @done(21-09-17 15:38)
-
-UI feedback:
-  ☐ na kanoume ligotero rounded tis eikones
-
-
 
 
 

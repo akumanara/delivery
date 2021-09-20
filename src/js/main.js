@@ -35,7 +35,6 @@ import UserOrders from './components/userOrders';
 import UserCards from './components/userCards';
 import InsertOrder from './components/insertOrder';
 
-// import Layout from './layout';
 
 class App {
   constructor() {
