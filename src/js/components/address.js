@@ -143,7 +143,7 @@ export default class {
 
     // Fake accordion trigger
     if (this.DOM.accordion) {
-      this.DOM.accordion.trigger.addEventListener('click', ()=> {
+      this.DOM.accordion.trigger.addEventListener('click', () => {
         this.clickedVerticalPrefix = null;
         this.triggerClicked();
       });
@@ -878,8 +878,7 @@ export default class {
     });
 
     return Object.keys(formValues).every((key) => {
-      console.log(key);
-
+      // console.log(key);
       return formValues[key] !== '';
     });
   }
