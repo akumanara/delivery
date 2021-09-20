@@ -191,10 +191,13 @@ export default class {
       'input',
       this.checkRegisterForm,
     );
-    this.DOM.registerModal.formPhone.addEventListener(
-      'input',
-      this.checkRegisterForm,
-    );
+    // this.DOM.registerModal.formPhone.addEventListener(
+    //   'input',
+    //   this.checkRegisterForm,
+    // );
+    this.DOM.registerModal.formPhone.addEventListener('input', () => {
+      console.log('input changed on phone');
+    });
     this.DOM.registerModal.formTos.addEventListener(
       'input',
       this.checkRegisterForm,

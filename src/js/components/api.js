@@ -46,7 +46,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(productData5);
+          resolve(productData);
         }, 200),
       );
     }
@@ -68,7 +68,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(productData4);
+          resolve(productData);
         }, 200),
       );
     }
@@ -90,7 +90,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(offer3);
+          resolve(offer);
         }, 200),
       );
     }
@@ -787,7 +787,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(login.show_infobox);
+          resolve(login.show_new_user);
         }, 500),
       );
     }

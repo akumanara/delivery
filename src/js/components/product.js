@@ -246,8 +246,12 @@ export default class extends EventEmitter {
       storeName: store.context.storeName,
       showOptionsDiv,
       isMarketProduct: this.isMarketProduct,
+      imagesClass: store.context.isMarketView
+        ? 'product-modal__slide-img--contain'
+        : '',
     };
 
+    console.log('templateData', this.templateData);
     if (this.isInsideOffer) this.templateData.isInsideOffer = true;
   }
 

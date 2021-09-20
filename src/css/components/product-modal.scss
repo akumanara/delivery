@@ -67,6 +67,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    &--contain {
+      object-fit: contain;
+    }
   }
   .swiper-pagination-bullets {
     text-align: right;

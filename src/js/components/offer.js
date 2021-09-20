@@ -81,6 +81,9 @@ export default class {
       images: this.offerJSON.images,
       comments: this.offerJSON.comments,
       categories: this.offerJSON.categories,
+      imagesClass: store.context.isMarketView
+        ? 'product-modal__slide-img--contain'
+        : '',
     };
 
     if (this.offerJSON.offerValidFrom) {
