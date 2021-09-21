@@ -11,6 +11,8 @@ export default class {
     this.DOM = {};
     this.DOM.sliders = document.querySelectorAll('.js-slider');
     this.DOM.emptyList = document.querySelector('.stores__empty');
+    this.DOM.activeListElementsCount =
+      document.querySelector('.js-active-stores');
     this.DOM.searchBox = document.querySelector(
       '.search-and-filters__search-box',
     );
@@ -111,6 +113,11 @@ export default class {
         promo5,
       });
     }
+  }
+
+  updateActiveListElementsNumber() {
+    this.DOM.activeListElementsCount.innerHTML =
+      this.storeList.matchingItems.length;
   }
 
   setFilterCount() {
@@ -231,6 +238,7 @@ export default class {
   setupEvents() {
     this.storeList.on('searchStart', this.searchStart);
     this.storeList.on('searchComplete', this.searchComplete);
+
     this.DOM.searchInput.addEventListener('input', this.searchInputChanged);
     this.DOM.searchClear.addEventListener('click', () => {
       this.DOM.searchInput.value = '';
@@ -250,6 +258,7 @@ export default class {
       });
     });
     this.DOM.modal.clearBtn.addEventListener('click', this.clearFilters);
+    this.storeList.on('updated', this.updateActiveListElementsNumber);
   }
 
   clearFilters() {
