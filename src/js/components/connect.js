@@ -782,10 +782,12 @@ export default class {
       this.DOM.registerModal.formTos.checked
     ) {
       this.DOM.registerModal.actionBtn.classList.remove(
-        'primary-btn--disabled',
+        'primary-btn--fake-disabled',
       );
     } else {
-      this.DOM.registerModal.actionBtn.classList.add('primary-btn--disabled');
+      this.DOM.registerModal.actionBtn.classList.add(
+        'primary-btn--fake-disabled',
+      );
     }
   }
 

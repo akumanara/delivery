@@ -609,7 +609,7 @@ export default class {
     if (store.context.mode === 'development') {
       return new Promise((resolve) =>
         setTimeout(() => {
-          resolve(register.mergeConsentWithCode);
+          resolve(register.error);
         }, 500),
       );
     }
