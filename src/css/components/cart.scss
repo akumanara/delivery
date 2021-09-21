@@ -102,10 +102,12 @@
     top: -10px;
     left: 0;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    // width: 30px;
+    // height: 30px;
     background-color: #5a88ff;
-    border-radius: 50%;
+    // border-radius: 50%;
+    padding: 8px;
+    border-radius: 15px;
     display: flex;
     color: white;
     align-items: center;
@@ -118,7 +120,7 @@
   }
 
   &__product-quantity-text {
-    @include font-size-2;
+    @include font-size-13;
 
     line-height: 1;
     font-weight: 700;
@@ -378,5 +380,4 @@
     border-radius: 8px;
     overflow: hidden;
   }
-
 }
