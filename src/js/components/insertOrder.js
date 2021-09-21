@@ -77,7 +77,7 @@ export default class {
       // GUEST EXTRA DATA
       data.order_recipient = this.DOM.guestName.value;
       data.order_recipient_lastname = this.DOM.guestLastName.value;
-      data.email = this.DOM.guestEmail.value;
+      data.order_email = this.DOM.guestEmail.value;
       data.order_phone = this.DOM.guestPhone.value;
     }
 
