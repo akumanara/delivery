@@ -33,6 +33,7 @@ export default class {
 
   preselectDeliveryType() {
     if (this.DOM.checkoutCart) {
+      console.log('chedckou cart');
       // Set delivery type
       if (
         this.DOM.checkoutCart.dataset.deliveryType === deliveryTypes.DELIVERY

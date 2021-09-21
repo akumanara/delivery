@@ -1,9 +1,11 @@
+/* eslint-disable class-methods-use-this */
 import autoBind from 'auto-bind';
 import PubSub from 'pubsub-js';
 import { store } from '../utils/store';
 import texts from '../utils/texts';
 import API from './api';
 import Alert from './alert';
+import { deliveryTypes } from '../utils/enum';
 
 export default class {
   constructor() {
@@ -26,13 +28,67 @@ export default class {
   }
 
   async insertOrderClicked() {
-    // if (store.context.isUserLoggedIn) {
-    //   await this.insertOrderLoggedIn();
-    // } else {
-    //   await this.insertOrderGuest();
-    // }
+    // check if the user can insert order
+    if (!this.canUserInsertOrder()) {
+      console.log('the user cant insert order');
+      return;
+    }
 
     this.insertOrder();
+  }
+
+  canUserInsertOrder() {
+    // ADDRESS AND DELIVERY METHOD
+    // ==============
+    if (store.app.deliveryType.deliveryMethod === deliveryTypes.DELIVERY) {
+      // DELIVERY METHOD
+      // 1. Does the user has a selected address
+      if (!store.app.addressComponent.selectedAddress) {
+        // NO ADDRESS SELECTED
+        return false;
+      }
+      // 2. Is the address supported by the store
+      if (!store.app.addressComponent.isSelectedAddressSupported) {
+        // ADDRESS NOT SUPPORTED BY THE STORE
+        return false;
+      }
+    } else if (
+      store.app.deliveryType.deliveryMethod === deliveryTypes.TAKEAWAY
+    ) {
+      // TAKEAWAY METHOD
+    } else {
+      // NO DELIVERY METHOD
+      return false;
+    }
+
+    // PAYMENT METHOD
+    // ==============
+    if (!store.app.paymentType.activePaymentMethod) {
+      // NO PAYMENT METHOD SELECTED
+      return false;
+    }
+    if (
+      store.app.paymentType.activePaymentMethod.dataset.type === 'expired_card'
+    ) {
+      // PAYMENT METHOD IS EXPIRED CARD
+      return false;
+    }
+
+    // GUEST USER
+    if (!store.context.isUserLoggedIn) {
+      if (
+        this.DOM.guestName.value === '' ||
+        this.DOM.guestLastName.value === '' ||
+        this.DOM.guestEmail.value === '' ||
+        this.DOM.guestPhone.value === ''
+      ) {
+        // GUEST USER FORM IS MISSING DATA
+        return false;
+      }
+    }
+
+    // if nothing fails from the above, the user can insert order
+    return true;
   }
 
   async insertOrder() {
