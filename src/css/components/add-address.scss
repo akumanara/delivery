@@ -126,6 +126,7 @@
     padding: 8px;
     background: #f6f7f9;
     border-radius: 6px;
+    flex-shrink: 0;
   }
 
   &__autosuggest-result--no-result img {
