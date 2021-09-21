@@ -570,7 +570,7 @@ export default class {
         <div class="add-address__autosuggest-result js-prediction">
           <img
             class="img-fluid mw-18"
-            src="./images/icons/pin-blue.svg"
+            src="${store.context.imagesURL}icons/pin-blue.svg"
             alt=""
           />
           <div>
