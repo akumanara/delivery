@@ -52,7 +52,7 @@ export default class {
       valueNames: [
         'card__title',
         'card__description',
-        { data: ['native', 'name', 'distance', 'rating'] },
+        { data: ['native', 'name', 'distance', 'rating', 'searchname'] },
       ],
     };
     // Add the promos from context
