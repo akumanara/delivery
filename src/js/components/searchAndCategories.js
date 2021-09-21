@@ -113,6 +113,12 @@ export default class {
   setupVoiceRecognition() {
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      // we dont have speech recognition. remove icon and return
+      this.DOM.searchModal.micContainer.classList.add('d-none');
+      return;
+    }
     this.recognition = new SpeechRecognition();
     this.recognition.continuous = false;
     this.recognition.interimResults = true;
