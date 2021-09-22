@@ -26,6 +26,10 @@
     box-shadow: 0 10px 20px rgba(90, 136, 255, 0.3);
     border-radius: 10px;
     transition: $trans;
+
+    &--fake-disabled {
+      background: #8eaeff;
+    }
   }
   &__btn-left {
     display: flex;

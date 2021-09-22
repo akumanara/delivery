@@ -25,11 +25,18 @@ export default class {
 
   init() {
     this.DOM.payNowButton.addEventListener('click', this.insertOrderClicked);
+    if (this.canUserInsertOrder(false)) {
+      console.log('the user can insert order');
+      this.DOM.payNowButton.classList.remove('pay-now__btn--fake-disabled');
+    } else {
+      console.log('the user cant insert order');
+      this.DOM.payNowButton.classList.add('pay-now__btn--fake-disabled');
+    }
   }
 
   async insertOrderClicked() {
     // check if the user can insert order
-    if (!this.canUserInsertOrder()) {
+    if (!this.canUserInsertOrder(true)) {
       console.log('the user cant insert order');
       return;
     }
@@ -37,7 +44,7 @@ export default class {
     this.insertOrder();
   }
 
-  canUserInsertOrder() {
+  canUserInsertOrder(raiseAlerts) {
     // ADDRESS AND DELIVERY METHOD
     // ==============
     if (store.app.deliveryType.deliveryMethod === deliveryTypes.DELIVERY) {
@@ -45,11 +52,27 @@ export default class {
       // 1. Does the user has a selected address
       if (!store.app.addressComponent.selectedAddress) {
         // NO ADDRESS SELECTED
+        if (raiseAlerts) {
+          const a = new Alert({
+            text: texts.insertOrder.noAddressSelected,
+            timeToKill: 5, // time until it closes
+            type: 'error', // or 'error'
+            showTimer: false, // show the timer or not
+          });
+        }
         return false;
       }
       // 2. Is the address supported by the store
       if (!store.app.addressComponent.isSelectedAddressSupported) {
         // ADDRESS NOT SUPPORTED BY THE STORE
+        if (raiseAlerts) {
+          const a = new Alert({
+            text: texts.insertOrder.addressNotSupported,
+            timeToKill: 5, // time until it closes
+            type: 'error', // or 'error'
+            showTimer: false, // show the timer or not
+          });
+        }
         return false;
       }
     } else if (
@@ -58,6 +81,14 @@ export default class {
       // TAKEAWAY METHOD
     } else {
       // NO DELIVERY METHOD
+      if (raiseAlerts) {
+        const a = new Alert({
+          text: texts.insertOrder.noDeliveryMethod,
+          timeToKill: 5, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
+      }
       return false;
     }
 
@@ -65,12 +96,28 @@ export default class {
     // ==============
     if (!store.app.paymentType.activePaymentMethod) {
       // NO PAYMENT METHOD SELECTED
+      if (raiseAlerts) {
+        const a = new Alert({
+          text: texts.insertOrder.noPaymentMethod,
+          timeToKill: 5, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
+      }
       return false;
     }
     if (
       store.app.paymentType.activePaymentMethod.dataset.type === 'expired_card'
     ) {
       // PAYMENT METHOD IS EXPIRED CARD
+      if (raiseAlerts) {
+        const a = new Alert({
+          text: texts.insertOrder.paymentMethodIsExpiredCard,
+          timeToKill: 5, // time until it closes
+          type: 'error', // or 'error'
+          showTimer: false, // show the timer or not
+        });
+      }
       return false;
     }
 
@@ -83,9 +130,19 @@ export default class {
         this.DOM.guestPhone.value === ''
       ) {
         // GUEST USER FORM IS MISSING DATA
+        if (raiseAlerts) {
+          const a = new Alert({
+            text: texts.insertOrder.missingGuestFormData,
+            timeToKill: 5, // time until it closes
+            type: 'error', // or 'error'
+            showTimer: false, // show the timer or not
+          });
+        }
         return false;
       }
     }
+
+    // TODO timeslot selected
 
     // if nothing fails from the above, the user can insert order
     return true;

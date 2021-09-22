@@ -103,4 +103,12 @@ export default {
   ratingSuccess: 'h vathmologia sou apothikeftike. TODO',
   deleteCardSuccess: 'h karta sas diagrafike. TODO',
   productMaxQuantity: 'exeis ftasei ti megisti posotita proionton TODO',
+  insertOrder: {
+    noAddressSelected: 'noAddressSelected TODO',
+    addressNotSupported: 'addressNotSupported TODO',
+    noDeliveryMethod: 'noDeliveryMethod TODO',
+    noPaymentMethod: 'noPaymentMethod TODO',
+    paymentMethodIsExpiredCard: 'paymentMethodIsExpiredCard TODO',
+    missingGuestFormData: 'missingGuestFormData TODO',
+  },
 };

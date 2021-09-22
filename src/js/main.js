@@ -35,7 +35,6 @@ import UserOrders from './components/userOrders';
 import UserCards from './components/userCards';
 import InsertOrder from './components/insertOrder';
 
-
 class App {
   constructor() {
     autoBind(this);
@@ -101,12 +100,6 @@ class App {
       this.userCards = new UserCards(userCardsElement);
     }
 
-    // checkout page - insert order
-    const insertOrderElement = document.querySelector('.pay-now');
-    if (insertOrderElement) {
-      this.insertOrder = new InsertOrder();
-    }
-
     // Timeslots
     // timeslots are complicated. better wrap this on a try catch?
     const timeslotElement = document.querySelector('.timeslot__trigger');
@@ -168,6 +161,12 @@ class App {
     const thankYouElement = document.querySelector('.js-thankyou');
     if (thankYouElement) {
       this.thankYou = new ThankYou(thankYouElement);
+    }
+
+    // checkout page - insert order
+    const insertOrderElement = document.querySelector('.pay-now');
+    if (insertOrderElement) {
+      this.insertOrder = new InsertOrder();
     }
 
     // Store carousel
