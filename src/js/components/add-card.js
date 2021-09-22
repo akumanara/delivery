@@ -77,8 +77,13 @@ export default class {
     this.DOM.formCardMonth.value = '';
     this.DOM.formCardYear.value = '';
     this.DOM.formCardCVV.value = '';
-    this.DOM.formSave.checked = false;
-    this.DOM.formDefault.checked = false;
+
+    if (this.DOM.formSave) {
+      this.DOM.formSave.checked = false;
+    }
+    if (this.DOM.formDefault) {
+      this.DOM.formDefault.checked = false;
+    }
   }
 
   hideModal() {
@@ -119,10 +124,14 @@ export default class {
     this.card = {
       chargeToken: data.chargeToken,
       tag: this.selectedTag,
-      saveCard: this.DOM.formSave.checked,
-      defaultCard: this.DOM.formDefault.checked,
     };
-    console.log(this.card);
+
+    if (this.DOM.formSave) {
+      this.card.saveCard = this.DOM.formSave.checked;
+    }
+    if (this.DOM.formDefault) {
+      this.card.defaultCard = this.DOM.formDefault.checked;
+    }
 
     // Set the card visible with its charge token and set it as payment type
     const cardPaymentType = document.querySelector('.js-new-card');
