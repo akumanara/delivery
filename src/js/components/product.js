@@ -537,7 +537,7 @@ export default class extends EventEmitter {
   // Executes when we select a variant
   selectedVariant(variant) {
     // Close the first accordion (the first one is the variant)
-    // this.accordions[0].close(0);
+    this.accordions[0].close(0);
     // Update the selected variant on group options
     this.groupOptions.forEach((element) => {
       element.changeVariant(variant.id);
@@ -548,7 +548,13 @@ export default class extends EventEmitter {
   }
 
   // Executes when we select a group option
-  selectedGroupOption(options) {
+  selectedGroupOption(groupOption) {
+    if (groupOption.max === 1) {
+      // Close all accordions if group option has max of 1
+      this.accordions.forEach((accordion) => {
+        accordion.close(0);
+      });
+    }
     this.calculatePrice();
   }
 

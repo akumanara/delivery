@@ -71,7 +71,7 @@ export default class extends EventEmitter {
     this.calculateGroupOptionPrice();
 
     // Emit to the product class
-    this.emit('selection', this.selectedOptions);
+    this.emit('selection', this);
   }
 
   handleOptionClickedLogic(option) {
