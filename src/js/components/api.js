@@ -205,6 +205,7 @@ export default class {
       const url = `/user/cards/delete-card`;
       const data = {
         id: cardId,
+        csrfToken: store.context.csrfToken,
       };
       const formData = getFormData(data);
       this.instance
