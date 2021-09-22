@@ -19,6 +19,7 @@ export default class {
       apiKey: store.context.googleMapsApiKey,
       version: 'weekly',
       libraries: ['places'],
+      language: 'el',
     });
     this.loader.loadCallback(this.googleMapsCallback);
 
