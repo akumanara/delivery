@@ -155,7 +155,12 @@ class App {
     }
 
     // Address Component
-    this.addressComponent = new Address();
+    const addressElement = document.querySelector('.address-trigger');
+    const landingAddressTrigger = document.querySelector('.js-address-trigger');
+    if (addressElement || landingAddressTrigger) {
+      console.log('initiating addressComponent');
+      this.addressComponent = new Address();
+    }
 
     // Thank you page
     const thankYouElement = document.querySelector('.js-thankyou');
