@@ -2904,7 +2904,7 @@ const insertOrderError = {
 };
 
 const userOrder = {
-  id: '123',
+  id: '1551225',
   storeName: 'Naasdkama',
   status: 'completed', // or canceled
   paymentType: 'POS', // or cash or card?
@@ -2964,7 +2964,98 @@ const deleteCardSuccess = {
   status: 'ok',
 };
 
+const userOrders = {
+  orders: [
+    {
+      order_id: '1551225',
+      isOnline: '1',
+      shop_id: '13715',
+      shop_name: 'ΑΒ Βασιλόπουλος',
+      shop_url: 'ab-basilopoulos',
+      shop_telephone: null,
+      state_name: 'Πάτρα',
+      city_name: 'Κέντρο',
+      state_alias: 'patra',
+      city_alias: 'kentro',
+      time: '2021-04-05 12:47',
+      points: '700',
+      telephone: '6934782274',
+      city: 'Πάτρα',
+      street: 'Θηβών',
+      street_number: '32',
+      origin: '2',
+      total_price: '27.91',
+      credit_discount: null,
+      credit_discount_amount: null,
+      voucher_discount_amount: null,
+      voucher_id: '',
+      isAccepted: '1',
+      isRejected: '0',
+      isCredit: '1',
+      rating: null,
+      reorder: '0',
+      products: [
+        '1(TMX) x  NESTLE CLUSTERS Δημητριακά Ολικής Άλεσης Με Σοκολάτα 375gr (Ενηλίκων)',
+        '1(TMX) x  LACTA  Σοκολάτα Sandwich Oreo 92gr (Γεμιστές - Με ξηρούς καρπούς)',
+        '1(TMX) x  SMARTIES  Κουφετάκια Γεμιστά Σοκολάτα Γάλακτος 38gr (Παιδικές)',
+        '1(TMX) x  MALTESERS  Σοκολατένια Κουφετάκια Γάλακτος 37gr (Snacks-Μπάρες)',
+        '1(TMX) x  ΑΒ  Οίνος Λευκός Μοσχοφίλερο 3 Lt (Άλλες ποικιλίες)',
+        '1(TMX) x  COCA COLA ZERO ΑΝΑΨΥΚΤΙΚΟ ΚΟΥΤΙ 6 X 330 ML (Cola)',
+        '1(TMX) x  NOXZEMA  ΑΠΟΣΜΗΤΙΚΟ ROLL ON PILOT 50 ML (Αποσμητικά)',
+        '2(TMX) x  BARILLA  Κριθαράκι Μέτριο  500 gr (Άλλες πάστες)',
+        '2(TMX) x  ΛΟΥΞ  ΑΝΑΨΥΚΤΙΚΟ ΠΟΡΤΟΚΑΛΑΔΑ ΦΙΑΛΗ 1,5 LT (Πορτοκαλάδα)',
+      ],
+    },
+    {
+      order_id: '1551225',
+      isOnline: '1',
+      shop_id: '13715',
+      shop_name: 'ΑΒ Βασιλόπουλος',
+      shop_url: 'ab-basilopoulos',
+      shop_telephone: null,
+      state_name: 'Πάτρα',
+      city_name: 'Κέντρο',
+      state_alias: 'patra',
+      city_alias: 'kentro',
+      time: '2021-04-05 12:47',
+      points: '700',
+      telephone: '6934782274',
+      city: 'Πάτρα',
+      street: 'Θηβών',
+      street_number: '32',
+      origin: '2',
+      total_price: '27.91',
+      credit_discount: null,
+      credit_discount_amount: null,
+      voucher_discount_amount: null,
+      voucher_id: '',
+      isAccepted: '1',
+      isRejected: '0',
+      isCredit: '1',
+      rating: null,
+      reorder: '0',
+      products: [
+        '1(TMX) x  NESTLE CLUSTERS Δημητριακά Ολικής Άλεσης Με Σοκολάτα 375gr (Ενηλίκων)',
+        '1(TMX) x  LACTA  Σοκολάτα Sandwich Oreo 92gr (Γεμιστές - Με ξηρούς καρπούς)',
+        '1(TMX) x  SMARTIES  Κουφετάκια Γεμιστά Σοκολάτα Γάλακτος 38gr (Παιδικές)',
+        '1(TMX) x  MALTESERS  Σοκολατένια Κουφετάκια Γάλακτος 37gr (Snacks-Μπάρες)',
+        '1(TMX) x  ΑΒ  Οίνος Λευκός Μοσχοφίλερο 3 Lt (Άλλες ποικιλίες)',
+        '1(TMX) x  COCA COLA ZERO ΑΝΑΨΥΚΤΙΚΟ ΚΟΥΤΙ 6 X 330 ML (Cola)',
+        '1(TMX) x  NOXZEMA  ΑΠΟΣΜΗΤΙΚΟ ROLL ON PILOT 50 ML (Αποσμητικά)',
+        '2(TMX) x  BARILLA  Κριθαράκι Μέτριο  500 gr (Άλλες πάστες)',
+        '2(TMX) x  ΛΟΥΞ  ΑΝΑΨΥΚΤΙΚΟ ΠΟΡΤΟΚΑΛΑΔΑ ΦΙΑΛΗ 1,5 LT (Πορτοκαλάδα)',
+      ],
+    },
+  ],
+};
+
+const emptyUserOrders = {
+  orders: [],
+};
+
 export {
+  emptyUserOrders,
+  userOrders,
   rateSuccess,
   deleteCardSuccess,
   reorderSuccess,

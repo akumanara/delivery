@@ -3,6 +3,8 @@ import axios from 'axios';
 import { store } from '../utils/store';
 import { getFormData, getURLSearchData } from '../utils/helpers';
 import {
+  emptyUserOrders,
+  userOrders,
   deleteCardSuccess,
   rateSuccess,
   userOrder,
@@ -160,6 +162,34 @@ export default class {
           reject(error);
         });
     });
+  }
+
+  getOrders(offset, limit) {
+    // https://www.delivery.gr/user/more-orders
+    if (store.context.mode === 'development') {
+      return new Promise((resolve) =>
+        setTimeout(() => {
+          resolve(userOrders);
+        }, 200),
+      );
+    }
+
+    // return new Promise((resolve, reject) => {
+    //   const url = `user/reorder`;
+    //   const data = {
+    //     order_id: orderID,
+    //     checkout: false,
+    //   };
+    //   const formData = getFormData(data);
+    //   this.instance
+    //     .post(url, formData)
+    //     .then((response) => {
+    //       resolve(response.data);
+    //     })
+    //     .catch((error) => {
+    //       reject(error);
+    //     });
+    // });
   }
 
   rateOrder(orderID, rate1, rate2, rate3) {

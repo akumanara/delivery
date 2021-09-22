@@ -1,0 +1,13 @@
+<div class="user-orders__list">
+  {{#each orders}}
+    <div class="user-orders__item" data-order-id="{{this.order_id}}">
+      <div class="user-orders__item-left">
+        <div class="user-orders__item-store">{{this.shop_name}}</div>
+        <div class="user-orders__item-date">{{this.time}}</div>
+      </div>
+      <div class="user-orders__item-right">
+        <div class="user-orders__item-price">{{this.total_price}}</div>
+      </div>
+    </div>
+  {{/each}}
+</div>

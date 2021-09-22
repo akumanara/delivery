@@ -55,7 +55,15 @@ if (UserCardSource) {
   UserCardTemplate = Handlebars.compile(UserCardSource.innerHTML);
 }
 
+// user orders
+const UserOrdersSource = document.getElementById('user-orders-template');
+let UserOrdersTemplate;
+if (UserCardSource) {
+  UserOrdersTemplate = Handlebars.compile(UserOrdersSource.innerHTML);
+}
+
 export {
+  UserOrdersTemplate,
   UserCardTemplate,
   RateOrderTemplate,
   UserOrderTemplate,
