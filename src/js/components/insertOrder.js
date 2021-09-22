@@ -25,6 +25,20 @@ export default class {
 
   init() {
     this.DOM.payNowButton.addEventListener('click', this.insertOrderClicked);
+    this.checkButtonFeasibility();
+
+    // Subscribe to events for checking the buttons feasibility
+    PubSub.subscribe('changed_payment_method', this.checkButtonFeasibility);
+    this.DOM.guestName.addEventListener('input', this.checkButtonFeasibility);
+    this.DOM.guestLastName.addEventListener(
+      'input',
+      this.checkButtonFeasibility,
+    );
+    this.DOM.guestEmail.addEventListener('input', this.checkButtonFeasibility);
+    this.DOM.guestPhone.addEventListener('input', this.checkButtonFeasibility);
+  }
+
+  checkButtonFeasibility() {
     if (this.canUserInsertOrder(false)) {
       console.log('the user can insert order');
       this.DOM.payNowButton.classList.remove('pay-now__btn--fake-disabled');

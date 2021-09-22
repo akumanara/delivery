@@ -1,5 +1,6 @@
 import Accordion from 'accordion-js';
 import autoBind from 'auto-bind';
+import PubSub from 'pubsub-js';
 import { store } from '../utils/store';
 import texts from '../utils/texts';
 import { paymentTypes } from '../utils/enum';
@@ -42,13 +43,13 @@ export default class {
 
   setPaymentType(clickedBtn) {
     if (this.activePaymentMethod === null) {
-      console.log('null');
+      // console.log('null');
       // there isnt an active method
       // we set the active method to the one clicked
       this.activePaymentMethod = clickedBtn;
       this.activePaymentMethod.classList.add('payment-type__button--active');
     } else if (this.activePaymentMethod === clickedBtn) {
-      console.log('same');
+      // console.log('same');
       // active method is the same as the one clicked
       // we remove active method
       this.activePaymentMethod.classList.remove('payment-type__button--active');
@@ -56,12 +57,13 @@ export default class {
     } else {
       // active method is not the same as the one clicked
       // we change the active method to the one clicked
-      console.log('new');
+      // console.log('new');
       this.activePaymentMethod.classList.remove('payment-type__button--active');
       this.activePaymentMethod = clickedBtn;
       this.activePaymentMethod.classList.add('payment-type__button--active');
     }
     this.setCopies();
+    PubSub.publish('changed_payment_method');
   }
 
   // coming from add to card modal
@@ -83,10 +85,7 @@ export default class {
       ariaEnabled: false,
     });
     this.accordion.openAll();
-
-
   }
-
 
   setCopies() {
     if (this.activePaymentMethod === null) {
