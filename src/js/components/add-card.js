@@ -48,8 +48,11 @@ export default class {
         this.selectTag(tag);
       });
     });
-    // document.addEventListener('DOMContentLoaded', this.DOMLoaded);
-    this.initVivaCard();
+
+    // Init Viva only if there is a modal in the DOM
+    if (this.DOM.modal) {
+      this.initVivaCard();
+    }
   }
 
   selectTag(selectedTag) {
